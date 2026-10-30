@@ -1,0 +1,4 @@
+{
+  "files.watcherExclude": {"**/data/**": true, "**/.venv/**": true},
+  "search.exclude": {"**/data/**": true}
+}

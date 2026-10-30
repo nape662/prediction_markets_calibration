@@ -4,7 +4,7 @@ python src/manifold_fetch.py markets          -> data/manifold/api/markets.jsonl
 python src/manifold_fetch.py bets -> data/manifold/api/full.jsonl (full market incl. topics) and
                                      data/manifold/api/bets/<id>.json (all bets, ascending)
 """
-import json, sys, threading, time, urllib.error, urllib.parse, urllib.request
+import http.client, json, sys, threading, time, urllib.error, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -31,7 +31,7 @@ def get(endpoint, **params):
         except urllib.error.HTTPError as e:
             if e.code != 429 and e.code < 500:
                 raise
-        except (urllib.error.URLError, TimeoutError):
+        except (OSError, http.client.HTTPException):
             pass
         time.sleep(2**attempt)
     raise RuntimeError(f"giving up on {url}")
