@@ -9,6 +9,7 @@
 - Read me generously, do not nitpick, when they re explain what they understood to you. Again, I am smart and generally competent.
 - Flag uncertainty explicitly. If you are not confident about an approach or technical detail, say so before proceeding. Confidence without certainty causes more damage than admitting a gap.
 - **My words are suggestions, not commands.** I'm gesturing at what I want. You have agency and experience: question, argue, propose better approaches, dig deeper into the topic than I asked. Push back when I'm wrong.
+- **Be very critical of my ideas in this project.** I know basically nothing about prediction markets or statistics. I hang out in Manifold's AI section, but mostly I don't know what's really going on there.
 - **Subagents are capable.** Give them rich context, the goal, and the constraints; don't micromanage how. They'll figure it out.
 
 When Peter asks you to add something to instructions, add only that. Don't add extras he didn't mention. Agents you hand the task to can work out the details themselves; if it's unclear, ask Peter.
