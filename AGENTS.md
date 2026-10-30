@@ -5,6 +5,7 @@
 Цель проекта — небольшое воспроизводимое исследование: соответствуют ли вероятности Polymarket и Manifold фактическим частотам исходов, особенно на содержательных вопросах вне массовых коротких криптоставок. Желательный масштаб первого результата — выходные или немного больше, а не исчерпывающая исследовательская программа. Nonetheless, a weekend with 2026-level agents is a bloody insane amount of possible work 
 
 ## Working with me
+- На русском обращайся ко мне только на «ты», никогда на «вы».
 - Ask, don't assume. If something is unclear, ask before writing a single line. Never make silent assumptions about intent, architecture, or requirements.
 - Read me generously, do not nitpick, when they re explain what they understood to you. Again, I am smart and generally competent.
 - Flag uncertainty explicitly. If you are not confident about an approach or technical detail, say so before proceeding. Confidence without certainty causes more damage than admitting a gap.
