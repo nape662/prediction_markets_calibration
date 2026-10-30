@@ -21,7 +21,7 @@ def throttle():
     with _lock:
         _next[0] = max(_next[0] + 0.125, time.time())
         wait = _next[0] - time.time()
-    time.sleep(wait)
+    time.sleep(max(wait, 0))
 
 
 def get(endpoint, **params):
