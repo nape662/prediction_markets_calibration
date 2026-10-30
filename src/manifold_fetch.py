@@ -2,7 +2,7 @@
 
 python src/manifold_fetch.py markets          -> data/manifold/api/markets.jsonl (all resolved BINARY markets)
 python src/manifold_fetch.py bets -> data/manifold/api/full.jsonl (full market incl. topics) and
-                                     data/manifold/api/bets/<id>.json (all bets, ascending; non-sports only)
+                                     data/manifold/api/bets/<id>.json (all bets, ascending)
 """
 import json, sys, threading, time, urllib.error, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -11,9 +11,6 @@ from pathlib import Path
 API = "https://api.manifold.markets/v0/"
 OUT = Path(__file__).resolve().parents[1] / "data/manifold/api"
 MIN_BETTORS, MIN_VOLUME = 15, 1000
-SPORTS = set("""sports nfl nba mlb nhl ncaa ncaaf ncaab soccer football basketball baseball hockey tennis golf
-cricket rugby f1 formula motorsports nascar boxing ufc mma fighting uefa fifa premier premiere bundesliga laliga
-seriea olympics superbowl bowl atp wta cycling wrestling darts snooker""".split())  # words in topic slugs
 _lock, _next = threading.Lock(), [0.0]
 
 
@@ -72,15 +69,11 @@ def bets_of(market_id):
         after = page[-1]["id"]
 
 
-def is_sports(m):
-    return any(SPORTS & set(slug.split("-")) for slug in m.get("groupSlugs") or [])
-
-
-def fetch_one(market_id):
-    m = get("market/" + market_id)
-    if not is_sports(m):
-        (OUT / "bets" / f"{market_id}.json").write_text(json.dumps(bets_of(market_id)))
-    return m
+def fetch_one(market_id, done):
+    path = OUT / "bets" / f"{market_id}.json"
+    if not path.exists():
+        path.write_text(json.dumps(bets_of(market_id)))
+    return None if market_id in done else get("market/" + market_id)
 
 
 def fetch_bets():
@@ -88,11 +81,13 @@ def fetch_bets():
     full = OUT / "full.jsonl"
     done = {json.loads(l)["id"] for l in open(full)} if full.exists() else set()
     markets = [json.loads(l) for l in open(OUT / "markets.jsonl")]
-    todo = [m["id"] for m in markets if m["id"] not in done and m["resolution"] in ("YES", "NO")
+    todo = [m["id"] for m in markets if (m["id"] not in done or not (OUT / "bets" / f"{m['id']}.json").exists())
+            and m["resolution"] in ("YES", "NO")
             and m["uniqueBettorCount"] >= MIN_BETTORS and m["volume"] >= MIN_VOLUME]
     with open(full, "a") as f, ThreadPoolExecutor(8) as pool:
-        for i, m in enumerate(pool.map(fetch_one, todo)):
-            f.write(json.dumps(m) + "\n")
+        for i, m in enumerate(pool.map(lambda i: fetch_one(i, done), todo)):
+            if m:
+                f.write(json.dumps(m) + "\n")
             if i % 200 == 0:
                 f.flush()
                 print(f"{i}/{len(todo)}", flush=True)

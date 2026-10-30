@@ -2,7 +2,7 @@
 
 ## Project
 
-Цель проекта — небольшое воспроизводимое исследование: соответствуют ли вероятности Polymarket и Manifold фактическим частотам исходов, особенно на содержательных вопросах вне массовых коротких криптоставок. Желательный масштаб первого результата — выходные или немного больше, а не исчерпывающая исследовательская программа. Nonetheless, a weekend with 2026-level agents is a bloody insane amount of possible work 
+Цель проекта — небольшое воспроизводимое исследование: соответствуют ли вероятности Polymarket и Manifold фактическим частотам исходов, особенно на содержательных вопросах вне массовых коротких криптоставок. Желательный масштаб первого результата — выходные или немного больше, а не исчерпывающая исследовательская программа. Just good enough that after people see that plot which roughly looks as y=x, and they dig into "what it actually measures" it is something real and something they care about, without major mistakes in methodology. Perhaps, in the ideal case, we manage to filter out the really "markets for which no easy objective source of truth does not exist and which would really help people get extra knowledge quickly" and see how calibrated they are 12h/week/month/year before resolution (and compare those markets and simpler markets, with less filtering). 
 
 ## Working with me
 - На русском обращайся ко мне только на «ты», никогда на «вы».
