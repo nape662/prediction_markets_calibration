@@ -1,5 +1,25 @@
 # Raw data observations: Polymarket (Becker dump) and Manifold (API)
 
+## Correction (Terra, 2026-10-31)
+
+**The “left 10–90% for good” numbers below are wrong.** They measure the last in-range observation, which can be long before the price actually leaves that range; some markets finish inside it. The old Manifold claims of 68% more than a day before resolution, 48% more than a week before, and a six-day median should not be used.
+
+On all 37,680 eligible Manifold markets, the following are **snapshot** probabilities, not claims about when a price left the range permanently. “Correct” means the final YES/NO outcome matched the more likely side. The two extreme groups overlap.
+
+| Before resolution | Markets with a forecast | Below 10% or above 90%: share; correct | Below 2% or above 98%: share; correct |
+|---|---:|---:|---:|
+| 12 hours | 37,227 | 67.5%; 98.8% | 32.8%; 99.8% |
+| 1 day | 36,533 | 63.8%; 98.7% | 27.9%; 99.7% |
+| 1 week | 31,376 | 55.5%; 98.3% | 16.9%; 99.8% |
+| 1 month | 24,818 | 44.0%; 98.0% | 8.8%; 99.7% |
+| 1 year | 7,407 | 20.8%; 96.1% | 1.8%; 99.2% |
+
+The earlier report's 31% for the 2% tails at one day used the incomplete fetch and a different snapshot rule; the full-data figure is 27.9%. For each snapshot we take `probAfter` from the last non-redemption bet with `probBefore != probAfter` and `createdTime` at or before the snapshot, breaking equal timestamps by file order. The snapshot must be after creation; a market with no earlier price-moving bet is excluded. Month and year mean 30 and 365 days. Limit orders and simultaneous bets need further timing checks. Extreme prices do not prove the answer was already known.
+
+**The same error affects the Polymarket figures and the volume claim.** In the original 8,500-market topic-balanced sample, the corrected shares with an observed final exit more than a day and a week before `end_date` are **25.6% and 14.7%**, versus the old 43% and 25%. Among all sampled non-summary dollar volume, **34.4%** traded after that observed exit, versus the old 43%. We order fills by block and log index and use the first fill after the last price in the inclusive 10–90% range, only when the final fill is outside it. Markets without an observed in-range price have no identifiable exit and contribute to the denominator but not the numerator. The sample overweights substantive topics, and neither price extremes nor `end_date` prove when the outcome became known.
+
+---
+
 **What this is.** A first look at the raw rows, to find what matters for the calibration plots and the filters. No calibration curves here.
 
 **What was looked at.**
