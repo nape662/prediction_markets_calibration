@@ -6,8 +6,6 @@ We currently use seven categories:
 
 **Prices, sports results and interest rates.** “Will Bitcoin cost more than $100,000?” Also match results and central-bank rate decisions. **Equivalent forecasts elsewhere have not been checked for every question.**
 
-**Published numbers.** “Will October's average global temperature be the highest October temperature on record?” Also inflation, film revenue and rankings of AI models. These can still be difficult, useful forecasts.
-
 **Other questions about the world.** “Will Russia capture all of Pokrovsk by November 30?” Also elections, laws, AI releases and awards. Questions about saying a particular word are included too, but remain separately identifiable.
 
 **Private life.** “Will I pass my driving test?” This includes the question creator and people they know privately.
