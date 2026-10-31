@@ -60,7 +60,25 @@ The market's own resolution criteria take priority over its title. Event titles 
 
 > Is the outcome determined by a central bank's policy interest-rate level or its decision to raise, lower, or hold that rate? Include the number or size of rate changes. Exclude inflation figures, bond yields, appointments, speeches, and other central-bank policies unless the resolution condition itself is a policy interest rate.
 
+**`sports_award`**
+
+> Is the outcome a sporting award or honour decided by voters or judges, such as MVP, Rookie of the Year, the Ballon d'Or or the Heisman Trophy? Exclude awards outside sport (Oscars, Nobel prizes) and halls of fame decided long after a career.
+
+**`weather_measurement`**
+
+> Is the outcome determined by a measured weather or climate quantity for a stated place and time or period, such as a temperature reading, rainfall, snowfall, a record-warm month, or the number of named storms? Exclude consequences of weather (deaths, damage, cancellations), climate policy, and climate agreements.
+
+**`scheduled_release`**
+
+> Is the outcome determined by a number that a government agency, central bank or company publishes on a pre-announced schedule, such as inflation, unemployment, GDP, payrolls, jobless claims, or a company's quarterly revenue or earnings compared with estimates? Exclude numbers without a scheduled official release, such as box office, poll results, death tolls or social-media counts.
+
+**`speech_or_posts`**
+
+> Is the outcome whether a named person says or writes a specific word or phrase, or how many posts or tweets they publish in a period? Exclude what the person does (signs an order, announces a policy, resigns); those are events, not words.
+
 Пересечения спортивных тегов допустимы: «забьёт ли команда три гола» может получить `sports_match` и `sports_performance`. Не просим модель выбрать единственный вариант.
+
+Последние четыре тега закрывают массовые классы Polymarket, которых не было в черновике: температурные лесенки, отчёты и CPI, «скажет ли Трамп слово X» и «сколько твитов у Маска» (около 20 тысяч рынков в первом проходе `src/sieve.py`). Погоду и плановые числа Peter относит к тегу 1: для них есть готовые прогнозы погоды и консенсус-прогнозы экономистов.
 
 ## 1а. Первые кандидаты на «остаточный долбоебизм»
 
@@ -73,6 +91,12 @@ The market's own resolution criteria take priority over its title. Event titles 
 **`constructed_game`**
 
 > Is this market itself an artificial game or challenge whose outcome is created by special rules for participants, such as being the last trader, coordinating purchases, posting a required comment, or making a chosen side win through participation? Do not label a question yes merely because it is funny, personal, about a game company, or about a sporting competition. A plain random draw belongs under fixed_chance; also answer yes here only if there are additional participant-game rules.
+
+**`junk_reason`** (только Haiku, свободный текст; Jev текст писать не умеет)
+
+> If this market looks low-value for a reason that none of the other questions covers, say why in at most five words. Otherwise return an empty string.
+
+Ответы потом группируем руками: частые причины становятся новыми тегами, как в ситечке.
 
 ## 2. Кто может влиять на исход
 
@@ -128,21 +152,25 @@ The market's own resolution criteria take priority over its title. Event titles 
 
 Один объект рынка: идентификатор, платформа, название, описание и условия резолюции, время создания; при наличии — название события, теги и информация, позволяющая понять, кто автор. Отсутствующие поля явно `null`. Цены, исходы, позиции трейдеров и старые regex-метки не передаём. Условия случайного механизма вроде «1% chance by random draw» сохраняем: это не рыночная цена. Из описаний надо убрать позднейшие сообщения об исходе; подготовка такого входа ещё не реализована.
 
-Для Haiku — все 18 вопросов об одном рынке в одном запросе. Инструкция к ответу:
+**Для Polymarket обязательно передаём название события и варианты исхода** (`outcomes`). Без них многие названия бессмысленны: «Map 1 Total Rounds: Over/Under 15.5» понятно только рядом с «Counter-Strike: Nemiga vs FURIA», а Up/Down, Over/Under и имена команд стоят на месте YES/NO.
+
+**Никаких дат, кроме даты создания.** Дату закрытия и время разрешения не передаём. На Manifold `closeTime` при досрочном разрешении перезаписывается временем разрешения, а досрочно чаще разрешаются ДА. Дата закрытия, близкая к созданию, подсказала бы модели исход. Дедлайн, написанный в самом вопросе («by June 2025»), остаётся: это часть условий. Длительность рынка, принадлежность к связке взаимоисключающих вариантов и тему считаем сами, у модели не спрашиваем.
+
+Для Haiku — все 22 вопроса да/нет и `junk_reason` об одном рынке в одном запросе. Общая инструкция и вопросы — неизменный префикс, его кэшируем; меняется только текст рынка. Уровень размышлений (effort) начинаем с низкого и на пилоте сравниваем с high: если ответы почти не отличаются, остаёмся на низком. Инструкция к ответу:
 
 ```text
-Return one JSON object with market_id and labels. labels must contain every question ID, with a value of exactly "yes", "no", or "unknown". Do not add explanations or extra fields. The values answer the classification questions, not the market's YES/NO outcome.
+Return one JSON object with market_id and labels. labels must contain every question ID. For junk_reason the value is a string of at most five words, or "". For every other ID the value is exactly "yes", "no", or "unknown". Do not add explanations or extra fields. The values answer the classification questions, not the market's YES/NO outcome.
 ```
 
-Для Jev — тот же текст рынка, общее вступление и один вопрос с теми же тремя вариантами ответа. Это предложение по содержанию запросов; точный формат API и доступные режимы Jev ещё не проверены. Идентификатор вопроса хранит вызывающий код. Выходные вероятности Jev, если доступны, сохраняем отдельно: не называем их проверенной уверенностью в правильности тега.
+Для Jev — тот же текст рынка, общее вступление и один вопрос с теми же тремя вариантами ответа. Значит, 22 запроса на рынок: по стоимости это не дешевле Haiku. Поэтому Jev запускаем только на выборке в 2–3 тысячи рынков, для сравнения с Haiku и Luna. Это предложение по содержанию запросов; точный формат API и доступные режимы Jev ещё не проверены. Идентификатор вопроса хранит вызывающий код. Выходные вероятности Jev, если доступны, сохраняем отдельно: не называем их проверенной уверенностью в правильности тега.
 
 Пока не усложняем ответы объяснением каждого тега. На выбранных спорных примерах можно отдельно попросить указать фразу из условий, определившую ответ.
 
 ## Примеры границ для ручной проверки
 
-Это ожидаемые отдельные теги по тексту примеров, не результаты прогона моделей и не полная разметка всех 18 вопросов. В реальной проверке читаем также описание.
+Это ожидаемые отдельные теги по тексту примеров, не результаты прогона моделей и не полная разметка всех 22 вопросов. В реальной проверке читаем также описание.
 
-**“Will the billionaire-fight happen, ever?”** Само проведение события не является спортивным результатом: три спортивных тега `no`.
+**“Will the billionaire-fight happen, ever?”** Само проведение события не является спортивным результатом: четыре спортивных тега `no`.
 
 **“Will Bad Bunny wear a dress during the Super Bowl Half Time Show?”** Спортивные теги `no`, содержательный вопрос `yes`: конкретное наблюдаемое действие, несмотря на развлекательную тему.
 
@@ -153,5 +181,29 @@ Return one JSON object with market_id and labels. labels must contain every ques
 **“Daily fair coinflip”** Фиксированная вероятность `yes`, содержательность `no`. Если описание добавляет действия участников, проверяем и остальные теги.
 
 **“Will Manifold ship dark mode by 2023?”** Выпуск функции — содержательный прогноз, а не `platform_metric`. Влияние автора зависит от указанной связи автора с разработкой.
+
+**“Will Trump say 'tariff' during the press conference?”** `speech_or_posts` `yes`, содержательность — на усмотрение модели; в анализе это отдельный срез.
+
+## Как собираем теги в группы для графиков (на нашей стороне)
+
+Модель только отвечает на вопросы, группы назначаем мы. Порядок, первое совпадение побеждает:
+
+1. `direct_opinion` → выкидываем из анализа.
+2. `fixed_chance`.
+3. `existing_fact`, `fermi_estimate` или `puzzle_or_math` → «не прогноз».
+4. Любой тег 1 → «и так торгуют / прогнозируют». Внутри — отдельные срезы: крипта (короткая отдельно), другие активы, спорт, ставки ЦБ, погода, плановые числа, слова и посты.
+5. `platform_metric`, `constructed_game`, `creator_influence` или `trader_influence` → «исход в руках участников».
+6. `subjective_resolution`.
+7. Остальное → «вопросы о мире».
+
+Каждый тег дополнительно рисуем сам по себе: теги пересекаются, и порядок выше — только один из способов их развести.
+
+**На ручную проверку уходят:**
+- `substantive_world_question` = `yes` вместе с тегами из пунктов 2–5, и наоборот: всё `no`, а содержательность тоже `no`;
+- расхождения между моделями;
+- рынки с тремя и более `unknown`;
+- случайная выборка из всего, чтобы видеть ошибки, о которых обе модели согласны.
+
+`unknown` при назначении групп считается как «не да».
 
 Следующий этап после обсуждения формулировок — небольшая размеченная выборка с полными условиями, оценка стоимости и только затем запросы к моделям. Согласие двух моделей не заменяет просмотр их ответов.
