@@ -9,6 +9,7 @@ Descriptions are cleaned of text written after creation (Manifold's dated "Updat
 "(resolved NO)"-style notes). Only the creation date is kept: close and resolution times would hint at the outcome.
 """
 import json, re
+from datetime import datetime
 from pathlib import Path
 import pandas as pd
 
@@ -31,8 +32,8 @@ def clean(text):
     return re.sub(r"\n{3,}", "\n\n", text).strip()
 
 
-def utc(t):
-    return pd.to_datetime(t, utc=True) if t else pd.NaT
+def utc(t):  # pd.to_datetime is ~2000x slower per call, which matters over 4.9M markets
+    return datetime.fromisoformat(t) if t else None
 
 
 def template(question):
@@ -51,20 +52,23 @@ def manifold():
         created=pd.to_datetime([m["createdTime"] for m in rows], unit="ms", utc=True),
         creator=[m["creatorUsername"] for m in rows], tags=[" ".join(m.get("groupSlugs") or []) for m in rows],
     )).to_parquet(OUT / "manifold.parquet", index=False)
-    print(f"manifold: {len(rows):,} markets")
+    print(f"manifold: {len(rows):,} markets", flush=True)
 
 
 def polymarket():
     templates, markets, reps, n = {}, [], [], 0
     for line in open(DATA / "polymarket/api/markets.jsonl"):
         n += 1
+        if n % 500_000 == 0:
+            print(f"read {n:,}, kept {len(markets):,}, templates {len(templates):,}", flush=True)
         m = json.loads(line)
         if not m.get("closedTime") or utc(m["closedTime"]) >= utc(BECKER_END):
             continue
         e = (m.get("events") or [{}])[0]
         # the scheduled length goes into the key so "ETH above $X on <date>" over 16 hours and over a month aren't merged
-        days = (utc(m.get("endDate")) - utc(m.get("createdAt"))).days
-        key = (template(m["question"] or e.get("title") or ""), "?" if pd.isna(days) else min(days, 7) if days < 30 else 30)
+        end, created = utc(m.get("endDate")), utc(m.get("createdAt"))
+        days = (end - created).days if end and created else None
+        key = (template(m["question"] or e.get("title") or ""), "?" if days is None else min(days, 7) if days < 30 else 30)
         if key not in templates:
             templates[key] = [len(templates), 0]
             reps.append(dict(template=templates[key][0], id=m["id"], platform="Polymarket", question=m["question"],
@@ -73,8 +77,6 @@ def polymarket():
         templates[key][1] += 1
         markets.append((m["id"], templates[key][0], e.get("id"), m.get("createdAt"), m["closedTime"], m.get("endDate"),
                         float(m.get("volumeNum") or 0), bool(e.get("negRisk"))))
-        if n % 500_000 == 0:
-            print(f"read {n:,}, kept {len(markets):,}, templates {len(templates):,}", flush=True)
     cols = ["id", "template", "event_id", "created", "closed_time", "end_date", "volume", "neg_risk"]
     pd.DataFrame(markets, columns=cols).to_parquet(OUT / "polymarket_markets.parquet", index=False)
     reps = pd.DataFrame(reps)
