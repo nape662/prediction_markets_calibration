@@ -3,6 +3,7 @@
 python src/labeling_full.py export     -> labeling/manifold_input.jsonl, committed because a cloud session has no data/
 python src/labeling_full.py haiku [n]  -> labeling/results/full/manifold_haiku.jsonl, one line per call
 python src/labeling_full.py jev [n]    -> labeling/results/full/manifold_jev.jsonl
+python src/labeling_full.py haiku-back row -> labeling/results/full/manifold_haiku_back.jsonl: the last input row first, down to row, to meet another run going forward
 n stops after that many markets, for a test. Safe to restart: markets with a valid answer are skipped.
 Set CLAUDE_BIN as in labeling_pilot.py. Haiku uses the logged-in Claude account; Jev spends the TypeSafe balance.
 """
@@ -60,11 +61,11 @@ def cut_partial_line(path):
     path.write_bytes(data[:data.rfind(b"\n") + 1])
 
 
-def main(kind, limit=None):
+def main(kind, limit=None, back_to=None):
     OUT.mkdir(parents=True, exist_ok=True)
-    path = OUT / f"manifold_{kind}.jsonl"
+    path = OUT / f"manifold_{kind}{'' if back_to is None else '_back'}.jsonl"
     every = markets()
-    todo = dict(list(every.items())[:limit])
+    todo = dict(list(every.items())[:limit] if back_to is None else list(every.items())[back_to:][::-1])
     text = "".join(every.values())
     if kind == "haiku":
         version = hashlib.sha256(((PROMPTS / "system_prompt.txt").read_text() + text).encode()).hexdigest()[:8]
@@ -114,5 +115,7 @@ def main(kind, limit=None):
 if __name__ == "__main__":
     if sys.argv[1] == "export":
         export()
+    elif sys.argv[1] == "haiku-back":
+        main("haiku", back_to=int(sys.argv[2]))
     else:
         main(sys.argv[1], int(sys.argv[2]) if len(sys.argv) > 2 else None)
