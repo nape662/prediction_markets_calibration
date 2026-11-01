@@ -1,0 +1,600 @@
+{"ids": ["OyGbOwiOXEG0bQAkF5u5"], "result": "{\"id\": \"OyGbOwiOXEG0bQAkF5u5\", \"substantive\": 75, \"yes\": [\"insider_knowable\"], \"unsure\": [\"existing_fact\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["6fVKt9c0aEkCkruTHw38"], "result": "{\"id\": \"6fVKt9c0aEkCkruTHw38\", \"substantive\": 5, \"yes\": [\"platform_metric\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["9rvTgf0f4bRJN4LsWFOA"], "result": "{\"id\": \"9rvTgf0f4bRJN4LsWFOA\", \"substantive\": 98, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["6E26CPIlc8"], "result": "{\"id\": \"6E26CPIlc8\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["s2o94Iy9OsSwZEyCyjyG"], "result": "{\"id\": \"s2o94Iy9OsSwZEyCyjyG\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["ddwtfhm60SRNTQHzKZ2v"], "result": "{\"id\": \"ddwtfhm60SRNTQHzKZ2v\", \"substantive\": 85, \"yes\": [\"subjective_resolution\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["8MXyUXbRquiJIW1i2wDR"], "result": "{\"id\": \"8MXyUXbRquiJIW1i2wDR\", \"substantive\": 0, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["sS5Wd3f0Tzr28O6HzriY"], "result": "{\"id\": \"sS5Wd3f0Tzr28O6HzriY\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["gP5BvCXhaQf9rboQFaoR"], "result": "{\"id\": \"gP5BvCXhaQf9rboQFaoR\", \"substantive\": 45, \"yes\": [\"insider_knowable\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["5BHTNVUwOFe8uhEhB7XW"], "result": "{\"id\": \"5BHTNVUwOFe8uhEhB7XW\", \"substantive\": 3, \"yes\": [\"platform_metric\", \"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"direct_opinion\"]}", "cost": 0}
+{"ids": ["8bH3ADyuOKdR0WEmttab"], "result": "{\"id\": \"8bH3ADyuOKdR0WEmttab\", \"substantive\": 15, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\", \"insider_knowable\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["tthOrSibQGkRAccC2Dr0"], "result": "{\"id\": \"tthOrSibQGkRAccC2Dr0\", \"substantive\": 98, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["4argqZzzPGQYjCWCJoOh"], "result": "{\"id\": \"4argqZzzPGQYjCWCJoOh\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["dnuLlsLtty"], "result": "{\"id\": \"dnuLlsLtty\", \"substantive\": 97, \"yes\": [\"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["dgyggonkep"], "result": "{\"id\": \"dgyggonkep\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"platform_metric\", \"constructed_game\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["Rj4msr5O7XXn2eW1rhAF"], "result": "{\"id\": \"Rj4msr5O7XXn2eW1rhAF\", \"substantive\": 12, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\", \"insider_knowable\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["IitzJL2rlnqSjQByOqKK"], "result": "{\"id\": \"IitzJL2rlnqSjQByOqKK\", \"substantive\": 8, \"yes\": [\"platform_metric\", \"status_quo_default\"], \"unsure\": [\"trader_influence\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["Q8y2sNLQzq"], "result": "{\"id\": \"Q8y2sNLQzq\", \"substantive\": 95, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["otwA0sVjQncQJokWdzjU"], "result": "{\"id\": \"otwA0sVjQncQJokWdzjU\", \"substantive\": 3, \"yes\": [\"constructed_game\", \"trader_influence\", \"platform_metric\", \"subjective_resolution\", \"status_quo_default\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["tkkI3LzXDnBPztvMSoRX"], "result": "{\"id\": \"tkkI3LzXDnBPztvMSoRX\", \"substantive\": 0, \"yes\": [\"constructed_game\", \"creator_influence\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["SSo9OSMWbS429JjxoJfD"], "result": "{\"id\": \"SSo9OSMWbS429JjxoJfD\", \"substantive\": 70, \"yes\": [\"sports_match\", \"bookmaker_odds\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["P3ML7GNSKCu8L1ZGmora"], "result": "{\"id\": \"P3ML7GNSKCu8L1ZGmora\", \"substantive\": 60, \"yes\": [\"creator_influence\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["KbHvv2igF0DUx2fJNBn0"], "result": "{\"id\": \"KbHvv2igF0DUx2fJNBn0\", \"substantive\": 45, \"yes\": [\"direct_opinion\", \"trader_influence\"], \"unsure\": [\"creator_influence\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["8CAzOdNGzXAkWEvXgQjR"], "result": "{\"id\": \"8CAzOdNGzXAkWEvXgQjR\", \"substantive\": 40, \"yes\": [\"direct_opinion\", \"trader_influence\"], \"unsure\": [\"creator_influence\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["FIXjvQKt3QGznKTUhWM5"], "result": "{\"id\": \"FIXjvQKt3QGznKTUhWM5\", \"substantive\": 15, \"yes\": [\"direct_opinion\", \"trader_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["Swnu5YlxQ17W3ihhdokk"], "result": "{\"id\": \"Swnu5YlxQ17W3ihhdokk\", \"substantive\": 2, \"yes\": [\"constructed_game\", \"trader_influence\", \"status_quo_default\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["9lu785b3fk"], "result": "{\"id\": \"9lu785b3fk\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["I8zOqjMecVbxnZLuaixb"], "result": "{\"id\": \"I8zOqjMecVbxnZLuaixb\", \"substantive\": 8, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\", \"insider_knowable\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["YqYqOXOUcWurTbQB4uOx"], "result": "{\"id\": \"YqYqOXOUcWurTbQB4uOx\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["Q8nEmAxPe8O31KhTRmyE"], "result": "{\"id\": \"Q8nEmAxPe8O31KhTRmyE\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["kAyoy0UzEkzLx6AlXbvH"], "result": "{\"id\": \"kAyoy0UzEkzLx6AlXbvH\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["WvnO0HC0oxTUS3WohSD3"], "result": "{\"id\": \"WvnO0HC0oxTUS3WohSD3\", \"substantive\": 1, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["I8UbxvNqlJBcbe7pmDZH"], "result": "{\"id\": \"I8UbxvNqlJBcbe7pmDZH\", \"substantive\": 80, \"yes\": [\"scheduled_release\"], \"unsure\": [\"existing_fact\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["r2YCqthUMy92ysrB9bTR"], "result": "{\"id\": \"r2YCqthUMy92ysrB9bTR\", \"substantive\": 55, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["kjxaa7tdrr"], "result": "{\"id\": \"kjxaa7tdrr\", \"substantive\": 95, \"yes\": [\"status_quo_default\"], \"unsure\": [\"bookmaker_odds\"]}", "cost": 0}
+{"ids": ["k9QIikaNFgFCxFCQFau9"], "result": "{\"id\": \"k9QIikaNFgFCxFCQFau9\", \"substantive\": 98, \"yes\": [\"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["SxDQERL3JgipvOAyobkR"], "result": "{\"id\": \"SxDQERL3JgipvOAyobkR\", \"substantive\": 20, \"yes\": [], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["zsiroubfbe"], "result": "{\"id\": \"zsiroubfbe\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"trader_influence\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["0a0tldykv3"], "result": "{\"id\": \"0a0tldykv3\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["vMQtVmy8qkF3rhIpeUWD"], "result": "{\"id\": \"vMQtVmy8qkF3rhIpeUWD\", \"substantive\": 0, \"yes\": [\"constructed_game\", \"creator_influence\"], \"unsure\": [\"puzzle_or_math\", \"trader_influence\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["65oshk2phg"], "result": "{\"id\": \"65oshk2phg\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"status_quo_default\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["cwwZLOBftu3OCc6DrnhA"], "result": "{\"id\": \"cwwZLOBftu3OCc6DrnhA\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["VOreLKZzyXQmlAJYGJVf"], "result": "{\"id\": \"VOreLKZzyXQmlAJYGJVf\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["ZLzwwGhdJRZ48RxyjC4m"], "result": "{\"id\": \"ZLzwwGhdJRZ48RxyjC4m\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"direct_opinion\"]}", "cost": 0}
+{"ids": ["nkBNX4yjbKXSakpdUwnK"], "result": "{\"id\": \"nkBNX4yjbKXSakpdUwnK\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["WqEqB8c7ESJOTfaVtOSX"], "result": "{\"id\": \"WqEqB8c7ESJOTfaVtOSX\", \"substantive\": 10, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["eWh1aaCzLmIfutGVxcQp"], "result": "{\"id\": \"eWh1aaCzLmIfutGVxcQp\", \"substantive\": 70, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["98uPNuIgpO"], "result": "{\"id\": \"98uPNuIgpO\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["ncjcIfyLfFRPmxs5en8M"], "result": "{\"id\": \"ncjcIfyLfFRPmxs5en8M\", \"substantive\": 25, \"yes\": [\"insider_knowable\", \"status_quo_default\"], \"unsure\": [\"creator_influence\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["eaF6f6ouEwtZkk43t3wy"], "result": "{\"id\": \"eaF6f6ouEwtZkk43t3wy\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"fixed_chance\", \"creator_influence\"]}", "cost": 0}
+{"ids": ["IoRHRGFI9PTHLChT0Ksy"], "result": "{\"id\": \"IoRHRGFI9PTHLChT0Ksy\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["gtrKdCrAeXrnaJte28X4"], "result": "{\"id\": \"gtrKdCrAeXrnaJte28X4\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["RgynSm9cjrv02Z4oY20p"], "result": "{\"id\": \"RgynSm9cjrv02Z4oY20p\", \"substantive\": 85, \"yes\": [\"insider_knowable\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["yC8C8ctPtP"], "result": "{\"id\": \"yC8C8ctPtP\", \"substantive\": 90, \"yes\": [], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["p9qit0r23v"], "result": "{\"id\": \"p9qit0r23v\", \"substantive\": 5, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\"], \"unsure\": [\"direct_opinion\"]}", "cost": 0}
+{"ids": ["uhndEEUdqA"], "result": "{\"id\": \"uhndEEUdqA\", \"substantive\": 98, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["5XBOnVaCqnkXyeT8becG"], "result": "{\"id\": \"5XBOnVaCqnkXyeT8becG\", \"substantive\": 0, \"yes\": [\"constructed_game\", \"trader_influence\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["gHXmn8bxTe7ToDYHhiWg"], "result": "{\"id\": \"gHXmn8bxTe7ToDYHhiWg\", \"substantive\": 70, \"yes\": [\"sports_match\", \"sports_tournament\", \"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["OShsc8sEnon766exXY0Q"], "result": "{\"id\": \"OShsc8sEnon766exXY0Q\", \"substantive\": 65, \"yes\": [\"sports_tournament\", \"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["0VE07UFqH3fwB6ihshYy"], "result": "{\"id\": \"0VE07UFqH3fwB6ihshYy\", \"substantive\": 85, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["qWExiZORPGC6OL4rzBfa"], "result": "{\"id\": \"qWExiZORPGC6OL4rzBfa\", \"substantive\": 80, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["c6ojQ1VW12iwrofN11f2"], "result": "{\"id\": \"c6ojQ1VW12iwrofN11f2\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["8xjLL1pOQKxj97WQeT3F"], "result": "{\"id\": \"8xjLL1pOQKxj97WQeT3F\", \"substantive\": 25, \"yes\": [\"existing_fact\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["PhcR6kk8aOF0oBdY1S6k"], "result": "{\"id\": \"PhcR6kk8aOF0oBdY1S6k\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["kd3gCDjvlI2YyDiueARc"], "result": "{\"id\": \"kd3gCDjvlI2YyDiueARc\", \"substantive\": 45, \"yes\": [\"direct_opinion\", \"trader_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["kNAeiAOvrZyjG6qCFMqT"], "result": "{\"id\": \"kNAeiAOvrZyjG6qCFMqT\", \"substantive\": 55, \"yes\": [\"existing_fact\", \"insider_knowable\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["5LYvJVVsGR2BYBrJQAuE"], "result": "{\"id\": \"5LYvJVVsGR2BYBrJQAuE\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"status_quo_default\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["E6dRAz1p92HTspCbsswJ"], "result": "{\"id\": \"E6dRAz1p92HTspCbsswJ\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["OexPCcQ4ha3g86TPErCF"], "result": "{\"id\": \"OexPCcQ4ha3g86TPErCF\", \"substantive\": 40, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["Q3nDusDy3Ly2lY80WQfs"], "result": "{\"id\": \"Q3nDusDy3Ly2lY80WQfs\", \"substantive\": 5, \"yes\": [\"creator_influence\", \"subjective_resolution\"], \"unsure\": [\"puzzle_or_math\", \"trader_influence\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["Ig2pCOz5Uc"], "result": "{\"id\": \"Ig2pCOz5Uc\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"trader_influence\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["09uyIpa9ivKQ1SKlD0ud"], "result": "{\"id\": \"09uyIpa9ivKQ1SKlD0ud\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"status_quo_default\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["5UHWuhbS4MCAOid9sccK"], "result": "{\"id\": \"5UHWuhbS4MCAOid9sccK\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["uzpA52tLdI"], "result": "{\"id\": \"uzpA52tLdI\", \"substantive\": 45, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["Qzk5thhh6iMRVmo8mlcI"], "result": "{\"id\": \"Qzk5thhh6iMRVmo8mlcI\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["qcQz5ZZIup"], "result": "{\"id\": \"qcQz5ZZIup\", \"substantive\": 10, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["zSrssUM3MLkTNj9gjs84"], "result": "{\"id\": \"zSrssUM3MLkTNj9gjs84\", \"substantive\": 0, \"yes\": [\"fixed_chance\"], \"unsure\": []}", "cost": 0}
+{"ids": ["RKdf6Qrz4LQMEwmznOBc"], "result": "{\"id\": \"RKdf6Qrz4LQMEwmznOBc\", \"substantive\": 3, \"yes\": [\"constructed_game\", \"trader_influence\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["9syN5cJkUvEsHMC4n3J3"], "result": "{\"id\": \"9syN5cJkUvEsHMC4n3J3\", \"substantive\": 65, \"yes\": [\"sports_match\", \"bookmaker_odds\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["BaMBSkV2rpKuJ4S9M7Er"], "result": "{\"id\": \"BaMBSkV2rpKuJ4S9M7Er\", \"substantive\": 3, \"yes\": [\"constructed_game\", \"status_quo_default\"], \"unsure\": [\"platform_metric\", \"trader_influence\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["3h0ta2k3j8"], "result": "{\"id\": \"3h0ta2k3j8\", \"substantive\": 70, \"yes\": [\"existing_fact\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["p5dqncqg3c"], "result": "{\"id\": \"p5dqncqg3c\", \"substantive\": 50, \"yes\": [\"existing_fact\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["qetkVQot4Bx947XCs9Yp"], "result": "{\"id\": \"qetkVQot4Bx947XCs9Yp\", \"substantive\": 40, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["qtudbliwjj"], "result": "{\"id\": \"qtudbliwjj\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["idPQMadtNtqzlPqMWII6"], "result": "{\"id\": \"idPQMadtNtqzlPqMWII6\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["0XpUavIV9w481GMJ0NVG"], "result": "{\"id\": \"0XpUavIV9w481GMJ0NVG\", \"substantive\": 1, \"yes\": [\"constructed_game\", \"trader_influence\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["XvHBvPa9UgiRzVdgIFrF"], "result": "{\"id\": \"XvHBvPa9UgiRzVdgIFrF\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\"], \"unsure\": [\"fixed_chance\", \"puzzle_or_math\"]}", "cost": 0}
+{"ids": ["j3xemcb7tImzHViMai36"], "result": "{\"id\": \"j3xemcb7tImzHViMai36\", \"substantive\": 15, \"yes\": [\"fixed_chance\", \"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["TZERFDK93Vr8jafyDSAq"], "result": "{\"id\": \"TZERFDK93Vr8jafyDSAq\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"insider_knowable\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["gIpy26tUup"], "result": "{\"id\": \"gIpy26tUup\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["kdtrrpKEO3k0d0hFffIl"], "result": "{\"id\": \"kdtrrpKEO3k0d0hFffIl\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["ZWdCzyp8gtzbv6hC28Ll"], "result": "{\"id\": \"ZWdCzyp8gtzbv6hC28Ll\", \"substantive\": 5, \"yes\": [\"platform_metric\", \"insider_knowable\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["SqLCNO6yQq"], "result": "{\"id\": \"SqLCNO6yQq\", \"substantive\": 97, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["tz58y5qd9g"], "result": "{\"id\": \"tz58y5qd9g\", \"substantive\": 20, \"yes\": [\"creator_influence\", \"trader_influence\", \"status_quo_default\"], \"unsure\": [\"constructed_game\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["p7YIGNt63YYSIGDBufWR"], "result": "{\"id\": \"p7YIGNt63YYSIGDBufWR\", \"substantive\": 60, \"yes\": [], \"unsure\": [\"bookmaker_odds\"]}", "cost": 0}
+{"ids": ["u0eKjq0OVYpfRdyszWg1"], "result": "{\"id\": \"u0eKjq0OVYpfRdyszWg1\", \"substantive\": 8, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\", \"insider_knowable\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["qud2uSEplg"], "result": "{\"id\": \"qud2uSEplg\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["2aUMa6c3uccEsWGIoupl"], "result": "{\"id\": \"2aUMa6c3uccEsWGIoupl\", \"substantive\": 5, \"yes\": [\"platform_metric\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["EbXqg5C1ihtrraCDkFV8"], "result": "{\"id\": \"EbXqg5C1ihtrraCDkFV8\", \"substantive\": 90, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["IEPz9zR9cE"], "result": "{\"id\": \"IEPz9zR9cE\", \"substantive\": 15, \"yes\": [\"trader_influence\"], \"unsure\": [\"platform_metric\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["nhh06mn5fs"], "result": "{\"id\": \"nhh06mn5fs\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["N3fdOKp6CXmhBeHaat3w"], "result": "{\"id\": \"N3fdOKp6CXmhBeHaat3w\", \"substantive\": 30, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["6n2gbhcqi6"], "result": "{\"id\": \"6n2gbhcqi6\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["HfaWFM43HOFUWutnh0vV"], "result": "{\"id\": \"HfaWFM43HOFUWutnh0vV\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"constructed_game\", \"platform_metric\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["dFGmHFDoM3TUIhIoMsPs"], "result": "{\"id\": \"dFGmHFDoM3TUIhIoMsPs\", \"substantive\": 30, \"yes\": [\"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["dOq89tIScc"], "result": "{\"id\": \"dOq89tIScc\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["292zuuyR0I"], "result": "{\"id\": \"292zuuyR0I\", \"substantive\": 80, \"yes\": [\"insider_knowable\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["FMUaC5jRoc9YnlqnOrya"], "result": "{\"id\": \"FMUaC5jRoc9YnlqnOrya\", \"substantive\": 80, \"yes\": [\"creator_influence\", \"subjective_resolution\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["XaPaE9UwEHo4mEx592af"], "result": "{\"id\": \"XaPaE9UwEHo4mEx592af\", \"substantive\": 2, \"yes\": [\"constructed_game\", \"trader_influence\", \"status_quo_default\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["Lrawo6vLNvoXk1VkmgRr"], "result": "{\"id\": \"Lrawo6vLNvoXk1VkmgRr\", \"substantive\": 65, \"yes\": [\"creator_influence\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["mHrYApj6lkqDFiaAmxW4"], "result": "{\"id\": \"mHrYApj6lkqDFiaAmxW4\", \"substantive\": 97, \"yes\": [\"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["9FQ3Wx1Tk5LwP3JU6IDB"], "result": "{\"id\": \"9FQ3Wx1Tk5LwP3JU6IDB\", \"substantive\": 8, \"yes\": [\"status_quo_default\"], \"unsure\": [\"trader_influence\", \"creator_influence\"]}", "cost": 0}
+{"ids": ["XEWKArAgXw8aonM5DFjS"], "result": "{\"id\": \"XEWKArAgXw8aonM5DFjS\", \"substantive\": 40, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["6KfqFftlMcKO1OxvcFrH"], "result": "{\"id\": \"6KfqFftlMcKO1OxvcFrH\", \"substantive\": 10, \"yes\": [\"constructed_game\", \"trader_influence\"], \"unsure\": [\"platform_metric\", \"direct_opinion\"]}", "cost": 0}
+{"ids": ["qYjeDWzb99vcV2F4b91O"], "result": "{\"id\": \"qYjeDWzb99vcV2F4b91O\", \"substantive\": 92, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["RlRLV2w1pFpymeLKS1cl"], "result": "{\"id\": \"RlRLV2w1pFpymeLKS1cl\", \"substantive\": 35, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["NIOcNOSRCR"], "result": "{\"id\": \"NIOcNOSRCR\", \"substantive\": 2, \"yes\": [\"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["LtG3i9J8LX2kefZi9HAc"], "result": "{\"id\": \"LtG3i9J8LX2kefZi9HAc\", \"substantive\": 0, \"yes\": [\"fixed_chance\"], \"unsure\": []}", "cost": 0}
+{"ids": ["SL28tAddp9"], "result": "{\"id\": \"SL28tAddp9\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["D7KUD2jrlSJ39Fk5UM1U"], "result": "{\"id\": \"D7KUD2jrlSJ39Fk5UM1U\", \"substantive\": 60, \"yes\": [\"sports_match\", \"sports_performance\", \"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["clLEEz5qZg"], "result": "{\"id\": \"clLEEz5qZg\", \"substantive\": 3, \"yes\": [\"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"platform_metric\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["VTcZX1VQajgNsfVgj1iM"], "result": "{\"id\": \"VTcZX1VQajgNsfVgj1iM\", \"substantive\": 3, \"yes\": [\"platform_metric\", \"trader_influence\", \"status_quo_default\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["ihjE6dR5mHjKSRGKU5IZ"], "result": "{\"id\": \"ihjE6dR5mHjKSRGKU5IZ\", \"substantive\": 90, \"yes\": [\"weather_measurement\", \"status_quo_default\"], \"unsure\": [\"bookmaker_odds\"]}", "cost": 0}
+{"ids": ["h98fdIYC3lukoQmlajW8"], "result": "{\"id\": \"h98fdIYC3lukoQmlajW8\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["SufJVwcJSZ0g81X3Lnm5"], "result": "{\"id\": \"SufJVwcJSZ0g81X3Lnm5\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["64y6rYJ65TuiRqkkSuyf"], "result": "{\"id\": \"64y6rYJ65TuiRqkkSuyf\", \"substantive\": 3, \"yes\": [\"creator_influence\", \"trader_influence\", \"subjective_resolution\", \"constructed_game\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["uUpkhDS3LA3zrXrZvF76"], "result": "{\"id\": \"uUpkhDS3LA3zrXrZvF76\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["IAj0jnLM1nNc7t2m7H0e"], "result": "{\"id\": \"IAj0jnLM1nNc7t2m7H0e\", \"substantive\": 10, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["exgmocL1gy39a23iH188"], "result": "{\"id\": \"exgmocL1gy39a23iH188\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["8g5dAzAIdc"], "result": "{\"id\": \"8g5dAzAIdc\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["UNL57NQ4EVGD8nyJZ5Sx"], "result": "{\"id\": \"UNL57NQ4EVGD8nyJZ5Sx\", \"substantive\": 0, \"yes\": [\"constructed_game\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["PWdBYs8UwG8H1rZuECNK"], "result": "{\"id\": \"PWdBYs8UwG8H1rZuECNK\", \"substantive\": 40, \"yes\": [\"creator_influence\", \"subjective_resolution\"], \"unsure\": [\"platform_metric\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["xatfzI6bZBXzdcbWBUud"], "result": "{\"id\": \"xatfzI6bZBXzdcbWBUud\", \"substantive\": 1, \"yes\": [\"fixed_chance\"], \"unsure\": []}", "cost": 0}
+{"ids": ["UOcOtEzlhh"], "result": "{\"id\": \"UOcOtEzlhh\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"status_quo_default\", \"subjective_resolution\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["Kw1iptV2FD3Etj3HaxeF"], "result": "{\"id\": \"Kw1iptV2FD3Etj3HaxeF\", \"substantive\": 65, \"yes\": [\"existing_fact\"], \"unsure\": [\"puzzle_or_math\", \"subjective_resolution\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["08WwzJISL9MhJcouKhKZ"], "result": "{\"id\": \"08WwzJISL9MhJcouKhKZ\", \"substantive\": 85, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["92eabtx59d"], "result": "{\"id\": \"92eabtx59d\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["bHoMaKLxtP0LdNe7nFES"], "result": "{\"id\": \"bHoMaKLxtP0LdNe7nFES\", \"substantive\": 1, \"yes\": [\"creator_influence\", \"subjective_resolution\", \"trader_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["asipPSfytvLZ2NCQu6Fw"], "result": "{\"id\": \"asipPSfytvLZ2NCQu6Fw\", \"substantive\": 15, \"yes\": [\"direct_opinion\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["Jzk1KB9aDMXXXCl7Ws4N"], "result": "{\"id\": \"Jzk1KB9aDMXXXCl7Ws4N\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["vC5vLty9Fi6xrQaA9BXe"], "result": "{\"id\": \"vC5vLty9Fi6xrQaA9BXe\", \"substantive\": 98, \"yes\": [\"status_quo_default\"], \"unsure\": [\"bookmaker_odds\"]}", "cost": 0}
+{"ids": ["h0DHPsQyaKNUtE42LDAg"], "result": "{\"id\": \"h0DHPsQyaKNUtE42LDAg\", \"substantive\": 2, \"yes\": [\"constructed_game\", \"trader_influence\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["5VyJmWArw5g3Rn71LqnC"], "result": "{\"id\": \"5VyJmWArw5g3Rn71LqnC\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"status_quo_default\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["HZx9ite9g58ni9E2xLUU"], "result": "{\"id\": \"HZx9ite9g58ni9E2xLUU\", \"substantive\": 1, \"yes\": [\"fixed_chance\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["9l6ZUpdPQn"], "result": "{\"id\": \"9l6ZUpdPQn\", \"substantive\": 15, \"yes\": [\"creator_influence\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\", \"constructed_game\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["9jjtXqYMm6odnOAPUQEV"], "result": "{\"id\": \"9jjtXqYMm6odnOAPUQEV\", \"substantive\": 0, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["ind0mqfbrd"], "result": "{\"id\": \"ind0mqfbrd\", \"substantive\": 97, \"yes\": [\"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["OCpdsuPtUp"], "result": "{\"id\": \"OCpdsuPtUp\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["75Ecpq1T8fVrPraeXTsL"], "result": "{\"id\": \"75Ecpq1T8fVrPraeXTsL\", \"substantive\": 40, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["hIQruBVb16BfCNIEGRNU"], "result": "{\"id\": \"hIQruBVb16BfCNIEGRNU\", \"substantive\": 1, \"yes\": [], \"unsure\": [\"platform_metric\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["4Ooi5bGg6dpv0BvIWL3u"], "result": "{\"id\": \"4Ooi5bGg6dpv0BvIWL3u\", \"substantive\": 40, \"yes\": [\"existing_fact\", \"subjective_resolution\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["rfPlb3B1McoxJ4gkqqFA"], "result": "{\"id\": \"rfPlb3B1McoxJ4gkqqFA\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["hAtNO0U89R"], "result": "{\"id\": \"hAtNO0U89R\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["unUg8ys5Ot"], "result": "{\"id\": \"unUg8ys5Ot\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"subjective_resolution\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["vnvPgZO8eKAwWXpisyiT"], "result": "{\"id\": \"vnvPgZO8eKAwWXpisyiT\", \"substantive\": 1, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["S5NuKKpcBoGrkSHmh7QO"], "result": "{\"id\": \"S5NuKKpcBoGrkSHmh7QO\", \"substantive\": 55, \"yes\": [\"speech_or_posts\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["E6PCRp5U0O"], "result": "{\"id\": \"E6PCRp5U0O\", \"substantive\": 60, \"yes\": [\"trader_influence\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["LlNCONSLPd"], "result": "{\"id\": \"LlNCONSLPd\", \"substantive\": 15, \"yes\": [\"speech_or_posts\"], \"unsure\": []}", "cost": 0}
+{"ids": ["NOQ58q9l9n"], "result": "{\"id\": \"NOQ58q9l9n\", \"substantive\": 90, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["K2Ie3QNNGexRoKRVXGx0"], "result": "{\"id\": \"K2Ie3QNNGexRoKRVXGx0\", \"substantive\": 20, \"yes\": [\"direct_opinion\", \"platform_metric\", \"trader_influence\", \"constructed_game\", \"creator_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["1RdlJDVcrgPJLDdaVPSA"], "result": "{\"id\": \"1RdlJDVcrgPJLDdaVPSA\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["tltdZl898R"], "result": "{\"id\": \"tltdZl898R\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["WN2rXnkAumLcDdO1You7"], "result": "{\"id\": \"WN2rXnkAumLcDdO1You7\", \"substantive\": 70, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["cu8SEuutOl"], "result": "{\"id\": \"cu8SEuutOl\", \"substantive\": 5, \"yes\": [\"creator_influence\", \"constructed_game\"], \"unsure\": [\"platform_metric\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["L5NvlpVrFaWh5Qfe5A84"], "result": "{\"id\": \"L5NvlpVrFaWh5Qfe5A84\", \"substantive\": 35, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["vsm0rmozrp"], "result": "{\"id\": \"vsm0rmozrp\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["AJsaRlQiETvDIcNB03Ff"], "result": "{\"id\": \"AJsaRlQiETvDIcNB03Ff\", \"substantive\": 20, \"yes\": [\"status_quo_default\", \"trader_influence\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["P1SWdqsx3orqlSr8mWG6"], "result": "{\"id\": \"P1SWdqsx3orqlSr8mWG6\", \"substantive\": 15, \"yes\": [\"existing_fact\"], \"unsure\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["RnRRPz0RIt"], "result": "{\"id\": \"RnRRPz0RIt\", \"substantive\": 60, \"yes\": [], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["ppgK07WJy6wrGm1pop8v"], "result": "{\"id\": \"ppgK07WJy6wrGm1pop8v\", \"substantive\": 15, \"yes\": [\"direct_opinion\", \"platform_metric\", \"trader_influence\", \"constructed_game\"], \"unsure\": []}", "cost": 0}
+{"ids": ["jknvr943kt"], "result": "{\"id\": \"jknvr943kt\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["tkihKT5Xlr6ky0cBrlkE"], "result": "{\"id\": \"tkihKT5Xlr6ky0cBrlkE\", \"substantive\": 15, \"yes\": [], \"unsure\": [\"sports_match\", \"subjective_resolution\", \"trader_influence\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["ojrhsZOkjk3M5n1rjbkC"], "result": "{\"id\": \"ojrhsZOkjk3M5n1rjbkC\", \"substantive\": 2, \"yes\": [\"constructed_game\", \"trader_influence\", \"status_quo_default\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["3uSGfHgMoMP54d7NMSdj"], "result": "{\"id\": \"3uSGfHgMoMP54d7NMSdj\", \"substantive\": 20, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["LIRyF1P26Q210vWUc1cq"], "result": "{\"id\": \"LIRyF1P26Q210vWUc1cq\", \"substantive\": 40, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["lB5fB5jopkPWHMZew7HR"], "result": "{\"id\": \"lB5fB5jopkPWHMZew7HR\", \"substantive\": 0, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["YBxYZJnm6g611nr3e0um"], "result": "{\"id\": \"YBxYZJnm6g611nr3e0um\", \"substantive\": 55, \"yes\": [\"other_asset_price\"], \"unsure\": []}", "cost": 0}
+{"ids": ["biD1gM1mHJ205mishzLo"], "result": "{\"id\": \"biD1gM1mHJ205mishzLo\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["y2zQPnMnyw5VdFiURfq6"], "result": "{\"id\": \"y2zQPnMnyw5VdFiURfq6\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["W6gfpaC69xiQv0gmkitI"], "result": "{\"id\": \"W6gfpaC69xiQv0gmkitI\", \"substantive\": 90, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["44nSoR1u80KhrXMKEZhY"], "result": "{\"id\": \"44nSoR1u80KhrXMKEZhY\", \"substantive\": 10, \"yes\": [\"direct_opinion\", \"creator_influence\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["kHF5pMG7xuSFcQEdUDcP"], "result": "{\"id\": \"kHF5pMG7xuSFcQEdUDcP\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["b8JbUc0fgB4kTRVSGEli"], "result": "{\"id\": \"b8JbUc0fgB4kTRVSGEli\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["YTxoqkftFwOKZUCp3fPV"], "result": "{\"id\": \"YTxoqkftFwOKZUCp3fPV\", \"substantive\": 0, \"yes\": [\"creator_influence\", \"subjective_resolution\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["ju9lt8d7k1"], "result": "{\"id\": \"ju9lt8d7k1\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["q4zfWRuZHvnkvH1xkv32"], "result": "{\"id\": \"q4zfWRuZHvnkvH1xkv32\", \"substantive\": 30, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["APCt8uEOd9"], "result": "{\"id\": \"APCt8uEOd9\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["qSXtLLkTZeCkGFHKA1Ff"], "result": "{\"id\": \"qSXtLLkTZeCkGFHKA1Ff\", \"substantive\": 80, \"yes\": [\"existing_fact\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["VDCg8xoWSoioVceHNNoN"], "result": "{\"id\": \"VDCg8xoWSoioVceHNNoN\", \"substantive\": 98, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["5pyipvyvnr"], "result": "{\"id\": \"5pyipvyvnr\", \"substantive\": 75, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["m5toOAEFEESryAZqWnQo"], "result": "{\"id\": \"m5toOAEFEESryAZqWnQo\", \"substantive\": 65, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["8sicivHdgHIO9QkkfNXM"], "result": "{\"id\": \"8sicivHdgHIO9QkkfNXM\", \"substantive\": 60, \"yes\": [\"existing_fact\", \"fermi_estimate\"], \"unsure\": [\"other_asset_price\"]}", "cost": 0}
+{"ids": ["ORuN85nnAU"], "result": "{\"id\": \"ORuN85nnAU\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"insider_knowable\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["hZIyq5yuNC"], "result": "{\"id\": \"hZIyq5yuNC\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"creator_influence\"], \"unsure\": [\"puzzle_or_math\"]}", "cost": 0}
+{"ids": ["xg6ViEmbk9gtlQfTASNC"], "result": "{\"id\": \"xg6ViEmbk9gtlQfTASNC\", \"substantive\": 90, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["0L981aL2uOI17I12f1hV"], "result": "{\"id\": \"0L981aL2uOI17I12f1hV\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["ptcvib2nu1"], "result": "{\"id\": \"ptcvib2nu1\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["F5Xfs29c0qMhn88zlkRZ"], "result": "{\"id\": \"F5Xfs29c0qMhn88zlkRZ\", \"substantive\": 2, \"yes\": [\"constructed_game\", \"insider_knowable\", \"creator_influence\", \"existing_fact\"], \"unsure\": [\"trader_influence\", \"platform_metric\"]}", "cost": 0}
+{"ids": ["cQ89nR05hZ"], "result": "{\"id\": \"cQ89nR05hZ\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["0RNfFw068QaYPZWeoC8O"], "result": "{\"id\": \"0RNfFw068QaYPZWeoC8O\", \"substantive\": 60, \"yes\": [\"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["t26AS2UAR2"], "result": "{\"id\": \"t26AS2UAR2\", \"substantive\": 98, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["Wc5pXvEGSfCZv7XMW993"], "result": "{\"id\": \"Wc5pXvEGSfCZv7XMW993\", \"substantive\": 10, \"yes\": [\"trader_influence\", \"status_quo_default\"], \"unsure\": [\"constructed_game\", \"creator_influence\"]}", "cost": 0}
+{"ids": ["uXhdLqjVO3yYtbwMb3JE"], "result": "{\"id\": \"uXhdLqjVO3yYtbwMb3JE\", \"substantive\": 20, \"yes\": [\"direct_opinion\", \"platform_metric\", \"trader_influence\", \"creator_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["jUCe5Y1zDMre6dtzDZux"], "result": "{\"id\": \"jUCe5Y1zDMre6dtzDZux\", \"substantive\": 60, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["5zfQeXiry60jyDePqQkC"], "result": "{\"id\": \"5zfQeXiry60jyDePqQkC\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["kYgDgsUkTB1MfF8SUxiK"], "result": "{\"id\": \"kYgDgsUkTB1MfF8SUxiK\", \"substantive\": 20, \"yes\": [\"direct_opinion\", \"trader_influence\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["5waW1BtzxFoATR0F1yTi"], "result": "{\"id\": \"5waW1BtzxFoATR0F1yTi\", \"substantive\": 40, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["0EVOQyEBz624ooYpOCfc"], "result": "{\"id\": \"0EVOQyEBz624ooYpOCfc\", \"substantive\": 97, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["kczaOFBqTzF52rxdeJZH"], "result": "{\"id\": \"kczaOFBqTzF52rxdeJZH\", \"substantive\": 90, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["MuB1V11BDoixilYmfPWx"], "result": "{\"id\": \"MuB1V11BDoixilYmfPWx\", \"substantive\": 75, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["YhYm1zP49D2kPDE12In4"], "result": "{\"id\": \"YhYm1zP49D2kPDE12In4\", \"substantive\": 1, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\"], \"unsure\": [\"creator_influence\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["WO3UCQ8SCDkaIJcKYFg7"], "result": "{\"id\": \"WO3UCQ8SCDkaIJcKYFg7\", \"substantive\": 95, \"yes\": [], \"unsure\": [\"existing_fact\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["hQ0vrLJ2saN9NVw2hNYU"], "result": "{\"id\": \"hQ0vrLJ2saN9NVw2hNYU\", \"substantive\": 70, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["LCqGYaBLA03Bqf19i2Wo"], "result": "{\"id\": \"LCqGYaBLA03Bqf19i2Wo\", \"substantive\": 85, \"yes\": [], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["I5ECpkIn9Wr793nl7nNy"], "result": "{\"id\": \"I5ECpkIn9Wr793nl7nNy\", \"substantive\": 20, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["4nuDHWVBZFzXkIL6ciZ4"], "result": "{\"id\": \"4nuDHWVBZFzXkIL6ciZ4\", \"substantive\": 0, \"yes\": [\"creator_influence\", \"constructed_game\"], \"unsure\": [\"trader_influence\", \"direct_opinion\"]}", "cost": 0}
+{"ids": ["OTK1IYzvmN9F2DsDPIdv"], "result": "{\"id\": \"OTK1IYzvmN9F2DsDPIdv\", \"substantive\": 0, \"yes\": [\"fixed_chance\"], \"unsure\": []}", "cost": 0}
+{"ids": ["VKqYQRUCvyAt2JfhC41i"], "result": "{\"id\": \"VKqYQRUCvyAt2JfhC41i\", \"substantive\": 40, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["hTXcuDdklirWXRvnHTJk"], "result": "{\"id\": \"hTXcuDdklirWXRvnHTJk\", \"substantive\": 80, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["0GKXoqTxXSlUODbrxEzR"], "result": "{\"id\": \"0GKXoqTxXSlUODbrxEzR\", \"substantive\": 3, \"yes\": [\"constructed_game\", \"trader_influence\", \"platform_metric\"], \"unsure\": []}", "cost": 0}
+{"ids": ["wasL6OabKnSkM9XqLgKS"], "result": "{\"id\": \"wasL6OabKnSkM9XqLgKS\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["5EuYpIoxvkH5YsCziHkE"], "result": "{\"id\": \"5EuYpIoxvkH5YsCziHkE\", \"substantive\": 30, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"creator_influence\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["s59ThphjPLk0jIRU3IbM"], "result": "{\"id\": \"s59ThphjPLk0jIRU3IbM\", \"substantive\": 50, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["slgp3cxdju"], "result": "{\"id\": \"slgp3cxdju\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["Ai9eC1p77AwU2UGamECl"], "result": "{\"id\": \"Ai9eC1p77AwU2UGamECl\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["eXyRgWXAb3GjncIaRO6I"], "result": "{\"id\": \"eXyRgWXAb3GjncIaRO6I\", \"substantive\": 20, \"yes\": [\"trader_influence\"], \"unsure\": [\"platform_metric\", \"creator_influence\"]}", "cost": 0}
+{"ids": ["sunZAgByldC6X08Yut09"], "result": "{\"id\": \"sunZAgByldC6X08Yut09\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["HFc7Z1mQRJs2UJldsSOn"], "result": "{\"id\": \"HFc7Z1mQRJs2UJldsSOn\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["HelkuSRo1TzDzzUDLtjR"], "result": "{\"id\": \"HelkuSRo1TzDzzUDLtjR\", \"substantive\": 25, \"yes\": [\"trader_influence\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["wU4gLqwveXI4rw53Ghi8"], "result": "{\"id\": \"wU4gLqwveXI4rw53Ghi8\", \"substantive\": 90, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["ev7dHUkQABhaL9rhmKcb"], "result": "{\"id\": \"ev7dHUkQABhaL9rhmKcb\", \"substantive\": 2, \"yes\": [\"creator_influence\", \"constructed_game\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["g0Z8I6lddp"], "result": "{\"id\": \"g0Z8I6lddp\", \"substantive\": 70, \"yes\": [\"existing_fact\"], \"unsure\": []}", "cost": 0}
+{"ids": ["rNRbnWEiXvkwstFI772V"], "result": "{\"id\": \"rNRbnWEiXvkwstFI772V\", \"substantive\": 85, \"yes\": [\"subjective_resolution\", \"status_quo_default\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["z5t9N2dSL0"], "result": "{\"id\": \"z5t9N2dSL0\", \"substantive\": 3, \"yes\": [\"creator_influence\", \"constructed_game\"], \"unsure\": []}", "cost": 0}
+{"ids": ["k9e26s5xECKC8mssR8um"], "result": "{\"id\": \"k9e26s5xECKC8mssR8um\", \"substantive\": 90, \"yes\": [\"scheduled_release\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["PKNYP424Lz0D7ubGxfch"], "result": "{\"id\": \"PKNYP424Lz0D7ubGxfch\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["Au9C6AOg9Z"], "result": "{\"id\": \"Au9C6AOg9Z\", \"substantive\": 50, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["DD6mevSi5Wkc9L5zSEDi"], "result": "{\"id\": \"DD6mevSi5Wkc9L5zSEDi\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["S66StzhbZDF3he1IJ7ul"], "result": "{\"id\": \"S66StzhbZDF3he1IJ7ul\", \"substantive\": 0, \"yes\": [\"trader_influence\", \"constructed_game\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["UUtCqt9u8q"], "result": "{\"id\": \"UUtCqt9u8q\", \"substantive\": 50, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["z20XzCZ4T0pTJ1KOimc5"], "result": "{\"id\": \"z20XzCZ4T0pTJ1KOimc5\", \"substantive\": 30, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["wZfnCkWjualvGBLcpTTp"], "result": "{\"id\": \"wZfnCkWjualvGBLcpTTp\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["sIzURdgg95"], "result": "{\"id\": \"sIzURdgg95\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"creator_influence\", \"insider_knowable\", \"constructed_game\", \"fixed_chance\"]}", "cost": 0}
+{"ids": ["OAiVVRA6HUK22zaLyFFr"], "result": "{\"id\": \"OAiVVRA6HUK22zaLyFFr\", \"substantive\": 90, \"yes\": [\"existing_fact\"], \"unsure\": [\"scheduled_release\"]}", "cost": 0}
+{"ids": ["rwQE4R6g4gCQP5iJeiz6"], "result": "{\"id\": \"rwQE4R6g4gCQP5iJeiz6\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["APyZg9tqs2"], "result": "{\"id\": \"APyZg9tqs2\", \"substantive\": 55, \"yes\": [], \"unsure\": [\"existing_fact\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["yuNXsWVFBW77Jl6orbL2"], "result": "{\"id\": \"yuNXsWVFBW77Jl6orbL2\", \"substantive\": 60, \"yes\": [], \"unsure\": []}", "cost": 0}
+{"ids": ["8OdugR6hRO"], "result": "{\"id\": \"8OdugR6hRO\", \"substantive\": 60, \"yes\": [\"existing_fact\", \"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["4bLm9qUI29gF3pL1Q3ur"], "result": "{\"id\": \"4bLm9qUI29gF3pL1Q3ur\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["BqEkAoBv3utodUjOmP9q"], "result": "{\"id\": \"BqEkAoBv3utodUjOmP9q\", \"substantive\": 10, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["GOcRH09phiFXd5GEiZ4D"], "result": "{\"id\": \"GOcRH09phiFXd5GEiZ4D\", \"substantive\": 80, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["Ac6gZQ4JcFMkwrz9u46k"], "result": "{\"id\": \"Ac6gZQ4JcFMkwrz9u46k\", \"substantive\": 65, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["rxy7jk59np"], "result": "{\"id\": \"rxy7jk59np\", \"substantive\": 45, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["AaZr2KnQYHGRVHzvKoHa"], "result": "{\"id\": \"AaZr2KnQYHGRVHzvKoHa\", \"substantive\": 80, \"yes\": [\"existing_fact\", \"insider_knowable\", \"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["lu0z4q2g2h"], "result": "{\"id\": \"lu0z4q2g2h\", \"substantive\": 60, \"yes\": [\"status_quo_default\", \"subjective_resolution\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["ilc621CAPjqWNxLxGQhd"], "result": "{\"id\": \"ilc621CAPjqWNxLxGQhd\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["yszZANNkB3hwAHhNDFli"], "result": "{\"id\": \"yszZANNkB3hwAHhNDFli\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["UncEbPUISVkzQA70WwOA"], "result": "{\"id\": \"UncEbPUISVkzQA70WwOA\", \"substantive\": 5, \"yes\": [\"constructed_game\", \"trader_influence\", \"status_quo_default\"], \"unsure\": [\"existing_fact\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["LHWaHIjg6WciHgAH8KCJ"], "result": "{\"id\": \"LHWaHIjg6WciHgAH8KCJ\", \"substantive\": 60, \"yes\": [\"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["qxw2x1200j"], "result": "{\"id\": \"qxw2x1200j\", \"substantive\": 20, \"yes\": [], \"unsure\": [\"fixed_chance\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["y6NworVQMRfBmggJC2Pq"], "result": "{\"id\": \"y6NworVQMRfBmggJC2Pq\", \"substantive\": 15, \"yes\": [\"subjective_resolution\", \"status_quo_default\"], \"unsure\": [\"trader_influence\", \"platform_metric\"]}", "cost": 0}
+{"ids": ["vxqrQBR19QquDKIpwXCm"], "result": "{\"id\": \"vxqrQBR19QquDKIpwXCm\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"creator_influence\"], \"unsure\": [\"puzzle_or_math\"]}", "cost": 0}
+{"ids": ["hfiVAGXOgNxAL7CIDR2K"], "result": "{\"id\": \"hfiVAGXOgNxAL7CIDR2K\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"direct_opinion\"]}", "cost": 0}
+{"ids": ["cuCuhscRzZ"], "result": "{\"id\": \"cuCuhscRzZ\", \"substantive\": 65, \"yes\": [\"existing_fact\"], \"unsure\": [\"insider_knowable\", \"creator_influence\"]}", "cost": 0}
+{"ids": ["NNLCAdp92n"], "result": "{\"id\": \"NNLCAdp92n\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["Lup0dt6tSI"], "result": "{\"id\": \"Lup0dt6tSI\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["AIZRgmelrUXrLzGWKAsd"], "result": "{\"id\": \"AIZRgmelrUXrLzGWKAsd\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["Zs2I2PcUqW8i4jyxZEEX"], "result": "{\"id\": \"Zs2I2PcUqW8i4jyxZEEX\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["6Eh9cEuOhz"], "result": "{\"id\": \"6Eh9cEuOhz\", \"substantive\": 55, \"yes\": [\"trader_influence\"], \"unsure\": [\"platform_metric\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["0m78jFaogezdl29r8qls"], "result": "{\"id\": \"0m78jFaogezdl29r8qls\", \"substantive\": 85, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["g6pAq01XiGljkv1WrMLL"], "result": "{\"id\": \"g6pAq01XiGljkv1WrMLL\", \"substantive\": 15, \"yes\": [\"trader_influence\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["sslw9f9fkx"], "result": "{\"id\": \"sslw9f9fkx\", \"substantive\": 50, \"yes\": [\"existing_fact\"], \"unsure\": []}", "cost": 0}
+{"ids": ["kLWDBvhI7uRl3FlAcAQH"], "result": "{\"id\": \"kLWDBvhI7uRl3FlAcAQH\", \"substantive\": 0, \"yes\": [\"constructed_game\", \"trader_influence\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["un6Ina8Qhhh2rQpQxP9A"], "result": "{\"id\": \"un6Ina8Qhhh2rQpQxP9A\", \"substantive\": 1, \"yes\": [\"subjective_resolution\", \"trader_influence\", \"constructed_game\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["w74P4yuHKFMuxGwWdC9K"], "result": "{\"id\": \"w74P4yuHKFMuxGwWdC9K\", \"substantive\": 3, \"yes\": [\"platform_metric\", \"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"direct_opinion\"]}", "cost": 0}
+{"ids": ["zn5gvVpcQlOreib8jl8B"], "result": "{\"id\": \"zn5gvVpcQlOreib8jl8B\", \"substantive\": 3, \"yes\": [\"creator_influence\", \"subjective_resolution\"], \"unsure\": [\"puzzle_or_math\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["UWkFSSEIa7xdBzxN7GR8"], "result": "{\"id\": \"UWkFSSEIa7xdBzxN7GR8\", \"substantive\": 20, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["Nosad4X6QBHyQLTO1Kz1"], "result": "{\"id\": \"Nosad4X6QBHyQLTO1Kz1\", \"substantive\": 5, \"yes\": [\"creator_influence\", \"status_quo_default\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["vDXXD9nn5KxZgjJqaqU4"], "result": "{\"id\": \"vDXXD9nn5KxZgjJqaqU4\", \"substantive\": 97, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["jE3PgqJWZ4RR20MgsG4e"], "result": "{\"id\": \"jE3PgqJWZ4RR20MgsG4e\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"direct_opinion\"]}", "cost": 0}
+{"ids": ["lqQuzsQQq6"], "result": "{\"id\": \"lqQuzsQQq6\", \"substantive\": 85, \"yes\": [\"insider_knowable\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["tobIElTFbmi818tRx8Wj"], "result": "{\"id\": \"tobIElTFbmi818tRx8Wj\", \"substantive\": 40, \"yes\": [], \"unsure\": []}", "cost": 0}
+{"ids": ["EhdhdqI9dh"], "result": "{\"id\": \"EhdhdqI9dh\", \"substantive\": 1, \"yes\": [\"creator_influence\", \"trader_influence\", \"constructed_game\", \"subjective_resolution\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["pfy6Dp5ACKb0MUbnIWwv"], "result": "{\"id\": \"pfy6Dp5ACKb0MUbnIWwv\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["0K5IhDJ2MZi36F8ZJcxm"], "result": "{\"id\": \"0K5IhDJ2MZi36F8ZJcxm\", \"substantive\": 0, \"yes\": [\"fixed_chance\"], \"unsure\": []}", "cost": 0}
+{"ids": ["lPcu3xdTM3e3uGTl7Q8f"], "result": "{\"id\": \"lPcu3xdTM3e3uGTl7Q8f\", \"substantive\": 3, \"yes\": [\"creator_influence\"], \"unsure\": [\"fixed_chance\", \"platform_metric\"]}", "cost": 0}
+{"ids": ["06uFuRQRinESzuf9Sgkg"], "result": "{\"id\": \"06uFuRQRinESzuf9Sgkg\", \"substantive\": 5, \"yes\": [\"trader_influence\"], \"unsure\": [\"platform_metric\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["k85pxgla0i"], "result": "{\"id\": \"k85pxgla0i\", \"substantive\": 97, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["pw88OMV2J6YwG6dGGaet"], "result": "{\"id\": \"pw88OMV2J6YwG6dGGaet\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["4kts7etgm3"], "result": "{\"id\": \"4kts7etgm3\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["2EzElh6t6n"], "result": "{\"id\": \"2EzElh6t6n\", \"substantive\": 50, \"yes\": [\"status_quo_default\"], \"unsure\": [\"sports_performance\", \"bookmaker_odds\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["KrY2LAuTfRPBNcOHyrKf"], "result": "{\"id\": \"KrY2LAuTfRPBNcOHyrKf\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"subjective_resolution\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["0c1xrZoqXiQYnYMniCVU"], "result": "{\"id\": \"0c1xrZoqXiQYnYMniCVU\", \"substantive\": 15, \"yes\": [], \"unsure\": [\"sports_match\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["Pz6VGNDZ43ciS9csHDKN"], "result": "{\"id\": \"Pz6VGNDZ43ciS9csHDKN\", \"substantive\": 15, \"yes\": [\"status_quo_default\"], \"unsure\": [\"sports_performance\"]}", "cost": 0}
+{"ids": ["G7d67FUH2jNRbzziH3c0"], "result": "{\"id\": \"G7d67FUH2jNRbzziH3c0\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["zrzmttrigg"], "result": "{\"id\": \"zrzmttrigg\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["d0dAh288A2"], "result": "{\"id\": \"d0dAh288A2\", \"substantive\": 60, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["uuhrS4W2oCw42CKLGwgF"], "result": "{\"id\": \"uuhrS4W2oCw42CKLGwgF\", \"substantive\": 55, \"yes\": [\"existing_fact\"], \"unsure\": [\"puzzle_or_math\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["EXrQ5WE3mUTA9cSmaQS0"], "result": "{\"id\": \"EXrQ5WE3mUTA9cSmaQS0\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["x0NVfYtVDIba9CpgWN5e"], "result": "{\"id\": \"x0NVfYtVDIba9CpgWN5e\", \"substantive\": 85, \"yes\": [\"status_quo_default\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["GbvTo6a8N4UQYYu81bDs"], "result": "{\"id\": \"GbvTo6a8N4UQYYu81bDs\", \"substantive\": 30, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"sports_performance\"]}", "cost": 0}
+{"ids": ["cQXKulaHsfO6lIvw0VUr"], "result": "{\"id\": \"cQXKulaHsfO6lIvw0VUr\", \"substantive\": 85, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["JehLSkpypDPTDnHpQg4w"], "result": "{\"id\": \"JehLSkpypDPTDnHpQg4w\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["L7l490BGWpIndIayEdQi"], "result": "{\"id\": \"L7l490BGWpIndIayEdQi\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"fixed_chance\", \"creator_influence\"]}", "cost": 0}
+{"ids": ["NSnAl2U56h"], "result": "{\"id\": \"NSnAl2U56h\", \"substantive\": 60, \"yes\": [\"sports_award\", \"bookmaker_odds\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["fBO75gFsPcXOCoyXEAxM"], "result": "{\"id\": \"fBO75gFsPcXOCoyXEAxM\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"creator_influence\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["PycLbIfsr13AorRaGShX"], "result": "{\"id\": \"PycLbIfsr13AorRaGShX\", \"substantive\": 97, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["HoSdnzJ0vafHpngICtPp"], "result": "{\"id\": \"HoSdnzJ0vafHpngICtPp\", \"substantive\": 55, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["9CL8QOSlIp"], "result": "{\"id\": \"9CL8QOSlIp\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["hD9GrCGwKN0ZpW8yIX6C"], "result": "{\"id\": \"hD9GrCGwKN0ZpW8yIX6C\", \"substantive\": 25, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["3dpYD17OixJ5AryXXjaZ"], "result": "{\"id\": \"3dpYD17OixJ5AryXXjaZ\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"insider_knowable\", \"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["lF70x7s4QsdoqmTUZqoV"], "result": "{\"id\": \"lF70x7s4QsdoqmTUZqoV\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["shNqAdEstg"], "result": "{\"id\": \"shNqAdEstg\", \"substantive\": 5, \"yes\": [\"trader_influence\", \"constructed_game\"], \"unsure\": [\"creator_influence\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["n7mg98w3b"], "result": "{\"id\": \"n7mg98w3b\", \"substantive\": 90, \"yes\": [\"existing_fact\"], \"unsure\": []}", "cost": 0}
+{"ids": ["pdCIU2fuuYTIWqXhw4Uw"], "result": "{\"id\": \"pdCIU2fuuYTIWqXhw4Uw\", \"substantive\": 20, \"yes\": [\"trader_influence\"], \"unsure\": [\"platform_metric\", \"direct_opinion\"]}", "cost": 0}
+{"ids": ["UMDwz4w1HsgPohZYCXtA"], "result": "{\"id\": \"UMDwz4w1HsgPohZYCXtA\", \"substantive\": 45, \"yes\": [], \"unsure\": []}", "cost": 0}
+{"ids": ["zKBB5KaqONWnB97OKQkG"], "result": "{\"id\": \"zKBB5KaqONWnB97OKQkG\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"constructed_game\", \"direct_opinion\"]}", "cost": 0}
+{"ids": ["de058ih7so"], "result": "{\"id\": \"de058ih7so\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["Z05C94eOTJv5amqXnn00"], "result": "{\"id\": \"Z05C94eOTJv5amqXnn00\", \"substantive\": 55, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["ipv2C3RQMte7jhztTxiU"], "result": "{\"id\": \"ipv2C3RQMte7jhztTxiU\", \"substantive\": 15, \"yes\": [\"insider_knowable\"], \"unsure\": [\"platform_metric\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["R1r6XZVUt6SYAJwaG3yb"], "result": "{\"id\": \"R1r6XZVUt6SYAJwaG3yb\", \"substantive\": 15, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["CqlC2MeEmWZpOsDoo8Ob"], "result": "{\"id\": \"CqlC2MeEmWZpOsDoo8Ob\", \"substantive\": 90, \"yes\": [], \"unsure\": [\"bookmaker_odds\"]}", "cost": 0}
+{"ids": ["22EUnqNSCh"], "result": "{\"id\": \"22EUnqNSCh\", \"substantive\": 50, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["CQR0Ashhcu"], "result": "{\"id\": \"CQR0Ashhcu\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["jWQDj82Mq9LeahHp6hIu"], "result": "{\"id\": \"jWQDj82Mq9LeahHp6hIu\", \"substantive\": 90, \"yes\": [\"existing_fact\"], \"unsure\": []}", "cost": 0}
+{"ids": ["oode2y8ov1"], "result": "{\"id\": \"oode2y8ov1\", \"substantive\": 80, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["j073X05JLlUbUo1aXlHK"], "result": "{\"id\": \"j073X05JLlUbUo1aXlHK\", \"substantive\": 30, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["QjqFK8KAfdice3uOMOtO"], "result": "{\"id\": \"QjqFK8KAfdice3uOMOtO\", \"substantive\": 5, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["v1tGPyNiqrpJKSGEWbdG"], "result": "{\"id\": \"v1tGPyNiqrpJKSGEWbdG\", \"substantive\": 90, \"yes\": [\"existing_fact\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["m1affoaic5"], "result": "{\"id\": \"m1affoaic5\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["cWeV98iTw8KXbG96XcrX"], "result": "{\"id\": \"cWeV98iTw8KXbG96XcrX\", \"substantive\": 20, \"yes\": [], \"unsure\": [\"status_quo_default\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["kNkWR8MoHtTjOBx9DepY"], "result": "{\"id\": \"kNkWR8MoHtTjOBx9DepY\", \"substantive\": 40, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["lnGRpB9UKsZ4qsF4sBrI"], "result": "{\"id\": \"lnGRpB9UKsZ4qsF4sBrI\", \"substantive\": 40, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["rmnkwsGfspE7iIszz3lK"], "result": "{\"id\": \"rmnkwsGfspE7iIszz3lK\", \"substantive\": 95, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["f4a48ZpiwLPmPzLTN4Jx"], "result": "{\"id\": \"f4a48ZpiwLPmPzLTN4Jx\", \"substantive\": 40, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["ydAIhc5ctN"], "result": "{\"id\": \"ydAIhc5ctN\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["e930wuugoi"], "result": "{\"id\": \"e930wuugoi\", \"substantive\": 98, \"yes\": [\"status_quo_default\"], \"unsure\": [\"bookmaker_odds\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["HDZ137x2KzqiOYXGPRPs"], "result": "{\"id\": \"HDZ137x2KzqiOYXGPRPs\", \"substantive\": 70, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["4a7EuO68Px2zK2Mx1rhv"], "result": "{\"id\": \"4a7EuO68Px2zK2Mx1rhv\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["049XQAHRLMSonGI1q2a2"], "result": "{\"id\": \"049XQAHRLMSonGI1q2a2\", \"substantive\": 15, \"yes\": [\"direct_opinion\", \"trader_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["PvL6KM3wLAF2nr8thF0o"], "result": "{\"id\": \"PvL6KM3wLAF2nr8thF0o\", \"substantive\": 5, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["WsQEDOhnpOXXcZRDF6Ab"], "result": "{\"id\": \"WsQEDOhnpOXXcZRDF6Ab\", \"substantive\": 15, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"platform_metric\"]}", "cost": 0}
+{"ids": ["2bnJQknK546XBWNeJvOB"], "result": "{\"id\": \"2bnJQknK546XBWNeJvOB\", \"substantive\": 15, \"yes\": [\"creator_influence\", \"status_quo_default\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["actqQF0IpuJnmi3sFUnE"], "result": "{\"id\": \"actqQF0IpuJnmi3sFUnE\", \"substantive\": 3, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["SRtyUYfP0KIS8frjJisl"], "result": "{\"id\": \"SRtyUYfP0KIS8frjJisl\", \"substantive\": 55, \"yes\": [\"existing_fact\"], \"unsure\": []}", "cost": 0}
+{"ids": ["9SSquC8Rz0"], "result": "{\"id\": \"9SSquC8Rz0\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": [\"subjective_resolution\", \"creator_influence\"]}", "cost": 0}
+{"ids": ["lZe7tjDyJetXOWywe2eJ"], "result": "{\"id\": \"lZe7tjDyJetXOWywe2eJ\", \"substantive\": 60, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["p0spPd2ZhO"], "result": "{\"id\": \"p0spPd2ZhO\", \"substantive\": 1, \"yes\": [\"creator_influence\", \"trader_influence\", \"constructed_game\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["XExkN1Xd4u2QJiNfibrv"], "result": "{\"id\": \"XExkN1Xd4u2QJiNfibrv\", \"substantive\": 15, \"yes\": [\"direct_opinion\", \"trader_influence\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["8cglZP0EZ2"], "result": "{\"id\": \"8cglZP0EZ2\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["zfAUchDDEeKFVG44iHXq"], "result": "{\"id\": \"zfAUchDDEeKFVG44iHXq\", \"substantive\": 15, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["qRquEsQUgn"], "result": "{\"id\": \"qRquEsQUgn\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["L7VTJrulyS7q61x7cebo"], "result": "{\"id\": \"L7VTJrulyS7q61x7cebo\", \"substantive\": 0, \"yes\": [\"creator_influence\"], \"unsure\": [\"subjective_resolution\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["YfuhQi6VgSg0W0oiYocP"], "result": "{\"id\": \"YfuhQi6VgSg0W0oiYocP\", \"substantive\": 0, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\", \"puzzle_or_math\"]}", "cost": 0}
+{"ids": ["As96c2F3cJ8yqihyUZGC"], "result": "{\"id\": \"As96c2F3cJ8yqihyUZGC\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["9YOrg1g7mJr28sy0KGoV"], "result": "{\"id\": \"9YOrg1g7mJr28sy0KGoV\", \"substantive\": 5, \"yes\": [\"platform_metric\", \"trader_influence\", \"constructed_game\", \"creator_influence\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["8PZcZnZcst"], "result": "{\"id\": \"8PZcZnZcst\", \"substantive\": 5, \"yes\": [\"trader_influence\"], \"unsure\": [\"constructed_game\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["6t3h9htWZByW7r54slPf"], "result": "{\"id\": \"6t3h9htWZByW7r54slPf\", \"substantive\": 65, \"yes\": [], \"unsure\": []}", "cost": 0}
+{"ids": ["RZ8kVhTe69mUmOgicjt4"], "result": "{\"id\": \"RZ8kVhTe69mUmOgicjt4\", \"substantive\": 95, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["upM6WcuwygkwUmy3aQfd"], "result": "{\"id\": \"upM6WcuwygkwUmy3aQfd\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["8AUNz8lzs6"], "result": "{\"id\": \"8AUNz8lzs6\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["258z3BXNjfyDLUIkWSNp"], "result": "{\"id\": \"258z3BXNjfyDLUIkWSNp\", \"substantive\": 0, \"yes\": [\"creator_influence\", \"constructed_game\"], \"unsure\": [\"puzzle_or_math\"]}", "cost": 0}
+{"ids": ["cS1hm4l05vICaQeLfBoE"], "result": "{\"id\": \"cS1hm4l05vICaQeLfBoE\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["R0gcZ8NR8N"], "result": "{\"id\": \"R0gcZ8NR8N\", \"substantive\": 25, \"yes\": [\"trader_influence\", \"subjective_resolution\", \"creator_influence\"], \"unsure\": [\"existing_fact\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["qk6cwzbftl"], "result": "{\"id\": \"qk6cwzbftl\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["1a8OtbUEs2Nks9CVIfAu"], "result": "{\"id\": \"1a8OtbUEs2Nks9CVIfAu\", \"substantive\": 55, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["tUqyLRsupA"], "result": "{\"id\": \"tUqyLRsupA\", \"substantive\": 3, \"yes\": [\"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"platform_metric\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["Z10nr9kIjiVtSqZKz7fN"], "result": "{\"id\": \"Z10nr9kIjiVtSqZKz7fN\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["3ZWLlF7nx5Ok0O9tdUb8"], "result": "{\"id\": \"3ZWLlF7nx5Ok0O9tdUb8\", \"substantive\": 80, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["BgtQ15AtF9CaPiDvAzL8"], "result": "{\"id\": \"BgtQ15AtF9CaPiDvAzL8\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["cOOXZKtQDUl5MsqQTx9L"], "result": "{\"id\": \"cOOXZKtQDUl5MsqQTx9L\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["u53uS73lODqL6RtGNd76"], "result": "{\"id\": \"u53uS73lODqL6RtGNd76\", \"substantive\": 1, \"yes\": [\"constructed_game\", \"trader_influence\", \"subjective_resolution\", \"platform_metric\", \"creator_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["pNFdECnIWJSmhbTdODdf"], "result": "{\"id\": \"pNFdECnIWJSmhbTdODdf\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["K2Gdb697K6ZJz6w87Yu9"], "result": "{\"id\": \"K2Gdb697K6ZJz6w87Yu9\", \"substantive\": 60, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["YoVxoJjOFlDIhCcuSPzh"], "result": "{\"id\": \"YoVxoJjOFlDIhCcuSPzh\", \"substantive\": 50, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["jSrvgiW91BlDwjYEhK7Y"], "result": "{\"id\": \"jSrvgiW91BlDwjYEhK7Y\", \"substantive\": 5, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"creator_influence\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["Cd6GWDXg7hwpwWVMOdra"], "result": "{\"id\": \"Cd6GWDXg7hwpwWVMOdra\", \"substantive\": 97, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["AnOh56nOQz"], "result": "{\"id\": \"AnOh56nOQz\", \"substantive\": 35, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["C4afHNxz8jVC6FxP2Q51"], "result": "{\"id\": \"C4afHNxz8jVC6FxP2Q51\", \"substantive\": 80, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["X2D5r6vv3KSp6Q6Kd3ry"], "result": "{\"id\": \"X2D5r6vv3KSp6Q6Kd3ry\", \"substantive\": 50, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["vHDDnTWdSKlNnmzNDZDy"], "result": "{\"id\": \"vHDDnTWdSKlNnmzNDZDy\", \"substantive\": 50, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["wxloagcyfr"], "result": "{\"id\": \"wxloagcyfr\", \"substantive\": 55, \"yes\": [\"existing_fact\", \"insider_knowable\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["zRFlhtfNCuCFdYfLSBm9"], "result": "{\"id\": \"zRFlhtfNCuCFdYfLSBm9\", \"substantive\": 2, \"yes\": [\"platform_metric\", \"creator_influence\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["S9qc0S5OUP"], "result": "{\"id\": \"S9qc0S5OUP\", \"substantive\": 30, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["hVhkD9RyTtVreHkwzf8t"], "result": "{\"id\": \"hVhkD9RyTtVreHkwzf8t\", \"substantive\": 0, \"yes\": [\"constructed_game\", \"creator_influence\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["mrISHlP5VefaAOdQJQsS"], "result": "{\"id\": \"mrISHlP5VefaAOdQJQsS\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"direct_opinion\"]}", "cost": 0}
+{"ids": ["3j63k1thnh"], "result": "{\"id\": \"3j63k1thnh\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["y2PznC59nu"], "result": "{\"id\": \"y2PznC59nu\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["t5S68dZI6h"], "result": "{\"id\": \"t5S68dZI6h\", \"substantive\": 30, \"yes\": [\"existing_fact\"], \"unsure\": []}", "cost": 0}
+{"ids": ["idMXqTbaiIsl6po4eEPe"], "result": "{\"id\": \"idMXqTbaiIsl6po4eEPe\", \"substantive\": 75, \"yes\": [\"existing_fact\"], \"unsure\": []}", "cost": 0}
+{"ids": ["d5SYLWAzILxDDCffJ05i"], "result": "{\"id\": \"d5SYLWAzILxDDCffJ05i\", \"substantive\": 92, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["t9ZU5UtqOA"], "result": "{\"id\": \"t9ZU5UtqOA\", \"substantive\": 85, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["mriM0HjibCLJSd6MDPLA"], "result": "{\"id\": \"mriM0HjibCLJSd6MDPLA\", \"substantive\": 0, \"yes\": [\"constructed_game\", \"trader_influence\"], \"unsure\": [\"platform_metric\", \"creator_influence\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["kpbILFhMVpNtGPbPF6b7"], "result": "{\"id\": \"kpbILFhMVpNtGPbPF6b7\", \"substantive\": 1, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["xjxMyBj18K0xhn92iqaI"], "result": "{\"id\": \"xjxMyBj18K0xhn92iqaI\", \"substantive\": 97, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["RVpr8KhDmGD4UNtNS68u"], "result": "{\"id\": \"RVpr8KhDmGD4UNtNS68u\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"creator_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["dOnQ8cZPIh"], "result": "{\"id\": \"dOnQ8cZPIh\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["N7o4TYXWrT4rHYVwidS7"], "result": "{\"id\": \"N7o4TYXWrT4rHYVwidS7\", \"substantive\": 55, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["uYOjjJ0Z7zQWytvSccW0"], "result": "{\"id\": \"uYOjjJ0Z7zQWytvSccW0\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"creator_influence\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["4DkyQrO9VmyTdblFCvhN"], "result": "{\"id\": \"4DkyQrO9VmyTdblFCvhN\", \"substantive\": 85, \"yes\": [], \"unsure\": [\"bookmaker_odds\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["sInIOO2IEy"], "result": "{\"id\": \"sInIOO2IEy\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["SJW9Df5s92mdkGzDuVww"], "result": "{\"id\": \"SJW9Df5s92mdkGzDuVww\", \"substantive\": 5, \"yes\": [\"platform_metric\", \"insider_knowable\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["wy1zNKHzKY3bvWNTbJFF"], "result": "{\"id\": \"wy1zNKHzKY3bvWNTbJFF\", \"substantive\": 10, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["PPn82tAEZO"], "result": "{\"id\": \"PPn82tAEZO\", \"substantive\": 20, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["fyUEcuhuTLXRvgV2qgxg"], "result": "{\"id\": \"fyUEcuhuTLXRvgV2qgxg\", \"substantive\": 30, \"yes\": [\"direct_opinion\", \"platform_metric\", \"trader_influence\", \"subjective_resolution\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["4xous5n6v9"], "result": "{\"id\": \"4xous5n6v9\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["qFDtth5pxeDjO5hm4HVx"], "result": "{\"id\": \"qFDtth5pxeDjO5hm4HVx\", \"substantive\": 0, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["domlty70f7"], "result": "{\"id\": \"domlty70f7\", \"substantive\": 60, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["GJTLnS8ItArmLg6tZF6z"], "result": "{\"id\": \"GJTLnS8ItArmLg6tZF6z\", \"substantive\": 5, \"yes\": [\"trader_influence\", \"creator_influence\"], \"unsure\": [\"platform_metric\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["tQdczQS62Z"], "result": "{\"id\": \"tQdczQS62Z\", \"substantive\": 65, \"yes\": [\"existing_fact\"], \"unsure\": [\"insider_knowable\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["ZNlZamMgj5Grfyxp4y0u"], "result": "{\"id\": \"ZNlZamMgj5Grfyxp4y0u\", \"substantive\": 15, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["Mgf9Mu0VjgUxAurmRWSr"], "result": "{\"id\": \"Mgf9Mu0VjgUxAurmRWSr\", \"substantive\": 1, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["U8hlH1DzGlFI3HkGePXd"], "result": "{\"id\": \"U8hlH1DzGlFI3HkGePXd\", \"substantive\": 5, \"yes\": [\"creator_influence\", \"subjective_resolution\", \"status_quo_default\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["xaH0uCzvu76Ezlalba5g"], "result": "{\"id\": \"xaH0uCzvu76Ezlalba5g\", \"substantive\": 5, \"yes\": [\"constructed_game\", \"trader_influence\"], \"unsure\": [\"sports_match\"]}", "cost": 0}
+{"ids": ["eZBxSTEd1g0V668OU7sg"], "result": "{\"id\": \"eZBxSTEd1g0V668OU7sg\", \"substantive\": 70, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["oZfcmu6CPEXMFI69aO21"], "result": "{\"id\": \"oZfcmu6CPEXMFI69aO21\", \"substantive\": 5, \"yes\": [\"platform_metric\", \"insider_knowable\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["ECUhclgczZ"], "result": "{\"id\": \"ECUhclgczZ\", \"substantive\": 55, \"yes\": [\"existing_fact\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["oRRVlkqAezBCj1g6vhd1"], "result": "{\"id\": \"oRRVlkqAezBCj1g6vhd1\", \"substantive\": 45, \"yes\": [\"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["9igvlzPilEWaDQc93cqW"], "result": "{\"id\": \"9igvlzPilEWaDQc93cqW\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["NVWZP2U7aYlLhiEGNDxK"], "result": "{\"id\": \"NVWZP2U7aYlLhiEGNDxK\", \"substantive\": 95, \"yes\": [\"existing_fact\"], \"unsure\": [\"insider_knowable\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["HaOYaADlqeaCSHD5K7fq"], "result": "{\"id\": \"HaOYaADlqeaCSHD5K7fq\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"creator_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["lhqGgAv8q9NQSmfmwZpD"], "result": "{\"id\": \"lhqGgAv8q9NQSmfmwZpD\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["lnL3nH47WQvADw1NNTLO"], "result": "{\"id\": \"lnL3nH47WQvADw1NNTLO\", \"substantive\": 90, \"yes\": [], \"unsure\": [\"bookmaker_odds\"]}", "cost": 0}
+{"ids": ["p5FP5v0CDErIc2ISNNrv"], "result": "{\"id\": \"p5FP5v0CDErIc2ISNNrv\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["9LgJjSIMk1MzhxyLU2sJ"], "result": "{\"id\": \"9LgJjSIMk1MzhxyLU2sJ\", \"substantive\": 45, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["X4j0Ko8VEs1YraGO1HZY"], "result": "{\"id\": \"X4j0Ko8VEs1YraGO1HZY\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["vNy40Cra77ATt428OjTD"], "result": "{\"id\": \"vNy40Cra77ATt428OjTD\", \"substantive\": 30, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"creator_influence\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["ReDMih4EadU3NCyBIERs"], "result": "{\"id\": \"ReDMih4EadU3NCyBIERs\", \"substantive\": 95, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["L9l81GorfBKEJPwMgnFf"], "result": "{\"id\": \"L9l81GorfBKEJPwMgnFf\", \"substantive\": 65, \"yes\": [], \"unsure\": [\"creator_influence\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["poPdY6OnxvP5iwqOOzSm"], "result": "{\"id\": \"poPdY6OnxvP5iwqOOzSm\", \"substantive\": 10, \"yes\": [\"platform_metric\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["yaka9zRiAGqcWPMlSd7u"], "result": "{\"id\": \"yaka9zRiAGqcWPMlSd7u\", \"substantive\": 97, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["I62VOmOXAXhf3Jk4iFmm"], "result": "{\"id\": \"I62VOmOXAXhf3Jk4iFmm\", \"substantive\": 1, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["fpqbtDZNpGT59wTeJByi"], "result": "{\"id\": \"fpqbtDZNpGT59wTeJByi\", \"substantive\": 50, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["vbWhe4yunuTAALN5mUIE"], "result": "{\"id\": \"vbWhe4yunuTAALN5mUIE\", \"substantive\": 30, \"yes\": [\"platform_metric\", \"trader_influence\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["Ql9HiQnZapO2aKQFkYAD"], "result": "{\"id\": \"Ql9HiQnZapO2aKQFkYAD\", \"substantive\": 0, \"yes\": [\"creator_influence\", \"constructed_game\"], \"unsure\": []}", "cost": 0}
+{"ids": ["BOoIX7lszJoPnLyqfjoH"], "result": "{\"id\": \"BOoIX7lszJoPnLyqfjoH\", \"substantive\": 97, \"yes\": [\"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["ey7wuaXf2qZmUUMVQB2J"], "result": "{\"id\": \"ey7wuaXf2qZmUUMVQB2J\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["MinudrGJZ57obJ0yPxiA"], "result": "{\"id\": \"MinudrGJZ57obJ0yPxiA\", \"substantive\": 40, \"yes\": [\"status_quo_default\"], \"unsure\": [\"speech_or_posts\"]}", "cost": 0}
+{"ids": ["V5IHNglgzg59kdVu2CEz"], "result": "{\"id\": \"V5IHNglgzg59kdVu2CEz\", \"substantive\": 70, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["zK7hiwUTwp9DkA8R9ntY"], "result": "{\"id\": \"zK7hiwUTwp9DkA8R9ntY\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["ocRU79dDp6xBug3aEBb1"], "result": "{\"id\": \"ocRU79dDp6xBug3aEBb1\", \"substantive\": 75, \"yes\": [\"insider_knowable\"], \"unsure\": [\"existing_fact\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["luve7exngz"], "result": "{\"id\": \"luve7exngz\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["fjh3yJMPF2RG34V2yEIq"], "result": "{\"id\": \"fjh3yJMPF2RG34V2yEIq\", \"substantive\": 50, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["JAd5hYfInZxGkfnwPu9U"], "result": "{\"id\": \"JAd5hYfInZxGkfnwPu9U\", \"substantive\": 55, \"yes\": [\"trader_influence\", \"status_quo_default\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["B42mUENF659zbAcBWyIg"], "result": "{\"id\": \"B42mUENF659zbAcBWyIg\", \"substantive\": 1, \"yes\": [\"creator_influence\", \"constructed_game\", \"insider_knowable\"], \"unsure\": [\"fixed_chance\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["W0Jrx9FQ46VMrjPBWEul"], "result": "{\"id\": \"W0Jrx9FQ46VMrjPBWEul\", \"substantive\": 40, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["q9Zt2OqAAl"], "result": "{\"id\": \"q9Zt2OqAAl\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"scheduled_release\"]}", "cost": 0}
+{"ids": ["UAAPC382xQz7J4UQHNod"], "result": "{\"id\": \"UAAPC382xQz7J4UQHNod\", \"substantive\": 98, \"yes\": [\"status_quo_default\"], \"unsure\": [\"bookmaker_odds\"]}", "cost": 0}
+{"ids": ["ygnCn6nOS9"], "result": "{\"id\": \"ygnCn6nOS9\", \"substantive\": 1, \"yes\": [], \"unsure\": [\"creator_influence\", \"subjective_resolution\", \"constructed_game\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["OyfLUuXyy3niqP1tWlGH"], "result": "{\"id\": \"OyfLUuXyy3niqP1tWlGH\", \"substantive\": 30, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["ShnNgu8s5P"], "result": "{\"id\": \"ShnNgu8s5P\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"creator_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["kkFN1tl0fKOVxNfQMzjs"], "result": "{\"id\": \"kkFN1tl0fKOVxNfQMzjs\", \"substantive\": 0, \"yes\": [\"fixed_chance\"], \"unsure\": []}", "cost": 0}
+{"ids": ["ESN0Pd580Z"], "result": "{\"id\": \"ESN0Pd580Z\", \"substantive\": 65, \"yes\": [], \"unsure\": [\"crypto_price\"]}", "cost": 0}
+{"ids": ["AqnL2qSQqN"], "result": "{\"id\": \"AqnL2qSQqN\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["AjuR0qYGTkeEFRUzNIp6"], "result": "{\"id\": \"AjuR0qYGTkeEFRUzNIp6\", \"substantive\": 90, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["LcQ8OnEEtO"], "result": "{\"id\": \"LcQ8OnEEtO\", \"substantive\": 35, \"yes\": [\"existing_fact\", \"insider_knowable\", \"status_quo_default\"], \"unsure\": [\"creator_influence\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["mjZ7gkW4uTO29izKNm84"], "result": "{\"id\": \"mjZ7gkW4uTO29izKNm84\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["5tpS8thqzU"], "result": "{\"id\": \"5tpS8thqzU\", \"substantive\": 1, \"yes\": [], \"unsure\": [\"creator_influence\", \"subjective_resolution\", \"constructed_game\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["YQbhcU0ex7PP5U5hs2Hn"], "result": "{\"id\": \"YQbhcU0ex7PP5U5hs2Hn\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["AFnwDMUjeWqbAA8Fh4pn"], "result": "{\"id\": \"AFnwDMUjeWqbAA8Fh4pn\", \"substantive\": 10, \"yes\": [], \"unsure\": [\"constructed_game\", \"trader_influence\", \"platform_metric\"]}", "cost": 0}
+{"ids": ["GNTGl45GiKoCazc2ff9X"], "result": "{\"id\": \"GNTGl45GiKoCazc2ff9X\", \"substantive\": 0, \"yes\": [\"creator_influence\", \"subjective_resolution\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["3yAQFkDIwQMZVdPr6UWH"], "result": "{\"id\": \"3yAQFkDIwQMZVdPr6UWH\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["auiUqwzysJYgdy24xIf3"], "result": "{\"id\": \"auiUqwzysJYgdy24xIf3\", \"substantive\": 10, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["j8OZxOzhPPkqih5hdIUY"], "result": "{\"id\": \"j8OZxOzhPPkqih5hdIUY\", \"substantive\": 60, \"yes\": [\"trader_influence\"], \"unsure\": [\"existing_fact\", \"direct_opinion\", \"platform_metric\"]}", "cost": 0}
+{"ids": ["exbsVeBUTRwHUehhNKAK"], "result": "{\"id\": \"exbsVeBUTRwHUehhNKAK\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["n2HFF73R2qcXBc9YhoyT"], "result": "{\"id\": \"n2HFF73R2qcXBc9YhoyT\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["5o2LeEaR7jJBvNWxHE2X"], "result": "{\"id\": \"5o2LeEaR7jJBvNWxHE2X\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["2mpd1pnsFS7L5jPhoyTY"], "result": "{\"id\": \"2mpd1pnsFS7L5jPhoyTY\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"puzzle_or_math\"]}", "cost": 0}
+{"ids": ["gI6ttMdo7baij6oGoROm"], "result": "{\"id\": \"gI6ttMdo7baij6oGoROm\", \"substantive\": 30, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["geCYaDUaAKhQXdBUdcQr"], "result": "{\"id\": \"geCYaDUaAKhQXdBUdcQr\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\", \"subjective_resolution\", \"creator_influence\", \"puzzle_or_math\"]}", "cost": 0}
+{"ids": ["ltZCuZhzNS"], "result": "{\"id\": \"ltZCuZhzNS\", \"substantive\": 40, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["yz9tWV4MnjviOXBQ4QLO"], "result": "{\"id\": \"yz9tWV4MnjviOXBQ4QLO\", \"substantive\": 97, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["eKM6MKzjQybVZmEl0VhG"], "result": "{\"id\": \"eKM6MKzjQybVZmEl0VhG\", \"substantive\": 0, \"yes\": [\"creator_influence\"], \"unsure\": [\"subjective_resolution\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["niVbua4JWJv208J62681"], "result": "{\"id\": \"niVbua4JWJv208J62681\", \"substantive\": 45, \"yes\": [], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["a0Xunwa5IDVijC45cjKd"], "result": "{\"id\": \"a0Xunwa5IDVijC45cjKd\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["arnda0QUkbLZNBtJdjAJ"], "result": "{\"id\": \"arnda0QUkbLZNBtJdjAJ\", \"substantive\": 10, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["dq036q06gp"], "result": "{\"id\": \"dq036q06gp\", \"substantive\": 15, \"yes\": [\"trader_influence\"], \"unsure\": [\"creator_influence\", \"constructed_game\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["Uyg5yAZnng"], "result": "{\"id\": \"Uyg5yAZnng\", \"substantive\": 35, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["DHGmnnTw7Zf2LuLgyLJE"], "result": "{\"id\": \"DHGmnnTw7Zf2LuLgyLJE\", \"substantive\": 40, \"yes\": [\"subjective_resolution\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["WYlaWtavxx66rJ2uiHMc"], "result": "{\"id\": \"WYlaWtavxx66rJ2uiHMc\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["yMMvM0Lca0msRAdeuACB"], "result": "{\"id\": \"yMMvM0Lca0msRAdeuACB\", \"substantive\": 0, \"yes\": [\"creator_influence\", \"subjective_resolution\", \"trader_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["tensyhhn9h"], "result": "{\"id\": \"tensyhhn9h\", \"substantive\": 35, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["oavv6awe2m"], "result": "{\"id\": \"oavv6awe2m\", \"substantive\": 40, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["eYFRaxXGZpYW6o5XbzHB"], "result": "{\"id\": \"eYFRaxXGZpYW6o5XbzHB\", \"substantive\": 55, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["l7pxDWfGbjG7OZU6GFRh"], "result": "{\"id\": \"l7pxDWfGbjG7OZU6GFRh\", \"substantive\": 1, \"yes\": [], \"unsure\": [\"creator_influence\", \"subjective_resolution\", \"constructed_game\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["12hofRl39Iny4scInswf"], "result": "{\"id\": \"12hofRl39Iny4scInswf\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["aLFgWqke1h3jLWexQL5V"], "result": "{\"id\": \"aLFgWqke1h3jLWexQL5V\", \"substantive\": 0, \"yes\": [\"creator_influence\", \"subjective_resolution\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["EEn9sp8c0P"], "result": "{\"id\": \"EEn9sp8c0P\", \"substantive\": 3, \"yes\": [\"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"platform_metric\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["AFp17AdWm4ZbJE63ZsUd"], "result": "{\"id\": \"AFp17AdWm4ZbJE63ZsUd\", \"substantive\": 5, \"yes\": [\"constructed_game\"], \"unsure\": [\"creator_influence\", \"trader_influence\", \"platform_metric\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["RF63QV6vcZGI9AsjHiUj"], "result": "{\"id\": \"RF63QV6vcZGI9AsjHiUj\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["NzdPUhSpLu"], "result": "{\"id\": \"NzdPUhSpLu\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["rttdslqf0a"], "result": "{\"id\": \"rttdslqf0a\", \"substantive\": 70, \"yes\": [\"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["4J1v0JBvfraa73qsYcKI"], "result": "{\"id\": \"4J1v0JBvfraa73qsYcKI\", \"substantive\": 15, \"yes\": [], \"unsure\": []}", "cost": 0}
+{"ids": ["xpVDFOGDTJ1uYmCtwWLI"], "result": "{\"id\": \"xpVDFOGDTJ1uYmCtwWLI\", \"substantive\": 0, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["OLllKdTBGjmllOKhM3uO"], "result": "{\"id\": \"OLllKdTBGjmllOKhM3uO\", \"substantive\": 0, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["qFknV95weWgszJRoBhQH"], "result": "{\"id\": \"qFknV95weWgszJRoBhQH\", \"substantive\": 20, \"yes\": [\"existing_fact\", \"insider_knowable\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["26ct6qsIZg"], "result": "{\"id\": \"26ct6qsIZg\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["aGuUnVmxlUTjcHoWxadH"], "result": "{\"id\": \"aGuUnVmxlUTjcHoWxadH\", \"substantive\": 0, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["db9rifB1RJKAWA8fA8KI"], "result": "{\"id\": \"db9rifB1RJKAWA8fA8KI\", \"substantive\": 75, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["m3xJUHjPGl6aNx9qKoO0"], "result": "{\"id\": \"m3xJUHjPGl6aNx9qKoO0\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["Jw3WbMiKYYuBbaNj5zTE"], "result": "{\"id\": \"Jw3WbMiKYYuBbaNj5zTE\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"direct_opinion\"]}", "cost": 0}
+{"ids": ["37nwahZJguzAkrQlVm31"], "result": "{\"id\": \"37nwahZJguzAkrQlVm31\", \"substantive\": 2, \"yes\": [\"constructed_game\", \"trader_influence\", \"creator_influence\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"puzzle_or_math\"]}", "cost": 0}
+{"ids": ["hDTcgS1uEOFRir08F8eY"], "result": "{\"id\": \"hDTcgS1uEOFRir08F8eY\", \"substantive\": 40, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"trader_influence\"]}", "cost": 0}
+{"ids": ["ffdd0mkdsp"], "result": "{\"id\": \"ffdd0mkdsp\", \"substantive\": 45, \"yes\": [\"insider_knowable\", \"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["4UijB9CPSMl9uWGXaccj"], "result": "{\"id\": \"4UijB9CPSMl9uWGXaccj\", \"substantive\": 25, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["mvmcRNkpMn68JxAiaVaA"], "result": "{\"id\": \"mvmcRNkpMn68JxAiaVaA\", \"substantive\": 1, \"yes\": [\"creator_influence\", \"constructed_game\", \"insider_knowable\"], \"unsure\": [\"fixed_chance\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["blja02o9uy"], "result": "{\"id\": \"blja02o9uy\", \"substantive\": 80, \"yes\": [\"weather_measurement\", \"existing_fact\"], \"unsure\": [\"scheduled_release\"]}", "cost": 0}
+{"ids": ["i69pMo2K0n6ixtKgh02P"], "result": "{\"id\": \"i69pMo2K0n6ixtKgh02P\", \"substantive\": 85, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["bHDE0TPgGbQ4cu9iv38M"], "result": "{\"id\": \"bHDE0TPgGbQ4cu9iv38M\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["3VMyQYDJbCbyYjFDVIal"], "result": "{\"id\": \"3VMyQYDJbCbyYjFDVIal\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["XPKxLBgQV3uzMGePBcWw"], "result": "{\"id\": \"XPKxLBgQV3uzMGePBcWw\", \"substantive\": 55, \"yes\": [], \"unsure\": [\"bookmaker_odds\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["VwPwZ4eT4gvUg08rP3tb"], "result": "{\"id\": \"VwPwZ4eT4gvUg08rP3tb\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"creator_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["RssOqO9IlQ"], "result": "{\"id\": \"RssOqO9IlQ\", \"substantive\": 75, \"yes\": [\"existing_fact\"], \"unsure\": [\"trader_influence\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["ook7TfV5JeofDPFgT1N8"], "result": "{\"id\": \"ook7TfV5JeofDPFgT1N8\", \"substantive\": 2, \"yes\": [\"constructed_game\", \"trader_influence\", \"status_quo_default\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["rkV4XU68tEtMng256l1d"], "result": "{\"id\": \"rkV4XU68tEtMng256l1d\", \"substantive\": 3, \"yes\": [\"platform_metric\", \"trader_influence\", \"constructed_game\", \"creator_influence\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["K3FgelrEZx9wNDUnTs2b"], "result": "{\"id\": \"K3FgelrEZx9wNDUnTs2b\", \"substantive\": 1, \"yes\": [], \"unsure\": [\"constructed_game\", \"puzzle_or_math\"]}", "cost": 0}
+{"ids": ["ZDeiOZJiBEF0aANM1bCB"], "result": "{\"id\": \"ZDeiOZJiBEF0aANM1bCB\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\", \"creator_influence\"]}", "cost": 0}
+{"ids": ["vGV5gVph3qVTfySE0Zai"], "result": "{\"id\": \"vGV5gVph3qVTfySE0Zai\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"platform_metric\", \"constructed_game\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["tT51xY1gnRLx4dszxZXQ"], "result": "{\"id\": \"tT51xY1gnRLx4dszxZXQ\", \"substantive\": 45, \"yes\": [\"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["53uXLX05lq5hi2FTKszB"], "result": "{\"id\": \"53uXLX05lq5hi2FTKszB\", \"substantive\": 0, \"yes\": [\"creator_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["0upUuACz8p"], "result": "{\"id\": \"0upUuACz8p\", \"substantive\": 92, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["nzpbomdyis"], "result": "{\"id\": \"nzpbomdyis\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": []}", "cost": 0}
+{"ids": ["dk1DNbrGrryL73lw1mqc"], "result": "{\"id\": \"dk1DNbrGrryL73lw1mqc\", \"substantive\": 0, \"yes\": [\"creator_influence\", \"subjective_resolution\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["HCp5nG9opNM1jDDnaV3n"], "result": "{\"id\": \"HCp5nG9opNM1jDDnaV3n\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["WB2nYuRUqowtzXUwN2vT"], "result": "{\"id\": \"WB2nYuRUqowtzXUwN2vT\", \"substantive\": 2, \"yes\": [\"constructed_game\", \"trader_influence\", \"status_quo_default\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["iY9fol9jdXPTUPepkg5D"], "result": "{\"id\": \"iY9fol9jdXPTUPepkg5D\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"insider_knowable\", \"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["uORsy6g0sl"], "result": "{\"id\": \"uORsy6g0sl\", \"substantive\": 90, \"yes\": [\"subjective_resolution\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["omdZM1duFWhUWFpjbEIR"], "result": "{\"id\": \"omdZM1duFWhUWFpjbEIR\", \"substantive\": 20, \"yes\": [\"subjective_resolution\", \"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["l9dhLkCSjs5m0baSCsgf"], "result": "{\"id\": \"l9dhLkCSjs5m0baSCsgf\", \"substantive\": 97, \"yes\": [\"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["5prn8L7wOZEcyyd7dDx2"], "result": "{\"id\": \"5prn8L7wOZEcyyd7dDx2\", \"substantive\": 25, \"yes\": [\"subjective_resolution\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["tmI1N6FZjRgL84jZoYzM"], "result": "{\"id\": \"tmI1N6FZjRgL84jZoYzM\", \"substantive\": 3, \"yes\": [\"platform_metric\", \"trader_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["psKfTdWtZgjbymloDkvV"], "result": "{\"id\": \"psKfTdWtZgjbymloDkvV\", \"substantive\": 90, \"yes\": [], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["0LRs1CKNn5HJwGqLH5w4"], "result": "{\"id\": \"0LRs1CKNn5HJwGqLH5w4\", \"substantive\": 40, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["qNlIcz2chU"], "result": "{\"id\": \"qNlIcz2chU\", \"substantive\": 55, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["4sUJBULnHY0EcmUKS2Y9"], "result": "{\"id\": \"4sUJBULnHY0EcmUKS2Y9\", \"substantive\": 5, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["kQ7l7Nd3dI3PIUUhdAS9"], "result": "{\"id\": \"kQ7l7Nd3dI3PIUUhdAS9\", \"substantive\": 30, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"creator_influence\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["Dag5cBmtVblj6UQ8Kgxs"], "result": "{\"id\": \"Dag5cBmtVblj6UQ8Kgxs\", \"substantive\": 0, \"yes\": [\"fixed_chance\"], \"unsure\": []}", "cost": 0}
+{"ids": ["abl8onccJrSVcqcjK2OE"], "result": "{\"id\": \"abl8onccJrSVcqcjK2OE\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["LQOZCAnCsO"], "result": "{\"id\": \"LQOZCAnCsO\", \"substantive\": 85, \"yes\": [\"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["1GM6F7RcJho45jX1KT3l"], "result": "{\"id\": \"1GM6F7RcJho45jX1KT3l\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["cyNyu0yNgN"], "result": "{\"id\": \"cyNyu0yNgN\", \"substantive\": 97, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["bJs1YICO6mGc0xHOFmjL"], "result": "{\"id\": \"bJs1YICO6mGc0xHOFmjL\", \"substantive\": 60, \"yes\": [\"sports_match\", \"sports_performance\", \"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["vJ4QYaOfNdxbhAXcCRPa"], "result": "{\"id\": \"vJ4QYaOfNdxbhAXcCRPa\", \"substantive\": 5, \"yes\": [\"trader_influence\"], \"unsure\": [\"platform_metric\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["IOzL5lIzd2"], "result": "{\"id\": \"IOzL5lIzd2\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"scheduled_release\"]}", "cost": 0}
+{"ids": ["c9tpsqNUcI"], "result": "{\"id\": \"c9tpsqNUcI\", \"substantive\": 1, \"yes\": [\"fixed_chance\", \"existing_fact\", \"insider_knowable\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["PnSdt2hOUE"], "result": "{\"id\": \"PnSdt2hOUE\", \"substantive\": 2, \"yes\": [\"creator_influence\", \"trader_influence\", \"constructed_game\", \"subjective_resolution\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["dn6ohrdfsx"], "result": "{\"id\": \"dn6ohrdfsx\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": []}", "cost": 0}
+{"ids": ["T0JLJof9bSaxB0X1TygH"], "result": "{\"id\": \"T0JLJof9bSaxB0X1TygH\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["38wJi9VzaFfsaOb7AbC2"], "result": "{\"id\": \"38wJi9VzaFfsaOb7AbC2\", \"substantive\": 60, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["xY9nYXQY9sGw5R10S2rl"], "result": "{\"id\": \"xY9nYXQY9sGw5R10S2rl\", \"substantive\": 5, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["V6Jc3w0NUmAZ9oFvWZyc"], "result": "{\"id\": \"V6Jc3w0NUmAZ9oFvWZyc\", \"substantive\": 40, \"yes\": [\"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["VNtFo8wagn8zWPO8AnDP"], "result": "{\"id\": \"VNtFo8wagn8zWPO8AnDP\", \"substantive\": 85, \"yes\": [], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["cDkNVHtGj2IUsir0L7Co"], "result": "{\"id\": \"cDkNVHtGj2IUsir0L7Co\", \"substantive\": 97, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["958ReahfbbIt0BOqxmnc"], "result": "{\"id\": \"958ReahfbbIt0BOqxmnc\", \"substantive\": 70, \"yes\": [\"other_asset_price\"], \"unsure\": []}", "cost": 0}
+{"ids": ["Q53GZWACqm9LxQMv0FiQ"], "result": "{\"id\": \"Q53GZWACqm9LxQMv0FiQ\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["KYRBytt48YUnBRJIBwBY"], "result": "{\"id\": \"KYRBytt48YUnBRJIBwBY\", \"substantive\": 55, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["piY5pFsWeDtrA1Wm0RPC"], "result": "{\"id\": \"piY5pFsWeDtrA1Wm0RPC\", \"substantive\": 15, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["IdzUtQQORS"], "result": "{\"id\": \"IdzUtQQORS\", \"substantive\": 2, \"yes\": [\"creator_influence\", \"trader_influence\", \"constructed_game\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"puzzle_or_math\"]}", "cost": 0}
+{"ids": ["th5wnYl6yKJlezWZo8Na"], "result": "{\"id\": \"th5wnYl6yKJlezWZo8Na\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["EfQcIHAwPVnDOdvKZvmX"], "result": "{\"id\": \"EfQcIHAwPVnDOdvKZvmX\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"subjective_resolution\", \"constructed_game\", \"puzzle_or_math\"]}", "cost": 0}
+{"ids": ["cGctbrOugfUW2EBJPl19"], "result": "{\"id\": \"cGctbrOugfUW2EBJPl19\", \"substantive\": 20, \"yes\": [\"insider_knowable\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["egnXRO3RW2dzcK8yPuyq"], "result": "{\"id\": \"egnXRO3RW2dzcK8yPuyq\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["SWGEkH5xF7UyVyucG6gd"], "result": "{\"id\": \"SWGEkH5xF7UyVyucG6gd\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"fixed_chance\", \"creator_influence\"]}", "cost": 0}
+{"ids": ["jWddYUFI29NpkmtRptZq"], "result": "{\"id\": \"jWddYUFI29NpkmtRptZq\", \"substantive\": 5, \"yes\": [\"constructed_game\", \"trader_influence\", \"platform_metric\"], \"unsure\": [\"sports_match\"]}", "cost": 0}
+{"ids": ["11OiBzvHeO7JvqnKDsSs"], "result": "{\"id\": \"11OiBzvHeO7JvqnKDsSs\", \"substantive\": 5, \"yes\": [\"trader_influence\"], \"unsure\": [\"platform_metric\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["sGD6OWGnVEUi7vrS0LlA"], "result": "{\"id\": \"sGD6OWGnVEUi7vrS0LlA\", \"substantive\": 80, \"yes\": [], \"unsure\": [\"existing_fact\", \"scheduled_release\"]}", "cost": 0}
+{"ids": ["QOOcl00O6g"], "result": "{\"id\": \"QOOcl00O6g\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["j9C8xzmzMv3xPz0Lxhuk"], "result": "{\"id\": \"j9C8xzmzMv3xPz0Lxhuk\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["NIyuuEsgd5"], "result": "{\"id\": \"NIyuuEsgd5\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"creator_influence\", \"subjective_resolution\", \"constructed_game\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["4FRChWhQ31GyH9T1DIE4"], "result": "{\"id\": \"4FRChWhQ31GyH9T1DIE4\", \"substantive\": 65, \"yes\": [\"scheduled_release\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["mG9K7zyX7IiMRHqITFYq"], "result": "{\"id\": \"mG9K7zyX7IiMRHqITFYq\", \"substantive\": 50, \"yes\": [], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["jbpospQ4uO7F3JIjw3I9"], "result": "{\"id\": \"jbpospQ4uO7F3JIjw3I9\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"direct_opinion\"]}", "cost": 0}
+{"ids": ["Q0yEHuk9BYYbYQZlaigp"], "result": "{\"id\": \"Q0yEHuk9BYYbYQZlaigp\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["QW6HB34uzU5Unwou0a1C"], "result": "{\"id\": \"QW6HB34uzU5Unwou0a1C\", \"substantive\": 55, \"yes\": [\"existing_fact\"], \"unsure\": []}", "cost": 0}
+{"ids": ["R52S2tNqL5"], "result": "{\"id\": \"R52S2tNqL5\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"trader_influence\", \"creator_influence\"], \"unsure\": []}", "cost": 0}
+{"ids": ["yWs6cQ1QFsBn0PhGbz1h"], "result": "{\"id\": \"yWs6cQ1QFsBn0PhGbz1h\", \"substantive\": 8, \"yes\": [\"subjective_resolution\", \"trader_influence\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["RlHoDZs2O6RCfb5j5EhT"], "result": "{\"id\": \"RlHoDZs2O6RCfb5j5EhT\", \"substantive\": 15, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["pY3UfT7xp2H5q1Jh9Wiu"], "result": "{\"id\": \"pY3UfT7xp2H5q1Jh9Wiu\", \"substantive\": 0, \"yes\": [\"platform_metric\", \"constructed_game\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"direct_opinion\"]}", "cost": 0}
+{"ids": ["LX5ffOFg86ReOiOMeG9w"], "result": "{\"id\": \"LX5ffOFg86ReOiOMeG9w\", \"substantive\": 5, \"yes\": [\"platform_metric\", \"insider_knowable\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["JMQlDTRIgyOJVNiOf6e0"], "result": "{\"id\": \"JMQlDTRIgyOJVNiOf6e0\", \"substantive\": 55, \"yes\": [\"sports_performance\", \"bookmaker_odds\"], \"unsure\": [\"sports_match\"]}", "cost": 0}
+{"ids": ["sRU5hO6Nst"], "result": "{\"id\": \"sRU5hO6Nst\", \"substantive\": 90, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["IUESNq4Ui2ROSBMjs7ci"], "result": "{\"id\": \"IUESNq4Ui2ROSBMjs7ci\", \"substantive\": 10, \"yes\": [\"subjective_resolution\", \"trader_influence\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["ivyeqv3wuh"], "result": "{\"id\": \"ivyeqv3wuh\", \"substantive\": 75, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["9G4La8yutnmKkOrDfjJO"], "result": "{\"id\": \"9G4La8yutnmKkOrDfjJO\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["OPOquSLOcu"], "result": "{\"id\": \"OPOquSLOcu\", \"substantive\": 60, \"yes\": [\"sports_award\", \"bookmaker_odds\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["rS6qJPejgvkIT6pi2eqv"], "result": "{\"id\": \"rS6qJPejgvkIT6pi2eqv\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["bdjmavo0zg"], "result": "{\"id\": \"bdjmavo0zg\", \"substantive\": 30, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["cCBDJGaSPj7nwlksmHIj"], "result": "{\"id\": \"cCBDJGaSPj7nwlksmHIj\", \"substantive\": 3, \"yes\": [\"platform_metric\", \"trader_influence\", \"constructed_game\", \"creator_influence\"], \"unsure\": [\"direct_opinion\"]}", "cost": 0}
+{"ids": ["b1bUzUqkweM5PWmpvViW"], "result": "{\"id\": \"b1bUzUqkweM5PWmpvViW\", \"substantive\": 5, \"yes\": [\"trader_influence\"], \"unsure\": [\"direct_opinion\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["l6dVAla9A7CxgrHqpWIF"], "result": "{\"id\": \"l6dVAla9A7CxgrHqpWIF\", \"substantive\": 0, \"yes\": [\"fixed_chance\"], \"unsure\": []}", "cost": 0}
+{"ids": ["f4FL2SRj5ewoga0IY4XF"], "result": "{\"id\": \"f4FL2SRj5ewoga0IY4XF\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["wUrLlW1XFnLTA8Jy1KmN"], "result": "{\"id\": \"wUrLlW1XFnLTA8Jy1KmN\", \"substantive\": 5, \"yes\": [\"trader_influence\", \"creator_influence\"], \"unsure\": [\"platform_metric\", \"constructed_game\"]}", "cost": 0}
+{"ids": ["LTgkmavkXNPpKYvv1UFJ"], "result": "{\"id\": \"LTgkmavkXNPpKYvv1UFJ\", \"substantive\": 20, \"yes\": [\"creator_influence\", \"status_quo_default\"], \"unsure\": [\"fixed_chance\"]}", "cost": 0}
+{"ids": ["gyf8wXVRH11r5EZcTbVp"], "result": "{\"id\": \"gyf8wXVRH11r5EZcTbVp\", \"substantive\": 5, \"yes\": [\"platform_metric\", \"creator_influence\", \"trader_influence\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["UhD1qYwsasTzDmqEIj5I"], "result": "{\"id\": \"UhD1qYwsasTzDmqEIj5I\", \"substantive\": 80, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["9pqn3I5CwMVlpE4Z1N6N"], "result": "{\"id\": \"9pqn3I5CwMVlpE4Z1N6N\", \"substantive\": 45, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["wIWuLqTLoEN7Egs4a7SQ"], "result": "{\"id\": \"wIWuLqTLoEN7Egs4a7SQ\", \"substantive\": 0, \"yes\": [\"fixed_chance\"], \"unsure\": []}", "cost": 0}
+{"ids": ["s5a2ljhray"], "result": "{\"id\": \"s5a2ljhray\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["wA44KrNyAI7Um5jX3s5b"], "result": "{\"id\": \"wA44KrNyAI7Um5jX3s5b\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["u7PsBSaZRWB29TU3e2Ga"], "result": "{\"id\": \"u7PsBSaZRWB29TU3e2Ga\", \"substantive\": 15, \"yes\": [\"direct_opinion\"], \"unsure\": [\"subjective_resolution\", \"platform_metric\", \"trader_influence\"]}", "cost": 0}

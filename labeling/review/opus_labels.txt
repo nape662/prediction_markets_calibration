@@ -1,0 +1,600 @@
+0 75 ik / ef sj
+1 5 pm ci ti / cg
+2 98 sq /
+3 0 pm cg ci ti /
+4 5 / cg
+5 85 sj ik / ef
+6 0 ci / cg ik
+7 95 ef sq /
+8 45 ik sq /
+9 3 pm cg ci ti / op
+10 15 sq / pm ik ti
+11 98 ef sj ik /
+12 5 / cg
+13 97 bo /
+14 5 / sj pm cg ti
+15 12 sq / pm ik ti
+16 8 pm sq / ti ik
+17 95 sq ik /
+18 3 cg ti pm sj sq / ci
+19 0 cg ci / ti
+20 70 sm bo / ef
+21 60 ci sq ik /
+22 45 op ti / ci cg
+23 40 op ti / ci cg
+24 15 op ti /
+25 2 cg ti sq / fc
+26 95 ef ik /
+27 8 sq / pm ik ti
+28 70 ef ik / sj
+29 65 ef ik / sj
+30 85 ef sj /
+31 1 ci / cg
+32 80 sr / ef ik
+33 55 ef ik / ci
+34 95 sq / bo
+35 98 bo /
+36 20 / pm
+37 70 ef ti ik / sj
+38 85 ef / sj sq
+39 0 cg ci / pz ti sq
+40 70 ef ik / sq sj
+41 5 / cg
+42 85 ef sq /
+43 0 pm cg ci ti / op
+44 5 / cg
+45 10 / sj cg
+46 70 ef / sj
+47 75 ef ik / sj
+48 25 ik sq / ci ti
+49 0 / fc ci
+50 5 / cg
+51 95 ef ik /
+52 85 ik / sq
+53 90 / ik
+54 5 pm cg ti / op
+55 98 sq /
+56 0 cg ti / fc
+57 70 sm st bo /
+58 65 st bo /
+59 85 sq /
+60 80 ef ik / sj
+61 75 ef ik /
+62 25 ef / ik
+63 70 ef ik / sq
+64 45 op ti /
+65 55 ef ik sq /
+66 65 ef sq sj ik /
+67 65 ef ik /
+68 40 ef ik / sj
+69 5 ci sj / pz ti cg
+70 90 ef ti sq / sj
+71 90 ef ik / sq sj
+72 0 / cg
+73 45 ef ik /
+74 5 / cg
+75 10 sq / pm ti
+76 0 fc /
+77 3 cg ti / fc
+78 65 sm bo / ef
+79 3 cg sq / pm ti ik
+80 70 ef / ik
+81 50 ef / ik
+82 40 sq ik / ti
+83 95 ef ik / sj sq
+84 85 ef ik /
+85 1 cg ti / pm
+86 0 pm cg ti / fc pz
+87 15 fc bo /
+88 95 ef ik sq / sj
+89 95 ef sq / ik
+90 85 ef sq ik /
+91 5 pm ik / fc
+92 97 sq /
+93 20 ci ti sq / cg ik
+94 60 / bo
+95 8 sq / pm ik ti
+96 85 ef / sj ik
+97 5 pm ci ti / cg
+98 90 sq /
+99 15 ti / pm ef
+100 85 ef sq ik /
+101 30 sq ik / ti
+102 75 ef sq /
+103 0 / sj cg pm ti
+104 30 sq / sj
+105 90 ef sq ik /
+106 80 ik / sq
+107 80 ci sj sq /
+108 2 cg ti sq / fc
+109 65 ci sq ik /
+110 97 bo /
+111 8 sq / ti ci
+112 40 sq ik / ti
+113 10 cg ti / pm op
+114 92 sq ik /
+115 35 ef sj ik /
+116 2 cg ci ti /
+117 0 fc /
+118 85 ef / sj ik
+119 60 sm sp bo /
+120 3 cg ci ti / pm sj
+121 3 pm ti sq / cg
+122 90 w sq / bo
+123 90 ef sq ik /
+124 70 ef ik /
+125 3 ci ti sj cg sq /
+126 85 ef sq / ik
+127 10 sq / pm
+128 0 / cg
+129 75 ef sq ik /
+130 0 cg / ti
+131 40 ci sj / pm sq
+132 1 fc /
+133 70 ef sq sj / ik
+134 65 ef / pz sj ti
+135 85 sq ik /
+136 85 ef ik / sj
+137 1 ci sj ti / cg
+138 15 op / ci
+139 0 / cg
+140 98 sq / bo
+141 2 cg ti sq /
+142 0 pm cg ti sq / fc
+143 1 fc / cg
+144 15 ci ik / sj cg sq
+145 0 ci / cg ik
+146 97 bo /
+147 85 ef sq ik /
+148 40 sq ik / ti
+149 1 / pm cg
+150 40 ef sj / ci
+151 5 / cg
+152 70 ef ik /
+153 85 ef sj / ik
+154 1 pm cg ti / ci
+155 55 pw ik / ef
+156 60 ti / ef
+157 15 pw /
+158 90 sq ik / sj ef
+159 20 op pm ti cg ci /
+160 0 pm cg ti / fc
+161 85 ef sq ik /
+162 70 sq ik /
+163 5 ci cg / pm sq
+164 35 ef ik / ci
+165 65 ef ik / sj
+166 20 sq ti / ci
+167 15 ef / pm cg ti sj
+168 60 / pm
+169 15 op pm ti cg /
+170 90 ef sq ik /
+171 15 / sm sj ti cg
+172 2 cg ti sq / fc
+173 20 ef ik /
+174 40 ef / sj sq
+175 0 ci / cg ik
+176 55 oa /
+177 5 / cg
+178 65 ef ik /
+179 90 sq /
+180 10 op ci / ti
+181 0 / cg
+182 75 ef ik /
+183 0 ci sj / cg
+184 70 ef sq / sj
+185 30 ef sj ik /
+186 70 ef sq / sj ik
+187 80 ef / ik
+188 98 ef ik /
+189 75 sq / ik
+190 65 sq ik /
+191 60 ef fe / oa
+192 95 ef ik sq /
+193 0 pm cg ti ci / pz
+194 90 sq ik /
+195 90 ef sq ik / sj
+196 0 / cg
+197 2 cg ik ci ef / ti pm
+198 85 ef / ik
+199 60 ik / ef
+200 98 sq /
+201 10 ti sq / cg ci
+202 20 op pm ti ci / cg
+203 60 sq /
+204 70 ef sq ik /
+205 20 op ti / sj
+206 40 ef ik /
+207 97 ef sq ik /
+208 90 sq ik /
+209 75 sq ik / ef
+210 1 pm cg ti / ci sj
+211 95 / ef sj
+212 70 sq / ik
+213 85 / sj
+214 20 sq /
+215 0 ci cg / ti op
+216 0 fc /
+217 40 sq ik / ti
+218 80 ef ik / sj sq
+219 3 cg ti pm /
+220 75 ef ik / sj
+221 30 sq ik / ci sj
+222 50 ef ik / sj
+223 85 ef ik /
+224 90 ef sq /
+225 20 ti / pm ci
+226 90 ef sq / sj
+227 5 / cg
+228 25 ti / ci
+229 90 ef / sj
+230 2 ci cg / pm
+231 70 ef /
+232 85 sj sq / ci
+233 3 ci cg /
+234 90 sr ik / ef
+235 5 / cg
+236 50 ef ik / sj
+237 90 ef sq sj ik /
+238 0 ti cg / ci
+239 50 ef sq ik /
+240 30 ef sq ik / pm
+241 95 ef ik / sj
+242 5 / sj ci ik cg fc
+243 90 ef / sr
+244 80 sq / sj
+245 55 / ef sq
+246 60 /
+247 60 ef sj /
+248 5 / cg
+249 10 ef ik / fc
+250 80 sq ik / ef sj
+251 65 sq ik / ef
+252 45 ef sq / ci
+253 80 ef ik sj /
+254 60 sq sj / ef
+255 75 ef ik /
+256 0 / cg
+257 5 cg ti sq / ef sj
+258 60 sj /
+259 20 / fc cg
+260 15 sj sq / ti pm
+261 0 pm cg ti ci / pz
+262 0 pm cg ci ti / op
+263 65 ef / ik ci
+264 85 ef ik / sj sq
+265 85 ef / sj
+266 75 ef sj ik /
+267 0 / sj cg
+268 55 ti / pm ef
+269 85 sq ik /
+270 15 ti / sj
+271 50 ef /
+272 0 cg ti / fc
+273 1 sj ti cg / ci
+274 3 pm cg ci ti / op
+275 3 ci sj / pz cg
+276 20 sq /
+277 5 ci sq / pm
+278 97 ef ik /
+279 0 pm cg ci ti / op
+280 85 ik sq /
+281 40 /
+282 1 ci ti cg sj sq /
+283 65 ef sj ik /
+284 0 fc /
+285 3 ci / fc pm
+286 5 ti / pm cg
+287 97 sq / ik
+288 0 / sj cg
+289 90 ef sq / ik
+290 50 sq / sp bo ik
+291 95 ef sj / ik
+292 15 / sm sj
+293 15 sq / sp
+294 95 ef sq ik /
+295 70 ef sq ik /
+296 60 sq / ik
+297 55 ef / pz sj
+298 75 ef ik /
+299 85 sq sj ik / ef
+300 30 ef ik / sp
+301 85 sq ik /
+302 90 ef sj /
+303 0 / fc ci
+304 60 sa bo / ik
+305 0 / sj ci cg
+306 97 sq / ik
+307 55 sq ik /
+308 85 ef ik /
+309 25 ef ik / ci
+310 85 ef ik sj /
+311 0 pm cg ti / ci
+312 5 ti cg / ci sj
+313 90 ef /
+314 20 ti / pm op
+315 45 /
+316 0 / sj cg op
+317 85 ef ik /
+318 55 ef ik / sj
+319 15 ik / pm sq
+320 15 sq / pm
+321 90 / bo
+322 50 ef sq ik /
+323 85 ef / sj
+324 90 ef /
+325 80 ef sq / sj
+326 30 ef sq ik /
+327 5 ci / cg
+328 90 ef / sq
+329 95 ef sq /
+330 20 / sq ik
+331 40 sq ik / ti
+332 40 ef ik / sj ti
+333 95 sq / ik
+334 40 sq ik / ti
+335 0 / sj cg
+336 98 sq / bo ik
+337 70 sq ik / ef sj
+338 90 ef sq /
+339 15 op ti /
+340 5 ef ik / fc
+341 15 / sj pm
+342 15 ci sq / fc
+343 3 sq / pm cg ti ik
+344 55 ef /
+345 80 sq / sj ci
+346 60 ef ik /
+347 1 ci ti cg sq /
+348 15 op ti / pm
+349 70 ef sq ik /
+350 15 sq / pm
+351 95 ef ik /
+352 0 ci / sj cg
+353 0 ci / cg pz
+354 0 / cg sj
+355 5 pm ti cg ci / ef
+356 5 ti / cg sj
+357 65 /
+358 95 sq /
+359 75 ef sq /
+360 70 ef sq ik /
+361 0 ci cg / pz
+362 80 sq /
+363 25 ti sj ci / ef cg
+364 85 ef / sj
+365 55 ef sq ik /
+366 3 cg ci ti / pm sj
+367 0 / sj cg
+368 80 ef sj ik /
+369 5 / sj cg
+370 65 ef sq ik /
+371 1 cg ti sj pm ci /
+372 90 ef sq /
+373 60 ef ik /
+374 50 sq ik /
+375 5 pm cg ti ci / ef
+376 97 ef sj ik /
+377 35 ef ik / ti
+378 80 ef ik / sj
+379 50 ef sq / ik
+380 50 sq ik /
+381 55 ef ik sq /
+382 2 pm ci / ti
+383 30 sq ik / pm
+384 0 cg ci / ti
+385 0 pm cg ci ti / op
+386 85 ef sq ik /
+387 90 ef sq ik / sj
+388 30 ef /
+389 75 ef /
+390 92 ef / sj ik
+391 85 sq /
+392 0 cg ti / pm ci sj
+393 1 ci / cg
+394 97 sq /
+395 0 pm cg ti ci /
+396 85 ef / sj
+397 55 ef sq / sj
+398 0 pm cg ti ci / ef
+399 85 / bo ef
+400 90 ef sq ik /
+401 5 pm ik / fc
+402 10 sq ik /
+403 20 sq / pm
+404 30 op pm ti sj / ci
+405 95 ef ik /
+406 0 ci / cg
+407 60 ef sj ik / sq
+408 5 ti ci / pm cg
+409 65 ef / ik sj
+410 15 ef ik / sj
+411 1 ci / cg
+412 5 ci sj sq / pm
+413 5 cg ti / sm
+414 70 sq /
+415 5 pm ik / fc
+416 55 ef / ti
+417 45 ik /
+418 80 sq / ik
+419 95 ef / ik sj
+420 0 pm cg ti ci /
+421 85 ef ik /
+422 90 / bo
+423 65 ef ik / sj
+424 45 sq ik /
+425 65 ef sq ik /
+426 30 sq ik / ci ti
+427 95 sq / ik
+428 65 / ci sq
+429 10 pm sq ik / fc
+430 97 ef sj ik / ti
+431 1 ci / cg sq
+432 50 sq ik / sj
+433 30 pm ti sq /
+434 0 ci cg /
+435 97 bo /
+436 85 ef ik / sj
+437 40 sq / pw
+438 70 sq /
+439 0 / cg
+440 75 ik / ef sj
+441 85 ef / sj
+442 50 ef ik /
+443 55 ti sq / pm
+444 1 ci cg ik / fc ef
+445 40 sq ik / ti
+446 85 ef / sr
+447 98 sq / bo
+448 1 / ci sj cg ik
+449 30 sq ik / sj
+450 0 pm cg ti ci /
+451 0 fc /
+452 65 / cp
+453 75 ef ik / sj sq
+454 90 sq /
+455 35 ef ik sq / ci sj
+456 70 ef ik / sj
+457 1 / ci sj cg ik
+458 5 / cg
+459 10 / cg ti pm
+460 0 ci sj / cg
+461 5 / sj
+462 10 ef ik / sj
+463 60 ti / ef op pm
+464 5 / cg
+465 0 / cg
+466 85 ef / sj sq
+467 85 ef / pz
+468 30 sq ik / pm
+469 0 / cg sj ci pz
+470 40 ef ik /
+471 97 ef ik /
+472 0 ci / sj cg
+473 45 / ik
+474 65 ef ik /
+475 10 sq / pm
+476 15 ti / ci cg ef
+477 35 ef ik /
+478 40 sj sq /
+479 75 ef ik /
+480 0 ci sj ti / cg
+481 35 sq ik / ef
+482 40 ef ik /
+483 55 ef ik /
+484 1 / ci sj cg ik
+485 80 sq /
+486 0 ci sj / cg
+487 3 cg ci ti / pm sj
+488 5 cg / ci ti pm ik
+489 5 / cg
+490 65 ef ik /
+491 70 ik / ef
+492 15 /
+493 0 ci / cg
+494 0 ci / cg ik
+495 20 ef ik sq / sj
+496 90 ef ik /
+497 0 ci / cg ik
+498 75 sq ik /
+499 5 / cg
+500 0 pm cg ci ti / op
+501 2 cg ti ci sq ik / pz
+502 40 sq ik / ti
+503 45 ik bo /
+504 25 sq ik /
+505 1 ci cg ik / fc ef
+506 80 w ef / sr
+507 85 sq ik /
+508 5 / cg
+509 0 / cg
+510 55 / bo ik
+511 0 pm cg ti ci /
+512 75 ef / ti sj
+513 2 cg ti sq / fc
+514 3 pm ti cg ci / ef
+515 1 / cg pz
+516 0 / cg ci
+517 5 / pm cg sq
+518 45 sj /
+519 0 ci / cg
+520 92 sq /
+521 85 ef /
+522 0 ci sj / cg
+523 70 ef ik / sj
+524 2 cg ti sq / fc
+525 70 ef ik sj /
+526 90 sj sq /
+527 20 sj sq / ik
+528 97 sq / sj
+529 25 sj / sq
+530 3 pm ti / cg
+531 90 / ef
+532 40 ef sj ik /
+533 55 ef ik / sj
+534 5 sq / pm
+535 30 ef ik / ci sj
+536 0 fc /
+537 75 ef ik / sj
+538 85 sq / sj
+539 75 ef ik /
+540 97 sq /
+541 60 sm sp bo /
+542 5 ti / pm cg
+543 85 ef / sr
+544 1 fc ef ik / cg
+545 2 ci ti cg sj sq /
+546 85 ef /
+547 5 / cg
+548 60 ef / sj
+549 5 / cg
+550 40 ik / ef
+551 85 / sq
+552 97 sq /
+553 70 oa /
+554 85 ef ik /
+555 55 ef ik /
+556 15 sq / ik ti
+557 2 ci ti cg sq ik / pz
+558 75 ef sq ik /
+559 0 / sj cg pz
+560 20 ik / pm
+561 0 / cg
+562 0 / fc ci
+563 5 cg ti pm / sm
+564 5 ti / pm cg
+565 80 / ef sr
+566 90 ef sj /
+567 70 ef sq ik / sj
+568 0 / ci sj cg ik
+569 65 sr / ef
+570 50 / sq
+571 0 pm cg ci ti / op
+572 90 ef sj /
+573 55 ef /
+574 0 pm cg ti ci /
+575 8 sj ti / pm
+576 15 sq ik / pm
+577 0 pm cg ci ti / op
+578 5 pm ik / fc
+579 55 sp bo / sm
+580 90 sq /
+581 10 sj ti / pm
+582 75 ef / sj
+583 0 / cg
+584 60 sa bo / ik
+585 65 ef ik /
+586 30 ef sq /
+587 3 pm ti cg ci / op
+588 5 ti / op sj
+589 0 fc /
+590 0 / cg
+591 5 ti ci / pm cg
+592 20 ci sq / fc
+593 5 pm ci ti / cg
+594 80 ef sq /
+595 45 ef ik / sj
+596 0 fc /
+597 65 ef sj /
+598 0 / cg
+599 15 op / sj pm ti
