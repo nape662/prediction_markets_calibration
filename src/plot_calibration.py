@@ -23,8 +23,8 @@ GROUPS = {"world": "World", "traded_elsewhere": "Traded elsewhere\n(sport, price
 ANCHORS = {"before_resolution": "before resolution", "after_creation": "after creation"}
 QUO_CUT = 0.2  # Jev reaches 0.8 on only 7 of 69 markets Opus calls status_quo_default; 0.2 finds 51 (notes/labeling_review.md)
 SQ = "status_quo_default"
-QUO_ROWS = [("before_resolution", "world_not_quo", "World, fixed-date questions\n(not status quo)\nFAIR MEASURE"), ("after_creation", "world_quo", "World, \"will X happen by Y\"\n(status quo)\nFAIR MEASURE"),
-            ("after_creation", "world_not_quo", "World, fixed-date questions\n(not status quo)\nfor comparison"), ("before_resolution", "world_quo", "World, \"will X happen by Y\"\n(status quo)\nBIASED, for comparison")]
+QUO_ROWS = [("before_resolution", "world_not_quo", "Fixed-date questions\nprice before resolution\nOK"), ("after_creation", "world_quo", "\"Will X happen by Y\"\nprice after creation\nOK"),
+            ("after_creation", "world_not_quo", "Fixed-date questions\nprice after creation\nOK"), ("before_resolution", "world_quo", "\"Will X happen by Y\"\nprice before resolution\nBIASED, DON'T TRUST")]
 HOW = {"before_resolution": "resolution minus the horizon. YES markets often resolve early, so this moment depends on the outcome.",
        "after_creation": "creation plus the horizon, for markets still unresolved then. Traders can see that a market is still open, so this doesn't depend on the outcome. Only resolved markets are in the data, so ones still open today are missing."}
 RESAMPLES, FEW, FEW_CREATORS, MIN_BETTORS = 2000, 30, 5, 15
