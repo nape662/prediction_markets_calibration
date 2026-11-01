@@ -1,7 +1,7 @@
 """Calibration per plot group, at fixed times before resolution and after creation, with Brier scores against a constant guess.
 
 python src/plot_calibration.py -> plots/calibration_<anchor>_<filter>.png, plots/calibration_<filter>_bins.csv, plots/calibration_<filter>_brier.csv
-filter is lifetime (15 bettors by the market's end, which uses the future) or at_snapshot (15 bettors already there at the snapshot).
+filter is 15_bettors_ever (by the market's end, which uses the future) or 15_bettors_by_then (already there when the price is taken).
 Needs data/manifold/snapshots.parquet (src/snapshots.py) and labeling/results/full/manifold_final.jsonl.
 The constant guess is each panel's own YES share, known only afterwards, which flatters it slightly.
 Intervals resample creators, a cheap stand-in for related questions; markets from different creators can still share one outcome.
@@ -21,7 +21,8 @@ GROUPS = {"world": "World", "traded_elsewhere": "Traded elsewhere\n(sport, price
           "fixed_chance": "Fixed chance\n(coin flips, dice, lotteries)", "not_substantive": "Not substantive\n(games about the market, empty questions)"}
 ANCHORS = {"before_resolution": "before resolution", "after_creation": "after creation"}
 RESAMPLES, FEW, FEW_CREATORS, MIN_BETTORS = 2000, 30, 5, 15
-FILTERS = {"lifetime": "at least 15 bettors over the market's whole life", "at_snapshot": "at least 15 bettors already there at the snapshot"}
+FILTERS = {"15_bettors_ever": "OLD FILTER: 15 bettors at any point in the market's life, even after this price was taken. This uses the future.",
+           "15_bettors_by_then": "NEW FILTER: 15 bettors already there when this price was taken."}
 rng = np.random.default_rng(0)
 
 
@@ -89,20 +90,21 @@ def plot(bins, brier, anchor, name):
         axes[r, 0].set_ylabel(f"{label}\n\nWhat happened (% resolved YES)", fontsize=9.5)
     for ax in axes[-1]:
         ax.set_xlabel("What the market said (%)")
-    fig.suptitle(f"Do markets happen as often as the price says, {ANCHORS[anchor]}? On the line means yes", fontsize=14, x=0.01, ha="left")
+    fig.suptitle(f"Do markets happen as often as the price says, {ANCHORS[anchor]}? On the line means yes", fontsize=14, x=0.01, y=0.995, ha="left")
+    fig.text(0.01, 0.965, FILTERS[name], fontsize=15, fontweight="bold", color="#c00000")
     how = {"before_resolution": "resolution minus the horizon. YES markets often resolve early, so this moment depends on the outcome.",
            "after_creation": "creation plus the horizon, for markets still unresolved then. Traders can see that a market is still open, so this doesn't depend on the outcome. Only resolved markets are in the data, so ones still open today are missing."}[anchor]
-    fig.text(0.01, 0.005, "Groups from the merged Jev, Opus and Terra labels, first match wins; the 38 direct-opinion markets aren't shown. Manifold YES/NO markets with " + FILTERS[name] + ".\n"
+    fig.text(0.01, 0.005, "Groups from the merged Jev, Opus and Terra labels, first match wins; the 38 direct-opinion markets aren't shown. Manifold YES/NO markets.\n"
              f"Each market counts once per panel, at its last price-moving bet at or before {how}\n"
              "One dot per price range (0-2, 2-5, 5-10, 10-20 ... 80-90, 90-95, 95-98, 98-100), placed at the range's average price. Bigger dot = more markets; hollow = under 30.\n"
              "Bars: 95% interval from resampling creators, likely still too narrow; no bar under 5 creators or where every market resolved the same way. Constant: guessing the panel's own YES share for every market.", fontsize=8.5, color="#555555")
-    fig.tight_layout(rect=(0, 0.035, 1, 0.985))
+    fig.tight_layout(rect=(0, 0.035, 1, 0.96))
     fig.savefig(ROOT / f"plots/calibration_{anchor}_{name}.png", dpi=110)
 
 
 if __name__ == "__main__":
     d = load()
-    for name, data in [("lifetime", d), ("at_snapshot", d[d.bettors >= MIN_BETTORS])]:
+    for name, data in [("15_bettors_ever", d), ("15_bettors_by_then", d[d.bettors >= MIN_BETTORS])]:
         bins, brier = tables(data)
         bins.to_csv(ROOT / f"plots/calibration_{name}_bins.csv", index=False, float_format="%.4f")
         brier.to_csv(ROOT / f"plots/calibration_{name}_brier.csv", index=False, float_format="%.4f")
