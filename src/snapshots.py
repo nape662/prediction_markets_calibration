@@ -5,7 +5,7 @@ A snapshot is probAfter of the last non-redemption bet that moved the price, at 
 before_resolution: that moment is resolution minus the horizon, so which moment a market gets depends on when its outcome arrived.
 after_creation: that moment is creation plus the horizon, and the market must still be unresolved then, which traders can see at that moment.
 A market with no such bet has no row at that horizon. age_days is how old that bet is at the snapshot.
-bettors and volume count only fills that had happened by the snapshot, so they can be filtered on without using the future.
+bettors and volume count nonzero fills that had happened by the snapshot, so they can be filtered on without using the future.
 """
 import bisect, json
 from multiprocessing import Pool
@@ -20,7 +20,7 @@ HOURS = {"12h": 12, "1d": 24, "1w": 24 * 7, "1m": 24 * 30, "1y": 24 * 365}
 def snapshots(market):
     bets = [b for b in json.load(open(API / "bets" / f"{market['id']}.json")) if not b.get("isRedemption")]
     moves = [b for b in bets if b["probBefore"] != b["probAfter"]]
-    fills = sorted((f["timestamp"], abs(f["amount"]), b["userId"]) for b in bets for f in b.get("fills") or [dict(timestamp=b["createdTime"], amount=b["amount"])])
+    fills = sorted((f["timestamp"], abs(f["amount"]), b["userId"]) for b in bets for f in b.get("fills") or [dict(timestamp=b["createdTime"], amount=b["amount"])] if f["amount"] != 0)
     times, seen, volume, bettors = [f[0] for f in fills], set(), [], []
     for _, amount, user in fills:
         seen.add(user)
