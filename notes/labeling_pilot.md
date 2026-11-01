@@ -8,7 +8,7 @@ You are reading this to improve two things: the cost of the labeling and the qua
 
 The project (`AGENTS.md`) asks whether Polymarket and Manifold probabilities match how often things happen, especially on real questions rather than mass-produced gambling. So every market needs labels that let us plot each kind separately.
 
-The labeler answers 22 narrow yes/no/unknown questions plus a free-text `junk_reason`. We turn the answers into plot groups ourselves. The questions, the group rules and the reasoning are in `notes/classifier_questions.md`.
+The labeler answers 22 narrow yes/no/unsure questions plus a free-text `junk_reason`. We turn the answers into plot groups ourselves. The questions, the group rules and the reasoning are in `notes/classifier_questions.md`.
 
 ## The process, step by step
 
@@ -36,7 +36,7 @@ export CLAUDE_BIN=$(ls -d ~/.vscode-server/extensions/anthropic.claude-code-*-li
 
 **`claude -p` with no tools and our own system prompt.** A default call sends about 22,000 tokens of Claude Code's own instructions and tools; this one adds about 150. We also set `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1`, because otherwise each call adds a paid helper request of about 1,270 tokens. The Claude Code installed in `~/.local/bin` (2.1.210) refuses Opus 5.5 and overstates Haiku 5.5's cost, so use the newer binary above.
 
-**Short answer format.** The model lists only the yes and unknown tags; anything unlisted means no. Compared with spelling out all 23 values, this cut visible output from about 290 tokens per market to about 50. The risk is that a tag the model forgot looks like a "no".
+**Short answer format.** The model lists only the yes and unsure tags; anything unlisted means no. Compared with spelling out all 23 values, this cut visible output from about 290 tokens per market to about 50. The risk is that a tag the model forgot looks like a "no".
 
 **Batching several markets into one call.** It cut cost by about 60%. The prompt asks the model to judge each market separately, but neighbours may still influence each other, and the `substantive_world_question` result below suggests something does change.
 

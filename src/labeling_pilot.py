@@ -78,7 +78,7 @@ def run(name, model, effort, batch):
 
 def valid(answer, call, seen, tags):
     return (isinstance(answer, dict) and answer.get("id") in call["ids"] and answer["id"] not in seen
-            and all(isinstance(answer.get(k), list) and set(answer[k]) <= tags for k in ("yes", "unknown")))
+            and all(isinstance(answer.get(k), list) and set(answer[k]) <= tags for k in ("yes", "unsure")))
 
 
 def load(name):
@@ -97,6 +97,8 @@ def load(name):
                 except json.JSONDecodeError:
                     bad += 1
                     continue
+                if isinstance(a, dict) and "unknown" in a:  # runs saved before the answer was renamed to "unsure"
+                    a["unsure"] = a.pop("unknown")
                 if valid(a, call, answers, tags):
                     answers[a["id"]] = a
                 else:
@@ -105,11 +107,11 @@ def load(name):
 
 
 def value(answer, tag):
-    return "yes" if tag in answer["yes"] else "unknown" if tag in answer["unknown"] else "no"
+    return "yes" if tag in answer["yes"] else "unsure" if tag in answer["unsure"] else "no"
 
 
 def group(answer):
-    """Plot group, first match wins (notes/classifier_questions.md). "unknown" counts as not yes."""
+    """Plot group, first match wins (notes/classifier_questions.md). "unsure" counts as not yes."""
     yes = set(answer["yes"])
     for name, tags in GROUPS:
         if yes & tags:
