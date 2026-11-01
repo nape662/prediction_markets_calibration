@@ -1,20 +1,22 @@
+**this shit was written by an LLM previously and does not represent the current classification or anything. refer to "human thoughts.md" or something **
+
 **Automatic word filters classify 91% of downloaded Polymarket questions as bets on asset prices, sports results or interest rates.** About **50,000 questions remain to be classified**. Manifold needs much more reading: **66% of its selected questions, about 25,000, still need labels**.
 
 For our study, a chart covering all Polymarket questions would mostly describe price bets and sports. We need to identify questions about elections, wars, technology and other events before checking whether their probabilities match how often things happen. The unclassified questions are a place to look, not a finished selection.
 
-We currently use seven categories:
+We currently use the following categories:
 
 **Prices, sports results and interest rates.** “Will Bitcoin cost more than $100,000?” Also match results and central-bank rate decisions. **Equivalent forecasts elsewhere have not been checked for every question.**
 
 **Other questions about the world.** “Will Russia capture all of Pokrovsk by November 30?” Also elections, laws, AI releases and awards. Questions about saying a particular word are included too, but remain separately identifiable.
 
-**Private life.** “Will I pass my driving test?” This includes the question creator and people they know privately.
+**Private life.** “Will I pass my driving test?” This includes the question creator and people they know privately. Extra flag: easily manipulatable?
 
-**Forecasting websites and their users.** “Will I gain followers on Manifold?” Also account profits, website features and questions about another market's probability.
+**Forecasting websites and their users.** Meta questions about prediction markets. Extra flag: easily manipulatable?
 
-**Chance outcomes.** “Will this coin land heads?” Dice and lottery results belong here too.
+**Chance outcomes with predetermined odds.** “Will this coin land heads?” Dice and lottery results belong here too.
 
-**Questions without a clear answer.** Direct opinion polls, such as “What is your favourite colour?”, are candidates. The definition still needs Peter's decision.
+**Manifold-only bullshit.** Direct opinion polls get deleted, fermi estimates / things-where-there-is-an-objective-answer are one subcategory, subjectively-resolved is another thing.
 
 **How questions get a category.** Automatic word filters use question text, tags and other market information, including some Polymarket descriptions linking to other markets. The first matching filter assigns the category. They do not use recorded probabilities or outcomes.
 
