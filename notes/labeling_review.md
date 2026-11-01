@@ -1,6 +1,6 @@
 # Hand review of Jev's contradictory markets
 
-**Jev's world group looks usable: about 7% of it is garbage. But the 0.8 cutoff is wrong for two of the new tags, and no tag catches some of the empty markets.**
+**The 0.8 cutoff is wrong for `status_quo_default`, and no tag catches some of the empty markets. This review doesn't measure how much garbage is in Jev's world group.**
 
 ## What we did
 
@@ -20,7 +20,9 @@ Opus 5.5 labeled 600 Manifold markets by hand in one session, about 40 at a time
 | 59 two groups | 18 |
 | 219 substantive and odd | 195 |
 
-**Garbage in world: 7 of 100** (roughly 3–14%, so we can't yet say it is below Peter's 10% limit). Six are participant markets and one is weather. Most are "Will I..." markets where the creator controls the outcome.
+**The 7 of 100 that left world are not garbage.** An earlier version of this report called them that, which was wrong. Six carry participant tags and one is weather, and influence on the outcome doesn't make a question unsubstantive. Opus scored five of the seven at ≥55, for example "Will I have a convincing video call with a fully synthetic AI avatar before July 2025?" at 80. The table's group comparison uses the first-match rule, so it counts these as disagreements.
+
+**We have no direct measure of garbage yet.** The closest number: Opus scored 9 of the 100 at ≤20, and 5 of those are about the streamer Destiny, which is niche rather than junk.
 
 **Jev's substantive ≤0.2 is a clean signal.** Opus scored 204 of those 222 at ≤20. 81 of them stay in world because no tag catches them: "This market resolves YES on March 1", secret markets, empty titles. They are 0.9% of world, so this is small.
 
