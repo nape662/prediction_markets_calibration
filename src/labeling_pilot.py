@@ -23,8 +23,7 @@ GROUPS = [("opinion", {"direct_opinion"}), ("fixed_chance", {"fixed_chance"}),
           ("traded_elsewhere", {"crypto_price", "short_crypto_price", "other_asset_price", "sports_match", "sports_tournament",
                                 "sports_performance", "central_bank_rate", "sports_award", "weather_measurement",
                                 "scheduled_release", "speech_or_posts"}),
-          ("participants", {"platform_metric", "constructed_game", "creator_influence", "trader_influence"}),
-          ("subjective", {"subjective_resolution"})]
+          ("participants", {"platform_metric", "constructed_game", "creator_influence", "trader_influence"})]
 
 
 def questions():

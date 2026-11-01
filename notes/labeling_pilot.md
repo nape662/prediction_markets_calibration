@@ -1,6 +1,6 @@
 # Labeling pilot: what we did, what we chose, what to improve
 
-**A cheap model can sort markets into our plot groups almost as Opus does: Haiku 5.5 at low effort, 20 markets per call, agrees with Opus 5.5 on 191 of 200 markets, for about $36 at list price if we label everything. Sorting isn't the same as finding interesting questions, though: the one question meant to catch those barely separates anything.** Whether the $98 cloud credit can pay for it is still untested.
+**A cheap model can sort markets into our plot groups almost as Opus does: Haiku 5.5 at low effort, 20 markets per call, agrees with Opus 5.5 on 197 of 200 markets, for about $36 at list price if we label everything. Sorting isn't the same as finding interesting questions, though: the one question meant to catch those barely separates anything.** Whether the $98 cloud credit can pay for it is still untested.
 
 You are reading this to improve two things: the cost of the labeling and the quality of the questions. Your goal and rules are at the end.
 
@@ -44,27 +44,29 @@ export CLAUDE_BIN=$(ls -d ~/.vscode-server/extensions/anthropic.claude-code-*-li
 
 ## Results
 
-Groups were assigned by the first-match rules in `notes/classifier_questions.md`. "World" is whatever is left after the other groups.
+Groups were assigned by the first-match rules in `notes/classifier_questions.md`. "World" is whatever is left after the other groups. Subjective resolution is not a group: a subjectively resolved question about the world is still about the world (Peter's decision). The tag stays, so it can still be plotted on its own, and regrouping needs no new model calls because every answer is saved.
 
 | Run (200 markets) | Same group as Opus | USD per market |
 |---|---|---|
-| Haiku low, 1 per call | 192 | 0.00057 |
-| Haiku medium, 1 per call | 191 | 0.00067* |
-| Haiku low, 20 per call | 191 | 0.00022 |
+| Haiku low, 1 per call | 197 | 0.00057 |
+| Haiku medium, 1 per call | 197 | 0.00067* |
+| Haiku low, 20 per call | 197 | 0.00022 |
 
 *\*Recomputed by hand. The script reports 0.00053, which is too low because this run ran alongside Haiku low and reused its cache entries for the same market text.*
 
 Opus costs $0.0124 per market, which would be about $2,050 for everything. Prices are list prices computed by Claude Code; the formula reproduces them exactly (see Details). **These runs were not charged in dollars. They used Peter's subscription allowance.**
 
-**The world group passes the mark.** Opus puts 92 markets there. Of the 91 that Haiku low with batching puts there, 4 (4.4%) are something else according to Opus, and it loses 5 of Opus's 92. Single-market Haiku low: 3 of 91 and 4 lost. With so few cases, the three Haiku runs are indistinguishable.
+**The world group passes the mark.** Opus puts 103 markets there. Each of the three Haiku runs puts 104 there, of which 2 (1.9%) are something else according to Opus, and loses 1 of Opus's 103. With so few cases, the three Haiku runs are indistinguishable.
 
 **The weak points in the questions:**
 
 - **`substantive_world_question` barely separates anything.** Opus says yes on 186 of 200, including sports matches and asset prices, and no only on coin flips, games about the market itself, a few word-saying bets and one vague question. Batching drops Haiku to 137 yes (49 disagreements, against 18 for single calls). This was meant to be the "is this interesting?" question. The groups don't use it, so group agreement hides the problem.
 - **"World" means "not caught", not "interesting".** A random 25 from Opus's world group has real questions (a Senator's conviction, a Russian attack on NATO) next to "Will Destiny complete factorio by Christmas?" and "Will George Soros die this year". Destiny, one streamer, accounts for 6 of the 92. Whether they belong in the headline plot is undecided.
-- **`subjective_resolution` causes most group disagreements** (13–16 markets per Haiku run). All three Haiku runs call "China will not launch a full-scale invasion of Taiwan [in 2023]" subjective; Opus doesn't.
+- **`subjective_resolution` is the noisiest narrow tag** (13–16 disagreements per Haiku run), though it no longer moves any market between groups. All three Haiku runs call "China will not launch a full-scale invasion of Taiwan [in 2023]" subjective; Opus doesn't.
 - **Some tags are untested.** Opus gives zero yes to `short_crypto_price`, `existing_fact`, `fermi_estimate`, `puzzle_or_math` and `direct_opinion`. The sample may simply lack them, or the wording may be too narrow. So the "not a forecast" and "opinion" groups have no evidence at all.
 - **`speech_or_posts` sits in the "traded elsewhere" group.** It sends Zelenskyy apologizing to Trump there, though nobody trades that elsewhere. That is a problem with our grouping rule, not with the labeler.
+- **`scheduled_release` wording is too wide.** A company publishing monthly lets in the TIOBE programming-language index, which is not what the tag means. Limiting it to economic and earnings figures looks right.
+- **No question catches a market decided by one named person's free choice.** Destiny's video count is a real question, but he can decide it himself. The influence questions cover only the market's creator and traders.
 - **`junk_reason` is noisy.** Haiku low fills it on 22 markets, Opus on 4. Haiku often repeats what a tag already says ("Random coin flip").
 
 ## Where the money goes
@@ -119,7 +121,7 @@ Improve (a) cost and (b) question quality, then report what changed and by how m
 
 ## 10 disagreements for Peter
 
-The groups in the first column are Opus's. These are the cases that show what the disagreements are about. Peter hasn't reviewed them yet.
+These were chosen under the older grouping, where subjective was its own group, so most no longer change a market's group. Peter read them and found them hard even for a human: several turn on resolution text that this short table leaves out, though the models saw it.
 
 | Question | Opus | Haiku |
 |---|---|---|
@@ -134,7 +136,7 @@ The groups in the first column are Opus's. These are the cases that show what th
 | Will Julia pass R, COBOL, Fortran and Matlab on TIOBE in 2024? | world | scheduled number |
 | Will an AI-generated YouTube video reach 50M views before 2027? | world | subjective |
 
-Not every Haiku run disagrees on each of these; see `labeling/results/groups.csv`.
+Not every Haiku run disagrees on each of these. `labeling/results/groups.csv` holds the current groups.
 
 ## Details
 
