@@ -10,7 +10,7 @@ Text lives in labeling/, outside the gitignored data/, because a cloud session o
 Calls go through `claude -p` with no tools and our own system prompt; Claude Code adds only ~150 tokens to it.
 Set CLAUDE_BIN to a Claude Code of at least 2.1.280: older ones refuse Opus 5.5 and misprice Haiku 5.5.
 """
-import hashlib, json, os, re, subprocess, sys, time, urllib.error, urllib.request
+import hashlib, http.client, json, os, re, subprocess, sys, time, urllib.error, urllib.request
 from pathlib import Path
 import pandas as pd
 
@@ -21,7 +21,9 @@ SEED = int(os.environ.get("PILOT_SEED", 0))
 SAMPLE = OUT / f"pilot_sample{SEED or ''}.jsonl"
 RESULTS = OUT / "results" / (f"seed{SEED}" if SEED else "")
 JEV_PRICE = 0.042 / 1e6  # USD per input token; output is free
-JEV_YES, JEV_NO = 0.8, 0.2  # between them is "unsure", as in the prompt's "below about 80% sure"
+JEV_YES, JEV_NO = 0.8, 0.2  # between them is "unsure", as in the prompt's "below about 80% sure"; also cuts Haiku's 0-100 score
+SCORED = "substantive_world_question"  # Haiku answers this one with a score
+FIELDS = ["id", "platform", "question", "description", "created", "creator", "tags", "event_title", "outcomes"]
 PER_RULE = 6  # markets from each kind the old sieve caught, so sport and crypto can't fill the sample
 MANIFOLD, POLYMARKET = 150, 50
 GROUPS = [("opinion", {"direct_opinion"}), ("fixed_chance", {"fixed_chance"}),
@@ -38,7 +40,7 @@ def questions():
 
 def system_prompt():
     blocks = re.findall(r"```text\n(.*?)```", QUESTIONS.read_text(), re.S)
-    assert len(blocks) == 2 and len(questions()) == 23, (len(blocks), len(questions()))
+    assert len(blocks) == 2 and len(questions()) == 25, (len(blocks), len(questions()))
     lines = "\n\n".join(f"{q}: {body}" for q, body in questions())
     return f"{blocks[0].strip()}\n\nQuestions:\n\n{lines}\n\n{blocks[1].strip()}\n"
 
@@ -54,8 +56,7 @@ def sample():
     t = t[~t.id.isin(seen)].sample(POLYMARKET, random_state=SEED)  # one row per template, so 17k identical Bitcoin bets count once
     rows = pd.concat([caught, rest, t]).sample(frac=1, random_state=SEED)
     rows["created"] = rows.created.astype(str).str[:10]
-    fields = ["id", "platform", "question", "description", "created", "creator", "tags", "event_title", "outcomes"]
-    return rows[fields].astype(object).where(rows[fields].notna(), None).to_dict("records")
+    return rows[FIELDS].astype(object).where(rows[FIELDS].notna(), None).to_dict("records")
 
 
 def prepare():
@@ -66,67 +67,94 @@ def prepare():
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
 
+def claude_call(markets, model, effort, version):
+    env = {**os.environ, "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",  # otherwise each call adds a paid helper request
+           "FORCE_PROMPT_CACHING_5M": "1"}  # market text is never read back, so its cache write should cost 1.25x, not 2x
+    out = subprocess.run([os.environ.get("CLAUDE_BIN", "claude"), "-p", "--model", model, "--effort", effort,
+                          "--output-format", "json", "--no-session-persistence", "--tools", "", "--strict-mcp-config",
+                          "--setting-sources", "", "--system-prompt-file", str(OUT / "system_prompt.txt")],
+                         input="\n".join(markets), capture_output=True, text=True, check=True, env=env, timeout=900)
+    d = json.loads(out.stdout)
+    if d["is_error"]:
+        raise subprocess.CalledProcessError(1, "claude", out.stdout, out.stderr)
+    return dict(input_version=version, ids=[json.loads(m)["id"] for m in markets], result=d["result"], cost=d["total_cost_usd"],
+                usage=d["modelUsage"], seconds=d["duration_ms"] / 1000)
+
+
 def run(name, model, effort, batch):
     markets = [l.strip() for l in open(SAMPLE)]
     RESULTS.mkdir(parents=True, exist_ok=True)
     version = hashlib.sha256(((OUT / "system_prompt.txt").read_text() + "".join(markets)).encode()).hexdigest()[:8]
-    env = {**os.environ, "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"}  # otherwise each call adds a paid helper request
     with open(RESULTS / f"{name}.jsonl", "w") as f:
         for i in range(0, len(markets), batch):
-            chunk = markets[i:i + batch]
-            out = subprocess.run([os.environ.get("CLAUDE_BIN", "claude"), "-p", "--model", model, "--effort", effort,
-                                  "--output-format", "json", "--no-session-persistence", "--tools", "", "--strict-mcp-config",
-                                  "--setting-sources", "", "--system-prompt-file", str(OUT / "system_prompt.txt")],
-                                 input="\n".join(chunk), capture_output=True, text=True, check=True, env=env)
-            d = json.loads(out.stdout)
-            f.write(json.dumps(dict(input_version=version, ids=[json.loads(m)["id"] for m in chunk], result=d["result"], cost=d["total_cost_usd"],
-                                    usage=d["modelUsage"], seconds=d["duration_ms"] / 1000)) + "\n")
+            f.write(json.dumps(claude_call(markets[i:i + batch], model, effort, version)) + "\n")
             f.flush()
 
 
 def jev_request(body, key):
     request = urllib.request.Request("https://api.typesafe.ai/v1/systemone", json.dumps(body).encode(),
                                      {"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
-    for wait in (1, 5, 30, None):
+    for wait in (1, 5, 30, 120, None):
         try:
             with urllib.request.urlopen(request, timeout=60) as response:
                 return json.load(response)
         except urllib.error.HTTPError as e:
-            if e.code != 429 or wait is None:  # only rate limits are worth retrying
+            if (e.code != 429 and e.code < 500) or wait is None:  # rate limits and server errors pass; an empty balance doesn't
                 raise
-            time.sleep(wait)
+        except (OSError, http.client.HTTPException, ValueError):  # dropped connections, cut or garbled replies
+            if wait is None:
+                raise
+        time.sleep(wait)
+
+
+def jev_setup():
+    """Jev can't answer "unsure", so its text drops the sentences that mention it."""
+    drop = lambda text: re.sub(r"[^.\n]*\bunsure\b[^.\n]*\.", "", re.sub(r"; answer unsure[^.]*", "", text))
+    intro = drop(re.findall(r"```text\n(.*?)```", QUESTIONS.read_text(), re.S)[0]).strip()
+    asked = {q: dict(type="noul", instructions=drop(text)) for q, text in questions()}
+    key = Path("~/.config/jev_key").expanduser().read_text().strip()
+    return intro, asked, key, hashlib.sha256((json.dumps(asked) + intro).encode()).hexdigest()[:8]
+
+
+def jev_call(market, intro, asked, key, version):
+    """All tags in one request per market: Jev bills the state once and the docs mention no prompt cache."""
+    market = json.loads(market)
+    d = jev_request(dict(model="jev-latest", state=dict(instructions=intro, market=market), questions=asked), key)
+    probs = {q: a["noul"] for q, a in d["answers"].items()}
+    assert probs.keys() == asked.keys() and all(0 <= p <= 1 for p in probs.values()), d  # a missing answer must not become "no"
+    answer = dict(id=market["id"], yes=[q for q, p in probs.items() if p >= JEV_YES],
+                  unsure=[q for q, p in probs.items() if JEV_NO < p < JEV_YES])
+    return dict(input_version=version, ids=[market["id"]], result=json.dumps(answer), probs=probs, model=d["model"],
+                cost=d["usage"]["input_tokens"] * JEV_PRICE, usage=d["usage"])
 
 
 def jev(name):
-    """All tags in one request per market: Jev bills the state once and the docs mention no prompt cache."""
-    key = Path("~/.config/jev_key").expanduser().read_text().strip()
-    intro = re.findall(r"```text\n(.*?)```", QUESTIONS.read_text(), re.S)[0].strip()
-    asked = {q: dict(type="noul", instructions=text) for q, text in questions()}
-    markets = [l.strip() for l in open(SAMPLE)]
-    version = hashlib.sha256((json.dumps(asked) + intro + "".join(markets)).encode()).hexdigest()[:8]
+    setup = jev_setup()
     RESULTS.mkdir(parents=True, exist_ok=True)
     with open(RESULTS / f"{name}.jsonl", "w") as f:
-        for market in map(json.loads, markets):
-            d = jev_request(dict(model="jev-latest", state=dict(instructions=intro, market=market), questions=asked), key)
-            probs = {q: a["noul"] for q, a in d["answers"].items()}
-            answer = dict(id=market["id"], yes=[q for q, p in probs.items() if p >= JEV_YES],
-                          unsure=[q for q, p in probs.items() if JEV_NO < p < JEV_YES])
-            f.write(json.dumps(dict(input_version=version, ids=[market["id"]], result=json.dumps(answer), probs=probs,
-                                    model=d["model"], cost=d["usage"]["input_tokens"] * JEV_PRICE, usage=d["usage"])) + "\n")
+        for market in open(SAMPLE):
+            f.write(json.dumps(jev_call(market, *setup)) + "\n")
             f.flush()
 
 
-def valid(answer, call, seen, tags):
-    return (isinstance(answer, dict) and answer.get("id") in call["ids"] and answer["id"] not in seen
-            and all(isinstance(answer.get(k), list) and set(answer[k]) <= tags for k in ("yes", "unsure")))
+def valid(answer, call, seen, tags, need_score):
+    if not (isinstance(answer, dict) and answer.get("id") in call["ids"] and answer["id"] not in seen
+            and all(isinstance(answer.get(k), list) and all(isinstance(t, str) and t in tags for t in answer[k]) for k in ("yes", "unsure"))):
+        return False
+    score = answer.get("substantive")
+    return score is None and not need_score or type(score) in (int, float) and 0 <= score <= 100
 
 
 def load(name):
-    """id -> answer, the number of invalid output lines, cost per market sent, input version.
+    return read_calls(RESULTS / f"{name}.jsonl")
+
+
+def read_calls(path, need_score=False):
+    """id -> answer, the number of invalid output lines, cost per market sent, input versions.
     An invalid answer stays missing; it never turns into "no"."""
     answers, bad, cost, sent, versions = {}, 0, 0, 0, set()
     tags = {q for q, _ in questions()}
-    for call in map(json.loads, open(RESULTS / f"{name}.jsonl")):
+    for call in map(json.loads, open(path)):
         cost += call["cost"]
         sent += len(call["ids"])
         versions.add(call.get("input_version"))
@@ -139,7 +167,11 @@ def load(name):
                     continue
                 if isinstance(a, dict) and "unknown" in a:  # runs saved before the answer was renamed to "unsure"
                     a["unsure"] = a.pop("unknown")
-                if valid(a, call, answers, tags):
+                if valid(a, call, answers, tags, need_score):
+                    if "substantive" in a:
+                        p = a["substantive"] / 100
+                        a["yes"] = [t for t in a["yes"] if t != SCORED] + [SCORED] * (p >= JEV_YES)
+                        a["unsure"] = [t for t in a["unsure"] if t != SCORED] + [SCORED] * (JEV_NO < p < JEV_YES)
                     answers[a["id"]] = a
                 else:
                     bad += 1

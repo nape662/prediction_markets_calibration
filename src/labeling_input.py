@@ -23,7 +23,9 @@ DAYS = "Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday"
 LATER = re.compile(rf"Update \d{{4}}-\d{{2}}-\d{{2}}|^\W*(update|edit|upd|eta)\b|^\W*(resolving|resolved)( to| as)? (yes|no|n/?a)\b"
                    rf"|^\W*({MONTHS})\.? \d{{1,2}}(,? \d{{4}})?,? \d{{1,2}}(:\d{{2}})?\s*(am|pm)?\s*:", re.I | re.M)
 LEAK_LINE = re.compile(r"\((already )?resolved( to)? (yes|no|n/?a)\)|\b(it|this( market| question)?) (has )?resolved( to| as)? (yes|no|n/?a)\b"
-                       r"|\bthe resolution is (yes|no|n/?a)\b", re.I)
+                       r"|\bthe resolution is (yes|no|n/?a)\b|\b(market|question) (was |has been )?resolved (to|with|because|since)\b(?!.*\b(if|when|once|unless)\b)"
+                       r"|^\W*close date (updated|extended|changed)\b|\bextended (the )?close date\b", re.I)
+LATE_TAGS = {"misresolved", "improperly-resolved", "improperly-resolved2", "metamarkets-on-improper-resolution", "please-resolve"}  # added after the outcome
 
 
 def clean(text):
@@ -50,7 +52,7 @@ def manifold():
         id=[m["id"] for m in rows], platform="Manifold", question=[m["question"] for m in rows],
         description=[clean(m.get("textDescription")) for m in rows],
         created=pd.to_datetime([m["createdTime"] for m in rows], unit="ms", utc=True),
-        creator=[m["creatorUsername"] for m in rows], tags=[" ".join(m.get("groupSlugs") or []) for m in rows],
+        creator=[m["creatorUsername"] for m in rows], tags=[" ".join(g for g in m.get("groupSlugs") or [] if g not in LATE_TAGS) for m in rows],
     )).to_parquet(OUT / "manifold.parquet", index=False)
     print(f"manifold: {len(rows):,} markets", flush=True)
 

@@ -102,6 +102,14 @@ Jev is paid with real money from Peter's TypeSafe balance, $5 so far, which cove
 
 Unlike Haiku, Jev has no cache, so about 2,300 of its 2,600 tokens per market are our questions and intro. **For Jev, shorter questions cut cost directly.**
 
+## Full Manifold run
+
+Peter chose to label all 37,680 Manifold markets and leave Polymarket out for now (`src/labeling_full.py`, results in `labeling/results/full/`). The prompt now has 25 questions: `bookmaker_odds`, `status_quo_default` and `insider_knowable` were added, and `substantive_world_question` is a 0–100 score for Haiku. None of the new tags affect groups, and no Opus reference exists for them yet.
+
+**Haiku runs at medium effort, one market per call,** because batching pulls its `substantive_world_question` answers away from Opus's (151 of 200 matching, against 188). A 24-market test cost $0.00093 per market, so about $35 at list price. It runs in a cloud session and stops itself at $60. **Jev** runs locally at about $0.00011 per market, about $4.20, and stops at $4.80.
+
+Sol and Opus reviewed the code before launch. Fixes: results are saved as they arrive, a killed write can't break a restart, a missing Jev answer stops the run instead of becoming "no", and the Jev text keeps the `short_crypto_price` interval rule. A few outcome leaks in the input were also removed: lines like "Market resolved to YES since...", "Close date updated to..." notes and tags such as `misresolved`. Fourteen unusual "close date updated" mentions remain.
+
 ## Where the money goes
 
 Haiku low at 20 per call on the first sample, as shares of cost (these 10 calls cost $0.044 at list price):

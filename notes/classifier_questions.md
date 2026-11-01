@@ -148,6 +148,20 @@ The market's own resolution criteria take priority over its title. Event titles 
 
 «Сколько стульев существует?» может быть одновременно `existing_fact`, `fermi_estimate` и `substantive_world_question`. «Докажут ли эту теорему до 2030 года?» — прогноз будущего, не `puzzle_or_math`.
 
+## 6. Как устроено событие
+
+Эти два вопроса тоже не влияют на группы: это срезы для отдельных графиков.
+
+**`status_quo_default`**
+
+> Does one outcome win by default if the current state of affairs continues and no specific triggering event, action, or change occurs before the deadline?
+
+Отделяет «случится ли X к дате Y» от событий с фиксированной датой. Такие рынки закрываются раньше срока, когда X случается, поэтому у них «за 12 часов до разрешения» зависит от исхода и их нельзя мерить так же.
+
+**`insider_knowable`**
+
+> Is this the kind of event where insiders (such as company employees, committee members, government officials, or producers) would normally know or decide the outcome privately before it is publicly announced?
+
 ## Вход и формат ответа
 
 Один объект рынка: идентификатор, платформа, название, описание и условия резолюции, время создания; при наличии — название события, теги и информация, позволяющая понять, кто автор. Отсутствующие поля явно `null`. Цены, исходы, позиции трейдеров и старые regex-метки не передаём. Условия случайного механизма вроде «1% chance by random draw» сохраняем: это не рыночная цена. Из описаний надо убрать позднейшие сообщения об исходе; подготовка такого входа ещё не реализована.
@@ -156,19 +170,21 @@ The market's own resolution criteria take priority over its title. Event titles 
 
 **Никаких дат, кроме даты создания.** Дату закрытия и время разрешения не передаём. На Manifold `closeTime` при досрочном разрешении перезаписывается временем разрешения, а досрочно чаще разрешаются ДА. Дата закрытия, близкая к созданию, подсказала бы модели исход. Дедлайн, написанный в самом вопросе («by June 2025»), остаётся: это часть условий. Длительность рынка, принадлежность к связке взаимоисключающих вариантов и тему считаем сами, у модели не спрашиваем.
 
-Для Haiku — все 23 вопроса да/нет об одном рынке в одном запросе. Общая инструкция и вопросы — неизменный префикс, его кэшируем; меняется только текст рынка. Уровень размышлений (effort) начинаем с низкого и на пилоте сравниваем с high: если ответы почти не отличаются, остаёмся на низком. Инструкция к ответу:
+Для Haiku — все 25 вопросов да/нет об одном рынке в одном запросе. Общая инструкция и вопросы — неизменный префикс, его кэшируем; меняется только текст рынка. Уровень размышлений (effort) начинаем с низкого и на пилоте сравниваем с high: если ответы почти не отличаются, остаёмся на низком. Инструкция к ответу:
 
 ```text
-Each input line is one market. Return one JSON line per market and nothing else, no code fences: {"id":"<market id>","yes":[question IDs answered yes],"unsure":[question IDs answered unsure]}. Every question ID you do not list counts as no. The values answer the classification questions, not the market's YES/NO outcome. Judge each market on its own: other markets in the input must not affect its answers.
+Each input line is one market. Return one JSON line per market and nothing else, no code fences: {"id":"<market id>","substantive":<integer 0-100>,"yes":[question IDs answered yes],"unsure":[question IDs answered unsure]}. "substantive" answers substantive_world_question as a score: 0 means clearly no, 50 means torn, 100 means clearly yes. Do not list that question in yes or unsure. Every other question ID you do not list counts as no. The values answer the classification questions, not the market's YES/NO outcome. Judge each market on its own: other markets in the input must not affect its answers.
 ```
 
-Для Jev — тот же текст рынка, общее вступление и все вопросы в одном запросе (тип `noul`): Jev возвращает вероятность ответа «да» на каждый. 0.8 и выше считаем `yes`, 0.2 и ниже — `no`, между ними — `unsure`. Сырые вероятности сохраняем.
+У Haiku `substantive_world_question` — оценка от 0 до 100; для графиков режем её так же, как вероятности Jev: 80 и выше `yes`, 20 и ниже `no`, между ними `unsure`. Сырую оценку сохраняем.
+
+Для Jev — тот же текст рынка, общее вступление и все вопросы в одном запросе (тип `noul`), из текста которых убраны предложения про `unsure`: такого ответа у Jev нет: Jev возвращает вероятность ответа «да» на каждый. 0.8 и выше считаем `yes`, 0.2 и ниже — `no`, между ними — `unsure`. Сырые вероятности сохраняем.
 
 Пока не усложняем ответы объяснением каждого тега. На выбранных спорных примерах можно отдельно попросить указать фразу из условий, определившую ответ.
 
 ## Примеры границ для ручной проверки
 
-Это ожидаемые отдельные теги по тексту примеров, не результаты прогона моделей и не полная разметка всех 23 вопросов. В реальной проверке читаем также описание.
+Это ожидаемые отдельные теги по тексту примеров, не результаты прогона моделей и не полная разметка всех 25 вопросов. В реальной проверке читаем также описание.
 
 **“Will the billionaire-fight happen, ever?”** Само проведение события не является спортивным результатом: четыре спортивных тега `no`.
 
