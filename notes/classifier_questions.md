@@ -159,7 +159,7 @@ The market's own resolution criteria take priority over its title. Event titles 
 Для Haiku — все 22 вопроса да/нет и `junk_reason` об одном рынке в одном запросе. Общая инструкция и вопросы — неизменный префикс, его кэшируем; меняется только текст рынка. Уровень размышлений (effort) начинаем с низкого и на пилоте сравниваем с high: если ответы почти не отличаются, остаёмся на низком. Инструкция к ответу:
 
 ```text
-Return one JSON object with market_id and labels. labels must contain every question ID. For junk_reason the value is a string of at most five words, or "". For every other ID the value is exactly "yes", "no", or "unknown". Do not add explanations or extra fields. The values answer the classification questions, not the market's YES/NO outcome.
+Each input line is one market. Return one JSON line per market and nothing else, no code fences: {"id":"<market id>","yes":[question IDs answered yes],"unknown":[question IDs answered unknown],"junk":"<junk_reason or empty>"}. Every question ID you do not list counts as no. The values answer the classification questions, not the market's YES/NO outcome. Judge each market on its own: other markets in the input must not affect its answers.
 ```
 
 Для Jev — тот же текст рынка, общее вступление и один вопрос с теми же тремя вариантами ответа. Значит, 22 запроса на рынок: по стоимости это не дешевле Haiku. Поэтому Jev запускаем только на выборке в 2–3 тысячи рынков, для сравнения с Haiku и Luna. Это предложение по содержанию запросов; точный формат API и доступные режимы Jev ещё не проверены. Идентификатор вопроса хранит вызывающий код. Выходные вероятности Jev, если доступны, сохраняем отдельно: не называем их проверенной уверенностью в правильности тега.
