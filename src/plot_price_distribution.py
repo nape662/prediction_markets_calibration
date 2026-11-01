@@ -32,21 +32,20 @@ for r, (name, ids) in enumerate(sets.items()):
         rows += [dict(set=name, horizon=h, percent=p, share=v, markets=len(g)) for p, v in share.items()]
         ax = axes[r, c]
         ax.bar(share.index, share.values, width=1, color="#2a6fbb")
-        ax.set_yscale("log")
-        ax.set_ylim(0.01, 100)
+        ax.set_ylim(0, 22)
         ax.set_xlim(-1, 101)
         ax.set_xticks([0, 10, 25, 50, 75, 90, 100])
-        ax.set_yticks([0.01, 0.1, 1, 10, 100], ["0.01%", "0.1%", "1%", "10%", "100%"])
+        ax.set_yticks([0, 5, 10, 15, 20], ["0%", "5%", "10%", "15%", "20%"])
         ax.grid(axis="y", color="#e4e4e4", linewidth=0.6)
         ax.set_axisbelow(True)
         ax.spines[["top", "right"]].set_visible(False)
         ax.set_title(f"{h} before resolution, {len(g):,} markets" if r == 0 else f"{h}, {len(g):,} markets", fontsize=10)
-    axes[r, 0].set_ylabel(f"{name}\n% of markets (log scale)", fontsize=10)
+    axes[r, 0].set_ylabel(f"{name}\n% of markets at that price", fontsize=10)
 for ax in axes[-1]:
     ax.set_xlabel("Market price, rounded to a whole percent")
 fig.suptitle("Where Manifold prices sit before resolution", fontsize=14, x=0.01, ha="left")
 fig.text(0.01, 0.005, "Each market counts once per panel, at its last price-moving bet at or before resolution minus the horizon. Resolved YES/NO markets with at least 15 bettors.\n"
-         f"World and groups: merged Jev, Opus and Terra labels. {SQ}: Jev probability ≥ {QUIET}, or a reviewer's yes. Log scale: each gridline is 10 times the last.", fontsize=8.5, color="#555555")
+         f"World and groups: merged Jev, Opus and Terra labels. {SQ}: Jev probability ≥ {QUIET}, or a reviewer's yes.", fontsize=8.5, color="#555555")
 fig.tight_layout(rect=(0, 0.05, 1, 0.97))
 (ROOT / "plots").mkdir(exist_ok=True)
 fig.savefig(ROOT / "plots/price_distribution.png", dpi=130)
