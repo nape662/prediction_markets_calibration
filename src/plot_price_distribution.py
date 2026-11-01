@@ -20,6 +20,7 @@ sets = {"All markets": {a["id"] for a in final},
         "World": {a["id"] for a in final if a["group"] == "world"},
         SQ: {a["id"] for a in final if (jev[a["id"]] >= QUIET if a["source"] == "jev" else SQ in a["yes"])}}
 d = pd.read_parquet(ROOT / "data/manifold/snapshots.parquet")
+d = d[d.anchor == "before_resolution"].copy()
 d["percent"] = (d.prob * 100).round().astype(int)
 horizons = ["12h", "1d", "1w", "1m", "1y"]
 
