@@ -16,7 +16,7 @@ OUT = PROMPTS / "review"
 JEV = PROMPTS / "results/full/manifold_jev.jsonl"
 INPUT = PROMPTS / "manifold_input.jsonl"
 SCORED, YES, NO = "substantive_world_question", 0.8, 0.2
-GROUP_TAGS = {name: tags for name, tags in GROUPS}
+SELECTED_BY = GROUPS + [("participants", {"platform_metric", "constructed_game", "creator_influence", "trader_influence"})]  # the groups when the sample was drawn
 OPUS, TERRA, RANDOM_WORLD, OVERLAP = 500, 200, 100, 20  # OVERLAP: markets Terra also gets from Opus's set, to measure agreement
 SHORT = dict(fc="fixed_chance", cp="crypto_price", scp="short_crypto_price", oa="other_asset_price", sm="sports_match",
              st="sports_tournament", sp="sports_performance", cb="central_bank_rate", sa="sports_award", w="weather_measurement",
@@ -28,11 +28,10 @@ SHORT = dict(fc="fixed_chance", cp="crypto_price", scp="short_crypto_price", oa=
 def strata():
     rows = []
     for call in map(json.loads, open(JEV)):
-        p, top = call["probs"], {name: max(call["probs"][t] for t in tags) for name, tags in GROUPS}
+        p, top = call["probs"], {name: max(call["probs"][t] for t in tags) for name, tags in SELECTED_BY}
         yes_groups = {name for name, v in top.items() if v >= YES}
-        answer = dict(yes=[t for t, v in p.items() if v >= YES])
         odd = max(top["fixed_chance"], top["opinion"], top["not_forecast"])
-        rows.append(dict(id=call["ids"][0], substantive=p[SCORED], world=group(answer) == "world",
+        rows.append(dict(id=call["ids"][0], substantive=p[SCORED], world=not yes_groups,
                          not_substantive_world=p[SCORED] <= NO and not yes_groups,
                          two_groups=len(yes_groups) > 1 and yes_groups != {"traded_elsewhere", "participants"},
                          contradiction=min(p[SCORED], odd) if p[SCORED] >= YES and odd >= 0.5 else 0.0))

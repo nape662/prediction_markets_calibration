@@ -44,7 +44,7 @@ export CLAUDE_BIN=$(ls -d ~/.vscode-server/extensions/anthropic.claude-code-*-li
 
 ## Results
 
-Groups were assigned by the first-match rules in `notes/classifier_questions.md`. "World" is whatever is left after the other groups. Subjective resolution is not a group: a subjectively resolved question about the world is still about the world (Peter's decision). The tag stays, so it can still be plotted on its own, and regrouping needs no new model calls because every answer is saved.
+Groups were assigned by the first-match rules in `notes/classifier_questions.md`. "World" is whatever is left after the other groups. Subjective resolution is not a group: a subjectively resolved question about the world is still about the world (Peter's decision). The tag stays, so it can still be plotted on its own, and regrouping needs no new model calls because every answer is saved. The results below used a "participants" group that took markets with influence or platform tags out of world. Peter later deleted it, and world now excludes substantive `no` instead (`notes/labeling_review.md`), so those numbers describe the old rule.
 
 | Run (200 markets) | Same group as Opus | USD per market |
 |---|---|---|

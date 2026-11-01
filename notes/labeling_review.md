@@ -1,6 +1,6 @@
 # Hand review of Jev's contradictory markets
 
-**The 0.8 cutoff is wrong for `status_quo_default`, and no tag catches some of the empty markets. This review doesn't measure how much garbage is in Jev's world group.**
+**The 0.8 cutoff is wrong for `status_quo_default`, and this review doesn't measure how much garbage is in Jev's world group. Because of what it found, the "participants" group is gone: world now excludes only markets with substantive `no`, and holds 27,840 markets on Jev's labels instead of 25,949.**
 
 ## What we did
 
@@ -15,16 +15,16 @@ Opus 5.5 labeled 600 Manifold markets by hand in one session, about 40 at a time
 
 | Sample | Same group as Opus |
 |---|---|
-| 100 random world | 93 |
-| 222 world, not substantive | 96 |
+| 100 random world | 90 |
+| 222 world, not substantive | 189 |
 | 59 two groups | 18 |
 | 219 substantive and odd | 195 |
 
-**The 7 of 100 that left world are not garbage.** An earlier version of this report called them that, which was wrong. Six carry participant tags and one is weather, and influence on the outcome doesn't make a question unsubstantive. Opus scored five of the seven at ≥55, for example "Will I have a convincing video call with a fully synthetic AI avatar before July 2025?" at 80. The table's group comparison uses the first-match rule, so it counts these as disagreements.
+**An earlier version of this report was wrong.** Under the old groups, 7 of the 100 random markets left world, and it called them garbage. Six carried participant tags and one was weather, and influence on the outcome doesn't make a question unsubstantive. Opus scored five of the seven at ≥55, for example "Will I have a convincing video call with a fully synthetic AI avatar before July 2025?" at 80. Peter deleted the group as a result. The four tags stay saved for later queries and aren't used for now.
 
-**We have no direct measure of garbage yet.** The closest number: Opus scored 9 of the 100 at ≤20, and 5 of those are about the streamer Destiny, which is niche rather than junk.
+**We have no direct measure of garbage yet.** The closest number: Opus scored 9 of the 100 at ≤20, and 5 of those are about the streamer Destiny, which is niche rather than junk. The other difference is the weather market. The 100 were drawn from the old world group, so the 2,113 markets that just joined world haven't been sampled.
 
-**Jev's substantive ≤0.2 is a clean signal.** Opus scored 204 of those 222 at ≤20. 81 of them stay in world because no tag catches them: "This market resolves YES on March 1", secret markets, empty titles. They are 0.9% of world, so this is small.
+**Jev's substantive ≤0.2 is a clean signal.** Opus scored 204 of those 222 at ≤20. They include markets no tag catches: "This market resolves YES on March 1", secret markets, empty titles. The new rule removes these, 1,141 markets in all.
 
 **The 0.8 cutoff fails on `status_quo_default`.** On the 100 random markets, Opus says yes on 69 and Jev reaches 0.8 on 7. A cutoff of 0.2 finds 51 of the 69, with 6 false among 57.
 

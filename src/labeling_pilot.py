@@ -30,8 +30,7 @@ GROUPS = [("opinion", {"direct_opinion"}), ("fixed_chance", {"fixed_chance"}),
           ("not_forecast", {"existing_fact", "fermi_estimate", "puzzle_or_math"}),
           ("traded_elsewhere", {"crypto_price", "short_crypto_price", "other_asset_price", "sports_match", "sports_tournament",
                                 "sports_performance", "central_bank_rate", "sports_award", "weather_measurement",
-                                "scheduled_release", "speech_or_posts"}),
-          ("participants", {"platform_metric", "constructed_game", "creator_influence", "trader_influence"})]
+                                "scheduled_release", "speech_or_posts"})]
 
 
 def questions():
@@ -188,7 +187,7 @@ def group(answer):
     for name, tags in GROUPS:
         if yes & tags:
             return name
-    return "world"
+    return "not_substantive" if value(answer, SCORED) == "no" else "world"
 
 
 def score(reference, names):
