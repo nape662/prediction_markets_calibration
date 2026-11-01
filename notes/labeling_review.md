@@ -1,6 +1,6 @@
 # Hand review of Jev's contradictory markets
 
-**The 0.8 cutoff is wrong for `status_quo_default`, and this review doesn't measure how much garbage is in Jev's world group. Because of what it found, the "participants" group is gone: world now excludes only markets with substantive `no`, and holds 27,840 markets on Jev's labels instead of 25,949.**
+**The 0.8 cutoff is wrong for `status_quo_default`, and this review doesn't measure how much garbage is in Jev's world group. Because of what it found, the "participants" group is gone: world now excludes only markets with substantive `no`, and holds 27,840 markets on Jev's labels instead of 25,949. With the reviewers' answers merged in, it holds 27,752.**
 
 ## What we did
 
@@ -32,13 +32,30 @@ Opus 5.5 labeled 600 Manifold markets by hand in one session, about 40 at a time
 
 **Jev may miss some existing facts.** On Terra's 199, Terra put 62 in not-a-forecast and Jev only 9. Jev's world holds 536 markets (2%) with `existing_fact` between 0.5 and 0.8.
 
+## Second round and the merged labels
+
+Opus and Terra then labeled the remaining 316 contradictory markets, 158 each, split at random, plus 20 more shared markets. **`labeling/results/full/manifold_final.jsonl` now holds one answer per market:** Opus's on 758, Terra's on 357 and Jev's on the other 36,565. Opus wins where both labeled. Each row records its source, so the merge can be undone.
+
+| Group | Jev alone | Merged |
+|---|---|---|
+| world | 27,840 | 27,752 |
+| traded_elsewhere | 7,750 | 7,782 |
+| not_substantive | 1,141 | 1,146 |
+| fixed_chance | 567 | 571 |
+| not_forecast | 345 | 391 |
+| opinion | 37 | 38 |
+
+The merge changes the group of 245 markets. The main effect is real: Jev misses existing facts. In this round Opus moved 32 of its 158 from Jev's world to not-a-forecast, and Terra moved 19 of its 158. Only markets Jev scored ≥0.8 on substantive were checked for this, so more of these probably remain in world.
+
 ## How far to trust this
+
+- **Reviewed markets follow a different labeler from the rest.** Merging fixes these 1,115 markets, but it doesn't make world's unreviewed markets as clean. The 100 random world markets were also relabeled, so 9 of them moved to not_substantive under Opus's strict scale, 5 about the streamer Destiny. That breaks Peter's rule that niche isn't junk, and they stay there until someone rescores them.
 
 - **These labels aren't the Opus reference.** Opus labeled in batches, and batching pulled Haiku's substantive answers away from single-market ones. Only 1 of the 600 is also in the pilot's Opus run, so we can't measure the difference.
 - **Opus's substantive scale here is strict.** It gave 51 of the 100 random markets ≥80 where Jev gave 91, partly because it scored sports around 60. Don't read that gap as Jev's error.
-- **Terra and Opus disagree often on hard cases:** same group on 15 of 20, too few to say who is right.
+- **Terra and Opus disagree often on hard cases:** same group on 29 of 40, too few to say who is right.
 - **The hard samples were chosen for being hard.** Their agreement rates don't describe Jev overall.
 
 ## Details
 
-Labels: `labeling/review/opus_labels.txt`, `opus.jsonl`, `terra.jsonl`. Which market came from which sample: `strata.csv`. Rerun: `python src/labeling_review.py score`. Terra ran on high effort through `codex exec`. Selection and analysis are in `src/labeling_review.py`; the cutoff counts above came from a one-off script that isn't committed. The script hasn't had a Sol review.
+Labels: `labeling/review/opus_labels.txt`, `opus.jsonl`, `terra.jsonl`. Which market came from which sample: `strata.csv`. Rerun: `python src/labeling_review.py score`. Terra ran on high effort through `codex exec`. Selection and analysis are in `src/labeling_review.py`; the cutoff counts above came from a one-off script that isn't committed. Sol reviewed the merge code on high and found no bugs. Rerun the merge: `python src/labeling_review.py final`.

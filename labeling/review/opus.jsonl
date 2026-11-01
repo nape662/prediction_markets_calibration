@@ -598,3 +598,161 @@
 {"ids": ["s5a2ljhray"], "result": "{\"id\": \"s5a2ljhray\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"subjective_resolution\"], \"unsure\": []}", "cost": 0}
 {"ids": ["wA44KrNyAI7Um5jX3s5b"], "result": "{\"id\": \"wA44KrNyAI7Um5jX3s5b\", \"substantive\": 0, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
 {"ids": ["u7PsBSaZRWB29TU3e2Ga"], "result": "{\"id\": \"u7PsBSaZRWB29TU3e2Ga\", \"substantive\": 15, \"yes\": [\"direct_opinion\"], \"unsure\": [\"subjective_resolution\", \"platform_metric\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["YzztsVVSVqwHqnflkFts"], "result": "{\"id\": \"YzztsVVSVqwHqnflkFts\", \"substantive\": 70, \"yes\": [\"sports_tournament\", \"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["6F5ZEC3VpY9WY6C3Ay7i"], "result": "{\"id\": \"6F5ZEC3VpY9WY6C3Ay7i\", \"substantive\": 85, \"yes\": [\"weather_measurement\"], \"unsure\": [\"existing_fact\", \"scheduled_release\"]}", "cost": 0}
+{"ids": ["9LCl2QUOnE"], "result": "{\"id\": \"9LCl2QUOnE\", \"substantive\": 75, \"yes\": [\"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["n5S55Syd9c"], "result": "{\"id\": \"n5S55Syd9c\", \"substantive\": 65, \"yes\": [\"sports_tournament\"], \"unsure\": [\"bookmaker_odds\"]}", "cost": 0}
+{"ids": ["0EzLglScq0YN18PymsYV"], "result": "{\"id\": \"0EzLglScq0YN18PymsYV\", \"substantive\": 45, \"yes\": [\"insider_knowable\"], \"unsure\": [\"existing_fact\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["jEukt1wcFio6mnTsLFLn"], "result": "{\"id\": \"jEukt1wcFio6mnTsLFLn\", \"substantive\": 25, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["LnlZzYQqdNMWQtLb6ehy"], "result": "{\"id\": \"LnlZzYQqdNMWQtLb6ehy\", \"substantive\": 15, \"yes\": [\"platform_metric\"], \"unsure\": [\"status_quo_default\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["4T2SZq47rMht2Fov0Vkv"], "result": "{\"id\": \"4T2SZq47rMht2Fov0Vkv\", \"substantive\": 65, \"yes\": [\"scheduled_release\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["uNQzy4gbZKaS86Eitb0F"], "result": "{\"id\": \"uNQzy4gbZKaS86Eitb0F\", \"substantive\": 85, \"yes\": [], \"unsure\": [\"weather_measurement\"]}", "cost": 0}
+{"ids": ["Cw4yBZfzRU4HUh64lpGi"], "result": "{\"id\": \"Cw4yBZfzRU4HUh64lpGi\", \"substantive\": 65, \"yes\": [\"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["0g9qZCOhp9"], "result": "{\"id\": \"0g9qZCOhp9\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\", \"subjective_resolution\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["EBmfbyxDvv4U5mPN9K14"], "result": "{\"id\": \"EBmfbyxDvv4U5mPN9K14\", \"substantive\": 70, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["B4e0wWumhhq6aNAH7db3"], "result": "{\"id\": \"B4e0wWumhhq6aNAH7db3\", \"substantive\": 40, \"yes\": [\"existing_fact\", \"insider_knowable\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["KrXDYCxjeMFQeVhRSpqj"], "result": "{\"id\": \"KrXDYCxjeMFQeVhRSpqj\", \"substantive\": 75, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["vpxFOBybcWHDsOdiOGFQ"], "result": "{\"id\": \"vpxFOBybcWHDsOdiOGFQ\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["wzl5sb9tda"], "result": "{\"id\": \"wzl5sb9tda\", \"substantive\": 98, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["jyzQvwjc9mTDyf2arkk5"], "result": "{\"id\": \"jyzQvwjc9mTDyf2arkk5\", \"substantive\": 85, \"yes\": [\"scheduled_release\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["FXTWSE9B5kOiVApGuy2k"], "result": "{\"id\": \"FXTWSE9B5kOiVApGuy2k\", \"substantive\": 90, \"yes\": [\"status_quo_default\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["lvm57hEV8YB8tQ1nYDHW"], "result": "{\"id\": \"lvm57hEV8YB8tQ1nYDHW\", \"substantive\": 10, \"yes\": [\"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["QO4eZnae94ul8pvDTGRx"], "result": "{\"id\": \"QO4eZnae94ul8pvDTGRx\", \"substantive\": 95, \"yes\": [\"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["hlln3n8YXHgcyAVL3Idj"], "result": "{\"id\": \"hlln3n8YXHgcyAVL3Idj\", \"substantive\": 85, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["HsdXcNRBSj83N7KrNMlX"], "result": "{\"id\": \"HsdXcNRBSj83N7KrNMlX\", \"substantive\": 65, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"speech_or_posts\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["P6indqKITX49s0XBsRb7"], "result": "{\"id\": \"P6indqKITX49s0XBsRb7\", \"substantive\": 60, \"yes\": [\"subjective_resolution\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["Y0r5NCFxBl7waYBu0vZ8"], "result": "{\"id\": \"Y0r5NCFxBl7waYBu0vZ8\", \"substantive\": 55, \"yes\": [\"sports_tournament\", \"sports_award\"], \"unsure\": [\"bookmaker_odds\"]}", "cost": 0}
+{"ids": ["OuFTNG28BM6GrwuhO53n"], "result": "{\"id\": \"OuFTNG28BM6GrwuhO53n\", \"substantive\": 90, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["5edOcHjoJJkqNg8LsZm5"], "result": "{\"id\": \"5edOcHjoJJkqNg8LsZm5\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"insider_knowable\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["L59AUnAN2P"], "result": "{\"id\": \"L59AUnAN2P\", \"substantive\": 85, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["UYrGag7C3hN4DI4KrYtF"], "result": "{\"id\": \"UYrGag7C3hN4DI4KrYtF\", \"substantive\": 85, \"yes\": [], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["8XhPGruE5FqEAOKA3Rm6"], "result": "{\"id\": \"8XhPGruE5FqEAOKA3Rm6\", \"substantive\": 55, \"yes\": [], \"unsure\": [\"existing_fact\", \"fermi_estimate\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["561ayZmoacNXCOyJEnsu"], "result": "{\"id\": \"561ayZmoacNXCOyJEnsu\", \"substantive\": 75, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["Ug8Pqglhyt"], "result": "{\"id\": \"Ug8Pqglhyt\", \"substantive\": 85, \"yes\": [\"subjective_resolution\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["z27npcrmke"], "result": "{\"id\": \"z27npcrmke\", \"substantive\": 35, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["M34qZyMc2aydE2i5jrS0"], "result": "{\"id\": \"M34qZyMc2aydE2i5jrS0\", \"substantive\": 25, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["1REExqJvuZIOBcXn67PW"], "result": "{\"id\": \"1REExqJvuZIOBcXn67PW\", \"substantive\": 85, \"yes\": [\"subjective_resolution\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["Ghz2Mn3lzytj4ELmF7Fy"], "result": "{\"id\": \"Ghz2Mn3lzytj4ELmF7Fy\", \"substantive\": 60, \"yes\": [\"other_asset_price\"], \"unsure\": []}", "cost": 0}
+{"ids": ["N6UqLzltCz"], "result": "{\"id\": \"N6UqLzltCz\", \"substantive\": 75, \"yes\": [\"existing_fact\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["dX3R1lPrpNhCpwaBaH24"], "result": "{\"id\": \"dX3R1lPrpNhCpwaBaH24\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"scheduled_release\"]}", "cost": 0}
+{"ids": ["b24icsxezx"], "result": "{\"id\": \"b24icsxezx\", \"substantive\": 98, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["Pl22cOq5p6"], "result": "{\"id\": \"Pl22cOq5p6\", \"substantive\": 70, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["4UcqoDBWovjkRNdlO6KD"], "result": "{\"id\": \"4UcqoDBWovjkRNdlO6KD\", \"substantive\": 50, \"yes\": [], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["l8LUptPqIZ"], "result": "{\"id\": \"l8LUptPqIZ\", \"substantive\": 35, \"yes\": [\"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["pEnldhoxRphIFAylRq2r"], "result": "{\"id\": \"pEnldhoxRphIFAylRq2r\", \"substantive\": 8, \"yes\": [\"subjective_resolution\", \"status_quo_default\"], \"unsure\": [\"platform_metric\", \"trader_influence\"]}", "cost": 0}
+{"ids": ["4BcogKpEWa3xHc2VgDQG"], "result": "{\"id\": \"4BcogKpEWa3xHc2VgDQG\", \"substantive\": 75, \"yes\": [\"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["z0FznAmsD4lcLjMV1nub"], "result": "{\"id\": \"z0FznAmsD4lcLjMV1nub\", \"substantive\": 65, \"yes\": [\"sports_tournament\", \"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["yNKcMoEi2r1uTdvvCc4J"], "result": "{\"id\": \"yNKcMoEi2r1uTdvvCc4J\", \"substantive\": 85, \"yes\": [\"existing_fact\"], \"unsure\": [\"scheduled_release\"]}", "cost": 0}
+{"ids": ["XqWx2y0zPBNVHHDnGupn"], "result": "{\"id\": \"XqWx2y0zPBNVHHDnGupn\", \"substantive\": 55, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["i4TBi474weysZfD683pI"], "result": "{\"id\": \"i4TBi474weysZfD683pI\", \"substantive\": 75, \"yes\": [\"subjective_resolution\", \"status_quo_default\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["SRAIlISySP"], "result": "{\"id\": \"SRAIlISySP\", \"substantive\": 60, \"yes\": [], \"unsure\": []}", "cost": 0}
+{"ids": ["1SRjrIP6UU5XSXB8IyIt"], "result": "{\"id\": \"1SRjrIP6UU5XSXB8IyIt\", \"substantive\": 70, \"yes\": [\"weather_measurement\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["1YgiuJRZc9BgWxWw98jx"], "result": "{\"id\": \"1YgiuJRZc9BgWxWw98jx\", \"substantive\": 85, \"yes\": [\"status_quo_default\"], \"unsure\": [\"existing_fact\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["SHa5SA8bpDMzYaoIWRXn"], "result": "{\"id\": \"SHa5SA8bpDMzYaoIWRXn\", \"substantive\": 55, \"yes\": [\"crypto_price\"], \"unsure\": [\"short_crypto_price\"]}", "cost": 0}
+{"ids": ["UlqBTcWZA35ASglxYzGh"], "result": "{\"id\": \"UlqBTcWZA35ASglxYzGh\", \"substantive\": 90, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["vt0DPkPMW4hzMBtHWHbj"], "result": "{\"id\": \"vt0DPkPMW4hzMBtHWHbj\", \"substantive\": 75, \"yes\": [], \"unsure\": [\"scheduled_release\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["s4Jf4rsyKu1bz5BZFLRt"], "result": "{\"id\": \"s4Jf4rsyKu1bz5BZFLRt\", \"substantive\": 90, \"yes\": [\"scheduled_release\"], \"unsure\": []}", "cost": 0}
+{"ids": ["ElPcslPzIS"], "result": "{\"id\": \"ElPcslPzIS\", \"substantive\": 90, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["uPTAc0jMdIMX139jKsyL"], "result": "{\"id\": \"uPTAc0jMdIMX139jKsyL\", \"substantive\": 50, \"yes\": [\"crypto_price\"], \"unsure\": [\"short_crypto_price\"]}", "cost": 0}
+{"ids": ["8p7stbdps9"], "result": "{\"id\": \"8p7stbdps9\", \"substantive\": 60, \"yes\": [], \"unsure\": []}", "cost": 0}
+{"ids": ["H4SAsLMCfeWrknOCTAn7"], "result": "{\"id\": \"H4SAsLMCfeWrknOCTAn7\", \"substantive\": 80, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["2hQz7SHsQADnHOyGWh1E"], "result": "{\"id\": \"2hQz7SHsQADnHOyGWh1E\", \"substantive\": 90, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["iZcD0d3jSVNHG74fYRin"], "result": "{\"id\": \"iZcD0d3jSVNHG74fYRin\", \"substantive\": 70, \"yes\": [\"scheduled_release\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["BeizbEzfzZ4gjIUuZfhK"], "result": "{\"id\": \"BeizbEzfzZ4gjIUuZfhK\", \"substantive\": 75, \"yes\": [], \"unsure\": [\"scheduled_release\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["rbLLqKjnA1oVFTncaKpC"], "result": "{\"id\": \"rbLLqKjnA1oVFTncaKpC\", \"substantive\": 85, \"yes\": [], \"unsure\": [\"existing_fact\", \"status_quo_default\"]}", "cost": 0}
+{"ids": ["QxgxG5SAOmVOmcGTfAKz"], "result": "{\"id\": \"QxgxG5SAOmVOmcGTfAKz\", \"substantive\": 60, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["U6v4JddSLKnpdzWFuoP4"], "result": "{\"id\": \"U6v4JddSLKnpdzWFuoP4\", \"substantive\": 15, \"yes\": [\"status_quo_default\"], \"unsure\": [\"platform_metric\"]}", "cost": 0}
+{"ids": ["xb2QZdl1fNxIfocpchtQ"], "result": "{\"id\": \"xb2QZdl1fNxIfocpchtQ\", \"substantive\": 35, \"yes\": [\"creator_influence\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["bDn1QyQb3eBB8C4SvPy8"], "result": "{\"id\": \"bDn1QyQb3eBB8C4SvPy8\", \"substantive\": 60, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["uNzosuq7Pxtu1h3CcY3H"], "result": "{\"id\": \"uNzosuq7Pxtu1h3CcY3H\", \"substantive\": 25, \"yes\": [\"trader_influence\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\", \"sports_performance\"]}", "cost": 0}
+{"ids": ["lycb3SYg282tTNpfBC9i"], "result": "{\"id\": \"lycb3SYg282tTNpfBC9i\", \"substantive\": 70, \"yes\": [], \"unsure\": []}", "cost": 0}
+{"ids": ["298PNt22sn"], "result": "{\"id\": \"298PNt22sn\", \"substantive\": 90, \"yes\": [\"status_quo_default\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["176Ef7LtWnss8oYLzq24"], "result": "{\"id\": \"176Ef7LtWnss8oYLzq24\", \"substantive\": 80, \"yes\": [], \"unsure\": []}", "cost": 0}
+{"ids": ["luqsqd8dAq"], "result": "{\"id\": \"luqsqd8dAq\", \"substantive\": 75, \"yes\": [\"existing_fact\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["ttjcc9gu5f"], "result": "{\"id\": \"ttjcc9gu5f\", \"substantive\": 75, \"yes\": [\"scheduled_release\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["6unavmpfjd"], "result": "{\"id\": \"6unavmpfjd\", \"substantive\": 80, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["S31QiMQLv5QQdcF3GeCS"], "result": "{\"id\": \"S31QiMQLv5QQdcF3GeCS\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["m8opFOOVYU0TfUwrzojz"], "result": "{\"id\": \"m8opFOOVYU0TfUwrzojz\", \"substantive\": 25, \"yes\": [\"trader_influence\"], \"unsure\": [\"existing_fact\", \"direct_opinion\", \"subjective_resolution\"]}", "cost": 0}
+{"ids": ["djOqHpXhSroeiW8BquVW"], "result": "{\"id\": \"djOqHpXhSroeiW8BquVW\", \"substantive\": 70, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["2PAgz5In6O"], "result": "{\"id\": \"2PAgz5In6O\", \"substantive\": 85, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["PxUy65ecrhxDRugBvOM3"], "result": "{\"id\": \"PxUy65ecrhxDRugBvOM3\", \"substantive\": 45, \"yes\": [\"existing_fact\"], \"unsure\": [\"insider_knowable\", \"creator_influence\"]}", "cost": 0}
+{"ids": ["kPmNj86BywwUd6MDiFhI"], "result": "{\"id\": \"kPmNj86BywwUd6MDiFhI\", \"substantive\": 90, \"yes\": [], \"unsure\": [\"status_quo_default\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["afI0rt1VBI0lorrM630O"], "result": "{\"id\": \"afI0rt1VBI0lorrM630O\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"subjective_resolution\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["VCvFen1iQmvsLTmcVBuK"], "result": "{\"id\": \"VCvFen1iQmvsLTmcVBuK\", \"substantive\": 75, \"yes\": [], \"unsure\": [\"scheduled_release\", \"insider_knowable\"]}", "cost": 0}
+{"ids": ["Zd2GRhXByEvWdquKRS4A"], "result": "{\"id\": \"Zd2GRhXByEvWdquKRS4A\", \"substantive\": 70, \"yes\": [\"status_quo_default\"], \"unsure\": [\"subjective_resolution\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["k8rSaswOivr8yWPyHn9i"], "result": "{\"id\": \"k8rSaswOivr8yWPyHn9i\", \"substantive\": 85, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["OmPoqJ1bGvUCkyTOI0xp"], "result": "{\"id\": \"OmPoqJ1bGvUCkyTOI0xp\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["hTEQe0nJRCKPDoS4gKEx"], "result": "{\"id\": \"hTEQe0nJRCKPDoS4gKEx\", \"substantive\": 60, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["tayeftx6ce"], "result": "{\"id\": \"tayeftx6ce\", \"substantive\": 70, \"yes\": [\"status_quo_default\", \"subjective_resolution\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["Yx94wnkLXwLjE1BvoHMC"], "result": "{\"id\": \"Yx94wnkLXwLjE1BvoHMC\", \"substantive\": 85, \"yes\": [\"existing_fact\", \"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["YmwEFqgdl56Z1FiUkeVj"], "result": "{\"id\": \"YmwEFqgdl56Z1FiUkeVj\", \"substantive\": 60, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["2NdgWhsOyVj33PoqFsL4"], "result": "{\"id\": \"2NdgWhsOyVj33PoqFsL4\", \"substantive\": 55, \"yes\": [\"crypto_price\"], \"unsure\": []}", "cost": 0}
+{"ids": ["Qtn5N2QOcO"], "result": "{\"id\": \"Qtn5N2QOcO\", \"substantive\": 50, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["QVXi3jyOi0Lio7xSfC89"], "result": "{\"id\": \"QVXi3jyOi0Lio7xSfC89\", \"substantive\": 15, \"yes\": [\"existing_fact\"], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["vgqt39qdgq"], "result": "{\"id\": \"vgqt39qdgq\", \"substantive\": 95, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["18U2HmTtDqawADVagZnf"], "result": "{\"id\": \"18U2HmTtDqawADVagZnf\", \"substantive\": 85, \"yes\": [\"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["veGW2un0D1mhT3g3lEdf"], "result": "{\"id\": \"veGW2un0D1mhT3g3lEdf\", \"substantive\": 60, \"yes\": [\"sports_match\", \"sports_performance\", \"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["uYoZb2ukrdLchGiBGdFu"], "result": "{\"id\": \"uYoZb2ukrdLchGiBGdFu\", \"substantive\": 95, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["dunSkuXBTTh7MxwGa8IU"], "result": "{\"id\": \"dunSkuXBTTh7MxwGa8IU\", \"substantive\": 80, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["9DI0HoTROpl8AdK3Gd6u"], "result": "{\"id\": \"9DI0HoTROpl8AdK3Gd6u\", \"substantive\": 55, \"yes\": [\"sports_performance\", \"bookmaker_odds\"], \"unsure\": [\"sports_match\"]}", "cost": 0}
+{"ids": ["IBer1Lm5fyW3jE37jKz4"], "result": "{\"id\": \"IBer1Lm5fyW3jE37jKz4\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["WmyFNvndpd6cMd5izJcI"], "result": "{\"id\": \"WmyFNvndpd6cMd5izJcI\", \"substantive\": 75, \"yes\": [\"weather_measurement\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["sEp2CgLdSs"], "result": "{\"id\": \"sEp2CgLdSs\", \"substantive\": 80, \"yes\": [], \"unsure\": [\"scheduled_release\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["uMhQzhGb1YjYcMWW9AzW"], "result": "{\"id\": \"uMhQzhGb1YjYcMWW9AzW\", \"substantive\": 80, \"yes\": [\"insider_knowable\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["5rofilynsu"], "result": "{\"id\": \"5rofilynsu\", \"substantive\": 50, \"yes\": [], \"unsure\": []}", "cost": 0}
+{"ids": ["QI7Honwy8Ca23qizz2f7"], "result": "{\"id\": \"QI7Honwy8Ca23qizz2f7\", \"substantive\": 80, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["32PuQrHBaptoXvkqplvv"], "result": "{\"id\": \"32PuQrHBaptoXvkqplvv\", \"substantive\": 85, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["CNuNRkolHmEIsjJJ2jjK"], "result": "{\"id\": \"CNuNRkolHmEIsjJJ2jjK\", \"substantive\": 95, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["DF6siYimEmdCnVJGBwDu"], "result": "{\"id\": \"DF6siYimEmdCnVJGBwDu\", \"substantive\": 60, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["iHLrMKTyg3EptLniFtmX"], "result": "{\"id\": \"iHLrMKTyg3EptLniFtmX\", \"substantive\": 40, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
+{"ids": ["gApcZ55gnu"], "result": "{\"id\": \"gApcZ55gnu\", \"substantive\": 65, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["hwfisVfCaIOjxa1GZwjV"], "result": "{\"id\": \"hwfisVfCaIOjxa1GZwjV\", \"substantive\": 85, \"yes\": [\"scheduled_release\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["8ue83jX4lcKznwIfcfwv"], "result": "{\"id\": \"8ue83jX4lcKznwIfcfwv\", \"substantive\": 30, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["ZjGWJhIcoW3UWLSQLUfi"], "result": "{\"id\": \"ZjGWJhIcoW3UWLSQLUfi\", \"substantive\": 20, \"yes\": [\"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["mNccptRmfGGl9UZtl2wk"], "result": "{\"id\": \"mNccptRmfGGl9UZtl2wk\", \"substantive\": 85, \"yes\": [], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["q0n2q599qZ"], "result": "{\"id\": \"q0n2q599qZ\", \"substantive\": 70, \"yes\": [\"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["GWv2ZW0k0AIRXicGvNdI"], "result": "{\"id\": \"GWv2ZW0k0AIRXicGvNdI\", \"substantive\": 90, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["NS2nIFUFN5dz5h5xTfR9"], "result": "{\"id\": \"NS2nIFUFN5dz5h5xTfR9\", \"substantive\": 30, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["QnPcVsx0NXeHdPRg3rHE"], "result": "{\"id\": \"QnPcVsx0NXeHdPRg3rHE\", \"substantive\": 85, \"yes\": [\"scheduled_release\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["no9e1ub5ew"], "result": "{\"id\": \"no9e1ub5ew\", \"substantive\": 40, \"yes\": [], \"unsure\": [\"constructed_game\"]}", "cost": 0}
+{"ids": ["XVtcU7Wp1p7Ms3rpWlwo"], "result": "{\"id\": \"XVtcU7Wp1p7Ms3rpWlwo\", \"substantive\": 85, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["ydj0ynMCx6iryBVioQyq"], "result": "{\"id\": \"ydj0ynMCx6iryBVioQyq\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"insider_knowable\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["8ee81Gm7qOm9jf1f6xc3"], "result": "{\"id\": \"8ee81Gm7qOm9jf1f6xc3\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["P4z4083LZwZcP847MdkN"], "result": "{\"id\": \"P4z4083LZwZcP847MdkN\", \"substantive\": 90, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["GqYs0cVClIirvL5s4US7"], "result": "{\"id\": \"GqYs0cVClIirvL5s4US7\", \"substantive\": 80, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["f1wdoysmSHnqi3cWORwb"], "result": "{\"id\": \"f1wdoysmSHnqi3cWORwb\", \"substantive\": 30, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["w5Dn3XgAB2h7kdOSKQXh"], "result": "{\"id\": \"w5Dn3XgAB2h7kdOSKQXh\", \"substantive\": 85, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["LIO8Q9Ey0c"], "result": "{\"id\": \"LIO8Q9Ey0c\", \"substantive\": 85, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["4pB1Ve2VvVdRPZP2OHgq"], "result": "{\"id\": \"4pB1Ve2VvVdRPZP2OHgq\", \"substantive\": 65, \"yes\": [\"sports_match\", \"sports_performance\", \"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["ATRDzQ2in3YZemkaBtLI"], "result": "{\"id\": \"ATRDzQ2in3YZemkaBtLI\", \"substantive\": 85, \"yes\": [\"scheduled_release\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["V6x7FFFj8TwsrOBsPQmT"], "result": "{\"id\": \"V6x7FFFj8TwsrOBsPQmT\", \"substantive\": 60, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["U3AilaeDanENg1cgcUhL"], "result": "{\"id\": \"U3AilaeDanENg1cgcUhL\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["pvT4RIigijGa0VNBpQ9z"], "result": "{\"id\": \"pvT4RIigijGa0VNBpQ9z\", \"substantive\": 85, \"yes\": [\"scheduled_release\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["8809E82Aqy"], "result": "{\"id\": \"8809E82Aqy\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["yYEpN8G0Ytju5otGU8PE"], "result": "{\"id\": \"yYEpN8G0Ytju5otGU8PE\", \"substantive\": 80, \"yes\": [], \"unsure\": [\"scheduled_release\"]}", "cost": 0}
+{"ids": ["3BSRJlJPa0ftmHlOqUc7"], "result": "{\"id\": \"3BSRJlJPa0ftmHlOqUc7\", \"substantive\": 75, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["6HD70jQFQENX72hDOyuh"], "result": "{\"id\": \"6HD70jQFQENX72hDOyuh\", \"substantive\": 70, \"yes\": [\"subjective_resolution\"], \"unsure\": [\"insider_knowable\", \"existing_fact\"]}", "cost": 0}
+{"ids": ["kGKcV3aMOYs1D58ToAKu"], "result": "{\"id\": \"kGKcV3aMOYs1D58ToAKu\", \"substantive\": 40, \"yes\": [\"existing_fact\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["oGsxnHtk3LqXUUw33GbE"], "result": "{\"id\": \"oGsxnHtk3LqXUUw33GbE\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["ioFhPLv5V1bjBLUuU9ZD"], "result": "{\"id\": \"ioFhPLv5V1bjBLUuU9ZD\", \"substantive\": 60, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["zRdSOc69PR"], "result": "{\"id\": \"zRdSOc69PR\", \"substantive\": 80, \"yes\": [\"existing_fact\", \"status_quo_default\"], \"unsure\": [\"subjective_resolution\"]}", "cost": 0}
+{"ids": ["a19ZzdrEZPxfJtgIedSY"], "result": "{\"id\": \"a19ZzdrEZPxfJtgIedSY\", \"substantive\": 85, \"yes\": [\"scheduled_release\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["0A68X0N58YWrrHzWuNuy"], "result": "{\"id\": \"0A68X0N58YWrrHzWuNuy\", \"substantive\": 55, \"yes\": [\"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["uv7zPfFGMchcFajCJ794"], "result": "{\"id\": \"uv7zPfFGMchcFajCJ794\", \"substantive\": 85, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["n03D0CibnGN7uHVglnYK"], "result": "{\"id\": \"n03D0CibnGN7uHVglnYK\", \"substantive\": 30, \"yes\": [], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["7JzCxIYo9ckkVq4KZF2j"], "result": "{\"id\": \"7JzCxIYo9ckkVq4KZF2j\", \"substantive\": 75, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["iEQxIZb1olpVxkMtfIUV"], "result": "{\"id\": \"iEQxIZb1olpVxkMtfIUV\", \"substantive\": 40, \"yes\": [\"subjective_resolution\"], \"unsure\": []}", "cost": 0}
+{"ids": ["6uNQ8L6p99"], "result": "{\"id\": \"6uNQ8L6p99\", \"substantive\": 40, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["6szf3uewcu"], "result": "{\"id\": \"6szf3uewcu\", \"substantive\": 80, \"yes\": [\"existing_fact\", \"status_quo_default\", \"subjective_resolution\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["sO2FZZPOS4wSxcLVu03u"], "result": "{\"id\": \"sO2FZZPOS4wSxcLVu03u\", \"substantive\": 80, \"yes\": [\"status_quo_default\"], \"unsure\": [\"insider_knowable\"]}", "cost": 0}
+{"ids": ["0RtqzdQRhg"], "result": "{\"id\": \"0RtqzdQRhg\", \"substantive\": 70, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["djVs3o9dDACYCqTMBNcg"], "result": "{\"id\": \"djVs3o9dDACYCqTMBNcg\", \"substantive\": 15, \"yes\": [\"existing_fact\", \"status_quo_default\", \"creator_influence\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["gBblZSPH9CtDIdneVxQc"], "result": "{\"id\": \"gBblZSPH9CtDIdneVxQc\", \"substantive\": 20, \"yes\": [\"sports_match\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["8vVrVyUB5retMVUcYsPg"], "result": "{\"id\": \"8vVrVyUB5retMVUcYsPg\", \"substantive\": 75, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["S8OR9P0sAL"], "result": "{\"id\": \"S8OR9P0sAL\", \"substantive\": 70, \"yes\": [\"status_quo_default\", \"insider_knowable\"], \"unsure\": [\"existing_fact\"]}", "cost": 0}
+{"ids": ["PrDV90D1NJxXNyr0BEef"], "result": "{\"id\": \"PrDV90D1NJxXNyr0BEef\", \"substantive\": 60, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["lu556e77v7"], "result": "{\"id\": \"lu556e77v7\", \"substantive\": 60, \"yes\": [\"insider_knowable\"], \"unsure\": [\"status_quo_default\"]}", "cost": 0}
+{"ids": ["qNNL1S88krkmlmyDBWMN"], "result": "{\"id\": \"qNNL1S88krkmlmyDBWMN\", \"substantive\": 55, \"yes\": [\"sports_match\", \"sports_performance\", \"bookmaker_odds\"], \"unsure\": []}", "cost": 0}
+{"ids": ["08qW78WTZ02NFS0v9mdI"], "result": "{\"id\": \"08qW78WTZ02NFS0v9mdI\", \"substantive\": 40, \"yes\": [\"existing_fact\", \"insider_knowable\"], \"unsure\": []}", "cost": 0}
+{"ids": ["KxYipdlynTQv0AgWcJp7"], "result": "{\"id\": \"KxYipdlynTQv0AgWcJp7\", \"substantive\": 60, \"yes\": [\"status_quo_default\"], \"unsure\": []}", "cost": 0}
+{"ids": ["l096guySPz"], "result": "{\"id\": \"l096guySPz\", \"substantive\": 55, \"yes\": [\"subjective_resolution\"], \"unsure\": [\"creator_influence\"]}", "cost": 0}
