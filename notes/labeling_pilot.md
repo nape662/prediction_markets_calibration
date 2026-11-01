@@ -1,6 +1,6 @@
 # Labeling pilot: what we did, what we chose, what to improve
 
-**A cheap model can sort markets into our plot groups almost as Opus does: Haiku 5.5 at low effort, 20 markets per call, agrees with Opus 5.5 on 197 of 200 markets, for about $36 at list price if we label everything. Sorting isn't the same as finding interesting questions, though: the one question meant to catch those barely separates anything.** Whether the $98 cloud credit can pay for it is still untested.
+**A cheap model can sort markets into our plot groups almost as Opus does: Haiku 5.5 at low effort, 20 markets per call, agrees with Opus 5.5 on 191 of 200 fresh markets, for about $32 at list price if we label everything. Jev does about as well (190 of 200) for about $18 of real money. Sorting isn't the same as finding interesting questions, though: the one question meant to catch those barely separates anything.** Whether the $98 cloud credit can pay for it is still untested.
 
 You are reading this to improve two things: the cost of the labeling and the quality of the questions. Your goal and rules are at the end.
 
@@ -69,9 +69,42 @@ Opus costs $0.0124 per market, which would be about $2,050 for everything. Price
 - **No question catches a market decided by one named person's free choice.** Destiny's video count is a real question, but he can decide it himself. The influence questions cover only the market's creator and traders.
 - **`junk_reason` is noisy.** Haiku low fills it on 22 markets, Opus on 4. Haiku often repeats what a tag already says ("Random coin flip").
 
+## Second run: 200 fresh markets and Jev
+
+The numbers above come from the first sample, which we had studied before regrouping, so they flatter Haiku. We drew 200 new markets by the same recipe (`PILOT_SEED=1`, no overlap, results in `labeling/results/seed1/`). The prompt now has `unsure` in place of `unknown`, defined as below about 80% sure. Opus was rerun on it.
+
+| Run (fresh 200) | Same group as Opus | Wrong in its world group |
+|---|---|---|
+| Haiku low, 20 per call | 191 | 4 of 102 |
+| Haiku medium, 20 per call | 191 (1 market unanswered) | 4 of 103 |
+| Jev, one request per market | 190 | 5 of 103 |
+
+**All three pass the 10% mark. The honest figure for Haiku is about 191, not 197.**
+
+**Jev** (TypeSafe's decision model, version 1.14.0) gets all 22 questions in one request, and returns the probability of yes for each. We count 0.8 or above as yes, 0.2 or below as no, and the rest as unsure. It has no `junk_reason`, and its intro still mentions `unsure`, which it can't answer; a Jev-only intro is planned for the next rerun.
+
+- **Tags are noisier than groups.** Jev says yes to `sports_performance` on 48 markets against Opus's 7, and differs on `subjective_resolution` 42 times against Haiku's 20. Most of this stays within one group, so the groups hide it. Plots of a single tag would show it.
+- **`substantive_world_question` works better on Jev.** It differs from Opus on 21 markets, against 73 for batched Haiku. Batching again pulls Haiku's yes count down: 117 of 200 against Opus's 181.
+
+**Effect of `unsure` on the first 200** (Haiku low, 20 per call, old Opus as reference): 195 same group. Of the 7 known disagreements, 4 now answer `unsure` on the tag in question. `unsure` still counts as not yes for groups, so this doesn't raise agreement yet; whether to count it as yes per tag is undecided.
+
+**Luna 6 was dropped.** Through Codex we cut its overhead from about 15,000 to 6,500 tokens per call, but cache hits were unreliable: 1 in 3 on single-market calls and none on two batches of 20. Without a reliable cache it stays about 500 tokens per market, which Peter ruled out for the full run.
+
+**Full-run cost, all 165,058 items:**
+
+| Model | Per market | Total |
+|---|---|---|
+| Jev | $0.000109 | $18 |
+| Haiku low, 20 per call | $0.00019 | $32 |
+| Opus high | $0.0123 | $2,030 |
+
+Jev is paid with real money from Peter's TypeSafe balance, $5 so far, which covers about 45,800 markets. All of Manifold would cost about $4.10. Its price is taken from third-party listings ($0.042 per million input tokens); the balance in the console should confirm it.
+
+Unlike Haiku, Jev has no cache, so about 2,300 of its 2,600 tokens per market are our questions and intro. **For Jev, shorter questions cut cost directly.**
+
 ## Where the money goes
 
-Haiku low at 20 per call, as shares of cost (these 10 calls cost $0.044 at list price):
+Haiku low at 20 per call on the first sample, as shares of cost (these 10 calls cost $0.044 at list price):
 
 | Part | Share |
 |---|---|
@@ -82,7 +115,7 @@ Haiku low at 20 per call, as shares of cost (these 10 calls cost $0.044 at list 
 
 **Shortening the prompt saves almost nothing.** The 22 questions could get longer at no real cost.
 
-Full run at $0.00022 per market: **about $36 for all 165,058, or $28** for Manifold plus the 90,892 templates with volume of at least $1,000. A cruder 50-per-call test gave $0.00018 on the old prompt, but its quality was not scored. Polymarket text runs about 25% longer than Manifold's in the sample, and Polymarket makes up most of the full run, so the real cost may run a little higher.
+On the first sample's $0.00022 per market: **about $36 for all 165,058, or $28** for Manifold plus the 90,892 templates with volume of at least $1,000. A cruder 50-per-call test gave $0.00018 on the old prompt, but its quality was not scored. Polymarket text runs about 25% longer than Manifold's in the sample, and Polymarket makes up most of the full run, so the real cost may run a little higher.
 
 ## The cloud credit: not verified
 
@@ -145,5 +178,5 @@ Not every Haiku run disagrees on each of these. `labeling/results/groups.csv` ho
 - **Prompt.** 11,084 characters, about 3,400 tokens, measured from the cache read.
 - **Web sources on the credit.** Help page: <https://support.claude.com/en/articles/17152539-cloud-sessions-bonus-credit-promotion>. Caching and cache-lifetime rules: <https://code.claude.com/docs/en/prompt-caching.md>.
 - **The 22,000-token default call** was measured on Claude Code 2.1.210. The 150 tokens added to our own prompt come from a call with a one-line prompt.
-- **Script review.** Sol reviewed `src/labeling_pilot.py`. It found no errors in the saved results, and its fixes (strict answer checks, a compared-markets count, cost per market sent, an input version) left all scores unchanged. The four saved runs predate the version field, so theirs is empty; all four used the current prompt and sample.
+- **Script review.** Sol reviewed `src/labeling_pilot.py`. It found no errors in the saved results, and its fixes (strict answer checks, a compared-markets count, cost per market sent, an input version) left all scores unchanged. The four first runs predate the version field, so theirs is empty; they used the prompt with `unknown` (`git show 92f50ec:labeling/system_prompt.txt`). The Jev runner and second sample were added afterwards and weren't reviewed by Sol.
 - **Noise not measured.** We ran no model twice on the same prompt, so we don't know how much of the disagreement is random.

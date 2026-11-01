@@ -1,114 +1,140 @@
-id,platform,question,tag,opus_high,haiku_low,haiku_medium,haiku_low_b20
-251169,Polymarket,MLB: Minnesota Twins vs. San Francisco Giants 2023-05-23,substantive_world_question,yes,no,yes,no
-KmvP3Ggw5z7vFATu5urA,Manifold,Will an AI System Solve One of the Remaining Millennium Prize Problems by June 2025?,subjective_resolution,no,unsure,yes,unsure
-1136390,Polymarket,Appalachian State Mountaineers vs. Old Dominion Monarchs (W),substantive_world_question,yes,no,yes,no
-525067,Polymarket,Will the Atlanta Hawks finish with the best regular season record?,substantive_world_question,yes,yes,yes,no
-fe9hBTOrDHLeGBRoLRSW,Manifold,Will Bitcoin be above $70K at the end of April?,substantive_world_question,yes,yes,no,no
-523131,Polymarket,Will Ipswich Town finish in 2nd place for the 2024-25 EPL season?,substantive_world_question,yes,yes,yes,no
-587543,Polymarket,NRFI: Phillies vs. Brewers,sports_performance,yes,no,yes,yes
-587543,Polymarket,NRFI: Phillies vs. Brewers,substantive_world_question,yes,no,no,no
-PiBoGE1KhIXdo5kT7Ovq,Manifold,Will there be more than 7 companies with market cap of > $1T by the end of 2024?,substantive_world_question,yes,yes,yes,no
-AdLRLz558t,Manifold,"Will OpenAI's ""_ with ChatGPT"" ad campaign be confirmed to be AI-Generated in 2025?",existing_fact,no,no,yes,unsure
-603631,Polymarket,NRFI: Atlanta Braves vs. Detroit Tigers,sports_performance,yes,no,yes,no
-WiPir0786tI4gvmg6TGB,Manifold,Will an AI generated YouTube video reach 50M views before 2027?,subjective_resolution,no,unsure,yes,yes
-900365,Polymarket,Leeds United FC vs. Crystal Palace FC: O/U 1.5,sports_performance,yes,yes,no,no
-dzA08Pus6Z,Manifold,"Is Donald Trump going to say, ""Should I exterminate Iran?""",subjective_resolution,no,no,no,unsure
-dzA08Pus6Z,Manifold,"Is Donald Trump going to say, ""Should I exterminate Iran?""",substantive_world_question,yes,yes,unsure,yes
-IMuyNBu6Mx1rGJ1myUHp,Manifold,"If the percentage chance of this market is <25% or > 75%, this market resolves yes",creator_influence,yes,yes,yes,no
-1297856,Polymarket,Dota 2: Xtreme Gaming vs Team Refuser (BO3) - ESL Challenger China Playoffs,substantive_world_question,yes,no,yes,yes
-sC8sAuztlN,Manifold,Will Yudkowsky and Soares' book get on the NYT bestseller list in 2025?,subjective_resolution,no,unsure,no,no
-gSzwi1yTOJgTOYV0gb5Q,Manifold,Will Google's Gemini like Eliezer Yudkowsky?,substantive_world_question,yes,yes,yes,unsure
-In9iiDVzufQ111gMSXrZ,Manifold,"Will Tyler Cowen agree that an 'actual mathematical model' for AI X-Risk has been developed by October 15, 2023?",subjective_resolution,no,yes,yes,yes
-nj6YyZFHX28bUsxvr3Pm,Manifold,"Considering the TIOBE index, will Julia pass R, COBOL, Fortran and Matlab in 2024?",scheduled_release,unsure,no,unsure,yes
-900367,Polymarket,Juventus FC vs. AS Roma: O/U 1.5,sports_performance,no,no,yes,no
-900367,Polymarket,Juventus FC vs. AS Roma: O/U 1.5,substantive_world_question,yes,no,yes,no
-AppIq82IcA,Manifold,Will President Zelenskyy apologize to President Trump by the end of March 2025?,speech_or_posts,yes,no,unsure,yes
-It6TLSz9jxcmzukdhlFO,Manifold,Will Open Philanthropy accept individual grant applications for technical AI safety research? (M1500 subsidy),subjective_resolution,yes,unsure,yes,no
-862471,Polymarket,Missouri State Bears vs. Xavier Musketeers,substantive_world_question,yes,yes,yes,no
-1FuzWK0iXINu9sdRKpZX,Manifold,Will the Denver Broncos win more than five games in the 2023 regular season?,substantive_world_question,yes,yes,yes,no
-Xu3qArBFvImOPCWqL5dL,Manifold,Will Russia attack a NATO country this year?,subjective_resolution,unsure,no,unsure,unsure
-yrBNRtBSX5WbnWhySUbe,Manifold,Will @audrey be holding YES shares in this market at 6pm PT on April 9?,constructed_game,yes,yes,no,yes
-yrBNRtBSX5WbnWhySUbe,Manifold,Will @audrey be holding YES shares in this market at 6pm PT on April 9?,creator_influence,yes,no,no,unsure
-685444,Polymarket,Harvard Crimson vs. Marist Red Foxes: O/U 127.5,sports_performance,no,yes,no,no
-685444,Polymarket,Harvard Crimson vs. Marist Red Foxes: O/U 127.5,substantive_world_question,yes,yes,yes,no
-1141278,Polymarket,Hawks vs. Nuggets: 1H O/U 122.5,sports_performance,yes,no,no,no
-1141278,Polymarket,Hawks vs. Nuggets: 1H O/U 122.5,substantive_world_question,yes,yes,yes,no
-gkGfq9AOQtw4C1uqUMfC,Manifold,"Will the highest temperature in NYC in Mar 28, 2024 be higher than the previous day?",scheduled_release,no,yes,no,no
-t0dpdLulSU,Manifold,Will @Dagonet win Leagues across all divisions in July?,trader_influence,yes,no,yes,no
-6JGlVw2o8esU8L1YE3uB,Manifold,Will xAI develop a more capable LLM than GPT-5 before 2026,subjective_resolution,unsure,unsure,no,unsure
-k3Xz22C7iId860g2Yh1Z,Manifold,Will he be back within 2 hours ( 11:53 CST ) ,creator_influence,no,unsure,no,no
-k3Xz22C7iId860g2Yh1Z,Manifold,Will he be back within 2 hours ( 11:53 CST ) ,subjective_resolution,unsure,no,no,no
-P2dsMI183TlSOVqFonmD,Manifold,Will Google Search include a chatbot at end of June 2023?,subjective_resolution,yes,unsure,unsure,yes
-UwuGcyuguG2cJ84WS7XJ,Manifold,Will Destiny post more videos on February than he will on January?,speech_or_posts,yes,yes,yes,no
-708265,Polymarket,Bills vs. Steelers: O/U 46.5,sports_performance,yes,no,no,no
-708265,Polymarket,Bills vs. Steelers: O/U 46.5,substantive_world_question,yes,no,yes,no
-d4awdl7vxr,Manifold,Will the Bank of England cut rates by more than 25bps in November?,scheduled_release,no,yes,no,no
-1191036,Polymarket,Australian Open Men's: Arthur Fery vs Flavio Cobolli,substantive_world_question,yes,yes,yes,no
-ID8jdb108PeMAACWobDA,Manifold,Will monkeypox spread among straight people in the UK to a significant extent?,subjective_resolution,no,no,no,yes
-242596,Polymarket,"NCAAB March Madness: Who will win North Carolina vs. Duke, scheduled for April 2 (8:49 PM ET)?",substantive_world_question,yes,yes,yes,no
-1144173,Polymarket,Blues vs. Golden Knights: O/U 5.5,sports_performance,yes,yes,yes,no
-1144173,Polymarket,Blues vs. Golden Knights: O/U 5.5,substantive_world_question,yes,yes,no,no
-509449,Polymarket,"Will Trump say ""Barack Hussein Obama"" during Arizona rally on October 13?",substantive_world_question,yes,unsure,yes,yes
-car0o36csl,Manifold,Iran military response by Sunday?,existing_fact,no,yes,unsure,no
-ETfRX4gVCvDrb2ySxTlm,Manifold,Will ME flight 369 from Jeddah to Beirut on 2023-10-23 arrive with 30+ min delay (YES)?,substantive_world_question,yes,yes,yes,unsure
-249354,Polymarket,NCAAB: Houston Cougars vs. Auburn Tigers 2023-03-18,substantive_world_question,yes,yes,yes,no
-1225467,Polymarket,Krueger vs. Keys: Total Sets O/U 2.5,substantive_world_question,yes,yes,yes,no
-JkzkhdT4vHy4PpTq4787,Manifold,Will NYC's air quality be unhealthy (>150 AQI) on June 15th?,weather_measurement,yes,unsure,yes,yes
-5pny0Ip8st,Manifold,"Will Bitcoin ‘fall down to the $50,000s in the next few days’?",substantive_world_question,yes,yes,yes,no
-cd6IJhEhga3C9uEsOXD3,Manifold,Did Poland become more authoritarian in 2023?,existing_fact,no,unsure,no,no
-ANpQUZ6OZ9,Manifold,Will Gavin Newsom cease to be the favorite Democratic Nominee before the end of 2026? [Per Polymarket Data],substantive_world_question,yes,unsure,yes,no
-572587,Polymarket,Will Malik Nabers be the Top Fantasy Wide Receiver for the 2025–26 NFL Regular Season?,sports_tournament,no,no,yes,no
-572587,Polymarket,Will Malik Nabers be the Top Fantasy Wide Receiver for the 2025–26 NFL Regular Season?,substantive_world_question,yes,yes,yes,no
-UQFRt15cNO7goVs3a54Q,Manifold,Will Brazil win out in the group stage?,sports_match,yes,no,no,no
-UQFRt15cNO7goVs3a54Q,Manifold,Will Brazil win out in the group stage?,substantive_world_question,yes,yes,yes,no
-FcvqPo3pRWiOj5cCd53G,Manifold,Will it snow in the Midwest before Halloween?,subjective_resolution,no,no,unsure,unsure
-pdR0sgPWYuoMqozeLb8E,Manifold,Will Destiny complete factorio by Christmas?,subjective_resolution,no,unsure,unsure,unsure
-511957,Polymarket,Will PSV beat Girona?,substantive_world_question,yes,yes,yes,no
-wSDl55bTaTWBbjQ8mDs8,Manifold,Will Manifold implement robust and successful incentives for publicizing information?,substantive_world_question,yes,yes,unsure,yes
-GWp2IZktnCDZdXyUBjA5,Manifold,"Will ""The Market"" be decided by at least 10%?",constructed_game,yes,no,no,no
-GWp2IZktnCDZdXyUBjA5,Manifold,"Will ""The Market"" be decided by at least 10%?",creator_influence,yes,no,no,no
-GWp2IZktnCDZdXyUBjA5,Manifold,"Will ""The Market"" be decided by at least 10%?",trader_influence,yes,unsure,yes,no
-v1u8HOHT0tbGoDSoZuy2,Manifold,"Will Manifold create a public Manifold app for Android devices by Jan 1, 2023",substantive_world_question,yes,yes,yes,no
-qElOyEQuIA,Manifold,Will any announcer on the NBC broadcast of the Super Bowl say the phrase “smart stadium” during the live broadcast?,speech_or_posts,yes,yes,unsure,unsure
-qElOyEQuIA,Manifold,Will any announcer on the NBC broadcast of the Super Bowl say the phrase “smart stadium” during the live broadcast?,existing_fact,no,no,unsure,no
-8IZtzyygQt,Manifold,"Will Trump’s “Warrior Dividend” of $1,776 to military servicemembers happen by Christmas?",subjective_resolution,no,no,unsure,no
-586759,Polymarket,Will Norway win on 2025-09-09?,substantive_world_question,yes,yes,yes,no
-532416,Polymarket,Will Southampton vs. Aston Villa end in a draw?,substantive_world_question,yes,yes,yes,no
-6LtPIZQcRQ,Manifold,Does the Fed rate change in July?,scheduled_release,no,no,unsure,no
-7YR3RoukybG0YTh40sVm,Manifold,Will an AI account on Instagram have more than 1M followers by the end of 2023?,subjective_resolution,no,unsure,yes,unsure
-hA8yUU5cll,Manifold,Will Zelensky wear a tie for his next meeting with Trump?,substantive_world_question,yes,yes,unsure,no
-616666,Polymarket,MLB Playoffs: Will the Chicago Cubs beat the San Diego Padres 2-0?,sports_match,no,no,yes,yes
-616666,Polymarket,MLB Playoffs: Will the Chicago Cubs beat the San Diego Padres 2-0?,substantive_world_question,yes,yes,yes,no
-522781,Polymarket,Tennessee Tech vs. Little Rock,substantive_world_question,yes,no,yes,no
-510193,Polymarket,"Will Trump say ""Liquid gold"" during Pennsylvania town hall on October 20?",substantive_world_question,yes,no,unsure,no
-KDabvxPy0YWI4VePQmpD,Manifold,"Will any market have at least M$50,000 in user-given liquidity subsidies by the end of 2023?",creator_influence,yes,no,unsure,no
-KDabvxPy0YWI4VePQmpD,Manifold,"Will any market have at least M$50,000 in user-given liquidity subsidies by the end of 2023?",trader_influence,yes,yes,yes,no
-639579,Polymarket,Giants vs. Eagles: O/U 41.5,sports_performance,yes,no,no,no
-639579,Polymarket,Giants vs. Eagles: O/U 41.5,substantive_world_question,yes,yes,yes,no
-hPqR8lgqLq,Manifold,Trump approval rating 45.0% or higher on Feb 20th?,subjective_resolution,no,no,unsure,unsure
-6iuksTLzp8JqbbJYv3pW,Manifold,"Will there ever be more Google search volume about AI Alignment than about Light Pollution, for any day before EOY 2024?",substantive_world_question,yes,yes,yes,unsure
-678329,Polymarket,"Will Trump say ""Ballroom"" during the private dinner on November 12?",substantive_world_question,yes,no,no,no
-XLxD4W5I3pCeiMRh332O,Manifold,"Will the billionaire-fight happen, ever?",subjective_resolution,unsure,no,no,no
-1133910,Polymarket,Counter-Strike:  CSDIILIT vs MASONIC - Map 1 Winner,substantive_world_question,yes,no,yes,no
-UHIcl9nibX5YvXN8IdgN,Manifold,Will I have 70 twitter followers by 8. August?,trader_influence,yes,no,no,no
-UHIcl9nibX5YvXN8IdgN,Manifold,Will I have 70 twitter followers by 8. August?,substantive_world_question,yes,unsure,unsure,yes
-DBSCrwe1iOTXf7QKpE1x,Manifold,Will Destiny's Interview on Iced Coffee surpass Hasan's Interview in views in a month?,substantive_world_question,yes,no,no,unsure
-1039548,Polymarket,Will Samsunspor vs. Kocaelispor end in a draw?,substantive_world_question,yes,yes,no,no
-528857,Polymarket,Will Esteban Ocon win the 2025 China Grand Prix?,substantive_world_question,yes,yes,yes,no
-wLTDYeuMqBhmnbiLKgso,Manifold,"War in Ukraine: Will Russia lose 200,000 troops by the end of 2023?",scheduled_release,no,no,unsure,no
-1070231,Polymarket,Ayo Dosunmu: Points Over 16.5,substantive_world_question,yes,unsure,yes,no
-1161034,Polymarket,Set 1 Winner: Ambrosio vs Sanchez,substantive_world_question,yes,yes,yes,no
-uYoZb2ukrdLchGiBGdFu,Manifold,Will more than 100 protestors be violently killed in a single event in Iran during 2022?,subjective_resolution,no,no,unsure,no
-676836,Polymarket,Will AS Pirae win on 2025-11-15?,substantive_world_question,yes,yes,yes,no
-521454,Polymarket,Ducks vs. Kings,substantive_world_question,yes,yes,yes,no
-1011443,Polymarket,Miami (OH) RedHawks vs. Bowling Green Falcons,substantive_world_question,yes,no,yes,no
-686943,Polymarket,Mercyhurst Lakers vs. Iowa State Cyclones (W),substantive_world_question,yes,no,yes,no
-BmYt7Hq9Krlm5vv096S4,Manifold,"Will Manifest 2025 have someone more famous than Nate Silver, according to YouGov?",subjective_resolution,no,no,no,unsure
-2HiGaNnYzJdJBEDGFkV8,Manifold,Will Linus Media Group announce a product that references their current controversy?,subjective_resolution,yes,yes,yes,unsure
-6ylpO2Qoc5fc1WS3W1fT,Manifold,China will not launch a full-scale invasion of Taiwan [in 2023],subjective_resolution,no,yes,yes,yes
-L74BcC1WXNYWTXj7Phn9,Manifold,Will Putin directly admit to killing Prigozhin by the end of September?,subjective_resolution,no,yes,unsure,unsure
-VIlKwn5qmA34CJ41419n,Manifold,🏈 2023 NCAAF: Will Colorado defeat Oregon?,substantive_world_question,yes,yes,yes,no
-f2kKIoo22DDuablrwL16,Manifold,Will GPT-4.5 resolve this market?,platform_metric,no,yes,yes,no
-f2kKIoo22DDuablrwL16,Manifold,Will GPT-4.5 resolve this market?,substantive_world_question,yes,no,no,no
-1221383,Polymarket,Bhutan Tri-Series: Bhutan Women vs Malaysia Women,substantive_world_question,yes,yes,yes,no
-75ck6ZM3xZmxkhaz21fR,Manifold,Will Destiny's main YouTube channel reach 655k subscribers in April?,substantive_world_question,yes,yes,yes,no
+id,platform,question,tag,opus_high,haiku_low,haiku_medium,haiku_low_b20,haiku_low_b20_unsure
+251169,Polymarket,MLB: Minnesota Twins vs. San Francisco Giants 2023-05-23,substantive_world_question,yes,no,yes,no,no
+KmvP3Ggw5z7vFATu5urA,Manifold,Will an AI System Solve One of the Remaining Millennium Prize Problems by June 2025?,subjective_resolution,no,unsure,yes,unsure,unsure
+1136390,Polymarket,Appalachian State Mountaineers vs. Old Dominion Monarchs (W),substantive_world_question,yes,no,yes,no,no
+525067,Polymarket,Will the Atlanta Hawks finish with the best regular season record?,substantive_world_question,yes,yes,yes,no,no
+fe9hBTOrDHLeGBRoLRSW,Manifold,Will Bitcoin be above $70K at the end of April?,substantive_world_question,yes,yes,no,no,no
+523131,Polymarket,Will Ipswich Town finish in 2nd place for the 2024-25 EPL season?,substantive_world_question,yes,yes,yes,no,no
+587543,Polymarket,NRFI: Phillies vs. Brewers,sports_match,yes,yes,yes,yes,unsure
+587543,Polymarket,NRFI: Phillies vs. Brewers,sports_performance,yes,no,yes,yes,yes
+587543,Polymarket,NRFI: Phillies vs. Brewers,substantive_world_question,yes,no,no,no,no
+PiBoGE1KhIXdo5kT7Ovq,Manifold,Will there be more than 7 companies with market cap of > $1T by the end of 2024?,substantive_world_question,yes,yes,yes,no,no
+AdLRLz558t,Manifold,"Will OpenAI's ""_ with ChatGPT"" ad campaign be confirmed to be AI-Generated in 2025?",existing_fact,no,no,yes,unsure,yes
+603631,Polymarket,NRFI: Atlanta Braves vs. Detroit Tigers,sports_performance,yes,no,yes,no,no
+603631,Polymarket,NRFI: Atlanta Braves vs. Detroit Tigers,substantive_world_question,yes,yes,yes,yes,no
+WiPir0786tI4gvmg6TGB,Manifold,Will an AI generated YouTube video reach 50M views before 2027?,subjective_resolution,no,unsure,yes,yes,unsure
+900365,Polymarket,Leeds United FC vs. Crystal Palace FC: O/U 1.5,sports_performance,yes,yes,no,no,no
+900365,Polymarket,Leeds United FC vs. Crystal Palace FC: O/U 1.5,substantive_world_question,yes,yes,yes,yes,no
+508476,Polymarket,Will Juventus beat RB Leipzig?,substantive_world_question,yes,yes,yes,yes,no
+695535,Polymarket,Counter-Strike: K27 vs Leo Team (BO3),substantive_world_question,yes,yes,yes,yes,no
+dzA08Pus6Z,Manifold,"Is Donald Trump going to say, ""Should I exterminate Iran?""",subjective_resolution,no,no,no,unsure,no
+dzA08Pus6Z,Manifold,"Is Donald Trump going to say, ""Should I exterminate Iran?""",substantive_world_question,yes,yes,unsure,yes,yes
+948991,Polymarket,"Will ""Wake Up Dead Man"" be the top US Netflix movie this week? (December 23, 2025)",substantive_world_question,yes,yes,yes,yes,unsure
+IMuyNBu6Mx1rGJ1myUHp,Manifold,"If the percentage chance of this market is <25% or > 75%, this market resolves yes",creator_influence,yes,yes,yes,no,no
+1297856,Polymarket,Dota 2: Xtreme Gaming vs Team Refuser (BO3) - ESL Challenger China Playoffs,substantive_world_question,yes,no,yes,yes,no
+110YoASFoRAuZuFCatva,Manifold,Will Nvidia close higher than 788.17 on March 1?,substantive_world_question,yes,yes,yes,yes,no
+sC8sAuztlN,Manifold,Will Yudkowsky and Soares' book get on the NYT bestseller list in 2025?,subjective_resolution,no,unsure,no,no,unsure
+SjceFLGFXZJ2hTqvNhUo,Manifold,Will Tether (USDT) fall below 98 cents by July 31?,substantive_world_question,yes,yes,yes,yes,unsure
+gSzwi1yTOJgTOYV0gb5Q,Manifold,Will Google's Gemini like Eliezer Yudkowsky?,substantive_world_question,yes,yes,yes,unsure,unsure
+In9iiDVzufQ111gMSXrZ,Manifold,"Will Tyler Cowen agree that an 'actual mathematical model' for AI X-Risk has been developed by October 15, 2023?",subjective_resolution,no,yes,yes,yes,yes
+nj6YyZFHX28bUsxvr3Pm,Manifold,"Considering the TIOBE index, will Julia pass R, COBOL, Fortran and Matlab in 2024?",scheduled_release,unsure,no,unsure,yes,unsure
+900367,Polymarket,Juventus FC vs. AS Roma: O/U 1.5,sports_performance,no,no,yes,no,no
+900367,Polymarket,Juventus FC vs. AS Roma: O/U 1.5,substantive_world_question,yes,no,yes,no,no
+AppIq82IcA,Manifold,Will President Zelenskyy apologize to President Trump by the end of March 2025?,speech_or_posts,yes,no,unsure,yes,yes
+It6TLSz9jxcmzukdhlFO,Manifold,Will Open Philanthropy accept individual grant applications for technical AI safety research? (M1500 subsidy),subjective_resolution,yes,unsure,yes,no,yes
+SmhgWaxDMpDLETtQ3QIW,Manifold,Will I miss my flight today? (Personal insurance),substantive_world_question,yes,yes,yes,yes,no
+862471,Polymarket,Missouri State Bears vs. Xavier Musketeers,substantive_world_question,yes,yes,yes,no,no
+1FuzWK0iXINu9sdRKpZX,Manifold,Will the Denver Broncos win more than five games in the 2023 regular season?,substantive_world_question,yes,yes,yes,no,no
+1s924fFp3KZZcFWJMF1t,Manifold,Will Joseph Anderson release his Witcher 3 review by the end of 2023?,substantive_world_question,yes,yes,yes,yes,unsure
+Xu3qArBFvImOPCWqL5dL,Manifold,Will Russia attack a NATO country this year?,subjective_resolution,unsure,no,unsure,unsure,no
+yrBNRtBSX5WbnWhySUbe,Manifold,Will @audrey be holding YES shares in this market at 6pm PT on April 9?,constructed_game,yes,yes,no,yes,yes
+yrBNRtBSX5WbnWhySUbe,Manifold,Will @audrey be holding YES shares in this market at 6pm PT on April 9?,creator_influence,yes,no,no,unsure,no
+685444,Polymarket,Harvard Crimson vs. Marist Red Foxes: O/U 127.5,sports_performance,no,yes,no,no,no
+685444,Polymarket,Harvard Crimson vs. Marist Red Foxes: O/U 127.5,substantive_world_question,yes,yes,yes,no,unsure
+VRewE5RIfqHpwKVcvbo4,Manifold,2023 Medvedev's Predictions #10: Will The Bretton Woods system of monetary management collapse?,subjective_resolution,yes,yes,yes,yes,unsure
+1141278,Polymarket,Hawks vs. Nuggets: 1H O/U 122.5,sports_performance,yes,no,no,no,no
+1141278,Polymarket,Hawks vs. Nuggets: 1H O/U 122.5,substantive_world_question,yes,yes,yes,no,unsure
+gkGfq9AOQtw4C1uqUMfC,Manifold,"Will the highest temperature in NYC in Mar 28, 2024 be higher than the previous day?",scheduled_release,no,yes,no,no,no
+t0dpdLulSU,Manifold,Will @Dagonet win Leagues across all divisions in July?,trader_influence,yes,no,yes,no,no
+6JGlVw2o8esU8L1YE3uB,Manifold,Will xAI develop a more capable LLM than GPT-5 before 2026,subjective_resolution,unsure,unsure,no,unsure,unsure
+k3Xz22C7iId860g2Yh1Z,Manifold,Will he be back within 2 hours ( 11:53 CST ) ,creator_influence,no,unsure,no,no,no
+k3Xz22C7iId860g2Yh1Z,Manifold,Will he be back within 2 hours ( 11:53 CST ) ,subjective_resolution,unsure,no,no,no,no
+P2dsMI183TlSOVqFonmD,Manifold,Will Google Search include a chatbot at end of June 2023?,subjective_resolution,yes,unsure,unsure,yes,unsure
+UwuGcyuguG2cJ84WS7XJ,Manifold,Will Destiny post more videos on February than he will on January?,speech_or_posts,yes,yes,yes,no,unsure
+UwuGcyuguG2cJ84WS7XJ,Manifold,Will Destiny post more videos on February than he will on January?,substantive_world_question,yes,yes,yes,yes,unsure
+708265,Polymarket,Bills vs. Steelers: O/U 46.5,sports_performance,yes,no,no,no,no
+708265,Polymarket,Bills vs. Steelers: O/U 46.5,substantive_world_question,yes,no,yes,no,no
+d4awdl7vxr,Manifold,Will the Bank of England cut rates by more than 25bps in November?,scheduled_release,no,yes,no,no,no
+1191036,Polymarket,Australian Open Men's: Arthur Fery vs Flavio Cobolli,substantive_world_question,yes,yes,yes,no,no
+ID8jdb108PeMAACWobDA,Manifold,Will monkeypox spread among straight people in the UK to a significant extent?,scheduled_release,no,no,no,no,unsure
+ID8jdb108PeMAACWobDA,Manifold,Will monkeypox spread among straight people in the UK to a significant extent?,subjective_resolution,no,no,no,yes,no
+242596,Polymarket,"NCAAB March Madness: Who will win North Carolina vs. Duke, scheduled for April 2 (8:49 PM ET)?",substantive_world_question,yes,yes,yes,no,no
+1144173,Polymarket,Blues vs. Golden Knights: O/U 5.5,sports_performance,yes,yes,yes,no,no
+1144173,Polymarket,Blues vs. Golden Knights: O/U 5.5,substantive_world_question,yes,yes,no,no,no
+509449,Polymarket,"Will Trump say ""Barack Hussein Obama"" during Arizona rally on October 13?",substantive_world_question,yes,unsure,yes,yes,yes
+car0o36csl,Manifold,Iran military response by Sunday?,existing_fact,no,yes,unsure,no,unsure
+ETfRX4gVCvDrb2ySxTlm,Manifold,Will ME flight 369 from Jeddah to Beirut on 2023-10-23 arrive with 30+ min delay (YES)?,substantive_world_question,yes,yes,yes,unsure,yes
+249354,Polymarket,NCAAB: Houston Cougars vs. Auburn Tigers 2023-03-18,substantive_world_question,yes,yes,yes,no,no
+1225467,Polymarket,Krueger vs. Keys: Total Sets O/U 2.5,substantive_world_question,yes,yes,yes,no,no
+JkzkhdT4vHy4PpTq4787,Manifold,Will NYC's air quality be unhealthy (>150 AQI) on June 15th?,weather_measurement,yes,unsure,yes,yes,unsure
+5pny0Ip8st,Manifold,"Will Bitcoin ‘fall down to the $50,000s in the next few days’?",substantive_world_question,yes,yes,yes,no,no
+cd6IJhEhga3C9uEsOXD3,Manifold,Did Poland become more authoritarian in 2023?,scheduled_release,yes,yes,yes,yes,unsure
+cd6IJhEhga3C9uEsOXD3,Manifold,Did Poland become more authoritarian in 2023?,existing_fact,no,unsure,no,no,no
+ANpQUZ6OZ9,Manifold,Will Gavin Newsom cease to be the favorite Democratic Nominee before the end of 2026? [Per Polymarket Data],substantive_world_question,yes,unsure,yes,no,unsure
+572587,Polymarket,Will Malik Nabers be the Top Fantasy Wide Receiver for the 2025–26 NFL Regular Season?,sports_tournament,no,no,yes,no,no
+572587,Polymarket,Will Malik Nabers be the Top Fantasy Wide Receiver for the 2025–26 NFL Regular Season?,substantive_world_question,yes,yes,yes,no,yes
+UQFRt15cNO7goVs3a54Q,Manifold,Will Brazil win out in the group stage?,sports_match,yes,no,no,no,no
+UQFRt15cNO7goVs3a54Q,Manifold,Will Brazil win out in the group stage?,substantive_world_question,yes,yes,yes,no,yes
+rUmeJspm9MSmTbsCyBAW,Manifold,Will the war in Ukraine be officially over by december 2025 ?,subjective_resolution,no,no,no,no,unsure
+FcvqPo3pRWiOj5cCd53G,Manifold,Will it snow in the Midwest before Halloween?,subjective_resolution,no,no,unsure,unsure,no
+pdR0sgPWYuoMqozeLb8E,Manifold,Will Destiny complete factorio by Christmas?,subjective_resolution,no,unsure,unsure,unsure,unsure
+oFGaKM8PGYrCUhou5DDT,Manifold,"Will George Santos say the word ""Rationalussy"" by January 6th, 2024?",substantive_world_question,no,no,no,no,unsure
+511957,Polymarket,Will PSV beat Girona?,substantive_world_question,yes,yes,yes,no,no
+wSDl55bTaTWBbjQ8mDs8,Manifold,Will Manifold implement robust and successful incentives for publicizing information?,substantive_world_question,yes,yes,unsure,yes,yes
+GWp2IZktnCDZdXyUBjA5,Manifold,"Will ""The Market"" be decided by at least 10%?",constructed_game,yes,no,no,no,no
+GWp2IZktnCDZdXyUBjA5,Manifold,"Will ""The Market"" be decided by at least 10%?",creator_influence,yes,no,no,no,no
+GWp2IZktnCDZdXyUBjA5,Manifold,"Will ""The Market"" be decided by at least 10%?",trader_influence,yes,unsure,yes,no,no
+v1u8HOHT0tbGoDSoZuy2,Manifold,"Will Manifold create a public Manifold app for Android devices by Jan 1, 2023",substantive_world_question,yes,yes,yes,no,no
+qElOyEQuIA,Manifold,Will any announcer on the NBC broadcast of the Super Bowl say the phrase “smart stadium” during the live broadcast?,speech_or_posts,yes,yes,unsure,unsure,yes
+qElOyEQuIA,Manifold,Will any announcer on the NBC broadcast of the Super Bowl say the phrase “smart stadium” during the live broadcast?,existing_fact,no,no,unsure,no,no
+mnKztiZUMcUl48N3tMl4,Manifold,Will July 2024 be the hottest July on record in the US?,scheduled_release,yes,yes,yes,yes,unsure
+8IZtzyygQt,Manifold,"Will Trump’s “Warrior Dividend” of $1,776 to military servicemembers happen by Christmas?",subjective_resolution,no,no,unsure,no,no
+yN0hQZLLhz,Manifold,"Alphabet (GOOG) market cap exceeds Apple (AAPL) market cap before March 1, 2026",substantive_world_question,yes,yes,yes,yes,unsure
+586759,Polymarket,Will Norway win on 2025-09-09?,substantive_world_question,yes,yes,yes,no,no
+532416,Polymarket,Will Southampton vs. Aston Villa end in a draw?,substantive_world_question,yes,yes,yes,no,no
+6LtPIZQcRQ,Manifold,Does the Fed rate change in July?,scheduled_release,no,no,unsure,no,no
+7YR3RoukybG0YTh40sVm,Manifold,Will an AI account on Instagram have more than 1M followers by the end of 2023?,subjective_resolution,no,unsure,yes,unsure,unsure
+hA8yUU5cll,Manifold,Will Zelensky wear a tie for his next meeting with Trump?,substantive_world_question,yes,yes,unsure,no,no
+616666,Polymarket,MLB Playoffs: Will the Chicago Cubs beat the San Diego Padres 2-0?,sports_match,no,no,yes,yes,unsure
+616666,Polymarket,MLB Playoffs: Will the Chicago Cubs beat the San Diego Padres 2-0?,substantive_world_question,yes,yes,yes,no,no
+522781,Polymarket,Tennessee Tech vs. Little Rock,substantive_world_question,yes,no,yes,no,no
+692467,Polymarket,Will Vitality win the HLTV Team of the Year award?,substantive_world_question,yes,yes,yes,yes,no
+DBZZ1xACYCZpBDSaxRho,Manifold,Will destiny Violently die IRL before end of may?,substantive_world_question,yes,yes,yes,yes,unsure
+510193,Polymarket,"Will Trump say ""Liquid gold"" during Pennsylvania town hall on October 20?",substantive_world_question,yes,no,unsure,no,no
+KDabvxPy0YWI4VePQmpD,Manifold,"Will any market have at least M$50,000 in user-given liquidity subsidies by the end of 2023?",creator_influence,yes,no,unsure,no,no
+KDabvxPy0YWI4VePQmpD,Manifold,"Will any market have at least M$50,000 in user-given liquidity subsidies by the end of 2023?",trader_influence,yes,yes,yes,no,no
+ka0UE0vEziKf8TRFO2Fs,Manifold,Will $TSLA close above $300 per share by December 30 2025?,substantive_world_question,yes,yes,yes,yes,unsure
+639579,Polymarket,Giants vs. Eagles: O/U 41.5,sports_performance,yes,no,no,no,no
+639579,Polymarket,Giants vs. Eagles: O/U 41.5,substantive_world_question,yes,yes,yes,no,no
+hPqR8lgqLq,Manifold,Trump approval rating 45.0% or higher on Feb 20th?,subjective_resolution,no,no,unsure,unsure,no
+6iuksTLzp8JqbbJYv3pW,Manifold,"Will there ever be more Google search volume about AI Alignment than about Light Pollution, for any day before EOY 2024?",substantive_world_question,yes,yes,yes,unsure,unsure
+678329,Polymarket,"Will Trump say ""Ballroom"" during the private dinner on November 12?",substantive_world_question,yes,no,no,no,unsure
+XLxD4W5I3pCeiMRh332O,Manifold,"Will the billionaire-fight happen, ever?",subjective_resolution,unsure,no,no,no,no
+1133910,Polymarket,Counter-Strike:  CSDIILIT vs MASONIC - Map 1 Winner,substantive_world_question,yes,no,yes,no,no
+X119ofpHSQnnkZnIc8AC,Manifold,Will football come home?,substantive_world_question,yes,yes,yes,yes,no
+UHIcl9nibX5YvXN8IdgN,Manifold,Will I have 70 twitter followers by 8. August?,trader_influence,yes,no,no,no,no
+UHIcl9nibX5YvXN8IdgN,Manifold,Will I have 70 twitter followers by 8. August?,substantive_world_question,yes,unsure,unsure,yes,unsure
+DBSCrwe1iOTXf7QKpE1x,Manifold,Will Destiny's Interview on Iced Coffee surpass Hasan's Interview in views in a month?,substantive_world_question,yes,no,no,unsure,unsure
+1039548,Polymarket,Will Samsunspor vs. Kocaelispor end in a draw?,substantive_world_question,yes,yes,no,no,no
+528857,Polymarket,Will Esteban Ocon win the 2025 China Grand Prix?,substantive_world_question,yes,yes,yes,no,no
+wLTDYeuMqBhmnbiLKgso,Manifold,"War in Ukraine: Will Russia lose 200,000 troops by the end of 2023?",scheduled_release,no,no,unsure,no,unsure
+1070231,Polymarket,Ayo Dosunmu: Points Over 16.5,substantive_world_question,yes,unsure,yes,no,no
+1161034,Polymarket,Set 1 Winner: Ambrosio vs Sanchez,sports_match,yes,yes,yes,yes,unsure
+1161034,Polymarket,Set 1 Winner: Ambrosio vs Sanchez,substantive_world_question,yes,yes,yes,no,no
+CfOuUhFQOfpd4q1xDTox,Manifold,Will this speaker of the house saga end in a Sorkin-Esque manner?,substantive_world_question,yes,yes,yes,yes,unsure
+uYoZb2ukrdLchGiBGdFu,Manifold,Will more than 100 protestors be violently killed in a single event in Iran during 2022?,subjective_resolution,no,no,unsure,no,no
+676836,Polymarket,Will AS Pirae win on 2025-11-15?,substantive_world_question,yes,yes,yes,no,no
+521454,Polymarket,Ducks vs. Kings,substantive_world_question,yes,yes,yes,no,no
+1011443,Polymarket,Miami (OH) RedHawks vs. Bowling Green Falcons,substantive_world_question,yes,no,yes,no,no
+686943,Polymarket,Mercyhurst Lakers vs. Iowa State Cyclones (W),substantive_world_question,yes,no,yes,no,no
+BmYt7Hq9Krlm5vv096S4,Manifold,"Will Manifest 2025 have someone more famous than Nate Silver, according to YouGov?",subjective_resolution,no,no,no,unsure,unsure
+BmYt7Hq9Krlm5vv096S4,Manifold,"Will Manifest 2025 have someone more famous than Nate Silver, according to YouGov?",substantive_world_question,yes,yes,yes,yes,unsure
+2HiGaNnYzJdJBEDGFkV8,Manifold,Will Linus Media Group announce a product that references their current controversy?,subjective_resolution,yes,yes,yes,unsure,yes
+6ylpO2Qoc5fc1WS3W1fT,Manifold,China will not launch a full-scale invasion of Taiwan [in 2023],subjective_resolution,no,yes,yes,yes,yes
+L74BcC1WXNYWTXj7Phn9,Manifold,Will Putin directly admit to killing Prigozhin by the end of September?,subjective_resolution,no,yes,unsure,unsure,no
+VIlKwn5qmA34CJ41419n,Manifold,🏈 2023 NCAAF: Will Colorado defeat Oregon?,substantive_world_question,yes,yes,yes,no,no
+f2kKIoo22DDuablrwL16,Manifold,Will GPT-4.5 resolve this market?,platform_metric,no,yes,yes,no,unsure
+f2kKIoo22DDuablrwL16,Manifold,Will GPT-4.5 resolve this market?,creator_influence,yes,yes,yes,yes,unsure
+f2kKIoo22DDuablrwL16,Manifold,Will GPT-4.5 resolve this market?,substantive_world_question,yes,no,no,no,no
+1221383,Polymarket,Bhutan Tri-Series: Bhutan Women vs Malaysia Women,substantive_world_question,yes,yes,yes,no,no
+75ck6ZM3xZmxkhaz21fR,Manifold,Will Destiny's main YouTube channel reach 655k subscribers in April?,substantive_world_question,yes,yes,yes,no,no
