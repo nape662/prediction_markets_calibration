@@ -108,6 +108,8 @@ Peter chose to label all 37,680 Manifold markets and leave Polymarket out for no
 
 **Haiku runs at medium effort, one market per call,** because batching pulls its `substantive_world_question` answers away from Opus's (151 of 200 matching, against 188). A 24-market test cost $0.00093 per market, so about $35 at list price. It runs in a cloud session and stops itself at $60. **Jev** runs locally at about $0.00011 per market, about $4.20, and stops at $4.80.
 
+**Jev's run finished:** 37,680 of 37,680 answered, no invalid lines, $4.19 at the third-party list price. Its `unsure` band is wide on the new tags: `status_quo_default` has 1,744 yes and 15,834 unsure, and `insider_knowable` has 5,275 yes and 16,880 unsure. The cutoffs of 0.8 and 0.2 may need revisiting for them; the raw probabilities are saved.
+
 Sol and Opus reviewed the code before launch. Fixes: results are saved as they arrive, a killed write can't break a restart, a missing Jev answer stops the run instead of becoming "no", and the Jev text keeps the `short_crypto_price` interval rule. A few outcome leaks in the input were also removed: lines like "Market resolved to YES since...", "Close date updated to..." notes and tags such as `misresolved`. Fourteen unusual "close date updated" mentions remain.
 
 ## Where the money goes
@@ -125,17 +127,11 @@ Haiku low at 20 per call on the first sample, as shares of cost (these 10 calls 
 
 On the first sample's $0.00022 per market: **about $36 for all 165,058, or $28** for Manifold plus the 90,892 templates with volume of at least $1,000. A cruder 50-per-call test gave $0.00018 on the old prompt, but its quality was not scored. Polymarket text runs about 25% longer than Manifold's in the sample, and Polymarket makes up most of the full run, so the real cost may run a little higher.
 
-## The cloud credit: not verified
+## The cloud credit: confirmed
 
-The plan is to pay with the $98 cloud credit, which expires November 4, 11:59 PM PT. Anthropic's help page confirms these things and no more:
+**`claude -p` inside a cloud session works and draws on the cloud credit.** After about 2,500 markets, Peter's credit had dropped by about $3, close to the list-price estimate of $2.30 plus the session's own turns. The credit is $98 and expires November 4, 11:59 PM PT. Routines don't count towards it. This rests on one reading of the balance, not on Anthropic's documentation, which doesn't state the rate.
 
-- It applies automatically to cloud sessions.
-- Routines don't count.
-- While credit remains, cloud usage doesn't count against plan limits.
-
-It doesn't state a rate, and it doesn't say whether subagents or `claude -p` inside a cloud session draw on the credit. We also don't know whether `claude -p` is logged in there at all. If it isn't, Haiku subagents are the fallback. Each would bring its own instructions and tools and a 5-minute cache, and Haiku subagents haven't been measured.
-
-**The test needs a real cloud session run by Peter.** Run the 200-market batch there, then larger pieces, and compare the credit balance with the list-price estimate. The test also needs the committed files on GitHub, and the full run needs the full input, which is in the gitignored `data/`.
+**How to start one:** `claude --cloud "<task>"` from a terminal. It needs an interactive terminal, and the task should push results to a branch regularly, because a reclaimed VM loses everything else. Without the Claude GitHub App on the repo, the session gets a copy with no git remote; giving it the URL afterwards did make pushing work.
 
 ## Your job
 
