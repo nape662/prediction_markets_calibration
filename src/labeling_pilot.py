@@ -38,7 +38,7 @@ def questions():
 
 def system_prompt():
     blocks = re.findall(r"```text\n(.*?)```", QUESTIONS.read_text(), re.S)
-    assert len(blocks) == 2 and len(questions()) == 22, (len(blocks), len(questions()))
+    assert len(blocks) == 2 and len(questions()) == 23, (len(blocks), len(questions()))
     lines = "\n\n".join(f"{q}: {body}" for q, body in questions())
     return f"{blocks[0].strip()}\n\nQuestions:\n\n{lines}\n\n{blocks[1].strip()}\n"
 

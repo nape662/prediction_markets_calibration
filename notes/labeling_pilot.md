@@ -8,14 +8,14 @@ You are reading this to improve two things: the cost of the labeling and the qua
 
 The project (`AGENTS.md`) asks whether Polymarket and Manifold probabilities match how often things happen, especially on real questions rather than mass-produced gambling. So every market needs labels that let us plot each kind separately.
 
-The labeler answers 22 narrow yes/no/unsure questions. We turn the answers into plot groups ourselves. The questions, the group rules and the reasoning are in `notes/classifier_questions.md`.
+The labeler answers 23 narrow yes/no/unsure questions. The 23rd, `bookmaker_odds`, was added after these runs; no run has used it yet. It doesn't affect groups: it will split the world group into markets with and without normal bookmakers. We turn the answers into plot groups ourselves. The questions, the group rules and the reasoning are in `notes/classifier_questions.md`.
 
 ## The process, step by step
 
 1. **Clean the input** (`src/labeling_input.py`, output in the gitignored `data/labeling/`). It removes text written after a market was created, such as "Update..." and "resolved YES". The model never sees a price, an outcome, or any date except creation. Close dates are withheld because Manifold overwrites them on early resolution, and early resolution leans YES.
 2. **Shrink Polymarket to templates.** Polymarket has 379,945 markets closed before our trade data ends (2026-02-02). They collapse to 127,378 question templates by removing numbers and dates, split also by scheduled length. We label one market per template. Manifold has 37,680 markets, labeled one by one. Total: 165,058 items.
 3. **Pick the sample** (`src/labeling_pilot.py prepare`, seed 0): 200 markets in shuffled order. See "Choices" below.
-4. **Build the prompt**, also in `prepare`: the intro, 22 question texts and the answer format, all read from `notes/classifier_questions.md` into `labeling/system_prompt.txt`.
+4. **Build the prompt**, also in `prepare`: the intro, 23 question texts and the answer format, all read from `notes/classifier_questions.md` into `labeling/system_prompt.txt`.
 5. **Call the models** (`run`), through Claude Code's `claude -p`. Raw output is in `labeling/results/*.jsonl`.
 6. **Compare with Opus** (`score`): `scores.csv` by tag, `groups.csv` by plot group, `disagreements.csv` market by market.
 
@@ -113,7 +113,7 @@ Haiku low at 20 per call on the first sample, as shares of cost (these 10 calls 
 | Visible answers | 11% |
 | Prompt read from cache | under 1% |
 
-**Shortening the prompt saves almost nothing.** The 22 questions could get longer at no real cost.
+**Shortening the prompt saves almost nothing.** The questions could get longer at no real cost for Haiku.
 
 On the first sample's $0.00022 per market: **about $36 for all 165,058, or $28** for Manifold plus the 90,892 templates with volume of at least $1,000. A cruder 50-per-call test gave $0.00018 on the old prompt, but its quality was not scored. Polymarket text runs about 25% longer than Manifold's in the sample, and Polymarket makes up most of the full run, so the real cost may run a little higher.
 

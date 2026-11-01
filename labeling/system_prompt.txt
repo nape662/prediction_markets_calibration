@@ -34,6 +34,8 @@ scheduled_release: Is the outcome determined by a number that a government agenc
 
 speech_or_posts: Is the outcome whether a named person says or writes a specific word or phrase, or how many posts or tweets they publish in a period? Exclude what the person does (signs an order, announces a policy, resigns); those are events, not words.
 
+bookmaker_odds: Would major bookmakers or regulated betting exchanges normally offer odds on this kind of event at the time the market was created?
+
 platform_metric: Is the outcome determined by activity or a numerical state on a prediction-market platform: market probabilities, trades, volume, trader counts, account profit, balances, followers, likes, or league rankings? Include a question resolved from another market's price. Exclude the external event that another market forecasts, and exclude product releases or company developments such as Manifold launching an app.
 
 constructed_game: Is this market itself an artificial game or challenge whose outcome is created by special rules for participants, such as being the last trader, coordinating purchases, posting a required comment, or making a chosen side win through participation? Do not label a question yes merely because it is funny, personal, about a game company, or about a sporting competition. A plain random draw belongs under fixed_chance; also answer yes here only if there are additional participant-game rules.
