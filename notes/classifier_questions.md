@@ -92,12 +92,6 @@ The market's own resolution criteria take priority over its title. Event titles 
 
 > Is this market itself an artificial game or challenge whose outcome is created by special rules for participants, such as being the last trader, coordinating purchases, posting a required comment, or making a chosen side win through participation? Do not label a question yes merely because it is funny, personal, about a game company, or about a sporting competition. A plain random draw belongs under fixed_chance; also answer yes here only if there are additional participant-game rules.
 
-**`junk_reason`** (только Haiku, свободный текст; Jev текст писать не умеет)
-
-> If this market looks low-value for a reason that none of the other questions covers, say why in at most five words. Otherwise return an empty string.
-
-Ответы потом группируем руками: частые причины становятся новыми тегами, как в ситечке.
-
 ## 2. Кто может влиять на исход
 
 Для обоих вопросов считаем влияние на событие, а не техническую возможность поставить неверный исход при резолюции. Не считаем гипотетическое «президент тоже мог бы завести аккаунт» или ничтожное влияние одного голоса на национальные выборы. Влияние не обязано гарантировать исход.
@@ -156,10 +150,10 @@ The market's own resolution criteria take priority over its title. Event titles 
 
 **Никаких дат, кроме даты создания.** Дату закрытия и время разрешения не передаём. На Manifold `closeTime` при досрочном разрешении перезаписывается временем разрешения, а досрочно чаще разрешаются ДА. Дата закрытия, близкая к созданию, подсказала бы модели исход. Дедлайн, написанный в самом вопросе («by June 2025»), остаётся: это часть условий. Длительность рынка, принадлежность к связке взаимоисключающих вариантов и тему считаем сами, у модели не спрашиваем.
 
-Для Haiku — все 22 вопроса да/нет и `junk_reason` об одном рынке в одном запросе. Общая инструкция и вопросы — неизменный префикс, его кэшируем; меняется только текст рынка. Уровень размышлений (effort) начинаем с низкого и на пилоте сравниваем с high: если ответы почти не отличаются, остаёмся на низком. Инструкция к ответу:
+Для Haiku — все 22 вопроса да/нет об одном рынке в одном запросе. Общая инструкция и вопросы — неизменный префикс, его кэшируем; меняется только текст рынка. Уровень размышлений (effort) начинаем с низкого и на пилоте сравниваем с high: если ответы почти не отличаются, остаёмся на низком. Инструкция к ответу:
 
 ```text
-Each input line is one market. Return one JSON line per market and nothing else, no code fences: {"id":"<market id>","yes":[question IDs answered yes],"unsure":[question IDs answered unsure],"junk":"<junk_reason or empty>"}. Every question ID you do not list counts as no. The values answer the classification questions, not the market's YES/NO outcome. Judge each market on its own: other markets in the input must not affect its answers.
+Each input line is one market. Return one JSON line per market and nothing else, no code fences: {"id":"<market id>","yes":[question IDs answered yes]"unsure":[question IDs answered unsure]}. Every question ID you do not list counts as no. The values answer the classification questions, not the market's YES/NO outcome. Judge each market on its own: other markets in the input must not affect its answers.
 ```
 
 Для Jev — тот же текст рынка, общее вступление и один вопрос с теми же тремя вариантами ответа. Значит, 22 запроса на рынок: по стоимости это не дешевле Haiku. Поэтому Jev запускаем только на выборке в 2–3 тысячи рынков, для сравнения с Haiku и Luna. Это предложение по содержанию запросов; точный формат API и доступные режимы Jev ещё не проверены. Идентификатор вопроса хранит вызывающий код. Выходные вероятности Jev, если доступны, сохраняем отдельно: не называем их проверенной уверенностью в правильности тега.

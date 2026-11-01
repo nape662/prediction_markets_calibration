@@ -38,7 +38,7 @@ def questions():
 
 def system_prompt():
     blocks = re.findall(r"```text\n(.*?)```", QUESTIONS.read_text(), re.S)
-    assert len(blocks) == 2 and len(questions()) == 23, (len(blocks), len(questions()))
+    assert len(blocks) == 2 and len(questions()) == 22, (len(blocks), len(questions()))
     lines = "\n\n".join(f"{q}: {body}" for q, body in questions())
     return f"{blocks[0].strip()}\n\nQuestions:\n\n{lines}\n\n{blocks[1].strip()}\n"
 
@@ -101,7 +101,7 @@ def jev(name):
     """All tags in one request per market: Jev bills the state once and the docs mention no prompt cache."""
     key = Path("~/.config/jev_key").expanduser().read_text().strip()
     intro = re.findall(r"```text\n(.*?)```", QUESTIONS.read_text(), re.S)[0].strip()
-    asked = {q: dict(type="noul", instructions=text) for q, text in questions() if q != "junk_reason"}  # Jev can't write text
+    asked = {q: dict(type="noul", instructions=text) for q, text in questions()}
     markets = [l.strip() for l in open(SAMPLE)]
     version = hashlib.sha256((json.dumps(asked) + intro + "".join(markets)).encode()).hexdigest()[:8]
     RESULTS.mkdir(parents=True, exist_ok=True)
@@ -110,7 +110,7 @@ def jev(name):
             d = jev_request(dict(model="jev-latest", state=dict(instructions=intro, market=market), questions=asked), key)
             probs = {q: a["noul"] for q, a in d["answers"].items()}
             answer = dict(id=market["id"], yes=[q for q, p in probs.items() if p >= JEV_YES],
-                          unsure=[q for q, p in probs.items() if JEV_NO < p < JEV_YES], junk="")
+                          unsure=[q for q, p in probs.items() if JEV_NO < p < JEV_YES])
             f.write(json.dumps(dict(input_version=version, ids=[market["id"]], result=json.dumps(answer), probs=probs,
                                     model=d["model"], cost=d["usage"]["input_tokens"] * JEV_PRICE, usage=d["usage"])) + "\n")
             f.flush()
@@ -160,7 +160,7 @@ def group(answer):
 
 
 def score(reference, names):
-    tags = [q for q, _ in questions() if q != "junk_reason"]
+    tags = [q for q, _ in questions()]
     ids = {m["id"]: m for m in map(json.loads, open(SAMPLE))}
     runs = {n: load(n) for n in [reference, *names]}
     summary, rows = [], []

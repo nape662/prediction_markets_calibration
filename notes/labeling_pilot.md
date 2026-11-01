@@ -8,14 +8,14 @@ You are reading this to improve two things: the cost of the labeling and the qua
 
 The project (`AGENTS.md`) asks whether Polymarket and Manifold probabilities match how often things happen, especially on real questions rather than mass-produced gambling. So every market needs labels that let us plot each kind separately.
 
-The labeler answers 22 narrow yes/no/unsure questions plus a free-text `junk_reason`. We turn the answers into plot groups ourselves. The questions, the group rules and the reasoning are in `notes/classifier_questions.md`.
+The labeler answers 22 narrow yes/no/unsure questions. We turn the answers into plot groups ourselves. The questions, the group rules and the reasoning are in `notes/classifier_questions.md`.
 
 ## The process, step by step
 
 1. **Clean the input** (`src/labeling_input.py`, output in the gitignored `data/labeling/`). It removes text written after a market was created, such as "Update..." and "resolved YES". The model never sees a price, an outcome, or any date except creation. Close dates are withheld because Manifold overwrites them on early resolution, and early resolution leans YES.
 2. **Shrink Polymarket to templates.** Polymarket has 379,945 markets closed before our trade data ends (2026-02-02). They collapse to 127,378 question templates by removing numbers and dates, split also by scheduled length. We label one market per template. Manifold has 37,680 markets, labeled one by one. Total: 165,058 items.
 3. **Pick the sample** (`src/labeling_pilot.py prepare`, seed 0): 200 markets in shuffled order. See "Choices" below.
-4. **Build the prompt**, also in `prepare`: the intro, 23 question texts and the answer format, all read from `notes/classifier_questions.md` into `labeling/system_prompt.txt`.
+4. **Build the prompt**, also in `prepare`: the intro, 22 question texts and the answer format, all read from `notes/classifier_questions.md` into `labeling/system_prompt.txt`.
 5. **Call the models** (`run`), through Claude Code's `claude -p`. Raw output is in `labeling/results/*.jsonl`.
 6. **Compare with Opus** (`score`): `scores.csv` by tag, `groups.csv` by plot group, `disagreements.csv` market by market.
 
@@ -36,7 +36,7 @@ export CLAUDE_BIN=$(ls -d ~/.vscode-server/extensions/anthropic.claude-code-*-li
 
 **`claude -p` with no tools and our own system prompt.** A default call sends about 22,000 tokens of Claude Code's own instructions and tools; this one adds about 150. We also set `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1`, because otherwise each call adds a paid helper request of about 1,270 tokens. The Claude Code installed in `~/.local/bin` (2.1.210) refuses Opus 5.5 and overstates Haiku 5.5's cost, so use the newer binary above.
 
-**Short answer format.** The model lists only the yes and unsure tags; anything unlisted means no. Compared with spelling out all 23 values, this cut visible output from about 290 tokens per market to about 50. The risk is that a tag the model forgot looks like a "no".
+**Short answer format.** The model lists only the yes and unsure tags; anything unlisted means no. Compared with spelling out all the values, this cut visible output from about 290 tokens per market to about 50. The risk is that a tag the model forgot looks like a "no".
 
 **Batching several markets into one call.** It cut cost by about 60%. The prompt asks the model to judge each market separately, but neighbours may still influence each other, and the `substantive_world_question` result below suggests something does change.
 
@@ -67,7 +67,7 @@ Opus costs $0.0124 per market, which would be about $2,050 for everything. Price
 - **`speech_or_posts` sits in the "traded elsewhere" group.** It sends Zelenskyy apologizing to Trump there, though nobody trades that elsewhere. That is a problem with our grouping rule, not with the labeler.
 - **`scheduled_release` wording is too wide.** A company publishing monthly lets in the TIOBE programming-language index, which is not what the tag means. Limiting it to economic and earnings figures looks right.
 - **No question catches a market decided by one named person's free choice.** Destiny's video count is a real question, but he can decide it himself. The influence questions cover only the market's creator and traders.
-- **`junk_reason` is noisy.** Haiku low fills it on 22 markets, Opus on 4. Haiku often repeats what a tag already says ("Random coin flip").
+- **`junk_reason` was removed.** The first runs asked for a free-text reason a market looks low-value. Peter read the answers and judged them bad ("minor streamer subscriber count"), so the saved runs still contain it but the current prompt doesn't.
 
 ## Second run: 200 fresh markets and Jev
 
@@ -81,7 +81,7 @@ The numbers above come from the first sample, which we had studied before regrou
 
 **All three pass the 10% mark. The honest figure for Haiku is about 191, not 197.**
 
-**Jev** (TypeSafe's decision model, version 1.14.0) gets all 22 questions in one request, and returns the probability of yes for each. We count 0.8 or above as yes, 0.2 or below as no, and the rest as unsure. It has no `junk_reason`, and its intro still mentions `unsure`, which it can't answer; a Jev-only intro is planned for the next rerun.
+**Jev** (TypeSafe's decision model, version 1.14.0) gets all 22 questions in one request, and returns the probability of yes for each. We count 0.8 or above as yes, 0.2 or below as no, and the rest as unsure. Its intro still mentions `unsure`, which it can't answer; a Jev-only intro is planned for the next rerun.
 
 - **Tags are noisier than groups.** Jev says yes to `sports_performance` on 48 markets against Opus's 7, and differs on `subjective_resolution` 42 times against Haiku's 20. Most of this stays within one group, so the groups hide it. Plots of a single tag would show it.
 - **`substantive_world_question` works better on Jev.** It differs from Opus on 21 markets, against 73 for batched Haiku. Batching again pulls Haiku's yes count down: 117 of 200 against Opus's 181.
