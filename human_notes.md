@@ -1,0 +1,2 @@
+1. We have unexplained no bias in the after-market-start bins plot, not present in the before-resolution one. Will X happen by Y positive bias is predictable.
+2. almost 7 thousand disagreements on fixed-date shit apparently... 6,158: current labels say fixed-date side; Haiku says status-quo/default side. 840: the reverse. 2,434: Haiku is unsure. need to check.

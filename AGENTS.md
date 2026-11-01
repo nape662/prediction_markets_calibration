@@ -35,7 +35,7 @@ Run experiments in their own separate tmux sessions, so they finish even if Pete
 
 Claude and ChatGPT, you two are working side-by-side.
 Claude, when you write a substantial chunk of code, ask latest Sol model at High reasoning to review the diff critically for bugs. 
-Chat, when you write a substantial chunk of code, you ask latest Opus model at High reasoning to /simplify your work. Trust that Opus correctly simplifies it, do not re-check its results.
+Chat, when you write a substantial chunk of code, you ask latest Opus model at High reasoning to /simplify your work. Trust that Opus correctly simplifies it, do not re-check its results, do not sandbox it extra, let it edit the project files directly, and yes I approve of passing project files to Claude. And please don't launch it with "no-persistent-session" let it be a normal persistent session of Claude. 
 
 ## Writing style
 
@@ -58,7 +58,7 @@ The reader should feel ready to act or ask further clarifying questions, not ove
 - **Reports carry your interpretation.** Read the CSV yourself and write what it means, in the same plain, short style as chat: what changed, by how much, and whether it is beyond seed noise. 
 - **For every plot, there must exist an explanation of the process that produced the plot, so that the person would in theory be able to reproduce the main parts of it, either in plot description or elsewhere:** Example: "We train DINOv2 with only a learned head, or with head + LoRA, on X images (x-axis) and measure Y on the validation set. Rerun 5 times with different seeds, same image split. For every X, training stops once the loss on a separate stopping set hasn't improved for 10 epochs; the best checkpoint is evaluated on a validation set common to all X."
 - **Corrections are never silent.** If a plot uses any correction (e.g. "12h before resolution" actually measured from a corrected anchor, so it is really 36h), say so under the plot in big red letters, and always make two plots: with and without the correction.
-- **Reports are not academic papers.** They exist so that Peter and Evangelia understand what happened. Don't copy the paper style; it is unreadable.
+- **Reports are not academic papers.** They exist so that Peter can understand what happened. Don't copy the paper style; it is unreadable.
 
 ## Prediction-market calibration: good and bad methodological choices in prior work
 
