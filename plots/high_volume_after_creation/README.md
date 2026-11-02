@@ -1,10 +1,17 @@
 # Heavily traded world markets, 1 month to 1 year after creation
 
-**Heavily traded world markets still lean below the diagonal, by about 2.5 to 5.5 percentage points.** Prices average higher than the YES rate at every horizon: 34% vs 31% at 1 month, 33% vs 29% at 3 months, 30% vs 24% at 6 months, 25% vs 23% at 1 year. The 95% intervals on these gaps only just exclude zero at 1 and 3 months, and touch zero at 1 year. The change between horizons is within noise.
+**More trading shrinks the downward lean but doesn't remove it, and the shrinking stops at 10,000 mana.** Average price minus YES rate, in percentage points:
 
-[calibration.png](calibration.png): green is world markets with at least 20,000 mana traded by the snapshot. Grey is all world markets at the same horizon, with no volume minimum.
+| After creation | 3,000+ | 10,000+ | 20,000+ |
+|---|---|---|---|
+| 1 month | +5.4 | +3.1 | +3.0 |
+| 6 months | +6.9 | +5.6 | +5.5 |
 
-**This does not show that trading causes the smaller gap.** The heavily traded markets are a different, smaller set of questions.
+3 months and 1 year follow the same order (`summary.csv`). The intervals are mostly clear of zero; the exception is 20,000+ at 1 year, which touches it. Higher minimums are subsets of lower ones, so the three columns are not independent. The change across horizons is within noise at 10,000+ and 20,000+.
+
+[calibration.png](calibration.png): blue, orange and green are world markets with at least 3,000, 10,000 and 20,000 mana traded by the snapshot. Grey is all world markets at the same horizon, with no volume minimum. Error bars are drawn on 20,000+ only, to keep the plot readable.
+
+**This does not show that trading causes the smaller gap.** Heavily traded markets are a different, smaller set of questions.
 
 ## Same markets over time
 
@@ -14,7 +21,7 @@ Only 83 markets reach 20,000 mana within 1 month and are still open at 1 year. T
 
 - **Markets:** resolved YES/NO Manifold markets labeled `world`, both status-quo and other, with at least 15 lifetime bettors and 1,000 lifetime volume.
 - **Snapshot:** the price after the last bet that moved it, at or before creation plus 30, 90, 180 or 365 days. The market must still be unresolved at that moment.
-- **Filters:** at least 20,000 mana and 15 bettors by that same moment, so the filter does not use the future.
+- **Filters:** at least 3,000, 10,000 or 20,000 mana and 15 bettors by that same moment, so the filter does not use the future.
 - **Points:** markets grouped into 10-point-wide price bins. Each dot is the mean price and YES share of its bin. Bins with fewer than 10 markets are dropped.
 - **Intervals:** 95%, from resampling creators 2,000 times.
 
