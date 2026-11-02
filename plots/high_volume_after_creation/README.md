@@ -1,6 +1,6 @@
 # Heavily traded world markets, 1 month to 1 year after creation
 
-**More trading shrinks the downward lean but doesn't remove it, and the shrinking stops at 10,000 mana.** Average price minus YES rate, in percentage points:
+**Markets with more trading lean downward less, but the lean doesn't disappear, and going from 10,000 to 20,000 mana changes almost nothing.** Average price minus YES rate, in percentage points:
 
 | After creation | 3,000+ | 10,000+ | 20,000+ |
 |---|---|---|---|
