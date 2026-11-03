@@ -1,0 +1,9 @@
+default_side against hand YES-default: [((False, 'NO'), 140), ((False, 'NONE'), 47), ((False, 'YES'), 25), ((True, 'NO'), 8), ((True, 'NONE'), 10), ((True, 'YES'), 284)]
+default_side [('NO', 23963), ('NONE', 11872), ('YES', 1837)]
+outside_reference [('yes', 14709), ('no', 14145), ('unsure', 8818)]
+early_side [('YES_EARLY', 22197), ('NEITHER', 11193), ('NO_EARLY', 2784), ('BOTH', 1498)]
+early_path [('NORMAL', 25774), ('NONE', 11245), ('SHOCK', 653)]
+general_interest [('yes', 22761), ('no', 11611), ('unsure', 3300)]
+prompted_by_news [('no', 25605), ('yes', 8389), ('unsure', 3678)]
+pair [(('YES_EARLY', 'NORMAL'), 21982), (('NEITHER', 'NONE'), 11193), (('NO_EARLY', 'NORMAL'), 2302), (('BOTH', 'NORMAL'), 1490), (('NO_EARLY', 'SHOCK'), 431), (('YES_EARLY', 'SHOCK'), 214), (('NO_EARLY', 'NONE'), 51), (('BOTH', 'SHOCK'), 8), (('YES_EARLY', 'NONE'), 1)]
+deadline given: 26390 of 37672
