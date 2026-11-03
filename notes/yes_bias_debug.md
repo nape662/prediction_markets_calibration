@@ -1,5 +1,7 @@
 # Why Manifold world markets sit below the diagonal
 
+**Update, 2026-11-03: [second_pass_results.md](second_pass_results.md) confirms the main finding with labels on every market, and corrects three things here.** The thin-attention lead fails once still-open markets are removed. Returns to betting NO aren't flat with time left, so lock-up isn't fully rejected. The "fit on 2023 and earlier" test below uses outcomes known only later. Numbers below are unchanged.
+
 **This is not a counting bug. Questions where nothing happening means NO are overpriced, and they cause 93% of the gap.** One week after creation, they are priced at 36% and resolve YES 26% of the time. The bias isn't toward YES: when YES means nothing changes, the market is underpriced, 73% against 80%. Questions decided on one scheduled event, with no date in the title, are close to calibrated: 50% against 49%.
 
 Polymarket shows the same overpricing with real money, at about half the size. **Why these questions are overpriced is still not explained.** I tested many explanations and most fail. The one lead left, that this is a problem of thinly watched questions, is suggestive and not established.
