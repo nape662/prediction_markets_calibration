@@ -1,0 +1,9 @@
+default_side against hand YES-default: [((False, 'NO'), 13), ((False, 'NONE'), 5), ((True, 'YES'), 34)]
+default_side [('NO', 49), ('YES', 34), ('NONE', 17)]
+outside_reference [('yes', 39), ('unsure', 34), ('no', 27)]
+early_side [('YES_EARLY', 49), ('NO_EARLY', 35), ('NEITHER', 14), ('BOTH', 2)]
+early_path [('NORMAL', 69), ('SHOCK', 17), ('NONE', 14)]
+general_interest [('yes', 76), ('no', 16), ('unsure', 8)]
+prompted_by_news [('no', 56), ('yes', 28), ('unsure', 16)]
+pair [(('YES_EARLY', 'NORMAL'), 48), (('NO_EARLY', 'NORMAL'), 19), (('NO_EARLY', 'SHOCK'), 16), (('NEITHER', 'NONE'), 14), (('BOTH', 'NORMAL'), 2), (('YES_EARLY', 'SHOCK'), 1)]
+deadline given: 83 of 100
