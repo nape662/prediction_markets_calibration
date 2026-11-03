@@ -66,12 +66,12 @@ def prepare():
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
 
-def claude_call(markets, model, effort, version):
+def claude_call(markets, model, effort, version, prompt=OUT / "system_prompt.txt"):
     env = {**os.environ, "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",  # otherwise each call adds a paid helper request
            "FORCE_PROMPT_CACHING_5M": "1"}  # market text is never read back, so its cache write should cost 1.25x, not 2x
     out = subprocess.run([os.environ.get("CLAUDE_BIN", "claude"), "-p", "--model", model, "--effort", effort,
                           "--output-format", "json", "--no-session-persistence", "--tools", "", "--strict-mcp-config",
-                          "--setting-sources", "", "--system-prompt-file", str(OUT / "system_prompt.txt")],
+                          "--setting-sources", "", "--system-prompt-file", str(prompt)],
                          input="\n".join(markets), capture_output=True, text=True, check=True, env=env, timeout=900)
     d = json.loads(out.stdout)
     if d["is_error"]:
