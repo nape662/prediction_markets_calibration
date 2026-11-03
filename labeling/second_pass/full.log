@@ -105,3 +105,11 @@ AOI9GqGPQYFm6TWvFBQv: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '
 19500 calls done, $9.92 spent
 u7PsBSaZRWB29TU3e2Ga: {"id":"u7PsBSaZRWB29TU3e2Ga","default_side":"NO","outside_reference":"no","stated_deadline":null,"early_side":"NONE","early_path":"NONE","general_interest":"no","prompted_by_news":"no"}
 ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+20000 calls done, $10.17 spent
+AOI9GqGPQYFm6TWvFBQv: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+dr81iXBNm490Htz4Jdl8: {"id":"dr81iXBNm490Htz4Jdl8","default_side":"YES","outside_reference":"yes","stated_deadline":"2024-11-05","early_side":"NONE","early_path":"NONE","general_interest":"yes","prompted_by_news":"unsure"}
+20500 calls done, $10.43 spent
+AOI9GqGPQYFm6TWvFBQv: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+21000 calls done, $10.68 spent
