@@ -34,3 +34,13 @@ ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '
 AOI9GqGPQYFm6TWvFBQv: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
 8500 calls done, $4.32 spent
 ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+9000 calls done, $4.58 spent
+AOI9GqGPQYFm6TWvFBQv: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+9500 calls done, $4.83 spent
+AOI9GqGPQYFm6TWvFBQv: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+qEI65RPOCU: {"id":"qEI65RPOCU","default_side":"NO","outside_reference":"yes","stated_deadline":"2026-09-02","early_side":"NONE","early_path":"NONE","general_interest":"yes","prompted_by_news":"no"}
+qEI65RPOCU: {"id":"qEI65RPOCU","default_side":"NO","outside_reference":"yes","stated_deadline":"2026-09-02","early_side":"NONE","early_path":"NONE","general_interest":"yes","prompted_by_news":"no"}
+qEI65RPOCU: {"id":"qEI65RPOCU","default_side":"NO","outside_reference":"yes","stated_deadline":"2026-09-02","early_side":"NONE","early_path":"NONE","general_interest":"yes","prompted_by_news":"no"}
+ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+10000 calls done, $5.08 spent
