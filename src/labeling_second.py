@@ -7,11 +7,12 @@ python src/labeling_second.py run check   -> labeling/second_pass/check_results.
 python src/labeling_second.py score <pilot|check|full> -> compares with the hand labels in labeling/review/yes_bias/polarity_hand.csv; the pilot was scored with the old field name, see pilot_score.txt
 The input has no prices, outcomes, close or resolution dates. Tags with new-year in them are removed, because that tag depends on the outcome (notes/yes_bias_debug.md).
 """
-import csv, hashlib, json, random, re, subprocess, sys
+import csv, hashlib, json, random, re, subprocess, sys, time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
+from labeling_full import LIMIT, LIMIT_TRIES, WAIT
 from labeling_pilot import OUT, claude_call
 
 DIR = OUT / "second_pass"
@@ -19,7 +20,8 @@ PROMPT = DIR / "system_prompt.txt"
 HAND = OUT / "review/yes_bias/polarity_hand.csv"
 ANSWERS = dict(default_side={"YES", "NO", "NONE"}, outside_reference={"yes", "no", "unsure"}, early_side={"YES_EARLY", "NO_EARLY", "BOTH", "NEITHER"},
                early_path={"NORMAL", "SHOCK", "NONE"}, general_interest={"yes", "no", "unsure"}, prompted_by_news={"yes", "no", "unsure"})
-PILOT_HAND, PILOT_RANDOM, WORKERS, TRIES = 150, 150, 12, 3
+PILOT_HAND, PILOT_RANDOM, WORKERS, TRIES, PASSES = 150, 150, 12, 3, 3
+BUDGET = 40  # USD at list price, about twice the estimate; stops before an estimate this wrong spends much more
 
 
 def prepare():
@@ -53,17 +55,22 @@ def valid(result, market_id):
 
 
 def ask(line, version):
+    """None means this market keeps failing for a reason other than a limit: it stays missing and the end report counts it."""
     market_id = json.loads(line)["id"]
-    for _ in range(TRIES):
+    for attempt in range(LIMIT_TRIES):
         try:
             answer = claude_call([line], "claude-haiku-5-5", "medium", version, PROMPT)
+            if valid(answer["result"], market_id):
+                return answer
+            message = answer["result"]
         except (subprocess.SubprocessError, ValueError, KeyError) as e:
-            print(f"{market_id}: {str(e)[:300]}", flush=True)
-            continue
-        if valid(answer["result"], market_id):
-            return answer
-        print(f"{market_id}: invalid answer {answer['result'][:300]}", flush=True)
-    return None  # stays missing and is counted at the end
+            message = f"{e} {getattr(e, 'stdout', '')} {getattr(e, 'stderr', '')}"
+        print(f"{market_id}: {message[:300]}", flush=True)
+        limited = LIMIT.search(message)
+        if attempt + 1 >= TRIES and not limited:
+            return None
+        time.sleep(WAIT if limited else 5)
+    raise RuntimeError(f"claude still failing after {WAIT * LIMIT_TRIES}s")
 
 
 def run(name, limit=None):
@@ -71,20 +78,36 @@ def run(name, limit=None):
     lines = lines[:limit] if limit else lines
     path = DIR / f"{name}_results.jsonl"
     version = hashlib.sha256((PROMPT.read_text() + "".join(lines)).encode()).hexdigest()[:8]
-    done = set()
     if path.exists():
-        for call in map(json.loads, open(path)):
-            assert call["input_version"] == version, f"{path} was made with another prompt or input"
-            done.add(call["ids"][0])
-    todo = [l for l in lines if json.loads(l)["id"] not in done]
-    print(f"{len(todo)} of {len(lines)} left", flush=True)
-    with open(path, "a") as f, ThreadPoolExecutor(WORKERS) as pool:
-        for n, future in enumerate(as_completed([pool.submit(ask, l, version) for l in todo]), 1):
-            if answer := future.result():
-                f.write(json.dumps(answer) + "\n")
-                f.flush()
-            if n % 500 == 0:
-                print(f"{n} calls done", flush=True)
+        data = path.read_bytes()
+        path.write_bytes(data[:data.rfind(b"\n") + 1])  # a kill during a write leaves a cut last line
+    for attempt in range(PASSES):
+        calls = list(map(json.loads, open(path))) if path.exists() else []
+        assert all(c["input_version"] == version for c in calls), f"{path} was made with another prompt or input"
+        done, spent = {c["ids"][0] for c in calls}, sum(c["cost"] for c in calls)
+        todo = [l for l in lines if json.loads(l)["id"] not in done]
+        print(f"pass {attempt + 1}: {len(todo)} of {len(lines)} left, ${spent:.2f} spent", flush=True)
+        pool = ThreadPoolExecutor(WORKERS)
+        error = None
+        with open(path, "a") as f:
+            for n, future in enumerate(as_completed([pool.submit(ask, l, version) for l in todo]), 1):
+                try:
+                    answer = future.result()
+                except Exception as e:  # stop asking, but still save what running calls have paid for
+                    error = error or e
+                    pool.shutdown(wait=False, cancel_futures=True)
+                    continue
+                if answer:
+                    f.write(json.dumps(answer) + "\n")
+                    f.flush()
+                    spent += answer["cost"]
+                    if spent > BUDGET and not error:
+                        error = RuntimeError(f"stopped at ${spent:.2f}, over the ${BUDGET} budget")
+                        pool.shutdown(wait=False, cancel_futures=True)
+                if n % 500 == 0:
+                    print(f"{n} calls done, ${spent:.2f} spent", flush=True)
+        if error:
+            raise error
     calls = list(map(json.loads, open(path)))
     print(f"{len(calls)} of {len(lines)} answered, ${sum(c['cost'] for c in calls) / len(calls):.6f} per market at list price")
 
