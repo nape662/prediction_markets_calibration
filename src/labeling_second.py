@@ -3,7 +3,8 @@
 python src/labeling_second.py prepare     -> labeling/second_pass/full.jsonl, pilot.jsonl; run locally, committed because a cloud session has no data/
 python src/labeling_second.py run pilot [n] -> labeling/second_pass/pilot_results.jsonl, one line per market; safe to restart
 python src/labeling_second.py run full [n]  -> labeling/second_pass/full_results.jsonl
-python src/labeling_second.py score       -> compares the pilot with the hand labels in labeling/review/yes_bias/polarity_hand.csv
+python src/labeling_second.py run check   -> labeling/second_pass/check_results.jsonl: 100 pilot markets again, after early_likelihood became early_path
+python src/labeling_second.py score <pilot|check|full> -> compares with the hand labels in labeling/review/yes_bias/polarity_hand.csv; the pilot was scored with the old field name, see pilot_score.txt
 The input has no prices, outcomes, close or resolution dates. Tags with new-year in them are removed, because that tag depends on the outcome (notes/yes_bias_debug.md).
 """
 import csv, hashlib, json, random, re, subprocess, sys
@@ -17,7 +18,7 @@ DIR = OUT / "second_pass"
 PROMPT = DIR / "system_prompt.txt"
 HAND = OUT / "review/yes_bias/polarity_hand.csv"
 ANSWERS = dict(default_side={"YES", "NO", "NONE"}, outside_reference={"yes", "no", "unsure"}, early_side={"YES_EARLY", "NO_EARLY", "BOTH", "NEITHER"},
-               early_likelihood={"COMMON", "RARE", "NONE"}, general_interest={"yes", "no", "unsure"}, prompted_by_news={"yes", "no", "unsure"})
+               early_path={"NORMAL", "SHOCK", "NONE"}, general_interest={"yes", "no", "unsure"}, prompted_by_news={"yes", "no", "unsure"})
 PILOT_HAND, PILOT_RANDOM, WORKERS, TRIES = 150, 150, 12, 3
 
 
@@ -88,17 +89,19 @@ def run(name, limit=None):
     print(f"{len(calls)} of {len(lines)} answered, ${sum(c['cost'] for c in calls) / len(calls):.6f} per market at list price")
 
 
-def score():
-    calls = [json.loads(json.loads(l)["result"]) for l in open(DIR / "pilot_results.jsonl")]
+def score(name):
+    calls = [json.loads(json.loads(l)["result"]) for l in open(DIR / f"{name}_results.jsonl")]
     hand = {r["id"]: r["yes_default"] == "True" for r in csv.DictReader(open(HAND))}
     print("default_side against hand YES-default:", sorted(Counter((hand[c["id"]], c["default_side"]) for c in calls if c["id"] in hand).items()))
     for q in [*ANSWERS, "pair"]:
-        print(q, Counter((c["early_side"], c["early_likelihood"]) if q == "pair" else c[q] for c in calls).most_common())
+        print(q, Counter((c["early_side"], c["early_path"]) if q == "pair" else c[q] for c in calls).most_common())
     print("deadline given:", sum(c["stated_deadline"] is not None for c in calls), "of", len(calls))
 
 
 if __name__ == "__main__":
     if sys.argv[1] == "run":
         run(sys.argv[2], int(sys.argv[3]) if len(sys.argv) > 3 else None)
+    elif sys.argv[1] == "score":
+        score(sys.argv[2])
     else:
-        dict(prepare=prepare, score=score)[sys.argv[1]]()
+        prepare()

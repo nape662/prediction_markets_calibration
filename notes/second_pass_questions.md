@@ -22,7 +22,11 @@ The labeler must not see prices, outcomes or close dates, as in the first pass. 
 
 **4. `early_side`.** The Luna audit found fixed-date questions with a real early-NO path, such as a candidate dropping out. Default side doesn't capture this.
 
-> Can the answer become certain well before the deadline? Answer YES_EARLY if a YES outcome could be established early while NO must wait, NO_EARLY if the reverse, BOTH, or NEITHER.
+> Can one outcome become certain well before the deadline while the other must wait? Answer YES_EARLY, NO_EARLY, BOTH or NEITHER.
+
+> `early_path`: Is that early finish a normal way for this question to end, or does it need an unrelated shock such as the death of a named person? Answer NORMAL, SHOCK or NONE. Ignore how likely the event itself is.
+
+The exact prompt is `labeling/second_pass/system_prompt.txt`. In a 300-market pilot, YES resolved early in 67% of YES_EARLY markets that went YES and NO in 7% of those that went NO, so this label tracks real timing. An earlier `early_likelihood` wording was dropped because Haiku rated how unlikely the event was.
 
 **5. `general_interest`.** A direct test of the main remaining lead: the overpricing sits in niche questions. The current data only has weak proxies such as the similar-title match and Manifold tags, and the tags can't be trusted: `new-years-resolutions-2024` depends on the outcome.
 
