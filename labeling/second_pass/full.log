@@ -18,3 +18,7 @@ E3o1x3euSyJJXmq713yE: {"id":"E3o1x3euSyJJXmq713yE","default_side":"NO","outside_
 E3o1x3euSyJJXmq713yE: {"id":"E3o1x3euSyJJXmq713yE","default_side":"NO","outside_reference":"yes","stated_deadline":"2022-12-31","early_side":"NONE","early_path":"NONE","general_interest":"yes","prompted_by_news":"no"}
 5000 calls done, $2.54 spent
 r1ur9yh5lp: {"id":"r1ur9yh5lp","default_side":"NO","outside_reference":"yes","stated_deadline":"2024-11-05","early_side":"NONE","early_path":"NONE","general_interest":"yes","prompted_by_news":"yes"}
+5500 calls done, $2.79 spent
+6000 calls done, $3.05 spent
+0ir8pxrUtJe447snIYnG: {"id":"0ir8pxrUtJe447snIYnG","default_side":"NO","outside_reference":"yes","stated_deadline":"2023-10-27","early_side":"NONE","early_path":"NONE","general_interest":"no","prompted_by_news":"no"}
+ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
