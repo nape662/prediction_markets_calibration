@@ -27,3 +27,10 @@ ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '
 7000 calls done, $3.55 spent
 ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
 7500 calls done, $3.81 spent
+AOI9GqGPQYFm6TWvFBQv: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+8000 calls done, $4.06 spent
+ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+2R2yuSREdh: {"id":"2R2yuSREdh","default_side":"NO","outside_reference":"yes","stated_deadline":"2026-03-31","early_side":"NONE","early_path":"NONE","general_interest":"yes","prompted_by_news":"no"}
+AOI9GqGPQYFm6TWvFBQv: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+8500 calls done, $4.32 spent
+ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
