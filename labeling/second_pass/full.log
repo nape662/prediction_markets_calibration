@@ -22,3 +22,8 @@ r1ur9yh5lp: {"id":"r1ur9yh5lp","default_side":"NO","outside_reference":"yes","st
 6000 calls done, $3.05 spent
 0ir8pxrUtJe447snIYnG: {"id":"0ir8pxrUtJe447snIYnG","default_side":"NO","outside_reference":"yes","stated_deadline":"2023-10-27","early_side":"NONE","early_path":"NONE","general_interest":"no","prompted_by_news":"no"}
 ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+6500 calls done, $3.30 spent
+ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+7000 calls done, $3.55 spent
+ObI0q2DEVC8VkEFG7K73: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+7500 calls done, $3.81 spent
