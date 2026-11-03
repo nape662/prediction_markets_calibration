@@ -1,0 +1,9 @@
+default_side against hand YES-default: [((False, 'NO'), 29), ((False, 'NONE'), 19), ((False, 'YES'), 7), ((True, 'NO'), 2), ((True, 'NONE'), 4), ((True, 'YES'), 89)]
+default_side [('NO', 127), ('YES', 100), ('NONE', 73)]
+outside_reference [('yes', 112), ('no', 103), ('unsure', 85)]
+early_side [('YES_EARLY', 117), ('NO_EARLY', 108), ('NEITHER', 69), ('BOTH', 6)]
+early_likelihood [('COMMON', 121), ('RARE', 110), ('NONE', 69)]
+general_interest [('yes', 206), ('no', 71), ('unsure', 23)]
+prompted_by_news [('no', 183), ('yes', 80), ('unsure', 37)]
+pair [(('YES_EARLY', 'COMMON'), 79), (('NO_EARLY', 'RARE'), 71), (('NEITHER', 'NONE'), 69), (('YES_EARLY', 'RARE'), 38), (('NO_EARLY', 'COMMON'), 37), (('BOTH', 'COMMON'), 5), (('BOTH', 'RARE'), 1)]
+deadline given: 229 of 300
