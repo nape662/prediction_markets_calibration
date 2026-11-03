@@ -9,3 +9,12 @@ aArdVgKRJwuuEBz0p4yc: {"id":"aArdVgKRJwuuEBz0p4yc","default_side":"NO","outside_
 2500 calls done, $1.27 spent
 3000 calls done, $1.52 spent
 3500 calls done, $1.78 spent
+4000 calls done, $2.03 spent
+Fsg8feSda9J90kcCOidH: Command '['claude', '-p', '--model', 'claude-haiku-5-5', '--effort', 'medium', '--output-format', 'json', '--no-session-persistence', '--tools', '', '--strict-mcp-config', '--setting-sources', '', '--system-prompt-file', '/home/user/prediction_markets_calibration/labeling/second_pass/system_prompt.t
+1wLY6p4Hy0: {"id":"1wLY6p4Hy0","default_side":"NO","outside_reference":"no","stated_deadline":null,"early_side":"NONE","early_path":"NONE","general_interest":"no","prompted_by_news":"no"}
+4500 calls done, $2.28 spent
+E3o1x3euSyJJXmq713yE: {"id":"E3o1x3euSyJJXmq713yE","default_side":"NO","outside_reference":"yes","stated_deadline":"2022-12-31","early_side":"NONE","early_path":"NONE","general_interest":"yes","prompted_by_news":"no"}
+E3o1x3euSyJJXmq713yE: {"id":"E3o1x3euSyJJXmq713yE","default_side":"NO","outside_reference":"yes","stated_deadline":"2022-12-31","early_side":"NONE","early_path":"NONE","general_interest":"yes","prompted_by_news":"no"}
+E3o1x3euSyJJXmq713yE: {"id":"E3o1x3euSyJJXmq713yE","default_side":"NO","outside_reference":"yes","stated_deadline":"2022-12-31","early_side":"NONE","early_path":"NONE","general_interest":"yes","prompted_by_news":"no"}
+5000 calls done, $2.54 spent
+r1ur9yh5lp: {"id":"r1ur9yh5lp","default_side":"NO","outside_reference":"yes","stated_deadline":"2024-11-05","early_side":"NONE","early_path":"NONE","general_interest":"yes","prompted_by_news":"yes"}
