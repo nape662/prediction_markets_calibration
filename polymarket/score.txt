@@ -1,0 +1,8 @@
+Counter({'closed_by_feb': 36853, 'open_in_feb': 2813})
+default_side [('NONE', 22056), ('NO', 17062), ('YES', 548)]
+outside_reference [('yes', 17793), ('unsure', 16357), ('no', 5516)]
+early_side [('NEITHER', 16696), ('YES_EARLY', 15874), ('NO_EARLY', 5401), ('BOTH', 1695)]
+early_path [('NORMAL', 22796), ('NONE', 16696), ('SHOCK', 174)]
+deadline given: 38013 of 39666
+yes: [('speech_or_posts', 9652), ('scheduled_release', 1742), ('crypto_price', 527), ('central_bank_rate', 392), ('sports_performance', 358), ('sports_tournament', 318), ('other_asset_price', 311), ('existing_fact', 242), ('weather_measurement', 113), ('sports_match', 102)]
+substantive at or below 20: 2580 at or above 80: 10344
