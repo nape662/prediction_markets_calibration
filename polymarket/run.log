@@ -332,3 +332,18 @@ pass 1: 39,666 of 39,666 left, $0.00 spent
 964806: {"id":"964806","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-02-11","early_side":"NEITHER","early_path":"NONE","substantive":55,"yes":["scheduled_release"],"unsure":["outside_reference"]}
 521947: {"id":"521947","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2025-12-31","early_side":"NEITHER","early_path":"NONE","substantive":70,"yes":["scheduled_release"],"unsure":["outside_reference"]}
 37,500 calls done, $25.11 spent
+517321: {"id":"517321","default_side":"NO","outside_reference":"unsure","stated_deadline":"2025-09-30","early_side":"NEITHER","early_path":"NONE","substantive":80,"yes":[],"unsure":["outside_reference","scheduled_release"]}
+38,000 calls done, $25.42 spent
+517311: {"id":"517311","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-02-28","early_side":"NO_EARLY","early_path":"NORMAL","substantive":90,"yes":["scheduled_release"],"unsure":["outside_reference"]}
+1168500: {"id":"1168500","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-03-31","early_side":"NEITHER","early_path":"NONE","substantive":30,"yes":[],"unsure":["speech_or_posts","outside_reference"]}
+1252076: {"id":"1252076","default_side":"NO","outside_reference":"unsure","stated_deadline":"2026-02-28","early_side":"NEITHER","early_path":"NONE","substantive":35,"yes":["existing_fact"],"unsure":["outside_reference"]}
+1083046: {"id":"1083046","default_side":"NO","outside_reference":"unsure","stated_deadline":"2026-02-28","early_side":"YES_EARLY","early_path":"NORMAL","substantive":35,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+38,500 calls done, $25.74 spent
+556062: {"id":"556062","default_side":"NO","outside_reference":"yes","stated_deadline":"2026-06-30","early_side":"BOTH","early_path":"NORMAL","substantive":45,"yes":["outside_reference","crypto_price"],"unsure":[]}
+801455: {"id":"801455","default_side":"NONE","outside_reference":"yes","stated_deadline":"2026-03-31","early_side":"NEITHER","early_path":"NONE","substantive":65,"yes":["outside_reference"],"unsure":[]}
+909455: {"id":"909455","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-12-31","early_side":"NEITHER","early_path":"NONE","substantive":70,"yes":["existing_fact"],"unsure":["outside_reference"]}
+39,000 calls done, $26.05 spent
+39,500 calls done, $26.37 spent
+690698: {"id":"690698","default_side":"NO","outside_reference":"unsure","stated_deadline":"2026-12-31","early_side":"BOTH","early_path":"NORMAL","substantive":55,"yes":["crypto_price"],"unsure":["outside_reference"]}
+pass 2: 0 of 39,666 left, $26.48 spent
+39,666 of 39,666 answered, $0.000663 per market at list price, $26.48 in all, $0.19 of it on replies that failed the format check
