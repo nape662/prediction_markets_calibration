@@ -14,7 +14,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 API = ROOT / "data/manifold/api"
-HOURS = {"12h": 12, "1d": 24, "1w": 24 * 7, "1m": 24 * 30, "1y": 24 * 365}
+HOURS = {"12h": 12, "1d": 24, "1w": 24 * 7, "1m": 24 * 30, "3m": 24 * 91, "6m": 24 * 182, "1y": 24 * 365}
 
 
 def snapshots(market):

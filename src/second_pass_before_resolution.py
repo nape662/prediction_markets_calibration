@@ -12,7 +12,7 @@ import pandas as pd
 from yes_bias import API, COLLECTED, HOURS, ROOT, boot_rate, summary
 from plot_calibration import load
 
-OUT, MIN_BIN, HORIZONS = ROOT / "plots/second_pass", 30, HOURS | {"1y": 8760}
+OUT, MIN_BIN, HORIZONS = ROOT / "plots/second_pass", 30, HOURS | {"3m": 24 * 91, "6m": 24 * 182, "1y": 24 * 365}
 SPLITS = {"default_side": [("NO", "#c2410c", "Nothing happening means NO"), ("YES", "#1d4ed8", "Nothing happening means YES"), ("NONE", "#047857", "No default side")],
           "early_side": [("YES_EARLY", "#c2410c", "Only YES can finish early"), ("NO_EARLY", "#1d4ed8", "Only NO can finish early"), ("NEITHER", "#047857", "Neither can finish early")]}
 HOW = "Source: Manifold API; labels from a second Haiku pass that saw text only, no prices or outcomes. Resolved YES/NO world markets, price at resolution minus the horizon, 15+ bettors by then.\nA market already closed then counts at its last price. Each dot is one 10-point price bin: mean price against share resolved YES, each market once.\nBins under 30 markets dropped; the number beside each dot is its market count. Bars: 95%, resampling creators.\nYES markets often resolve early, so this moment depends on the outcome: a market's last day before an early YES isn't comparable to its last day before a deadline NO."
@@ -34,7 +34,7 @@ def frame():
 
 
 def plot(bins, name, title, note, **kwargs):
-    fig, axes = plt.subplots(2, 4, figsize=(17, 9.6), sharex=True, sharey=True)
+    fig, axes = plt.subplots(2, 6, figsize=(25, 9.6), sharex=True, sharey=True)
     for row, (split, sides) in zip(axes, SPLITS.items()):
         for ax, h in zip(row, HORIZONS):
             ax.plot([0, 100], [0, 100], color="#bbbbbb", lw=1, zorder=0)
