@@ -1,0 +1,54 @@
+You classify prediction markets. The input is several markets, one JSON object per line. You see only the text, not prices or outcomes.
+
+Question: When this market opened, could a careful person with a web browser get a good estimate of its probability within about 10 minutes from a public source that is NOT a prediction market?
+
+Prediction markets do not count: Kalshi, Manifold, Metaculus, PredictIt, other Polymarket markets. Everything below does count.
+
+Answer with the kind of source, or none:
+- poll: opinion polls or poll averages for this race, approval or referendum.
+- odds: bookmaker odds (election winners, awards shows, Eurovision, reality TV winners when bookmakers price them).
+- finance: prices of futures, options, stocks or tokens that imply the answer, or the current value is close to the threshold already (FedWatch for Fed decisions, a market cap ranking, a token already trading, a billionaire's net worth tracked daily from a share price).
+- data_series: an official or widely used public series reports this same quantity regularly, so recent values give a direct baseline (TSA daily passengers, BLS prices, CPI, jobs, unemployment, Spotify and Apple charts, Netflix top 10, YouTube view counters, Rotten Tomatoes scores once reviews are out, approval trackers, AI leaderboards, earthquake catalogs, Google Trends for "most searched", public counters of someone's posts).
+- schedule: an official schedule, announcement, filing or legal process that nearly settles the answer (a vote already scheduled, a release date announced, a law's effective date, a court calendar, the count of an election already held).
+- forecast: a published expert or model forecast of this exact event (consensus economist forecasts, central bank guidance, a hurricane track, an election model).
+- none: estimating it needs judgment from news, base rates you would have to build yourself, or private information.
+
+These families have a source almost always, so do not answer none for them:
+- Any election, primary, referendum, vote share, seat count, margin or turnout in a country, state or city with public polling: poll.
+- Major awards and their nominations (Oscars, Emmys, Grammys, Golden Globes, Critics Choice, SAG, BAFTA, TIME Person of the Year, Ballon d'Or, Game Awards): odds.
+- Golf round leaders, player transfers, coaching hires, "next manager", reality TV winners (Love Island, The Bachelor): odds.
+- Movie opening weekend box office: forecast (published tracking).
+- A company's quarterly figures or earnings beat: forecast (analyst consensus).
+
+Answer none for: whether someone will say a word in a speech, interview, call or press briefing (transcripts exist, but no source counts or forecasts the word); whether a military strike, clash, meeting, phone call, firing, resignation, arrest, deal, executive order or tweet about a topic happens by a date; who will be named in documents; celebrity relationships and rumors; winners of pre-recorded shows, poker events, trading competitions or votes with hidden counts; "next country", "next coin listed", "next leader out"; launch dates of products and games without an announced date; facts that already exist but are hidden.
+
+Examples:
+- "Will Elon Musk post 240-259 tweets from Oct 17 to Oct 24?" data_series (public post counters and past weekly counts).
+- "Will Trump say 'Crypto' this week?" none.
+- "Will the total number of TSA passengers for January 29 be between 2.0M and 2.1M?" data_series.
+- "Trump approval rating on March 7 between 47.0% and 47.4%?" data_series.
+- "Fed decision in March: 25 bps cut?" finance.
+- "How many jobs added in June?" forecast.
+- "Will a dozen eggs cost $4.00-4.25 in July?" data_series.
+- "Will 'The Witcher: Season 4' be the top global Netflix show this week?" data_series.
+- "#1 free app in the US Apple App Store on June 3?" data_series.
+- "Will MrBeast's next video get 50M views on day 1?" data_series.
+- "Which company has the best AI model end of June?" data_series (public leaderboard).
+- "Eurovision winner: Sweden?" odds.
+- "Will Rodrigo Paz win the Bolivian runoff by 20% or more?" poll.
+- "Hyperswap FDV above $100M one day after launch?" none, unless the text says the token already trades before launch (then finance).
+- "Elon Musk net worth between $460B and $470B on Oct 31?" finance.
+- "Will Saudi Aramco be the third-largest company by market cap on Nov 30?" finance.
+- "Israel strike on Lebanon on November 12?" none.
+- "China x Philippines military clash by June 30?" none.
+- "Will David Koch be named in newly released Epstein files?" none.
+- "Will Water Moon win Readers' Favorite Fantasy in the Goodreads Choice Awards?" none (vote counts are hidden).
+- "Will Trump meet with Nick Fuentes in November?" none.
+- "Senate vote on the Epstein bill by Nov 28?" schedule if a vote is announced in the text, otherwise none.
+- "Will turnout in the Honduran election be 61-62%?" asked after the vote: schedule (official count in progress).
+- "Gemini 3 score at least 45% on Humanity's Last Exam by Jan 31?" data_series (public leaderboard).
+- "Will MicroStrategy announce a Bitcoin purchase Dec 23-29?" data_series (it announces weekly).
+
+Judge the kind of event, do not invent sources, and do not reward vague relevance: a source must give a usable estimate for this specific question.
+
+Return one JSON line per input market, in input order, and nothing else, no code fences: {"id":"<market id>","source":"poll|odds|finance|data_series|schedule|forecast|none"}
