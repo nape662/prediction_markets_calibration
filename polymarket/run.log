@@ -190,3 +190,25 @@ pass 1: 39,666 of 39,666 left, $0.00 spent
 22,000 calls done, $14.74 spent
 514907: {"id":"514907","default_side":"NO","outside_reference":"unsure","stated_deadline":"2024-12-31","early_side":"YES_EARLY","early_path":"NORMAL","substantive":20,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
 909450: {"id":"909450","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-12-31","early_side":"NEITHER","early_path":"NONE","substantive":60,"yes":["existing_fact"],"unsure":["outside_reference"]}
+22,500 calls done, $15.08 spent
+798200: {"id":"798200","default_side":"NO","outside_reference":"unsure","stated_deadline":"2025-12-04","early_side":"YES_EARLY","early_path":"NORMAL","substantive":40,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+1083021: {"id":"1083021","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-02-01","early_side":"NEITHER","early_path":"NONE","substantive":60,"yes":["scheduled_release"],"unsure":["outside_reference","other_asset_price"]}
+249495: {"id":"249495","default_side":"NONE","outside_reference":"yes","stated_deadline":"2023-06-30","early_side":"NEITHER","early_path":"NONE","substantive":70,"yes":["central_bank_rate","outside_reference"],"unsure":[]}
+746192: {"id":"746192","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2025-12-09","early_side":"NO_EARLY","early_path":"NORMAL","substantive":40,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+23,000 calls done, $15.41 spent
+903328: {"id":"903328","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-03-31","early_side":"YES_EARLY","early_path":"NORMAL","substantive":40,"yes":[],"unsure":["outside_reference"]}
+635785: {"id":"635785","default_side":"NONE","outside_reference":"yes","stated_deadline":"2025-10-26","early_side":"NEITHER","early_path":"NONE","substantive":45,"yes":["outside_reference"],"unsure":[]}
+527281: {"id":"527281","default_side":"NO","outside_reference":"unsure","stated_deadline":"2025-12-31","early_side":"YES_EARLY","early_path":"NORMAL","substantive":65,"yes":[],"unsure":["outside_reference"]}
+550119: {"id":"550119","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2025-06-13","early_side":"NO_EARLY","early_path":"NORMAL","substantive":30,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+23,500 calls done, $15.74 spent
+1198950: {"id":"1198950","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-03-31","early_side":"NEITHER","early_path":"NONE","substantive":45,"yes":["scheduled_release"],"unsure":["outside_reference"]}
+1192677: {"id":"1192677","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-01-19","early_side":"NO_EARLY","early_path":"NORMAL","substantive":25,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+531941: {"id":"531941","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2025-04-04","early_side":"NO_EARLY","early_path":"NORMAL","substantive":30,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+531941: {"id":"531941","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2025-04-04","early_side":"NO_EARLY","early_path":"NORMAL","substantive":35,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+589038: {"id":"589038","default_side":"NO","outside_reference":"unsure","stated_deadline":"2025-12-31","early_side":"YES_EARLY","early_path":"NORMAL","substantive":35,"yes":["crypto_price"],"unsure":["outside_reference"]}
+526246: {"id":"526246","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2025-03-07","early_side":"NEITHER","early_path":"NONE","substantive":65,"yes":[],"unsure":["outside_reference"]}
+521489: {"id":"521489","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2025-02-07","early_side":"NO_EARLY","early_path":"NORMAL","substantive":35,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+24,000 calls done, $16.08 spent
+201727: {"id":"201727","default_side":"NONE","outside_reference":"yes","stated_deadline":"2021-05-24","early_side":"NEITHER","early_path":"NONE","substantive":35,"yes":["outside_reference"],"unsure":[]}
+501841: {"id":"501841","default_side":"NO","outside_reference":"unsure","stated_deadline":"2024-06-30","early_side":"YES_EARLY","early_path":"NORMAL","substantive":35,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+510707: {"id":"510707","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2024-11-04","early_side":"YES_EARLY","early_path":"NORMAL","substantive":35,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
