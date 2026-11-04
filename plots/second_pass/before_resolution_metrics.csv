@@ -17,9 +17,6 @@ before_resolution,early_side,NO_EARLY,1m,1330,0.6364,0.6218,0.0146,-0.1610,-0.30
 before_resolution,early_side,NEITHER,1d,4733,0.4489,0.4317,0.0173,-0.1959,-0.2842,-0.1029,0.8369,0.1543
 before_resolution,early_side,NEITHER,1w,3820,0.4560,0.4304,0.0256,-0.2349,-0.3358,-0.1392,0.8005,0.1956
 before_resolution,early_side,NEITHER,1m,2750,0.4530,0.4120,0.0410,-0.3235,-0.4419,-0.1987,0.7573,0.2397
-before_resolution,early_side,BOTH,1d,772,0.3927,0.3808,0.0119,-0.1504,-0.4166,0.0959,0.8216,0.1289
-before_resolution,early_side,BOTH,1w,655,0.3821,0.3542,0.0279,-0.2907,-0.5537,-0.0360,0.7807,0.1634
-before_resolution,early_side,BOTH,1m,514,0.3723,0.3346,0.0377,-0.3402,-0.6130,-0.0737,0.7292,0.1928
 before_resolution_open,default_side,NO,1d,14175,0.3116,0.3401,-0.0285,0.4034,0.3429,0.4686,0.7831,0.0686
 before_resolution_open,default_side,NO,1w,14296,0.2626,0.2700,-0.0075,0.0881,0.0357,0.1415,0.7157,0.0949
 before_resolution_open,default_side,NO,1m,11949,0.2573,0.2309,0.0264,-0.2660,-0.3217,-0.2138,0.6634,0.1354
@@ -38,9 +35,6 @@ before_resolution_open,early_side,NO_EARLY,1m,1256,0.6326,0.6154,0.0171,-0.1855,
 before_resolution_open,early_side,NEITHER,1d,3625,0.4575,0.4400,0.0175,-0.1951,-0.2977,-0.0900,0.8387,0.1580
 before_resolution_open,early_side,NEITHER,1w,3285,0.4589,0.4320,0.0270,-0.2420,-0.3633,-0.1278,0.7977,0.2013
 before_resolution_open,early_side,NEITHER,1m,2530,0.4548,0.4146,0.0402,-0.3113,-0.4189,-0.1816,0.7513,0.2448
-before_resolution_open,early_side,BOTH,1d,654,0.4167,0.4113,0.0054,-0.0660,-0.3278,0.2093,0.8185,0.1360
-before_resolution_open,early_side,BOTH,1w,590,0.3907,0.3644,0.0263,-0.2643,-0.5497,0.0130,0.7760,0.1699
-before_resolution_open,early_side,BOTH,1m,482,0.3741,0.3361,0.0380,-0.3370,-0.6323,-0.0711,0.7233,0.1974
 before_resolution_corrected,default_side,NO,1d,14844,0.2309,0.2429,-0.0120,0.2025,0.1447,0.2610,0.7786,0.0552
 before_resolution_corrected,default_side,NO,1w,13119,0.2145,0.2140,0.0004,-0.0066,-0.0636,0.0441,0.7066,0.0805
 before_resolution_corrected,default_side,NO,1m,10407,0.2211,0.1836,0.0374,-0.4155,-0.4818,-0.3592,0.6496,0.1247
@@ -59,6 +53,3 @@ before_resolution_corrected,early_side,NO_EARLY,1m,981,0.6620,0.6504,0.0117,-0.1
 before_resolution_corrected,early_side,NEITHER,1d,2472,0.4340,0.4102,0.0238,-0.3068,-0.4293,-0.1644,0.8597,0.1380
 before_resolution_corrected,early_side,NEITHER,1w,2052,0.4424,0.4050,0.0375,-0.3671,-0.5263,-0.1959,0.8169,0.1875
 before_resolution_corrected,early_side,NEITHER,1m,1578,0.4481,0.3891,0.0590,-0.4865,-0.6384,-0.3303,0.7735,0.2408
-before_resolution_corrected,early_side,BOTH,1d,297,0.3220,0.3165,0.0055,-0.0901,-0.4712,0.3057,0.8187,0.0921
-before_resolution_corrected,early_side,BOTH,1w,254,0.3078,0.2795,0.0283,-0.3669,-0.7590,0.0702,0.7906,0.1205
-before_resolution_corrected,early_side,BOTH,1m,206,0.2769,0.2427,0.0342,-0.3680,-0.9194,0.1411,0.6758,0.1491

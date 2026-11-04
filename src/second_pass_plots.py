@@ -14,9 +14,12 @@ plt.rcParams.update({"font.size": 11, "axes.spines.top": False, "axes.spines.rig
 HOW = "Source: Manifold API; sides from a second Haiku pass that saw text only, no prices or outcomes. \nResolved YES/NO world markets, price at a fixed time after creation, 15+ bettors by then, still open then. 10-point price bins, under 10 markets dropped. Bars: 95%, resampling creators."
 
 
-def curve(ax, series, h, color, label, marker="o"):
-    b = bins[(bins.series == series) & (bins.horizon == h)]
+def curve(ax, series, h, color, label, marker="o", offset=None):
+    """With an offset, bins under 30 markets are dropped and each dot shows its market count."""
+    b = bins[(bins.series == series) & (bins.horizon == h) & (bins.n >= (30 if offset else 0))].set_index("bin").reindex(range(10))  # a dropped bin breaks the line
     ax.errorbar(b.price * 100, b.yes * 100, yerr=[(b.yes - b.yes_low) * 100, (b.yes_high - b.yes) * 100], color=color, marker=marker, ms=5, lw=1.8, elinewidth=.8, label=label)
+    for r in b.dropna(subset="n").itertuples() if offset else []:
+        ax.annotate(f"{int(r.n):,}", (r.price * 100, r.yes * 100), xytext=offset, textcoords="offset points", ha="right" if offset[0] < 0 else "left", fontsize=7, color="#444444")
 
 
 def diag(ax):
@@ -29,14 +32,14 @@ def by_side(suffix, title, note, name, **kwargs):
     fig, axes = plt.subplots(1, 3, figsize=(13, 6), sharey=True)
     for ax, h in zip(axes, ["1d", "1w", "1m"]):
         diag(ax)
-        for side, color, label in SIDES:
-            curve(ax, f"default {side}{suffix}", h, color, label)
+        for (side, color, label), offset in zip(SIDES, [(-4, 6), (5, -10), (6, 1)]):
+            curve(ax, f"default {side}{suffix}", h, color, label, offset=offset)
         ax.set_title(f"{h} after creation")
     axes[0].set_ylabel("Resolved YES (%)")
     handles, labels = axes[0].get_legend_handles_labels()
     fig.legend(handles, labels, frameon=False, loc="upper left", bbox_to_anchor=(.01, .93), ncols=3)
     fig.suptitle(title, x=.01, ha="left", fontsize=14, **kwargs)
-    fig.text(.01, .01, HOW + note, fontsize=9, color="#555555")
+    fig.text(.01, .01, HOW.replace("under 10 markets dropped. Bars", "under 30 markets dropped, the number beside each dot is its market count.\nBars") + note, fontsize=8.5, color="#555555")
     fig.tight_layout(rect=(0, .1, 1, .88))
     fig.savefig(OUT / name, dpi=140)
     plt.close(fig)
