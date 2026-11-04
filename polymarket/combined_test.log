@@ -1,0 +1,40 @@
+200 of 200 left, prompt 9,036 characters
+
+200 of 200 answered. $0.000706 per market, 6.5s per call, 917 thinking tokens
+
+Second-pass questions, same answer as stored, 200 markets (same-prompt reruns gave, of 100):
+  default_side         189 = 94.5%   baseline 96
+  outside_reference    154 = 77.0%   baseline 71
+  early_side           181 = 90.5%   baseline 96
+  early_path           185 = 92.5%   baseline not measured
+  general_interest     177 = 88.5%   baseline 94
+  prompted_by_news     175 = 87.5%   baseline 86
+  stated_deadline      187 = 93.5%   baseline 93
+default_side, stored -> new: [(('NO', 'NONE'), 3), (('NO', 'YES'), 1), (('NONE', 'NO'), 5), (('NONE', 'YES'), 2)]
+  NONE -> YES: Will GitHub have any incident on September 29th 2023?
+  NONE -> NO: 🏈 2023 NFL: Will any Week 5 game end in Scorigami?
+  NO -> NONE: Will there be more than 11 tropical storms with hurricane force winds during the 2023 hurricane season (June-November)?
+  NO -> NONE: Will any U.S. Senate election in 2024 be decided by less than 1%?
+  NO -> YES: This market will resolve YES on february 30th 2024
+  NONE -> NO: Will SMTM potato diet finishers still be down >5lbs on average after 6 months?
+  NO -> NONE: Will Ron DeSantis finish another primary/caucus above 3rd place?
+  NONE -> NO: Will the Boston Celtics go 10-0 to start the 2023-2024 NBA season?
+  NONE -> NO: Will I qualify for an International Olympiad this year?
+  NONE -> NO: Will Destiny win 10Th Game of SC2? Copium Doubters
+  NONE -> YES: Will Markus Söder be Minister-President of Bavaria on the 1st of January 2024?
+
+Old questions, same answer as the first Haiku run, 200 markets:
+  fixed_chance           200   yes: new 4, stored 4
+  crypto_price           200   yes: new 6, stored 6
+  other_asset_price      200   yes: new 7, stored 7
+  sports_match           198   yes: new 15, stored 16
+  sports_tournament      199   yes: new 5, stored 6
+  sports_performance     194   yes: new 3, stored 3
+  sports_award           200   yes: new 2, stored 2
+  central_bank_rate      200   yes: new 0, stored 0
+  weather_measurement    200   yes: new 1, stored 1
+  scheduled_release      197   yes: new 2, stored 2
+  speech_or_posts        200   yes: new 2, stored 2
+  existing_fact          196   yes: new 5, stored 4
+  world by these questions: same on 190 of 200; new 133, stored 141
+EXIT 0
