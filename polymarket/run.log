@@ -225,3 +225,4 @@ pass 1: 39,666 of 39,666 left, $0.00 spent
 25,500 calls done, $17.08 spent
 254013: {"id":"254013","default_side":"NO","outside_reference":"yes","stated_deadline":"2024-12-31","early_side":"NEITHER","early_path":"NONE","substantive":65,"yes":["other_asset_price","outside_reference"],"unsure":[]}
 568108: {"id":"568108","default_side":"NO","outside_reference":"unsure","stated_deadline":"2025-08-02","early_side":"NEITHER","early_path":"NONE","substantive":35,"yes":[],"unsure":["outside_reference"]}
+692519: {"id":"692519","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-03-31","early_side":"NEITHER","early_path":"NONE","substantive":40,"yes":[],"unsure":["outside_reference","scheduled_release","existing_fact"]}
