@@ -20,3 +20,13 @@ pass 1: 39,666 of 39,666 left, $0.00 spent
 2,000 calls done, $1.33 spent
 521476: {"id":"521476","default_side":"NO","outside_reference":"unsure","stated_deadline":"2025-02-28","early_side":"YES_EARLY","early_path":"NORMAL","substantive":55,"yes":[],"unsure":["outside_reference","other_asset_price"]}
 623716: {"id":"623716","default_side":"NO","outside_reference":"unsure","stated_deadline":"2025-12-31","early_side":"NEITHER","early_path":"NONE","substantive":35,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+2,500 calls done, $1.67 spent
+251754: {"id":"251754","default_side":"NO","outside_reference":"unsure","stated_deadline":"2023-07-31","early_side":"YES_EARLY","early_path":"NORMAL","substantive":40,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+562674: {"id":"562674","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2025-07-18","early_side":"NO_EARLY","early_path":"NORMAL","substantive":30,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+532025: {"id":"532025","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2025-04-30","early_side":"NO_EARLY","early_path":"NORMAL","substantive":50,"yes":[],"unsure":["outside_reference","scheduled_release"]}
+3,000 calls done, $2.00 spent
+692586: {"id":"692586","default_side":"NONE","outside_reference":"yes","stated_deadline":"2026-01-31","early_side":"NEITHER","early_path":"NONE","substantive":45,"yes":["outside_reference"],"unsure":["existing_fact"]}
+1243318: {"id":"1243318","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-02-28","early_side":"NEITHER","early_path":"NONE","substantive":35,"yes":["scheduled_release"],"unsure":["outside_reference"]}
+1243319: {"id":"1243319","default_side":"NONE","outside_reference":"yes","stated_deadline":"2026-02-28","early_side":"NEITHER","early_path":"NONE","substantive":35,"yes":["scheduled_release","outside_reference"],"unsure":[]}
+669905: {"id":"669905","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2025-11-30","early_side":"NO_EARLY","early_path":"NORMAL","substantive":35,"yes":["speech_or_posts"],"unsure":["outside_reference"]}
+3,500 calls done, $2.33 spent
