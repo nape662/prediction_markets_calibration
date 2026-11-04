@@ -1,6 +1,6 @@
 """Do the 13 old filter questions change Haiku's answers to the 7 second-pass questions when asked in the same call?
 
-python polymarket/combined_prompt_test.py -> polymarket/system_prompt.txt, polymarket/combined_test_results.jsonl and a printed comparison.
+python polymarket/combined_prompt_test.py -> polymarket/combined_test_prompt.txt, polymarket/combined_test_results.jsonl and a printed comparison.
 200 random Manifold markets, medium effort, one per call, compared with their stored answers from the two separate runs. Safe to restart.
 """
 import hashlib, json, random, subprocess, sys
@@ -13,7 +13,7 @@ from labeling_pilot import claude_call, questions, read_calls
 from labeling_second import ANSWERS, valid
 
 HERE = ROOT / "polymarket"
-PROMPT, RESULTS = HERE / "system_prompt.txt", HERE / "combined_test_results.jsonl"
+PROMPT, RESULTS = HERE / "combined_test_prompt.txt", HERE / "combined_test_results.jsonl"
 SECOND = ROOT / "labeling/second_pass"
 SCORED = "substantive_world_question"
 TAGS = ["fixed_chance", "crypto_price", "other_asset_price", "sports_match", "sports_tournament", "sports_performance", "sports_award", "central_bank_rate",

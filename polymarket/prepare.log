@@ -1,0 +1,23 @@
+cohort         rule        
+closed_by_feb  sports          32649
+               asset_price     25638
+               NaN             21221
+               stat             8328
+               weather          8138
+               mentions         6940
+               central_bank      291
+               meta               61
+               random             12
+open_in_feb    NaN              2319
+               sports           1894
+               stat              348
+               asset_price       142
+               central_bank       80
+               mentions           49
+               meta               17
+               weather            16
+cohort
+closed_by_feb    36853
+open_in_feb       2813 
+49 MB, mean description 898 characters (Manifold's input has a shorter text)
+EXIT 0

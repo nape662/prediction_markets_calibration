@@ -32,7 +32,7 @@ NOT_PRICE = (r"launch|airdrop|\betf\b|rug|burn|listing|\blist(ed)?\b|reserve|hol
              r"|hack|net worth|billionaire|richest|tariff|announce|release|deliver|beat (its )?(quarterly )?(earnings|eps)|earnings call|revenue"
              r"|\bsales\b|provision|valuation|\bsay\b|mention|acqui|\bipo\b|publicly trad"
              r"|starts trading|gas price|gwei|hashprice|trademark|lawsuit|\bsue|last digit|shareholders? vote|wikipedia|market share|trends"
-             r"|price (hike|cut|increase)|starting price|\binvest|silver bulletin|\bfees\b")
+             r"|price (hike|cut|increase)|starting price|\binvest|silver bulletin|\bfees\b|gpt|\bai\b")
 SPORTS_TAG = (r"sports|\bnfl\b|\bnba\b|\bmlb\b|\bnhl\b|\bufc\b|\bmma\b|soccer|football|basketball|baseball|hockey|tennis|\bgolf\b|formula-?1|\bf1\b"
               r"|motorsports|auto-racing|boxing|cricket|\bipl\b|\bepl\b|la-liga|champions-league|uefa|fifa|world-cup|premier|serie-a|bundesliga"
               r"|\bmls\b|ncaa|\bcfb\b|\bcbb\b|cwbb|college-(football|basketball)|march-madness|counter-?strike|dota|league-of-legends|\blol\b"

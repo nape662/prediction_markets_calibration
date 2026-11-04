@@ -12,13 +12,7 @@ early_side: Can one outcome become certain well before the deadline while the ot
 
 early_path: Is that early finish a normal way for this question to end, or does it need an unrelated shock such as the death of a named person? Answer NORMAL, SHOCK or NONE. Ignore how likely the event itself is: "Will X be impeached by August?" is NORMAL even if impeachment is unlikely, because the event happening is what ends it early. NONE goes with NEITHER. Example: "Will Biden be the next president?" is early_side NO_EARLY, early_path SHOCK.
 
-general_interest: Would most well-informed news readers recognize the subject of this question without knowing the community it comes from? Answer no for a streamer's drama, one forecaster's personal life or a prediction-site feature. Answer yes, no or unsure.
-
-prompted_by_news: Does the text show the question was prompted by a specific recent news item, rumor, announcement or statement? Answer yes, no or unsure.
-
 Then answer these classification questions about the kind of question. Answer each one independently: yes, no, or unsure. Multiple yes answers are allowed. Use unsure when you are below about 80% sure of either yes or no. Use no when the text clearly describes a different kind of question. Event titles and topic tags provide context, but do not automatically label every market in the event.
-
-fixed_chance: Is the outcome decided solely by a random mechanism whose probability is fixed and calculable from its rules, such as a fair coin, fair dice, a specified lottery draw, or a random-number generator? Do not include asset-price movements, weather, or sports merely because they are unpredictable or approximately 50/50. A game whose odds depend on participants' choices does not qualify unless those choices cannot change the probability.
 
 crypto_price: Is the outcome determined by a cryptocurrency's price, return, price ranking, or market capitalization? Include price thresholds, ranges, and up/down comparisons. Exclude adoption, regulation, hacks, product launches, and ETF approvals unless the resolution condition itself is a price or market-cap condition.
 
@@ -29,8 +23,6 @@ sports_match: Is the outcome determined by who wins, draws, or loses a sporting 
 sports_tournament: Is the outcome determined by competitive results across a sporting tournament, league, season, or series, such as its champion, standings, qualification, promotion, or relegation? Include esports. Exclude whether the competition happens and administrative or disciplinary decisions themselves. Qualifying for a later stage through match results counts; being admitted by an organizer's discretionary decision does not.
 
 sports_performance: Is the outcome determined by an athlete's or team's measured performance during sporting competition, such as goals, assists, finishing time, or completing a race? Include amateur events and esports. Exclude transfers, injuries outside competition, disciplinary decisions, salaries, and awards decided by votes or judges' overall preferences. Scores awarded under a sport's competition rules do count.
-
-sports_award: Is the outcome a sporting award or honour decided by voters or judges, such as MVP, Rookie of the Year, the Ballon d'Or or the Heisman Trophy? Exclude awards outside sport (Oscars, Nobel prizes) and halls of fame decided long after a career.
 
 central_bank_rate: Is the outcome determined by a central bank's policy interest-rate level or its decision to raise, lower, or hold that rate? Include the number or size of rate changes. Exclude inflation figures, bond yields, appointments, speeches, and other central-bank policies unless the resolution condition itself is a policy interest rate.
 
@@ -44,4 +36,4 @@ existing_fact: Was the fact being asked about already determined when this marke
 
 substantive_world_question: In your judgment, is this a substantive question about the world: would knowing its answer tell someone something meaningful about an event, development, or person's life beyond the mechanics of this betting game? Weather, climate, science, politics, technology, culture, and personal achievements can all qualify. Do not require global importance or difficulty. Exclude pure random draws, self-referential betting games, and empty jokes with no identifiable real-world claim. Answer independently: sports, finance, personal influence, subjective criteria, or a question about an existing fact do not automatically require no.
 
-The input is one market. Return one JSON line and nothing else, no code fences: {"id":"<market id>","default_side":"...","outside_reference":"...","stated_deadline":"..." or null,"early_side":"...","early_path":"...","general_interest":"...","prompted_by_news":"...","substantive":<integer 0-100>,"yes":[classification question IDs answered yes],"unsure":[classification question IDs answered unsure]}. "substantive" answers substantive_world_question as a score: 0 means clearly no, 50 means torn, 100 means clearly yes. Do not list that question in yes or unsure. Every other classification question you do not list counts as no.
+The input is one market. Return one JSON line and nothing else, no code fences: {"id":"<market id>","default_side":"...","outside_reference":"...","stated_deadline":"..." or null,"early_side":"...","early_path":"...","substantive":<integer 0-100>,"yes":[classification question IDs answered yes],"unsure":[classification question IDs answered unsure]}. "substantive" answers substantive_world_question as a score: 0 means clearly no, 50 means torn, 100 means clearly yes. Do not list that question in yes or unsure. Every other classification question you do not list counts as no.
