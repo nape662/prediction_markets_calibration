@@ -1,5 +1,7 @@
 # Manifold calibration, re-sorted with the second Haiku labels
 
+**Update, 2026-11-04: numbers here use the old bettor counts, off by at most about 0.2 points. [findings_reference.md](findings_reference.md) has current numbers and everything else.**
+
 **The downward lean is almost entirely one kind of question, and a simple fix learned from old markets removes it on later ones, but I still can't say why it exists.** Haiku labeled nearly every Manifold market from its text alone. Where nothing happening means NO, markets are priced at 36% and resolve YES 27% of the time, 97% of the world gap. Where nothing happening means YES, the error flips: 70% against 77%.
 
 This replaces regexes and hand labels with one label on every market, and the main finding from [yes_bias_debug.md](yes_bias_debug.md) holds. The new labels also rule out one lead from that report and reopen one explanation it rejected.

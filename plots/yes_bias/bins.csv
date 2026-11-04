@@ -1,14 +1,14 @@
 series,horizon,bin,n,price,yes,yes_low,yes_high
-nothing happening means NO,1d,0,806,0.0550,0.0261,0.0161,0.0373
-nothing happening means NO,1d,1,870,0.1470,0.1057,0.0833,0.1260
-nothing happening means NO,1d,2,626,0.2473,0.1565,0.1279,0.1851
-nothing happening means NO,1d,3,490,0.3478,0.2469,0.2072,0.2886
-nothing happening means NO,1d,4,415,0.4484,0.3518,0.3033,0.3977
-nothing happening means NO,1d,5,338,0.5527,0.4142,0.3596,0.4670
-nothing happening means NO,1d,6,350,0.6509,0.4914,0.4363,0.5514
-nothing happening means NO,1d,7,333,0.7466,0.5976,0.5421,0.6502
-nothing happening means NO,1d,8,234,0.8481,0.7436,0.6842,0.7948
-nothing happening means NO,1d,9,167,0.9472,0.8503,0.7943,0.8997
+nothing happening means NO,1d,0,789,0.0552,0.0253,0.0155,0.0362
+nothing happening means NO,1d,1,858,0.1471,0.1061,0.0841,0.1282
+nothing happening means NO,1d,2,618,0.2473,0.1537,0.1213,0.1809
+nothing happening means NO,1d,3,485,0.3479,0.2474,0.2075,0.2879
+nothing happening means NO,1d,4,405,0.4487,0.3481,0.2982,0.3969
+nothing happening means NO,1d,5,334,0.5528,0.4192,0.3584,0.4755
+nothing happening means NO,1d,6,346,0.6508,0.4942,0.4431,0.5524
+nothing happening means NO,1d,7,331,0.7464,0.5952,0.5428,0.6493
+nothing happening means NO,1d,8,232,0.8485,0.7414,0.6712,0.7989
+nothing happening means NO,1d,9,161,0.9472,0.8447,0.7912,0.8930
 YES means no change,1d,0,2,0.0161,0.0000,0.0000,0.0000
 YES means no change,1d,1,4,0.1897,0.2500,0.0000,0.7500
 YES means no change,1d,2,5,0.2683,0.2000,0.0000,0.7500
@@ -16,166 +16,166 @@ YES means no change,1d,3,10,0.3504,0.8000,0.5000,1.0000
 YES means no change,1d,4,8,0.4632,0.6250,0.2500,0.8750
 YES means no change,1d,5,18,0.5578,0.6667,0.4706,0.8333
 YES means no change,1d,6,20,0.6592,0.7500,0.5500,0.9500
-YES means no change,1d,7,21,0.7492,0.8095,0.6250,0.9524
-YES means no change,1d,8,44,0.8629,0.8864,0.7937,0.9756
-YES means no change,1d,9,38,0.9421,0.9737,0.9015,1.0000
+YES means no change,1d,7,21,0.7492,0.8095,0.5952,0.9535
+YES means no change,1d,8,44,0.8629,0.8864,0.7935,0.9762
+YES means no change,1d,9,38,0.9421,0.9737,0.8974,1.0000
 "both labels no default, no title date",1d,0,38,0.0524,0.0263,0.0000,0.0833
-"both labels no default, no title date",1d,1,51,0.1528,0.1569,0.0645,0.2605
-"both labels no default, no title date",1d,2,59,0.2442,0.2542,0.1212,0.3696
-"both labels no default, no title date",1d,3,52,0.3506,0.3654,0.2389,0.5000
-"both labels no default, no title date",1d,4,51,0.4557,0.3725,0.2366,0.4904
-"both labels no default, no title date",1d,5,59,0.5453,0.6780,0.5630,0.7963
-"both labels no default, no title date",1d,6,53,0.6518,0.5849,0.4622,0.7248
-"both labels no default, no title date",1d,7,60,0.7562,0.5833,0.4583,0.7193
-"both labels no default, no title date",1d,8,44,0.8496,0.8182,0.6921,0.9524
-"both labels no default, no title date",1d,9,30,0.9426,0.9000,0.7931,1.0000
-old label: other world,1d,0,229,0.0576,0.0393,0.0174,0.0674
-old label: other world,1d,1,340,0.1501,0.1088,0.0766,0.1431
-old label: other world,1d,2,258,0.2468,0.1705,0.1219,0.2246
-old label: other world,1d,3,242,0.3492,0.2851,0.2321,0.3383
-old label: other world,1d,4,229,0.4489,0.3886,0.3262,0.4520
-old label: other world,1d,5,211,0.5523,0.5071,0.4394,0.5727
-old label: other world,1d,6,220,0.6504,0.5045,0.4494,0.5596
-old label: other world,1d,7,204,0.7479,0.6225,0.5490,0.6906
-old label: other world,1d,8,159,0.8523,0.7484,0.6793,0.8096
-old label: other world,1d,9,116,0.9474,0.8879,0.8246,0.9394
-title date,1d,0,447,0.0595,0.0224,0.0097,0.0372
-title date,1d,1,518,0.1475,0.0811,0.0571,0.1073
-title date,1d,2,401,0.2483,0.1372,0.1044,0.1732
-title date,1d,3,318,0.3485,0.2296,0.1821,0.2763
-title date,1d,4,265,0.4488,0.3472,0.2882,0.4093
-title date,1d,5,206,0.5511,0.4175,0.3472,0.4952
-title date,1d,6,216,0.6509,0.4907,0.4163,0.5556
-title date,1d,7,198,0.7469,0.5859,0.5218,0.6590
-title date,1d,8,137,0.8469,0.7591,0.6854,0.8195
-title date,1d,9,84,0.9435,0.8452,0.7654,0.9172
-title date passed,1d,0,443,0.0596,0.0203,0.0084,0.0337
-title date passed,1d,1,500,0.1479,0.0740,0.0531,0.0976
-title date passed,1d,2,389,0.2482,0.1260,0.0938,0.1561
-title date passed,1d,3,305,0.3482,0.2000,0.1549,0.2447
-title date passed,1d,4,240,0.4494,0.2958,0.2367,0.3565
-title date passed,1d,5,197,0.5506,0.3959,0.3261,0.4657
-title date passed,1d,6,192,0.6505,0.4531,0.3793,0.5311
-title date passed,1d,7,187,0.7470,0.5615,0.4838,0.6380
-title date passed,1d,8,122,0.8469,0.7377,0.6654,0.8042
-title date passed,1d,9,77,0.9444,0.8312,0.7418,0.9148
-nothing happening means NO,1w,0,1483,0.0527,0.0303,0.0219,0.0390
-nothing happening means NO,1w,1,1334,0.1489,0.0765,0.0615,0.0902
-nothing happening means NO,1w,2,991,0.2464,0.1413,0.1190,0.1630
-nothing happening means NO,1w,3,804,0.3488,0.2177,0.1886,0.2446
-nothing happening means NO,1w,4,620,0.4483,0.3355,0.2980,0.3719
-nothing happening means NO,1w,5,527,0.5526,0.3795,0.3355,0.4276
-nothing happening means NO,1w,6,499,0.6515,0.4689,0.4257,0.5171
-nothing happening means NO,1w,7,459,0.7483,0.5991,0.5469,0.6507
-nothing happening means NO,1w,8,403,0.8482,0.7469,0.7015,0.7921
-nothing happening means NO,1w,9,300,0.9463,0.9267,0.8969,0.9568
+"both labels no default, no title date",1d,1,51,0.1528,0.1569,0.0645,0.2653
+"both labels no default, no title date",1d,2,58,0.2445,0.2586,0.1312,0.3676
+"both labels no default, no title date",1d,3,51,0.3514,0.3529,0.2346,0.4811
+"both labels no default, no title date",1d,4,50,0.4552,0.3800,0.2556,0.5000
+"both labels no default, no title date",1d,5,59,0.5453,0.6780,0.5714,0.7950
+"both labels no default, no title date",1d,6,52,0.6518,0.5769,0.4411,0.6983
+"both labels no default, no title date",1d,7,60,0.7562,0.5833,0.4464,0.7108
+"both labels no default, no title date",1d,8,43,0.8493,0.8140,0.6921,0.9286
+"both labels no default, no title date",1d,9,29,0.9431,0.8966,0.7857,1.0000
+old label: other world,1d,0,224,0.0577,0.0402,0.0177,0.0642
+old label: other world,1d,1,335,0.1500,0.1104,0.0792,0.1429
+old label: other world,1d,2,253,0.2468,0.1700,0.1176,0.2171
+old label: other world,1d,3,240,0.3495,0.2833,0.2283,0.3448
+old label: other world,1d,4,225,0.4487,0.3867,0.3274,0.4464
+old label: other world,1d,5,210,0.5525,0.5095,0.4439,0.5714
+old label: other world,1d,6,217,0.6501,0.5069,0.4513,0.5713
+old label: other world,1d,7,201,0.7475,0.6219,0.5479,0.6896
+old label: other world,1d,8,158,0.8522,0.7468,0.6731,0.8140
+old label: other world,1d,9,111,0.9471,0.8829,0.8142,0.9352
+title date,1d,0,439,0.0598,0.0228,0.0109,0.0364
+title date,1d,1,508,0.1477,0.0807,0.0552,0.1072
+title date,1d,2,394,0.2484,0.1345,0.1014,0.1640
+title date,1d,3,313,0.3486,0.2300,0.1801,0.2735
+title date,1d,4,259,0.4491,0.3436,0.2867,0.4076
+title date,1d,5,202,0.5513,0.4257,0.3537,0.5036
+title date,1d,6,214,0.6508,0.4953,0.4220,0.5633
+title date,1d,7,197,0.7466,0.5838,0.5233,0.6466
+title date,1d,8,135,0.8474,0.7556,0.6801,0.8286
+title date,1d,9,81,0.9436,0.8395,0.7515,0.9136
+title date passed,1d,0,435,0.0598,0.0207,0.0071,0.0336
+title date passed,1d,1,490,0.1481,0.0735,0.0513,0.0950
+title date passed,1d,2,384,0.2482,0.1250,0.0902,0.1567
+title date passed,1d,3,300,0.3483,0.2000,0.1558,0.2496
+title date passed,1d,4,234,0.4497,0.2906,0.2304,0.3525
+title date passed,1d,5,193,0.5508,0.4041,0.3318,0.4741
+title date passed,1d,6,190,0.6504,0.4579,0.3864,0.5373
+title date passed,1d,7,186,0.7467,0.5591,0.4823,0.6273
+title date passed,1d,8,120,0.8475,0.7333,0.6504,0.8000
+title date passed,1d,9,74,0.9445,0.8243,0.7278,0.9067
+nothing happening means NO,1w,0,1458,0.0524,0.0302,0.0217,0.0398
+nothing happening means NO,1w,1,1320,0.1488,0.0773,0.0630,0.0930
+nothing happening means NO,1w,2,973,0.2464,0.1408,0.1187,0.1626
+nothing happening means NO,1w,3,788,0.3489,0.2157,0.1872,0.2433
+nothing happening means NO,1w,4,606,0.4481,0.3366,0.2950,0.3781
+nothing happening means NO,1w,5,513,0.5525,0.3821,0.3383,0.4266
+nothing happening means NO,1w,6,492,0.6518,0.4695,0.4273,0.5139
+nothing happening means NO,1w,7,450,0.7483,0.5933,0.5473,0.6428
+nothing happening means NO,1w,8,392,0.8483,0.7423,0.6911,0.7848
+nothing happening means NO,1w,9,296,0.9462,0.9257,0.8943,0.9546
 YES means no change,1w,0,9,0.0476,0.0000,0.0000,0.0000
 YES means no change,1w,1,3,0.1849,0.3333,0.0000,1.0000
 YES means no change,1w,2,7,0.2646,0.4286,0.1429,0.8571
 YES means no change,1w,3,12,0.3576,0.5000,0.2000,0.6923
-YES means no change,1w,4,13,0.4613,0.7692,0.5385,1.0000
-YES means no change,1w,5,25,0.5490,0.6400,0.4583,0.8137
-YES means no change,1w,6,33,0.6573,0.7576,0.5938,0.8889
-YES means no change,1w,7,53,0.7518,0.8302,0.7211,0.9200
-YES means no change,1w,8,67,0.8574,0.8507,0.7718,0.9179
-YES means no change,1w,9,80,0.9451,0.9875,0.9610,1.0000
-"both labels no default, no title date",1w,0,94,0.0446,0.0106,0.0000,0.0357
-"both labels no default, no title date",1w,1,83,0.1475,0.1325,0.0595,0.2122
-"both labels no default, no title date",1w,2,89,0.2493,0.3708,0.2670,0.4775
-"both labels no default, no title date",1w,3,85,0.3533,0.2824,0.1928,0.3762
-"both labels no default, no title date",1w,4,64,0.4481,0.4062,0.2723,0.5362
-"both labels no default, no title date",1w,5,92,0.5480,0.5543,0.4444,0.6588
-"both labels no default, no title date",1w,6,83,0.6536,0.5904,0.4834,0.6898
-"both labels no default, no title date",1w,7,93,0.7549,0.6667,0.5729,0.7701
-"both labels no default, no title date",1w,8,101,0.8527,0.8614,0.7953,0.9369
-"both labels no default, no title date",1w,9,80,0.9503,0.9500,0.8902,0.9898
-old label: other world,1w,0,532,0.0498,0.0282,0.0141,0.0448
-old label: other world,1w,1,551,0.1499,0.0926,0.0692,0.1118
-old label: other world,1w,2,456,0.2493,0.2171,0.1845,0.2546
-old label: other world,1w,3,415,0.3500,0.2458,0.2047,0.2883
-old label: other world,1w,4,344,0.4502,0.3663,0.3174,0.4150
-old label: other world,1w,5,341,0.5514,0.4282,0.3674,0.4846
-old label: other world,1w,6,338,0.6514,0.4882,0.4270,0.5543
-old label: other world,1w,7,306,0.7498,0.6438,0.5852,0.6979
-old label: other world,1w,8,320,0.8472,0.8125,0.7774,0.8476
-old label: other world,1w,9,240,0.9482,0.9250,0.8925,0.9520
-title date,1w,0,909,0.0562,0.0242,0.0140,0.0350
-title date,1w,1,875,0.1485,0.0594,0.0435,0.0743
-title date,1w,2,668,0.2465,0.1153,0.0939,0.1357
-title date,1w,3,556,0.3495,0.2158,0.1804,0.2475
-title date,1w,4,425,0.4490,0.3553,0.3106,0.4021
-title date,1w,5,346,0.5518,0.3555,0.3019,0.4070
-title date,1w,6,324,0.6518,0.4414,0.3919,0.4966
-title date,1w,7,294,0.7469,0.5952,0.5401,0.6475
-title date,1w,8,272,0.8474,0.7390,0.6832,0.7940
-title date,1w,9,171,0.9458,0.9298,0.8892,0.9683
-title date passed,1w,0,898,0.0560,0.0212,0.0122,0.0313
-title date passed,1w,1,846,0.1485,0.0520,0.0365,0.0666
-title date passed,1w,2,657,0.2464,0.1096,0.0878,0.1303
-title date passed,1w,3,528,0.3495,0.1875,0.1533,0.2206
-title date passed,1w,4,396,0.4484,0.3207,0.2721,0.3644
-title date passed,1w,5,323,0.5515,0.3189,0.2716,0.3703
-title date passed,1w,6,306,0.6520,0.4118,0.3609,0.4707
-title date passed,1w,7,271,0.7460,0.5646,0.5037,0.6204
-title date passed,1w,8,249,0.8474,0.7189,0.6560,0.7735
-title date passed,1w,9,154,0.9475,0.9286,0.8885,0.9678
-nothing happening means NO,1m,0,1970,0.0511,0.0228,0.0165,0.0292
-nothing happening means NO,1m,1,1439,0.1469,0.0730,0.0576,0.0872
-nothing happening means NO,1m,2,1022,0.2474,0.1272,0.1067,0.1500
-nothing happening means NO,1m,3,717,0.3498,0.2064,0.1778,0.2315
-nothing happening means NO,1m,4,591,0.4488,0.3164,0.2789,0.3475
-nothing happening means NO,1m,5,442,0.5515,0.3756,0.3304,0.4251
-nothing happening means NO,1m,6,471,0.6523,0.4904,0.4435,0.5423
-nothing happening means NO,1m,7,460,0.7515,0.6109,0.5671,0.6554
-nothing happening means NO,1m,8,394,0.8497,0.7208,0.6730,0.7659
-nothing happening means NO,1m,9,290,0.9479,0.9172,0.8874,0.9430
+YES means no change,1w,4,12,0.4663,0.7500,0.5000,1.0000
+YES means no change,1w,5,25,0.5490,0.6400,0.4695,0.8173
+YES means no change,1w,6,33,0.6573,0.7576,0.6000,0.8943
+YES means no change,1w,7,53,0.7518,0.8302,0.7238,0.9131
+YES means no change,1w,8,67,0.8574,0.8507,0.7753,0.9213
+YES means no change,1w,9,76,0.9461,0.9868,0.9571,1.0000
+"both labels no default, no title date",1w,0,93,0.0448,0.0108,0.0000,0.0349
+"both labels no default, no title date",1w,1,82,0.1477,0.1341,0.0674,0.2120
+"both labels no default, no title date",1w,2,87,0.2494,0.3793,0.2857,0.4655
+"both labels no default, no title date",1w,3,81,0.3545,0.2716,0.1731,0.3548
+"both labels no default, no title date",1w,4,63,0.4477,0.4127,0.3014,0.5497
+"both labels no default, no title date",1w,5,91,0.5484,0.5604,0.4607,0.6742
+"both labels no default, no title date",1w,6,82,0.6536,0.5976,0.4938,0.6919
+"both labels no default, no title date",1w,7,92,0.7545,0.6739,0.5792,0.7714
+"both labels no default, no title date",1w,8,97,0.8520,0.8557,0.7772,0.9302
+"both labels no default, no title date",1w,9,78,0.9499,0.9487,0.8973,0.9895
+old label: other world,1w,0,527,0.0499,0.0285,0.0142,0.0441
+old label: other world,1w,1,548,0.1499,0.0931,0.0698,0.1144
+old label: other world,1w,2,450,0.2492,0.2156,0.1796,0.2538
+old label: other world,1w,3,404,0.3503,0.2450,0.2000,0.2897
+old label: other world,1w,4,334,0.4500,0.3683,0.3185,0.4241
+old label: other world,1w,5,333,0.5514,0.4294,0.3746,0.4915
+old label: other world,1w,6,333,0.6512,0.4895,0.4328,0.5446
+old label: other world,1w,7,303,0.7497,0.6436,0.5866,0.7022
+old label: other world,1w,8,308,0.8471,0.8084,0.7711,0.8499
+old label: other world,1w,9,236,0.9481,0.9237,0.8918,0.9550
+title date,1w,0,891,0.0559,0.0247,0.0153,0.0353
+title date,1w,1,864,0.1483,0.0602,0.0439,0.0762
+title date,1w,2,658,0.2465,0.1170,0.0955,0.1394
+title date,1w,3,544,0.3497,0.2151,0.1807,0.2493
+title date,1w,4,417,0.4487,0.3573,0.3052,0.4063
+title date,1w,5,336,0.5517,0.3571,0.3053,0.4086
+title date,1w,6,319,0.6522,0.4451,0.3908,0.4961
+title date,1w,7,288,0.7468,0.5868,0.5315,0.6420
+title date,1w,8,265,0.8474,0.7358,0.6763,0.7891
+title date,1w,9,169,0.9456,0.9290,0.8861,0.9688
+title date passed,1w,0,880,0.0558,0.0216,0.0115,0.0314
+title date passed,1w,1,835,0.1483,0.0527,0.0374,0.0680
+title date passed,1w,2,648,0.2466,0.1111,0.0905,0.1323
+title date passed,1w,3,517,0.3498,0.1876,0.1561,0.2262
+title date passed,1w,4,389,0.4480,0.3239,0.2766,0.3708
+title date passed,1w,5,314,0.5513,0.3217,0.2699,0.3702
+title date passed,1w,6,301,0.6525,0.4153,0.3616,0.4686
+title date passed,1w,7,266,0.7461,0.5564,0.5000,0.6125
+title date passed,1w,8,243,0.8474,0.7160,0.6499,0.7750
+title date passed,1w,9,152,0.9473,0.9276,0.8845,0.9722
+nothing happening means NO,1m,0,1940,0.0511,0.0232,0.0171,0.0298
+nothing happening means NO,1m,1,1416,0.1467,0.0734,0.0598,0.0877
+nothing happening means NO,1m,2,1013,0.2474,0.1254,0.1065,0.1448
+nothing happening means NO,1m,3,703,0.3498,0.2063,0.1751,0.2373
+nothing happening means NO,1m,4,575,0.4488,0.3113,0.2731,0.3494
+nothing happening means NO,1m,5,427,0.5518,0.3794,0.3352,0.4247
+nothing happening means NO,1m,6,461,0.6521,0.4902,0.4466,0.5358
+nothing happening means NO,1m,7,456,0.7515,0.6118,0.5656,0.6566
+nothing happening means NO,1m,8,390,0.8497,0.7179,0.6719,0.7612
+nothing happening means NO,1m,9,287,0.9477,0.9199,0.8899,0.9504
 YES means no change,1m,0,6,0.0297,0.0000,0.0000,0.0000
 YES means no change,1m,1,2,0.1056,0.0000,0.0000,0.0000
 YES means no change,1m,2,7,0.2751,0.4286,0.1429,0.8571
 YES means no change,1m,3,3,0.3402,0.0000,0.0000,0.0000
 YES means no change,1m,4,11,0.4544,0.6364,0.3636,0.9091
-YES means no change,1m,5,15,0.5494,0.8000,0.5650,0.9333
+YES means no change,1m,5,15,0.5494,0.8000,0.6000,0.9683
 YES means no change,1m,6,25,0.6544,0.7200,0.5400,0.8800
 YES means no change,1m,7,30,0.7532,0.8333,0.6946,0.9375
-YES means no change,1m,8,67,0.8598,0.8806,0.8073,0.9546
-YES means no change,1m,9,83,0.9477,0.9759,0.9351,1.0000
-"both labels no default, no title date",1m,0,103,0.0447,0.0485,0.0178,0.0914
-"both labels no default, no title date",1m,1,75,0.1475,0.2000,0.1139,0.2867
-"both labels no default, no title date",1m,2,71,0.2483,0.3099,0.2153,0.4138
-"both labels no default, no title date",1m,3,65,0.3503,0.3077,0.2154,0.4141
-"both labels no default, no title date",1m,4,76,0.4531,0.4079,0.3154,0.5102
-"both labels no default, no title date",1m,5,91,0.5488,0.4176,0.3256,0.5299
-"both labels no default, no title date",1m,6,63,0.6583,0.6032,0.4918,0.7201
-"both labels no default, no title date",1m,7,73,0.7511,0.6712,0.5563,0.7838
-"both labels no default, no title date",1m,8,94,0.8458,0.8191,0.7291,0.8908
-"both labels no default, no title date",1m,9,88,0.9541,0.9318,0.8671,0.9801
-old label: other world,1m,0,700,0.0501,0.0271,0.0171,0.0383
-old label: other world,1m,1,535,0.1495,0.1121,0.0875,0.1379
-old label: other world,1m,2,463,0.2496,0.1987,0.1665,0.2363
-old label: other world,1m,3,371,0.3520,0.2372,0.2028,0.2790
-old label: other world,1m,4,331,0.4505,0.3565,0.3060,0.3994
-old label: other world,1m,5,290,0.5511,0.3828,0.3297,0.4310
-old label: other world,1m,6,293,0.6569,0.5427,0.4874,0.5954
-old label: other world,1m,7,310,0.7523,0.6548,0.6062,0.7049
-old label: other world,1m,8,304,0.8480,0.7566,0.7133,0.8011
-old label: other world,1m,9,239,0.9488,0.9372,0.9002,0.9682
-title date,1m,0,1316,0.0528,0.0144,0.0081,0.0208
-title date,1m,1,1022,0.1469,0.0528,0.0364,0.0673
-title date,1m,2,719,0.2465,0.1210,0.0990,0.1460
-title date,1m,3,494,0.3489,0.2105,0.1787,0.2442
-title date,1m,4,418,0.4500,0.3182,0.2718,0.3643
-title date,1m,5,306,0.5505,0.3529,0.2980,0.4113
-title date,1m,6,320,0.6530,0.4469,0.3920,0.4984
-title date,1m,7,322,0.7508,0.5901,0.5310,0.6408
-title date,1m,8,265,0.8500,0.7170,0.6565,0.7660
-title date,1m,9,179,0.9471,0.9106,0.8706,0.9484
-title date passed,1m,0,1297,0.0528,0.0123,0.0069,0.0186
-title date passed,1m,1,999,0.1468,0.0480,0.0324,0.0624
-title date passed,1m,2,701,0.2463,0.1070,0.0854,0.1285
-title date passed,1m,3,471,0.3486,0.1783,0.1472,0.2124
-title date passed,1m,4,389,0.4498,0.2879,0.2440,0.3338
-title date passed,1m,5,288,0.5494,0.3229,0.2671,0.3790
-title date passed,1m,6,295,0.6527,0.4068,0.3578,0.4583
-title date passed,1m,7,290,0.7504,0.5552,0.5000,0.6095
-title date passed,1m,8,244,0.8505,0.6926,0.6312,0.7459
-title date passed,1m,9,155,0.9495,0.8968,0.8488,0.9419
+YES means no change,1m,8,67,0.8598,0.8806,0.7928,0.9467
+YES means no change,1m,9,82,0.9477,0.9756,0.9346,1.0000
+"both labels no default, no title date",1m,0,102,0.0446,0.0490,0.0175,0.1055
+"both labels no default, no title date",1m,1,74,0.1477,0.2027,0.1184,0.3037
+"both labels no default, no title date",1m,2,70,0.2480,0.3143,0.2222,0.4308
+"both labels no default, no title date",1m,3,64,0.3503,0.2969,0.1951,0.4046
+"both labels no default, no title date",1m,4,72,0.4532,0.4028,0.3076,0.5153
+"both labels no default, no title date",1m,5,90,0.5492,0.4222,0.3333,0.5218
+"both labels no default, no title date",1m,6,61,0.6586,0.6066,0.4921,0.7241
+"both labels no default, no title date",1m,7,72,0.7508,0.6667,0.5455,0.7804
+"both labels no default, no title date",1m,8,92,0.8462,0.8152,0.7296,0.8884
+"both labels no default, no title date",1m,9,88,0.9541,0.9318,0.8647,0.9796
+old label: other world,1m,0,690,0.0500,0.0275,0.0169,0.0387
+old label: other world,1m,1,527,0.1494,0.1139,0.0878,0.1397
+old label: other world,1m,2,457,0.2496,0.1947,0.1577,0.2313
+old label: other world,1m,3,361,0.3517,0.2382,0.2007,0.2867
+old label: other world,1m,4,320,0.4502,0.3469,0.2906,0.3921
+old label: other world,1m,5,284,0.5512,0.3803,0.3308,0.4388
+old label: other world,1m,6,286,0.6567,0.5455,0.4848,0.6071
+old label: other world,1m,7,305,0.7524,0.6492,0.5986,0.7022
+old label: other world,1m,8,296,0.8483,0.7568,0.7095,0.8043
+old label: other world,1m,9,239,0.9488,0.9372,0.8998,0.9668
+title date,1m,0,1293,0.0528,0.0147,0.0084,0.0206
+title date,1m,1,1006,0.1467,0.0527,0.0364,0.0682
+title date,1m,2,713,0.2464,0.1206,0.0979,0.1432
+title date,1m,3,488,0.3489,0.2090,0.1796,0.2421
+title date,1m,4,408,0.4499,0.3137,0.2683,0.3611
+title date,1m,5,296,0.5507,0.3581,0.2958,0.4191
+title date,1m,6,311,0.6527,0.4469,0.3926,0.4984
+title date,1m,7,320,0.7509,0.5906,0.5378,0.6366
+title date,1m,8,262,0.8501,0.7137,0.6594,0.7649
+title date,1m,9,177,0.9466,0.9153,0.8764,0.9531
+title date passed,1m,0,1274,0.0528,0.0126,0.0071,0.0191
+title date passed,1m,1,983,0.1466,0.0478,0.0330,0.0625
+title date passed,1m,2,695,0.2461,0.1065,0.0857,0.1312
+title date passed,1m,3,465,0.3486,0.1763,0.1445,0.2132
+title date passed,1m,4,380,0.4497,0.2842,0.2366,0.3302
+title date passed,1m,5,278,0.5495,0.3273,0.2725,0.3838
+title date passed,1m,6,287,0.6525,0.4077,0.3526,0.4614
+title date passed,1m,7,288,0.7505,0.5556,0.4983,0.6051
+title date passed,1m,8,241,0.8506,0.6888,0.6279,0.7467
+title date passed,1m,9,153,0.9490,0.9020,0.8524,0.9428
