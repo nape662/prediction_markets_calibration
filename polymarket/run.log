@@ -328,3 +328,4 @@ pass 1: 39,666 of 39,666 left, $0.00 spent
 37,000 calls done, $24.78 spent
 608379: {"id":"608379","default_side":"NO","outside_reference":"unsure","stated_deadline":"2026-06-30","early_side":"BOTH","early_path":"NORMAL","substantive":70,"yes":["other_asset_price"],"unsure":["outside_reference"]}
 779495: {"id":"779495","default_side":"NO","outside_reference":"unsure","stated_deadline":"2026-06-30","early_side":"BOTH","early_path":"NORMAL","substantive":55,"yes":["existing_fact"],"unsure":["outside_reference"]}
+1005368: {"id":"1005368","default_side":"NONE","outside_reference":"unsure","stated_deadline":"2026-03-31","early_side":"NEITHER","early_path":"NONE","substantive":60,"yes":["scheduled_release"],"unsure":["outside_reference","existing_fact"]}
