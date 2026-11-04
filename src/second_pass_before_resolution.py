@@ -12,7 +12,7 @@ import pandas as pd
 from yes_bias import API, COLLECTED, HOURS, ROOT, boot_rate, summary
 from plot_calibration import load
 
-OUT, MIN_BIN = ROOT / "plots/second_pass", 30
+OUT, MIN_BIN, HORIZONS = ROOT / "plots/second_pass", 30, HOURS | {"1y": 8760}
 SPLITS = {"default_side": [("NO", "#c2410c", "Nothing happening means NO"), ("YES", "#1d4ed8", "Nothing happening means YES"), ("NONE", "#047857", "No default side")],
           "early_side": [("YES_EARLY", "#c2410c", "Only YES can finish early"), ("NO_EARLY", "#1d4ed8", "Only NO can finish early"), ("NEITHER", "#047857", "Neither can finish early")]}
 HOW = "Source: Manifold API; labels from a second Haiku pass that saw text only, no prices or outcomes. Resolved YES/NO world markets, price at resolution minus the horizon, 15+ bettors by then.\nA market already closed then counts at its last price. Each dot is one 10-point price bin: mean price against share resolved YES, each market once.\nBins under 30 markets dropped; the number beside each dot is its market count. Bars: 95%, resampling creators.\nYES markets often resolve early, so this moment depends on the outcome: a market's last day before an early YES isn't comparable to its last day before a deadline NO."
@@ -21,12 +21,12 @@ HOW = "Source: Manifold API; labels from a second Haiku pass that saw text only,
 def frame():
     markets = {m["id"]: m for m in map(json.loads, open(API / "markets.jsonl"))}
     a = load()
-    a = a[(a.anchor == "before_resolution") & (a.group == "world") & (a.bettors >= 15) & a.horizon.isin(HOURS)].copy()
+    a = a[(a.anchor == "before_resolution") & (a.group == "world") & (a.bettors >= 15) & a.horizon.isin(HORIZONS)].copy()
     labels = pd.DataFrame([json.loads(json.loads(l)["result"]) for l in open(ROOT / "labeling/second_pass/full_results.jsonl")])
     a = a.merge(labels[["id", "stated_deadline", *SPLITS]], on="id")
     for col in ["createdTime", "closeTime", "resolutionTime"]:
         a[col] = a.id.map(lambda i: markets[i][col])
-    t = a.resolutionTime - a.horizon.map(HOURS) * 3600e3
+    t = a.resolutionTime - a.horizon.map(HORIZONS) * 3600e3
     a["open"] = t < a.closeTime
     said = pd.to_datetime(a.stated_deadline, errors="coerce")
     a["done"] = (said >= pd.to_datetime(a.createdTime, unit="ms").dt.normalize()) & (said < COLLECTED - pd.Timedelta(days=60))
@@ -34,9 +34,9 @@ def frame():
 
 
 def plot(bins, name, title, note, **kwargs):
-    fig, axes = plt.subplots(2, 3, figsize=(13, 9.6), sharex=True, sharey=True)
+    fig, axes = plt.subplots(2, 4, figsize=(17, 9.6), sharex=True, sharey=True)
     for row, (split, sides) in zip(axes, SPLITS.items()):
-        for ax, h in zip(row, HOURS):
+        for ax, h in zip(row, HORIZONS):
             ax.plot([0, 100], [0, 100], color="#bbbbbb", lw=1, zorder=0)
             ax.grid(color="#eeeeee", lw=.6)
             ax.set(xlim=(0, 100), ylim=(0, 100), title=f"{h} before resolution")
@@ -63,7 +63,7 @@ def main():
     for name, g in [("before_resolution", a), ("before_resolution_open", a[a.open]), ("before_resolution_corrected", a[a.done])]:
         for split, sides in SPLITS.items():
             for side, _, _ in sides:
-                for h in HOURS:
+                for h in HORIZONS:
                     x = g[(g[split] == side) & (g.horizon == h)]
                     if len(x) >= 30:
                         metrics.append(dict(series=name, split=split, side=side, horizon=h, **summary(x), price_if_yes=x[x.y == 1].prob.mean(), price_if_no=x[x.y == 0].prob.mean()))
