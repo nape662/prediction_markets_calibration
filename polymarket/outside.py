@@ -1,4 +1,4 @@
-"""Follow-up to outside_reference: one question, forced choice, in batches. Prompt: polymarket/outside_prompt.txt. Notes: notes/polymarket_outside_source.md.
+"""Follow-up to outside_reference: one question, forced choice, in batches. Prompt: polymarket/outside_prompt.txt. Report: notes/polymarket_results.md.
 
 python polymarket/outside.py sample          -> polymarket/outside_test.csv: 300 random markets to hand-label (column hand), not in unsure_review.csv
 python polymarket/outside.py run test        -> polymarket/outside_test_results.jsonl, for the 300 test markets plus the 200 of unsure_review.csv

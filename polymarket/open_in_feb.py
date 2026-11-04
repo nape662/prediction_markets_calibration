@@ -91,7 +91,7 @@ def history(token, start, end):
         except urllib.error.HTTPError as e:
             if e.code != 429 and e.code < 500 or wait is None:
                 raise
-        except (urllib.error.URLError, TimeoutError):
+        except OSError:  # URLError, timeouts and connection resets
             if wait is None:
                 raise
         time.sleep(wait)
