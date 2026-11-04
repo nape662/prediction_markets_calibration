@@ -1,6 +1,6 @@
 """Calibration at fixed times before resolution, split by the second Haiku pass. Run in a tmux session.
 
-python src/second_pass_before_resolution.py -> plots/second_pass/before_resolution.png, before_resolution_open.png, before_resolution_corrected.png, before_resolution_bins.csv, before_resolution_metrics.csv
+python src/second_pass_before_resolution.py -> plots/second_pass/before_resolution.png, before_resolution_bins.csv, before_resolution_metrics.csv
 The moment is resolution minus the horizon, so which moment a market gets depends on when its outcome arrived. Each dot is a plain mean of prices against a plain mean of outcomes.
 """
 import json
@@ -75,8 +75,6 @@ def main():
     bins.to_csv(OUT / "before_resolution_bins.csv", index=False, float_format="%.4f")
     pd.DataFrame(metrics).to_csv(OUT / "before_resolution_metrics.csv", index=False, float_format="%.4f")
     plot(bins, "before_resolution", "Before resolution, split by default side (top) and by which side can finish early (bottom)", "")
-    plot(bins, "before_resolution_open", "FILTER: only markets still open at that moment. Before resolution this depends on the outcome", "\nNO markets often sit closed until the creator resolves them, so this filter removes many low-priced NOs and leans the sample toward YES.", color="#c00000", fontweight="bold")
-    plot(bins, "before_resolution_corrected", "CORRECTION: only markets whose stated deadline passed 60+ days before the fetch", "\nThis removes the skew from markets still open, and also every market with no stated deadline, which changes the mix.", color="#c00000", fontweight="bold")
 
 
 if __name__ == "__main__":

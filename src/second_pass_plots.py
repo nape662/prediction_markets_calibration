@@ -46,7 +46,6 @@ def by_side(suffix, title, note, name, **kwargs):
 
 
 by_side("", "Sorted by what happens if nothing changes, the error flips sign, and most markets are on the overpriced side", "", "by_side.png")
-by_side(", deadline passed", "CORRECTION: only markets whose stated deadline passed 60+ days before the fetch", "\nThis removes the skew from markets still open, and also every market with no stated deadline, which changes the mix.", "by_side_corrected.png", color="#c00000", fontweight="bold")
 
 fig, axes = plt.subplots(1, 2, figsize=(11, 6.2), sharey=True)
 for ax, tag, name, color in zip(axes, ["", ", deadline passed"], ["WITHOUT correction: every resolved market", "WITH correction: stated deadline passed 60+ days before fetch"], ["#333333", "#c00000"]):

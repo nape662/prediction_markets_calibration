@@ -24,11 +24,9 @@ All numbers are 1 week after creation. "Shift" is the log-odds you'd add to ever
 
 ## The gap with still-open markets removed
 
-<span style="color:#c00000;font-size:1.4em;font-weight:bold">CORRECTION: the plot below and every "corrected" number keep only markets whose stated deadline passed at least 60 days before the data was fetched.</span>
+<span style="color:#c00000;font-size:1.4em;font-weight:bold">CORRECTION: every "corrected" number here keeps only markets whose stated deadline passed at least 60 days before the data was fetched.</span>
 
-![With the correction](../plots/second_pass/by_side_corrected.png)
-
-*Same method as the first plot, with that one filter added. It removes the skew from markets still open, whose resolved part leans YES. It also removes every market with no stated deadline, so the mix changes.*
+This filter removes the skew from markets still open, whose resolved part leans YES. It also removes every market with no stated deadline, so the mix changes.
 
 The "resolves NO" side goes from 36.3% against 26.9% to 35.6% against 23.9%, a shift of −0.81. By creation year, 2022 to 2026, the corrected shift is −0.96, −0.87, −0.69, −0.72, −0.78. Uncorrected, 2026 looks nearly fixed at −0.21. That's mostly still-open markets, and there has been no clear improvement since 2024.
 
