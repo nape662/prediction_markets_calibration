@@ -3,6 +3,8 @@
 python polymarket/calibration.py -> plots/polymarket/*.png, metrics.csv, bins.csv
 Inputs: snapshots.jsonl and meta.csv (polymarket/prices.py), results.jsonl (16-question Haiku pass), outside_results.jsonl (polymarket/outside.py), cohorts.csv.
 Main sample: the closed_by_feb cohort. Each market counts once per moment. Intervals resample events (event_title), because markets of one event share an outcome.
+Filtered (main) plots keep a moment only if $1,000 had traded by then (volume.csv, Becker's trades, so open_in_feb mostly drops out) and,
+in a one-winner (negRisk) event, the event's prices at that moment sum to at most 130%. Unfiltered plots go to plots/polymarket/unfiltered.
 """
 import json, sys
 from pathlib import Path
@@ -17,12 +19,15 @@ sys.path.insert(0, str(HERE.parent / "src"))
 from yes_bias import boot_rate, summary
 
 OUT = HERE.parent / "plots/polymarket"
-HORIZONS, MIN_BIN = ["1d", "1w", "1m"], 30
+HORIZONS, MIN_BIN, MIN_VOL, MAX_SUM = ["1d", "1w", "1m"], 30, 1000, 1.3
 ANCHORS = {"after_start": "after trading starts", "before_close": "before closing"}
 
 
 def frame():
     meta = pd.read_csv(HERE / "meta.csv", dtype={"id": str, "token": str})
+    meta["short"] = meta.close - meta.start < 7 * 86400
+    events = pd.read_parquet(HERE.parent / "data/labeling/polymarket_markets.parquet", columns=["id", "event_id", "neg_risk"]).astype({"id": str})
+    vol = pd.read_csv(HERE / "volume.csv", dtype={"id": str})
     cohort = pd.read_csv(HERE / "cohorts.csv", dtype={"id": str})
     labels = pd.DataFrame([json.loads(json.loads(l)["result"]) for l in open(HERE / "results.jsonl")])
     outside = {i: s for l in open(HERE / "outside_results.jsonl") for i, s in json.loads(l)["answers"].items()}
@@ -32,8 +37,13 @@ def frame():
         for k, v in s.items():
             if k != "id" and v[1] is not None:
                 anchor, h = k.rsplit("_", 1)
-                rows.append(dict(id=s["id"], anchor=anchor, horizon=h, prob=v[1], lag_h=v[2]))
-    a = pd.DataFrame(rows).merge(meta[["id", "y"]], on="id", validate="m:1").merge(cohort[["id", "cohort"]], on="id", validate="m:1")
+                rows.append(dict(id=s["id"], moment=k, anchor=anchor, horizon=h, t=v[0], prob=v[1], lag_h=v[2]))
+    a = pd.DataFrame(rows).merge(meta[["id", "y", "short"]], on="id", validate="m:1").merge(events, on="id", how="left", validate="m:1")
+    a = a.merge(vol, on=["id", "moment"], how="left", validate="1:1").merge(cohort[["id", "cohort"]], on="id", validate="m:1")
+    n = a[a.neg_risk == True][["id", "event_id", "moment", "t", "prob"]]  # one-winner events: sum sibling prices within a day of this moment
+    pairs = n.merge(n, on=["event_id", "moment"], suffixes=("", "_sib"))
+    event_sum = pairs[(pairs.t - pairs.t_sib).abs() <= 86400].groupby(["id", "moment"]).prob_sib.sum().rename("event_sum")
+    a = a.merge(event_sum, on=["id", "moment"], how="left", validate="1:1")
     a = a.merge(labels[["id", "default_side", "substantive"]], on="id", validate="m:1")
     a["outside"] = a.id.map(outside)
     a["creator"] = a.id.map(event)  # the resampling unit, named creator for the shared helpers
@@ -44,7 +54,7 @@ def frame():
 
 
 SPLITS = {
-    "all": ("prob", [(None, "#1d4ed8", "All markets")]),
+    "all": ("short", [(None, "#1d4ed8", "All markets"), (True, "#c2410c", "Closed within a week of starting")]),
     "default_side": ("default_side", [("NO", "#c2410c", "Nothing happening means NO"), ("YES", "#1d4ed8", "Nothing happening means YES"), ("NONE", "#047857", "No default side")]),
     "source": ("source", [("has a source", "#6b7280", "Outside source exists"), ("no source, substantive <80", "#1d4ed8", "No source, substantive <80"), ("no source, substantive 80+", "#c2410c", "No source, substantive 80+")]),
 }
@@ -72,7 +82,7 @@ def tables(a):
     return pd.DataFrame(bins), pd.DataFrame(metrics)
 
 
-def plot(bins, split, anchors, name, title, note):
+def plot_one(out, filtered, bins, split, anchors, name, title, note):
     fig, axes = plt.subplots(len(anchors), 3, figsize=(15, 5.3 * len(anchors) + 1.2), squeeze=False, sharex=True, sharey=True)
     for row, anchor in zip(axes, anchors):
         for ax, h in zip(row, HORIZONS):
@@ -91,21 +101,31 @@ def plot(bins, split, anchors, name, title, note):
         ax.set_xlabel("Price (%)")
     axes[0][0].legend(frameon=False, fontsize=9, loc="upper left")
     fig.suptitle(title, x=.01, ha="left", fontsize=14)
-    fig.text(.01, .01, "Source: Polymarket Gamma and CLOB APIs; labels from Haiku, which saw text only. Resolved Yes/No markets that closed before Feb 2, 2026 with $1,000+ lifetime volume, sports, asset-price and weather markets removed.\n"
+    gate = ("Kept only moments with $1,000+ traded before them (on-chain trades), and not in a one-winner event whose prices sum above 130% then.\n" if filtered
+            else "UNFILTERED: includes moments before $1,000 had traded and one-winner events whose prices sum far above 100%.\n")
+    fig.text(.01, .01, "Source: Polymarket Gamma and CLOB APIs; labels from Haiku, which saw text only. Resolved Yes/No markets that closed before Feb 2, 2026 with $1,000+ or 15+ traders by then, sports, asset-price and weather markets removed.\n" + gate +
              "Price: last hourly API price at or before the moment, at most 3 days old; moments outside trading skipped. 10-point bins, bins under 30 markets dropped, number = markets in the bin. Bars: 95%, resampling events.\n" + note,
              fontsize=8.5, color="#555555")
-    fig.tight_layout(rect=(0, .1 if len(anchors) == 1 else .06, 1, .96))
-    fig.savefig(OUT / f"{name}.png", dpi=140)
+    fig.tight_layout(rect=(0, .12 if len(anchors) == 1 else .07, 1, .96))
+    fig.savefig(out / f"{name}.png", dpi=140)
     plt.close(fig)
 
 
 def main():
-    OUT.mkdir(parents=True, exist_ok=True)
     a = frame()
+    keep = (a.vol >= MIN_VOL) & a.neg_risk.notna() & ~(a.event_sum > MAX_SUM)  # open_in_feb has no event data, so it drops out
     print(a.groupby(["cohort", "anchor", "horizon"]).size().to_string(), f"\nno outside answer: {a.outside.isna().mean():.1%} of snapshots, median price age {a.lag_h.median():.1f}h", flush=True)
+    print(f"moments under $1,000: {(a.vol < MIN_VOL).sum():,}, no volume (after Feb 2): {a.vol.isna().sum():,}, one-winner event sum over {MAX_SUM:.0%}: {(a.event_sum > MAX_SUM).sum():,}, kept {keep.sum():,} of {len(a):,}")
+    for out, filtered, d in [(OUT, True, a[keep]), (OUT / "unfiltered", False, a)]:
+        out.mkdir(parents=True, exist_ok=True)
+        figures(out, filtered, d)
+
+
+def figures(out, filtered, a):
     bins, metrics = tables(a)
-    bins.to_csv(OUT / "bins.csv", index=False)
-    metrics.round(4).to_csv(OUT / "metrics.csv", index=False)
+    bins.to_csv(out / "bins.csv", index=False)
+    metrics.round(4).to_csv(out / "metrics.csv", index=False)
+    plot = lambda *x: plot_one(out, filtered, *x)
     plot(bins, "all", list(ANCHORS), "overall", "Polymarket calibration, all labeled markets",
          "Before closing: a market that resolves YES early closes early, so this moment depends on the outcome.")
     plot(bins, "default_side", ["after_start"], "by_side", "Polymarket, split by what happens if nothing new happens", "Haiku answered: if nothing new happens until the deadline, how does this resolve?")

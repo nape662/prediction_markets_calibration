@@ -2,6 +2,7 @@
 
 python polymarket/prices.py meta   -> polymarket/meta.csv: token, trading start, close and outcome per market, from the Gamma API
 python polymarket/prices.py prices -> polymarket/snapshots.jsonl: one line per market with its price at each moment; safe to restart
+python polymarket/prices.py volume -> polymarket/volume.csv: dollars traded before each moment, from Becker's trades
 The price at a moment is the last hourly point of the CLOB price history at or before it, looking back at most 3 days. What the API price measures is checked in polymarket/open_in_feb.py check.
 """
 import json, sys, threading, time, urllib.parse, urllib.request
@@ -11,9 +12,9 @@ import pandas as pd
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from open_in_feb import history
+from open_in_feb import BECKER, END, EXCHANGES, duck, history
 
-META, SNAPS = HERE / "meta.csv", HERE / "snapshots.jsonl"
+META, SNAPS, VOLUME = HERE / "meta.csv", HERE / "snapshots.jsonl", HERE / "volume.csv"
 DAY, LOOKBACK = 86400, 3 * 86400
 HORIZONS = {"1d": 1, "1w": 7, "1m": 30}
 
@@ -89,5 +90,23 @@ def prices():
                 print(f"{n:,} done", flush=True)
 
 
+def volume():
+    """Dollars traded in each market before each moment, from Becker's on-chain trades, so the $1,000 gate uses no future.
+    Becker's trades end 2026-02-02, so later moments (open_in_feb) get no row."""
+    moments = pd.DataFrame([(s["id"], k, v[0]) for s in map(json.loads, open(SNAPS)) for k, v in s.items() if k != "id" and v[0] <= END.timestamp()],
+                           columns=["id", "moment", "t"])
+    c = duck()
+    c.register("moments", moments)
+    c.sql(f"""copy (with tok as (select id, unnest(cast(clob_token_ids as varchar[])) token from '{BECKER}/markets/markets_*.parquet' where id in (select id from moments)),
+        a as (select block_number,maker_asset_id,taker_asset_id,maker_amount,taker_amount from '{BECKER}/trades/trades_*.parquet' where taker not in {EXCHANGES}),
+        s as (select block_number,taker_asset_id token,maker_amount usdc from a where maker_asset_id='0'
+              union all select block_number,maker_asset_id,taker_amount from a where taker_asset_id='0'),
+        t as (select id, epoch(try_cast(b.timestamp as timestamptz)) ts, usdc from s join tok using(token) join '{BECKER}/blocks/blocks_*.parquet' b using(block_number))
+        select m.id, m.moment, coalesce(sum(t.usdc), 0) / 1e6 vol from moments m left join t on t.id = m.id and t.ts <= m.t group by all
+        order by all) to '{VOLUME}' (header)""")
+    v = pd.read_csv(VOLUME)
+    print(f"{len(v):,} moments of {v.id.nunique():,} markets, $1,000+ before the moment: {(v.vol >= 1000).mean():.1%}")
+
+
 if __name__ == "__main__":
-    {"meta": meta, "prices": prices}[sys.argv[1]]()
+    {"meta": meta, "prices": prices, "volume": volume}[sys.argv[1]]()
