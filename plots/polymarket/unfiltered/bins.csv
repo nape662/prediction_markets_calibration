@@ -259,6 +259,274 @@ closed_by_feb,default_side,No default side,before_close,1w,6,277,0.6469584837545
 closed_by_feb,default_side,No default side,before_close,1w,7,315,0.7456619047619047,0.7841269841269841,0.7372994223363286,0.8269865747460087
 closed_by_feb,default_side,No default side,before_close,1w,8,322,0.8492329192546585,0.8695652173913043,0.8354223995597138,0.9060573089448215
 closed_by_feb,default_side,No default side,before_close,1w,9,809,0.9618084054388134,0.9703337453646477,0.9581503212272191,0.9817433274654148
+closed_by_feb,kind,Everything else,after_start,1d,0,8195,0.03912769981696156,0.02733374008541794,0.023122938718154264,0.03228195101535235
+closed_by_feb,kind,Everything else,after_start,1d,1,3188,0.14269494981179423,0.10696361355081556,0.09828811558703196,0.11797192896922873
+closed_by_feb,kind,Everything else,after_start,1d,2,2188,0.2465036563071298,0.20246800731261427,0.18710091916576982,0.22077411101516245
+closed_by_feb,kind,Everything else,after_start,1d,3,1520,0.3458631578947368,0.2835526315789474,0.2565648199331673,0.30848549804170633
+closed_by_feb,kind,Everything else,after_start,1d,4,1772,0.45465632054176075,0.26241534988713316,0.22548524893309724,0.3013145138095077
+closed_by_feb,kind,Everything else,after_start,1d,5,1316,0.535372340425532,0.45972644376899696,0.42732908057432806,0.492319855276604
+closed_by_feb,kind,Everything else,after_start,1d,6,803,0.6470790784557907,0.638854296388543,0.601868045476536,0.6720166358426516
+closed_by_feb,kind,Everything else,after_start,1d,7,769,0.7481170351105332,0.7269180754226268,0.6957364921116547,0.7524236093145714
+closed_by_feb,kind,Everything else,after_start,1d,8,753,0.8461660026560425,0.8339973439575034,0.807464766045058,0.8583701925997934
+closed_by_feb,kind,Everything else,after_start,1d,9,788,0.9499486040609137,0.9390862944162437,0.9220604855025732,0.9548306148055207
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,0,1426,0.032275946704067325,0.019635343618513323,0.014144039061813066,0.027071158484597804
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,1,498,0.14306024096385542,0.13654618473895583,0.11195546555953441,0.16146425648722185
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,2,425,0.24725882352941178,0.2188235294117647,0.1846440985340789,0.25526651152482266
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,3,270,0.3456111111111111,0.26666666666666666,0.2149475890985325,0.3197101549529607
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,4,158,0.44995253164556964,0.31645569620253167,0.24838154987702696,0.3853167808219177
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,5,91,0.540357142857143,0.43956043956043955,0.3424181329423265,0.5388574660633484
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,6,80,0.6469875,0.575,0.4727343059239611,0.6891891891891891
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,7,71,0.7444647887323944,0.5915492957746479,0.47585812356979407,0.7101449275362319
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,8,59,0.8545762711864406,0.7288135593220338,0.6120056497175141,0.8435344827586206
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,9,65,0.9498769230769231,0.9692307692307692,0.9152542372881356,1.0
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,0,2569,0.03503970416504476,0.02958349552355002,0.024798134715025906,0.0352817988903081
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,1,1064,0.13994125939849625,0.10902255639097744,0.092226246462351,0.127274255523535
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,2,622,0.2469943729903537,0.19131832797427653,0.16133730058436535,0.22832211834805832
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,3,655,0.35033969465648857,0.33435114503816793,0.2988427088176042,0.3708819735228186
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,4,737,0.4494335142469471,0.41655359565807326,0.3758667044525268,0.4613128352375825
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,5,761,0.545,0.4940867279894875,0.4543728602552132,0.5364329729040328
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,6,692,0.6447023121387283,0.5794797687861272,0.5390518184304075,0.6198560606060606
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,7,526,0.7444876425855513,0.6825095057034221,0.6340321931589538,0.7323435345032576
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,8,400,0.8455687499999999,0.815,0.7698663101604277,0.8523374707324086
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,9,266,0.9500469924812032,0.9548872180451128,0.9254901960784314,0.9798061224489796
+closed_by_feb,kind,TSA passenger counts,after_start,1d,0,84,0.04041666666666667,0.03571428571428571,0.0,0.07894736842105263
+closed_by_feb,kind,TSA passenger counts,after_start,1d,1,58,0.14691379310344826,0.017241379310344827,0.0,0.0582861990950226
+closed_by_feb,kind,TSA passenger counts,after_start,1d,2,37,0.25872972972972974,0.16216216216216217,0.0648492286115007,0.276867816091954
+closed_by_feb,kind,TSA passenger counts,after_start,1d,3,33,0.35121212121212125,0.21212121212121213,0.09518649193548387,0.32905405405405386
+closed_by_feb,kind,TSA passenger counts,after_start,1d,4,22,0.4378409090909091,0.5,,
+closed_by_feb,kind,TSA passenger counts,after_start,1d,5,9,0.5415000000000001,0.7777777777777778,,
+closed_by_feb,kind,TSA passenger counts,after_start,1d,6,5,0.652,1.0,,
+closed_by_feb,kind,TSA passenger counts,after_start,1d,7,6,0.7475,1.0,,
+closed_by_feb,kind,TSA passenger counts,after_start,1d,8,2,0.81,0.5,,
+closed_by_feb,kind,TSA passenger counts,after_start,1d,9,3,0.9183333333333333,1.0,,
+closed_by_feb,kind,AI model leaderboards,after_start,1d,0,182,0.038876373626373625,0.02197802197802198,0.004829863704256908,0.04701873767258381
+closed_by_feb,kind,AI model leaderboards,after_start,1d,1,59,0.13872033898305083,0.11864406779661017,0.04578671328671329,0.21940624999999997
+closed_by_feb,kind,AI model leaderboards,after_start,1d,2,22,0.24750000000000003,0.13636363636363635,,
+closed_by_feb,kind,AI model leaderboards,after_start,1d,3,12,0.3408333333333333,0.3333333333333333,,
+closed_by_feb,kind,AI model leaderboards,after_start,1d,4,4,0.4375,0.5,,
+closed_by_feb,kind,AI model leaderboards,after_start,1d,5,5,0.547,0.4,,
+closed_by_feb,kind,AI model leaderboards,after_start,1d,6,8,0.65125,0.75,,
+closed_by_feb,kind,AI model leaderboards,after_start,1d,7,4,0.7537499999999999,1.0,,
+closed_by_feb,kind,AI model leaderboards,after_start,1d,8,2,0.825,1.0,,
+closed_by_feb,kind,Everything else,after_start,1m,0,5501,0.028081348845664426,0.016360661697873115,0.012396149124770255,0.021178600203032596
+closed_by_feb,kind,Everything else,after_start,1m,1,1070,0.14044859813084112,0.102803738317757,0.08024437209134529,0.12551786793374337
+closed_by_feb,kind,Everything else,after_start,1m,2,550,0.24348181818181816,0.19818181818181818,0.16336040409809732,0.2387614276809599
+closed_by_feb,kind,Everything else,after_start,1m,3,362,0.34428038674033146,0.2845303867403315,0.23714285714285716,0.3356673807749627
+closed_by_feb,kind,Everything else,after_start,1m,4,318,0.4503286163522012,0.3710691823899371,0.31056616961789374,0.43393481717011123
+closed_by_feb,kind,Everything else,after_start,1m,5,259,0.5390212355212355,0.39768339768339767,0.32971014492753625,0.4640708860759494
+closed_by_feb,kind,Everything else,after_start,1m,6,208,0.6494975961538463,0.6057692307692307,0.5208228688722532,0.6856647566849361
+closed_by_feb,kind,Everything else,after_start,1m,7,205,0.7494243902439025,0.7463414634146341,0.6769928532160528,0.8089399201891811
+closed_by_feb,kind,Everything else,after_start,1m,8,250,0.8529,0.856,0.8126156433978132,0.8959208333333334
+closed_by_feb,kind,Everything else,after_start,1m,9,464,0.9530991379310345,0.9719827586206896,0.9575194694187666,0.9842428831817355
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,0,268,0.023884328358208955,0.026119402985074626,0.009261605187443638,0.044092771084337345
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,1,38,0.14864473684210525,0.02631578947368421,0.0,0.08844155844155832
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,2,25,0.24489999999999998,0.28,,
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,3,20,0.330825,0.15,,
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,4,7,0.437,0.5714285714285714,,
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,5,4,0.565,0.25,,
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,6,6,0.6715833333333334,0.5,,
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,7,3,0.7316666666666666,0.6666666666666666,,
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,8,2,0.8654999999999999,1.0,,
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,9,23,0.9712391304347827,0.9565217391304348,,
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,0,131,0.02890839694656489,0.007633587786259542,0.0,0.015010841711019119
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,1,44,0.1435909090909091,0.11363636363636363,0.0425531914893617,0.20930232558139536
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,2,22,0.25,0.22727272727272727,,
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,3,26,0.3471153846153846,0.2692307692307692,,
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,4,16,0.45343750000000005,0.25,,
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,5,19,0.550263157894737,0.6842105263157895,,
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,6,22,0.6538636363636363,0.6818181818181818,,
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,7,26,0.7456730769230769,0.6538461538461539,,
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,8,17,0.8467647058823529,0.8823529411764706,,
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,9,21,0.9552142857142857,0.9523809523809523,,
+closed_by_feb,kind,AI model leaderboards,after_start,1m,0,194,0.019886597938144332,0.005154639175257732,0.0,0.017668131944204062
+closed_by_feb,kind,AI model leaderboards,after_start,1m,1,12,0.1274583333333333,0.08333333333333333,,
+closed_by_feb,kind,AI model leaderboards,after_start,1m,2,7,0.23857142857142863,0.42857142857142855,,
+closed_by_feb,kind,AI model leaderboards,after_start,1m,3,4,0.36625,0.25,,
+closed_by_feb,kind,AI model leaderboards,after_start,1m,4,2,0.44675,0.5,,
+closed_by_feb,kind,AI model leaderboards,after_start,1m,5,5,0.544,0.4,,
+closed_by_feb,kind,AI model leaderboards,after_start,1m,6,3,0.6416666666666666,0.3333333333333333,,
+closed_by_feb,kind,AI model leaderboards,after_start,1m,7,6,0.7559166666666667,1.0,,
+closed_by_feb,kind,AI model leaderboards,after_start,1m,8,5,0.8566,1.0,,
+closed_by_feb,kind,AI model leaderboards,after_start,1m,9,7,0.9315714285714286,0.8571428571428571,,
+closed_by_feb,kind,Everything else,after_start,1w,0,8259,0.03206647293861243,0.022157646204140936,0.018524231449186,0.025772054995879628
+closed_by_feb,kind,Everything else,after_start,1w,1,2188,0.14246663619744057,0.11014625228519195,0.09704670505480253,0.12368581032306153
+closed_by_feb,kind,Everything else,after_start,1w,2,1322,0.2440885022692889,0.2102874432677761,0.18687609219288717,0.22920268522467604
+closed_by_feb,kind,Everything else,after_start,1w,3,1000,0.34745550000000003,0.27,0.23908327274615704,0.29826479514195015
+closed_by_feb,kind,Everything else,after_start,1w,4,996,0.45386997991967876,0.28413654618473894,0.2498579875109967,0.3210781583588601
+closed_by_feb,kind,Everything else,after_start,1w,5,674,0.5400712166172107,0.48813056379821956,0.4446086054950752,0.5272085480655294
+closed_by_feb,kind,Everything else,after_start,1w,6,524,0.6471450381679388,0.6106870229007634,0.5704417293233083,0.654328419703351
+closed_by_feb,kind,Everything else,after_start,1w,7,490,0.7470520408163265,0.7448979591836735,0.7099982957692471,0.7856486742424242
+closed_by_feb,kind,Everything else,after_start,1w,8,536,0.8495998134328357,0.8544776119402985,0.8232537490134175,0.8817045454545455
+closed_by_feb,kind,Everything else,after_start,1w,9,850,0.953874117647059,0.9435294117647058,0.9254269134584668,0.9592038809144072
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,0,1320,0.015641666666666665,0.015151515151515152,0.008474825256703145,0.022335919349485554
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,1,216,0.14603472222222222,0.13425925925925927,0.09851176430931032,0.17285864424592745
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,2,142,0.24623591549295767,0.19014084507042253,0.1381096268023749,0.2426470588235294
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,3,78,0.3422307692307693,0.24358974358974358,0.15584415584415584,0.32903481012658226
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,4,51,0.4433333333333334,0.35294117647058826,0.23529411764705882,0.47960416666666666
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,5,30,0.54055,0.5,0.3333333333333333,0.6785714285714286
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,6,22,0.6394772727272726,0.5909090909090909,,
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,7,20,0.74735,0.75,,
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,8,33,0.8583939393939395,0.8787878787878788,0.7727419354838709,0.9696969696969697
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,9,160,0.98359375,0.975,0.9450070854983467,0.9945817909395381
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,0,1532,0.015890665796344648,0.013054830287206266,0.008064406043919293,0.01822154513514464
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,1,305,0.14347213114754098,0.14426229508196722,0.10981432213723534,0.17785426744697405
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,2,192,0.24474479166666666,0.22395833333333334,0.16619342639281762,0.2826430230869754
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,3,140,0.345225,0.35714285714285715,0.282088122605364,0.4355106209150326
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,4,150,0.4496166666666667,0.36666666666666664,0.2716008225324028,0.4572134387351777
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,5,124,0.5434596774193546,0.5,0.4176960085531005,0.5944734829168792
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,6,116,0.6440474137931034,0.6206896551724138,0.5260309278350516,0.7156435509983811
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,7,93,0.7467741935483871,0.7741935483870968,0.6682038834951456,0.8744235436893203
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,8,59,0.843779661016949,0.8135593220338984,0.695265291083272,0.9310344827586207
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,9,144,0.9725138888888887,0.9652777777777778,0.9379066780821917,0.9915628115653041
+closed_by_feb,kind,TSA passenger counts,after_start,1w,0,103,0.022359223300970878,0.02912621359223301,0.0,0.06434692671394797
+closed_by_feb,kind,TSA passenger counts,after_start,1w,1,11,0.15463636363636363,0.0,,
+closed_by_feb,kind,TSA passenger counts,after_start,1w,2,8,0.2395625,0.375,,
+closed_by_feb,kind,TSA passenger counts,after_start,1w,3,10,0.3449,0.4,,
+closed_by_feb,kind,TSA passenger counts,after_start,1w,4,5,0.46509999999999996,0.0,,
+closed_by_feb,kind,TSA passenger counts,after_start,1w,5,3,0.5548333333333333,0.3333333333333333,,
+closed_by_feb,kind,TSA passenger counts,after_start,1w,6,4,0.63,0.5,,
+closed_by_feb,kind,TSA passenger counts,after_start,1w,7,2,0.7675000000000001,1.0,,
+closed_by_feb,kind,TSA passenger counts,after_start,1w,8,5,0.8549999999999999,0.8,,
+closed_by_feb,kind,TSA passenger counts,after_start,1w,9,8,0.9589375,1.0,,
+closed_by_feb,kind,AI model leaderboards,after_start,1w,0,206,0.025584951456310685,0.019417475728155338,0.004524886877828055,0.0393141896864727
+closed_by_feb,kind,AI model leaderboards,after_start,1w,1,37,0.14458108108108106,0.10810810810810811,0.02564102564102564,0.21212121212121213
+closed_by_feb,kind,AI model leaderboards,after_start,1w,2,19,0.24736842105263154,0.21052631578947367,,
+closed_by_feb,kind,AI model leaderboards,after_start,1w,3,17,0.3473529411764706,0.29411764705882354,,
+closed_by_feb,kind,AI model leaderboards,after_start,1w,4,2,0.445,0.5,,
+closed_by_feb,kind,AI model leaderboards,after_start,1w,5,9,0.5455555555555556,0.4444444444444444,,
+closed_by_feb,kind,AI model leaderboards,after_start,1w,6,7,0.6500000000000001,0.8571428571428571,,
+closed_by_feb,kind,AI model leaderboards,after_start,1w,7,1,0.79,1.0,,
+closed_by_feb,kind,AI model leaderboards,after_start,1w,8,5,0.868,1.0,,
+closed_by_feb,kind,Everything else,before_close,1d,0,14320,0.013690153631284917,0.0125,0.010347420582749135,0.01505647684282408
+closed_by_feb,kind,Everything else,before_close,1d,1,1080,0.14225370370370372,0.16666666666666666,0.14093357271095153,0.1920955579696
+closed_by_feb,kind,Everything else,before_close,1d,2,666,0.24528078078078078,0.3003003003003003,0.26299694189602446,0.3381086715850416
+closed_by_feb,kind,Everything else,before_close,1d,3,564,0.3451578014184397,0.4078014184397163,0.35922206530617334,0.45672787141422033
+closed_by_feb,kind,Everything else,before_close,1d,4,591,0.4512910321489001,0.4433164128595601,0.39813048245614036,0.489243072088658
+closed_by_feb,kind,Everything else,before_close,1d,5,512,0.5379287109374999,0.615234375,0.554851359438433,0.6767451612903226
+closed_by_feb,kind,Everything else,before_close,1d,6,418,0.6500956937799043,0.7535885167464115,0.7069981417872628,0.7933506907825354
+closed_by_feb,kind,Everything else,before_close,1d,7,528,0.7487945075757576,0.8257575757575758,0.794241110020366,0.8566110571587126
+closed_by_feb,kind,Everything else,before_close,1d,8,612,0.8495604575163398,0.8856209150326797,0.8550941458404656,0.910291006347052
+closed_by_feb,kind,Everything else,before_close,1d,9,2358,0.9745941475826971,0.9843087362171332,0.9796486052689009,0.9888008949972171
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,0,2418,0.00883291976840364,0.005789909015715467,0.00253230405631053,0.009708932141810138
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,1,105,0.14623333333333333,0.10476190476190476,0.04841111632270169,0.1755835667600373
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,2,76,0.24359868421052633,0.27631578947368424,0.15071969696969698,0.38689247311827957
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,3,44,0.353,0.25,0.12121212121212122,0.35638888888888887
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,4,55,0.44522727272727275,0.36363636363636365,0.2391304347826087,0.4903903070662227
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,5,35,0.5366,0.4,0.23255813953488372,0.5718673218673217
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,6,28,0.6535892857142857,0.7857142857142857,,
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,7,38,0.7502105263157895,0.7105263157894737,0.5842987804878049,0.8461538461538461
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,8,32,0.8547812499999999,0.8125,0.6774193548387096,0.9375366568914956
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,9,403,0.9792506203473946,0.9776674937965261,0.9641029767926669,0.9921808271903817
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,0,2924,0.01706993844049248,0.009575923392612859,0.006121669032948373,0.013943314103370094
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,1,616,0.14667207792207793,0.125,0.09639224841086798,0.1563614479183589
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,2,633,0.24810742496050556,0.2259083728278041,0.1898222693032015,0.26115188526995303
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,3,707,0.34929207920792077,0.33663366336633666,0.2980353017124219,0.37449667268496306
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,4,687,0.44793959243085885,0.388646288209607,0.3495237156746814,0.43661115269461076
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,5,725,0.5453496551724137,0.5089655172413793,0.47167956368723635,0.5509678899082568
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,6,668,0.6467035928143713,0.6167664670658682,0.5696071787599182,0.6606714327830188
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,7,583,0.7457066895368782,0.6843910806174958,0.6390195843943892,0.7273616226810394
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,8,440,0.8455738636363637,0.8159090909090909,0.7705986071093985,0.8571428571428571
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,9,253,0.9442569169960474,0.9367588932806324,0.9037584212850205,0.965644239767522
+closed_by_feb,kind,TSA passenger counts,before_close,1d,0,157,0.01979299363057325,0.006369426751592357,0.0,0.020205650281153634
+closed_by_feb,kind,TSA passenger counts,before_close,1d,1,28,0.149,0.10714285714285714,,
+closed_by_feb,kind,TSA passenger counts,before_close,1d,2,10,0.2506,0.1,,
+closed_by_feb,kind,TSA passenger counts,before_close,1d,3,10,0.34715000000000007,0.4,,
+closed_by_feb,kind,TSA passenger counts,before_close,1d,4,13,0.4500384615384615,0.46153846153846156,,
+closed_by_feb,kind,TSA passenger counts,before_close,1d,5,8,0.5471874999999999,0.375,,
+closed_by_feb,kind,TSA passenger counts,before_close,1d,6,5,0.6784999999999999,1.0,,
+closed_by_feb,kind,TSA passenger counts,before_close,1d,7,4,0.75875,0.75,,
+closed_by_feb,kind,TSA passenger counts,before_close,1d,8,10,0.84925,1.0,,
+closed_by_feb,kind,TSA passenger counts,before_close,1d,9,14,0.9528928571428572,1.0,,
+closed_by_feb,kind,AI model leaderboards,before_close,1d,0,281,0.002966192170818506,0.0,0.0,0.0
+closed_by_feb,kind,AI model leaderboards,before_close,1d,4,1,0.415,1.0,,
+closed_by_feb,kind,AI model leaderboards,before_close,1d,8,1,0.815,1.0,,
+closed_by_feb,kind,AI model leaderboards,before_close,1d,9,32,0.98234375,1.0,1.0,1.0
+closed_by_feb,kind,Everything else,before_close,1m,0,5618,0.026658419366322534,0.014595941616233536,0.011688058420699721,0.0183876670745641
+closed_by_feb,kind,Everything else,before_close,1m,1,953,0.14073662119622246,0.11017838405036726,0.09104333490343854,0.13080524283496614
+closed_by_feb,kind,Everything else,before_close,1m,2,595,0.24327058823529413,0.2218487394957983,0.18375947745302226,0.2643831294894195
+closed_by_feb,kind,Everything else,before_close,1m,3,363,0.3436418732782369,0.2865013774104683,0.23365500743218134,0.34460831262169733
+closed_by_feb,kind,Everything else,before_close,1m,4,286,0.4502657342657342,0.34615384615384615,0.2850921114785073,0.41462628865979373
+closed_by_feb,kind,Everything else,before_close,1m,5,296,0.5384966216216217,0.42567567567567566,0.358439034573252,0.5009146341463414
+closed_by_feb,kind,Everything else,before_close,1m,6,204,0.6481127450980392,0.6372549019607843,0.558252427184466,0.7074674503128451
+closed_by_feb,kind,Everything else,before_close,1m,7,225,0.7499777777777777,0.7511111111111111,0.6889599664053752,0.8124166666666666
+closed_by_feb,kind,Everything else,before_close,1m,8,228,0.8511162280701755,0.8552631578947368,0.8073710907211166,0.9008815933708637
+closed_by_feb,kind,Everything else,before_close,1m,9,439,0.9571594533029614,0.9749430523917996,0.9584999165693309,0.9881943050537491
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,0,255,0.021421568627450982,0.011764705882352941,0.0,0.02783587870739265
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,1,40,0.14320000000000002,0.025,0.0,0.07894736842105263
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,2,25,0.24406,0.2,,
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,3,13,0.3688461538461538,0.5384615384615384,,
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,4,15,0.4455333333333334,0.13333333333333333,,
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,5,2,0.54,0.0,,
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,6,11,0.6483181818181819,0.7272727272727273,,
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,7,3,0.7483333333333334,1.0,,
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,8,8,0.8424375,1.0,,
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,9,17,0.9548529411764705,0.9411764705882353,,
+closed_by_feb,kind,"Who says what, post counts",before_close,1m,0,91,0.04314835164835165,0.03296703296703297,0.0,0.060176390773405676
+closed_by_feb,kind,"Who says what, post counts",before_close,1m,1,40,0.13846250000000002,0.05,0.0,0.1165723981900452
+closed_by_feb,kind,"Who says what, post counts",before_close,1m,2,42,0.250952380952381,0.16666666666666666,0.07542735042735044,0.2580116279069767
+closed_by_feb,kind,"Who says what, post counts",before_close,1m,3,24,0.3472916666666667,0.20833333333333334,,
+closed_by_feb,kind,"Who says what, post counts",before_close,1m,4,34,0.4491176470588235,0.29411764705882354,0.09090909090909091,0.5
+closed_by_feb,kind,"Who says what, post counts",before_close,1m,5,24,0.5347916666666667,0.4166666666666667,,
+closed_by_feb,kind,"Who says what, post counts",before_close,1m,6,27,0.6481481481481481,0.5555555555555556,,
+closed_by_feb,kind,"Who says what, post counts",before_close,1m,7,27,0.7474074074074074,0.6666666666666666,,
+closed_by_feb,kind,"Who says what, post counts",before_close,1m,8,16,0.8440624999999999,0.875,,
+closed_by_feb,kind,"Who says what, post counts",before_close,1m,9,19,0.9572631578947368,0.9473684210526315,,
+closed_by_feb,kind,AI model leaderboards,before_close,1m,0,201,0.01851990049751244,0.014925373134328358,0.0,0.035
+closed_by_feb,kind,AI model leaderboards,before_close,1m,1,16,0.14465625,0.0625,,
+closed_by_feb,kind,AI model leaderboards,before_close,1m,2,4,0.23875,0.25,,
+closed_by_feb,kind,AI model leaderboards,before_close,1m,3,2,0.36250000000000004,0.5,,
+closed_by_feb,kind,AI model leaderboards,before_close,1m,4,3,0.48,0.6666666666666666,,
+closed_by_feb,kind,AI model leaderboards,before_close,1m,5,4,0.5666249999999999,0.25,,
+closed_by_feb,kind,AI model leaderboards,before_close,1m,6,3,0.6533333333333333,0.6666666666666666,,
+closed_by_feb,kind,AI model leaderboards,before_close,1m,7,4,0.7487499999999999,1.0,,
+closed_by_feb,kind,AI model leaderboards,before_close,1m,8,9,0.855,0.8888888888888888,,
+closed_by_feb,kind,AI model leaderboards,before_close,1m,9,4,0.9212500000000001,1.0,,
+closed_by_feb,kind,Everything else,before_close,1w,0,10509,0.020774431439718338,0.01712817584927205,0.014572676064177139,0.019957796780436948
+closed_by_feb,kind,Everything else,before_close,1w,1,1340,0.14376902985074627,0.15074626865671642,0.12769819046800535,0.17417582475453794
+closed_by_feb,kind,Everything else,before_close,1w,2,922,0.24602874186550977,0.2472885032537961,0.2191258920979016,0.27822174360895213
+closed_by_feb,kind,Everything else,before_close,1w,3,654,0.3465902140672783,0.3654434250764526,0.33087360912857855,0.40437448515454316
+closed_by_feb,kind,Everything else,before_close,1w,4,592,0.4478192567567567,0.3564189189189189,0.313685763401048,0.403073476702509
+closed_by_feb,kind,Everything else,before_close,1w,5,571,0.5379886164623467,0.5499124343257443,0.5008318175400128,0.5978007602862254
+closed_by_feb,kind,Everything else,before_close,1w,6,374,0.6487032085561497,0.7192513368983957,0.6666666666666666,0.7700879146191646
+closed_by_feb,kind,Everything else,before_close,1w,7,421,0.7450023752969122,0.7980997624703088,0.7575239511547774,0.8356807511737089
+closed_by_feb,kind,Everything else,before_close,1w,8,457,0.849460612691466,0.8818380743982495,0.8482736972829337,0.9129996307578695
+closed_by_feb,kind,Everything else,before_close,1w,9,1187,0.9640732940185341,0.9764111204717776,0.9684335306626818,0.9849537216672365
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,0,915,0.02848688524590164,0.025136612021857924,0.014649527694289394,0.038001296411800174
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,1,247,0.14869838056680162,0.12550607287449392,0.08309162062615101,0.16784890493942217
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,2,230,0.2435608695652174,0.14782608695652175,0.1093275217932752,0.1902839360199691
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,3,171,0.34890058479532166,0.19298245614035087,0.1465283972643473,0.24112204369019677
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,4,238,0.45565546218487396,0.19327731092436976,0.14998759821414284,0.24521943573667707
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,5,87,0.537528735632184,0.42528735632183906,0.3180591593149974,0.534026402640264
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,6,30,0.6406500000000002,0.43333333333333335,0.2621505376344086,0.6
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,7,34,0.7415735294117647,0.7352941176470589,0.5941511824324325,0.875
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,8,26,0.8492307692307693,0.7692307692307693,,
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,9,77,0.9694675324675327,0.948051948051948,0.8930833333333333,1.0
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,0,1297,0.036206245181187355,0.047031611410948346,0.03800736350574713,0.056936180368102114
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,1,453,0.13500772626931568,0.12362030905077263,0.09459366524602868,0.15723157051282047
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,2,157,0.2475445859872611,0.22929936305732485,0.16321732691595706,0.29997992773986343
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,3,167,0.3507065868263473,0.281437125748503,0.1964133673903789,0.3672887753545829
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,4,200,0.45965000000000006,0.345,0.2539454522759424,0.44800478850758174
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,5,217,0.539200460829493,0.48847926267281105,0.4058229938768933,0.5622546487603306
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,6,141,0.6481028368794327,0.5390070921985816,0.4395374744980135,0.6446418808091853
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,7,117,0.744517094017094,0.5897435897435898,0.48164943609022554,0.7059406751884627
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,8,51,0.8479313725490196,0.7843137254901961,0.649266581632653,0.8971310028248587
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,9,44,0.9475113636363637,0.9318181818181818,0.8414772727272727,1.0
+closed_by_feb,kind,TSA passenger counts,before_close,1w,0,61,0.034704918032786886,0.04918032786885246,0.0,0.10088983050847454
+closed_by_feb,kind,TSA passenger counts,before_close,1w,1,24,0.14633333333333334,0.08333333333333333,,
+closed_by_feb,kind,TSA passenger counts,before_close,1w,2,27,0.2506111111111111,0.18518518518518517,,
+closed_by_feb,kind,TSA passenger counts,before_close,1w,3,24,0.34604166666666664,0.125,,
+closed_by_feb,kind,TSA passenger counts,before_close,1w,4,11,0.4475,0.36363636363636365,,
+closed_by_feb,kind,TSA passenger counts,before_close,1w,5,2,0.5375000000000001,1.0,,
+closed_by_feb,kind,TSA passenger counts,before_close,1w,6,3,0.6083333333333334,0.6666666666666666,,
+closed_by_feb,kind,TSA passenger counts,before_close,1w,7,2,0.7124999999999999,1.0,,
+closed_by_feb,kind,TSA passenger counts,before_close,1w,8,3,0.8566666666666666,0.6666666666666666,,
+closed_by_feb,kind,TSA passenger counts,before_close,1w,9,2,0.9175,1.0,,
+closed_by_feb,kind,AI model leaderboards,before_close,1w,0,276,0.007449275362318841,0.0036231884057971015,0.0,0.010911218660742619
+closed_by_feb,kind,AI model leaderboards,before_close,1w,1,3,0.13883333333333334,0.0,,
+closed_by_feb,kind,AI model leaderboards,before_close,1w,2,3,0.26499999999999996,0.3333333333333333,,
+closed_by_feb,kind,AI model leaderboards,before_close,1w,7,3,0.7316666666666668,1.0,,
+closed_by_feb,kind,AI model leaderboards,before_close,1w,8,4,0.8602500000000001,1.0,,
+closed_by_feb,kind,AI model leaderboards,before_close,1w,9,26,0.9512307692307693,0.9615384615384616,,
 closed_by_feb,source,Outside source exists,after_start,1d,0,8352,0.03511619971264368,0.02610153256704981,0.023036908595491703,0.029475689460773145
 closed_by_feb,source,Outside source exists,after_start,1d,1,2838,0.14066384778012686,0.1109936575052854,0.10078877503493247,0.12174605596094809
 closed_by_feb,source,Outside source exists,after_start,1d,2,1814,0.24616234840132303,0.19845644983461963,0.1823956483289392,0.21501190858388644
@@ -649,6 +917,212 @@ open_in_feb,default_side,No default side,before_close,1w,6,29,0.6583793103448277
 open_in_feb,default_side,No default side,before_close,1w,7,32,0.75878125,0.6875,0.5294117647058824,0.8387096774193549
 open_in_feb,default_side,No default side,before_close,1w,8,46,0.8580434782608696,0.8913043478260869,0.7931775035595633,0.9782608695652174
 open_in_feb,default_side,No default side,before_close,1w,9,158,0.9654683544303796,0.9936708860759493,0.9807692307692307,1.0
+open_in_feb,kind,Everything else,after_start,1d,0,890,0.041721910112359546,0.017977528089887642,0.010802598858183602,0.026444154503722755
+open_in_feb,kind,Everything else,after_start,1d,1,423,0.14432624113475176,0.09929078014184398,0.06912982875348467,0.1306103678929766
+open_in_feb,kind,Everything else,after_start,1d,2,292,0.24664726027397266,0.18835616438356165,0.14472480877951446,0.23780211711436086
+open_in_feb,kind,Everything else,after_start,1d,3,201,0.3481517412935323,0.263681592039801,0.2068922397047397,0.32105978260869567
+open_in_feb,kind,Everything else,after_start,1d,4,217,0.45070276497695855,0.2672811059907834,0.20966517857142858,0.33346063895981287
+open_in_feb,kind,Everything else,after_start,1d,5,167,0.5382185628742515,0.4431137724550898,0.3627827380952381,0.5104758168069624
+open_in_feb,kind,Everything else,after_start,1d,6,92,0.6460326086956522,0.43478260869565216,0.32772974308300395,0.5481358529111336
+open_in_feb,kind,Everything else,after_start,1d,7,81,0.7443827160493827,0.6666666666666666,0.5616996951219513,0.7628453947368421
+open_in_feb,kind,Everything else,after_start,1d,8,77,0.8474025974025974,0.7792207792207793,0.6644791666666666,0.8712217194570135
+open_in_feb,kind,Everything else,after_start,1d,9,39,0.9344358974358976,0.7948717948717948,0.6578947368421053,0.9210526315789473
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,0,23,0.031434782608695644,0.043478260869565216,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,1,8,0.14875,0.125,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,2,10,0.238,0.2,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,3,5,0.36099999999999993,0.2,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,4,5,0.44300000000000006,0.2,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,5,4,0.565,0.5,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,6,2,0.6825,1.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,7,2,0.71,1.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,8,1,0.83,0.0,,
+open_in_feb,kind,"Who says what, post counts",after_start,1d,0,53,0.02642452830188679,0.03773584905660377,0.03225806451612903,0.045454545454545456
+open_in_feb,kind,"Who says what, post counts",after_start,1d,1,2,0.11750000000000001,0.0,,
+open_in_feb,kind,"Who says what, post counts",after_start,1d,2,3,0.25333333333333335,0.0,,
+open_in_feb,kind,"Who says what, post counts",after_start,1d,4,6,0.4616666666666666,0.3333333333333333,,
+open_in_feb,kind,"Who says what, post counts",after_start,1d,5,8,0.547625,0.5,,
+open_in_feb,kind,"Who says what, post counts",after_start,1d,6,3,0.6366666666666667,0.6666666666666666,,
+open_in_feb,kind,"Who says what, post counts",after_start,1d,7,3,0.755,0.6666666666666666,,
+open_in_feb,kind,"Who says what, post counts",after_start,1d,8,7,0.8421428571428572,0.5714285714285714,,
+open_in_feb,kind,AI model leaderboards,after_start,1d,0,53,0.05393396226415096,0.05660377358490566,0.0,0.09647952853598013
+open_in_feb,kind,AI model leaderboards,after_start,1d,1,15,0.13100000000000003,0.13333333333333333,,
+open_in_feb,kind,AI model leaderboards,after_start,1d,2,12,0.24333333333333332,0.25,,
+open_in_feb,kind,AI model leaderboards,after_start,1d,3,13,0.34538461538461535,0.15384615384615385,,
+open_in_feb,kind,AI model leaderboards,after_start,1d,4,11,0.4663636363636364,0.09090909090909091,,
+open_in_feb,kind,AI model leaderboards,after_start,1d,5,4,0.52625,0.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1d,6,1,0.635,0.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1d,9,1,0.95,1.0,,
+open_in_feb,kind,Everything else,after_start,1m,0,1259,0.030420174741858617,0.019857029388403495,0.012076337617354844,0.028521920589659695
+open_in_feb,kind,Everything else,after_start,1m,1,319,0.1427037617554859,0.13479623824451412,0.09513820078226858,0.17249061441259955
+open_in_feb,kind,Everything else,after_start,1m,2,178,0.2483511235955056,0.21348314606741572,0.1534047919293821,0.2769518631057092
+open_in_feb,kind,Everything else,after_start,1m,3,115,0.34636521739130427,0.3391304347826087,0.25326576576576576,0.42857142857142855
+open_in_feb,kind,Everything else,after_start,1m,4,105,0.4464000000000001,0.37142857142857144,0.28082819303338175,0.4575634178905207
+open_in_feb,kind,Everything else,after_start,1m,5,97,0.5436804123711341,0.5154639175257731,0.4205,0.6170212765957447
+open_in_feb,kind,Everything else,after_start,1m,6,84,0.6495059523809524,0.5,0.39080459770114945,0.6
+open_in_feb,kind,Everything else,after_start,1m,7,67,0.7492985074626866,0.7611940298507462,0.6567164179104478,0.8540601023017902
+open_in_feb,kind,Everything else,after_start,1m,8,69,0.8537391304347826,0.7246376811594203,0.6083871915393655,0.829891304347826
+open_in_feb,kind,Everything else,after_start,1m,9,72,0.9450416666666668,0.9444444444444444,0.8843227424749164,0.9943452380952379
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1m,0,19,0.02568421052631579,0.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1m,1,3,0.1466666666666667,0.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1m,2,1,0.215,0.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1m,3,1,0.37,0.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1m,5,1,0.5,1.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1m,6,2,0.6475,1.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1m,8,4,0.8643750000000001,0.75,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1m,9,2,0.94125,1.0,,
+open_in_feb,kind,"Who says what, post counts",after_start,1m,0,31,0.018499999999999996,0.03225806451612903,0.03225806451612903,0.03225806451612903
+open_in_feb,kind,"Who says what, post counts",after_start,1m,2,2,0.2675,0.5,,
+open_in_feb,kind,"Who says what, post counts",after_start,1m,3,2,0.388,0.0,,
+open_in_feb,kind,"Who says what, post counts",after_start,1m,4,6,0.44849999999999995,0.16666666666666666,,
+open_in_feb,kind,"Who says what, post counts",after_start,1m,5,4,0.555,0.5,,
+open_in_feb,kind,"Who says what, post counts",after_start,1m,6,3,0.64,0.3333333333333333,,
+open_in_feb,kind,"Who says what, post counts",after_start,1m,7,5,0.765,0.8,,
+open_in_feb,kind,"Who says what, post counts",after_start,1m,8,3,0.8233333333333334,0.6666666666666666,,
+open_in_feb,kind,"Who says what, post counts",after_start,1m,9,1,0.92,1.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1m,0,67,0.03297761194029852,0.05970149253731343,0.016800847457627117,0.09730850858576108
+open_in_feb,kind,AI model leaderboards,after_start,1m,1,22,0.1420227272727273,0.18181818181818182,,
+open_in_feb,kind,AI model leaderboards,after_start,1m,2,6,0.23758333333333334,0.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1m,3,6,0.3425,0.3333333333333333,,
+open_in_feb,kind,AI model leaderboards,after_start,1m,4,3,0.45166666666666666,0.3333333333333333,,
+open_in_feb,kind,AI model leaderboards,after_start,1m,5,2,0.535,0.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1m,6,1,0.63,0.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1m,7,1,0.735,0.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1m,8,1,0.805,0.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1m,9,1,0.954,1.0,,
+open_in_feb,kind,Everything else,after_start,1w,0,1127,0.0360452528837622,0.019520851818988466,0.011951884858341286,0.028302447827719436
+open_in_feb,kind,Everything else,after_start,1w,1,411,0.14037591240875913,0.1070559610705596,0.0788475037290515,0.13569629363080243
+open_in_feb,kind,Everything else,after_start,1w,2,227,0.24634361233480176,0.21585903083700442,0.16267931774539704,0.2818204380467829
+open_in_feb,kind,Everything else,after_start,1w,3,163,0.3457177914110429,0.27607361963190186,0.20935481977222026,0.3404290069686411
+open_in_feb,kind,Everything else,after_start,1w,4,141,0.4449290780141844,0.3829787234042553,0.3140667361835245,0.45763729977116696
+open_in_feb,kind,Everything else,after_start,1w,5,108,0.5460648148148148,0.48148148148148145,0.3815178914967295,0.5787468918803051
+open_in_feb,kind,Everything else,after_start,1w,6,90,0.6492666666666667,0.5222222222222223,0.41709563626861773,0.62721482000935
+open_in_feb,kind,Everything else,after_start,1w,7,85,0.7418117647058824,0.6352941176470588,0.5352782392026578,0.7317073170731707
+open_in_feb,kind,Everything else,after_start,1w,8,88,0.8464375000000001,0.7386363636363636,0.6247069854664792,0.8333333333333334
+open_in_feb,kind,Everything else,after_start,1w,9,63,0.9344920634920636,0.8412698412698413,0.75,0.9344262295081968
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,0,28,0.018857142857142854,0.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,1,13,0.13615384615384613,0.07692307692307693,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,2,5,0.2508,0.4,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,3,4,0.35124999999999995,0.5,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,4,3,0.435,0.6666666666666666,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,5,2,0.5175000000000001,0.5,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,6,2,0.6825,0.5,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,8,1,0.885,1.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,9,2,0.99125,1.0,,
+open_in_feb,kind,"Who says what, post counts",after_start,1w,0,51,0.015,0.0392156862745098,0.0,0.05263157894736842
+open_in_feb,kind,"Who says what, post counts",after_start,1w,1,4,0.14625,0.0,,
+open_in_feb,kind,"Who says what, post counts",after_start,1w,2,4,0.22775,0.0,,
+open_in_feb,kind,"Who says what, post counts",after_start,1w,3,1,0.375,0.0,,
+open_in_feb,kind,"Who says what, post counts",after_start,1w,4,6,0.4391666666666667,0.5,,
+open_in_feb,kind,"Who says what, post counts",after_start,1w,5,3,0.5499999999999999,0.3333333333333333,,
+open_in_feb,kind,"Who says what, post counts",after_start,1w,6,6,0.6504166666666666,0.5,,
+open_in_feb,kind,"Who says what, post counts",after_start,1w,7,4,0.7562500000000001,0.75,,
+open_in_feb,kind,"Who says what, post counts",after_start,1w,8,5,0.8390000000000001,0.6,,
+open_in_feb,kind,"Who says what, post counts",after_start,1w,9,1,0.915,1.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1w,0,49,0.03344897959183673,0.061224489795918366,0.0,0.10344827586206896
+open_in_feb,kind,AI model leaderboards,after_start,1w,1,22,0.14597727272727273,0.09090909090909091,,
+open_in_feb,kind,AI model leaderboards,after_start,1w,2,16,0.24265625000000002,0.25,,
+open_in_feb,kind,AI model leaderboards,after_start,1w,3,16,0.32625,0.125,,
+open_in_feb,kind,AI model leaderboards,after_start,1w,4,3,0.43333333333333335,0.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1w,5,1,0.505,0.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1w,6,1,0.6,0.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1w,7,1,0.75,0.0,,
+open_in_feb,kind,AI model leaderboards,after_start,1w,9,1,0.9585,1.0,,
+open_in_feb,kind,Everything else,before_close,1d,0,1931,0.008305541170378043,0.011393060590367685,0.006825990081771107,0.01639400921658986
+open_in_feb,kind,Everything else,before_close,1d,1,76,0.14863815789473683,0.11842105263157894,0.042923657072495,0.2026923076923076
+open_in_feb,kind,Everything else,before_close,1d,2,49,0.25,0.2653061224489796,0.14135714285714288,0.38626373626373617
+open_in_feb,kind,Everything else,before_close,1d,3,34,0.3486617647058824,0.4411764705882353,0.2794270833333333,0.59375
+open_in_feb,kind,Everything else,before_close,1d,4,18,0.44113888888888886,0.7222222222222222,,
+open_in_feb,kind,Everything else,before_close,1d,5,22,0.549590909090909,0.7272727272727273,,
+open_in_feb,kind,Everything else,before_close,1d,6,29,0.6442413793103448,0.8275862068965517,,
+open_in_feb,kind,Everything else,before_close,1d,7,33,0.744590909090909,0.696969696969697,0.5454545454545454,0.8484848484848485
+open_in_feb,kind,Everything else,before_close,1d,8,44,0.842125,0.8863636363636364,0.7954545454545454,0.9772727272727273
+open_in_feb,kind,Everything else,before_close,1d,9,318,0.9789135220125785,0.9905660377358491,0.9775981506512657,1.0
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1d,0,45,0.003744444444444445,0.022222222222222223,0.0,0.08108108108108109
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1d,1,3,0.12883333333333333,0.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1d,4,1,0.42,1.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1d,5,1,0.525,0.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1d,9,10,0.9968000000000001,1.0,,
+open_in_feb,kind,"Who says what, post counts",before_close,1d,0,52,0.0047692307692307695,0.0,0.0,0.0
+open_in_feb,kind,"Who says what, post counts",before_close,1d,1,3,0.13449999999999998,0.0,,
+open_in_feb,kind,"Who says what, post counts",before_close,1d,2,1,0.265,0.0,,
+open_in_feb,kind,"Who says what, post counts",before_close,1d,3,5,0.36739999999999995,0.2,,
+open_in_feb,kind,"Who says what, post counts",before_close,1d,4,3,0.465,0.6666666666666666,,
+open_in_feb,kind,"Who says what, post counts",before_close,1d,5,4,0.5525,0.25,,
+open_in_feb,kind,"Who says what, post counts",before_close,1d,6,5,0.663,0.6,,
+open_in_feb,kind,"Who says what, post counts",before_close,1d,7,3,0.745,0.6666666666666666,,
+open_in_feb,kind,"Who says what, post counts",before_close,1d,8,6,0.8540833333333334,0.6666666666666666,,
+open_in_feb,kind,"Who says what, post counts",before_close,1d,9,3,0.9471666666666666,1.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1d,0,95,0.0021000000000000003,0.0,0.0,0.0
+open_in_feb,kind,AI model leaderboards,before_close,1d,1,2,0.11,0.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1d,2,2,0.232,1.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1d,4,1,0.455,0.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1d,9,10,0.9879,1.0,,
+open_in_feb,kind,Everything else,before_close,1m,0,1615,0.02086656346749226,0.015479876160990712,0.009702644277726827,0.02267549261083743
+open_in_feb,kind,Everything else,before_close,1m,1,185,0.13852162162162163,0.14054054054054055,0.09407379017095253,0.19204612655233586
+open_in_feb,kind,Everything else,before_close,1m,2,102,0.24486764705882358,0.24509803921568626,0.1717171717171717,0.3317961165048543
+open_in_feb,kind,Everything else,before_close,1m,3,81,0.34851234567901235,0.37037037037037035,0.2682926829268293,0.4592461953075459
+open_in_feb,kind,Everything else,before_close,1m,4,44,0.44536363636363646,0.5454545454545454,0.40681818181818186,0.6931935817805381
+open_in_feb,kind,Everything else,before_close,1m,5,38,0.5560263157894736,0.6578947368421053,0.5060897435897436,0.8108108108108109
+open_in_feb,kind,Everything else,before_close,1m,6,52,0.6531153846153847,0.7307692307692307,0.599773222060958,0.8476777939042089
+open_in_feb,kind,Everything else,before_close,1m,7,52,0.7471730769230768,0.7307692307692307,0.6057066222715501,0.8431372549019608
+open_in_feb,kind,Everything else,before_close,1m,8,77,0.8552922077922076,0.8571428571428571,0.7662337662337663,0.922077922077922
+open_in_feb,kind,Everything else,before_close,1m,9,154,0.9557857142857143,0.9675324675324676,0.9370846518987341,0.9934863339275104
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1m,0,22,0.015977272727272725,0.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1m,1,2,0.13,0.5,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1m,3,2,0.35750000000000004,0.5,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1m,4,1,0.485,0.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1m,5,1,0.555,1.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1m,8,1,0.835,1.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1m,9,4,0.966875,1.0,,
+open_in_feb,kind,"Who says what, post counts",before_close,1m,0,30,0.015933333333333334,0.0,0.0,0.0
+open_in_feb,kind,"Who says what, post counts",before_close,1m,1,1,0.103,1.0,,
+open_in_feb,kind,"Who says what, post counts",before_close,1m,2,2,0.25775,0.0,,
+open_in_feb,kind,"Who says what, post counts",before_close,1m,3,2,0.3395,0.0,,
+open_in_feb,kind,"Who says what, post counts",before_close,1m,4,5,0.47400000000000003,0.4,,
+open_in_feb,kind,"Who says what, post counts",before_close,1m,5,3,0.5616666666666666,0.6666666666666666,,
+open_in_feb,kind,"Who says what, post counts",before_close,1m,6,4,0.6387499999999999,0.25,,
+open_in_feb,kind,"Who says what, post counts",before_close,1m,7,3,0.77,0.6666666666666666,,
+open_in_feb,kind,"Who says what, post counts",before_close,1m,8,6,0.835,0.6666666666666666,,
+open_in_feb,kind,"Who says what, post counts",before_close,1m,9,1,0.935,1.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1m,0,88,0.019551136363636368,0.011363636363636364,0.0,0.03710538355955463
+open_in_feb,kind,AI model leaderboards,before_close,1m,1,7,0.13428571428571429,0.14285714285714285,,
+open_in_feb,kind,AI model leaderboards,before_close,1m,2,4,0.23725,0.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1m,4,1,0.4675,1.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1m,5,1,0.585,1.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1m,6,2,0.64975,0.5,,
+open_in_feb,kind,AI model leaderboards,before_close,1m,7,2,0.7525,1.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1m,8,4,0.8136249999999999,1.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1m,9,1,0.957,1.0,,
+open_in_feb,kind,Everything else,before_close,1w,0,1879,0.012306279936136243,0.013304949441192123,0.007663801272505754,0.02041754517202338
+open_in_feb,kind,Everything else,before_close,1w,1,105,0.14964285714285713,0.22857142857142856,0.16017924528301886,0.3014517310862795
+open_in_feb,kind,Everything else,before_close,1w,2,71,0.24583802816901407,0.28169014084507044,0.17682427401340284,0.3957798260149129
+open_in_feb,kind,Everything else,before_close,1w,3,38,0.3498947368421053,0.3684210526315789,0.23076923076923078,0.5135135135135135
+open_in_feb,kind,Everything else,before_close,1w,4,36,0.4425833333333334,0.5555555555555556,0.3833708708708709,0.7142857142857143
+open_in_feb,kind,Everything else,before_close,1w,5,29,0.5530689655172413,0.6206896551724138,,
+open_in_feb,kind,Everything else,before_close,1w,6,52,0.6561826923076922,0.7692307692307693,0.6631666666666667,0.8761513157894736
+open_in_feb,kind,Everything else,before_close,1w,7,54,0.7594722222222221,0.7962962962962963,0.6879040404040404,0.8909090909090909
+open_in_feb,kind,Everything else,before_close,1w,8,60,0.8539166666666667,0.8833333333333333,0.8,0.9508196721311475
+open_in_feb,kind,Everything else,before_close,1w,9,233,0.9687618025751072,0.9957081545064378,0.9866354166666667,1.0
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1w,0,44,0.007227272727272729,0.022727272727272728,0.0,0.08823529411764706
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1w,1,4,0.13625,0.25,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1w,2,2,0.22999999999999998,0.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1w,8,1,0.835,1.0,,
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1w,9,9,0.9819999999999999,1.0,,
+open_in_feb,kind,"Who says what, post counts",before_close,1w,0,49,0.016795918367346938,0.02040816326530612,0.0,0.05
+open_in_feb,kind,"Who says what, post counts",before_close,1w,1,6,0.12374999999999999,0.0,,
+open_in_feb,kind,"Who says what, post counts",before_close,1w,2,3,0.27199999999999996,0.3333333333333333,,
+open_in_feb,kind,"Who says what, post counts",before_close,1w,3,5,0.3410000000000001,0.2,,
+open_in_feb,kind,"Who says what, post counts",before_close,1w,4,5,0.44020000000000004,0.2,,
+open_in_feb,kind,"Who says what, post counts",before_close,1w,5,4,0.565,0.75,,
+open_in_feb,kind,"Who says what, post counts",before_close,1w,6,4,0.6487499999999999,0.5,,
+open_in_feb,kind,"Who says what, post counts",before_close,1w,7,3,0.7716666666666666,0.3333333333333333,,
+open_in_feb,kind,"Who says what, post counts",before_close,1w,8,4,0.8375,1.0,,
+open_in_feb,kind,"Who says what, post counts",before_close,1w,9,2,0.92,1.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1w,0,96,0.005791666666666667,0.010416666666666666,0.0,0.03728009259259258
+open_in_feb,kind,AI model leaderboards,before_close,1w,1,2,0.1465,0.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1w,2,1,0.21,1.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1w,6,1,0.655,0.0,,
+open_in_feb,kind,AI model leaderboards,before_close,1w,9,10,0.95225,1.0,,
 open_in_feb,source,Outside source exists,after_start,1d,0,780,0.04013205128205128,0.023076923076923078,0.014452811006489498,0.0331455862977602
 open_in_feb,source,Outside source exists,after_start,1d,1,269,0.1419293680297398,0.11895910780669144,0.08156028368794327,0.15488591487494513
 open_in_feb,source,Outside source exists,after_start,1d,2,186,0.24528494623655916,0.20430107526881722,0.1515708965150306,0.262163191190253

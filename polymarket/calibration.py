@@ -6,7 +6,7 @@ Main sample: the closed_by_feb cohort. Each market counts once per moment. Inter
 Filtered (main) plots keep a moment only if $1,000 had traded by then (volume.csv, Becker's trades, so open_in_feb mostly drops out) and,
 in a one-winner (negRisk) event, the event's prices at that moment sum to at most 130%. Unfiltered plots go to plots/polymarket/unfiltered.
 """
-import json, sys
+import json, re, sys
 from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
@@ -20,6 +20,15 @@ from yes_bias import boot_rate, summary
 
 OUT = HERE.parent / "plots/polymarket"
 HORIZONS, MIN_BIN, MIN_VOL, MAX_SUM = ["1d", "1w", "1m"], 30, 1000, 1.3
+# Market kinds by text rules on question + event title, tuned on 400 seen markets. On 200 fresh ones: chart 24/25, tsa 2/2, ai 1/1, no false alarms;
+# the one chart miss (a song title with "Say") led to the quoted-phrase "say" guard, so that fix is untested on fresh markets.
+CHART = (r"netflix (movie|show|series)|top (global |us )?netflix|most streamed|top spotify|song on (us |global )?spotify|spotify (charts|streams|artist|album|song)"
+         r"|billboard|hot 100|rotten tomatoes|tomatometer|metacritic|metascore|box office|opening weekend|(highest|top)[- ]grossing|\bgross(es)?\b|\bviews\b"
+         r"|\bsubscribers\b|\bviewers\b|most searched|year in search|#\d+ searched|album sales|first[- ]week sales|straight weeks|play store|app store on"
+         r"|#\d+ (free |paid |grossing |finance )?app\b|top \d+ app|most popular app|\bmelon\b|top \d+ game on steam")
+NOT_CHART = r"domestic product|\b(say|said)\s+[\"“]|earnings|\bstocks?\b|\bshares?\b|market cap|award|golden globe|oscar|grammy|\bremoved\b|acquire"
+KINDS = [("tsa", r"\btsa\b", None), ("ai_leaderboard", r"(top|best|#\d+|number one) ai model|lmarena|chatbot arena|text arena|ai model (rank|leaderboard)", None),
+         ("chart", CHART, NOT_CHART)]
 ANCHORS = {"after_start": "after trading starts", "before_close": "before closing"}
 
 
@@ -49,6 +58,11 @@ def frame():
     a["creator"] = a.id.map(event)  # the resampling unit, named creator for the shared helpers
     a["prob"] = a.prob.clip(.001, .999)
     a["bin"] = np.minimum((a.prob * 10).astype(int), 9)
+    text = a.id.map({m["id"]: f'{m["question"]} | {m["event_title"] or ""}' for m in map(json.loads, open(HERE / "input.jsonl"))})
+    a["kind"] = np.where(a.id.map(labels.set_index("id")["yes"]).map(lambda y: "speech_or_posts" in y), "speech_or_posts", "other")
+    for kind, pat, not_pat in KINDS:  # speech_or_posts (Haiku), then the first rule that matches
+        hit = text.map(lambda t: bool(re.search(pat, t, re.I)) and not (not_pat and re.search(not_pat, t, re.I)))
+        a.loc[hit & (a.kind == "other"), "kind"] = kind
     a["source"] = np.where(a.outside.isna(), None, np.where(a.outside != "none", "has a source", np.where(a.substantive >= 80, "no source, substantive 80+", "no source, substantive <80")))
     return a
 
@@ -56,6 +70,8 @@ def frame():
 SPLITS = {
     "all": ("short", [(None, "#1d4ed8", "All markets"), (True, "#c2410c", "Closed within a week of starting")]),
     "default_side": ("default_side", [("NO", "#c2410c", "Nothing happening means NO"), ("YES", "#1d4ed8", "Nothing happening means YES"), ("NONE", "#047857", "No default side")]),
+    "kind": ("kind", [("other", "#1d4ed8", "Everything else"), ("chart", "#c2410c", "Rankings, scores, box office, views"), ("speech_or_posts", "#6b7280", "Who says what, post counts"),
+                      ("tsa", "#047857", "TSA passenger counts"), ("ai_leaderboard", "#7c3aed", "AI model leaderboards")]),  # metrics only, no plot
     "source": ("source", [("has a source", "#6b7280", "Outside source exists"), ("no source, substantive <80", "#1d4ed8", "No source, substantive <80"), ("no source, substantive 80+", "#c2410c", "No source, substantive 80+")]),
 }
 

@@ -25,6 +25,34 @@ closed_by_feb,default_side,No default side,before_close,1m,917,0.0617,5326,0.187
 closed_by_feb,default_side,Nothing happening means NO,before_close,1w,4557,0.0842,8812,0.2038,0.2105,-0.0067,0.064,-0.0433,0.1819
 closed_by_feb,default_side,Nothing happening means YES,before_close,1w,235,0.1047,300,0.5748,0.4967,0.0781,-0.7845,-1.1679,-0.3584
 closed_by_feb,default_side,No default side,before_close,1w,2444,0.0728,13288,0.209,0.1907,0.0183,-0.2534,-0.3078,-0.1991
+closed_by_feb,kind,Everything else,after_start,1d,7720,0.1137,21292,0.2739,0.2324,0.0414,-0.3485,-0.4126,-0.2837
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,499,0.1036,3143,0.2077,0.1734,0.0343,-0.3342,-0.428,-0.2551
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,671,0.1384,8292,0.3373,0.3079,0.0294,-0.2141,-0.2983,-0.1215
+closed_by_feb,kind,TSA passenger counts,after_start,1d,53,0.0982,259,0.2305,0.1931,0.0375,-0.2909,-0.4028,-0.1654
+closed_by_feb,kind,AI model leaderboards,after_start,1d,35,0.0656,298,0.1314,0.1141,0.0173,-0.2161,-0.3357,-0.1168
+closed_by_feb,kind,Everything else,after_start,1m,3523,0.0683,9187,0.1949,0.1717,0.0232,-0.3175,-0.4216,-0.2004
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,57,0.0567,396,0.1525,0.1313,0.0212,-0.3817,-0.6734,-0.0833
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,46,0.1051,344,0.3214,0.2965,0.0249,-0.2205,-0.6888,0.1925
+closed_by_feb,kind,AI model leaderboards,after_start,1m,29,0.0361,245,0.12,0.1102,0.0098,-0.2584,-0.5166,-0.0839
+closed_by_feb,kind,Everything else,after_start,1w,6193,0.0917,16839,0.2396,0.2096,0.03,-0.3137,-0.3734,-0.2583
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,285,0.0564,2072,0.1773,0.1646,0.0127,-0.257,-0.399,-0.1491
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,286,0.0861,2855,0.2215,0.2119,0.0095,-0.1372,-0.3092,0.0332
+closed_by_feb,kind,TSA passenger counts,after_start,1w,30,0.0729,159,0.1847,0.1698,0.0148,-0.2323,-0.4593,0.0462
+closed_by_feb,kind,AI model leaderboards,after_start,1w,35,0.0608,303,0.1211,0.1122,0.0089,-0.1421,-0.2346,-0.0786
+closed_by_feb,kind,Everything else,before_close,1d,7727,0.0519,21649,0.2187,0.23,-0.0113,0.1482,0.0744,0.2241
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,499,0.0295,3234,0.1802,0.1732,0.0071,-0.3119,-0.4324,-0.2103
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,669,0.1309,8236,0.3309,0.3071,0.0238,-0.193,-0.2945,-0.0792
+closed_by_feb,kind,TSA passenger counts,before_close,1d,53,0.0537,259,0.1998,0.1931,0.0067,-0.1149,-0.2483,0.0199
+closed_by_feb,kind,AI model leaderboards,before_close,1d,35,0.0013,315,0.1063,0.1079,-0.0016,-0.4524,-0.9125,0.0165
+closed_by_feb,kind,Everything else,before_close,1m,3519,0.0676,9207,0.1908,0.1705,0.0203,-0.2827,-0.3861,-0.1665
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,57,0.0508,389,0.1599,0.1362,0.0236,-0.3882,-0.7131,-0.0872
+closed_by_feb,kind,"Who says what, post counts",before_close,1m,46,0.1336,344,0.3657,0.2965,0.0692,-0.4936,-1.0507,-0.0249
+closed_by_feb,kind,AI model leaderboards,before_close,1m,29,0.0366,250,0.111,0.108,0.003,-0.1196,-0.1904,-0.0788
+closed_by_feb,kind,Everything else,before_close,1w,6192,0.0683,17027,0.2071,0.208,-0.0009,-0.0124,-0.0787,0.064
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,284,0.1023,2055,0.2311,0.163,0.0681,-0.6695,-0.8309,-0.5222
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,284,0.1225,2844,0.2384,0.2113,0.027,-0.2446,-0.4374,-0.0846
+closed_by_feb,kind,TSA passenger counts,before_close,1w,30,0.1075,159,0.2161,0.1698,0.0462,-0.3958,-0.5716,-0.1859
+closed_by_feb,kind,AI model leaderboards,before_close,1w,35,0.009,315,0.1068,0.1079,-0.0012,-0.1764,-0.3695,0.0755
 closed_by_feb,source,Outside source exists,after_start,1d,4156,0.0987,18082,0.2228,0.1863,0.0365,-0.3537,-0.4288,-0.296
 closed_by_feb,source,"No source, substantive <80",after_start,1d,2933,0.1515,10693,0.3855,0.3442,0.0414,-0.2715,-0.3472,-0.2
 closed_by_feb,source,"No source, substantive 80+",after_start,1d,2590,0.1193,4427,0.2728,0.2408,0.032,-0.2574,-0.3558,-0.1635
@@ -65,6 +93,30 @@ open_in_feb,default_side,No default side,before_close,1m,305,0.0481,1506,0.1707,
 open_in_feb,default_side,Nothing happening means NO,before_close,1w,535,0.0565,1103,0.1664,0.2094,-0.0431,0.7278,0.4516,1.0434
 open_in_feb,default_side,Nothing happening means YES,before_close,1w,29,0.0456,30,0.6081,0.5667,0.0414,-0.6306,-1.6924,0.4175
 open_in_feb,default_side,No default side,before_close,1w,350,0.0329,1679,0.1744,0.1674,0.007,-0.2674,-0.4213,-0.1202
+open_in_feb,kind,Everything else,after_start,1d,831,0.1202,2479,0.2619,0.1948,0.0671,-0.5485,-0.671,-0.4264
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,16,0.1253,60,0.2365,0.2,0.0365,-0.2931,-0.7271,0.2074
+open_in_feb,kind,"Who says what, post counts",after_start,1d,11,0.1064,85,0.2308,0.1882,0.0425,-0.4919,-1.0897,0.2731
+open_in_feb,kind,AI model leaderboards,after_start,1d,13,0.119,110,0.1914,0.1091,0.0823,-0.809,-1.2276,-0.3676
+open_in_feb,kind,Everything else,after_start,1m,780,0.0923,2365,0.2111,0.1882,0.0229,-0.2569,-0.3964,-0.1246
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1m,11,0.0492,33,0.2621,0.2424,0.0196,-0.2797,-1.3887,0.7491
+open_in_feb,kind,"Who says what, post counts",after_start,1m,6,0.1131,57,0.2795,0.2281,0.0514,-0.5073,-1.0631,0.5435
+open_in_feb,kind,AI model leaderboards,after_start,1m,13,0.1045,110,0.1306,0.1091,0.0215,-0.2934,-0.4116,-0.1713
+open_in_feb,kind,Everything else,after_start,1w,831,0.1062,2503,0.2346,0.1938,0.0408,-0.3916,-0.525,-0.2618
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,16,0.0869,60,0.1922,0.2,-0.0078,0.0578,-0.5256,0.5964
+open_in_feb,kind,"Who says what, post counts",after_start,1w,11,0.0986,85,0.223,0.1882,0.0348,-0.4377,-1.0334,0.428
+open_in_feb,kind,AI model leaderboards,after_start,1w,13,0.1074,110,0.1642,0.1091,0.0552,-0.5831,-0.8563,-0.3169
+open_in_feb,kind,Everything else,before_close,1d,830,0.0299,2554,0.1813,0.1915,-0.0102,0.1609,-0.029,0.3452
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1d,16,0.0274,60,0.1911,0.2,-0.0089,0.1644,-0.8666,1.9125
+open_in_feb,kind,"Who says what, post counts",before_close,1d,11,0.0717,85,0.2338,0.1882,0.0456,-0.6475,-1.3903,0.3785
+open_in_feb,kind,AI model leaderboards,before_close,1d,13,0.0129,110,0.102,0.1091,-0.0071,0.0171,-1.056,0.6566
+open_in_feb,kind,Everything else,before_close,1m,780,0.0572,2400,0.183,0.1858,-0.0029,0.0093,-0.1292,0.1514
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1m,11,0.0544,33,0.2142,0.2424,-0.0282,0.4461,-0.9063,1.5863
+open_in_feb,kind,"Who says what, post counts",before_close,1m,6,0.1177,57,0.2919,0.2281,0.0639,-0.65,-1.2442,0.5011
+open_in_feb,kind,AI model leaderboards,before_close,1m,13,0.0309,110,0.1062,0.1091,-0.0029,0.0004,-0.1421,0.2606
+open_in_feb,kind,Everything else,before_close,1w,831,0.0421,2557,0.1774,0.1912,-0.0138,0.2177,0.0444,0.3819
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1w,16,0.0323,60,0.1833,0.2,-0.0167,0.404,-0.4722,1.6684
+open_in_feb,kind,"Who says what, post counts",before_close,1w,11,0.0844,85,0.2194,0.1882,0.0311,-0.3819,-1.0673,0.4923
+open_in_feb,kind,AI model leaderboards,before_close,1w,13,0.019,110,0.1022,0.1091,-0.0069,0.0729,-0.4155,0.6238
 open_in_feb,source,Outside source exists,after_start,1d,438,0.1053,1764,0.2234,0.182,0.0414,-0.3684,-0.4918,-0.2545
 open_in_feb,source,"No source, substantive <80",after_start,1d,204,0.1692,444,0.3867,0.2387,0.148,-1.0058,-1.4098,-0.6732
 open_in_feb,source,"No source, substantive 80+",after_start,1d,306,0.127,520,0.2626,0.1827,0.0799,-0.6209,-0.9726,-0.3385
