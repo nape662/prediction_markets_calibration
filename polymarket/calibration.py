@@ -144,7 +144,7 @@ def figures(out, filtered, a):
     plot = lambda *x: plot_one(out, filtered, *x)
     plot(bins, "all", list(ANCHORS), "overall", "Polymarket calibration, all labeled markets",
          "Before closing: a market that resolves YES early closes early, so this moment depends on the outcome.")
-    plot(bins, "default_side", ["after_start"], "by_side", "Polymarket, split by what happens if nothing new happens", "Haiku answered: if nothing new happens until the deadline, how does this resolve?")
+    plot(bins, "default_side", list(ANCHORS), "by_side", "Polymarket, split by what happens if nothing new happens", "Haiku answered: if nothing new happens until the deadline, how does this resolve?")
     plot(bins, "source", ["after_start"], "by_source", "Polymarket, split by whether an outside source gives the answer",
          "Outside source: Haiku's forced-choice follow-up (polymarket/outside_prompt.txt): poll, odds, finance, data series, schedule or published forecast, not another prediction market. Substantive: 0-100 score from the main pass.")
 

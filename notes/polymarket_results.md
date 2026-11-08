@@ -1,58 +1,43 @@
-# Polymarket: first calibration with Haiku labels (2026-11-04/05)
+# Polymarket calibration (2026-11-08)
 
-**Polymarket overprices YES too, about half as much as Manifold, and the "no outside source" markets are no better or worse calibrated than the rest.** A week after trading starts, prices average 22.9% and markets resolve YES 20.4% of the time: a shift of −0.29 log-odds (95%: −0.34 to −0.23) on 22,228 markets in 6,801 events. Manifold's comparable number for its main "resolves NO" group was −0.65.
+**Polymarket is mostly calibrated: prices are off by 2–4 points on average.** The one steady error is where nothing happening means NO: there YES is a bit overpriced after trading starts, about half as much as on Manifold. Removing junk markets doesn't change the picture.
 
 ![Overall](../plots/polymarket/overall.png)
 
-*We took every resolved Yes/No Polymarket market that closed before 2026-02-02 with $1,000+ lifetime volume, after removing sports, asset-price and weather markets by text rules (36,853 markets). Prices are the last hourly point of Polymarket's CLOB price history at or before each moment, at most 3 days old. Moments are 1 day, 1 week and 1 month after trading opened, and before the market closed. Moments outside trading are skipped. Each dot is a 10-point price bin with its market count. Bars are 95%, resampling events (all markets sharing an `event_title`), because brackets of one event share one outcome.*
+*We took resolved Yes/No Polymarket markets that closed before 2026-02-02 with $1,000+ or 15+ traders, after text rules removed sports, asset-price and weather markets (36,853 markets). Price is the last hourly point of Polymarket's API price history at or before each moment, at most 3 days old. Moments are 1 day, 1 week and 1 month after trading opens, and before the market closes. Each dot is a 10-point price bin with its market count; bins under 30 markets are hidden. Bars are 95%, resampling events (markets of one event share an outcome).*
 
-## What the numbers say
+<span style="color:#c00000;font-size:1.4em;font-weight:bold">FILTER: a market counts at a moment only if $1,000 had traded on-chain before that moment, and not if it sits in a one-winner event whose prices then sum above 130%. Without this, empty order books show fake ~48% prices and create a dip at 40–50%. Unfiltered plots: plots/polymarket/unfiltered/.</span>
 
-All after trading starts, `closed_by_feb` cohort. Full table: `plots/polymarket/metrics.csv`.
+## Nothing happening means NO
 
-| Group, 1 week after start | Markets | Shift (95%) |
-|---|---|---|
-| All | 22,228 | −0.29 (−0.34 to −0.23) |
-| Nothing happening means NO | 8,782 | −0.33 (−0.43 to −0.23) |
-| Nothing happening means YES | 296 | +0.08 (−0.35 to +0.57) |
+Haiku read each market's text and answered: if nothing new happens until the deadline, how does this resolve? One week after trading starts:
 
-- **Stable over horizons:** −0.31, −0.29, −0.31 at 1 day, 1 week, 1 month after start.
-- **Not only the price floor.** Markets priced 5–95% have −0.27 (−0.33 to −0.21). Prices under 5% are worse (−0.66), consistent with the 0.1–1¢ floor on longshot brackets.
-- **The default-side flip replicates, but weakly.** "Means YES" is positive at every horizon (+0.26, +0.08, +0.59), on only 150–440 markets. Unlike Manifold, "no default side" is overpriced as much as "means NO" (−0.26 at 1 week), so the label explains less here.
-- **Close to closing it looks calibrated** (1 day before: −0.03). <span style="color:#c00000;font-weight:bold">This moment depends on the outcome: YES "by date" markets close early.</span> Don't read it as markets getting better.
-- **Markets open on Feb 2** (separate cohort, 2,813 markets): −0.39 at 1 week after start, similar.
+| If nothing happens | Markets | Price → YES rate | Shift (95%) |
+|---|---|---|---|
+| Resolves NO | 5,599 | 25% → 21% | −0.34 (−0.43 to −0.25) |
+| No default side | 6,077 | 23% → 22% | −0.11 (−0.17 to −0.05) |
+| Resolves YES | 205 | 48% → 50% | +0.13 (−0.33 to +0.57) |
 
-## Outside source: does it matter?
+Shift −0.34 means a "resolves NO" market priced at 50% comes true about 42% of the time. Manifold's same group is −0.65 (50% → 34%). The "resolves YES" group is too small to tell whether the error flips sign, as it does on Manifold.
 
-![By source](../plots/polymarket/by_source.png)
+![By default side](../plots/polymarket/by_side.png)
 
-*Same data, 1 week after start. "Outside source" is Haiku's forced-choice answer from the follow-up below. "Substantive" is the 0–100 score from the main pass.*
+*Same data, split by Haiku's answer. Top row: after trading starts. Bottom row: before closing.*
 
-At 1 week: has a source −0.29 (13,700), no source with substantive <80 −0.22 (5,054), no source with substantive 80+ −0.38 (3,419, 95%: −0.50 to −0.27). Intervals overlap. **I see no clear difference.** If anything, the "interesting" group (no source, substantive) is slightly more overpriced. Brier is higher for no-source markets (0.10–0.12 against 0.07), but that mostly reflects harder questions with prices nearer 50%, not worse calibration.
+<span style="color:#c00000;font-size:1.4em;font-weight:bold">BEFORE CLOSING DEPENDS ON THE OUTCOME: a "by date" market closes early when YES happens, so "1 week before closing" is earlier for YES markets.</span>
 
-## The outside-source fix
+**Before closing, "resolves NO" skews upward** (+0.34 at 1 day and 1 week before closing). That's the early-closing effect above, not markets getting better. At 1 month before closing it's back to overpriced (−0.28). **"No default side" doesn't skew** (−0.11 to −0.14 at every moment), as expected, since those markets can't close early on YES.
 
-The old `outside_reference` question gave 41% "unsure", and was inconsistent within families: Elon tweet-count brackets got half "yes", half "unsure". The new prompt (`polymarket/outside_prompt.txt`) excludes other prediction markets, forces a choice and names the kind of source. It gives family rules and about 25 examples. It runs 25 markets per call.
+## Junk markets don't change it
 
-| Agreement with my hand labels | Old (unsure = no) | New |
-|---|---|---|
-| 300 random markets (tuned on) | 81% | 91% |
-| 100 fresh holdout | 76% | 95% |
-
-Labels are mine, under the new definition, made before seeing new answers. Holdout labeled after the prompt was final. The full run cost $3.16 on 39,566 markets (100 failed 3 times and are missing). Families are now consistent (all 2,162 Elon tweet markets are `data_series`). Result: 46% none, 22% data series, 12% poll, 11% odds, 5% forecast, 3% finance, 1% schedule.
-
-**My judgment calls, which you may disagree with:** public post counters count as a source (so tweet-count brackets are "has a source"); bookmaker odds count; base rates you'd have to build yourself (word counts in past transcripts, strike frequencies) don't.
-
-## Caveats
-
-- The $1,000 volume gate uses lifetime volume, so it selects on later activity (flagged earlier in `findings_reference.md`).
-- No bettor-count filter like Manifold's 15 bettors; the API doesn't give it historically.
-- The CLOB price history is not exactly the last trade or the midpoint; see `polymarket/open_in_feb.py check`.
-- Old AMM-era markets (before CLOB) have no price history and are absent.
-- No Sol review of this code yet (no access from this session).
+About a third of the cleaned markets are still junk by count: "will X say Y" and post counts (26%), and rankings like Netflix charts, box office and Rotten Tomatoes (9%). One week after trading starts, all markets have a shift of −0.23; without the junk, −0.25. For "resolves NO": −0.34 with junk, −0.35 without. By dollars traded the junk is only about 8%, so it was never a big part of where the money goes.
 
 ## Details
 
-- Scripts: `polymarket/prices.py` (fetch, free), `polymarket/calibration.py` (plots and tables), `polymarket/outside.py` (follow-up labels). Plots: `plots/polymarket/`.
-- Main labeling run: 39,666 of 39,666 markets, $26.48. Follow-up: $3.16 plus $0.09 testing.
-- Multi-option events with exactly one YES: median price sum 1.01, mean 1.16 a week after start.
+- **Shift:** the log-odds amount added to every price so the group's mean price equals its YES rate. Zero is calibrated.
+- **Filter size:** 1 week after start, 22,228 markets have a price; 11,881 pass the filter. The $1,000 rule does nearly all of it. 1,697 pre-2023 markets traded through Polymarket's old system, have no on-chain count, and drop out.
+- **Still-open markets:** keeping only markets whose stated deadline passed 60+ days before Feb 2 leaves "resolves NO" at −0.34.
+- **Junk kinds:** "will X say Y" is Haiku's `speech_or_posts` label (44 of 46 on 200 random markets, no false alarms). Rankings, TSA counts and AI leaderboards are text rules in `polymarket/calibration.py`, tuned on 400 hand-read markets; on 200 fresh ones they caught 24 of 25 rankings with no false alarms.
+- **Dollar shares** use Polymarket's API lifetime volume, not checked for double counting.
+- **Review:** Sol reviewed the filter code and found two bugs, both fixed (event price sums mixed different dates; markets open on Feb 2 skipped the event check). The kind rules weren't reviewed.
+- **Rerun:** `python polymarket/prices.py volume`, then `python polymarket/calibration.py`. Per-group numbers: `plots/polymarket/metrics.csv` (`split=kind` for junk kinds).
