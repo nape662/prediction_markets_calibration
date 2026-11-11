@@ -73,7 +73,7 @@ Among markets with no default side, the direction is opposite to what the idea p
 
 ## Details
 
-- **Run:** `python src/second_pass_analysis.py`, then `python src/second_pass_plots.py`. Numbers are in `plots/second_pass/metrics.csv`, `bins.csv`, `before_deadline.csv`.
+- **Run:** `python manifold/second_pass_analysis.py`, then `python manifold/second_pass_plots.py`. Numbers are in `manifold/plots/second_pass/metrics.csv`, `bins.csv`, `before_deadline.csv`.
 - **Labeling:** 37,672 of 37,680 markets, $19.19 at list price, in a cloud session using `claude -p`. Of the 8 missing, 4 are rot13 titles whose calls failed and 4 returned an invalid `early_side`. 3 of the 8 are in the 1-week sample of about 12,240 markets.
 - **Deadlines:** 31 stated deadlines were impossible or before creation, and are treated as missing. On titles with an unambiguous date, the stated deadline is within a day in 97% of 4,228 markets.
 - **Label against hand labels:** of 302 hand-labeled YES-default markets, Haiku said YES on 284.

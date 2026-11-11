@@ -1,12 +1,12 @@
-"""Pilot of the LLM labelers (notes/classifier_questions.md). Process and choices: notes/labeling_pilot.md.
+"""Pilot of the LLM labelers (notes/classifier_questions.md). Process and choices: notes/other/labeling_pilot.md.
 
-python src/labeling_pilot.py prepare                       -> labeling/system_prompt.txt, labeling/pilot_sample.jsonl
-python src/labeling_pilot.py run <name> <model> <effort> <markets per call> -> labeling/results/<name>.jsonl, one line per call
+python src/labeling_pilot.py prepare                       -> manifold/labeling/system_prompt.txt, manifold/labeling/pilot_sample.jsonl
+python src/labeling_pilot.py run <name> <model> <effort> <markets per call> -> manifold/labeling/results/<name>.jsonl, one line per call
 python src/labeling_pilot.py jev <name>                     -> the same on TypeSafe's Jev, with its raw probabilities
-python src/labeling_pilot.py score <reference> <name>...   -> labeling/results/scores.csv, disagreements.csv, groups.csv
-PILOT_SEED=1 before any of these uses a second sample, disjoint from the first, with results in labeling/results/seed1/.
+python src/labeling_pilot.py score <reference> <name>...   -> manifold/labeling/results/scores.csv, disagreements.csv, groups.csv
+PILOT_SEED=1 before any of these uses a second sample, disjoint from the first, with results in manifold/labeling/results/seed1/.
 
-Text lives in labeling/, outside the gitignored data/, because a cloud session only sees what is committed.
+Text lives in manifold/labeling/, outside the gitignored data/, because a cloud session only sees what is committed.
 Calls go through `claude -p` with no tools and our own system prompt; Claude Code adds only ~150 tokens to it.
 Set CLAUDE_BIN to a Claude Code of at least 2.1.280: older ones refuse Opus 5.5 and misprice Haiku 5.5.
 """
@@ -15,7 +15,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "labeling"
+OUT = ROOT / "manifold/labeling"
 QUESTIONS = ROOT / "notes/classifier_questions.md"
 SEED = int(os.environ.get("PILOT_SEED", 0))
 SAMPLE = OUT / f"pilot_sample{SEED or ''}.jsonl"

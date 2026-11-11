@@ -6,7 +6,7 @@
 
 *We took resolved Yes/No Polymarket markets that closed before 2026-02-02 with $1,000+ or 15+ traders, after text rules removed sports, asset-price and weather markets (36,853 markets). Price is the last hourly point of Polymarket's API price history at or before each moment, at most 3 days old. Moments are 1 day, 1 week and 1 month after trading opens, and before the market closes. Each dot is a 10-point price bin with its market count; bins under 30 markets are hidden. Bars are 95%, resampling events (markets of one event share an outcome).*
 
-<span style="color:#c00000;font-size:1.4em;font-weight:bold">FILTER: a market counts at a moment only if $1,000 had traded on-chain before that moment, and not if it sits in a one-winner event whose prices then sum above 130%. Without this, empty order books show fake ~48% prices and create a dip at 40–50%. Unfiltered plots: plots/polymarket/unfiltered/.</span>
+<span style="color:#c00000;font-size:1.4em;font-weight:bold">FILTER: a market counts at a moment only if $1,000 had traded on-chain before that moment, and not if it sits in a one-winner event whose prices then sum above 130%. Without this, empty order books show fake ~48% prices and create a dip at 40–50%. Unfiltered plots: polymarket/plots/unfiltered/.</span>
 
 ## Nothing happening means NO
 
@@ -40,4 +40,4 @@ About a third of the cleaned markets are still junk by count: "will X say Y" and
 - **Junk kinds:** "will X say Y" is Haiku's `speech_or_posts` label (44 of 46 on 200 random markets, no false alarms). Rankings, TSA counts and AI leaderboards are text rules in `polymarket/calibration.py`, tuned on 400 hand-read markets; on 200 fresh ones they caught 24 of 25 rankings with no false alarms.
 - **Dollar shares** use Polymarket's API lifetime volume, not checked for double counting.
 - **Review:** Sol reviewed the filter code and found two bugs, both fixed (event price sums mixed different dates; markets open on Feb 2 skipped the event check). The kind rules weren't reviewed.
-- **Rerun:** `python polymarket/prices.py volume`, then `python polymarket/calibration.py`. Per-group numbers: `plots/polymarket/metrics.csv` (`split=kind` for junk kinds).
+- **Rerun:** `python polymarket/prices.py volume`, then `python polymarket/calibration.py`. Per-group numbers: `polymarket/plots/metrics.csv` (`split=kind` for junk kinds).

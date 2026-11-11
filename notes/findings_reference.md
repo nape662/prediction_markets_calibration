@@ -41,7 +41,7 @@ This is a source document for writing a paper or post. It is deliberately long a
 - **Fetch gate:** resolved binary YES/NO markets with at least 15 lifetime bettors and at least 1,000 lifetime mana of volume: **37,680 markets**. This gate uses the future, because lifetime counts include trades after any snapshot.
 - Excluded by the gate, and checked in section 12: markets still open at fetch (a separate fetch found them), N/A and percent resolutions, and low-volume markets.
 
-**Plot groups from the first labeling pass** (`labeling/results/full/manifold_final.jsonl`, section 4):
+**Plot groups from the first labeling pass** (`manifold/labeling/results/full/manifold_final.jsonl`, section 4):
 
 | Group | Markets (merged labels) | Meaning |
 |---|---|---|
@@ -56,7 +56,7 @@ This is a source document for writing a paper or post. It is deliberately long a
 - Becker on-chain trades dataset (`data/becker/`), with data ending in February 2026. Same text rule as Manifold. Outside sport and crypto. Covers on-chain trades, not order books or midpoints.
 - 2,024 by-date markets created 2023–2025 at the 1-week snapshot with 15+ takers and $1,000+.
 
-**Hand-made data** in `labeling/review/yes_bias/`
+**Hand-made data** in `manifold/other/labeling_review/yes_bias/`
 - `polarity_hand.csv`: 514 titles labeled by me, without prices or outcomes, 302 of them "YES means no change". I may remember how famous events ended.
 - `pairs_hand.csv`: 142 same-event Manifold/Polymarket pairs, with same_rules, copied and rule_similarity. 8 dropped because rules differ.
 - `resolution_audit.csv`: 90 resolutions read by hand, which necessarily saw outcomes.
@@ -65,7 +65,7 @@ This is a source document for writing a paper or post. It is deliberately long a
 
 ## 3. How a market gets into a plot
 
-**A snapshot** (`src/snapshots.py`) is the `probAfter` of the last non-redemption bet that moved the price, at or before a moment. Each market counts once per panel.
+**A snapshot** (`manifold/snapshots.py`) is the `probAfter` of the last non-redemption bet that moved the price, at or before a moment. Each market counts once per panel.
 
 - **After creation:** moment = creation + horizon, and the market must be unresolved then. Traders can see that a market is unresolved, so this doesn't depend on the outcome.
 - **Before resolution:** moment = resolution − horizon. Which moment a market gets depends on when its outcome arrived. See section 7.
@@ -91,7 +91,7 @@ All 27,748 reach 15 bettors eventually, but most need more than a week. Before r
 
 **Principle.** Labels are independent tags from text only. Models see no price, outcome, close date or resolution date. Close dates are withheld because Manifold overwrites them on early resolution, and early resolution leans YES.
 
-**First pass** [from note: `notes/labeling_pilot.md`, `notes/labeling_review.md`]
+**First pass** [from note: `notes/other/labeling_pilot.md`, `notes/other/labeling_review.md`]
 - 25 yes/no/unsure questions, full text in `notes/classifier_questions.md`.
 - Jev on all markets, Haiku 5.5 medium in a cloud session, and hand labels by Opus 5.5 (758) and GPT 6.1 Terra (357) on contradictory or sampled markets.
 - `manifold_final.jsonl` holds one answer per market: Opus on 758, Terra on 357 and Jev on 36,565. Haiku isn't merged into it.
@@ -100,7 +100,7 @@ All 27,748 reach 15 bettors eventually, but most need more than a week. Before r
 - Jev under-detects existing facts. More may remain in world.
 - Old label `status_quo_default` was broken for this question: it doesn't say which side wins by default. "Status quo vs other" is not a useful split.
 
-**Second pass** (`labeling/second_pass/`, `src/labeling_second.py`)
+**Second pass** (`manifold/labeling/second_pass/`, `manifold/labeling_second.py`)
 - Haiku 5.5, medium effort, one market per call, in a cloud session using `claude -p`. Ran 2026-11-03, about 5 hours.
 - **37,672 of 37,680 labeled, $19.19 at list price.** All one prompt version.
 - Of the 8 missing, 4 are rot13 "planecrash" titles whose calls failed, and 4 returned the invalid `early_side: NONE`. The cloud session's note says all 8 were refusals, which is wrong for at least those 4. 3 of the 8 fall in the 1-week sample.
@@ -164,7 +164,7 @@ An earlier `early_likelihood` wording was dropped because Haiku rated how unlike
 - **Brier and log loss:** used in sections 5, 10 and 13.
 - **"Corrected" / "deadline passed":** keeps only markets whose stated deadline passed at least 60 days before the fetch. It removes most of the skew from still-open markets, and also every market with no stated deadline, so the mix changes.
 
-**Error bars** (`boot_rate`, `summary`, `src/yes_bias.py`)
+**Error bars** (`boot_rate`, `summary`, `manifold/yes_bias.py`)
 - 95% percentile interval from a cluster bootstrap: 500 draws of creators with replacement, within the markets of that bin or group. Only creators with a market in that bin can be drawn.
 - **Model:** creators are independent draws from a large population. Each brings a bundle: N_c markets, Y_c resolved YES. The statistic is θ̂ = ΣY_c / ΣN_c. Markets from one creator may depend on each other in any way.
 - **Method:** the plug-in principle. Replace the unknown creator distribution with the empirical one. Sampling from it is drawing names with replacement.
@@ -199,13 +199,13 @@ World markets, 15+ bettors by then. Brier of the market against always guessing 
 
 Other groups at 1 week after creation: traded_elsewhere Brier 0.172 (constant 0.246, 1,447 markets, gap +0.8 points); fixed_chance at 1 day 0.246 (constant 0.250, 475 markets, gap 0.0).
 
-**World calibration by bin, 1 week after creation** (mean price → YES share, markets): 1.2→0.0 (267), 3.5→2.3 (574), 7.4→4.1 (888), 14.8→8.5 (1,596), 24.7→17.2 (1,235), 34.9→23.8 (1,027), 44.8→36.4 (807), 55.1→42.8 (762), 65.2→50.3 (733), 74.9→63.5 (723), 85.0→78.7 (701), 92.4→91.2 (328), 96.5→96.2 (156), 98.9→99.1 (116). Full table: `plots/calibration_15_bettors_by_then_bins.csv`.
+**World calibration by bin, 1 week after creation** (mean price → YES share, markets): 1.2→0.0 (267), 3.5→2.3 (574), 7.4→4.1 (888), 14.8→8.5 (1,596), 24.7→17.2 (1,235), 34.9→23.8 (1,027), 44.8→36.4 (807), 55.1→42.8 (762), 65.2→50.3 (733), 74.9→63.5 (723), 85.0→78.7 (701), 92.4→91.2 (328), 96.5→96.2 (156), 98.9→99.1 (116). Full table: `manifold/plots/calibration_15_bettors_by_then_bins.csv`.
 
 ---
 
 ## 6. Main finding: sorted by default side, after creation [measured]
 
-Plot: `plots/second_pass/by_side.png`. Still open at the snapshot, 15+ bettors by then.
+Plot: `manifold/plots/second_pass/by_side.png`. Still open at the snapshot, 15+ bettors by then.
 
 **1 week after creation:**
 
@@ -279,7 +279,7 @@ So removing the still-open skew makes the bias larger. The uncorrected numbers u
 
 ## 7. Before resolution, and why it looks reversed
 
-Plot: `plots/second_pass/before_resolution.png`, rows by default side and by early side, six horizons. `before_resolution_metrics.csv` also holds "still open" and "deadline passed" versions; those plots were deleted at Peter's request.
+Plot: `manifold/plots/second_pass/before_resolution.png`, rows by default side and by early side, six horizons. `before_resolution_metrics.csv` also holds "still open" and "deadline passed" versions; those plots were deleted at Peter's request.
 
 **Gap in points** [measured]
 
@@ -354,7 +354,7 @@ So most YESes were largely seen coming: at 1d they average 78%. Predictable even
 
 **Longer horizons change the population.** Only markets that lived that long get in. Part of the growth could be which markets are counted, not time. 1y after creation has +5.7 pooled and 1y before resolution +11.0, on different markets.
 
-**Before the stated deadline instead** (`plots/second_pass/before_deadline.csv`; does not depend on the outcome; market still open, 15 people moved the price by then; deadline passed 60+ days before fetch; each point a different set of markets, since those whose event already happened are gone) [measured]
+**Before the stated deadline instead** (`manifold/plots/second_pass/before_deadline.csv`; does not depend on the outcome; market still open, 15 people moved the price by then; deadline passed 60+ days before fetch; each point a different set of markets, since those whose event already happened are gone) [measured]
 
 | Before stated deadline | Resolves NO: markets, price, YES, shift | Resolves YES: markets, price, YES, shift |
 |---|---|---|
@@ -402,7 +402,7 @@ The early-finish asymmetry is what produces the *before-resolution* reversal (se
 
 ## 9. Other splits within "resolves NO" [measured]
 
-Plot: `plots/second_pass/within_no.png`. Shift at 1 week, 95% in brackets.
+Plot: `manifold/plots/second_pass/within_no.png`. Shift at 1 week, 95% in brackets.
 
 | Split | Value | Markets | Uncorrected | Corrected |
 |---|---|---|---|---|
@@ -442,7 +442,7 @@ Within creation years, corrected: 2023 goes −0.21, −0.64, −0.68, −0.98, 
 
 ## 10. A correction learned on old markets, tested on later ones [measured]
 
-Plot: `plots/second_pass/recalibrated.png`. **This is a correction to prices, so the plot shows raw and corrected.**
+Plot: `manifold/plots/second_pass/recalibrated.png`. **This is a correction to prices, so the plot shows raw and corrected.**
 
 **Design.** Fit one log-odds shift per default side on what was known at the start of 2024, then apply to markets created from 2024 on.
 - **Uncorrected version:** train on markets resolved before 2024; test on all created from 2024. This training set sees early YES resolutions but not those still open, so it under-corrects.
@@ -592,7 +592,7 @@ Literature in the project's scope, with methodology pitfalls, is listed in `AGEN
 
 **Should be disclosed or at least known.**
 
-1. **Stale bettor counts, found 2026-11-04.** A Nov 1 fix stopped zero-amount fills counting as bettors, and `activity_analysis/README.md` flagged the file needed rebuilding. It wasn't rebuilt until 2026-11-04. So plots and reports before then used inflated counts. Prices never changed. About 2% of markets fall below the 15-bettor rule: 1w world from 10,085 to 9,913. "Means NO" gap stays +9.4, "means YES" −7.1→−7.0. 49,788 snapshot rows changed in bettors, 1,849 crossed the 15 threshold. All tables here use fixed counts. `src/activity_analysis.py` "reads the original saved parquet", so rerunning it no longer reproduces the original count figures.
+1. **Stale bettor counts, found 2026-11-04.** A Nov 1 fix stopped zero-amount fills counting as bettors, and `activity_analysis/README.md` flagged the file needed rebuilding. It wasn't rebuilt until 2026-11-04. So plots and reports before then used inflated counts. Prices never changed. About 2% of markets fall below the 15-bettor rule: 1w world from 10,085 to 9,913. "Means NO" gap stays +9.4, "means YES" −7.1→−7.0. 49,788 snapshot rows changed in bettors, 1,849 crossed the 15 threshold. All tables here use fixed counts. `manifold/other/activity_analysis.py` "reads the original saved parquet", so rerunning it no longer reproduces the original count figures.
 2. **Fit used the future.** See section 10. Fixed in the new analysis, still present in the older test.
 3. **Snapshot past close.** 149 of 9,911 world snapshots at 1w came after the market's recorded close. Fixed in `second_pass_analysis.py`. `yes_bias.py` has it as a labeled artifact check (moves nothing).
 4. **Zero-width bars.** See section 5. Bars now omitted there.
@@ -624,7 +624,7 @@ Literature in the project's scope, with methodology pitfalls, is listed in `AGEN
 
 ## 18. Open threads
 
-- **Polymarket labels:** planned for 2026-11-04, batches at low effort, $52 of credit expiring 2026-11-05 08:59 GMT+1. See `src/labeling_second.py` for the Manifold version. Then the flip can be tested there properly.
+- **Polymarket labels:** planned for 2026-11-04, batches at low effort, $52 of credit expiring 2026-11-05 08:59 GMT+1. See `manifold/labeling_second.py` for the Manifold version. Then the flip can be tested there properly.
 - **Simulation of the timing artifact.**
 - **Independent recomputation** (section 16, item 9).
 - **Loans:** split by the dates Manifold changed the loan system.
@@ -641,42 +641,42 @@ Literature in the project's scope, with methodology pitfalls, is listed in `AGEN
 - `notes/second_pass_results.md`: short report on the re-sort (old counts).
 - `notes/yes_bias_debug.md`: short report on the first debugging (old counts; update note at top).
 - `notes/second_pass_questions.md`: why each new question was asked.
-- `notes/labeling_pilot.md`, `notes/labeling_review.md`, `notes/classifier_questions.md`: first-pass labels.
-- `notes/selection_audit.md`, `notes/related_outcomes.md`, `notes/timing_luna_audit.md`, `plots/activity_analysis/README.md`, `plots/high_volume_after_creation/README.md`: older checks. Numbers tagged [from note] come from these. Not rerun on 2026-11-04.
+- `notes/other/labeling_pilot.md`, `notes/other/labeling_review.md`, `notes/classifier_questions.md`: first-pass labels.
+- `notes/other/selection_audit.md`, `notes/other/related_outcomes.md`, `notes/other/timing_luna_audit.md`, `manifold/other/plots/activity_analysis/README.md`, `manifold/other/plots/high_volume_after_creation/README.md`: older checks. Numbers tagged [from note] come from these. Not rerun on 2026-11-04.
 - Luna audit, short version: 6 of 100 "no default" markets flagged by GPT-6 Luna for outcome-dependent timing, with clear misses, such as a market explicitly allowing early NO if Biden drops out. It motivated `early_side`.
 - `human_notes.md`: Peter's own notes. Holds his original reasoning about default side and timing.
 
 **Code**
-- `src/snapshots.py`: builds `data/manifold/snapshots.parquet`.
-- `src/plot_calibration.py`: overall calibration, Brier.
-- `src/yes_bias.py`, `src/yes_bias_plots.py`: first analysis, artifact checks, Polymarket, pairs, audit.
-- `src/labeling_second.py`: second pass.
-- `src/second_pass_analysis.py`, `src/second_pass_plots.py`: re-sort, after creation.
-- `src/second_pass_before_resolution.py`: before resolution.
+- `manifold/snapshots.py`: builds `data/manifold/snapshots.parquet`.
+- `manifold/plot_calibration.py`: overall calibration, Brier.
+- `manifold/yes_bias.py`, `manifold/yes_bias_plots.py`: first analysis, artifact checks, Polymarket, pairs, audit.
+- `manifold/labeling_second.py`: second pass.
+- `manifold/second_pass_analysis.py`, `manifold/second_pass_plots.py`: re-sort, after creation.
+- `manifold/second_pass_before_resolution.py`: before resolution.
 
 **Numbers**
-- `plots/second_pass/metrics.csv`, `bins.csv`, `before_deadline.csv`, `before_resolution_metrics.csv`, `before_resolution_bins.csv`.
-- `plots/yes_bias/metrics.csv`, `bins.csv`, `before_deadline.csv`, `pairs.csv`, `similar_*.csv`.
-- `plots/calibration_15_bettors_by_then_bins.csv`, `_brier.csv`. These now also hold 3m and 6m rows; the plots still draw the original five horizons.
+- `manifold/plots/second_pass/metrics.csv`, `bins.csv`, `before_deadline.csv`, `before_resolution_metrics.csv`, `before_resolution_bins.csv`.
+- `manifold/plots/yes_bias/metrics.csv`, `bins.csv`, `before_deadline.csv`, `pairs.csv`, `similar_*.csv`.
+- `manifold/plots/calibration_15_bettors_by_then_bins.csv`, `_brier.csv`. These now also hold 3m and 6m rows; the plots still draw the original five horizons.
 
 **Plots**
-- `plots/second_pass/by_side.png`: main finding, after creation, three horizons.
-- `plots/second_pass/before_resolution.png`: six horizons, default side and early side.
-- `plots/second_pass/recalibrated.png`: fix tested on later markets, raw vs. fixed, with and without correction.
-- `plots/second_pass/within_no.png`: splits within "resolves NO".
-- `plots/yes_bias/`: `resorted.png`, `what_moves_it.png`, `censoring.png`, `platforms.png`, `before_deadline.png`.
-- `plots/calibration_after_creation_15_bettors_by_then.png`, `plots/calibration_before_resolution_15_bettors_by_then.png`: overall, per group.
+- `manifold/plots/second_pass/by_side.png`: main finding, after creation, three horizons.
+- `manifold/plots/second_pass/before_resolution.png`: six horizons, default side and early side.
+- `manifold/plots/second_pass/recalibrated.png`: fix tested on later markets, raw vs. fixed, with and without correction.
+- `manifold/plots/second_pass/within_no.png`: splits within "resolves NO".
+- `manifold/plots/yes_bias/`: `resorted.png`, `what_moves_it.png`, `censoring.png`, `platforms.png`, `before_deadline.png`.
+- `manifold/plots/calibration_after_creation_15_bettors_by_then.png`, `manifold/plots/calibration_before_resolution_15_bettors_by_then.png`: overall, per group.
 
 **To rerun everything, in a tmux session, from the repo root:**
 
 ```
-.venv/bin/python src/snapshots.py
-PYTHONPATH=src .venv/bin/python src/second_pass_analysis.py
-.venv/bin/python src/second_pass_plots.py
-.venv/bin/python src/second_pass_before_resolution.py
-PYTHONPATH=src .venv/bin/python src/yes_bias.py analyze
-.venv/bin/python src/yes_bias_plots.py
-.venv/bin/python src/plot_calibration.py
+.venv/bin/python manifold/snapshots.py
+PYTHONPATH=src .venv/bin/python manifold/second_pass_analysis.py
+.venv/bin/python manifold/second_pass_plots.py
+.venv/bin/python manifold/second_pass_before_resolution.py
+PYTHONPATH=src .venv/bin/python manifold/yes_bias.py analyze
+.venv/bin/python manifold/yes_bias_plots.py
+.venv/bin/python manifold/plot_calibration.py
 ```
 
 Git: all of this is on branch `second-pass-pilot`, about 50 commits ahead of `master`, and not pushed past what the cloud run pushed.

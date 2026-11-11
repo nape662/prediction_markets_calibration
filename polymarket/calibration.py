@@ -1,10 +1,10 @@
 """Polymarket calibration split by the Haiku labels, like the Manifold plots in notes/second_pass_results.md.
 
-python polymarket/calibration.py -> plots/polymarket/*.png, metrics.csv, bins.csv
+python polymarket/calibration.py -> polymarket/plots/*.png, metrics.csv, bins.csv
 Inputs: snapshots.jsonl and meta.csv (polymarket/prices.py), results.jsonl (16-question Haiku pass), outside_results.jsonl (polymarket/outside.py), cohorts.csv.
 Main sample: the closed_by_feb cohort. Each market counts once per moment. Intervals resample events (event_title), because markets of one event share an outcome.
 Filtered (main) plots keep a moment only if $1,000 had traded by then (volume.csv, Becker's trades, so open_in_feb mostly drops out) and,
-in a one-winner (negRisk) event, the event's prices at that moment sum to at most 130%. Unfiltered plots go to plots/polymarket/unfiltered.
+in a one-winner (negRisk) event, the event's prices at that moment sum to at most 130%. Unfiltered plots go to polymarket/plots/unfiltered.
 by_side_weighted.png: the by_side plot with each event weighted to 1 and each repeating series capped at SERIES_CAP events (weigh()).
 """
 import json, re, sys
@@ -18,9 +18,9 @@ import pandas as pd
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "src"))
 from labeling_input import template
-from yes_bias import boot_rate, summary
+from stats import boot_rate, summary
 
-OUT = HERE.parent / "plots/polymarket"
+OUT = HERE / "plots"
 HORIZONS, MIN_BIN, MIN_VOL, MAX_SUM, SERIES_CAP = ["1d", "1w", "1m"], 30, 1000, 1.3, 5
 # Market kinds by text rules on question + event title, tuned on 400 seen markets. On 200 fresh ones: chart 24/25, tsa 2/2, ai 1/1, no false alarms;
 # the one chart miss (a song title with "Say") led to the quoted-phrase "say" guard, so that fix is untested on fresh markets.
