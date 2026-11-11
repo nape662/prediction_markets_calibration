@@ -158,7 +158,13 @@ def figures(out, filtered, a):
     plot(bins, "default_side", list(ANCHORS), "by_side", "Polymarket, split by what happens if nothing new happens", "Haiku answered: if nothing new happens until the deadline, how does this resolve?")
     plot(bins, "source", ["after_start"], "by_source", "Polymarket, split by whether an outside source gives the answer",
          "Outside source: Haiku's forced-choice follow-up (polymarket/outside_prompt.txt): poll, odds, finance, data series, schedule or published forecast, not another prediction market. Substantive: 0-100 score from the main pass.")
-    wbins, wmetrics = tables(weigh(a), ["default_side"])
+    w = weigh(a)
+    p = w[(w.cohort == "closed_by_feb") & (w.anchor == "after_start") & (w.horizon == "1w")].assign(series=lambda d: d.creator.map(template))  # to eyeball the weights
+    p.groupby("series").agg(events=("event_id", "nunique"), markets=("id", "size"), weight=("w", "sum"), titles=("creator", lambda t: " | ".join(t.drop_duplicates().head(6)))) \
+        .sort_values(["events", "markets"], ascending=False).round(2).to_csv(out / "series_1w.csv")
+    p.groupby("event_id").agg(title=("creator", "first"), markets=("id", "size"), weight=("w", "sum"), series=("series", "first"), sides=("default_side", lambda s: s.value_counts().to_dict())) \
+        .sort_values("markets", ascending=False).round(2).to_csv(out / "events_1w.csv")
+    wbins, wmetrics = tables(w, ["default_side"])
     wbins.to_csv(out / "bins_weighted.csv", index=False)
     wmetrics.round(4).to_csv(out / "metrics_weighted.csv", index=False)
     plot(wbins, "default_side", list(ANCHORS), "by_side_weighted", "Polymarket by default side, each event counted once",
