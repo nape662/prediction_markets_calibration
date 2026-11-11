@@ -5,6 +5,7 @@ Inputs: snapshots.jsonl and meta.csv (polymarket/prices.py), results.jsonl (16-q
 Main sample: the closed_by_feb cohort. Each market counts once per moment. Intervals resample events (event_title), because markets of one event share an outcome.
 Filtered (main) plots keep a moment only if $1,000 had traded by then (volume.csv, Becker's trades, so open_in_feb mostly drops out) and,
 in a one-winner (negRisk) event, the event's prices at that moment sum to at most 130%. Unfiltered plots go to plots/polymarket/unfiltered.
+by_side_weighted.png: the by_side plot with each event weighted to 1 and each repeating series capped at SERIES_CAP events (weigh()).
 """
 import json, re, sys
 from pathlib import Path
@@ -16,10 +17,11 @@ import pandas as pd
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "src"))
+from labeling_input import template
 from yes_bias import boot_rate, summary
 
 OUT = HERE.parent / "plots/polymarket"
-HORIZONS, MIN_BIN, MIN_VOL, MAX_SUM = ["1d", "1w", "1m"], 30, 1000, 1.3
+HORIZONS, MIN_BIN, MIN_VOL, MAX_SUM, SERIES_CAP = ["1d", "1w", "1m"], 30, 1000, 1.3, 5
 # Market kinds by text rules on question + event title, tuned on 400 seen markets. On 200 fresh ones: chart 24/25, tsa 2/2, ai 1/1, no false alarms;
 # the one chart miss (a song title with "Say") led to the quoted-phrase "say" guard, so that fix is untested on fresh markets.
 CHART = (r"netflix (movie|show|series)|top (global |us )?netflix|most streamed|top spotify|song on (us |global )?spotify|spotify (charts|streams|artist|album|song)"
@@ -82,23 +84,32 @@ def groups(a, split):
         yield side, color, label, (a if side is None else a[a[col] == side])
 
 
-def tables(a):
+def weigh(a):
+    """Within each moment, an event's markets share weight 1, and a series (event titles equal once numbers and dates are stripped) counts as at most SERIES_CAP events."""
+    panel, event = [a.cohort, a.anchor, a.horizon], a.event_id.fillna(a.id)
+    k = a.groupby(panel + [event]).id.transform("size")
+    e = event.groupby(panel + [a.creator.map(template)]).transform("nunique")
+    return a.assign(w=1 / k * (SERIES_CAP / e).clip(upper=1))
+
+
+def tables(a, splits=SPLITS):
     bins, metrics = [], []
     for cohort, c in a.groupby("cohort"):
-        for split in SPLITS:
+        for split in splits:
             for (anchor, h), g in c.groupby(["anchor", "horizon"]):
                 for side, _, label, s in groups(g, split):
                     if len(s) < MIN_BIN:
                         continue
                     m = summary(s)
-                    metrics.append(dict(cohort=cohort, split=split, group=label, anchor=anchor, horizon=h, events=s.creator.nunique(), brier=((s.prob - s.y) ** 2).mean(), **m))
+                    metrics.append(dict(cohort=cohort, split=split, group=label, anchor=anchor, horizon=h, events=s.creator.nunique(), brier=np.average((s.prob - s.y) ** 2, weights=s.get("w")), **m))
                     for b, x in s.groupby("bin"):
                         lo, hi = boot_rate(x) if len(x) >= MIN_BIN else (np.nan, np.nan)
-                        bins.append(dict(cohort=cohort, split=split, group=label, anchor=anchor, horizon=h, bin=b, n=len(x), price=x.prob.mean(), yes=x.y.mean(), yes_low=lo, yes_high=hi))
+                        bins.append(dict(cohort=cohort, split=split, group=label, anchor=anchor, horizon=h, bin=b, n=x.w.sum() if "w" in x else len(x), markets=len(x),
+                                     price=np.average(x.prob, weights=x.get("w")), yes=np.average(x.y, weights=x.get("w")), yes_low=lo, yes_high=hi))
     return pd.DataFrame(bins), pd.DataFrame(metrics)
 
 
-def plot_one(out, filtered, bins, split, anchors, name, title, note):
+def plot_one(out, filtered, bins, split, anchors, name, title, note, unit="markets in the bin"):
     fig, axes = plt.subplots(len(anchors), 3, figsize=(15, 5.3 * len(anchors) + 1.2), squeeze=False, sharex=True, sharey=True)
     for row, anchor in zip(axes, anchors):
         for ax, h in zip(row, HORIZONS):
@@ -111,7 +122,7 @@ def plot_one(out, filtered, bins, split, anchors, name, title, note):
                 b = b.set_index("bin").reindex(range(10))  # a dropped bin breaks the line
                 ax.errorbar(b.price * 100, b.yes * 100, yerr=[(b.yes - b.yes_low) * 100, (b.yes_high - b.yes) * 100], color=color, marker="o", ms=5, lw=1.8, elinewidth=.8, label=label)
                 for r in b.dropna(subset="n").itertuples():
-                    ax.annotate(f"{int(r.n):,}", (r.price * 100, r.yes * 100), xytext=offset, textcoords="offset points", ha="right" if offset[0] < 0 else "left", fontsize=7, color="#444444")
+                    ax.annotate(f"{r.n:,.0f}", (r.price * 100, r.yes * 100), xytext=offset, textcoords="offset points", ha="right" if offset[0] < 0 else "left", fontsize=7, color="#444444")
         row[0].set_ylabel("Resolved YES (%)")
     for ax in axes[-1]:
         ax.set_xlabel("Price (%)")
@@ -120,7 +131,7 @@ def plot_one(out, filtered, bins, split, anchors, name, title, note):
     gate = ("Kept only moments with $1,000+ traded before them (on-chain trades), and not in a one-winner event whose prices sum above 130% then.\n" if filtered
             else "UNFILTERED: includes moments before $1,000 had traded and one-winner events whose prices sum far above 100%.\n")
     fig.text(.01, .01, "Source: Polymarket Gamma and CLOB APIs; labels from Haiku, which saw text only. Resolved Yes/No markets that closed before Feb 2, 2026 with $1,000+ or 15+ traders by then, sports, asset-price and weather markets removed.\n" + gate +
-             "Price: last hourly API price at or before the moment, at most 3 days old; moments outside trading skipped. 10-point bins, bins under 30 markets dropped, number = markets in the bin. Bars: 95%, resampling events.\n" + note,
+             f"Price: last hourly API price at or before the moment, at most 3 days old; moments outside trading skipped. 10-point bins, bins under 30 dropped, number = {unit}. Bars: 95%, resampling events.\n" + note,
              fontsize=8.5, color="#555555")
     fig.tight_layout(rect=(0, .12 if len(anchors) == 1 else .07, 1, .96))
     fig.savefig(out / f"{name}.png", dpi=140)
@@ -141,12 +152,18 @@ def figures(out, filtered, a):
     bins, metrics = tables(a)
     bins.to_csv(out / "bins.csv", index=False)
     metrics.round(4).to_csv(out / "metrics.csv", index=False)
-    plot = lambda *x: plot_one(out, filtered, *x)
+    plot = lambda *x, **k: plot_one(out, filtered, *x, **k)
     plot(bins, "all", list(ANCHORS), "overall", "Polymarket calibration, all labeled markets",
          "Before closing: a market that resolves YES early closes early, so this moment depends on the outcome.")
     plot(bins, "default_side", list(ANCHORS), "by_side", "Polymarket, split by what happens if nothing new happens", "Haiku answered: if nothing new happens until the deadline, how does this resolve?")
     plot(bins, "source", ["after_start"], "by_source", "Polymarket, split by whether an outside source gives the answer",
          "Outside source: Haiku's forced-choice follow-up (polymarket/outside_prompt.txt): poll, odds, finance, data series, schedule or published forecast, not another prediction market. Substantive: 0-100 score from the main pass.")
+    wbins, wmetrics = tables(weigh(a), ["default_side"])
+    wbins.to_csv(out / "bins_weighted.csv", index=False)
+    wmetrics.round(4).to_csv(out / "metrics_weighted.csv", index=False)
+    plot(wbins, "default_side", list(ANCHORS), "by_side_weighted", "Polymarket by default side, each event counted once",
+         f"WEIGHTED: within each moment, an event's K markets get weight 1/K each; a series of events (same title once numbers and dates are stripped) counts as at most {SERIES_CAP} events.",
+         unit="summed weight, about the number of events")
 
 
 if __name__ == "__main__":

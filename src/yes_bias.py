@@ -70,11 +70,13 @@ def wshift(x, y, w):
 
 def summary(g, by="creator", seed=0):
     x, y = logit(g.prob.to_numpy()), g.y.to_numpy()
+    w = g.w.to_numpy() if "w" in g else np.ones(len(g))  # optional per-market weights
     c = pd.factorize(g[by])[0]
     rng = np.random.default_rng(seed)
-    draws = [wshift(x, y, np.bincount(rng.integers(0, c.max() + 1, c.max() + 1), minlength=c.max() + 1)[c]) for _ in range(RESAMPLES)]
+    draws = [wshift(x, y, w * np.bincount(rng.integers(0, c.max() + 1, c.max() + 1), minlength=c.max() + 1)[c]) for _ in range(RESAMPLES)]
     low, high = np.percentile(draws, [2.5, 97.5])
-    return dict(n=len(g), price=g.prob.mean(), yes=g.y.mean(), gap=g.prob.mean() - g.y.mean(), shift=wshift(x, y, np.ones(len(x))), low=low, high=high)
+    price, yes = np.average(g.prob, weights=w), np.average(y, weights=w)
+    return dict(n=len(g), price=price, yes=yes, gap=price - yes, shift=wshift(x, y, w), low=low, high=high)
 
 
 def fetch_unresolved():
@@ -433,9 +435,10 @@ def hash_half(creator):
 
 def boot_rate(g, seed=0):
     c, y = pd.factorize(g.creator)[0], g.y.to_numpy()
+    w = g.w.to_numpy() if "w" in g else np.ones(len(g))
     rng = np.random.default_rng(seed)
     counts = np.array([np.bincount(rng.integers(0, c.max() + 1, c.max() + 1), minlength=c.max() + 1)[c] for _ in range(RESAMPLES)])
-    return np.percentile(counts @ y / counts.sum(axis=1), [2.5, 97.5])
+    return np.percentile(counts @ (w * y) / (counts @ w), [2.5, 97.5])
 
 
 if __name__ == "__main__":
