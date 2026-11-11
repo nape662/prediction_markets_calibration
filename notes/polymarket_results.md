@@ -30,23 +30,23 @@ Shift −0.34 means a "resolves NO" market priced at 50% comes true about 42% of
 
 ## Counting each event once
 
-Many markets are slices of one event: 20 tweet-count ranges, or "ceasefire by June / July / August". On the plots above each slice counts as a separate forecast. Here each event counts once: within a moment, an event's K markets get weight 1/K each. Repeating events with the same title once numbers and dates are stripped (e.g. weekly "Elon Musk # of tweets <dates>") form a series, and a series counts as at most 5 events. One week after trading starts:
+Many markets are slices of one event: 20 tweet-count ranges, or "ceasefire by June / July / August". On the plots above each slice counts as a separate forecast. Here each event counts once: within a moment, an event's K markets get weight 1/K each. One week after trading starts:
 
-| If nothing happens | ≈ Events | Price → YES rate | Shift (95%) |
+| If nothing happens | Events | Price → YES rate | Shift (95%) |
 |---|---|---|---|
-| Resolves NO | 3,594 | 24% → 19% | −0.41 (−0.52 to −0.32) |
-| No default side | 1,501 | 38% → 37% | −0.13 (−0.24 to −0.01) |
-| Resolves YES | 113 | 60% → 64% | +0.37 (−0.12 to +0.84) |
+| Resolves NO | 3,695 | 24% → 20% | −0.41 (−0.52 to −0.32) |
+| No default side | 1,697 | 36% → 35% | −0.12 (−0.23 to −0.00) |
+| Resolves YES | 119 | 59% → 63% | +0.33 (−0.15 to +0.78) |
 
-**The picture holds and "resolves NO" gets slightly worse** (−0.34 → −0.41). "No default side" mostly loses its many cheap bracket slices, so its average price rises from 23% to 38%; its calibration barely moves. "Resolves YES" now leans the way Manifold flips, but it's still too small to tell; 1 month after start it's +0.84 (+0.02 to +1.61) on about 110 events. Before closing, the early-closing skew of "resolves NO" roughly doubles (+0.34 → +0.64 at 1 day).
+**The picture holds and "resolves NO" gets slightly worse** (−0.34 → −0.41). "No default side" mostly loses its many cheap bracket slices, so its average price rises from 23% to 36%; its calibration barely moves. "Resolves YES" now leans the way Manifold flips, but it's still too small to tell; 1 month after start it's +0.84 (+0.02 to +1.61) on about 110 events. Before closing, the early-closing skew of "resolves NO" roughly doubles (+0.34 → +0.65 at 1 day).
 
 ![By default side, weighted](../polymarket/plots/by_side_weighted.png)
 
-*Same data and layout as the plot above, weighted. Each dot is the weighted mean price and weighted YES rate of a 10-point bin; the number is the summed weight (about the number of events); bins under 30 are hidden, which hides nearly all of "resolves YES". Bars resample event titles, with weights.*
+*Same data and layout as the plot above, weighted. Each dot is the weighted mean price and weighted YES rate of a 10-point bin; the number is the summed weight, i.e. the number of events; bins under 30 are hidden, which hides nearly all of "resolves YES". Bars resample event titles, with weights.*
 
-<span style="color:#c00000;font-size:1.4em;font-weight:bold">WEIGHTED: each event counts once, each repeating series at most 5 times. The unweighted version is the plot above.</span>
+<span style="color:#c00000;font-size:1.4em;font-weight:bold">WEIGHTED: each event counts once. The unweighted version is the plot above.</span>
 
-To check the grouping: `polymarket/plots/series_1w.csv` lists each series with its merged event titles, `events_1w.csv` each event with its market count. Merges mostly look right (weekly tweet counts, monthly jobs reports, "Israel x Hamas ceasefire by <date>"). Some formats split one series (two Elon-tweet title styles, 41 and 40 events), and a few merge different things ("GPT-5 released by…?" with "GPT-6 released by…?"). The cap barely matters: series with over 5 events hold 10% of the weight uncapped, 5% capped.
+**Not handled:** separate events that share one storyline ("Russia x Ukraine ceasefire before June?" and "... before July?" are two events) or repeat weekly (tweet counts, TSA). They still count fully, and the bars treat them as independent, so the bars are somewhat too narrow. Each event with its market count: `polymarket/plots/events_1w.csv`.
 
 ## Junk markets don't change it
 

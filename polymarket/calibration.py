@@ -5,7 +5,7 @@ Inputs: snapshots.jsonl and meta.csv (polymarket/prices.py), results.jsonl (16-q
 Main sample: the closed_by_feb cohort. Each market counts once per moment. Intervals resample events (event_title), because markets of one event share an outcome.
 Filtered (main) plots keep a moment only if $1,000 had traded by then (volume.csv, Becker's trades, so open_in_feb mostly drops out) and,
 in a one-winner (negRisk) event, the event's prices at that moment sum to at most 130%. Unfiltered plots go to polymarket/plots/unfiltered.
-by_side_weighted.png: the by_side plot with each event weighted to 1 and each repeating series capped at SERIES_CAP events (weigh()).
+by_side_weighted.png: the by_side plot with each event weighted to 1 (weigh()).
 """
 import json, re, sys
 from pathlib import Path
@@ -17,11 +17,10 @@ import pandas as pd
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "src"))
-from labeling_input import template
 from stats import boot_rate, summary
 
 OUT = HERE / "plots"
-HORIZONS, MIN_BIN, MIN_VOL, MAX_SUM, SERIES_CAP = ["1d", "1w", "1m"], 30, 1000, 1.3, 5
+HORIZONS, MIN_BIN, MIN_VOL, MAX_SUM = ["1d", "1w", "1m"], 30, 1000, 1.3
 # Market kinds by text rules on question + event title, tuned on 400 seen markets. On 200 fresh ones: chart 24/25, tsa 2/2, ai 1/1, no false alarms;
 # the one chart miss (a song title with "Say") led to the quoted-phrase "say" guard, so that fix is untested on fresh markets.
 CHART = (r"netflix (movie|show|series)|top (global |us )?netflix|most streamed|top spotify|song on (us |global )?spotify|spotify (charts|streams|artist|album|song)"
@@ -85,11 +84,10 @@ def groups(a, split):
 
 
 def weigh(a):
-    """Within each moment, an event's markets share weight 1, and a series (event titles equal once numbers and dates are stripped) counts as at most SERIES_CAP events."""
+    """Within each moment, an event's markets share weight 1."""
     panel, event = [a.cohort, a.anchor, a.horizon], a.event_id.fillna(a.id)
     k = a.groupby(panel + [event]).id.transform("size")
-    e = event.groupby(panel + [a.creator.map(template)]).transform("nunique")
-    return a.assign(w=1 / k * (SERIES_CAP / e).clip(upper=1))
+    return a.assign(w=1 / k)
 
 
 def tables(a, splits=SPLITS):
@@ -159,16 +157,14 @@ def figures(out, filtered, a):
     plot(bins, "source", ["after_start"], "by_source", "Polymarket, split by whether an outside source gives the answer",
          "Outside source: Haiku's forced-choice follow-up (polymarket/outside_prompt.txt): poll, odds, finance, data series, schedule or published forecast, not another prediction market. Substantive: 0-100 score from the main pass.")
     w = weigh(a)
-    p = w[(w.cohort == "closed_by_feb") & (w.anchor == "after_start") & (w.horizon == "1w")].assign(series=lambda d: d.creator.map(template))  # to eyeball the weights
-    p.groupby("series").agg(events=("event_id", "nunique"), markets=("id", "size"), weight=("w", "sum"), titles=("creator", lambda t: " | ".join(t.drop_duplicates().head(6)))) \
-        .sort_values(["events", "markets"], ascending=False).round(2).to_csv(out / "series_1w.csv")
-    p.groupby("event_id").agg(title=("creator", "first"), markets=("id", "size"), weight=("w", "sum"), series=("series", "first"), sides=("default_side", lambda s: s.value_counts().to_dict())) \
+    p = w[(w.cohort == "closed_by_feb") & (w.anchor == "after_start") & (w.horizon == "1w")]  # to eyeball the weights
+    p.groupby("event_id").agg(title=("creator", "first"), markets=("id", "size"), weight=("w", "sum"), sides=("default_side", lambda s: s.value_counts().to_dict())) \
         .sort_values("markets", ascending=False).round(2).to_csv(out / "events_1w.csv")
     wbins, wmetrics = tables(w, ["default_side"])
     wbins.to_csv(out / "bins_weighted.csv", index=False)
     wmetrics.round(4).to_csv(out / "metrics_weighted.csv", index=False)
     plot(wbins, "default_side", list(ANCHORS), "by_side_weighted", "Polymarket by default side, each event counted once",
-         f"WEIGHTED: within each moment, an event's K markets get weight 1/K each; a series of events (same title once numbers and dates are stripped) counts as at most {SERIES_CAP} events.",
+         "WEIGHTED: within each moment, an event's K markets get weight 1/K each.",
          unit="summed weight, about the number of events")
 
 
