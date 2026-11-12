@@ -2,7 +2,7 @@
 
 ## Short answer
 
-We checked whether prices on Polymarket and Manifold match how often things actually happen. We used resolved yes/no questions about the world, after removing sports, asset prices, weather, coin flips and other mass-produced or self-referential markets.
+We checked whether prices on Polymarket and Manifold match how often things actually happen. We used resolved yes/no questions about the world, after removing sports, asset prices, weather, coin flips and other mass-produced, self-referential etc. markets.
 
 **Both platforms are reasonably calibrated, with one predictable bias that is about twice as large on Manifold.**
 
@@ -17,29 +17,28 @@ We checked whether prices on Polymarket and Manifold match how often things actu
 
 Two large 2026 studies already say prediction markets are well calibrated: Dickerson et al. in PNAS (about 1M records from Kalshi, Manifold, Polymarket and Metaculus) and Reichenbach & Walther on SSRN (779,344 Polymarket markets). We had two concerns.
 
-**First: what the sample is made of.** Most of R&W's markets are crypto (302,890) and sports (369,950), and PNAS's pooled result mostly describes Kalshi. Those markets have an outside source of truth: bookmaker odds, exchange prices, weather models. A market can look calibrated there just by copying it. The question we cared about is different. On questions where no easy outside answer exists, do the prices still mean what they say? Those are the questions where a market could teach you something you couldn't look up.
+**First: what the sample is made of.** Most of R&W's markets are crypto (302,890) and sports (369,950), and PNAS's pooled result mostly describes Kalshi. Those markets have an outside source of truth -- a market can look calibrated there just by copying it. A much more interesting question is the following: on questions where no easy outside answer exists, do the prices still mean what they say? 
 
 **Second: two method problems.**
 
-- **Picking the winner.** For multiple-choice Manifold and Metaculus questions, the PNAS pipeline (Themis) keeps only the option that won and records it as YES. That keeps "priced 30%, happened" and drops every "priced 30%, didn't happen", which pushes the measured hit rate up. We use plain yes/no markets only.
-- **Measuring at a time chosen by the outcome.** Both papers place their measurement times within the span of a market's life, which ends when the answer is known. "By date" questions that resolve YES end early, so this picks different moments for YES and NO markets (section 6). Our main numbers use fixed times after a market opens, which don't depend on the outcome.
+- **Picking the winner.** For multiple-choice questions on Manifold and Metaculus, the open-source tool the PNAS authors used to collect their data (Themis) keeps only the option that won and records it as YES. That keeps "priced 30%, happened" and drops every "priced 30%, didn't happen", moving the hit rate up.
+- **Measuring at a time chosen by the outcome.** Both papers place their measurement times in a way which picks different moments for YES and NO markets (section 6). Our main numbers use fixed times after a market opens, which don't depend on the outcome.
 
-**What we changed:** text rules plus one LLM label pass (Claude Haiku 5.5, reading only each market's text) to remove junk; one price per market per moment; a fixed time after opening; error bars that resample whole events (Polymarket) or creators (Manifold) rather than single markets.
-
-**What we found about junk: removing it mattered less than we expected.** On Polymarket, about a third of the markets left after the text rules are still junk by count: "will X say Y", post counts, Netflix and box-office rankings. Dropping them changes the overall shift from −0.23 to −0.25. The split that matters is whether an outside reference exists (section 5), not junk versus not junk.
 
 ## What we measure
 
-**A forecast** is a market's price at a fixed moment: 1 day, 1 week or 1 month after trading opens (Polymarket) or after creation (Manifold). Each market counts once per moment. A market is included only if it was still open and already active at that moment:
+**A forecast** is a market's price at a fixed moment: 1 day, 1 week or 1 month after trading opens (Polymarket) or after creation (Manifold). Each market counts once per moment. A market's forec is included in our analysis only if it was still open and already active at that moment, and additionally:
 
-- **Polymarket:** $1,000 traded on-chain before the moment. Without this, empty order books show prices near 48% that are not anyone's forecast. We also drop markets in a one-winner event whose prices sum above 130% at that moment. The price is the last hourly point of Polymarket's API price history, at most 3 days old.
-- **Manifold:** 15 distinct bettors by the moment. The price is the probability shown after the last trade.
+- **Polymarket:** $1,000 traded before the moment. We also drop many-options-one-winner events whose prices sum above 130% at that moment, because untraded markets show up as 50%. The price is the last hourly point of Polymarket's API price history, at most 3 days old.
+- **Manifold:** Only a 2-option market to avoid multiple-progressively added options. 15 distinct bettors by the moment. The price is the probability shown after the last trade.
 
 **Calibration** is shown as plots: markets grouped into 10-point price bins, mean price against the share that resolved YES. Bins with under 30 markets are hidden.
 
-**The shift** summarizes a group in one number. It is the amount added to every price's log-odds that makes the group's mean price equal its YES rate. Zero means calibrated; negative means YES is overpriced. A shift of −0.34 turns a 50% price into 42%, −0.65 into 34%.
+**The shift** is the amount added to every price's log-odds that makes the group's mean price equal its YES rate.
 
-**Error bars** are 95% bootstrap intervals that resample groups, not single markets. On Polymarket the groups are events, since markets of one event share an outcome. On Manifold they are creators.
+**Error bars** are 95% bootstrap intervals. On Polymarket we resample platform-labelled events, which are markets sharing an outcome. On Manifold we resample creators. NEED REDO CIS THIS IS STUPID
+CAN ADD MULTIPLE OPTION MARKETS NO PROBLEMO ACTUALLY
+
 
 **Data.** Polymarket: resolved yes/no markets that closed before 2026-02-02 with $1,000+ volume or 15+ traders, after text rules removed sports, asset prices and weather (36,853 markets). Manifold: resolved yes/no markets with 15+ bettors and 1,000+ mana volume over their lifetime (37,680), of which 27,752 are about the world. The rest are sports, prices and weather (7,782), coin flips (571), games about the market itself, and similar.
 
