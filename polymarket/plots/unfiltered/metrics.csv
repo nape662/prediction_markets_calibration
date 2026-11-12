@@ -1,137 +1,137 @@
 cohort,split,group,anchor,horizon,events,brier,n,price,yes,gap,shift,low,high
-closed_by_feb,all,All markets,after_start,1d,8925,0.1184,33284,0.2818,0.2443,0.0375,-0.3074,-0.355,-0.2636
-closed_by_feb,all,Closed within a week of starting,after_start,1d,2588,0.1275,11194,0.3386,0.3229,0.0157,-0.1234,-0.2344,-0.0233
-closed_by_feb,all,All markets,after_start,1m,3653,0.0683,10172,0.1957,0.1728,0.0229,-0.3134,-0.4139,-0.2066
-closed_by_feb,all,All markets,after_start,1w,6801,0.0871,22228,0.2294,0.2041,0.0254,-0.2862,-0.34,-0.2296
-closed_by_feb,all,All markets,before_close,1d,8930,0.0686,33693,0.2412,0.242,-0.0007,-0.0258,-0.0871,0.0391
-closed_by_feb,all,Closed within a week of starting,before_close,1d,2578,0.1127,11132,0.331,0.3212,0.0097,-0.0946,-0.1936,-0.012
-closed_by_feb,all,All markets,before_close,1m,3649,0.0684,10190,0.1936,0.1719,0.0216,-0.2968,-0.4019,-0.1958
-closed_by_feb,all,All markets,before_close,1w,6797,0.0777,22400,0.2119,0.2026,0.0093,-0.1334,-0.1983,-0.0718
-closed_by_feb,default_side,Nothing happening means NO,after_start,1d,6006,0.1355,14129,0.3193,0.2745,0.0448,-0.3263,-0.394,-0.2585
-closed_by_feb,default_side,Nothing happening means YES,after_start,1d,308,0.1602,442,0.4579,0.4955,-0.0376,0.2584,0.0184,0.558
-closed_by_feb,default_side,No default side,after_start,1d,3480,0.1044,18713,0.2493,0.2155,0.0338,-0.308,-0.373,-0.2486
+closed_by_feb,all,All markets,after_start,1d,8925,0.1184,33284,0.2818,0.2443,0.0375,-0.3075,-0.3552,-0.2638
+closed_by_feb,all,Closed within a week of starting,after_start,1d,2588,0.1275,11194,0.3386,0.3229,0.0157,-0.1234,-0.2345,-0.0233
+closed_by_feb,all,All markets,after_start,1m,3653,0.0683,10172,0.1957,0.1728,0.0229,-0.3133,-0.4138,-0.2065
+closed_by_feb,all,All markets,after_start,1w,6801,0.0871,22228,0.2294,0.2041,0.0254,-0.286,-0.3399,-0.2296
+closed_by_feb,all,All markets,before_close,1d,8930,0.0686,33693,0.2412,0.242,-0.0007,-0.0258,-0.0871,0.039
+closed_by_feb,all,Closed within a week of starting,before_close,1d,2578,0.1127,11132,0.331,0.3212,0.0097,-0.0946,-0.1937,-0.012
+closed_by_feb,all,All markets,before_close,1m,3649,0.0684,10190,0.1936,0.1719,0.0216,-0.2967,-0.4018,-0.1956
+closed_by_feb,all,All markets,before_close,1w,6797,0.0777,22400,0.2119,0.2026,0.0093,-0.1335,-0.1984,-0.0719
+closed_by_feb,default_side,Nothing happening means NO,after_start,1d,6006,0.1355,14129,0.3193,0.2745,0.0448,-0.3264,-0.3941,-0.2586
+closed_by_feb,default_side,Nothing happening means YES,after_start,1d,308,0.1602,442,0.4579,0.4955,-0.0376,0.2584,0.0184,0.5582
+closed_by_feb,default_side,No default side,after_start,1d,3480,0.1044,18713,0.2493,0.2155,0.0338,-0.3078,-0.3728,-0.2488
 closed_by_feb,default_side,Nothing happening means NO,after_start,1m,2762,0.0787,4708,0.1963,0.1591,0.0372,-0.4445,-0.6417,-0.2551
 closed_by_feb,default_side,Nothing happening means YES,after_start,1m,138,0.1103,153,0.6153,0.6797,-0.0645,0.5928,0.0786,1.1308
-closed_by_feb,default_side,No default side,after_start,1m,919,0.0578,5311,0.1831,0.1704,0.0127,-0.2151,-0.2791,-0.1451
-closed_by_feb,default_side,Nothing happening means NO,after_start,1w,4553,0.1038,8782,0.2465,0.2108,0.0357,-0.3329,-0.4278,-0.2313
+closed_by_feb,default_side,No default side,after_start,1m,919,0.0578,5311,0.1831,0.1704,0.0127,-0.2149,-0.2791,-0.145
+closed_by_feb,default_side,Nothing happening means NO,after_start,1w,4553,0.1038,8782,0.2465,0.2108,0.0357,-0.3328,-0.4277,-0.2312
 closed_by_feb,default_side,Nothing happening means YES,after_start,1w,235,0.1402,296,0.4826,0.4932,-0.0106,0.0833,-0.3514,0.5704
-closed_by_feb,default_side,No default side,after_start,1w,2451,0.0748,13150,0.2124,0.1931,0.0193,-0.2576,-0.3163,-0.2026
+closed_by_feb,default_side,No default side,after_start,1w,2451,0.0748,13150,0.2124,0.1931,0.0193,-0.2578,-0.3161,-0.2028
 closed_by_feb,default_side,Nothing happening means NO,before_close,1d,6009,0.0843,14188,0.2573,0.2733,-0.016,0.1665,0.0663,0.2854
-closed_by_feb,default_side,Nothing happening means YES,before_close,1d,308,0.0745,458,0.4881,0.4913,-0.0032,0.0432,-0.6378,0.53
-closed_by_feb,default_side,No default side,before_close,1d,3483,0.0568,19047,0.2234,0.2127,0.0107,-0.2093,-0.2645,-0.1559
-closed_by_feb,default_side,Nothing happening means NO,before_close,1m,2761,0.0752,4714,0.1862,0.1585,0.0277,-0.3394,-0.5082,-0.1598
-closed_by_feb,default_side,Nothing happening means YES,before_close,1m,136,0.0948,150,0.6284,0.68,-0.0516,0.5675,0.0187,1.1292
-closed_by_feb,default_side,No default side,before_close,1m,917,0.0617,5326,0.1879,0.1695,0.0183,-0.2863,-0.3665,-0.2224
-closed_by_feb,default_side,Nothing happening means NO,before_close,1w,4557,0.0842,8812,0.2038,0.2105,-0.0067,0.064,-0.0433,0.1819
-closed_by_feb,default_side,Nothing happening means YES,before_close,1w,235,0.1047,300,0.5748,0.4967,0.0781,-0.7845,-1.1679,-0.3584
-closed_by_feb,default_side,No default side,before_close,1w,2444,0.0728,13288,0.209,0.1907,0.0183,-0.2534,-0.3078,-0.1991
-closed_by_feb,kind,Everything else,after_start,1d,7720,0.1137,21292,0.2739,0.2324,0.0414,-0.3485,-0.4126,-0.2837
-closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,499,0.1036,3143,0.2077,0.1734,0.0343,-0.3342,-0.428,-0.2551
-closed_by_feb,kind,"Who says what, post counts",after_start,1d,671,0.1384,8292,0.3373,0.3079,0.0294,-0.2141,-0.2983,-0.1215
-closed_by_feb,kind,TSA passenger counts,after_start,1d,53,0.0982,259,0.2305,0.1931,0.0375,-0.2909,-0.4028,-0.1654
-closed_by_feb,kind,AI model leaderboards,after_start,1d,35,0.0656,298,0.1314,0.1141,0.0173,-0.2161,-0.3357,-0.1168
-closed_by_feb,kind,Everything else,after_start,1m,3523,0.0683,9187,0.1949,0.1717,0.0232,-0.3175,-0.4216,-0.2004
-closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,57,0.0567,396,0.1525,0.1313,0.0212,-0.3817,-0.6734,-0.0833
-closed_by_feb,kind,"Who says what, post counts",after_start,1m,46,0.1051,344,0.3214,0.2965,0.0249,-0.2205,-0.6888,0.1925
-closed_by_feb,kind,AI model leaderboards,after_start,1m,29,0.0361,245,0.12,0.1102,0.0098,-0.2584,-0.5166,-0.0839
-closed_by_feb,kind,Everything else,after_start,1w,6193,0.0917,16839,0.2396,0.2096,0.03,-0.3137,-0.3734,-0.2583
-closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,285,0.0564,2072,0.1773,0.1646,0.0127,-0.257,-0.399,-0.1491
-closed_by_feb,kind,"Who says what, post counts",after_start,1w,286,0.0861,2855,0.2215,0.2119,0.0095,-0.1372,-0.3092,0.0332
-closed_by_feb,kind,TSA passenger counts,after_start,1w,30,0.0729,159,0.1847,0.1698,0.0148,-0.2323,-0.4593,0.0462
-closed_by_feb,kind,AI model leaderboards,after_start,1w,35,0.0608,303,0.1211,0.1122,0.0089,-0.1421,-0.2346,-0.0786
-closed_by_feb,kind,Everything else,before_close,1d,7727,0.0519,21649,0.2187,0.23,-0.0113,0.1482,0.0744,0.2241
-closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,499,0.0295,3234,0.1802,0.1732,0.0071,-0.3119,-0.4324,-0.2103
-closed_by_feb,kind,"Who says what, post counts",before_close,1d,669,0.1309,8236,0.3309,0.3071,0.0238,-0.193,-0.2945,-0.0792
-closed_by_feb,kind,TSA passenger counts,before_close,1d,53,0.0537,259,0.1998,0.1931,0.0067,-0.1149,-0.2483,0.0199
+closed_by_feb,default_side,Nothing happening means YES,before_close,1d,308,0.0745,458,0.4881,0.4913,-0.0032,0.0433,-0.6379,0.53
+closed_by_feb,default_side,No default side,before_close,1d,3483,0.0568,19047,0.2234,0.2127,0.0107,-0.2093,-0.2645,-0.156
+closed_by_feb,default_side,Nothing happening means NO,before_close,1m,2761,0.0752,4714,0.1862,0.1585,0.0277,-0.3394,-0.5082,-0.1597
+closed_by_feb,default_side,Nothing happening means YES,before_close,1m,136,0.0948,150,0.6284,0.68,-0.0516,0.5675,0.0188,1.1292
+closed_by_feb,default_side,No default side,before_close,1m,917,0.0617,5326,0.1879,0.1695,0.0183,-0.2862,-0.3664,-0.2223
+closed_by_feb,default_side,Nothing happening means NO,before_close,1w,4557,0.0842,8812,0.2038,0.2105,-0.0067,0.0639,-0.0433,0.1818
+closed_by_feb,default_side,Nothing happening means YES,before_close,1w,235,0.1047,300,0.5748,0.4967,0.0781,-0.7845,-1.1678,-0.3583
+closed_by_feb,default_side,No default side,before_close,1w,2444,0.0728,13288,0.209,0.1907,0.0183,-0.2532,-0.3076,-0.1991
+closed_by_feb,kind,Everything else,after_start,1d,7720,0.1137,21292,0.2739,0.2324,0.0414,-0.3484,-0.4124,-0.2839
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,499,0.1036,3143,0.2077,0.1734,0.0343,-0.3341,-0.428,-0.2551
+closed_by_feb,kind,"Who says what, post counts",after_start,1d,671,0.1384,8292,0.3373,0.3079,0.0294,-0.2141,-0.2984,-0.1215
+closed_by_feb,kind,TSA passenger counts,after_start,1d,53,0.0982,259,0.2305,0.1931,0.0375,-0.2909,-0.4027,-0.1653
+closed_by_feb,kind,AI model leaderboards,after_start,1d,35,0.0656,298,0.1314,0.1141,0.0173,-0.2159,-0.3356,-0.117
+closed_by_feb,kind,Everything else,after_start,1m,3523,0.0683,9187,0.1949,0.1717,0.0232,-0.3174,-0.4215,-0.2003
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,57,0.0567,396,0.1525,0.1313,0.0212,-0.3817,-0.6734,-0.0832
+closed_by_feb,kind,"Who says what, post counts",after_start,1m,46,0.1051,344,0.3214,0.2965,0.0249,-0.2205,-0.6887,0.1925
+closed_by_feb,kind,AI model leaderboards,after_start,1m,29,0.0361,245,0.12,0.1102,0.0098,-0.2583,-0.5165,-0.0839
+closed_by_feb,kind,Everything else,after_start,1w,6193,0.0917,16839,0.2396,0.2096,0.03,-0.3135,-0.3733,-0.2582
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,285,0.0564,2072,0.1773,0.1646,0.0127,-0.257,-0.399,-0.149
+closed_by_feb,kind,"Who says what, post counts",after_start,1w,286,0.0861,2855,0.2215,0.2119,0.0095,-0.1373,-0.3094,0.0332
+closed_by_feb,kind,TSA passenger counts,after_start,1w,30,0.0729,159,0.1847,0.1698,0.0148,-0.2322,-0.4593,0.0461
+closed_by_feb,kind,AI model leaderboards,after_start,1w,35,0.0608,303,0.1211,0.1122,0.0089,-0.142,-0.2345,-0.0785
+closed_by_feb,kind,Everything else,before_close,1d,7727,0.0519,21649,0.2187,0.23,-0.0113,0.1482,0.0744,0.224
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,499,0.0295,3234,0.1802,0.1732,0.0071,-0.312,-0.4325,-0.2104
+closed_by_feb,kind,"Who says what, post counts",before_close,1d,669,0.1309,8236,0.3309,0.3071,0.0238,-0.1931,-0.2946,-0.0792
+closed_by_feb,kind,TSA passenger counts,before_close,1d,53,0.0537,259,0.1998,0.1931,0.0067,-0.115,-0.2483,0.0198
 closed_by_feb,kind,AI model leaderboards,before_close,1d,35,0.0013,315,0.1063,0.1079,-0.0016,-0.4524,-0.9125,0.0165
-closed_by_feb,kind,Everything else,before_close,1m,3519,0.0676,9207,0.1908,0.1705,0.0203,-0.2827,-0.3861,-0.1665
-closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,57,0.0508,389,0.1599,0.1362,0.0236,-0.3882,-0.7131,-0.0872
+closed_by_feb,kind,Everything else,before_close,1m,3519,0.0676,9207,0.1908,0.1705,0.0203,-0.2826,-0.386,-0.1664
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,57,0.0508,389,0.1599,0.1362,0.0236,-0.3882,-0.7131,-0.0871
 closed_by_feb,kind,"Who says what, post counts",before_close,1m,46,0.1336,344,0.3657,0.2965,0.0692,-0.4936,-1.0507,-0.0249
-closed_by_feb,kind,AI model leaderboards,before_close,1m,29,0.0366,250,0.111,0.108,0.003,-0.1196,-0.1904,-0.0788
-closed_by_feb,kind,Everything else,before_close,1w,6192,0.0683,17027,0.2071,0.208,-0.0009,-0.0124,-0.0787,0.064
+closed_by_feb,kind,AI model leaderboards,before_close,1m,29,0.0366,250,0.111,0.108,0.003,-0.1194,-0.1903,-0.0788
+closed_by_feb,kind,Everything else,before_close,1w,6192,0.0683,17027,0.2071,0.208,-0.0009,-0.0125,-0.0787,0.0639
 closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,284,0.1023,2055,0.2311,0.163,0.0681,-0.6695,-0.8309,-0.5222
-closed_by_feb,kind,"Who says what, post counts",before_close,1w,284,0.1225,2844,0.2384,0.2113,0.027,-0.2446,-0.4374,-0.0846
-closed_by_feb,kind,TSA passenger counts,before_close,1w,30,0.1075,159,0.2161,0.1698,0.0462,-0.3958,-0.5716,-0.1859
-closed_by_feb,kind,AI model leaderboards,before_close,1w,35,0.009,315,0.1068,0.1079,-0.0012,-0.1764,-0.3695,0.0755
-closed_by_feb,source,Outside source exists,after_start,1d,4156,0.0987,18082,0.2228,0.1863,0.0365,-0.3537,-0.4288,-0.296
+closed_by_feb,kind,"Who says what, post counts",before_close,1w,284,0.1225,2844,0.2384,0.2113,0.027,-0.2447,-0.4374,-0.0847
+closed_by_feb,kind,TSA passenger counts,before_close,1w,30,0.1075,159,0.2161,0.1698,0.0462,-0.3957,-0.5716,-0.1859
+closed_by_feb,kind,AI model leaderboards,before_close,1w,35,0.009,315,0.1068,0.1079,-0.0012,-0.1765,-0.3696,0.0756
+closed_by_feb,source,Outside source exists,after_start,1d,4156,0.0987,18082,0.2228,0.1863,0.0365,-0.3536,-0.4287,-0.2959
 closed_by_feb,source,"No source, substantive <80",after_start,1d,2933,0.1515,10693,0.3855,0.3442,0.0414,-0.2715,-0.3472,-0.2
-closed_by_feb,source,"No source, substantive 80+",after_start,1d,2590,0.1193,4427,0.2728,0.2408,0.032,-0.2574,-0.3558,-0.1635
-closed_by_feb,source,Outside source exists,after_start,1m,1326,0.0586,5718,0.1857,0.1703,0.0153,-0.2443,-0.3118,-0.1784
-closed_by_feb,source,"No source, substantive <80",after_start,1m,1159,0.0931,2350,0.237,0.206,0.031,-0.3415,-0.634,-0.0464
+closed_by_feb,source,"No source, substantive 80+",after_start,1d,2590,0.1193,4427,0.2728,0.2408,0.032,-0.2573,-0.3557,-0.1636
+closed_by_feb,source,Outside source exists,after_start,1m,1326,0.0586,5718,0.1857,0.1703,0.0153,-0.2441,-0.3117,-0.1782
+closed_by_feb,source,"No source, substantive <80",after_start,1m,1159,0.0931,2350,0.237,0.206,0.031,-0.3414,-0.634,-0.0465
 closed_by_feb,source,"No source, substantive 80+",after_start,1m,1434,0.0673,2085,0.1769,0.1429,0.034,-0.4403,-0.6144,-0.2715
-closed_by_feb,source,Outside source exists,after_start,1w,3134,0.0735,13700,0.2043,0.1828,0.0216,-0.2902,-0.3458,-0.2411
-closed_by_feb,source,"No source, substantive <80",after_start,1w,2018,0.117,5054,0.294,0.2675,0.0265,-0.2243,-0.3557,-0.0898
-closed_by_feb,source,"No source, substantive 80+",after_start,1w,2182,0.0985,3419,0.2352,0.1963,0.039,-0.381,-0.5035,-0.2665
-closed_by_feb,source,Outside source exists,before_close,1d,4161,0.0418,18412,0.1906,0.1845,0.0061,-0.1831,-0.2212,-0.1386
+closed_by_feb,source,Outside source exists,after_start,1w,3134,0.0735,13700,0.2043,0.1828,0.0216,-0.2901,-0.3458,-0.241
+closed_by_feb,source,"No source, substantive <80",after_start,1w,2018,0.117,5054,0.294,0.2675,0.0265,-0.2244,-0.3558,-0.0898
+closed_by_feb,source,"No source, substantive 80+",after_start,1w,2182,0.0985,3419,0.2352,0.1963,0.039,-0.381,-0.5035,-0.2664
+closed_by_feb,source,Outside source exists,before_close,1d,4161,0.0418,18412,0.1906,0.1845,0.0061,-0.1832,-0.2212,-0.1387
 closed_by_feb,source,"No source, substantive <80",before_close,1d,2933,0.1208,10702,0.3495,0.3417,0.0077,-0.0752,-0.1812,0.0288
-closed_by_feb,source,"No source, substantive 80+",before_close,1d,2592,0.0542,4497,0.1913,0.2406,-0.0493,0.8638,0.7035,1.0145
-closed_by_feb,source,Outside source exists,before_close,1m,1324,0.0602,5768,0.1885,0.1692,0.0193,-0.2961,-0.3675,-0.2266
-closed_by_feb,source,"No source, substantive <80",before_close,1m,1154,0.0918,2316,0.2256,0.2064,0.0192,-0.2073,-0.4936,0.0815
-closed_by_feb,source,"No source, substantive 80+",before_close,1m,1432,0.0655,2087,0.1723,0.1418,0.0305,-0.4248,-0.5937,-0.257
-closed_by_feb,source,Outside source exists,before_close,1w,3130,0.0698,13818,0.2,0.1809,0.0191,-0.274,-0.3249,-0.2211
-closed_by_feb,source,"No source, substantive <80",before_close,1w,2020,0.1036,5079,0.2707,0.2662,0.0045,-0.0537,-0.2098,0.0962
-closed_by_feb,source,"No source, substantive 80+",before_close,1w,2184,0.0717,3448,0.1728,0.1963,-0.0235,0.3091,0.1591,0.4695
+closed_by_feb,source,"No source, substantive 80+",before_close,1d,2592,0.0542,4497,0.1913,0.2406,-0.0493,0.8639,0.7034,1.0146
+closed_by_feb,source,Outside source exists,before_close,1m,1324,0.0602,5768,0.1885,0.1692,0.0193,-0.296,-0.3674,-0.2265
+closed_by_feb,source,"No source, substantive <80",before_close,1m,1154,0.0918,2316,0.2256,0.2064,0.0192,-0.2074,-0.4936,0.0815
+closed_by_feb,source,"No source, substantive 80+",before_close,1m,1432,0.0655,2087,0.1723,0.1418,0.0305,-0.4248,-0.5938,-0.257
+closed_by_feb,source,Outside source exists,before_close,1w,3130,0.0698,13818,0.2,0.1809,0.0191,-0.2739,-0.3248,-0.221
+closed_by_feb,source,"No source, substantive <80",before_close,1w,2020,0.1036,5079,0.2707,0.2662,0.0045,-0.0537,-0.2099,0.0962
+closed_by_feb,source,"No source, substantive 80+",before_close,1w,2184,0.0717,3448,0.1728,0.1963,-0.0235,0.3089,0.159,0.4696
 open_in_feb,all,All markets,after_start,1d,868,0.1198,2734,0.2576,0.1913,0.0663,-0.5496,-0.674,-0.4344
-open_in_feb,all,All markets,after_start,1m,809,0.0927,2565,0.2098,0.1864,0.0234,-0.265,-0.3867,-0.136
-open_in_feb,all,All markets,after_start,1w,868,0.1056,2758,0.2305,0.1904,0.0401,-0.3905,-0.5088,-0.2616
-open_in_feb,all,All markets,before_close,1d,867,0.0304,2809,0.18,0.1883,-0.0083,0.1065,-0.0977,0.2971
-open_in_feb,all,All markets,before_close,1m,809,0.0574,2600,0.1825,0.1842,-0.0017,-0.0089,-0.1451,0.1183
-open_in_feb,all,All markets,before_close,1w,868,0.0423,2812,0.1759,0.1881,-0.0123,0.1846,0.0057,0.3459
+open_in_feb,all,All markets,after_start,1m,809,0.0927,2565,0.2098,0.1864,0.0234,-0.2649,-0.3865,-0.1362
+open_in_feb,all,All markets,after_start,1w,868,0.1056,2758,0.2305,0.1904,0.0401,-0.3904,-0.5088,-0.2614
+open_in_feb,all,All markets,before_close,1d,867,0.0304,2809,0.18,0.1883,-0.0083,0.1064,-0.0977,0.2971
+open_in_feb,all,All markets,before_close,1m,809,0.0574,2600,0.1825,0.1842,-0.0017,-0.0089,-0.1452,0.1182
+open_in_feb,all,All markets,before_close,1w,868,0.0423,2812,0.1759,0.1881,-0.0123,0.1845,0.0056,0.3457
 open_in_feb,default_side,Nothing happening means NO,after_start,1d,536,0.149,1083,0.316,0.2124,0.1036,-0.7473,-0.9839,-0.5391
-open_in_feb,default_side,Nothing happening means YES,after_start,1d,29,0.2073,30,0.45,0.5667,-0.1166,0.768,-0.1953,1.7757
-open_in_feb,default_side,No default side,after_start,1d,348,0.0988,1621,0.2149,0.1703,0.0447,-0.4151,-0.5297,-0.3077
-open_in_feb,default_side,Nothing happening means NO,after_start,1m,520,0.1186,1064,0.2482,0.2039,0.0443,-0.4015,-0.6189,-0.1762
-open_in_feb,default_side,No default side,after_start,1m,304,0.0728,1473,0.1767,0.167,0.0097,-0.146,-0.2573,-0.0575
-open_in_feb,default_side,Nothing happening means NO,after_start,1w,536,0.1403,1094,0.2899,0.2112,0.0788,-0.6386,-0.8774,-0.4246
-open_in_feb,default_side,Nothing happening means YES,after_start,1w,29,0.169,30,0.4624,0.5667,-0.1042,0.7366,-0.1856,1.7476
-open_in_feb,default_side,No default side,after_start,1w,348,0.0811,1634,0.1865,0.1695,0.0169,-0.1977,-0.3111,-0.1003
+open_in_feb,default_side,Nothing happening means YES,after_start,1d,29,0.2073,30,0.45,0.5667,-0.1166,0.7681,-0.1953,1.7758
+open_in_feb,default_side,No default side,after_start,1d,348,0.0988,1621,0.2149,0.1703,0.0447,-0.4151,-0.5297,-0.3076
+open_in_feb,default_side,Nothing happening means NO,after_start,1m,520,0.1186,1064,0.2482,0.2039,0.0443,-0.4014,-0.6189,-0.1762
+open_in_feb,default_side,No default side,after_start,1m,304,0.0728,1473,0.1767,0.167,0.0097,-0.1461,-0.2572,-0.0576
+open_in_feb,default_side,Nothing happening means NO,after_start,1w,536,0.1403,1094,0.2899,0.2112,0.0788,-0.6386,-0.8773,-0.4245
+open_in_feb,default_side,Nothing happening means YES,after_start,1w,29,0.169,30,0.4624,0.5667,-0.1042,0.7367,-0.1856,1.7476
+open_in_feb,default_side,No default side,after_start,1w,348,0.0811,1634,0.1865,0.1695,0.0169,-0.1976,-0.311,-0.1004
 open_in_feb,default_side,Nothing happening means NO,before_close,1d,534,0.0382,1100,0.1737,0.21,-0.0363,0.8152,0.5464,1.0909
-open_in_feb,default_side,Nothing happening means YES,before_close,1d,29,0.0388,30,0.6182,0.5667,0.0515,-1.0513,-2.0628,0.1903
-open_in_feb,default_side,No default side,before_close,1d,350,0.0251,1679,0.1763,0.1674,0.0089,-0.4026,-0.601,-0.2206
-open_in_feb,default_side,Nothing happening means NO,before_close,1m,520,0.0704,1066,0.1879,0.2036,-0.0157,0.1892,-0.0266,0.4251
-open_in_feb,default_side,No default side,before_close,1m,305,0.0481,1506,0.1707,0.164,0.0067,-0.1822,-0.3308,-0.0472
-open_in_feb,default_side,Nothing happening means NO,before_close,1w,535,0.0565,1103,0.1664,0.2094,-0.0431,0.7278,0.4516,1.0434
-open_in_feb,default_side,Nothing happening means YES,before_close,1w,29,0.0456,30,0.6081,0.5667,0.0414,-0.6306,-1.6924,0.4175
-open_in_feb,default_side,No default side,before_close,1w,350,0.0329,1679,0.1744,0.1674,0.007,-0.2674,-0.4213,-0.1202
+open_in_feb,default_side,Nothing happening means YES,before_close,1d,29,0.0388,30,0.6182,0.5667,0.0515,-1.0513,-2.0628,0.1902
+open_in_feb,default_side,No default side,before_close,1d,350,0.0251,1679,0.1763,0.1674,0.0089,-0.4027,-0.6009,-0.2206
+open_in_feb,default_side,Nothing happening means NO,before_close,1m,520,0.0704,1066,0.1879,0.2036,-0.0157,0.1893,-0.0264,0.4251
+open_in_feb,default_side,No default side,before_close,1m,305,0.0481,1506,0.1707,0.164,0.0067,-0.1823,-0.3308,-0.0472
+open_in_feb,default_side,Nothing happening means NO,before_close,1w,535,0.0565,1103,0.1664,0.2094,-0.0431,0.7279,0.4516,1.0434
+open_in_feb,default_side,Nothing happening means YES,before_close,1w,29,0.0456,30,0.6081,0.5667,0.0414,-0.6306,-1.6925,0.4175
+open_in_feb,default_side,No default side,before_close,1w,350,0.0329,1679,0.1744,0.1674,0.007,-0.2675,-0.4213,-0.1202
 open_in_feb,kind,Everything else,after_start,1d,831,0.1202,2479,0.2619,0.1948,0.0671,-0.5485,-0.671,-0.4264
-open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,16,0.1253,60,0.2365,0.2,0.0365,-0.2931,-0.7271,0.2074
-open_in_feb,kind,"Who says what, post counts",after_start,1d,11,0.1064,85,0.2308,0.1882,0.0425,-0.4919,-1.0897,0.2731
-open_in_feb,kind,AI model leaderboards,after_start,1d,13,0.119,110,0.1914,0.1091,0.0823,-0.809,-1.2276,-0.3676
-open_in_feb,kind,Everything else,after_start,1m,780,0.0923,2365,0.2111,0.1882,0.0229,-0.2569,-0.3964,-0.1246
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,16,0.1253,60,0.2365,0.2,0.0365,-0.293,-0.7271,0.2074
+open_in_feb,kind,"Who says what, post counts",after_start,1d,11,0.1064,85,0.2308,0.1882,0.0425,-0.492,-1.0897,0.2731
+open_in_feb,kind,AI model leaderboards,after_start,1d,13,0.119,110,0.1914,0.1091,0.0823,-0.809,-1.2275,-0.3675
+open_in_feb,kind,Everything else,after_start,1m,780,0.0923,2365,0.2111,0.1882,0.0229,-0.2568,-0.3963,-0.1248
 open_in_feb,kind,"Rankings, scores, box office, views",after_start,1m,11,0.0492,33,0.2621,0.2424,0.0196,-0.2797,-1.3887,0.7491
-open_in_feb,kind,"Who says what, post counts",after_start,1m,6,0.1131,57,0.2795,0.2281,0.0514,-0.5073,-1.0631,0.5435
-open_in_feb,kind,AI model leaderboards,after_start,1m,13,0.1045,110,0.1306,0.1091,0.0215,-0.2934,-0.4116,-0.1713
+open_in_feb,kind,"Who says what, post counts",after_start,1m,6,0.1131,57,0.2795,0.2281,0.0514,-0.5073,-1.0629,0.5434
+open_in_feb,kind,AI model leaderboards,after_start,1m,13,0.1045,110,0.1306,0.1091,0.0215,-0.2933,-0.4115,-0.1712
 open_in_feb,kind,Everything else,after_start,1w,831,0.1062,2503,0.2346,0.1938,0.0408,-0.3916,-0.525,-0.2618
-open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,16,0.0869,60,0.1922,0.2,-0.0078,0.0578,-0.5256,0.5964
+open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,16,0.0869,60,0.1922,0.2,-0.0078,0.0579,-0.5256,0.5964
 open_in_feb,kind,"Who says what, post counts",after_start,1w,11,0.0986,85,0.223,0.1882,0.0348,-0.4377,-1.0334,0.428
-open_in_feb,kind,AI model leaderboards,after_start,1w,13,0.1074,110,0.1642,0.1091,0.0552,-0.5831,-0.8563,-0.3169
-open_in_feb,kind,Everything else,before_close,1d,830,0.0299,2554,0.1813,0.1915,-0.0102,0.1609,-0.029,0.3452
-open_in_feb,kind,"Rankings, scores, box office, views",before_close,1d,16,0.0274,60,0.1911,0.2,-0.0089,0.1644,-0.8666,1.9125
-open_in_feb,kind,"Who says what, post counts",before_close,1d,11,0.0717,85,0.2338,0.1882,0.0456,-0.6475,-1.3903,0.3785
-open_in_feb,kind,AI model leaderboards,before_close,1d,13,0.0129,110,0.102,0.1091,-0.0071,0.0171,-1.056,0.6566
-open_in_feb,kind,Everything else,before_close,1m,780,0.0572,2400,0.183,0.1858,-0.0029,0.0093,-0.1292,0.1514
-open_in_feb,kind,"Rankings, scores, box office, views",before_close,1m,11,0.0544,33,0.2142,0.2424,-0.0282,0.4461,-0.9063,1.5863
-open_in_feb,kind,"Who says what, post counts",before_close,1m,6,0.1177,57,0.2919,0.2281,0.0639,-0.65,-1.2442,0.5011
-open_in_feb,kind,AI model leaderboards,before_close,1m,13,0.0309,110,0.1062,0.1091,-0.0029,0.0004,-0.1421,0.2606
-open_in_feb,kind,Everything else,before_close,1w,831,0.0421,2557,0.1774,0.1912,-0.0138,0.2177,0.0444,0.3819
-open_in_feb,kind,"Rankings, scores, box office, views",before_close,1w,16,0.0323,60,0.1833,0.2,-0.0167,0.404,-0.4722,1.6684
-open_in_feb,kind,"Who says what, post counts",before_close,1w,11,0.0844,85,0.2194,0.1882,0.0311,-0.3819,-1.0673,0.4923
-open_in_feb,kind,AI model leaderboards,before_close,1w,13,0.019,110,0.1022,0.1091,-0.0069,0.0729,-0.4155,0.6238
+open_in_feb,kind,AI model leaderboards,after_start,1w,13,0.1074,110,0.1642,0.1091,0.0552,-0.583,-0.8563,-0.3169
+open_in_feb,kind,Everything else,before_close,1d,830,0.0299,2554,0.1813,0.1915,-0.0102,0.1608,-0.029,0.3454
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1d,16,0.0274,60,0.1911,0.2,-0.0089,0.1643,-0.8666,1.9126
+open_in_feb,kind,"Who says what, post counts",before_close,1d,11,0.0717,85,0.2338,0.1882,0.0456,-0.6476,-1.3903,0.3786
+open_in_feb,kind,AI model leaderboards,before_close,1d,13,0.0129,110,0.102,0.1091,-0.0071,0.017,-1.0559,0.6566
+open_in_feb,kind,Everything else,before_close,1m,780,0.0572,2400,0.183,0.1858,-0.0029,0.0092,-0.1294,0.1512
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1m,11,0.0544,33,0.2142,0.2424,-0.0282,0.446,-0.9061,1.5863
+open_in_feb,kind,"Who says what, post counts",before_close,1m,6,0.1177,57,0.2919,0.2281,0.0639,-0.6501,-1.2443,0.5011
+open_in_feb,kind,AI model leaderboards,before_close,1m,13,0.0309,110,0.1062,0.1091,-0.0029,0.0006,-0.142,0.2606
+open_in_feb,kind,Everything else,before_close,1w,831,0.0421,2557,0.1774,0.1912,-0.0138,0.2176,0.0443,0.3818
+open_in_feb,kind,"Rankings, scores, box office, views",before_close,1w,16,0.0323,60,0.1833,0.2,-0.0167,0.4039,-0.4721,1.6684
+open_in_feb,kind,"Who says what, post counts",before_close,1w,11,0.0844,85,0.2194,0.1882,0.0311,-0.382,-1.0672,0.4923
+open_in_feb,kind,AI model leaderboards,before_close,1w,13,0.019,110,0.1022,0.1091,-0.0069,0.0728,-0.4155,0.6238
 open_in_feb,source,Outside source exists,after_start,1d,438,0.1053,1764,0.2234,0.182,0.0414,-0.3684,-0.4918,-0.2545
 open_in_feb,source,"No source, substantive <80",after_start,1d,204,0.1692,444,0.3867,0.2387,0.148,-1.0058,-1.4098,-0.6732
 open_in_feb,source,"No source, substantive 80+",after_start,1d,306,0.127,520,0.2626,0.1827,0.0799,-0.6209,-0.9726,-0.3385
-open_in_feb,source,Outside source exists,after_start,1m,395,0.076,1632,0.1815,0.1771,0.0044,-0.0721,-0.1735,0.0257
-open_in_feb,source,"No source, substantive <80",after_start,1m,196,0.1367,416,0.3348,0.2356,0.0993,-0.8136,-1.1913,-0.4467
-open_in_feb,source,"No source, substantive 80+",after_start,1m,298,0.1106,512,0.1978,0.1758,0.022,-0.2196,-0.5581,0.0601
+open_in_feb,source,Outside source exists,after_start,1m,395,0.076,1632,0.1815,0.1771,0.0044,-0.0723,-0.1733,0.0256
+open_in_feb,source,"No source, substantive <80",after_start,1m,196,0.1367,416,0.3348,0.2356,0.0993,-0.8135,-1.1913,-0.4468
+open_in_feb,source,"No source, substantive 80+",after_start,1m,298,0.1106,512,0.1978,0.1758,0.022,-0.2195,-0.5581,0.0602
 open_in_feb,source,Outside source exists,after_start,1w,439,0.0905,1782,0.1974,0.1813,0.0161,-0.1775,-0.29,-0.0737
-open_in_feb,source,"No source, substantive <80",after_start,1w,205,0.1504,447,0.3622,0.2371,0.1251,-0.9588,-1.362,-0.5896
-open_in_feb,source,"No source, substantive 80+",after_start,1w,306,0.1186,523,0.23,0.1816,0.0483,-0.422,-0.7849,-0.1162
-open_in_feb,source,Outside source exists,before_close,1d,440,0.0265,1829,0.1774,0.1788,-0.0014,-0.0995,-0.2905,0.0971
-open_in_feb,source,"No source, substantive <80",before_close,1d,205,0.0406,448,0.2225,0.2366,-0.0141,0.2532,-0.3898,0.8287
-open_in_feb,source,"No source, substantive 80+",before_close,1d,304,0.0357,526,0.1522,0.1806,-0.0284,0.6495,0.2218,1.0027
-open_in_feb,source,Outside source exists,before_close,1m,395,0.0514,1664,0.1729,0.1743,-0.0014,-0.0283,-0.1633,0.1018
-open_in_feb,source,"No source, substantive <80",before_close,1m,196,0.0769,417,0.2579,0.235,0.0229,-0.2897,-0.6748,0.1145
-open_in_feb,source,"No source, substantive 80+",before_close,1m,298,0.0612,514,0.1512,0.1751,-0.0239,0.3058,0.0181,0.5633
-open_in_feb,source,Outside source exists,before_close,1w,440,0.0361,1829,0.1733,0.1788,-0.0055,0.0329,-0.131,0.2193
-open_in_feb,source,"No source, substantive <80",before_close,1w,205,0.0541,448,0.2345,0.2366,-0.0021,0.0046,-0.4672,0.4762
-open_in_feb,source,"No source, substantive 80+",before_close,1w,305,0.0531,529,0.1333,0.1796,-0.0463,0.8258,0.5203,1.1274
+open_in_feb,source,"No source, substantive <80",after_start,1w,205,0.1504,447,0.3622,0.2371,0.1251,-0.9587,-1.3621,-0.5895
+open_in_feb,source,"No source, substantive 80+",after_start,1w,306,0.1186,523,0.23,0.1816,0.0483,-0.4219,-0.7849,-0.1162
+open_in_feb,source,Outside source exists,before_close,1d,440,0.0265,1829,0.1774,0.1788,-0.0014,-0.0995,-0.2905,0.0969
+open_in_feb,source,"No source, substantive <80",before_close,1d,205,0.0406,448,0.2225,0.2366,-0.0141,0.2531,-0.3898,0.8286
+open_in_feb,source,"No source, substantive 80+",before_close,1d,304,0.0357,526,0.1522,0.1806,-0.0284,0.6497,0.2217,1.0027
+open_in_feb,source,Outside source exists,before_close,1m,395,0.0514,1664,0.1729,0.1743,-0.0014,-0.0284,-0.1634,0.1017
+open_in_feb,source,"No source, substantive <80",before_close,1m,196,0.0769,417,0.2579,0.235,0.0229,-0.2898,-0.6748,0.1143
+open_in_feb,source,"No source, substantive 80+",before_close,1m,298,0.0612,514,0.1512,0.1751,-0.0239,0.3058,0.018,0.5633
+open_in_feb,source,Outside source exists,before_close,1w,440,0.0361,1829,0.1733,0.1788,-0.0055,0.0328,-0.1311,0.2191
+open_in_feb,source,"No source, substantive <80",before_close,1w,205,0.0541,448,0.2345,0.2366,-0.0021,0.0046,-0.4672,0.4761
+open_in_feb,source,"No source, substantive 80+",before_close,1w,305,0.0531,529,0.1333,0.1796,-0.0463,0.8258,0.5203,1.1273
