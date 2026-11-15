@@ -4,7 +4,8 @@ python polymarket/calibration.py -> polymarket/plots/*.png, metrics.csv, bins.cs
 Inputs: snapshots.jsonl and meta.csv (polymarket/prices.py), results.jsonl (16-question Haiku pass), outside_results.jsonl (polymarket/outside.py), cohorts.csv.
 Main sample: the closed_by_feb cohort. Each market counts once per moment. Intervals resample events (event_title), because markets of one event share an outcome.
 Filtered (main) plots keep a moment only if $1,000 had traded by then (volume.csv, Becker's trades, so open_in_feb mostly drops out) and,
-in a one-winner (negRisk) event, the event's prices at that moment sum to at most 130%. Unfiltered plots go to polymarket/plots/unfiltered.
+in a one-winner (negRisk) event, the event's prices at that moment sum to at most 130%. Unfiltered plots (no $1,000 or 130% rule) go to polymarket/plots/unfiltered.
+Both drop junk by the Manifold rule (JUNK): any of these Haiku tags, or substantive 20 or less.
 by_side_weighted.png: the by_side plot with each event weighted to 1 (weigh()).
 """
 import json, re, sys
@@ -30,6 +31,7 @@ CHART = (r"netflix (movie|show|series)|top (global |us )?netflix|most streamed|t
 NOT_CHART = r"domestic product|\b(say|said)\s+[\"“]|earnings|\bstocks?\b|\bshares?\b|market cap|award|golden globe|oscar|grammy|\bremoved\b|acquire"
 KINDS = [("tsa", r"\btsa\b", None), ("ai_leaderboard", r"(top|best|#\d+|number one) ai model|lmarena|chatbot arena|text arena|ai model (rank|leaderboard)", None),
          ("chart", CHART, NOT_CHART)]
+JUNK = {"crypto_price", "other_asset_price", "sports_match", "sports_tournament", "sports_performance", "central_bank_rate", "weather_measurement", "scheduled_release", "speech_or_posts", "existing_fact"}
 ANCHORS = {"after_start": "after trading starts", "before_close": "before closing"}
 
 
@@ -60,6 +62,7 @@ def frame():
     a["prob"] = a.prob.clip(.001, .999)
     a["bin"] = np.minimum((a.prob * 10).astype(int), 9)
     text = a.id.map({m["id"]: f'{m["question"]} | {m["event_title"] or ""}' for m in map(json.loads, open(HERE / "input.jsonl"))})
+    a["junk"] = a.id.map(labels.set_index("id")["yes"]).map(lambda y: bool(JUNK & set(y))) | (a.substantive <= 20)
     a["kind"] = np.where(a.id.map(labels.set_index("id")["yes"]).map(lambda y: "speech_or_posts" in y), "speech_or_posts", "other")
     for kind, pat, not_pat in KINDS:  # speech_or_posts (Haiku), then the first rule that matches
         hit = text.map(lambda t: bool(re.search(pat, t, re.I)) and not (not_pat and re.search(not_pat, t, re.I)))
@@ -138,6 +141,7 @@ def plot_one(out, filtered, bins, split, anchors, name, title, note, unit="marke
 
 def main():
     a = frame()
+    a = a[~a.junk]
     keep = (a.vol >= MIN_VOL) & a.neg_risk.notna() & ~(a.event_sum > MAX_SUM)  # open_in_feb has no event data, so it drops out
     print(a.groupby(["cohort", "anchor", "horizon"]).size().to_string(), f"\nno outside answer: {a.outside.isna().mean():.1%} of snapshots, median price age {a.lag_h.median():.1f}h", flush=True)
     print(f"moments under $1,000: {(a.vol < MIN_VOL).sum():,}, no volume (after Feb 2): {a.vol.isna().sum():,}, one-winner event sum over {MAX_SUM:.0%}: {(a.event_sum > MAX_SUM).sum():,}, kept {keep.sum():,} of {len(a):,}")

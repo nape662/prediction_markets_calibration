@@ -2,7 +2,7 @@
 
 **Short answer: mostly, apart from one predictable bias.** Both platforms overprice "something happens": when a question resolves NO if nothing new happens ("Will X happen by June?"), YES is too expensive. More on the bias in [the other post](TODO-link).
 
-- **Polymarket is close to calibrated.** One week after a market opens, prices average 24.4% and 22.4% of markets resolve YES (11,881 markets).
+- **Polymarket is close to calibrated.** One week after a market opens, prices average 24.5% and 22.3% of markets resolve YES (8,810 markets).
 - **Manifold overprices YES by about 8 points** (40.0% priced, 32.3% resolved YES; 9,762 markets). Almost all of this gap comes from the bias above.
 - **On questions where nothing happening doesn't decide the answer**, such as elections and awards, both platforms are close to the diagonal: Polymarket is off by under 1 point, Manifold by about 4.
 
@@ -19,7 +19,11 @@
 
 About 95% of Polymarket markets are crypto and other asset prices ("Bitcoin up or down?"), sports questions that mirror ordinary betting (who wins A vs B, with what score) and weather forecasts. On top of that come things like "how many tweets will Elon post next week". I've seen a couple of papers that check how calibrated the markets are, but they never filtered the junk out. I wondered what happens if you seriously try to look only at reasonable markets.
 
-First, a regex filter removed sports, asset-price and weather markets. Then an LLM answered 25 yes/no questions about the text of each remaining market. The questions target the biggest kinds of junk Opus 5.5 high found in samples of a few hundred markets that got through the regex: coin flips, games about the market itself, and the like. On Manifold, Jev (a cheap classification model) did this labeling, and we keep only markets whose answers flag none of these. We also drop markets that score below a hand-picked cutoff on a separate question, how substantive the question is. On Polymarket, Haiku 5.5 medium labeled every market too, but in the end we dropped no markets based on its labels. The junk the regex missed ("will Trump say X", tweet counts, box office rankings) turned out to be calibrated about as well as the rest, and removing it barely changes the result. So the two platforms were filtered differently. This doesn't explain the difference between them. If we filter Manifold the Polymarket way (regex only), its shift is −0.47 instead of −0.51. The sports, price and weather markets the regex removes from Manifold are calibrated (+0.01, 919 markets), but there are too few of them to move the total. On Polymarket we never priced those markets, so we can't say the same there.
+First, a regex filter removed sports, asset-price and weather markets. Then an LLM answered 25 yes/no questions about the text of each remaining market. The questions target the biggest kinds of junk Opus 5.5 high found in samples of a few hundred markets that got through the regex: coin flips, games about the market itself, and the like. On Manifold, Jev (a cheap classification model) did this labeling, on Polymarket it was Haiku 5.5.[^1] We keep only markets whose answers flag none of these. We also drop markets that score below a hand-picked cutoff on a separate question with a numerical answer, how substantive the question is.[^2]
+
+[^1]: In a 200-market pilot, Jev and Haiku (medium effort, one market per call, as used here) agreed with Opus 5.5 about equally often. I didn't want to spend more money on API calls, so Haiku, which ran on included credit, labeled Polymarket.
+
+[^2]: For people suspicious of this last metric: you are right to be suspicious. But Jev's judgement on Manifold was surprisingly decent wherever Opus 5.5 and I looked (Opus rated 9 of 100 random kept markets as hardly substantive). And the Polymarket markets this whole LLM filter drops are calibrated about like the ones it keeps: shift −0.17 against −0.24, 1 week after opening.
 
 
 We also dropped thinly traded moments. On Polymarket, a market counts at a given moment only if $1,000 had already been traded on it. On Manifold, at least 15 different people must have bet on it by then.
@@ -39,7 +43,7 @@ Do the prices of Polymarket and Manifold match how often things actually happen,
 
 ### Data
 
-- **Polymarket:** we used Polymarket's own APIs (Gamma for market data, CLOB for price history). Dollars traded before each moment come from the Becker on-chain trades dataset, which ends on 2026-02-02. Of about 2.06M Polymarket markets, our regex rules flag 1.12M as sports, 0.75M as asset prices and 0.09M as weather. We remove those and keep resolved Yes/No markets that closed before 2026-02-02 with at least $1,000 of lifetime volume: 36,853 markets.
+- **Polymarket:** we used Polymarket's own APIs (Gamma for market data, CLOB for price history). Dollars traded before each moment come from the Becker on-chain trades dataset, which ends on 2026-02-02. Of about 2.06M Polymarket markets, our regex rules flag 1.12M as sports, 0.75M as asset prices and 0.09M as weather. We remove those and keep resolved Yes/No markets that closed before 2026-02-02 with at least $1,000 of lifetime volume: 36,853 markets, which then go through the LLM filter below.
 - **Manifold:** we used Manifold's public API, fetched on 2026-10-30. We kept resolved binary markets with at least 15 bettors and at least 1,000 mana traded over the market's lifetime: 37,680 markets. Of these, 27,752 are labeled as questions about the world. Multiple-choice markets are excluded.
 
 ### Which markets count as junk
@@ -51,8 +55,8 @@ Do the prices of Polymarket and Manifold match how often things actually happen,
   4. "not a substantive question about the world" (Jev 0.2 or lower).
 
   Everything else is "world": the 27,752 markets above. On 100 random world markets, Opus scored 9 as hardly substantive, 5 of them about one streamer.
-- **Polymarket:** only the regex filter above. Who-says-what markets and rankings stay in the sample (about 35% of markets, but about 8% of dollars traded). Removing them moves the overall shift from −0.23 to −0.25, and the shift for "nothing happening means NO" from −0.34 to −0.35. Note the asymmetry: Manifold drops who-says-what markets, Polymarket keeps them.
-- **Same rule on both platforms, 1 week after opening.** Manifold's rule applied to Polymarket, using Haiku's tags: we drop markets tagged as asset prices, sports, central-bank rates, weather, scheduled releases, who-says-what or existing facts, or with a substantive score of 20 or less. That drops 26% of markets, and the shift goes from −0.23 to −0.24. Polymarket's rule applied to Manifold (regex only): the shift goes from −0.51 to −0.47 on 10,777 markets. The markets the regex removes from Manifold are calibrated (+0.01, 919 markets). Polymarket's regex-removed markets were never priced.
+- **Polymarket:** Haiku 5.5 answered the same kinds of tag questions. We drop a market if Haiku tags it as a crypto or other asset price, sports, a central-bank rate, weather, a scheduled release (CPI, jobs reports), who-says-what or post counts, or an existing fact, or if it scores 20 or less out of 100 on "substantive". At 1 week this drops 3,071 of 11,881 markets (26%), mostly who-says-what and tweet counts (1,925). Rankings like box office and app-store charts stay in.
+- **How much the LLM filter matters, 1 week after opening.** On Polymarket, without it the shift is −0.23; with it, −0.24. On Manifold, with the regex alone instead of the LLM filter, it is −0.47 instead of −0.51 (10,777 markets). The sports, price and weather markets the regex removes from Manifold are calibrated (+0.01, 919 markets). The ones it removes from Polymarket were never priced.
 
 ### Forecasts
 
@@ -60,7 +64,7 @@ Do the prices of Polymarket and Manifold match how often things actually happen,
 - **Why not "N days before resolution":** the resolution date depends on the outcome. "By date" questions resolve early when YES happens, so "1 week before resolution" is a different calendar moment for YES markets and NO markets. That makes the numbers look better than they are; see the other post. Fixed times after opening don't depend on the outcome.
 - **Polymarket price:** the last hourly point of the CLOB price history at or before the moment, at most 3 days old. A market counts only if at least $1,000 had been traded on-chain before the moment. Without this rule, empty order books show fake prices near 50%. We also drop markets in one-winner events whose prices, at that moment, sum to more than 130%.
 - **Manifold price:** the probability after the last bet that moved the price, at or before the moment. A market counts only if at least 15 distinct bettors had bet by then.
-- **Counts at 1 week:** 22,228 Polymarket markets have a price, and 11,881 of them pass the $1,000 rule. 1,697 Polymarket markets from before 2023 traded on an older system with no on-chain record, so they drop out. On Manifold, 9,762 of 27,748 labeled world markets have 15 bettors by then and are still open.
+- **Counts at 1 week:** 22,228 Polymarket markets have a price; 11,881 of them pass the $1,000 rule, and 8,810 also pass the LLM filter. 1,697 Polymarket markets from before 2023 traded on an older system with no on-chain record, so they drop out. On Manifold, 9,762 of 27,748 labeled world markets have 15 bettors by then and are still open.
 
 ### "No default side"
 
@@ -84,16 +88,16 @@ Haiku 5.5 (medium effort, one market per call, text only) answered:
 
 | | Markets | Mean price → YES rate | Shift (95%) | Brier (baseline) | AUROC | Balanced accuracy |
 |---|---|---|---|---|---|---|
-| Polymarket, all | 11,881 | 24.4% → 22.4% | −0.23 (−0.28 to −0.17) | 0.087 (0.174) | 0.92 | 0.80 |
-| Polymarket, no default side | 6,077 | 23.2% → 22.5% | −0.11 (−0.17 to −0.05) | 0.074 (0.174) | 0.94 | 0.83 |
+| Polymarket, all | 8,810 | 24.5% → 22.3% | −0.24 (−0.31 to −0.18) | 0.090 (0.173) | 0.91 | 0.79 |
+| Polymarket, no default side | 3,810 | 23.9% → 23.0% | −0.13 (−0.19 to −0.06) | 0.078 (0.177) | 0.94 | 0.82 |
 | Manifold, all world | 9,762 | 40.0% → 32.3% | −0.51 (−0.57 to −0.45) | 0.150 (0.219) | 0.85 | 0.76 |
 | Manifold, no default side | 1,529 | 48.1% → 44.2% | −0.23 (−0.35 to −0.11) | 0.169 (0.247) | 0.83 | 0.74 |
 
-The 1-day and 1-month numbers tell the same story; they are in `plots/metrics.csv`. On Polymarket, giving each event a total weight of 1 gives shifts of −0.30 (−0.36 to −0.23) for all markets (5,510 events) and −0.12 (−0.23 to −0.00) for no default side (1,697 events). An earlier run grouped repeating events into series by title, with numbers and dates removed. Series with more than 5 events held 10% of the event weight at 1 week, and capping each series at 5 events cut that to 5%. The cap made no visible difference, so the final plots don't use it.
+The 1-day and 1-month numbers tell the same story; they are in `plots/metrics.csv`. On Polymarket, giving each event a total weight of 1 gives shifts of −0.31 (−0.39 to −0.22) for all markets (4,652 events) and −0.08 (−0.21 to +0.03) for no default side (1,169 events). An earlier run, before the LLM filter on Polymarket, grouped repeating events into series by title, with numbers and dates removed. Series with more than 5 events held 10% of the event weight at 1 week, and capping each series at 5 events cut that to 5%. The cap made no visible difference, so the final plots don't use it.
 
 **Read with care:**
 - The two platforms' samples contain different questions, so these numbers don't say which platform forecasts better.
-- Manifold numbers probably understate the overpricing. Markets that were still unresolved at the fetch are missing, and the recent markets that have resolved lean YES. If we keep only markets whose stated deadline passed at least 60 days before the fetch, Manifold's overall gap grows from 7.7 to 9.9 points. On Polymarket, the same filter leaves the "nothing happening means NO" shift unchanged at −0.34.
+- Manifold numbers probably understate the overpricing. Markets that were still unresolved at the fetch are missing, and the recent markets that have resolved lean YES. If we keep only markets whose stated deadline passed at least 60 days before the fetch, Manifold's overall gap grows from 7.7 to 9.9 points. On Polymarket, the same filter moves the "nothing happening means NO" shift from −0.33 to −0.37 (3,336 markets).
 - Manifold's lifetime requirement of 1,000 mana traded uses information from after the moment.
 
 ### Reproduce

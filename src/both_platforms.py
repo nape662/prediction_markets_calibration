@@ -25,7 +25,7 @@ PLATFORMS = [("Polymarket", "#1d4ed8", "events"), ("Manifold", "#c2410c", "creat
 
 def load():
     p = pm.frame()
-    p = p[(p.cohort == "closed_by_feb") & (p.anchor == "after_start") & (p.vol >= pm.MIN_VOL) & p.neg_risk.notna() & ~(p.event_sum > pm.MAX_SUM)]
+    p = p[~p.junk & (p.cohort == "closed_by_feb") & (p.anchor == "after_start") & (p.vol >= pm.MIN_VOL) & p.neg_risk.notna() & ~(p.event_sum > pm.MAX_SUM)]
     m, _ = mf.labeled()
     m = m[(m.group == "world") & (m.bettors >= 15) & (m.anchor == "after_creation") & m.horizon.isin(HORIZONS) & (m.t < m.closeTime)]
     cols = ["id", "horizon", "prob", "y", "creator", "default_side"]
@@ -66,7 +66,7 @@ def figure(data, keep, name, title):
         ax.legend(frameon=False, fontsize=8, loc="lower right")
     axes[0].set_ylabel("Resolved YES (%)")
     fig.suptitle(title, x=.01, ha="left", fontsize=14)
-    fig.text(.01, .01, "Resolved YES/NO markets. Polymarket: sports, asset prices and weather removed by text rules.\nManifold: only markets labeled as questions about the world (no sports, prices, weather, coin flips, games about the market...). Each market counts once per panel.\n"
+    fig.text(.01, .01, "Resolved YES/NO markets. Junk removed by text rules and LLM labels: sports, asset prices, weather, scheduled statistics, who-says-what, existing facts, unsubstantive questions\n(Manifold also: coin flips, games about the market). Each market counts once per panel.\n"
              "Polymarket: last hourly API price at or before the moment, markets closed before Feb 2, 2026, only moments with $1,000+ traded on-chain before them. "
              "Manifold: probability after the last bet, 15+ distinct bettors by the moment.\n"
              "Dots: markets grouped into 10-point price bins (0-10%, 10-20%, ...), bins under 30 markets dropped, number = markets in the bin. "

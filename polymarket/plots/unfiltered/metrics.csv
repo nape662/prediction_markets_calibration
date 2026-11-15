@@ -1,137 +1,121 @@
 cohort,split,group,anchor,horizon,events,brier,n,price,yes,gap,shift,low,high
-closed_by_feb,all,All markets,after_start,1d,8925,0.1184,33284,0.2818,0.2443,0.0375,-0.3075,-0.3552,-0.2638
-closed_by_feb,all,Closed within a week of starting,after_start,1d,2588,0.1275,11194,0.3386,0.3229,0.0157,-0.1234,-0.2345,-0.0233
-closed_by_feb,all,All markets,after_start,1m,3653,0.0683,10172,0.1957,0.1728,0.0229,-0.3133,-0.4138,-0.2065
-closed_by_feb,all,All markets,after_start,1w,6801,0.0871,22228,0.2294,0.2041,0.0254,-0.286,-0.3399,-0.2296
-closed_by_feb,all,All markets,before_close,1d,8930,0.0686,33693,0.2412,0.242,-0.0007,-0.0258,-0.0871,0.039
-closed_by_feb,all,Closed within a week of starting,before_close,1d,2578,0.1127,11132,0.331,0.3212,0.0097,-0.0946,-0.1937,-0.012
-closed_by_feb,all,All markets,before_close,1m,3649,0.0684,10190,0.1936,0.1719,0.0216,-0.2967,-0.4018,-0.1956
-closed_by_feb,all,All markets,before_close,1w,6797,0.0777,22400,0.2119,0.2026,0.0093,-0.1335,-0.1984,-0.0719
-closed_by_feb,default_side,Nothing happening means NO,after_start,1d,6006,0.1355,14129,0.3193,0.2745,0.0448,-0.3264,-0.3941,-0.2586
-closed_by_feb,default_side,Nothing happening means YES,after_start,1d,308,0.1602,442,0.4579,0.4955,-0.0376,0.2584,0.0184,0.5582
-closed_by_feb,default_side,No default side,after_start,1d,3480,0.1044,18713,0.2493,0.2155,0.0338,-0.3078,-0.3728,-0.2488
-closed_by_feb,default_side,Nothing happening means NO,after_start,1m,2762,0.0787,4708,0.1963,0.1591,0.0372,-0.4445,-0.6417,-0.2551
-closed_by_feb,default_side,Nothing happening means YES,after_start,1m,138,0.1103,153,0.6153,0.6797,-0.0645,0.5928,0.0786,1.1308
-closed_by_feb,default_side,No default side,after_start,1m,919,0.0578,5311,0.1831,0.1704,0.0127,-0.2149,-0.2791,-0.145
-closed_by_feb,default_side,Nothing happening means NO,after_start,1w,4553,0.1038,8782,0.2465,0.2108,0.0357,-0.3328,-0.4277,-0.2312
-closed_by_feb,default_side,Nothing happening means YES,after_start,1w,235,0.1402,296,0.4826,0.4932,-0.0106,0.0833,-0.3514,0.5704
-closed_by_feb,default_side,No default side,after_start,1w,2451,0.0748,13150,0.2124,0.1931,0.0193,-0.2578,-0.3161,-0.2028
-closed_by_feb,default_side,Nothing happening means NO,before_close,1d,6009,0.0843,14188,0.2573,0.2733,-0.016,0.1665,0.0663,0.2854
-closed_by_feb,default_side,Nothing happening means YES,before_close,1d,308,0.0745,458,0.4881,0.4913,-0.0032,0.0433,-0.6379,0.53
-closed_by_feb,default_side,No default side,before_close,1d,3483,0.0568,19047,0.2234,0.2127,0.0107,-0.2093,-0.2645,-0.156
-closed_by_feb,default_side,Nothing happening means NO,before_close,1m,2761,0.0752,4714,0.1862,0.1585,0.0277,-0.3394,-0.5082,-0.1597
-closed_by_feb,default_side,Nothing happening means YES,before_close,1m,136,0.0948,150,0.6284,0.68,-0.0516,0.5675,0.0188,1.1292
-closed_by_feb,default_side,No default side,before_close,1m,917,0.0617,5326,0.1879,0.1695,0.0183,-0.2862,-0.3664,-0.2223
-closed_by_feb,default_side,Nothing happening means NO,before_close,1w,4557,0.0842,8812,0.2038,0.2105,-0.0067,0.0639,-0.0433,0.1818
-closed_by_feb,default_side,Nothing happening means YES,before_close,1w,235,0.1047,300,0.5748,0.4967,0.0781,-0.7845,-1.1678,-0.3583
-closed_by_feb,default_side,No default side,before_close,1w,2444,0.0728,13288,0.209,0.1907,0.0183,-0.2532,-0.3076,-0.1991
-closed_by_feb,kind,Everything else,after_start,1d,7720,0.1137,21292,0.2739,0.2324,0.0414,-0.3484,-0.4124,-0.2839
-closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,499,0.1036,3143,0.2077,0.1734,0.0343,-0.3341,-0.428,-0.2551
-closed_by_feb,kind,"Who says what, post counts",after_start,1d,671,0.1384,8292,0.3373,0.3079,0.0294,-0.2141,-0.2984,-0.1215
-closed_by_feb,kind,TSA passenger counts,after_start,1d,53,0.0982,259,0.2305,0.1931,0.0375,-0.2909,-0.4027,-0.1653
+closed_by_feb,all,All markets,after_start,1d,7190,0.1099,21446,0.2536,0.2143,0.0394,-0.346,-0.3954,-0.2997
+closed_by_feb,all,Closed within a week of starting,after_start,1d,1708,0.1058,4654,0.2795,0.2894,-0.01,0.0847,-0.0079,0.1851
+closed_by_feb,all,All markets,after_start,1m,3327,0.0662,8806,0.1905,0.1677,0.0228,-0.3231,-0.4306,-0.2013
+closed_by_feb,all,All markets,after_start,1w,5734,0.0861,16909,0.2221,0.1932,0.0289,-0.3271,-0.3882,-0.2644
+closed_by_feb,all,All markets,before_close,1d,7194,0.0452,21881,0.2013,0.212,-0.0106,0.1475,0.0674,0.2305
+closed_by_feb,all,Closed within a week of starting,before_close,1d,1701,0.0717,4648,0.2653,0.2868,-0.0214,0.2511,0.1282,0.3943
+closed_by_feb,all,All markets,before_close,1m,3323,0.0661,8825,0.1857,0.1667,0.019,-0.2733,-0.3796,-0.1518
+closed_by_feb,all,All markets,before_close,1w,5736,0.0687,17107,0.1957,0.1914,0.0043,-0.0821,-0.1533,-0.0139
+closed_by_feb,default_side,Nothing happening means NO,after_start,1d,5171,0.1209,9689,0.2769,0.2366,0.0403,-0.3269,-0.4182,-0.2348
+closed_by_feb,default_side,Nothing happening means YES,after_start,1d,248,0.1724,357,0.4569,0.4986,-0.0417,0.281,0.0258,0.6259
+closed_by_feb,default_side,No default side,after_start,1d,2189,0.0985,11400,0.2275,0.1864,0.0411,-0.3943,-0.4545,-0.3376
+closed_by_feb,default_side,Nothing happening means NO,after_start,1m,2584,0.0787,4248,0.1923,0.1573,0.0351,-0.4247,-0.6387,-0.1955
+closed_by_feb,default_side,Nothing happening means YES,after_start,1m,123,0.1153,138,0.6281,0.6957,-0.0675,0.6109,0.0415,1.1567
+closed_by_feb,default_side,No default side,after_start,1m,736,0.0527,4420,0.1752,0.1613,0.0138,-0.2506,-0.334,-0.1835
+closed_by_feb,default_side,Nothing happening means NO,after_start,1w,4136,0.0978,7364,0.2338,0.1992,0.0346,-0.3379,-0.4379,-0.2292
+closed_by_feb,default_side,Nothing happening means YES,after_start,1w,192,0.1475,252,0.5004,0.5119,-0.0115,0.0919,-0.4205,0.6616
+closed_by_feb,default_side,No default side,after_start,1w,1696,0.0751,9293,0.2052,0.1797,0.0255,-0.3342,-0.3953,-0.2617
+closed_by_feb,default_side,Nothing happening means NO,before_close,1d,5175,0.0534,9787,0.2009,0.2356,-0.0347,0.5763,0.4623,0.6914
+closed_by_feb,default_side,Nothing happening means YES,before_close,1d,248,0.0749,373,0.4955,0.4933,0.0022,-0.0326,-0.9508,0.6339
+closed_by_feb,default_side,No default side,before_close,1d,2192,0.0374,11721,0.1923,0.1833,0.0091,-0.2658,-0.3206,-0.2124
+closed_by_feb,default_side,Nothing happening means NO,before_close,1m,2582,0.0739,4253,0.1774,0.1564,0.021,-0.2648,-0.4718,-0.0562
+closed_by_feb,default_side,Nothing happening means YES,before_close,1m,121,0.0959,135,0.6504,0.6963,-0.0459,0.5117,-0.0399,1.1593
+closed_by_feb,default_side,No default side,before_close,1m,735,0.0577,4437,0.1794,0.1605,0.019,-0.3175,-0.3891,-0.2436
+closed_by_feb,default_side,Nothing happening means NO,before_close,1w,4138,0.0725,7393,0.1789,0.199,-0.0201,0.2499,0.1317,0.3807
+closed_by_feb,default_side,Nothing happening means YES,before_close,1w,192,0.0992,256,0.5938,0.5156,0.0782,-0.801,-1.1881,-0.2914
+closed_by_feb,default_side,No default side,before_close,1w,1697,0.0649,9458,0.1981,0.1768,0.0213,-0.3216,-0.3793,-0.2649
+closed_by_feb,kind,Everything else,after_start,1d,6610,0.1112,18072,0.2627,0.2218,0.0409,-0.3536,-0.4121,-0.2957
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,494,0.1064,2905,0.2112,0.1783,0.0329,-0.3156,-0.3998,-0.2419
+closed_by_feb,kind,TSA passenger counts,after_start,1d,52,0.0985,171,0.2288,0.2047,0.0241,-0.1807,-0.4417,0.06
 closed_by_feb,kind,AI model leaderboards,after_start,1d,35,0.0656,298,0.1314,0.1141,0.0173,-0.2159,-0.3356,-0.117
-closed_by_feb,kind,Everything else,after_start,1m,3523,0.0683,9187,0.1949,0.1717,0.0232,-0.3174,-0.4215,-0.2003
-closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,57,0.0567,396,0.1525,0.1313,0.0212,-0.3817,-0.6734,-0.0832
-closed_by_feb,kind,"Who says what, post counts",after_start,1m,46,0.1051,344,0.3214,0.2965,0.0249,-0.2205,-0.6887,0.1925
+closed_by_feb,kind,Everything else,after_start,1m,3243,0.0676,8180,0.1944,0.1711,0.0232,-0.3216,-0.4374,-0.1845
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1m,56,0.0568,381,0.1534,0.1312,0.0221,-0.3973,-0.7693,-0.0929
 closed_by_feb,kind,AI model leaderboards,after_start,1m,29,0.0361,245,0.12,0.1102,0.0098,-0.2583,-0.5165,-0.0839
-closed_by_feb,kind,Everything else,after_start,1w,6193,0.0917,16839,0.2396,0.2096,0.03,-0.3135,-0.3733,-0.2582
-closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,285,0.0564,2072,0.1773,0.1646,0.0127,-0.257,-0.399,-0.149
-closed_by_feb,kind,"Who says what, post counts",after_start,1w,286,0.0861,2855,0.2215,0.2119,0.0095,-0.1373,-0.3094,0.0332
-closed_by_feb,kind,TSA passenger counts,after_start,1w,30,0.0729,159,0.1847,0.1698,0.0148,-0.2322,-0.4593,0.0461
+closed_by_feb,kind,Everything else,after_start,1w,5388,0.09,14610,0.2294,0.1979,0.0315,-0.3382,-0.4104,-0.2697
+closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1w,282,0.0605,1894,0.1825,0.17,0.0125,-0.2359,-0.3831,-0.1281
+closed_by_feb,kind,TSA passenger counts,after_start,1w,30,0.0775,102,0.2043,0.1863,0.018,-0.2416,-0.806,0.3109
 closed_by_feb,kind,AI model leaderboards,after_start,1w,35,0.0608,303,0.1211,0.1122,0.0089,-0.142,-0.2345,-0.0785
-closed_by_feb,kind,Everything else,before_close,1d,7727,0.0519,21649,0.2187,0.23,-0.0113,0.1482,0.0744,0.224
-closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,499,0.0295,3234,0.1802,0.1732,0.0071,-0.312,-0.4325,-0.2104
-closed_by_feb,kind,"Who says what, post counts",before_close,1d,669,0.1309,8236,0.3309,0.3071,0.0238,-0.1931,-0.2946,-0.0792
-closed_by_feb,kind,TSA passenger counts,before_close,1d,53,0.0537,259,0.1998,0.1931,0.0067,-0.115,-0.2483,0.0198
+closed_by_feb,kind,Everything else,before_close,1d,6614,0.0482,18406,0.2056,0.2194,-0.0138,0.2024,0.1186,0.2914
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1d,494,0.0305,2989,0.1846,0.1777,0.007,-0.3041,-0.4367,-0.1907
+closed_by_feb,kind,TSA passenger counts,before_close,1d,52,0.0576,171,0.2107,0.2047,0.006,-0.0938,-0.3635,0.1384
 closed_by_feb,kind,AI model leaderboards,before_close,1d,35,0.0013,315,0.1063,0.1079,-0.0016,-0.4524,-0.9125,0.0165
-closed_by_feb,kind,Everything else,before_close,1m,3519,0.0676,9207,0.1908,0.1705,0.0203,-0.2826,-0.386,-0.1664
-closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,57,0.0508,389,0.1599,0.1362,0.0236,-0.3882,-0.7131,-0.0871
-closed_by_feb,kind,"Who says what, post counts",before_close,1m,46,0.1336,344,0.3657,0.2965,0.0692,-0.4936,-1.0507,-0.0249
+closed_by_feb,kind,Everything else,before_close,1m,3239,0.0677,8201,0.1891,0.1699,0.0192,-0.2711,-0.3913,-0.147
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1m,56,0.051,374,0.1608,0.1364,0.0244,-0.402,-0.7571,-0.0955
 closed_by_feb,kind,AI model leaderboards,before_close,1m,29,0.0366,250,0.111,0.108,0.003,-0.1194,-0.1903,-0.0788
-closed_by_feb,kind,Everything else,before_close,1w,6192,0.0683,17027,0.2071,0.208,-0.0009,-0.0125,-0.0787,0.0639
-closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,284,0.1023,2055,0.2311,0.163,0.0681,-0.6695,-0.8309,-0.5222
-closed_by_feb,kind,"Who says what, post counts",before_close,1w,284,0.1225,2844,0.2384,0.2113,0.027,-0.2447,-0.4374,-0.0847
-closed_by_feb,kind,TSA passenger counts,before_close,1w,30,0.1075,159,0.2161,0.1698,0.0462,-0.3957,-0.5716,-0.1859
+closed_by_feb,kind,Everything else,before_close,1w,5391,0.0654,14802,0.1934,0.1963,-0.0029,0.0145,-0.0621,0.0833
+closed_by_feb,kind,"Rankings, scores, box office, views",before_close,1w,281,0.1023,1888,0.228,0.1679,0.0601,-0.5983,-0.7521,-0.4532
+closed_by_feb,kind,TSA passenger counts,before_close,1w,30,0.1095,102,0.2155,0.1863,0.0293,-0.2443,-0.6502,0.149
 closed_by_feb,kind,AI model leaderboards,before_close,1w,35,0.009,315,0.1068,0.1079,-0.0012,-0.1765,-0.3696,0.0756
-closed_by_feb,source,Outside source exists,after_start,1d,4156,0.0987,18082,0.2228,0.1863,0.0365,-0.3536,-0.4287,-0.2959
-closed_by_feb,source,"No source, substantive <80",after_start,1d,2933,0.1515,10693,0.3855,0.3442,0.0414,-0.2715,-0.3472,-0.2
-closed_by_feb,source,"No source, substantive 80+",after_start,1d,2590,0.1193,4427,0.2728,0.2408,0.032,-0.2573,-0.3557,-0.1636
-closed_by_feb,source,Outside source exists,after_start,1m,1326,0.0586,5718,0.1857,0.1703,0.0153,-0.2441,-0.3117,-0.1782
-closed_by_feb,source,"No source, substantive <80",after_start,1m,1159,0.0931,2350,0.237,0.206,0.031,-0.3414,-0.634,-0.0465
-closed_by_feb,source,"No source, substantive 80+",after_start,1m,1434,0.0673,2085,0.1769,0.1429,0.034,-0.4403,-0.6144,-0.2715
-closed_by_feb,source,Outside source exists,after_start,1w,3134,0.0735,13700,0.2043,0.1828,0.0216,-0.2901,-0.3458,-0.241
-closed_by_feb,source,"No source, substantive <80",after_start,1w,2018,0.117,5054,0.294,0.2675,0.0265,-0.2244,-0.3558,-0.0898
-closed_by_feb,source,"No source, substantive 80+",after_start,1w,2182,0.0985,3419,0.2352,0.1963,0.039,-0.381,-0.5035,-0.2664
-closed_by_feb,source,Outside source exists,before_close,1d,4161,0.0418,18412,0.1906,0.1845,0.0061,-0.1832,-0.2212,-0.1387
-closed_by_feb,source,"No source, substantive <80",before_close,1d,2933,0.1208,10702,0.3495,0.3417,0.0077,-0.0752,-0.1812,0.0288
-closed_by_feb,source,"No source, substantive 80+",before_close,1d,2592,0.0542,4497,0.1913,0.2406,-0.0493,0.8639,0.7034,1.0146
-closed_by_feb,source,Outside source exists,before_close,1m,1324,0.0602,5768,0.1885,0.1692,0.0193,-0.296,-0.3674,-0.2265
-closed_by_feb,source,"No source, substantive <80",before_close,1m,1154,0.0918,2316,0.2256,0.2064,0.0192,-0.2074,-0.4936,0.0815
-closed_by_feb,source,"No source, substantive 80+",before_close,1m,1432,0.0655,2087,0.1723,0.1418,0.0305,-0.4248,-0.5938,-0.257
-closed_by_feb,source,Outside source exists,before_close,1w,3130,0.0698,13818,0.2,0.1809,0.0191,-0.2739,-0.3248,-0.221
-closed_by_feb,source,"No source, substantive <80",before_close,1w,2020,0.1036,5079,0.2707,0.2662,0.0045,-0.0537,-0.2099,0.0962
-closed_by_feb,source,"No source, substantive 80+",before_close,1w,2184,0.0717,3448,0.1728,0.1963,-0.0235,0.3089,0.159,0.4696
-open_in_feb,all,All markets,after_start,1d,868,0.1198,2734,0.2576,0.1913,0.0663,-0.5496,-0.674,-0.4344
-open_in_feb,all,All markets,after_start,1m,809,0.0927,2565,0.2098,0.1864,0.0234,-0.2649,-0.3865,-0.1362
-open_in_feb,all,All markets,after_start,1w,868,0.1056,2758,0.2305,0.1904,0.0401,-0.3904,-0.5088,-0.2614
-open_in_feb,all,All markets,before_close,1d,867,0.0304,2809,0.18,0.1883,-0.0083,0.1064,-0.0977,0.2971
-open_in_feb,all,All markets,before_close,1m,809,0.0574,2600,0.1825,0.1842,-0.0017,-0.0089,-0.1452,0.1182
-open_in_feb,all,All markets,before_close,1w,868,0.0423,2812,0.1759,0.1881,-0.0123,0.1845,0.0056,0.3457
-open_in_feb,default_side,Nothing happening means NO,after_start,1d,536,0.149,1083,0.316,0.2124,0.1036,-0.7473,-0.9839,-0.5391
-open_in_feb,default_side,Nothing happening means YES,after_start,1d,29,0.2073,30,0.45,0.5667,-0.1166,0.7681,-0.1953,1.7758
-open_in_feb,default_side,No default side,after_start,1d,348,0.0988,1621,0.2149,0.1703,0.0447,-0.4151,-0.5297,-0.3076
-open_in_feb,default_side,Nothing happening means NO,after_start,1m,520,0.1186,1064,0.2482,0.2039,0.0443,-0.4014,-0.6189,-0.1762
-open_in_feb,default_side,No default side,after_start,1m,304,0.0728,1473,0.1767,0.167,0.0097,-0.1461,-0.2572,-0.0576
-open_in_feb,default_side,Nothing happening means NO,after_start,1w,536,0.1403,1094,0.2899,0.2112,0.0788,-0.6386,-0.8773,-0.4245
-open_in_feb,default_side,Nothing happening means YES,after_start,1w,29,0.169,30,0.4624,0.5667,-0.1042,0.7367,-0.1856,1.7476
-open_in_feb,default_side,No default side,after_start,1w,348,0.0811,1634,0.1865,0.1695,0.0169,-0.1976,-0.311,-0.1004
-open_in_feb,default_side,Nothing happening means NO,before_close,1d,534,0.0382,1100,0.1737,0.21,-0.0363,0.8152,0.5464,1.0909
-open_in_feb,default_side,Nothing happening means YES,before_close,1d,29,0.0388,30,0.6182,0.5667,0.0515,-1.0513,-2.0628,0.1902
-open_in_feb,default_side,No default side,before_close,1d,350,0.0251,1679,0.1763,0.1674,0.0089,-0.4027,-0.6009,-0.2206
-open_in_feb,default_side,Nothing happening means NO,before_close,1m,520,0.0704,1066,0.1879,0.2036,-0.0157,0.1893,-0.0264,0.4251
-open_in_feb,default_side,No default side,before_close,1m,305,0.0481,1506,0.1707,0.164,0.0067,-0.1823,-0.3308,-0.0472
-open_in_feb,default_side,Nothing happening means NO,before_close,1w,535,0.0565,1103,0.1664,0.2094,-0.0431,0.7279,0.4516,1.0434
-open_in_feb,default_side,Nothing happening means YES,before_close,1w,29,0.0456,30,0.6081,0.5667,0.0414,-0.6306,-1.6925,0.4175
-open_in_feb,default_side,No default side,before_close,1w,350,0.0329,1679,0.1744,0.1674,0.007,-0.2675,-0.4213,-0.1202
-open_in_feb,kind,Everything else,after_start,1d,831,0.1202,2479,0.2619,0.1948,0.0671,-0.5485,-0.671,-0.4264
+closed_by_feb,source,Outside source exists,after_start,1d,2882,0.1022,12156,0.2333,0.1929,0.0403,-0.3767,-0.4282,-0.323
+closed_by_feb,source,"No source, substantive <80",after_start,1d,2366,0.1202,4853,0.2883,0.2448,0.0435,-0.3607,-0.4917,-0.2203
+closed_by_feb,source,"No source, substantive 80+",after_start,1d,2551,0.1202,4386,0.2722,0.2403,0.0319,-0.256,-0.3621,-0.1622
+closed_by_feb,source,Outside source exists,after_start,1m,1076,0.0564,4777,0.187,0.1721,0.0149,-0.2455,-0.3229,-0.174
+closed_by_feb,source,"No source, substantive <80",after_start,1m,1076,0.0897,1944,0.2147,0.1847,0.03,-0.3568,-0.7285,0.0202
+closed_by_feb,source,"No source, substantive 80+",after_start,1m,1418,0.0674,2068,0.1764,0.1422,0.0342,-0.4424,-0.629,-0.293
+closed_by_feb,source,Outside source exists,after_start,1w,2275,0.0769,9971,0.2085,0.184,0.0245,-0.311,-0.377,-0.2482
+closed_by_feb,source,"No source, substantive <80",after_start,1w,1785,0.1002,3515,0.2491,0.2174,0.0317,-0.3125,-0.4964,-0.1175
+closed_by_feb,source,"No source, substantive 80+",after_start,1w,2148,0.0993,3383,0.2347,0.1954,0.0393,-0.383,-0.5141,-0.2726
+closed_by_feb,source,Outside source exists,before_close,1d,2886,0.0363,12465,0.1944,0.1901,0.0043,-0.1678,-0.2244,-0.1139
+closed_by_feb,source,"No source, substantive <80",before_close,1d,2368,0.059,4909,0.2295,0.2424,-0.0129,0.1707,0.0168,0.3245
+closed_by_feb,source,"No source, substantive 80+",before_close,1d,2553,0.0546,4456,0.1904,0.2401,-0.0498,0.868,0.6974,1.0048
+closed_by_feb,source,Outside source exists,before_close,1m,1074,0.0596,4828,0.1892,0.1707,0.0185,-0.2934,-0.3728,-0.2134
+closed_by_feb,source,"No source, substantive <80",before_close,1m,1071,0.0832,1910,0.1921,0.1848,0.0072,-0.0896,-0.4346,0.2425
+closed_by_feb,source,"No source, substantive 80+",before_close,1m,1416,0.0657,2070,0.1718,0.1411,0.0308,-0.4278,-0.5932,-0.2666
+closed_by_feb,source,Outside source exists,before_close,1w,2277,0.0656,10113,0.2013,0.1815,0.0198,-0.2935,-0.3553,-0.2339
+closed_by_feb,source,"No source, substantive <80",before_close,1w,1787,0.0744,3542,0.2032,0.2163,-0.0131,0.1556,-0.0457,0.3445
+closed_by_feb,source,"No source, substantive 80+",before_close,1w,2150,0.0723,3412,0.1717,0.1955,-0.0237,0.3108,0.1495,0.4729
+open_in_feb,all,All markets,after_start,1d,740,0.1178,2215,0.2518,0.1865,0.0654,-0.5473,-0.6883,-0.4167
+open_in_feb,all,All markets,after_start,1m,708,0.0913,2122,0.2077,0.1838,0.0239,-0.2734,-0.4075,-0.1434
+open_in_feb,all,All markets,after_start,1w,740,0.1027,2239,0.2242,0.1854,0.0389,-0.3824,-0.5094,-0.2466
+open_in_feb,all,All markets,before_close,1d,739,0.0271,2290,0.172,0.183,-0.011,0.1946,-0.0183,0.4187
+open_in_feb,all,All markets,before_close,1m,708,0.0542,2157,0.1771,0.1813,-0.0042,0.0284,-0.107,0.1592
+open_in_feb,all,All markets,before_close,1w,740,0.038,2293,0.1659,0.1827,-0.0168,0.2991,0.13,0.4719
+open_in_feb,default_side,Nothing happening means NO,after_start,1d,472,0.1497,877,0.3164,0.2212,0.0952,-0.6746,-0.9322,-0.4255
+open_in_feb,default_side,No default side,after_start,1d,269,0.0951,1313,0.205,0.1577,0.0474,-0.453,-0.5898,-0.3106
+open_in_feb,default_side,Nothing happening means NO,after_start,1m,460,0.119,869,0.2561,0.2129,0.0432,-0.3855,-0.6219,-0.1438
+open_in_feb,default_side,No default side,after_start,1m,248,0.0703,1230,0.1691,0.1585,0.0105,-0.1627,-0.2724,-0.0575
+open_in_feb,default_side,Nothing happening means NO,after_start,1w,472,0.1412,888,0.2932,0.2196,0.0736,-0.5876,-0.8449,-0.3256
+open_in_feb,default_side,No default side,after_start,1w,269,0.0759,1326,0.1739,0.1569,0.017,-0.2045,-0.3108,-0.1021
+open_in_feb,default_side,Nothing happening means NO,before_close,1d,470,0.0382,894,0.1792,0.2181,-0.039,0.9097,0.6123,1.1706
+open_in_feb,default_side,No default side,before_close,1d,271,0.0196,1371,0.1605,0.1546,0.0059,-0.3794,-0.5704,-0.215
+open_in_feb,default_side,Nothing happening means NO,before_close,1m,460,0.0714,871,0.1929,0.2124,-0.0195,0.237,0.0249,0.46
+open_in_feb,default_side,No default side,before_close,1m,249,0.0421,1263,0.1595,0.1552,0.0043,-0.1501,-0.2794,-0.0322
+open_in_feb,default_side,Nothing happening means NO,before_close,1w,471,0.0545,897,0.1659,0.2174,-0.0515,0.9147,0.638,1.1727
+open_in_feb,default_side,No default side,before_close,1w,271,0.0268,1371,0.1592,0.1546,0.0046,-0.2502,-0.3978,-0.129
+open_in_feb,kind,Everything else,after_start,1d,711,0.1176,2045,0.2555,0.1902,0.0653,-0.5438,-0.6896,-0.3985
 open_in_feb,kind,"Rankings, scores, box office, views",after_start,1d,16,0.1253,60,0.2365,0.2,0.0365,-0.293,-0.7271,0.2074
-open_in_feb,kind,"Who says what, post counts",after_start,1d,11,0.1064,85,0.2308,0.1882,0.0425,-0.492,-1.0897,0.2731
 open_in_feb,kind,AI model leaderboards,after_start,1d,13,0.119,110,0.1914,0.1091,0.0823,-0.809,-1.2275,-0.3675
-open_in_feb,kind,Everything else,after_start,1m,780,0.0923,2365,0.2111,0.1882,0.0229,-0.2568,-0.3963,-0.1248
+open_in_feb,kind,Everything else,after_start,1m,684,0.0913,1979,0.211,0.187,0.0241,-0.2724,-0.4093,-0.1366
 open_in_feb,kind,"Rankings, scores, box office, views",after_start,1m,11,0.0492,33,0.2621,0.2424,0.0196,-0.2797,-1.3887,0.7491
-open_in_feb,kind,"Who says what, post counts",after_start,1m,6,0.1131,57,0.2795,0.2281,0.0514,-0.5073,-1.0629,0.5434
 open_in_feb,kind,AI model leaderboards,after_start,1m,13,0.1045,110,0.1306,0.1091,0.0215,-0.2933,-0.4115,-0.1712
-open_in_feb,kind,Everything else,after_start,1w,831,0.1062,2503,0.2346,0.1938,0.0408,-0.3916,-0.525,-0.2618
+open_in_feb,kind,Everything else,after_start,1w,711,0.1029,2069,0.2283,0.189,0.0393,-0.3848,-0.5274,-0.2545
 open_in_feb,kind,"Rankings, scores, box office, views",after_start,1w,16,0.0869,60,0.1922,0.2,-0.0078,0.0579,-0.5256,0.5964
-open_in_feb,kind,"Who says what, post counts",after_start,1w,11,0.0986,85,0.223,0.1882,0.0348,-0.4377,-1.0334,0.428
 open_in_feb,kind,AI model leaderboards,after_start,1w,13,0.1074,110,0.1642,0.1091,0.0552,-0.583,-0.8563,-0.3169
-open_in_feb,kind,Everything else,before_close,1d,830,0.0299,2554,0.1813,0.1915,-0.0102,0.1608,-0.029,0.3454
+open_in_feb,kind,Everything else,before_close,1d,710,0.0279,2120,0.175,0.1863,-0.0113,0.2001,-0.0077,0.4047
 open_in_feb,kind,"Rankings, scores, box office, views",before_close,1d,16,0.0274,60,0.1911,0.2,-0.0089,0.1643,-0.8666,1.9126
-open_in_feb,kind,"Who says what, post counts",before_close,1d,11,0.0717,85,0.2338,0.1882,0.0456,-0.6476,-1.3903,0.3786
 open_in_feb,kind,AI model leaderboards,before_close,1d,13,0.0129,110,0.102,0.1091,-0.0071,0.017,-1.0559,0.6566
-open_in_feb,kind,Everything else,before_close,1m,780,0.0572,2400,0.183,0.1858,-0.0029,0.0092,-0.1294,0.1512
+open_in_feb,kind,Everything else,before_close,1m,684,0.0555,2014,0.1803,0.1842,-0.0039,0.0233,-0.1296,0.1616
 open_in_feb,kind,"Rankings, scores, box office, views",before_close,1m,11,0.0544,33,0.2142,0.2424,-0.0282,0.446,-0.9061,1.5863
-open_in_feb,kind,"Who says what, post counts",before_close,1m,6,0.1177,57,0.2919,0.2281,0.0639,-0.6501,-1.2443,0.5011
 open_in_feb,kind,AI model leaderboards,before_close,1m,13,0.0309,110,0.1062,0.1091,-0.0029,0.0006,-0.142,0.2606
-open_in_feb,kind,Everything else,before_close,1w,831,0.0421,2557,0.1774,0.1912,-0.0138,0.2176,0.0443,0.3818
+open_in_feb,kind,Everything else,before_close,1w,711,0.0391,2123,0.1687,0.1861,-0.0173,0.3024,0.1262,0.48
 open_in_feb,kind,"Rankings, scores, box office, views",before_close,1w,16,0.0323,60,0.1833,0.2,-0.0167,0.4039,-0.4721,1.6684
-open_in_feb,kind,"Who says what, post counts",before_close,1w,11,0.0844,85,0.2194,0.1882,0.0311,-0.382,-1.0672,0.4923
 open_in_feb,kind,AI model leaderboards,before_close,1w,13,0.019,110,0.1022,0.1091,-0.0069,0.0728,-0.4155,0.6238
-open_in_feb,source,Outside source exists,after_start,1d,438,0.1053,1764,0.2234,0.182,0.0414,-0.3684,-0.4918,-0.2545
-open_in_feb,source,"No source, substantive <80",after_start,1d,204,0.1692,444,0.3867,0.2387,0.148,-1.0058,-1.4098,-0.6732
-open_in_feb,source,"No source, substantive 80+",after_start,1d,306,0.127,520,0.2626,0.1827,0.0799,-0.6209,-0.9726,-0.3385
-open_in_feb,source,Outside source exists,after_start,1m,395,0.076,1632,0.1815,0.1771,0.0044,-0.0723,-0.1733,0.0256
-open_in_feb,source,"No source, substantive <80",after_start,1m,196,0.1367,416,0.3348,0.2356,0.0993,-0.8135,-1.1913,-0.4468
-open_in_feb,source,"No source, substantive 80+",after_start,1m,298,0.1106,512,0.1978,0.1758,0.022,-0.2195,-0.5581,0.0602
-open_in_feb,source,Outside source exists,after_start,1w,439,0.0905,1782,0.1974,0.1813,0.0161,-0.1775,-0.29,-0.0737
-open_in_feb,source,"No source, substantive <80",after_start,1w,205,0.1504,447,0.3622,0.2371,0.1251,-0.9587,-1.3621,-0.5895
-open_in_feb,source,"No source, substantive 80+",after_start,1w,306,0.1186,523,0.23,0.1816,0.0483,-0.4219,-0.7849,-0.1162
-open_in_feb,source,Outside source exists,before_close,1d,440,0.0265,1829,0.1774,0.1788,-0.0014,-0.0995,-0.2905,0.0969
-open_in_feb,source,"No source, substantive <80",before_close,1d,205,0.0406,448,0.2225,0.2366,-0.0141,0.2531,-0.3898,0.8286
-open_in_feb,source,"No source, substantive 80+",before_close,1d,304,0.0357,526,0.1522,0.1806,-0.0284,0.6497,0.2217,1.0027
-open_in_feb,source,Outside source exists,before_close,1m,395,0.0514,1664,0.1729,0.1743,-0.0014,-0.0284,-0.1634,0.1017
-open_in_feb,source,"No source, substantive <80",before_close,1m,196,0.0769,417,0.2579,0.235,0.0229,-0.2898,-0.6748,0.1143
-open_in_feb,source,"No source, substantive 80+",before_close,1m,298,0.0612,514,0.1512,0.1751,-0.0239,0.3058,0.018,0.5633
-open_in_feb,source,Outside source exists,before_close,1w,440,0.0361,1829,0.1733,0.1788,-0.0055,0.0328,-0.1311,0.2191
-open_in_feb,source,"No source, substantive <80",before_close,1w,205,0.0541,448,0.2345,0.2366,-0.0021,0.0046,-0.4672,0.4761
-open_in_feb,source,"No source, substantive 80+",before_close,1w,305,0.0531,529,0.1333,0.1796,-0.0463,0.8258,0.5203,1.1273
+open_in_feb,source,Outside source exists,after_start,1d,329,0.104,1402,0.218,0.174,0.0439,-0.3969,-0.5469,-0.2466
+open_in_feb,source,"No source, substantive <80",after_start,1d,170,0.1675,299,0.3917,0.2609,0.1308,-0.8744,-1.3405,-0.4774
+open_in_feb,source,"No source, substantive 80+",after_start,1d,301,0.1267,509,0.2617,0.1768,0.0848,-0.6678,-0.9868,-0.4134
+open_in_feb,source,Outside source exists,after_start,1m,312,0.0759,1336,0.1801,0.1737,0.0064,-0.0981,-0.2067,0.0103
+open_in_feb,source,"No source, substantive <80",after_start,1m,164,0.1326,280,0.3592,0.2571,0.1021,-0.8282,-1.3038,-0.4068
+open_in_feb,source,"No source, substantive 80+",after_start,1m,293,0.1095,501,0.196,0.1697,0.0263,-0.2642,-0.6539,0.0196
+open_in_feb,source,Outside source exists,after_start,1w,330,0.0877,1420,0.19,0.1732,0.0168,-0.1869,-0.3012,-0.0701
+open_in_feb,source,"No source, substantive <80",after_start,1w,171,0.1479,302,0.3741,0.2583,0.1159,-0.8858,-1.3388,-0.486
+open_in_feb,source,"No source, substantive 80+",after_start,1w,301,0.1174,512,0.2293,0.1758,0.0535,-0.4734,-0.8061,-0.2164
+open_in_feb,source,Outside source exists,before_close,1d,331,0.0233,1467,0.1692,0.1704,-0.0012,-0.123,-0.3548,0.1223
+open_in_feb,source,"No source, substantive <80",before_close,1d,171,0.0304,303,0.2279,0.2574,-0.0295,0.748,0.2167,1.1646
+open_in_feb,source,"No source, substantive 80+",before_close,1d,299,0.0364,515,0.1459,0.1748,-0.0289,0.6532,0.2065,1.0379
+open_in_feb,source,Outside source exists,before_close,1m,312,0.0488,1368,0.1696,0.1703,-0.0007,-0.0451,-0.1968,0.1089
+open_in_feb,source,"No source, substantive <80",before_close,1m,164,0.0659,281,0.2684,0.2562,0.0121,-0.1655,-0.6333,0.2579
+open_in_feb,source,"No source, substantive 80+",before_close,1m,293,0.0624,503,0.145,0.169,-0.024,0.3059,-0.0012,0.5557
+open_in_feb,source,Outside source exists,before_close,1w,331,0.0323,1467,0.1648,0.1704,-0.0056,0.0286,-0.1742,0.2742
+open_in_feb,source,"No source, substantive <80",before_close,1w,171,0.0361,303,0.2345,0.2574,-0.023,0.409,-0.0682,0.8145
+open_in_feb,source,"No source, substantive 80+",before_close,1w,300,0.0542,518,0.1266,0.1737,-0.0472,0.8328,0.508,1.1249
