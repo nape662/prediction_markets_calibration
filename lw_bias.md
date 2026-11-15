@@ -66,7 +66,7 @@ We also checked the default-NO and default-YES bias year by year, only on Manifo
 
 Comments:
 - The left panel exists to show how one can accidentally argue for "the bias is steadily improving". As argued above, recent markets that have already resolved are disproportionately early YESes, so recent years look better than they are.
-- Almost half of 2026's markets come from three monthly multiple-choice series that happen to be well calibrated ("What will happen in <month>?", "<Month> AI model releases", "Which YouTube channels will release a video in <month>?"). Counting each multiple-choice question once instead of each of its options, 2026 is as biased as 2024–2025.
+- Almost half of 2026's markets come from three monthly multiple-choice series that happen to be much less biased ("What will happen in <month>?", "<Month> AI model releases", "Which YouTube channels will release a video in <month>?"). Counting each multiple-choice question once instead of each of its options, 2026 is as biased as 2024–2025.
 
 Where nothing happening means YES, YES is underpriced in every year, but there are few such markets. "No default side" sits in between, mostly slightly overpriced.
 
@@ -90,7 +90,7 @@ Where nothing happening means YES, YES is underpriced in every year, but there a
 
 **Each event counted once.** Many Polymarket markets are slices of one event. Giving each event's K markets a weight of 1/K each moves "resolves NO" to −0.41 (−0.51 to −0.31) on 3,409 events. On Manifold, where each binary market is its own event, the same weighting leaves "resolves NO" at −0.64 (−0.71 to −0.57) on 8,691 events.
 
-**Across time, numbers (Manifold, 1 week after creation, "resolves NO").** With the deadline filter: −1.03 (2022, 815 markets), −0.86 (2023, 3,433), −0.68 (2024, 5,445), −0.70 (2025, 2,177), −0.45 (2026, 801). Without it, the shift shrinks to −0.30 in 2026. In 2026, three monthly multiple-choice series ("What will happen in <month>?", "<Month> AI model releases", "Which YouTube channels will release a video in <month>?") hold 46% of the markets and are priced close to their YES rates. Counting each event once gives −0.70 in 2026, against −0.67 in 2024 and −0.66 in 2025. "Resolves YES" has 60–529 markets per year with the deadline filter, and its interval touches 0 in some years.
+**Across time, numbers (Manifold, 1 week after creation, "resolves NO").** With the deadline filter: −1.03 (2022, 815 markets), −0.86 (2023, 3,433), −0.68 (2024, 5,445), −0.70 (2025, 2,177), −0.45 (2026, 801). Without it, the shift shrinks to −0.30 in 2026. In 2026, three monthly multiple-choice series ("What will happen in <month>?", "<Month> AI model releases", "Which YouTube channels will release a video in <month>?") hold 46% of the markets and are much less biased (shift −0.36 together). Counting each event once gives −0.70 in 2026, against −0.67 in 2024 and −0.66 in 2025. "Resolves YES" has 60–529 markets per year with the deadline filter, and its interval touches 0 in some years.
 
 **A correction fitted on old markets works on new ones (Manifold, 1 week after creation).**
 - **Fit:** one log-odds shift per default side, using only what was known at the start of 2024. The training markets are those whose stated deadline passed at least 60 days before 2024.
