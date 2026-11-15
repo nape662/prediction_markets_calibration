@@ -1,0 +1,505 @@
+split,line,horizon,bin,options,markets,price,yes,yes_low,yes_high
+world,"World, each option counts 1",1d,0,2024,485,0.0085,0.0119,0.0075,0.0164
+world,"World, each option counts 1",1d,1,1386,603,0.0332,0.031,0.0224,0.0409
+world,"World, each option counts 1",1d,2,1537,719,0.0745,0.0631,0.0509,0.0787
+world,"World, each option counts 1",1d,3,1985,845,0.1461,0.1028,0.089,0.1168
+world,"World, each option counts 1",1d,4,1441,681,0.2482,0.204,0.1699,0.2433
+world,"World, each option counts 1",1d,5,1274,599,0.3478,0.27,0.2297,0.3096
+world,"World, each option counts 1",1d,6,981,495,0.445,0.366,0.3144,0.4232
+world,"World, each option counts 1",1d,7,905,467,0.5526,0.4442,0.3749,0.5106
+world,"World, each option counts 1",1d,8,824,449,0.6495,0.5231,0.4792,0.5724
+world,"World, each option counts 1",1d,9,761,354,0.7556,0.6728,0.62,0.7193
+world,"World, each option counts 1",1d,10,663,312,0.8529,0.8054,0.762,0.8496
+world,"World, each option counts 1",1d,11,312,184,0.9246,0.859,0.7949,0.9129
+world,"World, each option counts 1",1d,12,175,115,0.9645,0.9314,0.8704,0.9775
+world,"World, each option counts 1",1d,13,89,65,0.9886,0.9775,0.9438,1.0
+world,"World, each option counts 1",1m,0,4606,972,0.0073,0.0069,0.0046,0.0093
+world,"World, each option counts 1",1m,1,2497,992,0.0337,0.0216,0.0162,0.028
+world,"World, each option counts 1",1m,2,2497,1017,0.0732,0.04,0.0323,0.0477
+world,"World, each option counts 1",1m,3,2819,1082,0.1459,0.0805,0.0712,0.0923
+world,"World, each option counts 1",1m,4,2118,850,0.2489,0.1851,0.1467,0.2408
+world,"World, each option counts 1",1m,5,1686,721,0.3449,0.2325,0.2003,0.269
+world,"World, each option counts 1",1m,6,1240,631,0.447,0.3629,0.3203,0.4119
+world,"World, each option counts 1",1m,7,1143,549,0.5508,0.4698,0.4027,0.543
+world,"World, each option counts 1",1m,8,946,539,0.6519,0.5423,0.5029,0.5797
+world,"World, each option counts 1",1m,9,966,487,0.7545,0.6698,0.623,0.7095
+world,"World, each option counts 1",1m,10,964,480,0.8542,0.7946,0.7591,0.831
+world,"World, each option counts 1",1m,11,606,328,0.9268,0.8713,0.8313,0.9065
+world,"World, each option counts 1",1m,12,419,226,0.9655,0.9618,0.9417,0.9781
+world,"World, each option counts 1",1m,13,243,148,0.9891,0.9588,0.9274,0.9859
+world,"World, each option counts 1",1w,0,3589,798,0.0077,0.0061,0.0038,0.0086
+world,"World, each option counts 1",1w,1,2166,921,0.0334,0.0282,0.0211,0.0363
+world,"World, each option counts 1",1w,2,2268,983,0.0732,0.0529,0.0435,0.0634
+world,"World, each option counts 1",1w,3,2797,1133,0.1477,0.0915,0.0792,0.104
+world,"World, each option counts 1",1w,4,2124,931,0.2469,0.1624,0.1431,0.183
+world,"World, each option counts 1",1w,5,1914,831,0.3474,0.2576,0.2195,0.3028
+world,"World, each option counts 1",1w,6,1335,666,0.4471,0.3431,0.3039,0.3854
+world,"World, each option counts 1",1w,7,1185,604,0.5526,0.4405,0.3939,0.4883
+world,"World, each option counts 1",1w,8,1138,577,0.65,0.5466,0.5008,0.5906
+world,"World, each option counts 1",1w,9,1036,519,0.7546,0.6873,0.6464,0.7268
+world,"World, each option counts 1",1w,10,1074,507,0.8551,0.8147,0.7796,0.845
+world,"World, each option counts 1",1w,11,533,307,0.9268,0.8893,0.8523,0.9246
+world,"World, each option counts 1",1w,12,309,178,0.9656,0.9353,0.9057,0.9626
+world,"World, each option counts 1",1w,13,237,136,0.9888,0.9705,0.948,0.9909
+world,"World, each market counts once",1d,0,2024,485,0.0092,0.015,0.0087,0.0218
+world,"World, each market counts once",1d,1,1386,603,0.0332,0.0408,0.0275,0.0547
+world,"World, each market counts once",1d,2,1537,719,0.0742,0.08,0.0629,0.0998
+world,"World, each market counts once",1d,3,1985,845,0.1456,0.1239,0.1058,0.1419
+world,"World, each market counts once",1d,4,1441,681,0.2492,0.221,0.1924,0.2525
+world,"World, each market counts once",1d,5,1274,599,0.3494,0.2562,0.2211,0.2899
+world,"World, each market counts once",1d,6,981,495,0.4453,0.3489,0.3063,0.3925
+world,"World, each market counts once",1d,7,905,467,0.5511,0.4586,0.4072,0.5106
+world,"World, each market counts once",1d,8,824,449,0.6478,0.539,0.4889,0.5877
+world,"World, each market counts once",1d,9,761,354,0.7502,0.6448,0.5891,0.7002
+world,"World, each market counts once",1d,10,663,312,0.852,0.7449,0.6901,0.7999
+world,"World, each market counts once",1d,11,312,184,0.9246,0.8864,0.8371,0.9305
+world,"World, each market counts once",1d,12,175,115,0.9654,0.9479,0.8968,0.9885
+world,"World, each market counts once",1d,13,89,65,0.9886,0.9625,0.9065,1.0
+world,"World, each market counts once",1m,0,4606,972,0.0078,0.0093,0.0058,0.0131
+world,"World, each market counts once",1m,1,2497,992,0.0339,0.0272,0.0194,0.0364
+world,"World, each market counts once",1m,2,2497,1017,0.073,0.0471,0.0359,0.0582
+world,"World, each market counts once",1m,3,2819,1082,0.1466,0.0968,0.0823,0.1126
+world,"World, each market counts once",1m,4,2118,850,0.2489,0.2161,0.1883,0.2442
+world,"World, each market counts once",1m,5,1686,721,0.3462,0.2475,0.2172,0.2816
+world,"World, each market counts once",1m,6,1240,631,0.4455,0.3832,0.3432,0.4263
+world,"World, each market counts once",1m,7,1143,549,0.5493,0.4437,0.3975,0.4911
+world,"World, each market counts once",1m,8,946,539,0.6512,0.5657,0.5161,0.6132
+world,"World, each market counts once",1m,9,966,487,0.7511,0.6515,0.6019,0.6984
+world,"World, each market counts once",1m,10,964,480,0.8532,0.8045,0.7658,0.8409
+world,"World, each market counts once",1m,11,606,328,0.9262,0.8479,0.8031,0.8901
+world,"World, each market counts once",1m,12,419,226,0.9658,0.9715,0.9542,0.9863
+world,"World, each market counts once",1m,13,243,148,0.9897,0.9762,0.952,0.9936
+world,"World, each market counts once",1w,0,3589,798,0.0083,0.008,0.0042,0.0123
+world,"World, each market counts once",1w,1,2166,921,0.0331,0.0312,0.0226,0.0407
+world,"World, each market counts once",1w,2,2268,983,0.073,0.061,0.0491,0.0738
+world,"World, each market counts once",1w,3,2797,1133,0.1475,0.1086,0.0935,0.1241
+world,"World, each market counts once",1w,4,2124,931,0.2468,0.193,0.1696,0.2181
+world,"World, each market counts once",1w,5,1914,831,0.3493,0.2908,0.2601,0.3209
+world,"World, each market counts once",1w,6,1335,666,0.4471,0.3565,0.3181,0.3994
+world,"World, each market counts once",1w,7,1185,604,0.5506,0.4356,0.3932,0.4806
+world,"World, each market counts once",1w,8,1138,577,0.6508,0.5405,0.4944,0.5842
+world,"World, each market counts once",1w,9,1036,519,0.7515,0.6714,0.6219,0.7187
+world,"World, each market counts once",1w,10,1074,507,0.8537,0.8158,0.7798,0.8489
+world,"World, each market counts once",1w,11,533,307,0.9275,0.9126,0.8822,0.9446
+world,"World, each market counts once",1w,12,309,178,0.9658,0.944,0.9104,0.971
+world,"World, each market counts once",1w,13,237,136,0.9893,0.9781,0.9506,0.9963
+kind,"World, one winner",1d,0,1884,410,0.0082,0.0127,0.008,0.0178
+kind,"World, one winner",1d,1,1008,438,0.0323,0.0387,0.0278,0.0506
+kind,"World, one winner",1d,2,787,439,0.0723,0.0813,0.064,0.1014
+kind,"World, one winner",1d,3,765,452,0.1422,0.1412,0.1193,0.1624
+kind,"World, one winner",1d,4,410,317,0.2468,0.2415,0.2044,0.2795
+kind,"World, one winner",1d,5,271,236,0.347,0.2915,0.2409,0.3477
+kind,"World, one winner",1d,6,171,164,0.444,0.3918,0.3233,0.4598
+kind,"World, one winner",1d,7,139,139,0.5502,0.4245,0.3453,0.5108
+kind,"World, one winner",1d,8,114,114,0.6406,0.5965,0.5088,0.6842
+kind,"World, one winner",1d,9,66,66,0.7457,0.6212,0.5,0.7277
+kind,"World, one winner",1d,10,45,45,0.8512,0.6889,0.5556,0.8222
+kind,"World, one winner",1d,11,22,22,0.9242,0.9545,,
+kind,"World, one winner",1d,12,12,12,0.9644,1.0,,
+kind,"World, one winner",1d,13,9,9,0.9888,1.0,,
+kind,"World, one winner",1m,0,3934,753,0.0065,0.0079,0.0052,0.0109
+kind,"World, one winner",1m,1,1329,622,0.0327,0.0369,0.0274,0.0471
+kind,"World, one winner",1m,2,1021,555,0.0723,0.0627,0.0496,0.0774
+kind,"World, one winner",1m,3,855,526,0.1433,0.1205,0.1011,0.1412
+kind,"World, one winner",1m,4,486,368,0.247,0.251,0.2161,0.2863
+kind,"World, one winner",1m,5,294,256,0.3478,0.3231,0.2703,0.3721
+kind,"World, one winner",1m,6,247,222,0.445,0.4494,0.3896,0.5042
+kind,"World, one winner",1m,7,156,154,0.5469,0.4744,0.3935,0.5535
+kind,"World, one winner",1m,8,141,141,0.6519,0.5887,0.5035,0.6667
+kind,"World, one winner",1m,9,113,113,0.7471,0.6903,0.6106,0.7788
+kind,"World, one winner",1m,10,107,107,0.8528,0.8318,0.7661,0.8972
+kind,"World, one winner",1m,11,63,63,0.927,0.7937,0.6825,0.8889
+kind,"World, one winner",1m,12,43,43,0.9656,0.9767,0.9302,1.0
+kind,"World, one winner",1m,13,37,37,0.9895,1.0,1.0,1.0
+kind,"World, one winner",1w,0,3206,637,0.0071,0.0066,0.004,0.0094
+kind,"World, one winner",1w,1,1364,626,0.0322,0.033,0.025,0.0428
+kind,"World, one winner",1w,2,1025,554,0.0722,0.0761,0.062,0.0907
+kind,"World, one winner",1w,3,946,578,0.145,0.1385,0.1193,0.1597
+kind,"World, one winner",1w,4,504,391,0.2445,0.2321,0.1972,0.267
+kind,"World, one winner",1w,5,358,310,0.3464,0.3575,0.3137,0.4033
+kind,"World, one winner",1w,6,243,215,0.4476,0.3786,0.3235,0.4325
+kind,"World, one winner",1w,7,171,171,0.547,0.4444,0.3743,0.5146
+kind,"World, one winner",1w,8,141,141,0.6515,0.5461,0.461,0.6243
+kind,"World, one winner",1w,9,101,101,0.7447,0.703,0.6139,0.7921
+kind,"World, one winner",1w,10,91,91,0.8526,0.8352,0.7582,0.9011
+kind,"World, one winner",1w,11,32,32,0.9311,0.9375,0.8438,1.0
+kind,"World, one winner",1w,12,27,27,0.9644,0.9259,,
+kind,"World, one winner",1w,13,24,24,0.989,1.0,,
+kind,"World, options resolve independently",1d,0,140,75,0.0134,0.0,0.0,0.0
+kind,"World, options resolve independently",1d,1,378,165,0.0356,0.0106,0.0024,0.0239
+kind,"World, options resolve independently",1d,2,750,280,0.0768,0.044,0.0239,0.0686
+kind,"World, options resolve independently",1d,3,1220,393,0.1485,0.0787,0.0609,0.0963
+kind,"World, options resolve independently",1d,4,1031,364,0.2488,0.1891,0.1453,0.247
+kind,"World, options resolve independently",1d,5,1003,363,0.348,0.2642,0.2181,0.3213
+kind,"World, options resolve independently",1d,6,810,331,0.4452,0.3605,0.301,0.4295
+kind,"World, options resolve independently",1d,7,766,328,0.5531,0.4478,0.3717,0.5235
+kind,"World, options resolve independently",1d,8,710,335,0.6509,0.5113,0.4605,0.5648
+kind,"World, options resolve independently",1d,9,695,288,0.7566,0.6777,0.6238,0.7223
+kind,"World, options resolve independently",1d,10,618,267,0.853,0.8139,0.7611,0.8567
+kind,"World, options resolve independently",1d,11,290,162,0.9246,0.8517,0.7844,0.9061
+kind,"World, options resolve independently",1d,12,163,103,0.9645,0.9264,0.8609,0.9771
+kind,"World, options resolve independently",1d,13,80,56,0.9886,0.975,0.9342,1.0
+kind,"World, options resolve independently",1m,0,672,219,0.0119,0.0015,0.0,0.0053
+kind,"World, options resolve independently",1m,1,1168,370,0.0348,0.0043,0.0009,0.0085
+kind,"World, options resolve independently",1m,2,1476,462,0.0737,0.0244,0.015,0.0338
+kind,"World, options resolve independently",1m,3,1964,556,0.147,0.0631,0.052,0.0755
+kind,"World, options resolve independently",1m,4,1632,482,0.2495,0.1654,0.1127,0.2399
+kind,"World, options resolve independently",1m,5,1392,465,0.3442,0.2134,0.1756,0.2575
+kind,"World, options resolve independently",1m,6,993,409,0.4475,0.3414,0.2869,0.3961
+kind,"World, options resolve independently",1m,7,987,395,0.5514,0.4691,0.3873,0.5463
+kind,"World, options resolve independently",1m,8,805,398,0.6519,0.5342,0.4906,0.5758
+kind,"World, options resolve independently",1m,9,853,374,0.7555,0.6671,0.6233,0.7114
+kind,"World, options resolve independently",1m,10,857,373,0.8544,0.79,0.748,0.8296
+kind,"World, options resolve independently",1m,11,543,265,0.9268,0.8803,0.8409,0.9168
+kind,"World, options resolve independently",1m,12,376,183,0.9654,0.9601,0.9394,0.9787
+kind,"World, options resolve independently",1m,13,206,111,0.989,0.9515,0.9122,0.9826
+kind,"World, options resolve independently",1w,0,383,161,0.0126,0.0026,0.0,0.0088
+kind,"World, options resolve independently",1w,1,802,295,0.0355,0.02,0.0087,0.0351
+kind,"World, options resolve independently",1w,2,1243,429,0.074,0.0338,0.0224,0.0463
+kind,"World, options resolve independently",1w,3,1851,555,0.149,0.0675,0.0534,0.081
+kind,"World, options resolve independently",1w,4,1620,540,0.2476,0.1407,0.1179,0.1666
+kind,"World, options resolve independently",1w,5,1556,521,0.3477,0.2346,0.1903,0.2991
+kind,"World, options resolve independently",1w,6,1092,451,0.447,0.3352,0.2892,0.3845
+kind,"World, options resolve independently",1w,7,1014,433,0.5536,0.4398,0.3835,0.4927
+kind,"World, options resolve independently",1w,8,997,436,0.6498,0.5466,0.4995,0.5922
+kind,"World, options resolve independently",1w,9,935,418,0.7556,0.6856,0.6428,0.7231
+kind,"World, options resolve independently",1w,10,983,416,0.8553,0.8128,0.7728,0.8478
+kind,"World, options resolve independently",1w,11,501,275,0.9266,0.8862,0.8429,0.9226
+kind,"World, options resolve independently",1w,12,282,151,0.9658,0.9362,0.9033,0.9648
+kind,"World, options resolve independently",1w,13,213,112,0.9887,0.9671,0.9379,0.9891
+added,"World, options there from the start",1d,0,1542,436,0.0087,0.0123,0.0071,0.0186
+added,"World, options there from the start",1d,1,1050,531,0.0331,0.0371,0.0268,0.0493
+added,"World, options there from the start",1d,2,1207,632,0.0745,0.0671,0.0519,0.0869
+added,"World, options there from the start",1d,3,1542,733,0.1458,0.1115,0.095,0.1292
+added,"World, options there from the start",1d,4,1146,616,0.248,0.226,0.1868,0.2754
+added,"World, options there from the start",1d,5,992,531,0.3471,0.3034,0.2551,0.3537
+added,"World, options there from the start",1d,6,746,426,0.4445,0.3954,0.3351,0.4634
+added,"World, options there from the start",1d,7,698,405,0.5533,0.4699,0.3866,0.5508
+added,"World, options there from the start",1d,8,604,386,0.6485,0.5563,0.5074,0.6056
+added,"World, options there from the start",1d,9,586,307,0.7573,0.7065,0.6491,0.7545
+added,"World, options there from the start",1d,10,504,268,0.8512,0.7917,0.7418,0.841
+added,"World, options there from the start",1d,11,256,160,0.9247,0.8633,0.7938,0.9205
+added,"World, options there from the start",1d,12,137,96,0.9636,0.9197,0.8486,0.9771
+added,"World, options there from the start",1d,13,69,51,0.9884,0.971,0.9194,1.0
+added,"World, options there from the start",1m,0,2850,849,0.0076,0.0091,0.0059,0.0126
+added,"World, options there from the start",1m,1,1712,825,0.0338,0.0251,0.0183,0.0332
+added,"World, options there from the start",1m,2,1723,856,0.073,0.0447,0.0356,0.055
+added,"World, options there from the start",1m,3,1946,925,0.1452,0.0904,0.0778,0.1048
+added,"World, options there from the start",1m,4,1466,728,0.2491,0.2265,0.1738,0.3009
+added,"World, options there from the start",1m,5,1147,594,0.3439,0.2616,0.2189,0.3064
+added,"World, options there from the start",1m,6,923,531,0.4476,0.4171,0.3641,0.4692
+added,"World, options there from the start",1m,7,828,449,0.5507,0.5,0.4126,0.5908
+added,"World, options there from the start",1m,8,630,434,0.6524,0.5571,0.5103,0.6023
+added,"World, options there from the start",1m,9,680,394,0.7555,0.6853,0.6322,0.7314
+added,"World, options there from the start",1m,10,696,400,0.8534,0.7974,0.7556,0.8393
+added,"World, options there from the start",1m,11,462,265,0.9268,0.8571,0.8045,0.8992
+added,"World, options there from the start",1m,12,315,183,0.9651,0.9714,0.9498,0.9899
+added,"World, options there from the start",1m,13,191,116,0.9894,0.9581,0.9194,0.9892
+added,"World, options there from the start",1w,0,2428,698,0.0079,0.0074,0.0043,0.011
+added,"World, options there from the start",1w,1,1525,775,0.0334,0.0341,0.0245,0.0439
+added,"World, options there from the start",1w,2,1646,852,0.0733,0.0565,0.045,0.0679
+added,"World, options there from the start",1w,3,2041,996,0.1475,0.1049,0.0911,0.1195
+added,"World, options there from the start",1w,4,1538,815,0.2473,0.1847,0.1598,0.2098
+added,"World, options there from the start",1w,5,1361,702,0.3466,0.2924,0.2445,0.3505
+added,"World, options there from the start",1w,6,980,551,0.448,0.3878,0.3411,0.4334
+added,"World, options there from the start",1w,7,853,510,0.5517,0.456,0.3898,0.5166
+added,"World, options there from the start",1w,8,814,484,0.6503,0.57,0.5155,0.6211
+added,"World, options there from the start",1w,9,766,427,0.7557,0.7102,0.6643,0.7489
+added,"World, options there from the start",1w,10,790,436,0.8542,0.8139,0.7765,0.8501
+added,"World, options there from the start",1w,11,426,253,0.9274,0.8897,0.8424,0.9294
+added,"World, options there from the start",1w,12,228,140,0.9655,0.9605,0.9301,0.9858
+added,"World, options there from the start",1w,13,200,117,0.9888,0.97,0.9405,0.9911
+added,"World, options added later",1d,0,482,118,0.008,0.0104,0.0024,0.0195
+added,"World, options added later",1d,1,336,147,0.0336,0.0119,0.0027,0.0251
+added,"World, options added later",1d,2,330,164,0.0746,0.0485,0.0268,0.0735
+added,"World, options added later",1d,3,443,197,0.1471,0.0722,0.0486,0.101
+added,"World, options added later",1d,4,295,141,0.2491,0.1186,0.0789,0.1613
+added,"World, options added later",1d,5,282,141,0.3501,0.1525,0.113,0.1978
+added,"World, options added later",1d,6,235,119,0.4467,0.2723,0.2076,0.3346
+added,"World, options added later",1d,7,207,101,0.5504,0.3575,0.2869,0.4346
+added,"World, options added later",1d,8,220,112,0.6521,0.4318,0.3529,0.5092
+added,"World, options added later",1d,9,175,90,0.7502,0.56,0.4739,0.6509
+added,"World, options added later",1d,10,159,75,0.8582,0.8491,0.7387,0.9129
+added,"World, options added later",1d,11,56,38,0.9238,0.8393,0.7292,0.9286
+added,"World, options added later",1d,12,38,23,0.9676,0.9737,,
+added,"World, options added later",1d,13,20,18,0.9893,1.0,,
+added,"World, options added later",1m,0,1756,320,0.0067,0.0034,0.0011,0.0065
+added,"World, options added later",1m,1,785,287,0.0335,0.014,0.0066,0.0228
+added,"World, options added later",1m,2,774,291,0.0736,0.0297,0.0182,0.0433
+added,"World, options added later",1m,3,873,313,0.1472,0.0584,0.0436,0.0759
+added,"World, options added later",1m,4,652,229,0.2485,0.092,0.0684,0.1201
+added,"World, options added later",1m,5,539,224,0.3469,0.1707,0.1359,0.2046
+added,"World, options added later",1m,6,317,164,0.4453,0.205,0.1625,0.2525
+added,"World, options added later",1m,7,315,163,0.5511,0.3905,0.3269,0.4557
+added,"World, options added later",1m,8,316,168,0.6509,0.5127,0.4455,0.5706
+added,"World, options added later",1m,9,286,149,0.7521,0.6329,0.5683,0.6955
+added,"World, options added later",1m,10,268,129,0.8561,0.7873,0.7023,0.8545
+added,"World, options added later",1m,11,144,85,0.9269,0.9167,0.8636,0.9575
+added,"World, options added later",1m,12,104,57,0.9665,0.9327,0.8737,0.9714
+added,"World, options added later",1m,13,52,38,0.9879,0.9615,0.8936,1.0
+added,"World, options added later",1w,0,1161,242,0.0072,0.0034,0.0008,0.0071
+added,"World, options added later",1w,1,641,251,0.0335,0.014,0.0059,0.0244
+added,"World, options added later",1w,2,622,240,0.0729,0.0434,0.027,0.0633
+added,"World, options added later",1w,3,756,276,0.1481,0.0556,0.0377,0.0732
+added,"World, options added later",1w,4,586,213,0.2459,0.1041,0.0792,0.1305
+added,"World, options added later",1w,5,553,239,0.3495,0.1718,0.1395,0.2056
+added,"World, options added later",1w,6,355,183,0.4448,0.2197,0.1777,0.2622
+added,"World, options added later",1w,7,332,174,0.555,0.4006,0.3467,0.4512
+added,"World, options added later",1w,8,324,164,0.6491,0.4877,0.431,0.543
+added,"World, options added later",1w,9,270,145,0.7513,0.6222,0.5592,0.6856
+added,"World, options added later",1w,10,284,133,0.8573,0.8169,0.7449,0.8767
+added,"World, options added later",1w,11,107,72,0.9245,0.8879,0.8318,0.9412
+added,"World, options added later",1w,12,81,48,0.9659,0.8642,0.7612,0.9362
+added,"World, options added later",1w,13,37,27,0.9885,0.973,,
+side,"World, nothing happening means NO",1d,0,578,168,0.0096,0.0138,0.0055,0.0235
+side,"World, nothing happening means NO",1d,1,528,245,0.0335,0.0208,0.0097,0.0343
+side,"World, nothing happening means NO",1d,2,726,332,0.0753,0.0565,0.0366,0.0839
+side,"World, nothing happening means NO",1d,3,1049,422,0.1477,0.0867,0.0692,0.1061
+side,"World, nothing happening means NO",1d,4,780,340,0.2483,0.1808,0.1522,0.2088
+side,"World, nothing happening means NO",1d,5,687,308,0.347,0.2183,0.1836,0.2542
+side,"World, nothing happening means NO",1d,6,469,247,0.4459,0.3049,0.2578,0.353
+side,"World, nothing happening means NO",1d,7,452,232,0.5557,0.469,0.3837,0.5544
+side,"World, nothing happening means NO",1d,8,454,225,0.6492,0.5132,0.4435,0.5765
+side,"World, nothing happening means NO",1d,9,328,179,0.7529,0.6189,0.5595,0.6785
+side,"World, nothing happening means NO",1d,10,260,141,0.8466,0.7462,0.6737,0.8104
+side,"World, nothing happening means NO",1d,11,120,75,0.9252,0.85,0.7778,0.9167
+side,"World, nothing happening means NO",1d,12,58,44,0.9646,0.9483,0.8689,1.0
+side,"World, nothing happening means NO",1d,13,29,18,0.9884,0.9655,,
+side,"World, nothing happening means NO",1m,0,1287,371,0.0091,0.0054,0.0022,0.0098
+side,"World, nothing happening means NO",1m,1,1141,449,0.0342,0.0175,0.0104,0.0256
+side,"World, nothing happening means NO",1m,2,1301,484,0.0732,0.0323,0.0231,0.0433
+side,"World, nothing happening means NO",1m,3,1602,550,0.146,0.0637,0.0507,0.0765
+side,"World, nothing happening means NO",1m,4,1107,440,0.248,0.1147,0.0911,0.1395
+side,"World, nothing happening means NO",1m,5,1013,380,0.3444,0.1718,0.1462,0.2027
+side,"World, nothing happening means NO",1m,6,620,295,0.4471,0.2613,0.2213,0.3101
+side,"World, nothing happening means NO",1m,7,563,260,0.5527,0.4618,0.3506,0.5647
+side,"World, nothing happening means NO",1m,8,450,254,0.6528,0.48,0.4312,0.5383
+side,"World, nothing happening means NO",1m,9,410,216,0.7523,0.5927,0.5363,0.6464
+side,"World, nothing happening means NO",1m,10,383,206,0.8507,0.7258,0.6693,0.785
+side,"World, nothing happening means NO",1m,11,208,135,0.9269,0.8173,0.7476,0.8811
+side,"World, nothing happening means NO",1m,12,141,88,0.9655,0.9291,0.8849,0.9664
+side,"World, nothing happening means NO",1m,13,86,55,0.9889,0.9419,0.8842,0.9888
+side,"World, nothing happening means NO",1w,0,1095,294,0.0086,0.0055,0.0017,0.0097
+side,"World, nothing happening means NO",1w,1,918,386,0.0344,0.0207,0.0105,0.0327
+side,"World, nothing happening means NO",1w,2,1129,470,0.0735,0.0487,0.0356,0.0642
+side,"World, nothing happening means NO",1w,3,1590,569,0.1491,0.0811,0.0659,0.0968
+side,"World, nothing happening means NO",1w,4,1176,475,0.2465,0.1446,0.1171,0.1733
+side,"World, nothing happening means NO",1w,5,1086,444,0.3479,0.2127,0.1866,0.2413
+side,"World, nothing happening means NO",1w,6,692,334,0.4461,0.2673,0.2253,0.309
+side,"World, nothing happening means NO",1w,7,600,295,0.5565,0.4267,0.3669,0.4894
+side,"World, nothing happening means NO",1w,8,629,282,0.6496,0.5199,0.4512,0.589
+side,"World, nothing happening means NO",1w,9,485,242,0.7532,0.6186,0.5631,0.6701
+side,"World, nothing happening means NO",1w,10,476,238,0.8503,0.7857,0.7423,0.8293
+side,"World, nothing happening means NO",1w,11,227,147,0.9263,0.8722,0.8209,0.9182
+side,"World, nothing happening means NO",1w,12,93,66,0.9646,0.871,0.7865,0.9412
+side,"World, nothing happening means NO",1w,13,118,58,0.9891,0.9661,0.9273,0.9926
+side,"World, nothing happening means YES",1d,0,14,14,0.0105,0.1429,,
+side,"World, nothing happening means YES",1d,1,14,14,0.0331,0.1429,,
+side,"World, nothing happening means YES",1d,2,24,24,0.0729,0.2083,,
+side,"World, nothing happening means YES",1d,3,50,35,0.1578,0.16,0.06,0.3077
+side,"World, nothing happening means YES",1d,4,94,47,0.2577,0.4468,0.1428,0.745
+side,"World, nothing happening means YES",1d,5,60,30,0.3456,0.6,0.25,0.8114
+side,"World, nothing happening means YES",1d,6,121,27,0.4358,0.5785,,
+side,"World, nothing happening means YES",1d,7,45,33,0.5522,0.6889,0.4857,0.8462
+side,"World, nothing happening means YES",1d,8,37,31,0.6453,0.7027,0.5294,0.8462
+side,"World, nothing happening means YES",1d,9,23,17,0.741,0.7391,,
+side,"World, nothing happening means YES",1d,10,35,27,0.8661,0.8857,,
+side,"World, nothing happening means YES",1d,11,23,19,0.9228,0.9565,,
+side,"World, nothing happening means YES",1d,12,16,12,0.9627,1.0,,
+side,"World, nothing happening means YES",1d,13,7,6,0.9911,1.0,,
+side,"World, nothing happening means YES",1m,0,31,30,0.009,0.0323,0.0,0.1
+side,"World, nothing happening means YES",1m,1,22,21,0.0325,0.1364,,
+side,"World, nothing happening means YES",1m,2,35,32,0.0763,0.0857,0.0,0.1875
+side,"World, nothing happening means YES",1m,3,59,46,0.1565,0.2712,0.1507,0.4119
+side,"World, nothing happening means YES",1m,4,189,37,0.2583,0.5397,0.2934,0.9052
+side,"World, nothing happening means YES",1m,5,61,24,0.3538,0.7705,,
+side,"World, nothing happening means YES",1m,6,71,35,0.44,0.7042,0.3654,0.874
+side,"World, nothing happening means YES",1m,7,49,30,0.553,0.8367,0.6388,0.9385
+side,"World, nothing happening means YES",1m,8,51,36,0.6625,0.7843,0.6047,0.902
+side,"World, nothing happening means YES",1m,9,59,38,0.7448,0.7966,0.6346,0.9091
+side,"World, nothing happening means YES",1m,10,55,39,0.8564,0.9636,0.902,1.0
+side,"World, nothing happening means YES",1m,11,62,35,0.9305,0.9677,0.9166,1.0
+side,"World, nothing happening means YES",1m,12,31,21,0.9659,1.0,,
+side,"World, nothing happening means YES",1m,13,29,19,0.9885,1.0,,
+side,"World, nothing happening means YES",1w,0,27,26,0.0082,0.037,,
+side,"World, nothing happening means YES",1w,1,29,26,0.0319,0.1379,,
+side,"World, nothing happening means YES",1w,2,28,27,0.0785,0.1429,,
+side,"World, nothing happening means YES",1w,3,59,45,0.1602,0.2034,0.0941,0.3542
+side,"World, nothing happening means YES",1w,4,97,50,0.2558,0.1753,0.1158,0.3209
+side,"World, nothing happening means YES",1w,5,109,33,0.3494,0.6422,0.2793,0.8945
+side,"World, nothing happening means YES",1w,6,73,36,0.4346,0.6027,0.3061,0.7538
+side,"World, nothing happening means YES",1w,7,42,37,0.543,0.6429,0.475,0.7949
+side,"World, nothing happening means YES",1w,8,45,35,0.6566,0.7556,0.5832,0.8853
+side,"World, nothing happening means YES",1w,9,65,39,0.7461,0.8615,0.74,0.9385
+side,"World, nothing happening means YES",1w,10,68,44,0.862,0.9706,0.9189,1.0
+side,"World, nothing happening means YES",1w,11,42,30,0.9333,0.9524,0.8788,1.0
+side,"World, nothing happening means YES",1w,12,26,16,0.9658,1.0,,
+side,"World, nothing happening means YES",1w,13,23,15,0.9894,1.0,,
+side,"World, no default side",1d,0,1432,314,0.0081,0.0098,0.005,0.015
+side,"World, no default side",1d,1,844,353,0.033,0.0355,0.0237,0.0477
+side,"World, no default side",1d,2,787,384,0.0738,0.0648,0.0474,0.0813
+side,"World, no default side",1d,3,886,423,0.1435,0.1185,0.0965,0.1416
+side,"World, no default side",1d,4,567,326,0.2464,0.1958,0.1551,0.243
+side,"World, no default side",1d,5,527,292,0.349,0.2998,0.24,0.3552
+side,"World, no default side",1d,6,391,238,0.4468,0.3734,0.3054,0.4621
+side,"World, no default side",1d,7,408,222,0.5493,0.3897,0.2973,0.4779
+side,"World, no default side",1d,8,333,212,0.6504,0.5165,0.4548,0.5759
+side,"World, no default side",1d,9,410,167,0.7586,0.7122,0.6399,0.7674
+side,"World, no default side",1d,10,368,151,0.856,0.8397,0.7705,0.8889
+side,"World, no default side",1d,11,169,95,0.9244,0.8521,0.7484,0.9345
+side,"World, no default side",1d,12,101,62,0.9647,0.9109,0.8111,0.9787
+side,"World, no default side",1d,13,53,41,0.9884,0.9811,0.9375,1.0
+side,"World, no default side",1m,0,3288,612,0.0066,0.0073,0.0045,0.0106
+side,"World, no default side",1m,1,1334,557,0.0333,0.0232,0.0161,0.0322
+side,"World, no default side",1m,2,1161,532,0.073,0.0474,0.036,0.0608
+side,"World, no default side",1m,3,1158,539,0.1451,0.0941,0.0772,0.1135
+side,"World, no default side",1m,4,822,413,0.248,0.1983,0.1663,0.234
+side,"World, no default side",1m,5,612,349,0.3447,0.2794,0.239,0.3261
+side,"World, no default side",1m,6,549,325,0.4478,0.4335,0.3703,0.4956
+side,"World, no default side",1m,7,531,283,0.5486,0.4444,0.3643,0.5209
+side,"World, no default side",1m,8,445,273,0.6498,0.5775,0.5222,0.635
+side,"World, no default side",1m,9,497,248,0.7575,0.7183,0.6604,0.7646
+side,"World, no default side",1m,10,526,248,0.8565,0.827,0.7683,0.87
+side,"World, no default side",1m,11,336,166,0.9261,0.8869,0.8306,0.9317
+side,"World, no default side",1m,12,247,128,0.9654,0.9757,0.9544,0.9922
+side,"World, no default side",1m,13,128,79,0.9894,0.9609,0.9037,1.0
+side,"World, no default side",1w,0,2467,508,0.0072,0.0061,0.0033,0.0092
+side,"World, no default side",1w,1,1219,533,0.0327,0.0312,0.0223,0.041
+side,"World, no default side",1w,2,1111,508,0.0727,0.0549,0.0417,0.0694
+side,"World, no default side",1w,3,1148,567,0.1451,0.1002,0.0836,0.1177
+side,"World, no default side",1w,4,851,452,0.2464,0.1857,0.1552,0.2152
+side,"World, no default side",1w,5,719,391,0.3465,0.267,0.2277,0.3128
+side,"World, no default side",1w,6,570,315,0.4499,0.4018,0.3401,0.4618
+side,"World, no default side",1w,7,543,297,0.5491,0.4401,0.3583,0.5164
+side,"World, no default side",1w,8,464,283,0.6498,0.5625,0.5097,0.6156
+side,"World, no default side",1w,9,486,253,0.7571,0.7325,0.673,0.776
+side,"World, no default side",1w,10,530,243,0.8585,0.8208,0.7642,0.8686
+side,"World, no default side",1w,11,264,136,0.9263,0.8939,0.8245,0.9463
+side,"World, no default side",1w,12,190,103,0.9661,0.9579,0.9255,0.9844
+side,"World, no default side",1w,13,96,67,0.9882,0.9688,0.9286,1.0
+groups,World,1d,0,2024,485,0.0085,0.0119,0.0075,0.0164
+groups,World,1d,1,1386,603,0.0332,0.031,0.0224,0.0409
+groups,World,1d,2,1537,719,0.0745,0.0631,0.0509,0.0787
+groups,World,1d,3,1985,845,0.1461,0.1028,0.089,0.1168
+groups,World,1d,4,1441,681,0.2482,0.204,0.1699,0.2433
+groups,World,1d,5,1274,599,0.3478,0.27,0.2297,0.3096
+groups,World,1d,6,981,495,0.445,0.366,0.3144,0.4232
+groups,World,1d,7,905,467,0.5526,0.4442,0.3749,0.5106
+groups,World,1d,8,824,449,0.6495,0.5231,0.4792,0.5724
+groups,World,1d,9,761,354,0.7556,0.6728,0.62,0.7193
+groups,World,1d,10,663,312,0.8529,0.8054,0.762,0.8496
+groups,World,1d,11,312,184,0.9246,0.859,0.7949,0.9129
+groups,World,1d,12,175,115,0.9645,0.9314,0.8704,0.9775
+groups,World,1d,13,89,65,0.9886,0.9775,0.9438,1.0
+groups,World,1m,0,4606,972,0.0073,0.0069,0.0046,0.0093
+groups,World,1m,1,2497,992,0.0337,0.0216,0.0162,0.028
+groups,World,1m,2,2497,1017,0.0732,0.04,0.0323,0.0477
+groups,World,1m,3,2819,1082,0.1459,0.0805,0.0712,0.0923
+groups,World,1m,4,2118,850,0.2489,0.1851,0.1467,0.2408
+groups,World,1m,5,1686,721,0.3449,0.2325,0.2003,0.269
+groups,World,1m,6,1240,631,0.447,0.3629,0.3203,0.4119
+groups,World,1m,7,1143,549,0.5508,0.4698,0.4027,0.543
+groups,World,1m,8,946,539,0.6519,0.5423,0.5029,0.5797
+groups,World,1m,9,966,487,0.7545,0.6698,0.623,0.7095
+groups,World,1m,10,964,480,0.8542,0.7946,0.7591,0.831
+groups,World,1m,11,606,328,0.9268,0.8713,0.8313,0.9065
+groups,World,1m,12,419,226,0.9655,0.9618,0.9417,0.9781
+groups,World,1m,13,243,148,0.9891,0.9588,0.9274,0.9859
+groups,World,1w,0,3589,798,0.0077,0.0061,0.0038,0.0086
+groups,World,1w,1,2166,921,0.0334,0.0282,0.0211,0.0363
+groups,World,1w,2,2268,983,0.0732,0.0529,0.0435,0.0634
+groups,World,1w,3,2797,1133,0.1477,0.0915,0.0792,0.104
+groups,World,1w,4,2124,931,0.2469,0.1624,0.1431,0.183
+groups,World,1w,5,1914,831,0.3474,0.2576,0.2195,0.3028
+groups,World,1w,6,1335,666,0.4471,0.3431,0.3039,0.3854
+groups,World,1w,7,1185,604,0.5526,0.4405,0.3939,0.4883
+groups,World,1w,8,1138,577,0.65,0.5466,0.5008,0.5906
+groups,World,1w,9,1036,519,0.7546,0.6873,0.6464,0.7268
+groups,World,1w,10,1074,507,0.8551,0.8147,0.7796,0.845
+groups,World,1w,11,533,307,0.9268,0.8893,0.8523,0.9246
+groups,World,1w,12,309,178,0.9656,0.9353,0.9057,0.9626
+groups,World,1w,13,237,136,0.9888,0.9705,0.948,0.9909
+groups,Traded elsewhere,1d,0,609,130,0.0089,0.0066,0.0015,0.0129
+groups,Traded elsewhere,1d,1,424,161,0.0327,0.0259,0.0122,0.0433
+groups,Traded elsewhere,1d,2,457,179,0.071,0.0569,0.0356,0.0823
+groups,Traded elsewhere,1d,3,604,249,0.1502,0.1258,0.1006,0.1558
+groups,Traded elsewhere,1d,4,591,256,0.2507,0.1929,0.1622,0.2248
+groups,Traded elsewhere,1d,5,586,248,0.3497,0.2747,0.238,0.3125
+groups,Traded elsewhere,1d,6,493,220,0.4489,0.3651,0.3259,0.4045
+groups,Traded elsewhere,1d,7,454,199,0.5506,0.4493,0.3852,0.5155
+groups,Traded elsewhere,1d,8,441,191,0.65,0.551,0.5011,0.6029
+groups,Traded elsewhere,1d,9,409,186,0.7489,0.6601,0.6079,0.7108
+groups,Traded elsewhere,1d,10,344,158,0.8473,0.7413,0.6564,0.8152
+groups,Traded elsewhere,1d,11,144,85,0.925,0.8333,0.7664,0.8924
+groups,Traded elsewhere,1d,12,68,40,0.9648,0.9412,0.88,0.9872
+groups,Traded elsewhere,1d,13,47,28,0.9894,0.9787,,
+groups,Traded elsewhere,1m,0,1806,304,0.0075,0.005,0.0022,0.0087
+groups,Traded elsewhere,1m,1,753,253,0.0328,0.0305,0.0194,0.0438
+groups,Traded elsewhere,1m,2,698,260,0.0734,0.043,0.0253,0.0694
+groups,Traded elsewhere,1m,3,894,313,0.1465,0.1186,0.0942,0.1451
+groups,Traded elsewhere,1m,4,634,261,0.247,0.2208,0.1893,0.2526
+groups,Traded elsewhere,1m,5,620,240,0.3456,0.2871,0.2525,0.3223
+groups,Traded elsewhere,1m,6,553,209,0.4501,0.3942,0.349,0.4337
+groups,Traded elsewhere,1m,7,538,200,0.5502,0.4777,0.4338,0.5279
+groups,Traded elsewhere,1m,8,455,177,0.6504,0.567,0.5134,0.6183
+groups,Traded elsewhere,1m,9,351,148,0.7479,0.6581,0.5748,0.7316
+groups,Traded elsewhere,1m,10,343,137,0.851,0.7901,0.7248,0.8472
+groups,Traded elsewhere,1m,11,148,75,0.9264,0.9595,0.9262,0.9874
+groups,Traded elsewhere,1m,12,120,71,0.9661,0.9917,0.972,1.0
+groups,Traded elsewhere,1m,13,159,68,0.9896,0.9874,0.9664,1.0
+groups,Traded elsewhere,1w,0,1594,336,0.0077,0.0044,0.0015,0.0079
+groups,Traded elsewhere,1w,1,713,276,0.0333,0.0252,0.014,0.0384
+groups,Traded elsewhere,1w,2,884,336,0.0738,0.0554,0.0379,0.0767
+groups,Traded elsewhere,1w,3,1152,442,0.1491,0.1076,0.0877,0.1294
+groups,Traded elsewhere,1w,4,853,388,0.2482,0.1817,0.1558,0.2088
+groups,Traded elsewhere,1w,5,884,341,0.3476,0.2692,0.2339,0.3016
+groups,Traded elsewhere,1w,6,748,323,0.4491,0.3917,0.3552,0.4254
+groups,Traded elsewhere,1w,7,645,263,0.5493,0.5302,0.4859,0.5731
+groups,Traded elsewhere,1w,8,581,259,0.6519,0.6007,0.5544,0.6435
+groups,Traded elsewhere,1w,9,495,219,0.7497,0.6808,0.6303,0.7266
+groups,Traded elsewhere,1w,10,418,191,0.8497,0.8301,0.7857,0.8725
+groups,Traded elsewhere,1w,11,174,104,0.9246,0.931,0.8855,0.9674
+groups,Traded elsewhere,1w,12,107,49,0.9641,0.9813,0.9506,1.0
+groups,Traded elsewhere,1w,13,149,92,0.9905,0.9866,0.9653,1.0
+groups,Not substantive,1d,0,1018,111,0.0076,0.0049,0.0011,0.0094
+groups,Not substantive,1d,1,344,126,0.0319,0.0145,0.0029,0.0297
+groups,Not substantive,1d,2,315,127,0.0734,0.0413,0.0216,0.0638
+groups,Not substantive,1d,3,301,156,0.1483,0.103,0.0724,0.1368
+groups,Not substantive,1d,4,254,130,0.2467,0.122,0.0779,0.1645
+groups,Not substantive,1d,5,211,99,0.3445,0.2512,0.1934,0.3095
+groups,Not substantive,1d,6,203,101,0.4487,0.4286,0.3295,0.5243
+groups,Not substantive,1d,7,178,85,0.5492,0.5,0.4037,0.589
+groups,Not substantive,1d,8,153,60,0.6487,0.6078,0.5075,0.7124
+groups,Not substantive,1d,9,119,64,0.7469,0.605,0.48,0.7306
+groups,Not substantive,1d,10,100,50,0.8534,0.86,0.7553,0.949
+groups,Not substantive,1d,11,55,31,0.9277,0.8,0.6665,0.9074
+groups,Not substantive,1d,12,27,15,0.9603,0.963,,
+groups,Not substantive,1d,13,42,20,0.9898,1.0,,
+groups,Not substantive,1m,0,2053,151,0.0045,0.0024,0.0006,0.0046
+groups,Not substantive,1m,1,387,122,0.0325,0.0103,0.0025,0.0215
+groups,Not substantive,1m,2,374,111,0.0732,0.0241,0.01,0.0427
+groups,Not substantive,1m,3,321,110,0.1469,0.0685,0.0444,0.0963
+groups,Not substantive,1m,4,220,91,0.2454,0.1182,0.0766,0.1683
+groups,Not substantive,1m,5,216,62,0.345,0.1435,0.098,0.2097
+groups,Not substantive,1m,6,144,63,0.4525,0.3125,0.2215,0.4254
+groups,Not substantive,1m,7,142,63,0.5493,0.3099,0.1974,0.4405
+groups,Not substantive,1m,8,138,49,0.6516,0.4638,0.3237,0.6189
+groups,Not substantive,1m,9,112,49,0.7466,0.6696,0.5349,0.8021
+groups,Not substantive,1m,10,112,51,0.8601,0.8571,0.7528,0.9322
+groups,Not substantive,1m,11,85,48,0.9269,0.8941,0.8046,0.9667
+groups,Not substantive,1m,12,74,31,0.9671,0.9459,0.8478,1.0
+groups,Not substantive,1m,13,112,40,0.9918,1.0,1.0,1.0
+groups,Not substantive,1w,0,1919,149,0.0065,0.0057,0.0029,0.0087
+groups,Not substantive,1w,1,480,151,0.0331,0.0104,0.0023,0.0201
+groups,Not substantive,1w,2,397,172,0.0728,0.0554,0.0344,0.0765
+groups,Not substantive,1w,3,495,197,0.1479,0.1051,0.0787,0.1341
+groups,Not substantive,1w,4,333,142,0.2454,0.1141,0.0758,0.1579
+groups,Not substantive,1w,5,348,125,0.3447,0.1724,0.1272,0.2292
+groups,Not substantive,1w,6,266,108,0.4512,0.3647,0.308,0.4273
+groups,Not substantive,1w,7,277,100,0.5537,0.4982,0.4281,0.5632
+groups,Not substantive,1w,8,201,96,0.6487,0.5224,0.4216,0.6162
+groups,Not substantive,1w,9,183,85,0.7499,0.7104,0.6,0.8056
+groups,Not substantive,1w,10,157,86,0.8544,0.8025,0.7237,0.8667
+groups,Not substantive,1w,11,88,55,0.9253,0.8864,0.7945,0.9546
+groups,Not substantive,1w,12,48,24,0.9631,0.9167,,
+groups,Not substantive,1w,13,40,26,0.9895,0.975,,

@@ -75,7 +75,7 @@ def snapshots(market):
                     rows.append(dict(id=market["id"], answer=a["id"], anchor=anchor, horizon=name, prob=history[n - 1][1],
                                      age_days=(t - history[n - 1][0]) / 86400e3, y=y, bettors=bettors, volume=volume,
                                      opt_bettors=opt_bettors, opt_volume=opt_volume, initial=a["createdTime"] - market["createdTime"] <= 60e3,
-                                     one_winner=market["shouldAnswersSumToOne"], add_mode=market["addAnswersMode"], creator=market["creatorId"]))
+                                     one_winner=market["shouldAnswersSumToOne"], add_mode=market.get("addAnswersMode"), creator=market["creatorId"]))
     return rows
 
 
