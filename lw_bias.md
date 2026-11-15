@@ -64,9 +64,9 @@ We also checked the default-NO and default-YES bias year by year, only on Manifo
 
 *Manifold questions about the world, price 1 week after creation, grouped by the year the market was created. Y-axis: the log-odds shift for each group. The number next to each dot is the number of markets. Left: all resolved markets. Right: only markets whose stated deadline passed at least 60 days before we fetched the data (see "Filtering unresolved markets" above). The 2026 "means YES" bar on the right runs off the top of the plot: with 60 markets, the interval says little.*
 
-**What the plot shows.** Where nothing happening means NO, YES is overpriced in every year. The bias shrank from 2022 to 2024 and has stayed about the same since. Two things make it look like it keeps shrinking, and neither is real:
-- **Unresolved markets (left panel).** Recent markets that have already resolved are mostly early YESes, so recent years look better than they are. The right panel removes this.
-- **2026 in the right panel.** Almost half of 2026's markets come from three monthly multiple-choice series that happen to be well calibrated. Counting each event once, 2026 is as biased as 2024–2025.
+Comments:
+- The left panel exists to show how one can accidentally argue for "the bias is steadily improving". Recent markets that have already resolved are disproportionately early YESes, so recent years look less overpriced than they are. The right panel keeps only markets whose deadline passed 60+ days before we fetched the data, so almost all of them had time to resolve.
+- Almost half of 2026's markets come from three monthly multiple-choice series that happen to be well calibrated ("What will happen in <month>?", "<Month> AI model releases", "Which YouTube channels will release a video in <month>?"). Counting each multiple-choice question once instead of each of its options, 2026 is as biased as 2024–2025.
 
 Where nothing happening means YES, YES is underpriced in every year, but there are few such markets. "No default side" sits in between, mostly slightly overpriced.
 
