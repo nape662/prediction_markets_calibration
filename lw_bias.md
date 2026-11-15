@@ -52,7 +52,7 @@ Commentary on the plots above:
 
 - **Measuring fixed times after opening.** Measuring relative to resolution introduces conditioning bias. Take 100 "by Dec 31" contracts fairly priced at 40%. The 60 NOs run out the clock, sitting near 1% on Dec 30. The 40 YESes trigger whenever the event happens, often while still trading around 40% the day before. Looking "one day before resolution" packs the 40% bin with imminent YESes, making fair odds look underpriced. This makes Polymarket's "resolves NO" flip from −0.34 one week post-open to +0.34 one week pre-close (code and plots in repo).
 - **Filtering unresolved markets.** Restricting to resolved markets creates survivorship bias: recent markets that have already resolved are disproportionately early YESes, hiding the bias. Requiring deadlines to have passed at least 60 days before scraping—which also filters out open-ended markets—lets nearly every contract settle. Under this filter, Manifold's "resolves NO" deepens from −0.65 to −0.81 (5,880 markets), while Polymarket holds steady at −0.34.
-- **Hidden dots.** To avoid noisy dots, the plots hide bins with fewer than 30 markets. This removes most of Polymarket's "resolves YES" line, because our filters leave only 11,881 Polymarket markets in total, and only 205 of them "resolve YES".
+- **Hidden dots.** To avoid noisy dots, the plots hide bins with fewer than 30 markets. This removes most of Polymarket's "resolves YES" line, because our filters leave only 11,881 Polymarket markets in total, and in only 205 of them nothing happening means YES.
 - I'd be really glad if somebody did a similar thing for Kalshi, but it won't be me.
 
 
