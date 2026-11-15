@@ -128,7 +128,7 @@ def plot_one(out, filtered, bins, split, anchors, name, title, note, unit="marke
     fig.suptitle(title, x=.01, ha="left", fontsize=14)
     gate = ("Kept only moments with $1,000+ traded before them (on-chain trades), and not in a one-winner event whose prices sum above 130% then.\n" if filtered
             else "UNFILTERED: includes moments before $1,000 had traded and one-winner events whose prices sum far above 100%.\n")
-    fig.text(.01, .01, "Source: Polymarket Gamma and CLOB APIs; labels from Haiku, which saw text only. Resolved Yes/No markets that closed before Feb 2, 2026 with $1,000+ or 15+ traders by then, sports, asset-price and weather markets removed.\n" + gate +
+    fig.text(.01, .01, "Source: Polymarket Gamma and CLOB APIs; labels from Haiku, which saw text only. Resolved Yes/No markets that closed before Feb 2, 2026 with $1,000+ lifetime volume, sports, asset-price and weather markets removed.\n" + gate +
              f"Price: last hourly API price at or before the moment, at most 3 days old; moments outside trading skipped. 10-point bins, bins under 30 dropped, number = {unit}. Bars: 95%, resampling events.\n" + note,
              fontsize=8.5, color="#555555")
     fig.tight_layout(rect=(0, .12 if len(anchors) == 1 else .07, 1, .96))
