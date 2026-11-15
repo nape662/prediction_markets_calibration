@@ -32,13 +32,13 @@ Then we asked Haiku 5.5 this question about each market, giving it only the text
 
 Plotting the markets separately for each answer, you get bias of a similar size in opposite directions for "nothing happening means NO" and "nothing happening means YES". "No default side" comes out much closer to calibrated. Plots:
 
-![Manifold by default side](manifold/plots/second_pass/by_side.png)
+![Manifold by default side](plots/by_side_manifold.png)
 
 *Manifold questions about the world, price 1, 7 and 30 days after the market was created, split by Haiku's answer. Markets are sorted into 10-point price bins; for each bin, x = mean price and y = share that resolved YES. The number next to each dot is the number of markets in the bin.*
 
-![Polymarket by default side](polymarket/plots/by_side.png)
+![Polymarket by default side](plots/by_side_polymarket.png)
 
-*The same for Polymarket. Top row: price 1, 7 and 30 days after trading starts. Bottom row: price 1, 7 and 30 days before the market closes, which is misleading (see below).*
+*The same for Polymarket, price 1, 7 and 30 days after trading starts.*
 
 Commentary on the plots above:
 
@@ -50,24 +50,21 @@ Commentary on the plots above:
   | Resolves YES | +0.52 (+0.32 to +0.74), 534 | +0.13 (−0.33 to +0.57), 205 |
   | No default side | −0.23 (−0.35 to −0.11), 1,529 | −0.11 (−0.17 to −0.05), 6,077 |
 
-  On Manifold, "resolves NO" markets are priced at 36.3% on average and 26.8% of them resolve YES. "Resolves YES" markets are priced at 69.7%, and 76.6% resolve YES. On Polymarket, the "resolves YES" group is too small at 1 week. At 1 month it is +0.76 (+0.14 to +1.33) on 120 markets, which points the same way as Manifold.
-- **Why fixed times after opening.** We price markets at a fixed time after creation or opening, so the moment we measure doesn't depend on the outcome. Here is what goes wrong otherwise. Take 100 "by December 31" questions, all correctly priced at 40% on January 1, so 40 of them will happen. The 60 NOs resolve on December 31, so "one day before resolution" is December 30, when they sit near 1%. The 40 YESes resolve on the day the event happens, and the day before, many of them were still at around 40%. So the 40% bin, one day before resolution, holds mostly markets that are about to resolve YES. The markets look underpriced even though every price was right. This is why looking at markets N days before resolution predictably makes the "resolves NO" markets look underpriced instead of overpriced. On Polymarket, "resolves NO" goes from −0.34 one week after opening to +0.34 one week before closing. The code and plots for this are in the repo.
-- **Markets that haven't resolved yet.** There is another effect to control for. Our data only includes resolved markets. Among recent markets, the ones that have already resolved are disproportionately those where the event happened early, i.e. YES. This pushes the YES rate up and hides part of the bias. If we keep only markets whose stated deadline passed at least 60 days before we fetched the data, almost all of them have resolved, and on Manifold the bias gets bigger: "resolves NO" goes from −0.65 to −0.81 (5,880 markets). This filter also drops every market without a stated deadline. On Polymarket, the same filter leaves "resolves NO" at −0.34.
+- **Measuring fixed times after opening.** Measuring relative to resolution introduces conditioning bias. Take 100 "by Dec 31" contracts fairly priced at 40%. The 60 NOs run out the clock, sitting near 1% on Dec 30. The 40 YESes trigger whenever the event happens, often while still trading around 40% the day before. Looking "one day before resolution" packs the 40% bin with imminent YESes, making fair odds look underpriced. This makes Polymarket's "resolves NO" flip from −0.34 one week post-open to +0.34 one week pre-close (code and plots in repo).
+- **Filtering unresolved markets.** Restricting to resolved markets creates survivorship bias: recent markets that have already resolved are disproportionately early YESes, hiding the bias. Requiring deadlines to have passed at least 60 days before scraping—which also filters out open-ended markets—lets nearly every contract settle. Under this filter, Manifold's "resolves NO" deepens from −0.65 to −0.81 (5,880 markets), while Polymarket holds steady at −0.34.
 - **Hidden dots.** To avoid noisy dots, the plots hide bins with fewer than 30 markets. This removes most of Polymarket's "resolves YES" line, because our filters leave only 11,881 Polymarket markets in total, and only 205 of them "resolve YES".
 - I'd be really glad if somebody did a similar thing for Kalshi, but it won't be me.
 
 
 ## Across time
 
-We also checked the default-NO and default-YES bias year by year, only on Manifold, because there wasn't enough data on Polymarket. It exists in every year, and is larger in 2022–2023:
+We also checked the default-NO and default-YES bias year by year, only on Manifold, because there wasn't enough data on Polymarket. Where nothing happening means NO, the bias exists in every year, and is larger in 2022–2023:
 
-![Manifold by year](manifold/plots/second_pass/by_year.png)
+![Manifold by year](plots/by_year.png)
 
-*Manifold questions about the world, price 1 week after creation, grouped by the year the market was created. Y-axis: the log-odds shift for each group. The number next to each dot is the number of markets. Left: all resolved markets. Right: only markets whose stated deadline passed at least 60 days before we fetched the data (see "Markets that haven't resolved yet" above).*
+*Manifold questions about the world, price 1 week after creation, grouped by the year the market was created. Y-axis: the log-odds shift for each group. The number next to each dot is the number of markets. Left: all resolved markets. Right: only markets whose stated deadline passed at least 60 days before we fetched the data (see "Filtering unresolved markets" above).*
 
-<span style="color:#c00000;font-size:1.4em;font-weight:bold">RIGHT PANEL KEEPS ONLY MARKETS WHOSE STATED DEADLINE PASSED 60+ DAYS BEFORE THE FETCH. Left panel: without this filter.</span>
-
-**"Resolves NO", with the correction:** −0.98 (2022, 735 markets), −0.87 (2023, 2,482), −0.68 (2024, 1,748), −0.71 (2025, 698), −0.79 (2026, 216). Without the correction, the bias seems to shrink steadily, to −0.23 in 2026. Most of that apparent improvement comes from recent markets that haven't resolved yet. **"Resolves YES"** stays positive every year, but on 40–207 markets per year, and its interval touches 0 in some years.
+**"Resolves NO", with the correction:** −0.98 (2022, 735 markets), −0.87 (2023, 2,482), −0.68 (2024, 1,748), −0.71 (2025, 698), −0.79 (2026, 216). Without the correction, the bias seems to shrink steadily, to −0.23 in 2026. Most of that apparent improvement comes from recent markets that haven't resolved yet. **"Resolves YES"** stays positive every year, but on 40–207 markets per year, and its interval touches 0 in some years. **"No default side"** sits between the two, mostly below 0.
 
 
 ## Methodological details for nerds and LLMs, Claude-generated

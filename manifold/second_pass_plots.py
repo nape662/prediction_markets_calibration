@@ -86,26 +86,3 @@ fig.suptitle("No split with enough markets removes the overpricing where nothing
 fig.text(.01, .01, "Source: Manifold API, Haiku labels from text only. Markets where nothing happening means NO, 1 week after creation, 15+ bettors by then, still open then. Bars: 95%, resampling creators.", fontsize=8.5, color="#555555", wrap=True)
 fig.tight_layout(rect=(0, .05, 1, .95))
 fig.savefig(OUT / "within_no.png", dpi=140)
-plt.close(fig)
-
-fig, axes = plt.subplots(1, 2, figsize=(11, 5.6), sharey=True)
-for ax, tag, name, color in zip(axes, ["", ": deadline passed"], ["WITHOUT correction: every resolved market", "WITH correction: stated deadline passed 60+ days before fetch"], ["#333333", "#c00000"]):
-    for (side, c, label), dx in zip(SIDES[:2], [-.08, .08]):
-        r = m[m.check.str.fullmatch(rf"default {side}, created \d+{tag}") & (m.n >= 30)]
-        year = r.check.str.extract(r"created (\d+)")[0].astype(int)
-        ax.errorbar(year + dx, r["shift"], yerr=[r["shift"] - r.low, r.high - r["shift"]], color=c, marker="o", ms=6, lw=0, elinewidth=1.2, label=label)
-        for y, s, n in zip(year, r["shift"], r.n):
-            ax.annotate(f"{int(n):,}", (y + dx, s), xytext=(5 if dx > 0 else -5, 0), textcoords="offset points", ha="left" if dx > 0 else "right", va="center", fontsize=7.5, color="#444444")
-    ax.axhline(0, color="#999999", lw=1)
-    ax.set(xticks=range(2022, 2027), xlim=(2021.5, 2026.5))
-    ax.grid(axis="y", color="#eeeeee", lw=.6)
-    ax.set_title(name, fontsize=11, color=color)
-    ax.set_xlabel("Year the market was created")
-axes[0].set_ylabel("Log-odds shift that would calibrate the group\n(below 0: YES overpriced)")
-handles, labels = axes[0].get_legend_handles_labels()
-fig.legend(handles, labels, frameon=False, loc="upper left", bbox_to_anchor=(.01, .93), ncols=2)
-fig.suptitle("Manifold, by the year the market was created, 1 week after creation", x=.01, ha="left", fontsize=14)
-fig.text(.01, .01, "Shift: one number added to every price's log-odds so the group's mean price equals its YES rate. Number = markets. Groups under 30 markets dropped (2026 \"means YES\").\nRight panel keeps only markets whose stated deadline passed 60+ days before the fetch, so nearly all have resolved; this also drops markets with no stated deadline.\n" + HOW.split(" 10-point")[0].replace("price at a fixed time after creation", "price 1 week after creation") + " Bars: 95%, resampling creators.", fontsize=8, color="#555555")
-fig.tight_layout(rect=(0, .12, 1, .88))
-fig.savefig(OUT / "by_year.png", dpi=140)
-plt.close(fig)
