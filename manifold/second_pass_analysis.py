@@ -86,8 +86,8 @@ def analyze():
     a, counts = labeled()
     print(counts, flush=True)
     metrics = [dict(check=f"count: {k}", by="", n=int(v)) for k, v in counts.items()]
-    def add(check, g, by="creator", horizon="1w"):
-        if len(g) >= MIN_GROUP:
+    def add(check, g, by="creator", horizon="1w", least=MIN_GROUP):
+        if len(g) >= least:
             metrics.append(dict(check=check, by=by, horizon=horizon, **summary(g, by)))
     def line(check, g, horizon="1w"):
         """Two-parameter recalibration: logit(YES) = alpha + beta * logit(price). beta above 1 means prices are squeezed toward 50%."""
@@ -128,8 +128,8 @@ def analyze():
             add(f"default NO, {q} {v}: deadline passed", g[g.done])
     for side, g in x.groupby("default_side"):
         for year, y in g.groupby("year"):
-            add(f"default {side}, created {year}", y)
-            add(f"default {side}, created {year}: deadline passed", y[y.done])
+            add(f"default {side}, created {year}", y, least=10)  # the by-year plot shows small years too
+            add(f"default {side}, created {year}: deadline passed", y[y.done], least=10)
         for half in [0, 1]:
             add(f"holdout creators {half}: default {side}", g[g.creator.map(hash_half) == half])
         dated = g[g.said.notna()]

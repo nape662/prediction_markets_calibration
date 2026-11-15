@@ -309,11 +309,11 @@ early NEITHER,1w,9,140,0.9430,0.9500,0.9126,0.9806
 "from 2024, deadline passed, raw",1w,7,228,0.7524,0.6228,0.5636,0.6845
 "from 2024, deadline passed, raw",1w,8,194,0.8478,0.7526,0.6879,0.8110
 "from 2024, deadline passed, raw",1w,9,165,0.9500,0.9636,0.9281,0.9884
-"from 2024, deadline passed, one shift per default side",1w,0,1071,0.0470,0.0383,0.0270,0.0493
-"from 2024, deadline passed, one shift per default side",1w,1,627,0.1438,0.1499,0.1233,0.1838
-"from 2024, deadline passed, one shift per default side",1w,2,375,0.2446,0.2667,0.2258,0.3094
+"from 2024, deadline passed, one shift per default side",1w,0,1071,0.0471,0.0383,0.0270,0.0493
+"from 2024, deadline passed, one shift per default side",1w,1,626,0.1437,0.1502,0.1210,0.1840
+"from 2024, deadline passed, one shift per default side",1w,2,376,0.2445,0.2660,0.2231,0.3088
 "from 2024, deadline passed, one shift per default side",1w,3,226,0.3461,0.3850,0.3228,0.4530
-"from 2024, deadline passed, one shift per default side",1w,4,205,0.4501,0.4390,0.3723,0.5081
+"from 2024, deadline passed, one shift per default side",1w,4,205,0.4502,0.4390,0.3723,0.5081
 "from 2024, deadline passed, one shift per default side",1w,5,165,0.5495,0.5091,0.4215,0.5958
 "from 2024, deadline passed, one shift per default side",1w,6,152,0.6487,0.6447,0.5734,0.7147
 "from 2024, deadline passed, one shift per default side",1w,7,137,0.7542,0.7299,0.6509,0.8037
@@ -454,7 +454,7 @@ early NEITHER,1m,9,147,0.9509,0.9252,0.8764,0.9660
 "from 2024, one shift per default side",1m,3,365,0.3486,0.2986,0.2497,0.3491
 "from 2024, one shift per default side",1m,4,292,0.4485,0.3973,0.3265,0.4530
 "from 2024, one shift per default side",1m,5,235,0.5495,0.5064,0.4383,0.5803
-"from 2024, one shift per default side",1m,6,296,0.6489,0.5777,0.5105,0.6444
+"from 2024, one shift per default side",1m,6,296,0.6488,0.5777,0.5105,0.6444
 "from 2024, one shift per default side",1m,7,283,0.7514,0.6784,0.6270,0.7275
 "from 2024, one shift per default side",1m,8,222,0.8494,0.8198,0.7653,0.8662
 "from 2024, one shift per default side",1m,9,260,0.9505,0.9538,0.9279,0.9757

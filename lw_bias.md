@@ -62,9 +62,9 @@ We also checked the default-NO and default-YES bias year by year, only on Manifo
 
 ![Manifold by year](plots/by_year.png)
 
-*Manifold questions about the world, price 1 week after creation, grouped by the year the market was created. Y-axis: the log-odds shift for each group. The number next to each dot is the number of markets. Left: all resolved markets. Right: only markets whose stated deadline passed at least 60 days before we fetched the data (see "Filtering unresolved markets" above).*
+*Manifold questions about the world, price 1 week after creation, grouped by the year the market was created. Y-axis: the log-odds shift for each group. The number next to each dot is the number of markets. Left: all resolved markets. Right: only markets whose stated deadline passed at least 60 days before we fetched the data (see "Filtering unresolved markets" above). 2026 has few markets on two of the sides (15–25), and the 2026 "means YES" bars run off the top of the plot: with so few markets, the interval says almost nothing.*
 
-**"Resolves NO", with the correction:** −0.98 (2022, 735 markets), −0.87 (2023, 2,482), −0.68 (2024, 1,748), −0.71 (2025, 698), −0.79 (2026, 216). Without the correction, the bias seems to shrink steadily, to −0.23 in 2026. Most of that apparent improvement comes from recent markets that haven't resolved yet. **"Resolves YES"** stays positive every year, but on 40–207 markets per year, and its interval touches 0 in some years. **"No default side"** sits between the two, mostly below 0.
+**"Resolves NO", with the correction:** −0.98 (2022, 735 markets), −0.87 (2023, 2,482), −0.68 (2024, 1,748), −0.71 (2025, 698), −0.79 (2026, 216). Without the correction, the bias seems to shrink steadily, to −0.23 in 2026. Most of that apparent improvement comes from recent markets that haven't resolved yet. **"Resolves YES"** stays positive every year, but on only 15–207 markets per year, and its interval touches 0 in some years. **"No default side"** sits between the two, mostly below 0.
 
 
 ## Methodological details for nerds and LLMs, Claude-generated

@@ -40,13 +40,13 @@ def by_year(m):
     fig, axes = plt.subplots(1, 2, figsize=(12, 5.4), sharey=True)
     for ax, tag, name in zip(axes, ["", ": deadline passed"], ["All resolved markets", "Only markets whose deadline passed 60+ days before the fetch"]):
         for (side, color, label), dx in zip(SIDES, [-.15, 0, .15]):
-            r = m[m.check.str.fullmatch(rf"default {side}, created \d+{tag}") & (m.n >= 30)]
+            r = m[m.check.str.fullmatch(rf"default {side}, created \d+{tag}")]
             year = r.check.str.extract(r"created (\d+)")[0].astype(int)
             ax.errorbar(year + dx, r["shift"], yerr=[r["shift"] - r.low, r.high - r["shift"]], color=color, marker="o", ms=6, lw=0, elinewidth=1.2, label=label)
             for y, s, n in zip(year, r["shift"], r.n):
                 ax.annotate(f"{int(n):,}", (y + dx, s), xytext=(4, 0), textcoords="offset points", va="center", fontsize=7, color="#444444")
         ax.axhline(0, color="#999999", lw=1)
-        ax.set(xticks=range(2022, 2027), xlim=(2021.6, 2026.5), xlabel="Year the market was created")
+        ax.set(xticks=range(2022, 2027), xlim=(2021.6, 2026.5), ylim=(-1.5, 2.5), xlabel="Year the market was created")
         ax.grid(axis="y", color="#eeeeee", lw=.6)
         ax.set_title(name, fontsize=11)
     axes[0].set_ylabel("Log-odds shift (below 0: YES overpriced)")
