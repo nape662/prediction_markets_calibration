@@ -64,7 +64,11 @@ We also checked the default-NO and default-YES bias year by year, only on Manifo
 
 *Manifold questions about the world, price 1 week after creation, grouped by the year the market was created. Y-axis: the log-odds shift for each group. The number next to each dot is the number of markets. Left: all resolved markets. Right: only markets whose stated deadline passed at least 60 days before we fetched the data (see "Filtering unresolved markets" above). The 2026 "means YES" bar on the right runs off the top of the plot: with 60 markets, the interval says little.*
 
-**"Resolves NO", with the correction:** −1.03 (2022, 815 markets), −0.86 (2023, 3,433), −0.68 (2024, 5,445), −0.70 (2025, 2,177), −0.45 (2026, 801). Most of the 2026 drop comes from three monthly multiple-choice series ("What will happen in <month>?", "<Month> AI model releases", "Which YouTube channels will release a video in <month>?"): they hold 46% of 2026's markets and are close to calibrated. Counting each event once, 2026 is −0.70, the same as 2024–2025. Without the correction, the bias seems to shrink steadily, to −0.30 in 2026. Most of that apparent improvement comes from recent markets that haven't resolved yet. **"Resolves YES"** stays positive every year, but on only 60–529 markets per year, and its interval touches 0 in some years. **"No default side"** sits between the two, mostly below 0.
+**What the plot shows.** Where nothing happening means NO, YES is overpriced in every year. The bias shrank from 2022 to 2024 and has stayed about the same since. Two things make it look like it keeps shrinking, and neither is real:
+- **Unresolved markets (left panel).** Recent markets that have already resolved are mostly early YESes, so recent years look better than they are. The right panel removes this.
+- **2026 in the right panel.** Almost half of 2026's markets come from three monthly multiple-choice series that happen to be well calibrated. Counting each event once, 2026 is as biased as 2024–2025.
+
+Where nothing happening means YES, YES is underpriced in every year, but there are few such markets. "No default side" sits in between, mostly slightly overpriced.
 
 
 ## Methodological details for nerds and LLMs, Claude-generated
@@ -85,6 +89,8 @@ We also checked the default-NO and default-YES bias year by year, only on Manifo
 **It's a shift, not a squeeze toward 50%.** For Manifold "resolves NO" at 1 week, we fit logit(YES rate) = α + β·logit(price). This gives β = 1.00 (0.96 to 1.04): the error has about the same size in log-odds at every price.
 
 **Each event counted once.** Many Polymarket markets are slices of one event. Giving each event's K markets a weight of 1/K each moves "resolves NO" to −0.41 (−0.51 to −0.31) on 3,409 events. On Manifold, where each binary market is its own event, the same weighting leaves "resolves NO" at −0.64 (−0.71 to −0.57) on 8,691 events.
+
+**Across time, numbers (Manifold, 1 week after creation, "resolves NO").** With the deadline filter: −1.03 (2022, 815 markets), −0.86 (2023, 3,433), −0.68 (2024, 5,445), −0.70 (2025, 2,177), −0.45 (2026, 801). Without it, the shift shrinks to −0.30 in 2026. In 2026, three monthly multiple-choice series ("What will happen in <month>?", "<Month> AI model releases", "Which YouTube channels will release a video in <month>?") hold 46% of the markets and are priced close to their YES rates. Counting each event once gives −0.70 in 2026, against −0.67 in 2024 and −0.66 in 2025. "Resolves YES" has 60–529 markets per year with the deadline filter, and its interval touches 0 in some years.
 
 **A correction fitted on old markets works on new ones (Manifold, 1 week after creation).**
 - **Fit:** one log-odds shift per default side, using only what was known at the start of 2024. The training markets are those whose stated deadline passed at least 60 days before 2024.
