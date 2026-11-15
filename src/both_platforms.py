@@ -24,7 +24,7 @@ mc = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mc)
 
 OUT, HORIZONS, MIN_BIN = ROOT / "plots", ["1d", "1w", "1m"], 30
-PLATFORMS = [("Polymarket", "#1d4ed8", "markets"), ("Manifold", "#c2410c", "markets and options")]
+PLATFORMS = [("Polymarket", "#1d4ed8", "markets"), ("Manifold", "#c2410c", "markets")]
 
 
 def load():
@@ -73,10 +73,10 @@ def figure(data, keep, name, title):
         ax.legend(frameon=False, fontsize=8, loc="lower right")
     axes[0].set_ylabel("Resolved YES (%)")
     fig.suptitle(title, x=.01, ha="left", fontsize=14)
-    fig.text(.01, .01, "Resolved YES/NO markets. Junk removed by text rules and LLM labels: sports, asset prices, weather, scheduled statistics, who-says-what, existing facts, unsubstantive questions\n(Manifold also: coin flips, games about the market). Each market counts once per panel; Manifold multiple-choice markets are split into options, each a YES/NO forecast counted once.\n"
+    fig.text(.01, .01, "Resolved YES/NO markets. Junk removed by text rules and LLM labels: sports, asset prices, weather, scheduled statistics, who-says-what, existing facts, unsubstantive questions\n(Manifold also: coin flips, games about the market). Each market counts once per panel; a Manifold multiple-choice question is split into one YES/NO market per option.\n"
              "Polymarket: last hourly API price at or before the moment, markets closed before Feb 2, 2026, only moments with $1,000+ traded on-chain before them. "
              "Manifold: probability after the last bet, 15+ distinct bettors by the moment.\n"
-             "Dots: markets grouped into 10-point price bins (0-10%, 10-20%, ...), bins under 30 markets dropped, number = markets (options) in the bin. "
+             "Dots: markets grouped into 10-point price bins (0-10%, 10-20%, ...), bins under 30 markets dropped, number = markets in the bin. "
              "Bars: 95%, resampling Polymarket events or Manifold creators.", fontsize=8.5, color="#555555")
     fig.tight_layout(rect=(0, .1, 1, .96))
     fig.savefig(OUT / name, dpi=140)
