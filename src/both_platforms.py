@@ -32,17 +32,18 @@ def load():
     p = p[~p.junk & (p.cohort == "closed_by_feb") & (p.anchor == "after_start") & (p.vol >= pm.MIN_VOL) & p.neg_risk.notna() & ~(p.event_sum > pm.MAX_SUM)]
     m, _ = mf.labeled()
     m = m[(m.group == "world") & (m.bettors >= 15) & (m.anchor == "after_creation") & m.horizon.isin(HORIZONS) & (m.t < m.closeTime)]
-    cols = ["id", "horizon", "prob", "y", "creator", "default_side"]
+    cols = ["id", "horizon", "prob", "y", "creator", "default_side", "one_winner"]
+    p = p.assign(one_winner=p.neg_risk == True)
     c = mc.main_sample(mc.frame())
     c = c[c.group == "world"]
-    m = pd.concat([m[cols].assign(w=1.0), c[cols + ["w"]]])
+    m = pd.concat([m.assign(one_winner=False)[cols].assign(w=1.0), c[cols + ["w"]]])
     return {"Polymarket": p[cols], "Manifold": m[cols]}, {"Polymarket": pm.weigh(p)[cols + ["w"]], "Manifold": m}
 
 
 def metrics(g):
     p, y = g.prob.clip(.001, .999), g.y
     base = y.mean()
-    return dict(**summary(g), brier=((p - y) ** 2).mean(), brier_base_rate=((base - y) ** 2).mean(),
+    return dict(**summary(g[~g.one_winner]), n_all=len(g), brier=((p - y) ** 2).mean(), brier_base_rate=((base - y) ** 2).mean(),
                 log_loss=-(y * np.log(p) + (1 - y) * np.log(1 - p)).mean(), auroc=roc_auc_score(y, p), balanced_accuracy=balanced_accuracy_score(y, p > .5))
 
 
@@ -89,7 +90,7 @@ def main():
     groups = [("All markets", lambda g: g.prob > -1), ("No default side", lambda g: g.default_side == "NONE")]
     rows = [dict(platform=p, group=name, horizon=h, **metrics(d[(d.horizon == h) & keep(d)]))
             for p, d in data.items() for name, keep in groups for h in HORIZONS]
-    rows += [dict(platform=f"{p}, each {unit} weighs 1", group=name, horizon=h, events=d.w.sum(), **summary(d))  # within a moment, an event's K markets, or a multiple-choice market's K options, weigh 1/K
+    rows += [dict(platform=f"{p}, each {unit} weighs 1", group=name, horizon=h, events=d.w.sum(), **summary(d[~d.one_winner]))  # within a moment, an event's K markets, or a multiple-choice market's K options, weigh 1/K
              for (p, unit), w in zip([("Polymarket", "event"), ("Manifold", "market")], weighted.values()) for name, keep in groups for h in HORIZONS for d in [w[(w.horizon == h) & keep(w)]]]
     pd.DataFrame(rows).round(4).to_csv(OUT / "metrics.csv", index=False)
     figure(data, groups[0][1], "all_markets.png", "All filtered markets: both platforms sit near the diagonal, Manifold below it")

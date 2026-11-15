@@ -3,7 +3,7 @@
 python manifold_mc/snapshots.py -> data/manifold_mc/snapshots.parquet, one row per option, anchor and horizon
 Each option is its own YES/NO forecast. Outcome y: in one-winner markets 1 for the winning option and 0 for the others;
 in independent-option markets the option's own YES or NO. Options resolved N/A or to a split probability are dropped,
-the rest of their market stays. One-winner markets resolved to a split (MKT) are dropped whole: the API doesn't say which
+the rest of their market stays. One-winner markets resolved to a split (MKT, CHOOSE_MULTIPLE) are dropped whole: the API doesn't say which
 options got what share. The "Other" option is dropped.
 Price: probAfter of the last bet that moved this option's price, at or before the moment. In one-winner markets a bet
 on one option moves the others; those moves are the zero-share redemptions, so they count as moves too.
@@ -43,6 +43,8 @@ def at(series, t):
 def outcome(market, answer):
     if not market["shouldAnswersSumToOne"]:
         return {"YES": 1, "NO": 0}.get(answer.get("resolution")), answer.get("resolutionTime")
+    if market["resolution"] == "CHOOSE_MULTIPLE":  # payout split over several chosen options; no single option is simply YES
+        return None, None
     if market["resolution"] == "MKT":  # a split; the API doesn't say how it was split, so no option of the market is usable
         assert "resolutions" not in market and all(a.get("resolution") is None for a in market["answers"]), market["id"]
         return None, None

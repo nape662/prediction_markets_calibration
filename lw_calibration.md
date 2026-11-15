@@ -3,7 +3,7 @@
 **Short answer: mostly, apart from one predictable bias.** Both platforms overprice "something happens": when a question resolves NO if nothing new happens ("Will X happen by June?"), YES is too expensive. More on the bias in [the other post](TODO-link).
 
 - **Polymarket is close to calibrated.** One week after a market opens, prices average 24.5% and 22.3% of markets resolve YES (8,810 markets).
-- **Manifold overprices YES by about 6 points** (33.4% priced, 27.5% resolved YES; 31,235 markets). Almost all of this gap comes from the bias above.
+- **Manifold overprices YES by about 6 points** (33.8% priced, 27.9% resolved YES; 30,753 markets). Almost all of this gap comes from the bias above.
 - **On questions where nothing happening doesn't decide the answer**, such as elections and awards, both platforms are close to the diagonal: Polymarket is off by under 1 point, Manifold by about 3.
 
 ![Both platforms, all filtered markets](plots/all_markets.png)
@@ -23,7 +23,7 @@ First, a regex filter removed sports, asset-price and weather markets. Then an L
 
 [^1]: In a 200-market pilot, Jev and Haiku (medium effort, one market per call, as used here) agreed with Opus 5.5 about equally often. I didn't want to spend more money on API calls, so Haiku, which ran on included credit, labeled Polymarket.
 
-[^2]: For people suspicious of this last metric: you are right to be suspicious. But Jev's judgement on Manifold was surprisingly decent wherever Opus 5.5 and I looked (Opus rated 9 of 100 random kept markets as hardly substantive). And the Polymarket markets this whole LLM filter drops are calibrated about like the ones it keeps: shift −0.17 against −0.24, 1 week after opening.
+[^2]: For people suspicious of this last metric: you are right to be suspicious. But Jev's judgement on Manifold was surprisingly decent wherever Opus 5.5 and I looked (Opus rated 9 of 100 random kept markets as hardly substantive). And the Polymarket markets this whole LLM filter drops are calibrated about like the ones it keeps: shift −0.21 against −0.32, 1 week after opening (one-winner markets left out, see Statistics).
 
 
 We also dropped thinly traded moments. On Polymarket, a market counts at a given moment only if $1,000 had already been traded on it. On Manifold, at least 15 different people must have bet on it by then (for a multiple-choice question, on the question as a whole).
@@ -56,7 +56,7 @@ Do the prices of Polymarket and Manifold match how often things actually happen,
 
   Everything else is "world": the 27,752 markets above. On 100 random world markets, Opus scored 9 as hardly substantive, 5 of them about one streamer.
 - **Polymarket:** Haiku 5.5 answered the same kinds of tag questions. We drop a market if Haiku tags it as a crypto or other asset price, sports, a central-bank rate, weather, a scheduled release (CPI, jobs reports), who-says-what or post counts, or an existing fact, or if it scores 20 or less out of 100 on "substantive". At 1 week this drops 3,071 of 11,881 markets (26%), mostly who-says-what and tweet counts (1,925). Rankings like box office and app-store charts stay in.
-- **How much the LLM filter matters, 1 week after opening.** On Polymarket, without it the shift is −0.23; with it, −0.24. On Manifold binary markets, with the regex alone instead of the LLM filter, it is −0.47 instead of −0.51 (10,777 markets). The sports, price and weather markets the regex removes from Manifold are calibrated (+0.01, 919 markets). The ones it removes from Polymarket were never priced.
+- **How much the LLM filter matters, 1 week after opening.** On Polymarket, without it the shift is −0.29; with it, −0.32. On Manifold binary markets, with the regex alone instead of the LLM filter, it is −0.47 instead of −0.51 (10,777 markets). The sports, price and weather markets the regex removes from Manifold are calibrated (+0.01, 919 markets). The ones it removes from Polymarket were never priced.
 
 ### Forecasts
 
@@ -64,7 +64,7 @@ Do the prices of Polymarket and Manifold match how often things actually happen,
 - **Why not "N days before resolution":** the resolution date depends on the outcome. "By date" questions resolve early when YES happens, so "1 week before resolution" is a different calendar moment for YES markets and NO markets. That makes the numbers look better than they are; see the other post. Fixed times after opening don't depend on the outcome.
 - **Polymarket price:** the last hourly point of the CLOB price history at or before the moment, at most 3 days old. A market counts only if at least $1,000 had been traded on-chain before the moment. Without this rule, empty order books show fake prices near 50%. We also drop markets in one-winner events whose prices, at that moment, sum to more than 130%.
 - **Manifold price:** the probability after the last bet that moved the price, at or before the moment. A market counts only if at least 15 distinct bettors had bet by then.
-- **Counts at 1 week:** 22,228 Polymarket markets have a price; 11,881 of them pass the $1,000 rule, and 8,810 also pass the LLM filter. 1,697 Polymarket markets from before 2023 traded on an older system with no on-chain record, so they drop out. On Manifold, 9,762 of 27,748 labeled binary world markets have 15 bettors by then and are still open, plus 21,473 world markets from 1,998 multiple-choice questions (for these, the 15 bettors are counted on the whole question).
+- **Counts at 1 week:** 22,228 Polymarket markets have a price; 11,881 of them pass the $1,000 rule, and 8,810 also pass the LLM filter. 1,697 Polymarket markets from before 2023 traded on an older system with no on-chain record, so they drop out. On Manifold, 9,762 of 27,748 labeled binary world markets have 15 bettors by then and are still open, plus 20,991 world markets from 1,959 multiple-choice questions (for these, the 15 bettors are counted on the whole question).
 
 ### "No default side"
 
@@ -77,7 +77,7 @@ Haiku 5.5 (medium effort, one market per call, text only) answered:
 ### Statistics
 
 - **Bins:** 10-point price bins. Each dot shows the bin's mean price and the share of its markets that resolved YES. Bins with fewer than 30 markets are hidden.
-- **Shift:** a single number added to every price's log-odds so that the group's mean price equals its YES rate. 0 means calibrated. Below 0 means YES is overpriced: at −0.24, a market priced 50% resolves YES about 44% of the time; at −0.46, about 39%.
+- **Shift:** a single number added to every price's log-odds so that the group's mean price equals its YES rate. 0 means calibrated. Below 0 means YES is overpriced: at −0.32, a market priced 50% resolves YES about 42% of the time; at −0.51, about 37.5%. Shifts leave out one-winner markets (a Polymarket event or Manifold question where exactly one market wins): their prices add up to about 100% and exactly one of n resolves YES, so their shift is near 0 whatever their calibration. Their miscalibration still shows on the plots and in the other columns, which use all markets.
 - **95% intervals:** we resample clusters with replacement, 500 times, and take percentiles. A cluster is a Polymarket event, because its markets share one outcome, or a Manifold creator. Separate events in one storyline ("ceasefire by June?", "… by July?") still count as independent, so the intervals are probably somewhat too narrow.
 - **Brier score:** mean of (price − outcome)². The baseline always predicts the group's own YES share. It knows that share only after the fact, which flatters it slightly.
 - **Log loss:** natural log, with prices clipped to 0.1%–99.9%.
@@ -86,14 +86,14 @@ Haiku 5.5 (medium effort, one market per call, text only) answered:
 
 ### Results, 1 week after opening
 
-| | Markets | Mean price → YES rate | Shift (95%) | Brier (baseline) | AUROC | Balanced accuracy |
+| | Markets | Mean price → YES rate | Shift without one-winner markets (95%) | Brier (baseline) | AUROC | Balanced accuracy |
 |---|---|---|---|---|---|---|
-| Polymarket, all | 8,810 | 24.5% → 22.3% | −0.24 (−0.31 to −0.18) | 0.090 (0.173) | 0.91 | 0.79 |
-| Polymarket, no default side | 3,810 | 23.9% → 23.0% | −0.13 (−0.19 to −0.06) | 0.078 (0.177) | 0.94 | 0.82 |
-| Manifold, all world | 31,235 | 33.4% → 27.5% | −0.46 (−0.52 to −0.39) | 0.126 (0.199) | 0.88 | 0.78 |
-| Manifold, no default side | 12,032 | 30.5% → 27.1% | −0.31 (−0.41 to −0.21) | 0.112 (0.198) | 0.90 | 0.80 |
+| Polymarket, all | 8,810 | 24.5% → 22.3% | −0.32 (−0.42 to −0.24) | 0.090 (0.173) | 0.91 | 0.79 |
+| Polymarket, no default side | 3,810 | 23.9% → 23.0% | −0.18 (−0.41 to +0.04) | 0.078 (0.177) | 0.94 | 0.82 |
+| Manifold, all world | 30,753 | 33.8% → 27.9% | −0.51 (−0.59 to −0.44) | 0.128 (0.201) | 0.87 | 0.78 |
+| Manifold, no default side | 11,624 | 31.3% → 28.0% | −0.37 (−0.50 to −0.22) | 0.115 (0.202) | 0.90 | 0.79 |
 
-The 1-day and 1-month numbers tell the same story; they are in `plots/metrics.csv`. On Polymarket, giving each event a total weight of 1 gives shifts of −0.31 (−0.39 to −0.22) for all markets (4,652 events) and −0.08 (−0.21 to +0.03) for no default side (1,169 events). On Manifold, giving each multiple-choice question a total weight of 1 (spread over its markets) gives −0.48 (−0.54 to −0.43) for all markets (11,760 events) and −0.23 (−0.31 to −0.14) for no default side. An earlier run, before the LLM filter on Polymarket, grouped repeating events into series by title, with numbers and dates removed. Series with more than 5 events held 10% of the event weight at 1 week, and capping each series at 5 events cut that to 5%. The cap made no visible difference, so the final plots don't use it.
+The 1-day and 1-month numbers tell the same story; they are in `plots/metrics.csv`. On Polymarket, giving each event a total weight of 1 gives shifts of −0.36 (−0.45 to −0.27) for all markets (3,660 events) and −0.06 (−0.34 to +0.20) for no default side (368 events). On Manifold, giving each multiple-choice question a total weight of 1 (spread over its markets) gives −0.51 (−0.57 to −0.45) for all markets (10,670 events) and −0.26 (−0.37 to −0.14) for no default side (1,924 events). An earlier run, before the LLM filter on Polymarket, grouped repeating events into series by title, with numbers and dates removed. Series with more than 5 events held 10% of the event weight at 1 week, and capping each series at 5 events cut that to 5%. The cap made no visible difference, so the final plots don't use it.
 
 **Read with care:**
 - The two platforms' samples contain different questions, so these numbers don't say which platform forecasts better.

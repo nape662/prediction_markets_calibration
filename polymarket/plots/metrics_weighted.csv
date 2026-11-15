@@ -1,19 +1,19 @@
-cohort,split,group,anchor,horizon,events,brier,n,price,yes,gap,shift,low,high
-closed_by_feb,default_side,Nothing happening means NO,after_start,1d,2925,0.12,3841,0.2979,0.2629,0.035,-0.2822,-0.3909,-0.1734
-closed_by_feb,default_side,Nothing happening means YES,after_start,1d,107,0.1424,127,0.5932,0.6108,-0.0176,0.1317,-0.369,0.7535
-closed_by_feb,default_side,No default side,after_start,1d,799,0.1378,1687,0.3692,0.3543,0.0148,-0.1107,-0.2708,0.047
-closed_by_feb,default_side,Nothing happening means NO,after_start,1m,2348,0.0736,3416,0.1844,0.1363,0.0481,-0.5921,-0.7433,-0.4359
-closed_by_feb,default_side,Nothing happening means YES,after_start,1m,99,0.1174,108,0.7216,0.8132,-0.0916,0.904,0.0712,1.8004
-closed_by_feb,default_side,No default side,after_start,1m,607,0.0777,2556,0.3245,0.3181,0.0064,-0.085,-0.2524,0.0779
-closed_by_feb,default_side,Nothing happening means NO,after_start,1w,3409,0.0978,4829,0.2373,0.1946,0.0428,-0.4074,-0.5061,-0.3122
-closed_by_feb,default_side,Nothing happening means YES,after_start,1w,139,0.1429,171,0.6223,0.6678,-0.0456,0.372,-0.1705,0.8982
-closed_by_feb,default_side,No default side,after_start,1w,1141,0.0922,3810,0.3257,0.3189,0.0068,-0.0772,-0.211,0.0338
-closed_by_feb,default_side,Nothing happening means NO,before_close,1d,4668,0.0486,7837,0.1942,0.2362,-0.042,0.7968,0.6934,0.9015
-closed_by_feb,default_side,Nothing happening means YES,before_close,1d,209,0.0642,307,0.7183,0.6678,0.0505,-0.8604,-1.4282,-0.2318
-closed_by_feb,default_side,No default side,before_close,1d,1818,0.0446,7438,0.3141,0.311,0.0031,-0.0939,-0.2073,0.0255
-closed_by_feb,default_side,Nothing happening means NO,before_close,1m,2279,0.0693,3286,0.16,0.1349,0.0251,-0.3309,-0.4911,-0.1865
-closed_by_feb,default_side,Nothing happening means YES,before_close,1m,103,0.0764,111,0.7581,0.8253,-0.0672,0.893,-0.004,1.6795
-closed_by_feb,default_side,No default side,before_close,1m,614,0.0788,2619,0.3138,0.3019,0.0119,-0.1448,-0.3084,0.0299
-closed_by_feb,default_side,Nothing happening means NO,before_close,1w,3647,0.0637,5583,0.1488,0.1805,-0.0317,0.4634,0.3482,0.577
-closed_by_feb,default_side,Nothing happening means YES,before_close,1w,161,0.0889,175,0.7571,0.7064,0.0507,-0.6612,-1.2306,0.0166
-closed_by_feb,default_side,No default side,before_close,1w,1212,0.0753,4928,0.3193,0.316,0.0033,-0.0578,-0.1845,0.0735
+cohort,split,group,anchor,horizon,markets_all,events,brier,n,price,yes,gap,shift,low,high
+closed_by_feb,default_side,Nothing happening means NO,after_start,1d,3841,2925,0.12,3309,0.3007,0.2663,0.0344,-0.2748,-0.3834,-0.1703
+closed_by_feb,default_side,Nothing happening means YES,after_start,1d,127,107,0.1424,69,0.709,0.7017,0.0073,-0.0507,-0.5968,0.5521
+closed_by_feb,default_side,No default side,after_start,1d,1687,799,0.1378,401,0.4682,0.4515,0.0167,-0.1136,-0.4174,0.1956
+closed_by_feb,default_side,Nothing happening means NO,after_start,1m,3416,2348,0.0736,2998,0.1857,0.1364,0.0493,-0.602,-0.7548,-0.4503
+closed_by_feb,default_side,Nothing happening means YES,after_start,1m,108,99,0.1174,58,0.7982,0.877,-0.0788,0.8036,-0.1384,2.0725
+closed_by_feb,default_side,No default side,after_start,1m,2556,607,0.0777,376,0.4654,0.4487,0.0167,-0.141,-0.5672,0.2111
+closed_by_feb,default_side,Nothing happening means NO,after_start,1w,4829,3409,0.0978,4101,0.2394,0.1954,0.0439,-0.4148,-0.5116,-0.323
+closed_by_feb,default_side,Nothing happening means YES,after_start,1w,171,139,0.1429,97,0.7052,0.7428,-0.0376,0.3052,-0.4034,1.0282
+closed_by_feb,default_side,No default side,after_start,1w,3810,1141,0.0922,610,0.4431,0.4352,0.0079,-0.0645,-0.3444,0.199
+closed_by_feb,default_side,Nothing happening means NO,before_close,1d,7837,4668,0.0486,6275,0.1963,0.2412,-0.0449,0.8609,0.7559,0.9677
+closed_by_feb,default_side,Nothing happening means YES,before_close,1d,307,209,0.0642,183,0.7869,0.7374,0.0495,-0.8241,-1.4291,-0.0645
+closed_by_feb,default_side,No default side,before_close,1d,7438,1818,0.0446,1211,0.4384,0.4285,0.0099,-0.1399,-0.405,0.0986
+closed_by_feb,default_side,Nothing happening means NO,before_close,1m,3286,2279,0.0693,2824,0.1604,0.1338,0.0266,-0.3484,-0.516,-0.2045
+closed_by_feb,default_side,Nothing happening means YES,before_close,1m,111,103,0.0764,62,0.8207,0.894,-0.0733,1.0847,0.0759,2.2672
+closed_by_feb,default_side,No default side,before_close,1m,2619,614,0.0788,412,0.4496,0.4234,0.0262,-0.2073,-0.5654,0.1223
+closed_by_feb,default_side,Nothing happening means NO,before_close,1w,5583,3647,0.0637,4728,0.1482,0.1825,-0.0343,0.5053,0.3967,0.6195
+closed_by_feb,default_side,Nothing happening means YES,before_close,1w,175,161,0.0889,98,0.8136,0.763,0.0506,-0.701,-1.3854,0.2141
+closed_by_feb,default_side,No default side,before_close,1w,4928,1212,0.0753,792,0.4497,0.4211,0.0286,-0.275,-0.5665,0.011

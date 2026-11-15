@@ -20,13 +20,13 @@ mc = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mc)
 
 OUT = ROOT / "manifold/plots/pooled"
-COLS = ["id", "horizon", "prob", "y", "creator", "default_side", "said", "done", "year", "resolutionTime"]
+COLS = ["id", "horizon", "prob", "y", "creator", "default_side", "said", "done", "year", "resolutionTime", "one_winner"]
 MC_COLLECTED = pd.Timestamp("2026-11-14")
 
 
 def load():
     a, _ = sp.labeled()
-    b = a[(a.group == "world") & (a.bettors >= 15) & (a.anchor == "after_creation") & a.horizon.isin(sp.HOURS) & (a.t < a.closeTime)]
+    b = a[(a.group == "world") & (a.bettors >= 15) & (a.anchor == "after_creation") & a.horizon.isin(sp.HOURS) & (a.t < a.closeTime)].assign(one_winner=False)
     c = mc.main_sample(mc.frame())
     c = c[c.group == "world"].copy()
     created = pd.to_datetime(c.createdTime, unit="ms")
@@ -47,6 +47,12 @@ def main():
             metrics.append(dict(check=check, by="creator", horizon=h, **summary(g)))
     for h in sp.HOURS:
         x = w[w.horizon == h]
+        for side, g in x.groupby("default_side"):  # plots: every market
+            for b, y in g.groupby(pd.cut(g.prob, np.arange(0, 1.01, .1), include_lowest=True, labels=False)):
+                if len(y) >= 10:
+                    low, high = boot_rate(y) if 0 < y.y.mean() < 1 else (np.nan, np.nan)
+                    bins.append(dict(series=f"default {side}", horizon=h, bin=b, n=len(y), price=y.prob.mean(), yes=y.y.mean(), yes_low=low, yes_high=high))
+        x = x[~x.one_winner]  # shifts: without one-winner markets, whose prices sum to ~1 with one winner, pinning their shift near 0
         add("world", x, h)
         for side, g in x.groupby("default_side"):
             add(f"default {side}", g, h)
@@ -57,10 +63,6 @@ def main():
                 for year, y in g.groupby("year"):
                     add(f"default {side}, created {year}", y, h)
                     add(f"default {side}, created {year}: deadline passed", y[y.done], h)
-            for b, y in g.groupby(pd.cut(g.prob, np.arange(0, 1.01, .1), include_lowest=True, labels=False)):
-                if len(y) >= 10:
-                    low, high = boot_rate(y) if 0 < y.y.mean() < 1 else (np.nan, np.nan)
-                    bins.append(dict(series=f"default {side}", horizon=h, bin=b, n=len(y), price=y.prob.mean(), yes=y.y.mean(), yes_low=low, yes_high=high))
         sp.recalibrate(metrics, x, h)
         sp.recalibrate(metrics, x[x.done], h, ", deadline passed")
         print("done", h, flush=True)

@@ -101,8 +101,9 @@ def tables(a, splits=SPLITS):
                 for side, _, label, s in groups(g, split):
                     if len(s) < MIN_BIN:
                         continue
-                    m = summary(s)
-                    metrics.append(dict(cohort=cohort, split=split, group=label, anchor=anchor, horizon=h, events=s.creator.nunique(), brier=np.average((s.prob - s.y) ** 2, weights=s.get("w")), **m))
+                    t = s[s.neg_risk != True]  # shift without one-winner markets: their prices sum to ~1 and one wins, which pins their shift near 0
+                    m = summary(t) if len(t) >= MIN_BIN else {}
+                    metrics.append(dict(cohort=cohort, split=split, group=label, anchor=anchor, horizon=h, markets_all=len(s), events=s.creator.nunique(), brier=np.average((s.prob - s.y) ** 2, weights=s.get("w")), **m))
                     for b, x in s.groupby("bin"):
                         lo, hi = boot_rate(x) if len(x) >= MIN_BIN else (np.nan, np.nan)
                         bins.append(dict(cohort=cohort, split=split, group=label, anchor=anchor, horizon=h, bin=b, n=x.w.sum() if "w" in x else len(x), markets=len(x),
