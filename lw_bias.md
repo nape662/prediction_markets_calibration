@@ -84,7 +84,7 @@ We also checked the default-NO and default-YES bias year by year, only on Manifo
 
 **It's a shift, not a squeeze toward 50%.** For Manifold "resolves NO" at 1 week, we fit logit(YES rate) = α + β·logit(price). This gives β = 1.00 (0.96 to 1.04): the error has about the same size in log-odds at every price.
 
-**Polymarket, each event counted once.** Many Polymarket markets are slices of one event. Giving each event's K markets a weight of 1/K each moves "resolves NO" to −0.41 (−0.51 to −0.31) on 3,409 events.
+**Polymarket, each event counted once.** Many Polymarket markets are slices of one event. Giving each event's K markets a weight of 1/K each moves "resolves NO" to −0.41 (−0.51 to −0.31) on 3,409 events. On Manifold, giving each multiple-choice market's K options a weight of 1/K each leaves "resolves NO" at −0.64 (−0.71 to −0.57) on 8,691 markets.
 
 **A correction fitted on old markets works on new ones (Manifold, 1 week after creation).**
 - **Fit:** one log-odds shift per default side, using only what was known at the start of 2024. The training markets are those whose stated deadline passed at least 60 days before 2024.
