@@ -8,7 +8,7 @@
 
 ![Both platforms, all filtered markets](plots/all_markets.png)
 
-*Every filtered market on both platforms (filters below). We take each market's price 1 day, 1 week and 1 month after it opens. We sort the markets into price bins (0–10%, 10–20%, …). For each bin, the x-axis shows the mean price of its markets and the y-axis shows the share that resolved YES. If prices mean what they say, the dots sit on the diagonal. The number next to each dot is how many markets are in the bin. Bars are 95% intervals.*
+*Every filtered market on both platforms (filters below). We take each market's price 1 day, 1 week and 1 month after it opens. We sort the markets into price bins (0–10%, 10–20%, …). For each bin, the x-axis shows the mean price of its markets and the y-axis shows the share that resolved YES. If prices mean what they say, the dots sit on the diagonal. The number next to each dot is how many markets are in the bin. Bars are bootstrap 95% CI intervals.*
 
 ![Both platforms, no default side only](plots/no_default_side.png)
 
@@ -19,15 +19,14 @@
 
 About 95% of Polymarket markets are crypto and other asset prices ("Bitcoin up or down?"), sports questions that mirror ordinary betting (who wins A vs B, with what score) and weather forecasts. On top of that come things like "how many tweets will Elon post next week". I've seen a couple of papers that check how calibrated the markets are, but they never filtered the junk out. I wondered what happens if you seriously try to look only at reasonable markets.
 
-First, a regex filter removed sports, asset-price and weather markets. Then a language model answered 25 yes/no questions about the text of each remaining market. The questions target the biggest kinds of junk we found by reading samples of markets that got through the regex: coin flips, games about the market itself, questions about facts that are already known, and questions that aren't substantive. On Manifold we keep only markets whose answers flag none of these.
+First, a regex filter removed sports, asset-price and weather markets. Then Haiku 5.5 medium answered 25 yes/no questions about the text of each remaining market. The questions target the biggest kinds of junk Opus 5.5 high found on a 400-per-platform-market sample of the markets that got through the regex: coin flips, games about the market itself. We keep only markets whose answers flag none of these. Separately Haiku assigned a numerical score of how substantive a score was and we only kept the markets above a hand picked threshold. Interestingly, the LLM filter did not affect the calibration of the markets / end results at all. 
 
-On Polymarket, Haiku 5.5 labeled every market too, but in the end we didn't drop any markets based on its labels. The junk left after the regex ("will Trump say X", tweet counts, box office and app-store rankings) is about a third of the markets. It turned out to be calibrated about as well as the rest, and removing it barely changes the result.
 
 We also dropped thinly traded moments. On Polymarket, a market counts at a given moment only if $1,000 had already been traded on it. On Manifold, at least 15 different people must have bet on it by then.
 
-**Events.** On Polymarket, one question with many options is split into many yes/no markets. For example, "Who will be the next US president?" becomes one market per candidate. The plots count every market separately. We also redid the numbers with each event getting a total weight of 1, and the picture stays the same (details below). Manifold has no such events here, because I used only its plain yes/no markets.
+Another "junk market" caveat is weighting by events. An "event" is one question with many options split into many yes/no markets. For example, "Who will be the next US president?" becomes one market per candidate. Weighting per market makes the numbers less noisy, weighting per event makes few many-option markets not dominate the analysis. Thankfully, both analyses return basically the same result.  The headline plots count every market separately. The plots where each event gets a weight of one are below. 
 
-**Series.** Some questions repeat with only a number or date changed, such as weekly tweet counts or "ceasefire by June / July / August". These could have needed another arbitrary rule, such as "count at most N events per series". On Polymarket we didn't need one: the few long series carry little weight, and capping each series at 5 events barely changed anything.
+Finally, series. Some questions repeat with only a number or date changed, such as weekly tweet counts or "ceasefire by June / July / August". These could have needed a rule, such as "count at most N events per series". Turned out, we didn't need one: after the regex+LLM sieve, the few remaining long series carried little weight, and capping each series at 5 events barely changed anything.
 
 
 ## Methodology for nerds and especially LLMs, Claude-generated
@@ -68,7 +67,7 @@ Haiku 5.5 (medium effort, one market per call, text only) answered:
 
 > If nothing new happens and the current state of affairs simply continues until the deadline, how does this market resolve? Answer YES, NO, or NONE. Answer NONE when the outcome is decided by a scheduled event, measurement or decision that will happen anyway, such as an election, a vote count or an award.
 
-"No default side" means NONE. When we reran the question on 100 Manifold markets, Haiku gave the same answer on 96. All labels and prompts are in the repository.
+"No default side" means NONE. When we reran the question on 100 Manifold markets, Haiku gave the same answer on 96. All labels and prompts are in the [repository](https://github.com/nape662/prediction_markets_calibration).
 
 ### Statistics
 
@@ -98,4 +97,4 @@ The 1-day and 1-month numbers tell the same story; they are in `plots/metrics.cs
 
 ### Reproduce
 
-`python src/both_platforms.py` draws both plots above and writes `plots/metrics.csv`. It reads the outputs of `polymarket/prices.py` and `manifold/second_pass_analysis.py` (see their docstrings). The raw data is not in the repository because of its size. It comes from the public APIs and the Becker dataset (github.com/Jon-Becker/prediction-market-analysis).
+Code, labels and prompts: https://github.com/nape662/prediction_markets_calibration. `python src/both_platforms.py` draws both plots above and writes `plots/metrics.csv`. It reads the outputs of `polymarket/prices.py` and `manifold/second_pass_analysis.py` (see their docstrings). The raw data is not in the repository because of its size. It comes from the public APIs and the Becker dataset (github.com/Jon-Becker/prediction-market-analysis).
