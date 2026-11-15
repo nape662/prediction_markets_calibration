@@ -3,7 +3,7 @@
 python manifold_mc/calibration.py -> manifold_mc/plots/*.png, bins.csv, metrics.csv
 Inputs: data/manifold_mc/snapshots.parquet (manifold_mc/snapshots.py), manifold_mc/labels.jsonl (manifold_mc/labeling.py).
 Main sample, as for binary markets (manifold/plots/calibration_*_15_bettors_by_then): price a fixed time after the market opened,
-15+ bettors in the market by then, option still unresolved then. Groups (world, traded elsewhere, ...) come from the
+15+ bettors in the market by then, market still open and option still unresolved then. Groups (world, traded elsewhere, ...) come from the
 Haiku labels with the binary rule (src/labeling_pilot.py group); binary groups mostly come from Jev instead.
 Two weightings: every option counts 1, or every option 1/K, K = the market's options in that sample, so each market counts once.
 Bars: 95%, resampling whole markets (options of one market share an outcome); metrics.csv also resamples creators.
@@ -24,6 +24,7 @@ from stats import logit, wshift
 
 OUT = ROOT / "manifold_mc/plots"
 HORIZONS, MIN_BIN, DRAWS = ["1d", "1w", "1m"], 30, 1000
+HOURS_ALL = {"12h": 12, "1d": 24, "1w": 24 * 7, "1m": 24 * 30, "1y": 24 * 365}
 
 
 def frame():
@@ -34,21 +35,27 @@ def frame():
         a["yes"] += [SCORED] * (p >= JEV_YES)
         a["unsure"] += [SCORED] * (JEV_NO < p < JEV_YES)
         labels[a["id"]] = a
-    sides = {(i, o["n"]): o["default_side"] for i, a in labels.items() for o in a["options"]}
-    index = {a["id"]: a["index"] for m in map(json.loads, open(ROOT / "data/manifold_mc/full.jsonl")) for a in m["answers"]}
+    options = {(i, o["n"]): o for i, a in labels.items() for o in a["options"]}
+    markets = {m["id"]: m for m in map(json.loads, open(ROOT / "data/manifold_mc/full.jsonl"))}
+    answers = {a["id"]: a for m in markets.values() for a in m["answers"]}
     d = pd.read_parquet(ROOT / "data/manifold_mc/snapshots.parquet")
     unlabeled = d.loc[~d.id.isin(labels), "id"].nunique()
     assert unlabeled < 50, f"{unlabeled} markets have no labels"
     d = d[d.id.isin(labels)].copy()
     d["group"] = d.id.map(lambda i: group(labels[i]))
-    d["default_side"] = [sides[(i, index[a])] for i, a in zip(d.id, d.answer)]
+    o = [options[(i, answers[a]["index"])] for i, a in zip(d.id, d.answer)]
+    d["default_side"], d["stated_deadline"] = [x["default_side"] for x in o], [x["stated_deadline"] for x in o]
+    for col in ["createdTime", "closeTime", "resolutionTime"]:
+        d[col] = d.id.map(lambda i: markets[i][col])
+    d.loc[~d.one_winner, "resolutionTime"] = d.answer.map(lambda a: answers[a].get("resolutionTime"))  # independent options resolve on their own
+    d["t"] = d.createdTime + d.horizon.map(HOURS_ALL) * 3600e3  # the moment, for after_creation rows
     d["prob"] = d.prob.clip(.001, .999)
     d["bin"] = pd.cut(d.prob, EDGES, include_lowest=True, labels=False).astype(int)
     return d
 
 
 def main_sample(d):
-    s = d[(d.anchor == "after_creation") & (d.bettors >= 15) & d.horizon.isin(HORIZONS)].copy()
+    s = d[(d.anchor == "after_creation") & (d.bettors >= 15) & d.horizon.isin(HORIZONS) & (d.t < d.closeTime)].copy()  # market still open, as for binary markets
     s["w"] = 1 / s.groupby(["id", "horizon"]).id.transform("size")
     return s
 

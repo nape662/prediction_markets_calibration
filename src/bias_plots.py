@@ -1,4 +1,4 @@
-"""Plots for lw_bias.md, from tables already written by polymarket/calibration.py and manifold/second_pass_analysis.py. No captions: the post explains them.
+"""Plots for lw_bias.md, from tables already written by polymarket/calibration.py and src/pooled_bias.py (Manifold binary markets and multiple-choice options). No captions: the post explains them.
 
 python src/bias_plots.py -> plots/by_side_manifold.png, plots/by_side_polymarket.png, plots/by_year.png
 """
@@ -59,11 +59,11 @@ def by_year(m):
 
 
 OUT.mkdir(exist_ok=True)
-mb = pd.read_csv(ROOT / "manifold/plots/second_pass/bins.csv")
+mb = pd.read_csv(ROOT / "manifold/plots/pooled/bins.csv")
 mb = mb[mb.series.isin([f"default {s}" for s, _, _ in SIDES])].assign(side=lambda d: d.series.str.removeprefix("default "))
 by_side(mb, "by_side_manifold.png", "Manifold: YES is overpriced where nothing happening means NO, and underpriced where it means YES", "creation")
 pb = pd.read_csv(ROOT / "polymarket/plots/bins.csv")
 pb = pb[(pb.cohort == "closed_by_feb") & (pb.split == "default_side") & (pb.anchor == "after_start")]
 pb = pb.assign(side=pb.group.map({label: side for side, _, label in SIDES}))
 by_side(pb, "by_side_polymarket.png", "Polymarket: the same direction, about half as large", "trading starts")
-by_year(pd.read_csv(ROOT / "manifold/plots/second_pass/metrics.csv"))
+by_year(pd.read_csv(ROOT / "manifold/plots/pooled/metrics.csv"))
