@@ -65,35 +65,15 @@ Where nothing happening means YES, YES is underpriced in every year, but there a
 
 ## More details for nerds and LLMs, Claude-generated and unredacted
 
-**Data and filters** are the same as in [the calibration post](TODO-link). In short:
-- **Polymarket:** resolved Yes/No markets that closed before 2026-02-02, after regex rules and Haiku labels removed junk (sports, asset prices, weather, scheduled statistics, who-says-what, existing facts, unsubstantive questions). A market counts at a moment only if $1,000 had been traded on-chain before then. 8,810 markets at 1 week.
-- **Manifold:** resolved binary and multiple-choice questions, fetched on 2026-10-30 (binary) and 2026-11-14 (multiple-choice), that a classifier labeled as questions about the world (Jev for binary, Haiku 5.5 for multiple-choice, same rule). As on Polymarket, a multiple-choice question is an event split into one yes/no market per option; the "Other" option, markets resolved N/A, and one-winner events resolved to a split are left out. A market counts at a moment only if 15 distinct people had bet on its event by then, and its option existed and was unresolved then. 30,753 markets at 1 week (9,762 binary markets and 20,991 markets from 1,959 multiple-choice events).
+The full version, with every count and check, is in [METHODS.md](https://github.com/nape662/prediction_markets_calibration/blob/master/METHODS.md).
 
-**Label.** The question above, answered by Haiku 5.5 at medium effort, one market per call. It saw only the text: no prices, outcomes, or close or resolution dates.
-- **Rerun on 100 markets,** Haiku gave the same answer on 96.
-- **Against 302 markets Opus 5.5 high labeled by hand** as "YES means no change", Haiku said YES on 284.
-- **A plain text rule with no model** ("by/before <date>" vs "still/remain") finds the same flip on Manifold binary markets: by-date −0.74 (3,978 markets), still-or-remain +0.40 (320 markets).
-- **Memory:** Haiku may remember how older events ended. We didn't test the label on events after its knowledge cutoff.
-
-**Shift and intervals.** The shift is fitted on prices clipped to 1–99%. The 95% intervals come from a bootstrap: we resample Polymarket events or Manifold creators with replacement, 500 times. Separate events in one storyline still count as independent, so the intervals are probably somewhat too narrow.
-
-**It's a shift, not a squeeze toward 50%.** Prices aren't too extreme, just too high on YES: for Manifold "resolves NO" at 1 week, YES odds are about 2× too high at every price, from 15% to 75%. (Fitting logit(YES rate) = α + β·logit(price) gives β = 1.06, interval 1.01 to 1.12; β = 1 would be a pure shift, β below 1 prices that are too extreme.)
-
-**Each event counted once.** Many Polymarket markets are slices of one event. Giving each event's K markets a weight of 1/K each moves "resolves NO" to −0.46 (−0.57 to −0.35) on 3,035 events. On Manifold, where each binary market is its own event, the same weighting moves "resolves NO" to −0.80 (−0.88 to −0.72) on 6,335 events.
-
-**Across time, numbers (Manifold, 1 week after creation, "resolves NO").** With the deadline filter: −0.98 (2022, 735 markets), −0.88 (2023, 3,082), −0.71 (2024, 4,909), −0.71 (2025, 1,993), −0.45 (2026, 815). Without it, the shift shrinks to −0.30 in 2026. In 2026, three monthly multiple-choice series ("What will happen in <month>?", "<Month> AI model releases", "Which YouTube channels will release a video in <month>?") hold 47% of the markets and are much less biased (shift −0.34 together). Counting each event once gives −0.76 in 2026, against −0.69 in 2024 and −0.68 in 2025. "Resolves YES" has 53–462 markets per year with the deadline filter, and its interval touches 0 in some years.
-
-**A correction fitted on old markets works on new ones (Manifold, 1 week after creation).**
-- **Fit:** one log-odds shift per default side, using only what was known at the start of 2024. The training markets are those whose stated deadline passed at least 30 days before 2024.
-- **Test:** applied to markets created from 2024 on, among those whose deadline passed at least 30 days before the fetch.
-- **Result:** the gap between mean price and YES rate falls from 8.5 points to 0.9. Brier falls from 0.144 to 0.134 (change −0.010, interval −0.015 to −0.006), on 10,634 markets.
-- **Without the deadline filter,** the gap falls from 7.0 to 3.6 points.
-- **One shift for all markets** gets most of the gain, since most markets are on the "resolves NO" side.
-
-This shows the error is stable, not that it is profitable to trade on. Fees, spreads and capital locked until the deadline are not counted.
-
-**Things we tested on Manifold that don't explain the bias:** early finishes, niche questions, questions prompted by news, the 50% starting price, stale prices, the price impact of trades, and wrong resolutions. More trading volume goes with a smaller bias and more time left with a larger one, but neither removes it.
-
-**Reproduce:** `python src/pooled_bias.py` for Manifold (it reads the outputs of `manifold/second_pass_analysis.py` and `manifold_mc/`); `python polymarket/calibration.py` for Polymarket; `python src/bias_plots.py` draws the plots. Per-group numbers are in `manifold/plots/pooled/metrics.csv` and `polymarket/plots/metrics.csv`. Code, labels and prompts: https://github.com/nape662/prediction_markets_calibration.
+- **Data and filters** are the same as in [the calibration post](TODO-link): Polymarket markets that closed before 2026-02-02, with $1,000 traded by the moment; Manifold binary and multiple-choice questions about the world, with 15 bettors by the moment.
+- **Label checks:** rerun on 100 markets, Haiku gave the same answer on 96. On 302 markets Opus 5.5 labeled "YES means no change", Haiku said YES on 284. A plain text rule with no model ("by <date>" vs "still/remain") finds the same flip. Haiku may remember how older events ended.
+- **Intervals** resample Polymarket events or Manifold creators. Related events ("ceasefire by June / July") count as independent, so the intervals are probably a bit too narrow.
+- **It's a shift, not a squeeze toward 50%:** for Manifold "resolves NO", YES odds are about 2× too high at every price from 15% to 75%. Prices aren't too extreme, just too high on YES.
+- **Each event counted once,** "resolves NO" is −0.46 on Polymarket and −0.80 on Manifold.
+- **A correction fitted on old markets works on new ones.** One shift per default side, fitted only on what was known at the start of 2024, cuts the gap between mean price and YES rate on Manifold markets created since from 8.5 points to 0.9. This shows the error is stable, not that it is profitable to trade on: fees, spreads and capital locked until the deadline are not counted.
+- **Ruled out on Manifold:** early finishes, niche questions, questions prompted by news, the 50% starting price, stale prices, the price impact of trades and wrong resolutions.
+- **Reproduce:** `python src/pooled_bias.py`, `python polymarket/calibration.py`, then `python src/bias_plots.py`.
 
 [^1]: Weakness: "nothing new happens" is read literally. "Will OpenAI release a new model in December?" is labelled DEFAULT_NO, even though the status quo is a release every month. Thankfully, an Opus 5.5 re-check of 300 random markets found that the questions Haiku labelled DEFAULT_YES are mostly correct, and the errors are mostly routine events being marked as DEFAULT_NO. If anything, this makes our headline numbers a little understated.
