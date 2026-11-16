@@ -97,7 +97,7 @@ The 1-day and 1-month numbers tell the same story; they are in `plots/metrics.cs
 
 **Read with care:**
 - The two platforms' samples contain different questions, so these numbers don't say which platform forecasts better.
-- Manifold numbers probably understate the overpricing. Markets that were still unresolved at the fetch are missing, and the recent markets that have resolved lean YES. If we keep only markets whose stated deadline passed at least 60 days before the fetch, the overall gap of Manifold binary markets grows from 7.7 to 9.9 points. On Polymarket, the same filter moves the "nothing happening means NO" shift from −0.33 to −0.37 (3,336 markets).
+- Manifold numbers probably understate the overpricing. Markets that were still unresolved at the fetch are missing, and the recent markets that have resolved lean YES. If we keep only markets whose stated deadline passed at least 30 days before the fetch, the overall shift on Manifold moves from −0.51 to −0.62 (the gap grows from 7.7 to 9.3 points; 15,374 markets). Polymarket has the same problem on a smaller scale: the same filter moves its overall shift from −0.32 to −0.40 (4,242 markets). The follow-up post on the bias uses this filter throughout.
 - Manifold's lifetime requirement of 1,000 mana traded uses information from after the moment.
 
 ### Reproduce
