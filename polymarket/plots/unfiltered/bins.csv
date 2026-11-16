@@ -259,6 +259,246 @@ closed_by_feb,default_side,No default side,before_close,1w,6,162,162,0.646358024
 closed_by_feb,default_side,No default side,before_close,1w,7,180,180,0.7452138888888891,0.7833333333333333,0.7223649951783992,0.8389894636015326
 closed_by_feb,default_side,No default side,before_close,1w,8,174,174,0.8481264367816093,0.8793103448275862,0.8313953488372093,0.9235294117647059
 closed_by_feb,default_side,No default side,before_close,1w,9,635,635,0.964848031496063,0.9748031496062992,0.9614761396011396,0.9868404109110952
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1d,0,6033,6033,0.04038546328526438,0.029504392507873362,0.024821923932882465,0.035590855100900806
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1d,1,2496,2496,0.14311879006410258,0.11017628205128205,0.09876528264577555,0.12238843512581453
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1d,2,1793,1793,0.2465022308979364,0.20691578360290017,0.18832097163825282,0.22346697537394813
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1d,3,1092,1092,0.3456712454212454,0.2948717948717949,0.26884065085052267,0.3236579692006312
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1d,4,863,863,0.45036384704519117,0.3082271147161066,0.2792764804003336,0.3448539189361974
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1d,5,861,861,0.5372996515679442,0.4076655052264808,0.3702613615501444,0.4467318906605922
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1d,6,575,575,0.6479565217391305,0.6052173913043478,0.5675070119670905,0.6472048386506212
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1d,7,504,504,0.7467013888888888,0.6646825396825397,0.6226282051282052,0.7045371627354488
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1d,8,460,460,0.8487141304347826,0.7869565217391304,0.7529394932385656,0.8276336224579499
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1d,9,555,555,0.951410810810811,0.9369369369369369,0.9176876436420096,0.9558704788429834
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1m,0,3701,3701,0.029176438800324236,0.017292623615239124,0.012280448338314287,0.024547016884875896
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1m,1,745,745,0.14052416107382548,0.09664429530201342,0.0742929765418757,0.11925977326244233
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1m,2,391,391,0.24404859335038365,0.19437340153452684,0.14887638107150303,0.23920731032957307
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1m,3,253,253,0.3439584980237154,0.23715415019762845,0.18434968171296295,0.2925913429094765
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1m,4,202,202,0.4535,0.3118811881188119,0.23897420147420148,0.37940318302387266
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1m,5,174,174,0.5405172413793103,0.3735632183908046,0.3033719604863222,0.44618095021595816
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1m,6,137,137,0.653551094890511,0.5474452554744526,0.46511627906976744,0.6387178051511758
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1m,7,146,146,0.7476746575342467,0.726027397260274,0.6404550309762871,0.8048840093376131
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1m,8,176,176,0.853465909090909,0.8295454545454546,0.7795822961568818,0.8870534900674322
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1m,9,302,302,0.9523294701986755,0.9635761589403974,0.9429530201342282,0.9822395320663284
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1w,0,6004,6004,0.03122160226515656,0.023151232511658893,0.018751920341649242,0.027584475963035135
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1w,1,1620,1620,0.14275586419753086,0.10555555555555556,0.0905308574364144,0.12038645295961141
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1w,2,966,966,0.24405486542443064,0.19772256728778467,0.17322425558312657,0.2197698515370644
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1w,3,655,655,0.34606030534351145,0.2732824427480916,0.23672233827448144,0.3058531746031746
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1w,4,486,486,0.44804835390946507,0.3292181069958848,0.28483204722616906,0.37243414256198343
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1w,5,449,449,0.5401158129175947,0.42761692650334077,0.3787140081257728,0.47573786177226507
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1w,6,341,341,0.6465205278592375,0.5601173020527859,0.5056330540214562,0.6108771204479958
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1w,7,301,301,0.7480332225913622,0.7142857142857143,0.6677575325732898,0.7610497222758369
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1w,8,296,296,0.851635135135135,0.8344594594594594,0.791445707070707,0.8760344827586206
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1w,9,617,617,0.9603679092382497,0.946515397082658,0.9244968166982311,0.9646157495256167
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1d,0,10689,10689,0.012261811207783704,0.013565347553559735,0.011076387730707255,0.01648687035860841
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1d,1,672,672,0.14155654761904762,0.17410714285714285,0.14061602870813397,0.20991783590056426
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1d,2,448,448,0.24436830357142858,0.2857142857142857,0.2445997064137308,0.3303176268843899
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1d,3,328,328,0.34541310975609757,0.4420731707317073,0.38648310387984985,0.5030907635061937
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1d,4,344,344,0.4522776162790698,0.45930232558139533,0.39771532986194047,0.5171559633027524
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1d,5,287,287,0.5389634146341463,0.6202090592334495,0.5602809561572448,0.6805555555555556
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1d,6,240,240,0.6514145833333332,0.8,0.7483895220006331,0.8508064516129032
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1d,7,311,311,0.748766881028939,0.8327974276527331,0.7850162866449512,0.869992784992785
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1d,8,315,315,0.8507460317460318,0.8952380952380953,0.8607183446329898,0.9289127112549442
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1d,9,1762,1762,0.9775448354143019,0.9812712826333712,0.9736842105263158,0.9873199300699301
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1m,0,3848,3848,0.027379417879417885,0.016372141372141373,0.012556869325649145,0.020615829430082604
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1m,1,672,672,0.14113690476190474,0.1130952380952381,0.08919732678411184,0.1375635554471743
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1m,2,415,415,0.24184216867469882,0.2289156626506024,0.18651849122336864,0.274139900436443
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1m,3,237,237,0.34324472573839665,0.25738396624472576,0.20262311996507798,0.31745157843948163
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1m,4,164,164,0.45057621951219506,0.31097560975609756,0.2417423184357542,0.38298215079247516
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1m,5,188,188,0.540406914893617,0.3723404255319149,0.2931900527009223,0.46303416877028486
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1m,6,131,131,0.6455839694656488,0.5801526717557252,0.48484848484848486,0.664179104477612
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1m,7,146,146,0.7487157534246576,0.7328767123287672,0.6509980568804099,0.8121351351351351
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1m,8,157,157,0.8520796178343947,0.8535031847133758,0.7973785494355115,0.910958904109589
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1m,9,291,291,0.9573127147766324,0.9725085910652921,0.9529860906682367,0.9871452800529494
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1w,0,7387,7387,0.02088188709895763,0.020712061730066334,0.017197966035177998,0.024062879665562018
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1w,1,939,939,0.1446762513312034,0.14909478168264112,0.12435219707635883,0.17134169149978118
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1w,2,693,693,0.24509451659451661,0.22655122655122656,0.19783534756062954,0.25929037643581976
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1w,3,479,479,0.3478632567849686,0.35908141962421714,0.3205787488870625,0.4016657016020073
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1w,4,452,452,0.44960840707964606,0.3230088495575221,0.2755289399915768,0.3754763963530094
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1w,5,362,362,0.541261049723757,0.5441988950276243,0.4892167974426039,0.6002932960893854
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1w,6,238,238,0.6485399159663865,0.6638655462184874,0.598710002119093,0.729794371706416
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1w,7,247,247,0.7428927125506074,0.805668016194332,0.758392431279026,0.856000704552369
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1w,8,244,244,0.8505840163934427,0.8729508196721312,0.8241121612579458,0.9103698055661456
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1w,9,753,753,0.9662051792828685,0.9734395750332006,0.9616616138670954,0.9841855767592731
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,0,2931,2931,0.04589065165472534,0.03207096554077107,0.023423689019181272,0.042524872154976204
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,1,1427,1427,0.14442151366503156,0.10581639803784162,0.09145330327835728,0.12013306544457897
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,2,938,938,0.24657462686567164,0.21002132196162046,0.18162128684909717,0.23694219525776064
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,3,600,600,0.34654833333333335,0.2783333333333333,0.23817004296437652,0.3178093800322061
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,4,523,523,0.4492418738049714,0.31166347992351817,0.2687777777777778,0.3578845686781038
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,5,530,530,0.5407603773584905,0.4056603773584906,0.3506819620741839,0.4602611933605731
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,6,378,378,0.6477142857142858,0.5714285714285714,0.5196015358236734,0.6217706728299949
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,7,305,305,0.7467868852459015,0.6491803278688525,0.5989358108108108,0.6980702124294976
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,8,257,257,0.8435525291828794,0.77431906614786,0.7262095141700404,0.8187325174825175
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,9,264,264,0.9565056818181817,0.9318181818181818,0.900748624831612,0.9597671438670908
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,0,55,55,0.04064545454545454,0.07272727272727272,0.01818181818181818,0.14
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,1,24,24,0.1485,0.25,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,2,25,25,0.24884,0.4,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,3,23,23,0.34673913043478266,0.4782608695652174,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,4,24,24,0.4597708333333334,0.4583333333333333,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,5,32,32,0.54953125,0.53125,0.38183023872679045,0.678024193548387
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,6,16,16,0.6571875,0.75,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,7,22,22,0.745,0.5909090909090909,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,8,29,29,0.8503448275862068,0.9310344827586207,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,9,39,39,0.9434615384615384,0.9230769230769231,0.821945701357466,1.0
+closed_by_feb,default_side_passed,No default side,after_start,1d,0,3047,3047,0.03508516573679028,0.02625533311453889,0.02087632172936176,0.03168772168924558
+closed_by_feb,default_side_passed,No default side,after_start,1d,1,1045,1045,0.14121626794258374,0.11291866028708133,0.09677177156901139,0.1292439064679539
+closed_by_feb,default_side_passed,No default side,after_start,1d,2,830,830,0.24635,0.19759036144578312,0.17191077441077443,0.22262762254318172
+closed_by_feb,default_side_passed,No default side,after_start,1d,3,469,469,0.3444968017057569,0.3070362473347548,0.26634487741762025,0.3464039104765753
+closed_by_feb,default_side_passed,No default side,after_start,1d,4,316,316,0.451506329113924,0.2911392405063291,0.23866332197893628,0.3515824456378202
+closed_by_feb,default_side_passed,No default side,after_start,1d,5,299,299,0.5298561872909698,0.3979933110367893,0.33555989175649686,0.4581158424908425
+closed_by_feb,default_side_passed,No default side,after_start,1d,6,181,181,0.6476464088397791,0.6629834254143646,0.595587576526803,0.7328142076502732
+closed_by_feb,default_side_passed,No default side,after_start,1d,7,177,177,0.7467655367231639,0.7005649717514124,0.6347955801104972,0.7712011173184358
+closed_by_feb,default_side_passed,No default side,after_start,1d,8,174,174,0.8560660919540228,0.7816091954022989,0.7193998716302953,0.8432071308489774
+closed_by_feb,default_side_passed,No default side,after_start,1d,9,252,252,0.9473035714285715,0.9444444444444444,0.911425660757192,0.9709833784596872
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,0,2221,2221,0.03505695632597929,0.020261143628995948,0.012173715518832432,0.030651374058241893
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,1,563,563,0.13945648312611014,0.08170515097690942,0.055347206436118165,0.11051698769395399
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,2,280,280,0.2434,0.17142857142857143,0.12078657120743033,0.22906362594169669
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,3,191,191,0.3441989528795811,0.23036649214659685,0.17105026183813138,0.29156741906741906
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,4,121,121,0.4485454545454546,0.3305785123966942,0.2540960451977401,0.41049679487179486
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,5,116,116,0.539405172413793,0.3017241379310345,0.21399945474372956,0.3942307692307692
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,6,82,82,0.6510548780487805,0.4268292682926829,0.3095904095904096,0.5450301204819276
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,7,83,83,0.7458915662650603,0.7228915662650602,0.6089330334832584,0.8354430379746836
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,8,90,90,0.8499777777777777,0.7888888888888889,0.6976580479220252,0.8737367021276595
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,9,100,100,0.9573349999999998,0.93,0.8875,0.975609756097561
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,0,16,16,0.033875,0.0,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,1,6,6,0.167,0.5,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,2,7,7,0.24499999999999997,0.42857142857142855,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,3,2,2,0.3675,1.0,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,4,7,7,0.4471428571428572,0.5714285714285714,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,5,3,3,0.54,0.3333333333333333,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,6,8,8,0.6539999999999999,0.875,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,7,16,16,0.74534375,0.8125,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,8,17,17,0.8503823529411765,0.8823529411764706,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,9,37,37,0.9538378378378379,1.0,1.0,1.0
+closed_by_feb,default_side_passed,No default side,after_start,1m,0,1464,1464,0.020203893442622953,0.012978142076502733,0.0075834383304091155,0.019167384191024397
+closed_by_feb,default_side_passed,No default side,after_start,1m,1,176,176,0.14303693181818183,0.13068181818181818,0.09217171717171717,0.1776773399014778
+closed_by_feb,default_side_passed,No default side,after_start,1m,2,104,104,0.24573076923076925,0.2403846153846154,0.1559540855288278,0.3285121296480413
+closed_by_feb,default_side_passed,No default side,after_start,1m,3,60,60,0.3424083333333333,0.23333333333333334,0.14168526785714286,0.33907103825136586
+closed_by_feb,default_side_passed,No default side,after_start,1m,4,74,74,0.46220270270270275,0.25675675675675674,0.158736498649865,0.3902476165254237
+closed_by_feb,default_side_passed,No default side,after_start,1m,5,55,55,0.5428909090909091,0.5272727272727272,0.40166666666666667,0.6363636363636364
+closed_by_feb,default_side_passed,No default side,after_start,1m,6,47,47,0.6578297872340425,0.7021276595744681,0.574468085106383,0.8333333333333334
+closed_by_feb,default_side_passed,No default side,after_start,1m,7,47,47,0.7516170212765958,0.7021276595744681,0.5699579831932773,0.8372093023255814
+closed_by_feb,default_side_passed,No default side,after_start,1m,8,69,69,0.8587753623188404,0.8695652173913043,0.7770102339181286,0.941624040920716
+closed_by_feb,default_side_passed,No default side,after_start,1m,9,165,165,0.948957575757576,0.9757575757575757,0.9456106243154436,0.9940661101718794
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,0,2868,2868,0.03960547419804742,0.02615062761506276,0.018520453735810953,0.03477920266858476
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,1,1076,1076,0.14236942379182158,0.09665427509293681,0.0769578093009652,0.1148410910910911
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,2,599,599,0.24402504173622702,0.18196994991652754,0.15007838283828384,0.21747475724601684
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,3,419,419,0.3463687350835322,0.26252983293556087,0.21863559232156116,0.3073172910302446
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,4,284,284,0.4455880281690141,0.3415492957746479,0.28368935879454815,0.39556460598383825
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,5,280,280,0.5410535714285715,0.3964285714285714,0.3357390510948905,0.4535525092936803
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,6,203,203,0.6487142857142858,0.5172413793103449,0.4425686813186813,0.5915027137042063
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,7,184,184,0.7468750000000001,0.6684782608695652,0.6028311128526646,0.7378429911457877
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,8,147,147,0.8457278911564626,0.7959183673469388,0.7374271523178808,0.8552631578947368
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,9,205,205,0.9593756097560976,0.9414634146341463,0.9059404481132075,0.973828125
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,0,45,45,0.026877777777777768,0.022222222222222223,0.0,0.07692307692307693
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,1,15,15,0.1528,0.3333333333333333,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,2,9,9,0.2522777777777778,0.5555555555555556,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,3,18,18,0.34638888888888886,0.16666666666666666,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,4,16,16,0.43690624999999994,0.5625,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,5,6,6,0.5475,0.6666666666666666,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,6,13,13,0.643076923076923,0.7692307692307693,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,7,14,14,0.749642857142857,0.8571428571428571,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,8,22,22,0.8575,0.8636363636363636,,
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,9,51,51,0.9572058823529409,0.8823529411764706,0.7589838709677419,0.9803921568627451
+closed_by_feb,default_side_passed,No default side,after_start,1w,0,3091,3091,0.023505823358136523,0.020381753477838885,0.016193911924820035,0.025305696513681097
+closed_by_feb,default_side_passed,No default side,after_start,1w,1,529,529,0.14325708884688093,0.11720226843100189,0.09288667629808521,0.14686713516500752
+closed_by_feb,default_side_passed,No default side,after_start,1w,2,358,358,0.24389804469273743,0.21508379888268156,0.17820557449464636,0.25573261004690057
+closed_by_feb,default_side_passed,No default side,after_start,1w,3,218,218,0.34544036697247704,0.30275229357798167,0.24938380281690142,0.3595374617737002
+closed_by_feb,default_side_passed,No default side,after_start,1w,4,186,186,0.452763440860215,0.2903225806451613,0.2183909568830288,0.3780487804878049
+closed_by_feb,default_side_passed,No default side,after_start,1w,5,163,163,0.5382331288343558,0.4723926380368098,0.397623828647925,0.5448670377241805
+closed_by_feb,default_side_passed,No default side,after_start,1w,6,125,125,0.6433159999999999,0.608,0.523241341991342,0.6776859504132231
+closed_by_feb,default_side_passed,No default side,after_start,1w,7,103,103,0.7498834951456312,0.7766990291262136,0.6966221682847896,0.8565327898882579
+closed_by_feb,default_side_passed,No default side,after_start,1w,8,127,127,0.8574566929133859,0.8740157480314961,0.8235416666666666,0.9274193548387096
+closed_by_feb,default_side_passed,No default side,after_start,1w,9,361,361,0.9613781163434904,0.9584487534626038,0.9389378868258179,0.9766288177788572
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,0,5828,5828,0.012325926561427591,0.01818805765271105,0.014299524032759617,0.022816608889776154
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,1,346,346,0.14143497109826592,0.2543352601156069,0.20055881208347523,0.3154849932930919
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,2,220,220,0.24363863636363634,0.39545454545454545,0.32708916083916084,0.46635922330097085
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,3,176,176,0.34525,0.5568181818181818,0.486920938343094,0.634682455940227
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,4,189,189,0.45063756613756617,0.5714285714285714,0.48230577879831615,0.6602260018639329
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,5,145,145,0.5376172413793103,0.7310344827586207,0.6584301171332142,0.8021023302938196
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,6,125,125,0.6530600000000001,0.904,0.8473897011256307,0.9514260424862313
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,7,173,173,0.7489104046242774,0.9017341040462428,0.8579545454545454,0.9432067674028154
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,8,183,183,0.8520710382513663,0.9453551912568307,0.9001798313306141,0.9781473960821787
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,9,822,822,0.9766228710462288,0.98661800486618,0.9777901090342679,0.9941119751382174
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,0,98,98,0.01596938775510204,0.0,0.0,0.0
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,1,10,10,0.14565,0.1,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,2,5,5,0.25129999999999997,0.2,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,3,6,6,0.3520833333333333,0.6666666666666666,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,4,13,13,0.4539615384615384,0.3076923076923077,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,5,11,11,0.5579545454545454,0.45454545454545453,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,6,5,5,0.6294000000000001,0.8,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,7,10,10,0.7422500000000001,0.5,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,8,14,14,0.8445357142857144,0.5714285714285714,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,9,117,117,0.9854786324786327,0.9829059829059829,0.954954954954955,1.0
+closed_by_feb,default_side_passed,No default side,before_close,1d,0,4763,4763,0.01210707537266429,0.008188116733151375,0.005809920803982562,0.010929155263159287
+closed_by_feb,default_side_passed,No default side,before_close,1d,1,316,316,0.14156012658227848,0.08860759493670886,0.05888494318181818,0.11948424606151538
+closed_by_feb,default_side_passed,No default side,before_close,1d,2,223,223,0.24493273542600896,0.17937219730941703,0.13301962354825791,0.23182496734465385
+closed_by_feb,default_side_passed,No default side,before_close,1d,3,146,146,0.34533561643835614,0.2945205479452055,0.2214176245210728,0.37201680672268905
+closed_by_feb,default_side_passed,No default side,before_close,1d,4,142,142,0.4543063380281691,0.323943661971831,0.25412637657802845,0.40293706293706283
+closed_by_feb,default_side_passed,No default side,before_close,1d,5,131,131,0.5388587786259541,0.5114503816793893,0.4150854700854701,0.6015345982142857
+closed_by_feb,default_side_passed,No default side,before_close,1d,6,110,110,0.6505454545454545,0.6818181818181818,0.5937156182731405,0.7614678899082569
+closed_by_feb,default_side_passed,No default side,before_close,1d,7,128,128,0.74908203125,0.765625,0.6921711343866501,0.8415370813397128
+closed_by_feb,default_side_passed,No default side,before_close,1d,8,118,118,0.8494279661016948,0.8559322033898306,0.7829234279918864,0.9247006302521009
+closed_by_feb,default_side_passed,No default side,before_close,1d,9,823,823,0.9773377885783718,0.9756986634264885,0.9629355253030006,0.9856549364613881
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,0,2424,2424,0.03192553630363036,0.01773927392739274,0.012848835870727597,0.023483728074239322
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,1,459,459,0.14076906318082788,0.10457516339869281,0.07557011270255741,0.13737102446187732
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,2,285,285,0.24204912280701757,0.21754385964912282,0.15907146790674906,0.27828389830508476
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,3,161,161,0.34317080745341616,0.2670807453416149,0.1913437678946364,0.34705882352941175
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,4,88,88,0.4453977272727272,0.32954545454545453,0.22979610750695087,0.4393960674157303
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,5,103,103,0.5458932038834952,0.3592233009708738,0.26660530191458026,0.4429089499133291
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,6,86,86,0.6470116279069767,0.5232558139534884,0.4117647058823529,0.6333518724508713
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,7,79,79,0.7491518987341773,0.7215189873417721,0.6081081081081081,0.8239477848101265
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,8,87,87,0.8516436781609195,0.8390804597701149,0.7560975609756098,0.9203240267847009
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,9,80,80,0.94953125,0.975,0.9443951379509936,1.0
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,0,18,18,0.029916666666666664,0.0,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,1,5,5,0.1418,0.4,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,2,3,3,0.2633333333333333,0.6666666666666666,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,3,5,5,0.32599999999999996,0.6,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,4,2,2,0.4825,0.5,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,5,5,5,0.5538000000000001,0.2,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,6,7,7,0.6457142857142858,0.8571428571428571,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,7,5,5,0.7555000000000001,0.8,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,8,13,13,0.8504999999999998,0.8461538461538461,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,9,56,56,0.9566339285714286,0.9821428571428571,0.9423076923076923,1.0
+closed_by_feb,default_side_passed,No default side,before_close,1m,0,1406,1406,0.01950924608819346,0.01422475106685633,0.008224585973453526,0.020598404819481567
+closed_by_feb,default_side_passed,No default side,before_close,1m,1,208,208,0.1419326923076923,0.125,0.0869459706959707,0.1739443213588648
+closed_by_feb,default_side_passed,No default side,before_close,1m,2,127,127,0.24087007874015748,0.2440944881889764,0.17322749021313613,0.31022857142857135
+closed_by_feb,default_side_passed,No default side,before_close,1m,3,71,71,0.34462676056338026,0.2112676056338028,0.13043478260869565,0.2896739130434783
+closed_by_feb,default_side_passed,No default side,before_close,1m,4,74,74,0.4558716216216216,0.28378378378378377,0.17785940325497288,0.3800586770981507
+closed_by_feb,default_side_passed,No default side,before_close,1m,5,80,80,0.53250625,0.4,0.2602102102102102,0.5630965909090908
+closed_by_feb,default_side_passed,No default side,before_close,1m,6,38,38,0.642328947368421,0.6578947368421053,0.5,0.8049999999999998
+closed_by_feb,default_side_passed,No default side,before_close,1m,7,62,62,0.7476129032258065,0.7419354838709677,0.6307692307692307,0.8448275862068966
+closed_by_feb,default_side_passed,No default side,before_close,1m,8,57,57,0.8531052631578948,0.8771929824561403,0.7830035650623887,0.9520161290322581
+closed_by_feb,default_side_passed,No default side,before_close,1m,9,155,155,0.961574193548387,0.967741935483871,0.9319465012958164,0.9933774834437086
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,0,4290,4290,0.02145979020979021,0.022377622377622378,0.017340230272221396,0.027267633336138516
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,1,462,462,0.14307683982683986,0.19264069264069264,0.15476994851994852,0.23129946262823645
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,2,312,312,0.2444871794871795,0.32371794871794873,0.27068783820876796,0.38558531746031743
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,3,219,219,0.34875570776255704,0.4337899543378995,0.3691910192444761,0.5047405660377359
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,4,176,176,0.4478579545454545,0.4147727272727273,0.3342032967032967,0.4971271676300578
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,5,164,164,0.5392865853658536,0.5975609756097561,0.5057128396029259,0.6782293919730834
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,6,122,122,0.6525368852459015,0.7950819672131147,0.7170896946564885,0.8677685950413223
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,7,132,132,0.7437462121212121,0.8333333333333334,0.7694707020453289,0.8889239464442493
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,8,132,132,0.8510795454545454,0.9015151515151515,0.846420550252667,0.9550639658848614
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,9,273,273,0.9638553113553113,0.9816849816849816,0.9646661622848497,0.9958270840599931
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,0,42,42,0.025678571428571422,0.023809523809523808,0.0,0.0625
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,1,10,10,0.15595,0.1,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,2,3,3,0.24683333333333335,0.0,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,3,10,10,0.34395,0.2,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,4,14,14,0.4638571428571429,0.07142857142857142,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,5,8,8,0.55875,0.25,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,6,8,8,0.637375,0.375,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,7,3,3,0.7266666666666666,0.3333333333333333,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,8,12,12,0.8515416666666665,0.6666666666666666,,
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,9,97,97,0.9717422680412371,0.9690721649484536,0.9333333333333333,1.0
+closed_by_feb,default_side_passed,No default side,before_close,1w,0,3055,3055,0.02000441898527005,0.018330605564648116,0.014226286036190071,0.023220104268491363
+closed_by_feb,default_side_passed,No default side,before_close,1w,1,467,467,0.14601713062098504,0.10706638115631692,0.08267328658542515,0.1355215053763441
+closed_by_feb,default_side_passed,No default side,before_close,1w,2,378,378,0.24558201058201062,0.14814814814814814,0.11597648916197303,0.18465354090354089
+closed_by_feb,default_side_passed,No default side,before_close,1w,3,250,250,0.34723800000000005,0.3,0.24696030692046628,0.3541666666666667
+closed_by_feb,default_side_passed,No default side,before_close,1w,4,262,262,0.4500229007633588,0.2748091603053435,0.22319048105012054,0.3287411764705882
+closed_by_feb,default_side_passed,No default side,before_close,1w,5,190,190,0.5422289473684211,0.5105263157894737,0.441025641025641,0.5872388128698224
+closed_by_feb,default_side_passed,No default side,before_close,1w,6,108,108,0.6448518518518519,0.5370370370370371,0.44635109208972845,0.6355140186915887
+closed_by_feb,default_side_passed,No default side,before_close,1w,7,112,112,0.7423214285714286,0.7857142857142857,0.7117117117117117,0.8535005574136008
+closed_by_feb,default_side_passed,No default side,before_close,1w,8,100,100,0.8498150000000001,0.86,0.7916666666666666,0.9263157894736842
+closed_by_feb,default_side_passed,No default side,before_close,1w,9,383,383,0.9664778067885119,0.9686684073107049,0.9499452659123334,0.9866182163595957
 closed_by_feb,kind,Everything else,after_start,1d,0,7252,7252,0.03928509376723663,0.028268063982349698,0.023798737522329572,0.03338927930441291
 closed_by_feb,kind,Everything else,after_start,1d,1,2746,2746,0.14249253459577566,0.10524399126001456,0.09335910391666082,0.11576463337268222
 closed_by_feb,kind,Everything else,after_start,1d,2,1867,1867,0.2468987680771291,0.20353508302088913,0.18277630967298597,0.22149140207230394

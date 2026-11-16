@@ -7,6 +7,7 @@ Filtered (main) plots keep a moment only if $1,000 had traded by then (volume.cs
 in a one-winner (negRisk) event, the event's prices at that moment sum to at most 130%. Unfiltered plots (no $1,000 or 130% rule) go to polymarket/plots/unfiltered.
 Both drop junk by the Manifold rule (JUNK): any of these Haiku tags, or substantive 20 or less.
 by_side_weighted.png: the by_side plot with each event weighted to 1 (weigh()).
+Splits "all_passed" and "default_side_passed": only markets whose stated deadline (Haiku) passed 30+ days before the fetch (FETCH), as in src/pooled_bias.py; lw_bias.md plots these.
 """
 import json, re, sys
 from pathlib import Path
@@ -32,6 +33,7 @@ NOT_CHART = r"domestic product|\b(say|said)\s+[\"“]|earnings|\bstocks?\b|\bsha
 KINDS = [("tsa", r"\btsa\b", None), ("ai_leaderboard", r"(top|best|#\d+|number one) ai model|lmarena|chatbot arena|text arena|ai model (rank|leaderboard)", None),
          ("chart", CHART, NOT_CHART)]
 JUNK = {"crypto_price", "other_asset_price", "sports_match", "sports_tournament", "sports_performance", "central_bank_rate", "weather_measurement", "scheduled_release", "speech_or_posts", "existing_fact"}
+FETCH, BUFFER = pd.Timestamp("2026-02-02"), pd.Timedelta(days=30)  # markets closed by the fetch; Polymarket resolves within days, so 7 to 60 days give the same shifts
 ANCHORS = {"after_start": "after trading starts", "before_close": "before closing"}
 
 
@@ -56,7 +58,12 @@ def frame():
     pairs = n.merge(n, on=["event_id", "moment"], suffixes=("", "_sib"))
     event_sum = pairs[(pairs.t - pairs.t_sib).abs() <= 86400].groupby(["id", "moment"]).prob_sib.sum().rename("event_sum")
     a = a.merge(event_sum, on=["id", "moment"], how="left", validate="1:1")
-    a = a.merge(labels[["id", "default_side", "substantive"]], on="id", validate="m:1")
+    a = a.merge(labels[["id", "default_side", "substantive", "stated_deadline"]], on="id", validate="m:1")
+    created = a.id.map({m["id"]: m["created"] for m in map(json.loads, open(HERE / "input.jsonl"))})
+    said = pd.to_datetime(a.stated_deadline, errors="coerce")
+    said = said.where(~(said < pd.to_datetime(created, errors="coerce")))  # a date before the market existed counts as none, as on Manifold
+    a["passed"] = said < FETCH - BUFFER
+    a["side_passed"] = a.default_side.where(a.passed)
     a["outside"] = a.id.map(outside)
     a["creator"] = a.id.map(event)  # the resampling unit, named creator for the shared helpers
     a["prob"] = a.prob.clip(.001, .999)
@@ -74,6 +81,8 @@ def frame():
 SPLITS = {
     "all": ("short", [(None, "#1d4ed8", "All markets"), (True, "#c2410c", "Closed within a week of starting")]),
     "default_side": ("default_side", [("NO", "#c2410c", "Nothing happening means NO"), ("YES", "#1d4ed8", "Nothing happening means YES"), ("NONE", "#047857", "No default side")]),
+    "all_passed": ("passed", [(True, "#1d4ed8", "All markets, deadline passed")]),
+    "default_side_passed": ("side_passed", [("NO", "#c2410c", "Nothing happening means NO"), ("YES", "#1d4ed8", "Nothing happening means YES"), ("NONE", "#047857", "No default side")]),
     "kind": ("kind", [("other", "#1d4ed8", "Everything else"), ("chart", "#c2410c", "Rankings, scores, box office, views"), ("speech_or_posts", "#6b7280", "Who says what, post counts"),
                       ("tsa", "#047857", "TSA passenger counts"), ("ai_leaderboard", "#7c3aed", "AI model leaderboards")]),  # metrics only, no plot
     "source": ("source", [("has a source", "#6b7280", "Outside source exists"), ("no source, substantive <80", "#1d4ed8", "No source, substantive <80"), ("no source, substantive 80+", "#c2410c", "No source, substantive 80+")]),
@@ -165,7 +174,7 @@ def figures(out, filtered, a):
     p = w[(w.cohort == "closed_by_feb") & (w.anchor == "after_start") & (w.horizon == "1w")]  # to eyeball the weights
     p.groupby("event_id").agg(title=("creator", "first"), markets=("id", "size"), weight=("w", "sum"), sides=("default_side", lambda s: s.value_counts().to_dict())) \
         .sort_values("markets", ascending=False).round(2).to_csv(out / "events_1w.csv")
-    wbins, wmetrics = tables(w, ["default_side"])
+    wbins, wmetrics = tables(w, ["default_side", "default_side_passed"])
     wbins.to_csv(out / "bins_weighted.csv", index=False)
     wmetrics.round(4).to_csv(out / "metrics_weighted.csv", index=False)
     plot(wbins, "default_side", list(ANCHORS), "by_side_weighted", "Polymarket by default side, each event counted once",

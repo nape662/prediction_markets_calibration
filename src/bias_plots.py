@@ -1,4 +1,5 @@
 """Plots for lw_bias.md, from tables already written by polymarket/calibration.py and src/pooled_bias.py (Manifold binary markets and multiple-choice options). No captions: the post explains them.
+by_side plots: only markets whose stated deadline passed 30+ days before the fetch.
 
 python src/bias_plots.py -> plots/by_side_manifold.png, plots/by_side_polymarket.png, plots/by_year.png
 """
@@ -38,7 +39,7 @@ def by_side(bins, name, title, opened):
 
 def by_year(m):
     fig, axes = plt.subplots(1, 2, figsize=(12, 5.4), sharey=True)
-    for ax, tag, name in zip(axes, ["", ": deadline passed"], ["All resolved markets", "Only markets whose deadline passed 60+ days before the fetch"]):
+    for ax, tag, name in zip(axes, ["", ": deadline passed"], ["All resolved markets", "Only markets whose deadline passed 30+ days before the fetch"]):
         for (side, color, label), dx in zip(SIDES, [-.15, 0, .15]):
             r = m[m.check.str.fullmatch(rf"default {side}, created \d+{tag}")]
             year = r.check.str.extract(r"created (\d+)")[0].astype(int)
@@ -60,10 +61,10 @@ def by_year(m):
 
 OUT.mkdir(exist_ok=True)
 mb = pd.read_csv(ROOT / "manifold/plots/pooled/bins.csv")
-mb = mb[mb.series.isin([f"default {s}" for s, _, _ in SIDES])].assign(side=lambda d: d.series.str.removeprefix("default "))
+mb = mb[mb.series.isin([f"default {s}: deadline passed" for s, _, _ in SIDES])].assign(side=lambda d: d.series.str.removeprefix("default ").str.removesuffix(": deadline passed"))
 by_side(mb, "by_side_manifold.png", "Manifold: YES is overpriced where nothing happening means NO, and underpriced where it means YES", "creation")
 pb = pd.read_csv(ROOT / "polymarket/plots/bins.csv")
-pb = pb[(pb.cohort == "closed_by_feb") & (pb.split == "default_side") & (pb.anchor == "after_start")]
+pb = pb[(pb.cohort == "closed_by_feb") & (pb.split == "default_side_passed") & (pb.anchor == "after_start")]
 pb = pb.assign(side=pb.group.map({label: side for side, _, label in SIDES}))
 by_side(pb, "by_side_polymarket.png", "Polymarket: the same direction, about half as large", "trading starts")
 by_year(pd.read_csv(ROOT / "manifold/plots/pooled/metrics.csv"))

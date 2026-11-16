@@ -17,3 +17,21 @@ closed_by_feb,default_side,No default side,before_close,1m,2619,614,0.0788,412,0
 closed_by_feb,default_side,Nothing happening means NO,before_close,1w,5583,3647,0.0637,4728,0.1482,0.1825,-0.0343,0.5053,0.3967,0.6195
 closed_by_feb,default_side,Nothing happening means YES,before_close,1w,175,161,0.0889,98,0.8136,0.763,0.0506,-0.701,-1.3854,0.2141
 closed_by_feb,default_side,No default side,before_close,1w,4928,1212,0.0753,792,0.4497,0.4211,0.0286,-0.275,-0.5665,0.011
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,3403,2743,0.1204,2996,0.2977,0.264,0.0338,-0.2705,-0.3754,-0.1589
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,111,100,0.1447,62,0.7112,0.6959,0.0152,-0.1077,-0.676,0.5602
+closed_by_feb,default_side_passed,No default side,after_start,1d,1242,603,0.1402,301,0.4809,0.4554,0.0255,-0.1756,-0.5397,0.137
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,3192,2247,0.0724,2817,0.1799,0.1263,0.0536,-0.6653,-0.8264,-0.5206
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,96,88,0.1032,52,0.8087,0.8905,-0.0818,0.8812,-0.0241,2.2781
+closed_by_feb,default_side_passed,No default side,after_start,1m,1551,389,0.0783,226,0.4525,0.4087,0.0438,-0.3824,-0.9372,0.0546
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,4352,3185,0.0973,3742,0.234,0.1852,0.0488,-0.464,-0.5735,-0.3523
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,151,126,0.136,87,0.7119,0.7404,-0.0285,0.2359,-0.4512,1.16
+closed_by_feb,default_side_passed,No default side,after_start,1w,2624,805,0.0893,413,0.4492,0.4371,0.0121,-0.1032,-0.4644,0.228
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,6888,4368,0.0472,5639,0.1883,0.2316,-0.0433,0.8444,0.7369,0.9568
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,244,187,0.067,142,0.8018,0.7469,0.0549,-0.8975,-1.5135,-0.1084
+closed_by_feb,default_side_passed,No default side,before_close,1d,4847,1280,0.0462,801,0.4341,0.4211,0.013,-0.1861,-0.5091,0.1056
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,3109,2178,0.0668,2682,0.1515,0.1235,0.028,-0.3783,-0.5473,-0.2052
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,100,92,0.0699,56,0.8578,0.9192,-0.0613,0.9617,-0.0676,2.5919
+closed_by_feb,default_side_passed,No default side,before_close,1m,1529,417,0.0747,218,0.4569,0.3954,0.0615,-0.5197,-0.9849,-0.1122
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,5069,3422,0.062,4325,0.14,0.173,-0.033,0.497,0.3869,0.6197
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,152,141,0.0824,87,0.8341,0.7727,0.0613,-0.8355,-1.4036,0.0064
+closed_by_feb,default_side_passed,No default side,before_close,1w,3047,818,0.0729,467,0.4459,0.4188,0.0271,-0.2527,-0.6058,0.1028

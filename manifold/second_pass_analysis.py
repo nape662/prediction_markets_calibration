@@ -57,11 +57,11 @@ def scores(p, y):
     return (p - y) ** 2, -(y * np.log(p) + (1 - y) * np.log(1 - p))
 
 
-def recalibrate(metrics, x, h, tag=""):
+def recalibrate(metrics, x, h, tag="", buffer=pd.Timedelta(days=60)):
     """Fit shifts on what was known at the start of 2024, test on markets created from then on: is the fix stable enough to apply to later markets?"""
     train, test = x[x.resolutionTime < CUT.timestamp() * 1e3], x[x.year >= CUT.year]
     if tag:
-        train = train[train.said < CUT - pd.Timedelta(days=60)]
+        train = train[train.said < CUT - buffer]
     shifted = lambda p, s: 1 / (1 + np.exp(-(logit(p) + s)))
     fit = lambda g: wshift(logit(g.prob.to_numpy()), g.y.to_numpy(), np.ones(len(g)))
     sides = {s: fit(g) for s, g in train.groupby("default_side")}

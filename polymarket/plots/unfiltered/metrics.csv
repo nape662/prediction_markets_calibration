@@ -25,6 +25,30 @@ closed_by_feb,default_side,No default side,before_close,1m,4437,735,0.0577,648.0
 closed_by_feb,default_side,Nothing happening means NO,before_close,1w,7393,4138,0.0725,5598.0,0.1959,0.2354,-0.0396,0.4969,0.366,0.6379
 closed_by_feb,default_side,Nothing happening means YES,before_close,1w,256,192,0.0992,146.0,0.7239,0.6164,0.1074,-0.9606,-1.426,-0.2929
 closed_by_feb,default_side,No default side,before_close,1w,9458,1697,0.0649,1457.0,0.4295,0.396,0.0334,-0.2933,-0.448,-0.1197
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1d,15232,6142,0.1134,7625.0,0.3459,0.295,0.051,-0.3685,-0.4487,-0.2807
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1m,6227,2944,0.0696,3636.0,0.2273,0.1777,0.0496,-0.5587,-0.7282,-0.3621
+closed_by_feb,all_passed,"All markets, deadline passed",after_start,1w,11735,4868,0.0869,5917.0,0.2919,0.2437,0.0482,-0.4243,-0.5254,-0.3311
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1d,15396,6146,0.0461,7631.0,0.2591,0.2938,-0.0347,0.5545,0.4188,0.686
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1m,6249,2942,0.0679,3638.0,0.2092,0.1773,0.0319,-0.3779,-0.53,-0.1848
+closed_by_feb,all_passed,"All markets, deadline passed",before_close,1w,11794,4869,0.0701,5920.0,0.2261,0.2438,-0.0177,0.2121,0.0749,0.334
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1d,8153,4780,0.1219,6359.0,0.3141,0.264,0.0501,-0.3701,-0.4615,-0.2858
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1d,289,219,0.1688,160.0,0.6503,0.625,0.0253,-0.1556,-0.5303,0.4235
+closed_by_feb,default_side_passed,No default side,after_start,1d,6790,1464,0.1009,1106.0,0.4845,0.425,0.0596,-0.3946,-0.5459,-0.259
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1m,3847,2457,0.0751,3261.0,0.1953,0.1435,0.0517,-0.6104,-0.8087,-0.3783
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1m,119,107,0.1131,67.0,0.8216,0.8955,-0.0739,0.8172,0.0136,2.4296
+closed_by_feb,default_side_passed,No default side,after_start,1m,2261,472,0.0581,308.0,0.4371,0.3831,0.054,-0.4657,-0.7873,-0.2202
+closed_by_feb,default_side_passed,Nothing happening means NO,after_start,1w,6265,3837,0.0975,4989.0,0.255,0.2061,0.0489,-0.4404,-0.5607,-0.3167
+closed_by_feb,default_side_passed,Nothing happening means YES,after_start,1w,209,168,0.141,117.0,0.6706,0.6581,0.0125,-0.1131,-0.8335,0.8428
+closed_by_feb,default_side_passed,No default side,after_start,1w,5261,1089,0.0723,811.0,0.4645,0.4155,0.049,-0.3851,-0.562,-0.2029
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1d,8207,4782,0.0508,6359.0,0.2157,0.2631,-0.0474,0.8245,0.7073,0.9532
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1d,289,219,0.0685,161.0,0.6522,0.6273,0.0249,-0.3464,-1.2106,0.4354
+closed_by_feb,default_side_passed,No default side,before_close,1d,6900,1467,0.0395,1111.0,0.4506,0.4212,0.0294,-0.3338,-0.5386,-0.1594
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1m,3852,2455,0.069,3261.0,0.1747,0.1432,0.0315,-0.3896,-0.5941,-0.1853
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1m,119,107,0.0911,67.0,0.8467,0.8955,-0.0488,0.6657,-0.268,2.5837
+closed_by_feb,default_side_passed,No default side,before_close,1m,2278,472,0.0649,310.0,0.4342,0.3806,0.0536,-0.4551,-0.7861,-0.2113
+closed_by_feb,default_side_passed,Nothing happening means NO,before_close,1w,6282,3838,0.0679,4991.0,0.175,0.2062,-0.0312,0.4156,0.3026,0.5402
+closed_by_feb,default_side_passed,Nothing happening means YES,before_close,1w,207,168,0.0896,116.0,0.7832,0.6638,0.1194,-1.1626,-1.5967,-0.3921
+closed_by_feb,default_side_passed,No default side,before_close,1w,5305,1090,0.0718,813.0,0.4604,0.4145,0.0459,-0.3656,-0.5565,-0.186
 closed_by_feb,kind,Everything else,after_start,1d,18072,6610,0.1112,8903.0,0.3572,0.3192,0.038,-0.266,-0.3507,-0.1916
 closed_by_feb,kind,"Rankings, scores, box office, views",after_start,1d,2905,494,0.1064,339.0,0.4328,0.3687,0.0641,-0.4311,-0.8012,-0.054
 closed_by_feb,kind,TSA passenger counts,after_start,1d,171,52,0.0985,,,,,,,
