@@ -16,7 +16,7 @@ In general:
 *The same plot, but only for markets where neither answer wins if nothing happens: "Will X win the election?" rather than "Will X happen by June?". Haiku 5.5 classified markets by the question statement and options.*
 
 
-## What I did
+## What I did (what non-junk markets mean here)
 
 About 95% of Polymarket markets are crypto and other asset prices ("Bitcoin up or down?"), sports questions that mirror ordinary betting (who wins A vs B, with what score) and weather forecasts. On top of that come things like "how many tweets will Elon post next week". I've seen a couple of papers that check how calibrated the markets are, but they never filtered the junk out. I wondered what happens if you seriously try to look only at reasonable markets.
 
